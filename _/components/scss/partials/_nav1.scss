@@ -1,0 +1,68 @@
+nav {
+	width: 100%;
+	z-index: 100;
+	&.navbar{
+		&.stuck, &.unsticky {
+		@include transition(.5s);
+		background-color: $beige;
+		ul li a {
+			color: $base-font-color;
+			&.current {
+				color: darken($base-font-color,10%);
+				font-weight: 600;
+			}
+		}
+	}
+	
+	ul { 
+		width: 100%;
+		display: flex;
+	}
+	li {
+		display: inline-block;
+		&:first-of-type {
+			flex: 1 1 auto;
+		}
+		a {
+			display: inline-block;
+			padding: 15px;
+			height: 100%;
+			width: 100%;
+			font-size: 18px;
+			color: white;
+		}
+	}
+	}
+}
+
+#secondary-nav {
+	ul { 
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		@include pre(2);
+		@include span(8);
+	}
+	li {
+		display: inline-block;
+		@include transition(.35s);
+		&.active {
+			border-bottom: 2px solid white;
+			a {
+				color: white;
+			}
+		}
+		a {
+			display: inline-block;
+			padding: 10px 0;
+			height: 100%;
+			width: 100%;
+			font-size: 18px;
+			color: $light-beige;
+		}
+	}
+	background-color: $dark-gray;
+	&.stuck {
+		top: 48px;
+	}
+}

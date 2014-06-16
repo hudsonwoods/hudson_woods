@@ -1,0 +1,29 @@
+title: In The Area
+
+fields:
+
+  activity:
+    display: Activity Type
+    type: select
+    required: true
+    width: 20%;
+    options:
+      stay: Stay
+      eat: Eat
+      drink: Drink
+      golf: Golf
+      swim: Swim
+      hike: Hike
+      art: Art
+      markets: markets
+      shopping: Shopping
+
+  image:
+    type: file
+    display: Image
+    destination: assets/img/in-the-area
+    show_thumbnail: true
+
+  content:
+    type: redactor
+    display: Content

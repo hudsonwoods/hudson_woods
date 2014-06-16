@@ -1,0 +1,144 @@
+
+<section id="header-homes">
+
+    <div class="bcg">
+        {{ theme:partial src="nav1" }}
+        <div class="hsContainer">
+        <div class="parallax-container">
+           <h1>Home</h1>  
+           </div> 
+        </div>
+    </div>
+</section>
+
+{{ theme:partial src="nav_homes" }}
+
+
+
+<section id="intro">
+<div class="container">
+	<div class="content">
+		<h1>Standard House Features</h1>
+		<p>Each home features a standard floor-plan with modern, eco-friendly design constructed from materials sourced from surrounding areas. Premium finishes & equipment set new standards for design and sustainability excellence.</p>
+		<p>Multiple enhancements to the standard house offering are available in upgrades</p>
+	</div>
+</div>
+</section>
+
+ <div id="map"></div>
+	
+<section id="floor-plans">
+<div class="container">
+<div class="content main">
+	<h2>Base House Floor Plans</h2>
+	<h2>Designed for Contemporary Living</h2>
+	<div class="details">
+		<h3>2,800</h3>
+		<h4>SQFT</h4>
+		<h3>2,800</h3>
+		<h4>SQFT</h4>
+		<h3>2,800</h3>
+		<h4>SQFT</h4>
+		<h3>2,800</h3>
+		<h4>SQFT</h4>
+	</div>
+	<img src="_themes/main/img/floorplan.png" alt="">
+</div>
+</div>
+</section>
+
+<section id="nature-living">
+    <div class="bcg">
+    </div>
+</section>
+
+<section id="materials">
+<div class="container">
+	<div class="content">
+		<h2>Colors &amp; Materials</h2>
+		<h2>Each home offers owners a choice of materials and colors</h2>
+		<div class="slider single-item">
+			{{ materials_gallery }}
+			<div>
+				<img src="{{ image }}" alt="">
+			</div>
+			{{ /materials_gallery }}
+		</div>
+	</div>
+</div>
+</section>
+
+<section id="kitchen">
+    <div class="bcg">
+    </div>
+</section>
+
+<section id="finishes">
+<div class="container">
+	<div class="content">
+		<h2>Premium Finshes</h2>
+		<h2>Quality engineered products and meticulous crafted</h2>
+		<div class="finish-list">
+			<h3>Hand Crafted Finishes</h3>
+			<ul>
+				{{ handCraftedFinishes }}
+					<li>{{ text }}</li>
+				{{ /handCraftedFinishes }}
+			</ul>
+		</div>
+		<div class="premium-equipment">
+			<h3>Premium Equipment</h3>
+			<ul>
+				{{ premiumEquipment }}
+					<li>{{ text }}</li>
+				{{ /premiumEquipment }}
+			</ul>
+		</div>
+	</div>
+</div>
+</section>
+
+<section id="bathroom">
+    <div class="bcg">
+    </div>
+</section>
+
+<section id="a-la-carte">
+<div class="container">
+	<div class="content">
+		<h2>A La Carte Services</h2>
+		<h2>Property Maintenance and More</h2>
+		<img src="_themes/main/img/Realliv-Section-image.jpg" alt="">
+		<div>
+			<ul>
+				{{ aLaCarte1 }}
+					<li>{{ text }}</li>
+				{{ /aLaCarte1 }}
+			</ul>
+		</div>
+		<div>
+			<ul>
+				{{ aLaCarte2 }}
+					<li>{{ text }}</li>
+				{{ /aLaCarte2 }}
+			</ul>
+		</div>
+	</div>
+</div>
+</section>
+
+
+<script>
+	var map = L.map('map', {
+    center: [41.8817826, -74.3126807],
+    zoom: 15,
+    scrollWheelZoom: false
+});
+
+
+L.tileLayer('https://a.tiles.mapbox.com/v3/philippeio.icka506o/{z}/{x}/{y}.png', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18,
+}).addTo(map);
+</script>
+

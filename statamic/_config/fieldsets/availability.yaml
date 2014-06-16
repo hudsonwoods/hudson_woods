@@ -1,0 +1,30 @@
+title: Availability
+
+fields:
+  title:
+    type: text
+    display: Title
+  image:
+    type: file
+    display: Image
+    destination: assets/img/in-the-area
+    show_thumbnail: true
+  content:
+    type: redactor
+    display: Description
+  availability:
+    type: text
+    display: Availability
+  size:
+    type: text
+    display: Size
+  cost:
+    type: text
+    display: cost
+  floorplans:
+    type: file
+    display: Floorplan Image
+    destination: assets/img/availability
+    show_thumbnail: true
+
+

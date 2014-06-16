@@ -1,0 +1,1577 @@
+/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/* required styles */
+/* line 3, ../third_party/_leaflet.scss */
+.leaflet-map-pane,
+.leaflet-tile,
+.leaflet-marker-icon,
+.leaflet-marker-shadow,
+.leaflet-tile-pane,
+.leaflet-tile-container,
+.leaflet-overlay-pane,
+.leaflet-shadow-pane,
+.leaflet-marker-pane,
+.leaflet-popup-pane,
+.leaflet-overlay-pane svg,
+.leaflet-zoom-box,
+.leaflet-image-layer,
+.leaflet-layer {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+/* line 21, ../third_party/_leaflet.scss */
+.leaflet-container {
+  overflow: hidden;
+  -ms-touch-action: none; }
+
+/* line 25, ../third_party/_leaflet.scss */
+.leaflet-tile,
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none; }
+
+/* line 33, ../third_party/_leaflet.scss */
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
+  display: block; }
+
+/* map is broken in FF if you have max-width: 100% on tiles */
+/* line 38, ../third_party/_leaflet.scss */
+.leaflet-container img {
+  max-width: none !important; }
+
+/* stupid Android 2 doesn't understand "max-width: none" properly */
+/* line 42, ../third_party/_leaflet.scss */
+.leaflet-container img.leaflet-image-layer {
+  max-width: 15000px !important; }
+
+/* line 45, ../third_party/_leaflet.scss */
+.leaflet-tile {
+  filter: inherit;
+  visibility: hidden; }
+
+/* line 49, ../third_party/_leaflet.scss */
+.leaflet-tile-loaded {
+  visibility: inherit; }
+
+/* line 52, ../third_party/_leaflet.scss */
+.leaflet-zoom-box {
+  width: 0;
+  height: 0; }
+
+/* workaround for https://bugzilla.mozilla.org/show_bug.cgi?id=888319 */
+/* line 57, ../third_party/_leaflet.scss */
+.leaflet-overlay-pane svg {
+  -moz-user-select: none; }
+
+/* line 61, ../third_party/_leaflet.scss */
+.leaflet-tile-pane {
+  z-index: 2; }
+
+/* line 62, ../third_party/_leaflet.scss */
+.leaflet-objects-pane {
+  z-index: 3; }
+
+/* line 63, ../third_party/_leaflet.scss */
+.leaflet-overlay-pane {
+  z-index: 4; }
+
+/* line 64, ../third_party/_leaflet.scss */
+.leaflet-shadow-pane {
+  z-index: 5; }
+
+/* line 65, ../third_party/_leaflet.scss */
+.leaflet-marker-pane {
+  z-index: 6; }
+
+/* line 66, ../third_party/_leaflet.scss */
+.leaflet-popup-pane {
+  z-index: 7; }
+
+/* line 68, ../third_party/_leaflet.scss */
+.leaflet-vml-shape {
+  width: 1px;
+  height: 1px; }
+
+/* line 72, ../third_party/_leaflet.scss */
+.lvml {
+  behavior: url(#default#VML);
+  display: inline-block;
+  position: absolute; }
+
+/* control positioning */
+/* line 81, ../third_party/_leaflet.scss */
+.leaflet-control {
+  position: relative;
+  z-index: 7;
+  pointer-events: auto; }
+
+/* line 86, ../third_party/_leaflet.scss */
+.leaflet-top,
+.leaflet-bottom {
+  position: absolute;
+  z-index: 1000;
+  pointer-events: none; }
+
+/* line 92, ../third_party/_leaflet.scss */
+.leaflet-top {
+  top: 0; }
+
+/* line 95, ../third_party/_leaflet.scss */
+.leaflet-right {
+  right: 0; }
+
+/* line 98, ../third_party/_leaflet.scss */
+.leaflet-bottom {
+  bottom: 0; }
+
+/* line 101, ../third_party/_leaflet.scss */
+.leaflet-left {
+  left: 0; }
+
+/* line 104, ../third_party/_leaflet.scss */
+.leaflet-control {
+  float: left;
+  clear: both; }
+
+/* line 108, ../third_party/_leaflet.scss */
+.leaflet-right .leaflet-control {
+  float: right; }
+
+/* line 111, ../third_party/_leaflet.scss */
+.leaflet-top .leaflet-control {
+  margin-top: 10px; }
+
+/* line 114, ../third_party/_leaflet.scss */
+.leaflet-bottom .leaflet-control {
+  margin-bottom: 10px; }
+
+/* line 117, ../third_party/_leaflet.scss */
+.leaflet-left .leaflet-control {
+  margin-left: 10px; }
+
+/* line 120, ../third_party/_leaflet.scss */
+.leaflet-right .leaflet-control {
+  margin-right: 10px; }
+
+/* zoom and fade animations */
+/* line 127, ../third_party/_leaflet.scss */
+.leaflet-fade-anim .leaflet-tile,
+.leaflet-fade-anim .leaflet-popup {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear; }
+
+/* line 135, ../third_party/_leaflet.scss */
+.leaflet-fade-anim .leaflet-tile-loaded,
+.leaflet-fade-anim .leaflet-map-pane .leaflet-popup {
+  opacity: 1; }
+
+/* line 140, ../third_party/_leaflet.scss */
+.leaflet-zoom-anim .leaflet-zoom-animated {
+  -webkit-transition: -webkit-transform 0.25s cubic-bezier(0, 0, 0.25, 1);
+  -moz-transition: -moz-transform 0.25s cubic-bezier(0, 0, 0.25, 1);
+  -o-transition: -o-transform 0.25s cubic-bezier(0, 0, 0.25, 1);
+  transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1); }
+
+/* line 146, ../third_party/_leaflet.scss */
+.leaflet-zoom-anim .leaflet-tile,
+.leaflet-pan-anim .leaflet-tile,
+.leaflet-touching .leaflet-zoom-animated {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none; }
+
+/* line 155, ../third_party/_leaflet.scss */
+.leaflet-zoom-anim .leaflet-zoom-hide {
+  visibility: hidden; }
+
+/* cursors */
+/* line 162, ../third_party/_leaflet.scss */
+.leaflet-clickable {
+  cursor: pointer; }
+
+/* line 165, ../third_party/_leaflet.scss */
+.leaflet-container {
+  cursor: -webkit-grab;
+  cursor: -moz-grab; }
+
+/* line 169, ../third_party/_leaflet.scss */
+.leaflet-popup-pane,
+.leaflet-control {
+  cursor: auto; }
+
+/* line 173, ../third_party/_leaflet.scss */
+.leaflet-dragging .leaflet-container,
+.leaflet-dragging .leaflet-clickable {
+  cursor: move;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing; }
+
+/* visual tweaks */
+/* line 183, ../third_party/_leaflet.scss */
+.leaflet-container {
+  background: #ddd;
+  outline: 0; }
+
+/* line 187, ../third_party/_leaflet.scss */
+.leaflet-container a {
+  color: #0078A8; }
+
+/* line 190, ../third_party/_leaflet.scss */
+.leaflet-container a.leaflet-active {
+  outline: 2px solid orange; }
+
+/* line 193, ../third_party/_leaflet.scss */
+.leaflet-zoom-box {
+  border: 2px dotted #38f;
+  background: rgba(255, 255, 255, 0.5); }
+
+/* general typography */
+/* line 200, ../third_party/_leaflet.scss */
+.leaflet-container {
+  font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif; }
+
+/* general toolbar styles */
+/* line 207, ../third_party/_leaflet.scss */
+.leaflet-bar {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+  border-radius: 4px; }
+
+/* line 211, ../third_party/_leaflet.scss */
+.leaflet-bar a,
+.leaflet-bar a:hover {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black; }
+
+/* line 223, ../third_party/_leaflet.scss */
+.leaflet-bar a,
+.leaflet-control-layers-toggle {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block; }
+
+/* line 229, ../third_party/_leaflet.scss */
+.leaflet-bar a:hover {
+  background-color: #f4f4f4; }
+
+/* line 232, ../third_party/_leaflet.scss */
+.leaflet-bar a:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
+
+/* line 236, ../third_party/_leaflet.scss */
+.leaflet-bar a:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom: none; }
+
+/* line 241, ../third_party/_leaflet.scss */
+.leaflet-bar a.leaflet-disabled {
+  cursor: default;
+  background-color: #f4f4f4;
+  color: #bbb; }
+
+/* line 247, ../third_party/_leaflet.scss */
+.leaflet-touch .leaflet-bar a {
+  width: 30px;
+  height: 30px;
+  line-height: 30px; }
+
+/* zoom control */
+/* line 256, ../third_party/_leaflet.scss */
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+  font: bold 18px 'Lucida Console', Monaco, monospace;
+  text-indent: 1px; }
+
+/* line 261, ../third_party/_leaflet.scss */
+.leaflet-control-zoom-out {
+  font-size: 20px; }
+
+/* line 265, ../third_party/_leaflet.scss */
+.leaflet-touch .leaflet-control-zoom-in {
+  font-size: 22px; }
+
+/* line 268, ../third_party/_leaflet.scss */
+.leaflet-touch .leaflet-control-zoom-out {
+  font-size: 24px; }
+
+/* layers control */
+/* line 275, ../third_party/_leaflet.scss */
+.leaflet-control-layers {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  background: #fff;
+  border-radius: 5px; }
+
+/* line 280, ../third_party/_leaflet.scss */
+.leaflet-control-layers-toggle {
+  background-image: url(images/layers.png);
+  width: 36px;
+  height: 36px; }
+
+/* line 285, ../third_party/_leaflet.scss */
+.leaflet-retina .leaflet-control-layers-toggle {
+  background-image: url(images/layers-2x.png);
+  background-size: 26px 26px; }
+
+/* line 289, ../third_party/_leaflet.scss */
+.leaflet-touch .leaflet-control-layers-toggle {
+  width: 44px;
+  height: 44px; }
+
+/* line 293, ../third_party/_leaflet.scss */
+.leaflet-control-layers .leaflet-control-layers-list,
+.leaflet-control-layers-expanded .leaflet-control-layers-toggle {
+  display: none; }
+
+/* line 297, ../third_party/_leaflet.scss */
+.leaflet-control-layers-expanded .leaflet-control-layers-list {
+  display: block;
+  position: relative; }
+
+/* line 301, ../third_party/_leaflet.scss */
+.leaflet-control-layers-expanded {
+  padding: 6px 10px 6px 6px;
+  color: #333;
+  background: #fff; }
+
+/* line 306, ../third_party/_leaflet.scss */
+.leaflet-control-layers-selector {
+  margin-top: 2px;
+  position: relative;
+  top: 1px; }
+
+/* line 311, ../third_party/_leaflet.scss */
+.leaflet-control-layers label {
+  display: block; }
+
+/* line 314, ../third_party/_leaflet.scss */
+.leaflet-control-layers-separator {
+  height: 0;
+  border-top: 1px solid #ddd;
+  margin: 5px -10px 5px -6px; }
+
+/* attribution and scale controls */
+/* line 323, ../third_party/_leaflet.scss */
+.leaflet-container .leaflet-control-attribution {
+  background: #fff;
+  background: rgba(255, 255, 255, 0.7);
+  margin: 0; }
+
+/* line 328, ../third_party/_leaflet.scss */
+.leaflet-control-attribution,
+.leaflet-control-scale-line {
+  padding: 0 5px;
+  color: #333; }
+
+/* line 333, ../third_party/_leaflet.scss */
+.leaflet-control-attribution a {
+  text-decoration: none; }
+
+/* line 336, ../third_party/_leaflet.scss */
+.leaflet-control-attribution a:hover {
+  text-decoration: underline; }
+
+/* line 339, ../third_party/_leaflet.scss */
+.leaflet-container .leaflet-control-attribution,
+.leaflet-container .leaflet-control-scale {
+  font-size: 11px; }
+
+/* line 343, ../third_party/_leaflet.scss */
+.leaflet-left .leaflet-control-scale {
+  margin-left: 5px; }
+
+/* line 346, ../third_party/_leaflet.scss */
+.leaflet-bottom .leaflet-control-scale {
+  margin-bottom: 5px; }
+
+/* line 349, ../third_party/_leaflet.scss */
+.leaflet-control-scale-line {
+  border: 2px solid #777;
+  border-top: none;
+  line-height: 1.1;
+  padding: 2px 5px 1px;
+  font-size: 11px;
+  white-space: nowrap;
+  overflow: hidden;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.5); }
+
+/* line 363, ../third_party/_leaflet.scss */
+.leaflet-control-scale-line:not(:first-child) {
+  border-top: 2px solid #777;
+  border-bottom: none;
+  margin-top: -2px; }
+
+/* line 368, ../third_party/_leaflet.scss */
+.leaflet-control-scale-line:not(:first-child):not(:last-child) {
+  border-bottom: 2px solid #777; }
+
+/* line 372, ../third_party/_leaflet.scss */
+.leaflet-touch .leaflet-control-attribution,
+.leaflet-touch .leaflet-control-layers,
+.leaflet-touch .leaflet-bar {
+  box-shadow: none; }
+
+/* line 377, ../third_party/_leaflet.scss */
+.leaflet-touch .leaflet-control-layers,
+.leaflet-touch .leaflet-bar {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background-clip: padding-box; }
+
+/* popup */
+/* line 386, ../third_party/_leaflet.scss */
+.leaflet-popup {
+  position: absolute;
+  text-align: center; }
+
+/* line 390, ../third_party/_leaflet.scss */
+.leaflet-popup-content-wrapper {
+  padding: 1px;
+  text-align: left;
+  border-radius: 12px; }
+
+/* line 395, ../third_party/_leaflet.scss */
+.leaflet-popup-content {
+  margin: 13px 19px;
+  line-height: 1.4; }
+
+/* line 399, ../third_party/_leaflet.scss */
+.leaflet-popup-content p {
+  margin: 18px 0; }
+
+/* line 402, ../third_party/_leaflet.scss */
+.leaflet-popup-tip-container {
+  margin: 0 auto;
+  width: 40px;
+  height: 20px;
+  position: relative;
+  overflow: hidden; }
+
+/* line 409, ../third_party/_leaflet.scss */
+.leaflet-popup-tip {
+  width: 17px;
+  height: 17px;
+  padding: 1px;
+  margin: -10px auto 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+/* line 422, ../third_party/_leaflet.scss */
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: white;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4); }
+
+/* line 428, ../third_party/_leaflet.scss */
+.leaflet-container a.leaflet-popup-close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px 4px 0 0;
+  text-align: center;
+  width: 18px;
+  height: 14px;
+  font: 16px/14px Tahoma, Verdana, sans-serif;
+  color: #c3c3c3;
+  text-decoration: none;
+  font-weight: bold;
+  background: transparent; }
+
+/* line 442, ../third_party/_leaflet.scss */
+.leaflet-container a.leaflet-popup-close-button:hover {
+  color: #999; }
+
+/* line 445, ../third_party/_leaflet.scss */
+.leaflet-popup-scrolled {
+  overflow: auto;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd; }
+
+/* line 451, ../third_party/_leaflet.scss */
+.leaflet-oldie .leaflet-popup-content-wrapper {
+  zoom: 1; }
+
+/* line 454, ../third_party/_leaflet.scss */
+.leaflet-oldie .leaflet-popup-tip {
+  width: 24px;
+  margin: 0 auto;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)";
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678); }
+
+/* line 461, ../third_party/_leaflet.scss */
+.leaflet-oldie .leaflet-popup-tip-container {
+  margin-top: -1px; }
+
+/* line 465, ../third_party/_leaflet.scss */
+.leaflet-oldie .leaflet-control-zoom,
+.leaflet-oldie .leaflet-control-layers,
+.leaflet-oldie .leaflet-popup-content-wrapper,
+.leaflet-oldie .leaflet-popup-tip {
+  border: 1px solid #999; }
+
+/* div icon */
+/* line 475, ../third_party/_leaflet.scss */
+.leaflet-div-icon {
+  background: #fff;
+  border: 1px solid #666; }
+
+@font-face {
+  font-family: 'Pacifico';
+  src: url("pacifico.eot");
+  src: url("pacifico.eot?#iefix") format("embedded-opentype"), url("pacifico.woff") format("woff"), url("pacifico.ttf") format("truetype"), url("pacifico.svg#Pacifico") format("svg"); }
+/* Slider */
+/* line 95, ../third_party/_slick.scss */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent; }
+
+/* line 110, ../third_party/_slick.scss */
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  /* line 117, ../third_party/_slick.scss */
+  .slick-list:focus {
+    outline: none; }
+  /* line 121, ../third_party/_slick.scss */
+  .slick-loading .slick-list {
+    background: white url(../img/ajax-loader.gif) center center no-repeat; }
+  /* line 125, ../third_party/_slick.scss */
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+/* line 130, ../third_party/_slick.scss */
+.slick-slider .slick-list,
+.slick-track,
+.slick-slide,
+.slick-slide img {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/* line 140, ../third_party/_slick.scss */
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  zoom: 1; }
+  /* line 147, ../third_party/_slick.scss */
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  /* line 153, ../third_party/_slick.scss */
+  .slick-track:after {
+    clear: both; }
+  /* line 157, ../third_party/_slick.scss */
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+/* line 161, ../third_party/_slick.scss */
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  /* line 165, ../third_party/_slick.scss */
+  .slick-slide img {
+    display: block; }
+    /* line 167, ../third_party/_slick.scss */
+    .slick-slide img.slick-loading {
+      background: white url(./ajax-loader.gif) center center no-repeat;
+      padding-bottom: 100%; }
+  /* line 175, ../third_party/_slick.scss */
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  /* line 179, ../third_party/_slick.scss */
+  .slick-initialized .slick-slide {
+    display: block; }
+  /* line 183, ../third_party/_slick.scss */
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  /* line 187, ../third_party/_slick.scss */
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url("../fonts/slick.eot");
+  src: url("../fonts/slick.eot?#iefix") format("embedded-opentype"), url("../fonts/slick.woff") format("woff"), url("../fonts/slick.ttf") format("truetype"), url("../fonts/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Arrows */
+/* line 207, ../third_party/_slick.scss */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  margin-top: -10px;
+  padding: 0;
+  border: none;
+  outline: none; }
+  /* line 223, ../third_party/_slick.scss */
+  .slick-prev:focus,
+  .slick-next:focus {
+    outline: none; }
+  /* line 226, ../third_party/_slick.scss */
+  .slick-prev.slick-disabled:before,
+  .slick-next.slick-disabled:before {
+    opacity: 0.25; }
+
+/* line 230, ../third_party/_slick.scss */
+.slick-prev:before, .slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  opacity: 0.85;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 239, ../third_party/_slick.scss */
+.slick-prev {
+  left: -25px; }
+  /* line 241, ../third_party/_slick.scss */
+  .slick-prev:before {
+    content: '\2190';
+    color: #6e736c; }
+
+/* line 246, ../third_party/_slick.scss */
+.slick-next {
+  right: -25px; }
+  /* line 248, ../third_party/_slick.scss */
+  .slick-next:before {
+    content: '\2192';
+    color: #6e736c; }
+
+/* Dots */
+/* line 256, ../third_party/_slick.scss */
+.slick-slider {
+  margin-bottom: 30px; }
+
+/* line 259, ../third_party/_slick.scss */
+.slick-dots {
+  position: absolute;
+  bottom: -45px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0px;
+  width: 100%; }
+  /* line 268, ../third_party/_slick.scss */
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0px 5px;
+    padding: 0px;
+    cursor: pointer; }
+    /* line 277, ../third_party/_slick.scss */
+    .slick-dots li button {
+      border: 0;
+      background: transparent;
+      display: block;
+      height: 20px;
+      width: 20px;
+      outline: none;
+      line-height: 0;
+      font-size: 0;
+      color: transparent;
+      padding: 5px;
+      cursor: pointer;
+      outline: none; }
+      /* line 290, ../third_party/_slick.scss */
+      .slick-dots li button:focus {
+        outline: none; }
+      /* line 294, ../third_party/_slick.scss */
+      .slick-dots li button:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '\2022';
+        width: 20px;
+        height: 20px;
+        font-family: "slick";
+        font-size: 6px;
+        line-height: 20px;
+        text-align: center;
+        color: black;
+        opacity: 0.25;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+    /* line 313, ../third_party/_slick.scss */
+    .slick-dots li.slick-active button:before {
+      opacity: 0.75; }
+
+/* line 11, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 17, ../partials/_base.scss */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* line 22, ../partials/_base.scss */
+html, body, a, span, p {
+  color: #6e736c;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+
+/* line 27, ../partials/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif; }
+
+/* line 67, ../partials/_base.scss */
+.stuck {
+  position: fixed; }
+
+/* line 71, ../partials/_base.scss */
+ul {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0; }
+  /* line 77, ../partials/_base.scss */
+  ul li {
+    display: inline-block; }
+
+/* line 82, ../partials/_base.scss */
+p {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 24px;
+  letter-spacing: 1px; }
+  /* line 91, ../partials/_base.scss */
+  p:last-of-type {
+    margin-bottom: 0; }
+
+/* line 95, ../partials/_base.scss */
+a {
+  text-decoration: none; }
+  /* line 97, ../partials/_base.scss */
+  a:hover {
+    text-decoration: none; }
+
+/* line 102, ../partials/_base.scss */
+h1 {
+  font-size: 64px; }
+
+/* line 106, ../partials/_base.scss */
+h2 {
+  font-size: 54px; }
+
+/* line 110, ../partials/_base.scss */
+.hero-parallax {
+  position: relative;
+  height: 500px;
+  clear: both;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  text-align: center; }
+
+/* line 8, ../partials/_layout.scss */
+.row:before,
+.row:after {
+  content: " ";
+  display: table; }
+
+/* line 13, ../partials/_layout.scss */
+.row:after {
+  clear: both; }
+
+/* line 16, ../partials/_layout.scss */
+.row:before,
+.row:after {
+  content: " ";
+  display: table; }
+
+/* line 22, ../partials/_layout.scss */
+.row:after {
+  clear: both; }
+
+/* line 26, ../partials/_layout.scss */
+img {
+  max-width: 100%; }
+
+/* line 29, ../partials/_layout.scss */
+.flex {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center; }
+
+/* line 36, ../partials/_layout.scss */
+.flex-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  flex: 1 1 auto; }
+
+/* line 43, ../partials/_layout.scss */
+.container {
+  position: relative;
+  display: block;
+  max-width: 36.875em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+  .container:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  @media (min-width: 420px) {
+    /* line 43, ../partials/_layout.scss */
+    .container {
+      max-width: 420px; } }
+  @media (min-width: 768px) {
+    /* line 43, ../partials/_layout.scss */
+    .container {
+      max-width: 768px; } }
+  @media (min-width: 1200px) {
+    /* line 43, ../partials/_layout.scss */
+    .container {
+      max-width: 1200px; } }
+
+/* line 58, ../partials/_layout.scss */
+.content {
+  margin-left: 16.94915%;
+  width: 66.10169%;
+  float: left;
+  margin-right: 1.69492%;
+  padding: 100px 0; }
+  /* line 63, ../partials/_layout.scss */
+  .content.main h2 {
+    text-align: center; }
+    /* line 65, ../partials/_layout.scss */
+    .content.main h2:last-of-type {
+      color: #9a9d98;
+      padding-bottom: 60px; }
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+/* line 85, ../partials/_layout.scss */
+img {
+  vertical-align: middle; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 94, ../partials/_layout.scss */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+/* line 102, ../partials/_layout.scss */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+   Parallax Scroll
+   ========================================================================== */
+/* line 113, ../partials/_layout.scss */
+.no-js {
+  padding-top: 106px; }
+
+/* line 117, ../partials/_layout.scss */
+.loading {
+  background: url("../img/ico_loading.gif") no-repeat center center; }
+
+/* line 124, ../partials/_layout.scss */
+.loaded section,
+.no-js section {
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-out;
+  -moz-transition: opacity 300ms ease-out;
+  transition: opacity 300ms ease-out; }
+
+/* line 131, ../partials/_layout.scss */
+main {
+  overflow-x: hidden; }
+
+/* line 135, ../partials/_layout.scss */
+.bcg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+  width: 100%; }
+
+/* line 144, ../partials/_layout.scss */
+.hsContainer {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative; }
+
+/* line 151, ../partials/_layout.scss */
+.hsContainer .parallax-container {
+  color: #fff;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center; }
+  /* line 155, ../partials/_layout.scss */
+  .hsContainer .parallax-container h1, .hsContainer .parallax-container h2, .hsContainer .parallax-container h3, .hsContainer .parallax-container h4, .hsContainer .parallax-container h5, .hsContainer .parallax-container h6, .hsContainer .parallax-container a, .hsContainer .parallax-container span, .hsContainer .parallax-container p {
+    color: #fff; }
+
+/* line 1, ../partials/_nav1.scss */
+nav {
+  width: 100%;
+  z-index: 100; }
+  /* line 5, ../partials/_nav1.scss */
+  nav.navbar.stuck, nav.navbar.unsticky {
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #bdbbb3; }
+    /* line 8, ../partials/_nav1.scss */
+    nav.navbar.stuck ul li a, nav.navbar.unsticky ul li a {
+      color: #6e736c; }
+      /* line 10, ../partials/_nav1.scss */
+      nav.navbar.stuck ul li a.current, nav.navbar.unsticky ul li a.current {
+        color: #555953;
+        font-weight: 600; }
+  /* line 17, ../partials/_nav1.scss */
+  nav.navbar ul {
+    width: 100%;
+    display: flex; }
+  /* line 21, ../partials/_nav1.scss */
+  nav.navbar li {
+    display: inline-block; }
+    /* line 23, ../partials/_nav1.scss */
+    nav.navbar li:first-of-type {
+      flex: 1 1 auto; }
+    /* line 26, ../partials/_nav1.scss */
+    nav.navbar li a {
+      display: inline-block;
+      padding: 15px;
+      height: 100%;
+      width: 100%;
+      font-size: 18px;
+      color: white; }
+
+/* line 38, ../partials/_nav1.scss */
+#secondary-nav {
+  background-color: #505054; }
+  /* line 39, ../partials/_nav1.scss */
+  #secondary-nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16.94915%;
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%; }
+  /* line 46, ../partials/_nav1.scss */
+  #secondary-nav li {
+    display: inline-block;
+    -webkit-transition: 0.35s;
+    -moz-transition: 0.35s;
+    transition: 0.35s; }
+    /* line 49, ../partials/_nav1.scss */
+    #secondary-nav li.active {
+      border-bottom: 2px solid white; }
+      /* line 51, ../partials/_nav1.scss */
+      #secondary-nav li.active a {
+        color: white; }
+    /* line 55, ../partials/_nav1.scss */
+    #secondary-nav li a {
+      display: inline-block;
+      padding: 10px 0;
+      height: 100%;
+      width: 100%;
+      font-size: 18px;
+      color: #cccabf; }
+  /* line 65, ../partials/_nav1.scss */
+  #secondary-nav.stuck {
+    top: 48px; }
+
+/* line 17, ../partials/_homes.scss */
+#intro {
+  background-color: #fbf8f2; }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 35, ../partials/_homes.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px; }
+
+/* line 43, ../partials/_homes.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%; }
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 54, ../partials/_homes.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 63, ../partials/_homes.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 79, ../partials/_homes.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 93, ../partials/_homes.scss */
+.invisible {
+  visibility: hidden; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 109, ../partials/_homes.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+/* line 115, ../partials/_homes.scss */
+.clearfix:after {
+  clear: both; }
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 124, ../partials/_homes.scss */
+.clearfix {
+  *zoom: 1; }
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */ }
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */ }
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 151, ../partials/_homes.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  /* line 158, ../partials/_homes.scss */
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  /* line 163, ../partials/_homes.scss */
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  /* line 167, ../partials/_homes.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 175, ../partials/_homes.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+
+  /* line 181, ../partials/_homes.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  /* line 187, ../partials/_homes.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
+
+  /* line 191, ../partials/_homes.scss */
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  /* line 196, ../partials/_homes.scss */
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+  /* line 204, ../partials/_homes.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  /* line 211, ../partials/_homes.scss */
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+/* line 217, ../partials/_homes.scss */
+#map {
+  height: 600px; }
+
+/* line 219, ../partials/_homes.scss */
+.homes-content {
+  padding: 100px 0; }
+
+/* line 227, ../partials/_homes.scss */
+#header-homes .bcg {
+  background-image: url("../img/Smartdes-Section-image-2000x1500.jpg"); }
+
+/* line 230, ../partials/_homes.scss */
+#nature-living .bcg {
+  background-image: url("../img/New_DesignNature-Living.jpg"); }
+
+/* line 234, ../partials/_homes.scss */
+#kitchen .bcg {
+  background-image: url("../img/New_DesignNature-Kitchen.jpg"); }
+
+/* line 238, ../partials/_homes.scss */
+#bathroom .bcg {
+  background-image: url("../img/DesignNature-bathroom.jpg"); }
+
+/* line 242, ../partials/_homes.scss */
+#header-upgrades .bcg {
+  background-image: url("../img/DesignNature-bathroom.jpg"); }
+
+/* line 246, ../partials/_homes.scss */
+#header-about .bcg {
+  background-image: url("../img/Smartdes-Section-image-2000x1500.jpg"); }
+
+/* line 251, ../partials/_homes.scss */
+#floor-plans .content {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  /* line 253, ../partials/_homes.scss */
+  #floor-plans .content .details {
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%; }
+  /* line 256, ../partials/_homes.scss */
+  #floor-plans .content img {
+    margin-left: 8.47458%;
+    width: 66.10169%;
+    float: right;
+    margin-right: 0; }
+  /* line 260, ../partials/_homes.scss */
+  #floor-plans .content h3, #floor-plans .content h4 {
+    text-align: center; }
+  /* line 263, ../partials/_homes.scss */
+  #floor-plans .content h3 {
+    font-size: 50px;
+    border-top: 1px solid #6e736c;
+    padding-top: 20px; }
+  /* line 268, ../partials/_homes.scss */
+  #floor-plans .content h4 {
+    font-size: 20px;
+    padding-bottom: 40px; }
+
+/* line 274, ../partials/_homes.scss */
+#materials {
+  text-align: center; }
+  /* line 276, ../partials/_homes.scss */
+  #materials h2:last-of-type {
+    color: #9a9d98; }
+
+/* line 281, ../partials/_homes.scss */
+#finishes {
+  background-color: #cccabf; }
+  /* line 283, ../partials/_homes.scss */
+  #finishes .content {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+  /* line 287, ../partials/_homes.scss */
+  #finishes li {
+    font-size: 18px;
+    margin-bottom: 18px; }
+  /* line 291, ../partials/_homes.scss */
+  #finishes .finish-list {
+    margin-left: 16.94915%;
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%; }
+  /* line 295, ../partials/_homes.scss */
+  #finishes .premium-equipment {
+    margin-left: 8.47458%;
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%; }
+
+/* line 302, ../partials/_homes.scss */
+#a-la-carte ul {
+  margin-top: 60px;
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%; }
+  /* line 305, ../partials/_homes.scss */
+  #a-la-carte ul:last-of-type {
+    width: 49.15254%;
+    float: right;
+    margin-right: 0; }
+/* line 309, ../partials/_homes.scss */
+#a-la-carte li {
+  font-size: 18px;
+  margin-bottom: 18px; }
+
+/* line 1, ../partials/_availability.scss */
+#header-availability .bcg {
+  background-image: url("../img/Smartdes-Section-image-2000x1500.jpg"); }
+
+/* line 5, ../partials/_availability.scss */
+#map-nav-availability {
+  height: 50px;
+  background-color: #505054; }
+
+/* line 1, ../partials/_tiles.scss */
+.area-tiles {
+  background-color: #cccabf; }
+  /* line 4, ../partials/_tiles.scss */
+  .area-tiles .tile.area.stay {
+    border-top: 8px solid #f1433f; }
+  /* line 7, ../partials/_tiles.scss */
+  .area-tiles .tile.area.eat {
+    border-top: 8px solid #70b7ba; }
+  /* line 10, ../partials/_tiles.scss */
+  .area-tiles .tile.area.drink {
+    border-top: 8px solid #b1277d; }
+  /* line 13, ../partials/_tiles.scss */
+  .area-tiles .tile.area.golf {
+    border-top: 8px solid #3cb878; }
+  /* line 16, ../partials/_tiles.scss */
+  .area-tiles .tile.area.swim {
+    border-top: 8px solid #6eb7cd; }
+  /* line 19, ../partials/_tiles.scss */
+  .area-tiles .tile.area.hike {
+    border-top: 8px solid #736357; }
+  /* line 22, ../partials/_tiles.scss */
+  .area-tiles .tile.area.art {
+    border-top: 8px solid #32004b; }
+  /* line 25, ../partials/_tiles.scss */
+  .area-tiles .tile.area.markets {
+    border-top: 8px solid #c9be69; }
+  /* line 28, ../partials/_tiles.scss */
+  .area-tiles .tile.area.shopping {
+    border-top: 8px solid #8393ca; }
+
+/* line 36, ../partials/_tiles.scss */
+.tile {
+  margin-bottom: 40px;
+  padding: 10px 20px 20px;
+  background-color: #fff;
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%; }
+  /* line 38, ../partials/_tiles.scss */
+  .tile h1, .tile h2, .tile h3, .tile h4, .tile h5, .tile h6, .tile a, .tile span, .tile p {
+    text-align: left;
+    color: #505054 !important; }
+  /* line 44, ../partials/_tiles.scss */
+  .tile h2 {
+    font-size: 28px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 700; }
+  /* line 50, ../partials/_tiles.scss */
+  .tile img {
+    margin-bottom: 10px; }
+  /* line 54, ../partials/_tiles.scss */
+  .tile:nth-child(2n) {
+    width: 49.15254%;
+    float: right;
+    margin-right: 0; }
+  /* line 57, ../partials/_tiles.scss */
+  .tile.availability {
+    border-top: 8px solid #505054; }
+    /* line 59, ../partials/_tiles.scss */
+    .tile.availability .info {
+      width: 32.20339%;
+      float: left;
+      margin-right: 1.69492%;
+      padding: 10px 0 40px; }
+      /* line 62, ../partials/_tiles.scss */
+      .tile.availability .info:last-of-type {
+        margin-right: 0; }
+    /* line 66, ../partials/_tiles.scss */
+    .tile.availability .link {
+      width: 49.15254%;
+      float: left;
+      margin-right: 1.69492%; }
+      /* line 69, ../partials/_tiles.scss */
+      .tile.availability .link:last-of-type {
+        margin-right: 0; }
+      /* line 72, ../partials/_tiles.scss */
+      .tile.availability .link a {
+        font-weight: 600; }
+
+/* line 1, ../partials/_upgrades.scss */
+.upgrades {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  text-align: center;
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%; }
+  /* line 2, ../partials/_upgrades.scss */
+  .upgrades h3 {
+    font-size: 32px; }
+  /* line 9, ../partials/_upgrades.scss */
+  .upgrades img {
+    width: 100%; }
+  /* line 12, ../partials/_upgrades.scss */
+  .upgrades a {
+    display: block; }
+  /* line 15, ../partials/_upgrades.scss */
+  .upgrades h3 {
+    margin-top: 30px; }
+  /* line 18, ../partials/_upgrades.scss */
+  .upgrades p {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px; }
+  /* line 24, ../partials/_upgrades.scss */
+  .upgrades:nth-child(3n) {
+    margin-right: 0; }
+
+/* line 29, ../partials/_upgrades.scss */
+.upgrade-entry {
+  margin-top: 100px; }
+
+/* line 32, ../partials/_upgrades.scss */
+.upgrade-image {
+  width: 40.67797%;
+  float: left;
+  margin-right: 1.69492%; }
+  /* line 33, ../partials/_upgrades.scss */
+  .upgrade-image img {
+    max-width: 100%; }
+
+/* line 38, ../partials/_upgrades.scss */
+.specs {
+  border-top: 2px solid #505054;
+  border-bottom: 2px solid #505054;
+  padding: 20px 0;
+  width: 40.67797%;
+  float: right;
+  margin-right: 0; }
+  /* line 43, ../partials/_upgrades.scss */
+  .specs h3 {
+    margin: 20px 0 10px; }
+  /* line 46, ../partials/_upgrades.scss */
+  .specs ul {
+    width: 74.57627%;
+    float: left;
+    margin-right: 1.69492%;
+    list-style-type: disc; }
+    /* line 49, ../partials/_upgrades.scss */
+    .specs ul li {
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      line-height: 24px;
+      letter-spacing: 1px;
+      margin-left: 18px;
+      display: list-item; }
+
+/* line 1, ../partials/_about.scss */
+.makers {
+  text-align: center;
+  margin-top: 100px;
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%; }
+  /* line 5, ../partials/_about.scss */
+  .makers:nth-child(3n) {
+    margin-right: 0; }
+  /* line 8, ../partials/_about.scss */
+  .makers img {
+    width: 100%;
+    margin-bottom: 10px; }
+  /* line 12, ../partials/_about.scss */
+  .makers h3, .makers h4 {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    margin: 10px auto;
+    font-size: 18px;
+    font-weight: 600; }
+  /* line 18, ../partials/_about.scss */
+  .makers h3 {
+    color: #505054;
+    font-size: 18px; }
+  /* line 22, ../partials/_about.scss */
+  .makers h4 {
+    color: #bdbbb3; }

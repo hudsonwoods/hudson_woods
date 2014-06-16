@@ -1,0 +1,32 @@
+<section id="header-about" class="homeSlide">
+    <div class="bcg"
+        data-center="background-position: 50% 0px;"
+        data-top-bottom="background-position: 50% -300px;"
+        data-anchor-target="#header-availability">
+          {{ theme:partial src="nav1" }}
+        <div class="hsContainer">
+        <div class="parallax-container">
+           <h1>MAKERS</h1>   
+         </div>
+        </div>
+    </div>
+</section>
+
+<section>
+<div class="container">
+
+
+
+        {{ entries:listing folder="about/makers" sort_dir="asc" }}
+
+        <div class="makers">
+        <a target=_blank href="{{ link }}">
+            <img src="{{ image }}" alt="">
+            <h3>{{ title }}</h3>
+            <h4>{{ description }}</h4>
+        
+        </div>
+        {{ /entries:listing }}
+    </div>
+
+</section>

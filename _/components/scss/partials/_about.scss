@@ -1,0 +1,25 @@
+.makers {
+    text-align: center;
+    margin-top: 100px;
+    @include span (4);
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+    img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    h3,h4 {
+        font-family: $base-font-family;
+        margin: 10px auto;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    h3 {
+        color: $dark-gray;
+        font-size: 18px;
+    }
+    h4 {
+        color: $beige;
+    }
+}

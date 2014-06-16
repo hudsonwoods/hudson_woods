@@ -1,0 +1,60 @@
+.upgrades {
+	h3 {
+		font-size: 32px;
+	}
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin: 0 auto;
+	text-align: center;
+	img {
+		width: 100%;
+	}
+	a {
+		display: block;
+	}
+	h3 {
+		margin-top: 30px;
+	}
+	p {
+		text-align: left;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	@include span (4);
+	&:nth-child(3n) {
+		margin-right: 0;
+	}
+}
+
+.upgrade-entry {
+	margin-top: 100px;
+}
+.upgrade-image {
+	img {
+		max-width: 100%;
+	}
+	@include span (5);
+}
+.specs {
+	border-top: 2px solid $dark-gray;
+	border-bottom: 2px solid $dark-gray;
+	padding: 20px 0;
+	@include span (last 5);
+	h3 {
+		margin: 20px 0 10px;
+	}
+	ul {
+		@include span(9);
+		list-style-type: disc;
+		li {
+			font-size: 15px;
+			font-weight: 500;
+			margin-bottom: 10px;
+			line-height: 24px;
+			letter-spacing: 1px;
+			margin-left: 18px;
+			display: list-item;
+
+		}
+	}
+}

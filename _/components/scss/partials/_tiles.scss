@@ -1,0 +1,77 @@
+.area-tiles {
+	background-color: $light-beige;
+	.tile.area {
+		&.stay {
+			border-top: 8px solid $rose;
+		}
+		&.eat {
+			border-top: 8px solid $teal;
+		}
+		&.drink {
+			border-top: 8px solid $pink;
+		}
+		&.golf {
+			border-top: 8px solid $green;
+		}
+		&.swim {
+			border-top: 8px solid $blue;
+		}
+		&.hike {
+			border-top: 8px solid $brown;
+		}
+		&.art {
+			border-top: 8px solid $purple;
+		}
+		&.markets {
+			border-top: 8px solid $yellow;
+		}
+		&.shopping {
+			border-top: 8px solid $lavendar;
+		}
+	}
+}
+
+
+
+.tile {
+	margin-bottom: 40px;
+	#{headings()}, a, span, p {
+		text-align: left;
+		color: $dark-gray !important;
+	}
+	padding: 10px 20px 20px;
+	background-color: #fff;
+	h2 {
+		font-size: 28px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		font-weight: 700;
+	}
+	img {
+		margin-bottom: 10px;
+	}
+	@include span(6);
+	&:nth-child(2n) {
+		@include span (last 6);
+	}
+	&.availability {
+		border-top: 8px solid $dark-gray;
+		.info {
+			@include span(4 of 12);
+			padding: 10px 0 40px;
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+		.link {
+
+			@include span(6 of 12);
+			&:last-of-type {
+				margin-right: 0;
+			}
+			a {
+				font-weight: 600;
+			}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+<section id="header-availability" class="homeSlide">
+    <div class="bcg"
+        data-center="background-position: 50% 0px;"
+        data-top-bottom="background-position: 50% -300px;"
+        data-anchor-target="#header-availability">
+          {{ theme:partial src="nav1" }}
+        <div class="hsContainer">
+        <div class="parallax-container">
+           <h1>In The Area</h1>   
+           <h3>Explore west of the Hudson and get to know the locals</h3>
+         </div>
+        </div>
+    </div>
+</section>
+
+<div id="map-nav-availability"></div>
+<!-- <div id="map"></div> -->
+
+<section class="area-tiles">
+<div class="container">
+    <div class="content">
+
+
+        {{ entries:listing folder="in-the-area" sort_dir="asc" }}
+
+        <div class="tile area {{ activity }}">
+            <h4>{{ activity }}</h4>
+            <h2>{{ title }}</h2>
+            <img src="{{ image }}" alt="">
+            {{ content }}
+        </div>
+        {{ /entries:listing }}
+    </div>
+</div>
+</section>
+
+<script>
+    var map = L.map('map', {
+    center: [41.8817826, -74.3126807],
+    zoom: 15,
+    scrollWheelZoom: false
+});
+
+
+L.tileLayer('https://a.tiles.mapbox.com/v3/philippeio.icka506o/{z}/{x}/{y}.png', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18,
+}).addTo(map);
+</script>

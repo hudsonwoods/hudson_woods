@@ -1,0 +1,61 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+.bundle
+#db/*.sqlite3
+log/*.log
+tmp/**/*
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.sass-cache*
+
+# Adobe generated files #
+######################
+*.psd
+*.ai
+_/assets/**/*
+
+npm-debug.log
+*.sublime-project
+*.sublime-workspace
+
+# Statamic files #
+######################
+/statamic/_cache/*
+/statamic/!_cache/index.html
+/statamic/_logs/*
+/statamic/!_logs/index.html
+/statamic/_content/*
+/statamic/assets/*
+
+# Legacy Site #
+_legacy/**/*
+
+.htaccess
+
+
+

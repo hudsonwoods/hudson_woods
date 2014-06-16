@@ -1,0 +1,51 @@
+<section id="header-availability" class="homeSlide">
+    <div class="bcg"
+        data-center="background-position: 50% 0px;"
+        data-top-bottom="background-position: 50% -300px;"
+        data-anchor-target="#header-availability">
+          {{ theme:partial src="nav1" }}
+        <div class="hsContainer">
+        <div class="parallax-container">
+           <h1>Availability</h1>   
+           <h3>Explore west of the Hudson and get to know the locals</h3>
+         </div>
+        </div>
+    </div>
+</section>
+
+{{ theme:partial src="nav_availability" }}
+
+<section class="area-tiles">
+<div class="container">
+    <div class="content">
+
+  {{ entries:listing folder="availability/lots" sort_dir="asc" }}
+      
+  
+        <div class="tile availability lot">
+            <h2>{{ title }}</h2>
+            <img src="{{ image }}" alt="">
+            {{ content }}
+			<div class="info-row">
+				<div class="info">
+					<p>AVAILABILITY</p>
+					{{ availability }}
+				</div>
+				<div class="info">
+					<p>SIZE</p>
+					{{ size }}
+				</div>
+				<div class="info">
+					<p>COST</p>
+					{{ cost }}
+				</div>
+			</div>
+			<div class="info-links">
+				<div class="link"><a href="{{ floorplans">Floor Plans</a></div>
+				<div class="link"><a href="">Share</a></div>
+			</div>
+        </div>
+	{{ /entries:listing }}
+    </div>
+</div>
+</section>
