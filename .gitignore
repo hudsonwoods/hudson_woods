@@ -51,6 +51,7 @@ npm-debug.log
 /statamic/!_logs/index.html
 /statamic/_content/*
 /statamic/assets/*
+/statamic/_config/users/
 
 # Legacy Site #
 _legacy/**/*

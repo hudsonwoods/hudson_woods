@@ -5,18 +5,17 @@ fields:
   activity:
     display: Activity Type
     type: select
-    required: true
-    width: 20%;
     options:
-      stay: Stay
-      eat: Eat
-      drink: Drink
-      golf: Golf
-      swim: Swim
-      hike: Hike
-      art: Art
-      markets: markets
-      shopping: Shopping
+      - Sleep
+      - Eat
+      - Sip
+      - Swing
+      - Swimholes
+      - Trails
+      - Ski
+      - Culture
+      - Pick &amp; Grow
+      - Mind &amp; Body
 
   image:
     type: file
@@ -27,3 +26,18 @@ fields:
   content:
     type: redactor
     display: Content
+
+  # activity:
+  #   display: Activity Type
+  #   type: select
+  #   options:
+  #     sleep: Sleep
+  #     eat: Eat
+  #     sip: Sip
+  #     swing: Swing
+  #     swimholes: Swimholes
+  #     trails: Trails
+  #     ski: Ski
+  #     culture: Culture
+  #     pick_and_grow: Pick &amp; Grow
+  #     mind_and_body: Mind &amp; Body
