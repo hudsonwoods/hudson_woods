@@ -23,7 +23,7 @@
 
         {{ entries:listing folder="in-the-area" sort_dir="asc" }}
 
-        <div class="tile area {{ activity }}">
+        <div class="tile area {{ activity|lower|slugify }}">
             <h4>{{ activity }}</h4>
             <h2>{{ title }}</h2>
             <img src="{{ image }}" alt="">

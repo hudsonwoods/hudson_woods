@@ -1425,10 +1425,10 @@ nav {
   .area-tiles .tile.area.culture {
     border-top: 8px solid #c9be69; }
   /* line 28, ../partials/_tiles.scss */
-  .area-tiles .tile.area.pick_and_grow {
+  .area-tiles .tile.area.pick-and-grow {
     border-top: 8px solid #3cb878; }
   /* line 31, ../partials/_tiles.scss */
-  .area-tiles .tile.area.mind_and_body {
+  .area-tiles .tile.area.mind-and-body {
     border-top: 8px solid #8393ca; }
 
 /* line 39, ../partials/_tiles.scss */
