@@ -74,42 +74,42 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 
 }).call(this);
 
-var navbarHeight = $('.navbar').height(); 
+var navbarHeight = $('.navbar').height();
 
 $(window).scroll(function() {
   var navbarColor = "214,212,203";//color attr for rgba
   var navbarTextColor ="#fff";
   var smallLogoHeight = $('.small-logo').height();
   var bigLogoHeight = $('.big-logo').height();
-  
-  
+
+
   var smallLogoEndPos = 0;
   var smallSpeed = (smallLogoHeight / bigLogoHeight);
-  
-  var ySmall = ($(window).scrollTop() * smallSpeed); 
-  
+
+  var ySmall = ($(window).scrollTop() * smallSpeed);
+
   var smallPadding = navbarHeight - ySmall;
   if (smallPadding > navbarHeight) { smallPadding = navbarHeight; }
   if (smallPadding < smallLogoEndPos) { smallPadding = smallLogoEndPos; }
   if (smallPadding < 0) { smallPadding = 0; }
-  
+
   $('.small-logo-container ').css({ "padding-top": smallPadding});
-  
-  var navOpacity = ySmall / smallLogoHeight; 
+
+  var navOpacity = ySmall / smallLogoHeight;
   if  (navOpacity > 1) { navOpacity = 1; }
   if (navOpacity < 0 ) { navOpacity = 0; }
   var navBackColor = 'rgba(' + navbarColor + ',' + navOpacity + ')';
   $('.navbar').css({"background-color": navBackColor});
   $('.navbar-inverse .navbar-nav > li > a').css({"color": navbarTextColor});
-  
+
   var shadowOpacity = navOpacity * 0.4;
   if ( ySmall > 1) {
     $('.navbar').css({"box-shadow": "0 2px 3px rgba(0,0,0," + shadowOpacity + ")"});
   } else {
     $('.navbar').css({"box-shadow": "none"});
   }
-  
-  
+
+
 });
 
   /**
@@ -123,68 +123,56 @@ $(window).scroll(function() {
  */
 
 // ( function( $ ) {
-  
+
 //   // Setup variables
 //   $window = $(window);
 //   $slide = $('.homeSlide');
 //   $body = $('body');
-  
-//     //FadeIn all sections   
+
+//     //FadeIn all sections
 //   $body.imagesLoaded( function() {
 //     setTimeout(function() {
-          
+
 //           // Resize sections
 //           adjustWindow();
-          
+
 //           // Fade in sections
 //         $body.removeClass('loading').addClass('loaded');
-        
+
 //     }, 800);
 //   });
-  
+
 //   function adjustWindow(){
-    
+
 //     // Init Skrollr
 
 //     var s = skrollr.init({
 //     forceHeight: false
 //     });
 
-     
+
 //     // Refresh Skrollr after resizing our sections
 //     s.refresh($('.homeSlide'));
-    
+
 //     // Get window size
 //       winH = $window.height();
-      
+
 //       // Keep minimum height 550
 //       if(winH <= 550) {
 //       winH = 550;
-//     } 
-      
+//     }
+
 //       // Resize our slides
 //       // $slide.height(winH);
-      
+
 //       // Refresh Skrollr after resizing our sections
 //       s.refresh($('.homeSlide'));
-      
+
 //   }
-    
+
 // } )( jQuery );
 
-// Leaflet
 
-var map = L.map('map', {
-    center: [41.8817826, -74.3126807],
-    zoom: 15,
-    scrollWheelZoom: false
-});
-
-
-L.tileLayer('https://a.tiles.mapbox.com/v3/philippeio.icka506o/{z}/{x}/{y}.png', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    maxZoom: 18,
-}).addTo(map);
 
 
 // Slick Carousels
@@ -195,17 +183,21 @@ $('.single-item').slick({
 
 
 
-$(document).ready(function() {
-    $('.nav-sticky').waypoint('sticky', {
-    offset: -60 // Apply "stuck" when element 30px from top
-  });
-});
+// $(document).ready(function() {
+//     $('.nav-sticky').waypoint('sticky', {
+//     offset: -60 // Apply "stuck" when element 30px from top
+//   });
+// });
 
 $(document).ready(function() {
     $('#secondary-nav').waypoint('sticky', {
     offset: 48 // Apply "stuck" when element 30px from top
   });
 });
+
+$('.navbar').waypoint(function() {
+  $(this).toggleClass('transparent');
+}, { offset: -100 });
 
 /* ========================================================================
  * Bootstrap: scrollspy.js v3.1.1

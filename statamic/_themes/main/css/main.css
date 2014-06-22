@@ -1053,47 +1053,59 @@ main {
 nav {
   width: 100%;
   z-index: 100; }
-  /* line 5, ../partials/_nav1.scss */
-  nav.navbar.stuck, nav.navbar.unsticky {
+  /* line 4, ../partials/_nav1.scss */
+  nav.navbar {
+    position: fixed;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     background-color: #bdbbb3; }
-    /* line 8, ../partials/_nav1.scss */
-    nav.navbar.stuck ul li a, nav.navbar.unsticky ul li a {
+    /* line 9, ../partials/_nav1.scss */
+    nav.navbar.transparent {
+      padding-top: 15px;
+      background-color: transparent; }
+      /* line 11, ../partials/_nav1.scss */
+      nav.navbar.transparent ul li a {
+        color: white; }
+        /* line 13, ../partials/_nav1.scss */
+        nav.navbar.transparent ul li a.current {
+          color: white;
+          font-weight: 400; }
+    /* line 20, ../partials/_nav1.scss */
+    nav.navbar ul li a {
       color: #6e736c; }
-      /* line 10, ../partials/_nav1.scss */
-      nav.navbar.stuck ul li a.current, nav.navbar.unsticky ul li a.current {
+      /* line 22, ../partials/_nav1.scss */
+      nav.navbar ul li a.current {
         color: #555953;
         font-weight: 600; }
-  /* line 17, ../partials/_nav1.scss */
-  nav.navbar ul {
-    width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
-  /* line 21, ../partials/_nav1.scss */
-  nav.navbar li {
-    display: inline-block; }
-    /* line 23, ../partials/_nav1.scss */
-    nav.navbar li:first-of-type {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-      flex: 1 1 auto; }
-    /* line 26, ../partials/_nav1.scss */
-    nav.navbar li a {
-      display: inline-block;
-      padding: 15px;
-      height: 100%;
+    /* line 28, ../partials/_nav1.scss */
+    nav.navbar ul {
       width: 100%;
-      font-size: 18px;
-      color: white; }
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+    /* line 32, ../partials/_nav1.scss */
+    nav.navbar li {
+      display: inline-block; }
+      /* line 34, ../partials/_nav1.scss */
+      nav.navbar li:first-of-type {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto; }
+      /* line 37, ../partials/_nav1.scss */
+      nav.navbar li a {
+        display: inline-block;
+        padding: 15px;
+        height: 100%;
+        width: 100%;
+        font-size: 18px;
+        color: white; }
 
-/* line 38, ../partials/_nav1.scss */
+/* line 49, ../partials/_nav1.scss */
 #secondary-nav {
   background-color: #505054; }
-  /* line 39, ../partials/_nav1.scss */
+  /* line 50, ../partials/_nav1.scss */
   #secondary-nav ul {
     width: 100%;
     display: -webkit-box;
@@ -1108,18 +1120,18 @@ nav {
     width: 66.10169%;
     float: left;
     margin-right: 1.69492%; }
-  /* line 46, ../partials/_nav1.scss */
+  /* line 57, ../partials/_nav1.scss */
   #secondary-nav li {
     display: inline-block;
     -webkit-transition: 0.35s;
     transition: 0.35s; }
-    /* line 49, ../partials/_nav1.scss */
+    /* line 60, ../partials/_nav1.scss */
     #secondary-nav li.active {
       border-bottom: 2px solid white; }
-      /* line 51, ../partials/_nav1.scss */
+      /* line 62, ../partials/_nav1.scss */
       #secondary-nav li.active a {
         color: white; }
-    /* line 55, ../partials/_nav1.scss */
+    /* line 66, ../partials/_nav1.scss */
     #secondary-nav li a {
       display: inline-block;
       padding: 10px 0;
@@ -1127,7 +1139,7 @@ nav {
       width: 100%;
       font-size: 18px;
       color: #cccabf; }
-  /* line 65, ../partials/_nav1.scss */
+  /* line 76, ../partials/_nav1.scss */
   #secondary-nav.stuck {
     top: 48px; }
 
