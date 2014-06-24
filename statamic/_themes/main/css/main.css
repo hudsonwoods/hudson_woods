@@ -817,11 +817,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 22, ../partials/_base.scss */
 html, body, a, span, p {
   color: #6e736c;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+  font-family: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
 /* line 27, ../partials/_base.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif; }
+  font-family: "adelle", Georgia, Cambria, "Times New Roman", Times, serif; }
 
 /* line 67, ../partials/_base.scss */
 .stuck {
@@ -838,33 +838,45 @@ ul {
   ul li {
     display: inline-block; }
 
-/* line 82, ../partials/_base.scss */
-p {
-  font-size: 15px;
-  font-weight: 500;
-  margin-bottom: 10px;
-  line-height: 24px;
-  letter-spacing: 1px; }
-  /* line 91, ../partials/_base.scss */
-  p:last-of-type {
-    margin-bottom: 0; }
-
-/* line 95, ../partials/_base.scss */
+/* line 83, ../partials/_base.scss */
 a {
   text-decoration: none; }
-  /* line 97, ../partials/_base.scss */
+  /* line 85, ../partials/_base.scss */
   a:hover {
     text-decoration: none; }
 
-/* line 102, ../partials/_base.scss */
+/* line 90, ../partials/_base.scss */
+h1, h2, h3, h4 {
+  font-family: "adelle", Georgia, Cambria, "Times New Roman", Times, serif; }
+
+/* line 93, ../partials/_base.scss */
 h1 {
-  font-size: 64px; }
+  font-size: 67px; }
 
-/* line 106, ../partials/_base.scss */
+/* line 97, ../partials/_base.scss */
 h2 {
-  font-size: 54px; }
+  font-size: 42px; }
 
-/* line 110, ../partials/_base.scss */
+/* line 100, ../partials/_base.scss */
+h3 {
+  font-size: 26px; }
+
+/* line 104, ../partials/_base.scss */
+body, p, a, span {
+  font-size: 16px;
+  font-family: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+
+/* line 109, ../partials/_base.scss */
+p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 24px; }
+  /* line 117, ../partials/_base.scss */
+  p:last-of-type {
+    margin-bottom: 0; }
+
+/* line 122, ../partials/_base.scss */
 .hero-parallax {
   position: relative;
   height: 500px;
@@ -974,24 +986,46 @@ img {
       color: #9a9d98;
       padding-bottom: 60px; }
 
+/* line 73, ../partials/_layout.scss */
+.hero {
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+  width: 100%; }
+
+/* line 81, ../partials/_layout.scss */
+.container.hero-text {
+  height: 100%;
+  width: 100%; }
+  /* line 84, ../partials/_layout.scss */
+  .container.hero-text h1, .container.hero-text h2, .container.hero-text h3, .container.hero-text h4 {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    color: white; }
+
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
-/* line 85, ../partials/_layout.scss */
+/* line 102, ../partials/_layout.scss */
 img {
   vertical-align: middle; }
 
 /*
  * Allow only vertical resizing of textareas.
  */
-/* line 94, ../partials/_layout.scss */
+/* line 111, ../partials/_layout.scss */
 textarea {
   resize: vertical; }
 
 /* ==========================================================================
    Chrome Frame prompt
    ========================================================================== */
-/* line 102, ../partials/_layout.scss */
+/* line 119, ../partials/_layout.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -1001,42 +1035,33 @@ textarea {
 /* ==========================================================================
    Parallax Scroll
    ========================================================================== */
-/* line 113, ../partials/_layout.scss */
+/* line 130, ../partials/_layout.scss */
 .no-js {
   padding-top: 106px; }
 
-/* line 117, ../partials/_layout.scss */
+/* line 134, ../partials/_layout.scss */
 .loading {
   background: url("../img/ico_loading.gif") no-repeat center center; }
 
-/* line 124, ../partials/_layout.scss */
+/* line 141, ../partials/_layout.scss */
 .loaded section,
 .no-js section {
   opacity: 1;
   -webkit-transition: opacity 300ms ease-out;
   transition: opacity 300ms ease-out; }
 
-/* line 131, ../partials/_layout.scss */
+/* line 148, ../partials/_layout.scss */
 main {
   overflow-x: hidden; }
 
-/* line 135, ../partials/_layout.scss */
-.bcg {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 600px;
-  width: 100%; }
-
-/* line 144, ../partials/_layout.scss */
+/* line 154, ../partials/_layout.scss */
 .hsContainer {
   width: 100%;
   height: 600px;
   overflow: hidden;
   position: relative; }
 
-/* line 151, ../partials/_layout.scss */
+/* line 161, ../partials/_layout.scss */
 .hsContainer .parallax-container {
   color: #fff;
   position: relative;
@@ -1045,67 +1070,169 @@ main {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   text-align: center; }
-  /* line 155, ../partials/_layout.scss */
+  /* line 165, ../partials/_layout.scss */
   .hsContainer .parallax-container h1, .hsContainer .parallax-container h2, .hsContainer .parallax-container h3, .hsContainer .parallax-container h4, .hsContainer .parallax-container h5, .hsContainer .parallax-container h6, .hsContainer .parallax-container a, .hsContainer .parallax-container span, .hsContainer .parallax-container p {
     color: #fff; }
+
+/* line 2, ../partials/_landing.scss */
+#header-landing h3 {
+  font-family: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  margin-top: 20px; }
+/* line 6, ../partials/_landing.scss */
+#header-landing .slick-carousel {
+  position: relative; }
+  /* line 8, ../partials/_landing.scss */
+  #header-landing .slick-carousel .slick-next, #header-landing .slick-carousel .slick-prev {
+    display: none !important; }
+
+/* line 18, ../partials/_landing.scss */
+button {
+  z-index: 1; }
+
+/* line 21, ../partials/_landing.scss */
+.container.scrollme {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: left;
+  color: white; }
+
+/* Dots */
+/* line 33, ../partials/_landing.scss */
+.slick-slider {
+  margin-bottom: 30px; }
+
+/* line 36, ../partials/_landing.scss */
+.slick-dots {
+  bottom: 45px; }
+  /* line 38, ../partials/_landing.scss */
+  .slick-dots li {
+    margin: 0px 10px; }
+    /* line 40, ../partials/_landing.scss */
+    .slick-dots li button {
+      height: 18px;
+      width: 20px; }
+      /* line 43, ../partials/_landing.scss */
+      .slick-dots li button:before {
+        font-size: 16px;
+        color: white;
+        opacity: 0.75; }
+    /* line 49, ../partials/_landing.scss */
+    .slick-dots li.slick-active button {
+      border: 1px solid white;
+      border-radius: 50%;
+      height: 15px;
+      width: 15px; }
+      /* line 54, ../partials/_landing.scss */
+      .slick-dots li.slick-active button:before {
+        color: transparent;
+        opacity: .85; }
+
+/* line 62, ../partials/_landing.scss */
+#landing-tiles {
+  padding: 100px 0;
+  text-align: center; }
+  /* line 65, ../partials/_landing.scss */
+  #landing-tiles p.landingParagraph {
+    margin-left: 16.94915%;
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 100px; }
+  /* line 72, ../partials/_landing.scss */
+  #landing-tiles .landing-tile {
+    padding-left: 15px;
+    padding-left: 0.53571rem;
+    padding-right: 15px;
+    padding-right: 0.53571rem;
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%; }
+    /* line 75, ../partials/_landing.scss */
+    #landing-tiles .landing-tile:nth-child(3n) {
+      width: 32.20339%;
+      float: right;
+      margin-right: 0; }
+    /* line 78, ../partials/_landing.scss */
+    #landing-tiles .landing-tile img {
+      max-width: 100%;
+      height: 200px; }
+    /* line 82, ../partials/_landing.scss */
+    #landing-tiles .landing-tile h3 {
+      margin-top: 20px; }
+    /* line 85, ../partials/_landing.scss */
+    #landing-tiles .landing-tile p {
+      height: 100px;
+      margin-top: 20px; }
+    /* line 89, ../partials/_landing.scss */
+    #landing-tiles .landing-tile a {
+      color: #484c47;
+      font-weight: 600; }
 
 /* line 1, ../partials/_nav1.scss */
 nav {
   width: 100%;
-  z-index: 100; }
+  z-index: 1001; }
   /* line 4, ../partials/_nav1.scss */
   nav.navbar {
     position: fixed;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
     background-color: #bdbbb3; }
-    /* line 9, ../partials/_nav1.scss */
+    /* line 10, ../partials/_nav1.scss */
     nav.navbar.transparent {
       padding-top: 15px;
       background-color: transparent; }
-      /* line 11, ../partials/_nav1.scss */
+      /* line 12, ../partials/_nav1.scss */
       nav.navbar.transparent ul li a {
         color: white; }
-        /* line 13, ../partials/_nav1.scss */
+        /* line 14, ../partials/_nav1.scss */
         nav.navbar.transparent ul li a.current {
           color: white;
           font-weight: 400; }
-    /* line 20, ../partials/_nav1.scss */
+    /* line 21, ../partials/_nav1.scss */
     nav.navbar ul li a {
+      text-transform: uppercase;
+      font-size: 15px;
       color: #6e736c; }
-      /* line 22, ../partials/_nav1.scss */
+      /* line 25, ../partials/_nav1.scss */
       nav.navbar ul li a.current {
         color: #555953;
         font-weight: 600; }
-    /* line 28, ../partials/_nav1.scss */
+    /* line 31, ../partials/_nav1.scss */
     nav.navbar ul {
       width: 100%;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; }
-    /* line 32, ../partials/_nav1.scss */
+    /* line 35, ../partials/_nav1.scss */
     nav.navbar li {
       display: inline-block; }
-      /* line 34, ../partials/_nav1.scss */
+      /* line 37, ../partials/_nav1.scss */
       nav.navbar li:first-of-type {
         -webkit-box-flex: 1;
         -webkit-flex: 1 1 auto;
         -ms-flex: 1 1 auto;
         flex: 1 1 auto; }
-      /* line 37, ../partials/_nav1.scss */
+      /* line 40, ../partials/_nav1.scss */
       nav.navbar li a {
         display: inline-block;
-        padding: 15px;
+        padding: 22px 15px;
         height: 100%;
         width: 100%;
         font-size: 18px;
         color: white; }
 
-/* line 49, ../partials/_nav1.scss */
+/* line 52, ../partials/_nav1.scss */
 #secondary-nav {
+  height: 60px;
   background-color: #505054; }
-  /* line 50, ../partials/_nav1.scss */
+  /* line 54, ../partials/_nav1.scss */
   #secondary-nav ul {
     width: 100%;
     display: -webkit-box;
@@ -1120,28 +1247,38 @@ nav {
     width: 66.10169%;
     float: left;
     margin-right: 1.69492%; }
-  /* line 57, ../partials/_nav1.scss */
+  /* line 61, ../partials/_nav1.scss */
   #secondary-nav li {
     display: inline-block;
     -webkit-transition: 0.35s;
     transition: 0.35s; }
-    /* line 60, ../partials/_nav1.scss */
+    /* line 64, ../partials/_nav1.scss */
     #secondary-nav li.active {
-      border-bottom: 2px solid white; }
-      /* line 62, ../partials/_nav1.scss */
+      border-bottom: 4px solid white; }
+      /* line 66, ../partials/_nav1.scss */
       #secondary-nav li.active a {
+        font-weight: 600;
         color: white; }
-    /* line 66, ../partials/_nav1.scss */
+    /* line 71, ../partials/_nav1.scss */
     #secondary-nav li a {
+      text-transform: uppercase;
+      color: #cccccc;
+      font-size: 16px;
+      line-height: 24px;
       display: inline-block;
-      padding: 10px 0;
+      padding: 20px 0 12px;
       height: 100%;
-      width: 100%;
-      font-size: 18px;
-      color: #cccabf; }
-  /* line 76, ../partials/_nav1.scss */
+      width: 100%; }
+  /* line 83, ../partials/_nav1.scss */
   #secondary-nav.stuck {
-    top: 48px; }
+    top: 59px; }
+
+/* line 88, ../partials/_nav1.scss */
+.anchor {
+  display: block;
+  position: relative;
+  top: -120px;
+  visibility: hidden; }
 
 /* line 17, ../partials/_homes.scss */
 #intro {
@@ -1330,104 +1467,104 @@ nav {
   padding: 100px 0; }
 
 /* line 227, ../partials/_homes.scss */
-#header-homes .bcg {
+#header-homes {
   background-image: url("../img/Smartdes-Section-image-2000x1500.jpg"); }
 
-/* line 230, ../partials/_homes.scss */
-#nature-living .bcg {
+/* line 231, ../partials/_homes.scss */
+#nature-living {
   background-image: url("../img/New_DesignNature-Living.jpg"); }
 
-/* line 234, ../partials/_homes.scss */
-#kitchen .bcg {
+/* line 235, ../partials/_homes.scss */
+#kitchen {
   background-image: url("../img/New_DesignNature-Kitchen.jpg"); }
 
-/* line 238, ../partials/_homes.scss */
-#bathroom .bcg {
+/* line 239, ../partials/_homes.scss */
+#bathroom {
   background-image: url("../img/DesignNature-Bathroom.jpg"); }
 
-/* line 242, ../partials/_homes.scss */
-#header-upgrades .bcg {
+/* line 243, ../partials/_homes.scss */
+#header-upgrades {
   background-image: url("../img/DesignNature-Bathroom.jpg"); }
 
-/* line 246, ../partials/_homes.scss */
-#header-about .bcg {
+/* line 247, ../partials/_homes.scss */
+#header-about {
   background-image: url("../img/Smartdes-Section-image-2000x1500.jpg"); }
 
-/* line 251, ../partials/_homes.scss */
+/* line 252, ../partials/_homes.scss */
 #floor-plans .content {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0; }
-  /* line 253, ../partials/_homes.scss */
+  /* line 254, ../partials/_homes.scss */
   #floor-plans .content .details {
     width: 23.72881%;
     float: left;
     margin-right: 1.69492%; }
-  /* line 256, ../partials/_homes.scss */
+  /* line 257, ../partials/_homes.scss */
   #floor-plans .content img {
     margin-left: 8.47458%;
     width: 66.10169%;
     float: right;
     margin-right: 0; }
-  /* line 260, ../partials/_homes.scss */
+  /* line 261, ../partials/_homes.scss */
   #floor-plans .content h3, #floor-plans .content h4 {
     text-align: center; }
-  /* line 263, ../partials/_homes.scss */
+  /* line 264, ../partials/_homes.scss */
   #floor-plans .content h3 {
     font-size: 50px;
     border-top: 1px solid #6e736c;
     padding-top: 20px; }
-  /* line 268, ../partials/_homes.scss */
+  /* line 269, ../partials/_homes.scss */
   #floor-plans .content h4 {
     font-size: 20px;
     padding-bottom: 40px; }
 
-/* line 274, ../partials/_homes.scss */
+/* line 275, ../partials/_homes.scss */
 #materials {
   text-align: center; }
-  /* line 276, ../partials/_homes.scss */
+  /* line 277, ../partials/_homes.scss */
   #materials h2:last-of-type {
     color: #9a9d98; }
 
-/* line 281, ../partials/_homes.scss */
+/* line 282, ../partials/_homes.scss */
 #finishes {
   background-color: #cccabf; }
-  /* line 283, ../partials/_homes.scss */
+  /* line 284, ../partials/_homes.scss */
   #finishes .content {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0; }
-  /* line 287, ../partials/_homes.scss */
+  /* line 288, ../partials/_homes.scss */
   #finishes li {
     font-size: 18px;
     margin-bottom: 18px; }
-  /* line 291, ../partials/_homes.scss */
+  /* line 292, ../partials/_homes.scss */
   #finishes .finish-list {
     margin-left: 16.94915%;
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%; }
-  /* line 295, ../partials/_homes.scss */
+  /* line 296, ../partials/_homes.scss */
   #finishes .premium-equipment {
     margin-left: 8.47458%;
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%; }
 
-/* line 302, ../partials/_homes.scss */
+/* line 303, ../partials/_homes.scss */
 #a-la-carte ul {
   margin-top: 60px;
   width: 49.15254%;
   float: left;
   margin-right: 1.69492%; }
-  /* line 305, ../partials/_homes.scss */
+  /* line 306, ../partials/_homes.scss */
   #a-la-carte ul:last-of-type {
     width: 49.15254%;
     float: right;
     margin-right: 0; }
-/* line 309, ../partials/_homes.scss */
+/* line 310, ../partials/_homes.scss */
 #a-la-carte li {
   font-size: 18px;
   margin-bottom: 18px; }
@@ -1458,13 +1595,13 @@ nav {
     border-top: 8px solid #3cb878; }
   /* line 16, ../partials/_tiles.scss */
   .area-tiles .tile.area.swimholes {
-    border-top: 8px solid #6eb7cd; }
+    border-top: 8px solid #00aeef; }
   /* line 19, ../partials/_tiles.scss */
   .area-tiles .tile.area.trails {
     border-top: 8px solid #736357; }
   /* line 22, ../partials/_tiles.scss */
   .area-tiles .tile.area.ski {
-    border-top: 8px solid #6eb7cd; }
+    border-top: 8px solid #00aeef; }
   /* line 25, ../partials/_tiles.scss */
   .area-tiles .tile.area.culture {
     border-top: 8px solid #c9be69; }
@@ -1611,7 +1748,7 @@ nav {
     margin-bottom: 10px; }
   /* line 12, ../partials/_about.scss */
   .makers h3, .makers h4 {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     margin: 10px auto;
     font-size: 18px;
     font-weight: 600; }

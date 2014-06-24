@@ -39,7 +39,7 @@ html, body, a, span, p {
 // .page-wrap {
 //   min-height: 100%;
 //   /* equal to footer height */
-//   margin-bottom: -142px; 
+//   margin-bottom: -142px;
 // }
 
 // .page-wrap:after {
@@ -48,7 +48,7 @@ html, body, a, span, p {
 // }
 // #footer, .page-wrap:after {
 //   /* .push must be the same height as footer */
-//   height: 100px; 
+//   height: 100px;
 // }
 
 // #footer {
@@ -79,19 +79,7 @@ ul {
 	}
 }
 
-p {
-	font-size: 15px;
-	font-weight: 500;
-	margin-bottom: 10px;
-	line-height: 24px;
-	letter-spacing: 1px;
-	&:first-of-type {
 
-	}
-	&:last-of-type {
-		margin-bottom: 0;
-	}
-}
 a {
 	text-decoration: none;
 	&:hover {
@@ -99,12 +87,36 @@ a {
 	}
 }
 
+h1,h2,h3,h4 {
+	font-family: $headline-font;
+}
 h1 {
-	font-size: 64px;
+	font-size: 67px;
 }
 
 h2 {
-	font-size: 54px;
+	font-size: 42px;
+}
+h3 {
+	font-size: 26px;
+}
+
+body, p, a, span {
+	font-size: 16px;
+	font-family: $base-font-family;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	line-height: 24px;
+	&:first-of-type {
+
+	}
+	&:last-of-type {
+		margin-bottom: 0;
+	}
 }
 
 .hero-parallax {

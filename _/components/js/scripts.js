@@ -175,14 +175,6 @@ $(window).scroll(function() {
 
 
 
-// Slick Carousels
-
-$('.single-item').slick({
-  dots: true
-});
-
-
-
 // $(document).ready(function() {
 //     $('.nav-sticky').waypoint('sticky', {
 //     offset: -60 // Apply "stuck" when element 30px from top
@@ -191,13 +183,13 @@ $('.single-item').slick({
 
 $(document).ready(function() {
     $('#secondary-nav').waypoint('sticky', {
-    offset: 48 // Apply "stuck" when element 30px from top
+    offset: 60 // Apply "stuck" when element 30px from top
   });
 });
 
 $('.navbar').waypoint(function() {
   $(this).toggleClass('transparent');
-}, { offset: -100 });
+}, { offset: -60 });
 
 /* ========================================================================
  * Bootstrap: scrollspy.js v3.1.1
@@ -354,4 +346,4 @@ $('.navbar').waypoint(function() {
 }(jQuery);
 
 
-$('body').scrollspy({ target: '#secondary-nav-list', offset: 86 })
+$('body').scrollspy({ target: '#secondary-nav-list', offset: 120 })

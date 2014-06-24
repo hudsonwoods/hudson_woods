@@ -66,11 +66,28 @@ img {
 				color: $light-font-color;
 				padding-bottom: 60px;
 			}
-		}	
+		}
 	}
 }
 
+.hero {
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
 
+.container.hero-text {
+  height: 100%;
+  width: 100%;
+  h1,h2,h3,h4 {
+    @include vertical-align;
+    text-align: center;
+    color: white;
+  }
+
+}
 
 // .content h2 {
 // 	@include pre(1);
@@ -132,14 +149,7 @@ main {
 	overflow-x: hidden;
 }
 
-.bcg {
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	height: 600px;
-	width: 100%;
-}
+
 
 .hsContainer {
 	width: 100%;

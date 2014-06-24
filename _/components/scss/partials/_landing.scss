@@ -1,0 +1,94 @@
+#header-landing {
+h3 {
+  font-family: $base-font-family;
+  margin-top: 20px;
+}
+  .slick-carousel {
+    position: relative;
+.slick-next, .slick-prev {
+  display: none !important;
+}
+  }
+}
+
+.hero.landing {
+
+
+}
+button {
+  z-index: 1;
+}
+.container.scrollme {
+  @include vertical-align;
+  text-align: left;
+  color: white;
+  h1,h3 {
+    // @include span
+  }
+}
+
+
+/* Dots */
+
+.slick-slider {
+    margin-bottom: 30px;
+}
+.slick-dots {
+    bottom: 45px;
+    li {
+        margin: 0px 10px;
+        button {
+            height: 18px;
+            width: 20px;
+            &:before {
+                font-size: 16px;
+                color: white;
+                opacity: 0.75;
+            }
+        }
+        &.slick-active button {
+          border: 1px solid white;
+          border-radius: 50%;
+          height: 15px;
+          width: 15px;
+          &:before {
+            color: transparent;
+            opacity: .85;
+          }
+        }
+    }
+}
+
+#landing-tiles {
+  padding: 100px 0;
+  text-align: center;
+  p.landingParagraph {
+    @include pre(2);
+    @include span(8);
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+  .landing-tile {
+    @include gutters(30px inside);
+    @include span(4);
+    &:nth-child(3n) {
+      @include span (last 4);
+    }
+    img {
+      max-width: 100%;
+      height: 200px;
+    }
+    h3 {
+      margin-top: 20px;;
+    }
+    p {
+      height: 100px;
+      margin-top: 20px;;
+    }
+    a {
+      color: darken($base-font-color, 15%);
+      font-weight: 600;
+    }
+  }
+}

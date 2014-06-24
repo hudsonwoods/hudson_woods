@@ -47,7 +47,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('scripts', function() {
-  return gulp.src(['_/components/js/slick.js','_/components/js/waypoints.js','_/components/js/leaflet.js','_/components/js/scripts.js' ])
+  return gulp.src(['_/components/js/slick.js','_/components/js/waypoints.js','_/components/js/leaflet.js','_/components/js/jquery.scrollme.js','_/components/js/scripts.js' ])
     // .pipe(jshint())
     // .pipe(jshint.reporter('default'))
     .pipe(concat('main.js'))
@@ -88,8 +88,3 @@ gulp.task('watch', function() {
 gulp.task('default', ['watch'], function() {
     gulp.start('compass', 'styles', 'scripts');
 });
-
-
-
-
-
