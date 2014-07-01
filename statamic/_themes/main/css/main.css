@@ -1136,12 +1136,12 @@ img {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
+  height: 700px;
   width: 100%;
   margin-bottom: -40px; }
   /* line 80, ../partials/_layout.scss */
   .hero.full {
-    height: 800px;
+    height: 700px;
     margin-bottom: 0; }
 
 /* line 86, ../partials/_layout.scss */
