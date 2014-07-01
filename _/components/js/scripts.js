@@ -176,9 +176,9 @@ $(window).scroll(function() {
 
 
 
-    $('.navbar.sticky').waypoint('sticky', {
-    offset: -81 // Apply "stuck" when element 30px from top
-    });
+    // $('.navbar.sticky').waypoint('sticky', {
+    // offset: -81 // Apply "stuck" when element 30px from top
+    // });
 
 
 $(document).ready(function() {
@@ -187,9 +187,9 @@ $(document).ready(function() {
   });
 });
 
-// $('.navbar').waypoint(function() {
-//   $(this).toggleClass('transparent');
-// }, { offset: -81 });
+$('.sticky-wrapper').waypoint(function() {
+  $(this).find('.navbar').toggleClass('stuck');
+}, { offset: -81 });
 
 /* ========================================================================
  * Bootstrap: scrollspy.js v3.1.1
@@ -350,26 +350,59 @@ $('body').scrollspy({ target: '#secondary-nav-list', offset: 125 })
 
 // Upgrades content filtering
 
-$('#all').click(function(){
+$('#upgrades-nav #all').click(function(event){
     $('.all').show(200);
+    event.preventDefault();
+    return false;
 });
 
-$('#house').click(function(){
+$('#upgrades-nav #house').click(function(event){
     $('.all').hide(200);
     $('.house').show(200);
+    event.preventDefault();
+    return false;
 });
 
-$('#site').click(function(){
+$('#upgrades-nav #site').click(function(event){
     $('.all').hide(200);
     $('.site').show(200);
+    event.preventDefault();
+    return false;
 });
 
-$('#land').click(function(){
+$('#upgrades-nav #land').click(function(event){
     $('.all').hide(200);
     $('.land').show(200);
+    event.preventDefault();
+    return false;
 });
 
-$('#equipment').click(function(){
+$('#upgrades-nav #equipment').click(function(event){
     $('.all').hide(200);
     $('.equipment').show(200);
+    event.preventDefault();
+    return false;
 });
+
+// Upgrades slideshow code
+
+//randomize landing page slideshow
+$("#slideshow .slideshow-image").sort(function(){
+    return Math.random()*10 > 5 ? 1 : -1;
+}).each(function(){
+    var $t = $(this),
+        color = $t.attr("class");
+    $t.css({}).appendTo( $t.parent() );
+});
+
+// slideshow code
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow > div:first')
+    .fadeOut(2000)
+    .next()
+    .fadeIn(2000)
+    .end()
+    .appendTo('#slideshow');
+},  3500);

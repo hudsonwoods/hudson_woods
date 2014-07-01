@@ -1225,26 +1225,23 @@ main {
     color: #fff; }
 
 /* line 2, ../partials/_landing.scss */
-#header-landing h3 {
+#header-landing h3, #header-upgrades h3 {
   font-family: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   margin-top: 20px; }
 /* line 6, ../partials/_landing.scss */
-#header-landing .slick-carousel {
+#header-landing .slick-carousel, #header-upgrades .slick-carousel {
   position: relative; }
-  /* line 8, ../partials/_landing.scss */
-  #header-landing .slick-carousel .slick-next, #header-landing .slick-carousel .slick-prev {
-    display: none !important; }
 
-/* line 14, ../partials/_landing.scss */
+/* line 11, ../partials/_landing.scss */
 .hero.landing {
   height: 800px;
   margin-bottom: 0; }
 
-/* line 18, ../partials/_landing.scss */
+/* line 15, ../partials/_landing.scss */
 button {
   z-index: 1; }
 
-/* line 21, ../partials/_landing.scss */
+/* line 18, ../partials/_landing.scss */
 .container.scrollme {
   position: relative;
   top: 50%;
@@ -1255,41 +1252,41 @@ button {
   color: white; }
 
 /* Dots */
-/* line 33, ../partials/_landing.scss */
+/* line 31, ../partials/_landing.scss */
 .slick-slider {
   margin-bottom: 30px; }
 
-/* line 36, ../partials/_landing.scss */
+/* line 34, ../partials/_landing.scss */
 .slick-dots {
   bottom: 45px; }
-  /* line 38, ../partials/_landing.scss */
+  /* line 36, ../partials/_landing.scss */
   .slick-dots li {
     margin: 0px 10px; }
-    /* line 40, ../partials/_landing.scss */
+    /* line 38, ../partials/_landing.scss */
     .slick-dots li button {
       height: 18px;
       width: 20px; }
-      /* line 43, ../partials/_landing.scss */
+      /* line 41, ../partials/_landing.scss */
       .slick-dots li button:before {
         font-size: 16px;
         color: white;
         opacity: 0.75; }
-    /* line 49, ../partials/_landing.scss */
+    /* line 47, ../partials/_landing.scss */
     .slick-dots li.slick-active button {
       border: 1px solid white;
       border-radius: 50%;
       height: 15px;
       width: 15px; }
-      /* line 54, ../partials/_landing.scss */
+      /* line 52, ../partials/_landing.scss */
       .slick-dots li.slick-active button:before {
         color: transparent;
         opacity: .85; }
 
-/* line 62, ../partials/_landing.scss */
+/* line 60, ../partials/_landing.scss */
 #landing-tiles {
   padding: 100px 0;
   text-align: center; }
-  /* line 65, ../partials/_landing.scss */
+  /* line 63, ../partials/_landing.scss */
   #landing-tiles p.landingParagraph {
     margin-left: 16.94915%;
     width: 66.10169%;
@@ -1298,7 +1295,7 @@ button {
     font-size: 18px;
     margin-top: 20px;
     margin-bottom: 100px; }
-  /* line 72, ../partials/_landing.scss */
+  /* line 70, ../partials/_landing.scss */
   #landing-tiles .landing-tile {
     padding-left: 15px;
     padding-left: 0.53571rem;
@@ -1307,23 +1304,23 @@ button {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%; }
-    /* line 75, ../partials/_landing.scss */
+    /* line 73, ../partials/_landing.scss */
     #landing-tiles .landing-tile:nth-child(3n) {
       width: 32.20339%;
       float: right;
       margin-right: 0; }
-    /* line 78, ../partials/_landing.scss */
+    /* line 76, ../partials/_landing.scss */
     #landing-tiles .landing-tile img {
       max-width: 100%;
       height: 200px; }
-    /* line 82, ../partials/_landing.scss */
+    /* line 80, ../partials/_landing.scss */
     #landing-tiles .landing-tile h3 {
       margin-top: 20px; }
-    /* line 85, ../partials/_landing.scss */
+    /* line 83, ../partials/_landing.scss */
     #landing-tiles .landing-tile p {
       height: 100px;
       margin-top: 20px; }
-    /* line 89, ../partials/_landing.scss */
+    /* line 87, ../partials/_landing.scss */
     #landing-tiles .landing-tile a {
       color: #484c47;
       font-weight: 600; }
@@ -1434,7 +1431,7 @@ nav {
   #secondary-nav.stuck {
     top: 81px; }
 
-/* line 93, ../partials/_nav1.scss */
+/* line 96, ../partials/_nav1.scss */
 .anchor {
   display: block;
   position: relative;
@@ -1643,10 +1640,6 @@ nav {
 
 /* line 238, ../partials/_homes.scss */
 #bathroom {
-  background-image: url("../img/DesignNature-Bathroom.jpg"); }
-
-/* line 242, ../partials/_homes.scss */
-#header-upgrades {
   background-image: url("../img/DesignNature-Bathroom.jpg"); }
 
 /* line 246, ../partials/_homes.scss */
@@ -1860,7 +1853,28 @@ nav {
       .tile.availability .link a {
         font-weight: 600; }
 
-/* line 3, ../partials/_upgrades.scss */
+/* line 1, ../partials/_upgrades.scss */
+#header-upgrades {
+  margin-bottom: -40px;
+  height: 100vh;
+  width: 100%; }
+  /* line 5, ../partials/_upgrades.scss */
+  #header-upgrades .animateme {
+    margin-left: 16.94915%;
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+    text-align: center; }
+  /* line 10, ../partials/_upgrades.scss */
+  #header-upgrades .slick-slider {
+    margin-bottom: 0; }
+  /* line 13, ../partials/_upgrades.scss */
+  #header-upgrades .hero-landing {
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+/* line 47, ../partials/_upgrades.scss */
 .upgrades {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -1869,43 +1883,43 @@ nav {
   width: 32.20339%;
   float: left;
   margin-right: 1.69492%; }
-  /* line 9, ../partials/_upgrades.scss */
+  /* line 53, ../partials/_upgrades.scss */
   .upgrades img {
     width: 100%; }
-  /* line 12, ../partials/_upgrades.scss */
+  /* line 56, ../partials/_upgrades.scss */
   .upgrades a {
     display: block; }
-  /* line 15, ../partials/_upgrades.scss */
+  /* line 59, ../partials/_upgrades.scss */
   .upgrades h3 {
     font-size: 32px;
     margin: 30px auto 20px; }
-  /* line 19, ../partials/_upgrades.scss */
+  /* line 63, ../partials/_upgrades.scss */
   .upgrades p {
     margin-left: 20px;
     margin-right: 20px; }
-  /* line 24, ../partials/_upgrades.scss */
+  /* line 68, ../partials/_upgrades.scss */
   .upgrades:nth-child(3n) {
     width: 32.20339%;
     float: right;
     margin-right: 0; }
 
-/* line 29, ../partials/_upgrades.scss */
+/* line 73, ../partials/_upgrades.scss */
 .upgrade-entry {
   padding-top: 160px; }
 
-/* line 32, ../partials/_upgrades.scss */
+/* line 76, ../partials/_upgrades.scss */
 .upgrade-image {
   width: 49.15254%;
   float: left;
   margin-right: 1.69492%; }
-  /* line 33, ../partials/_upgrades.scss */
+  /* line 77, ../partials/_upgrades.scss */
   .upgrade-image .sp-wrap {
     margin-top: 0; }
-  /* line 36, ../partials/_upgrades.scss */
+  /* line 80, ../partials/_upgrades.scss */
   .upgrade-image img {
     max-width: 100%; }
 
-/* line 41, ../partials/_upgrades.scss */
+/* line 85, ../partials/_upgrades.scss */
 .specs {
   border-top: 2px solid #505054;
   border-bottom: 2px solid #505054;
@@ -1913,16 +1927,16 @@ nav {
   width: 40.67797%;
   float: right;
   margin-right: 0; }
-  /* line 46, ../partials/_upgrades.scss */
+  /* line 90, ../partials/_upgrades.scss */
   .specs h3 {
     margin: 20px 0 10px; }
-  /* line 49, ../partials/_upgrades.scss */
+  /* line 93, ../partials/_upgrades.scss */
   .specs ul {
     width: 74.57627%;
     float: left;
     margin-right: 1.69492%;
     list-style-type: disc; }
-    /* line 52, ../partials/_upgrades.scss */
+    /* line 96, ../partials/_upgrades.scss */
     .specs ul li {
       font-size: 15px;
       font-weight: 500;

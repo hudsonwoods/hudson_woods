@@ -46,7 +46,7 @@ nav {
 }
 
 #secondary-nav {
-	// height: 60px;
+
 	ul {
 		width: 100%;
 		display: flex;
@@ -85,6 +85,9 @@ nav {
 	background-color: $dark-gray;
 	&.stuck {
 		top: 81px;
+	}
+	#upgrades-nav a {
+		// pointer-events:none;
 	}
 }
 

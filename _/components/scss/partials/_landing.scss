@@ -1,13 +1,10 @@
-#header-landing {
+#header-landing, #header-upgrades {
 h3 {
   font-family: $base-font-family;
   margin-top: 20px;
 }
   .slick-carousel {
     position: relative;
-.slick-next, .slick-prev {
-  display: none !important;
-}
   }
 }
 
@@ -29,6 +26,7 @@ button {
 
 
 /* Dots */
+
 
 .slick-slider {
     margin-bottom: 30px;

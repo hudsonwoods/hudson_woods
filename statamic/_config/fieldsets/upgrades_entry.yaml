@@ -1,0 +1,44 @@
+title: Upgrades Entry
+
+fields:
+
+  previewImage:
+    type: file
+    display: Image
+    destination: assets/img/upgrades
+    show_thumbnail: true
+
+  categories:
+    display: Upgrade Categories
+    type: checkboxes
+    options:
+      house: House
+      site: Site
+      land: Land
+      equipment: Equipment
+
+  summary:
+    type: redactor
+    display: Summary
+
+  imageGallery:
+    display: Image Gallery
+    type: grid
+    starting_rows: 1
+    min_rows: 1
+    fields:
+      image:
+        type: file
+        display: Images
+        destination: assets/img/homes
+        show_thumbnail: true
+
+  specs:
+    display: Specs
+    type: grid
+    starting_rows: 1
+    min_rows: 1
+    fields:
+      text:
+        type: text
+        display: Specs
