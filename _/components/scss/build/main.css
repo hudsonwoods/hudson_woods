@@ -1327,7 +1327,11 @@ nav {
           nav.navbar ul li:first-of-type a {
             padding-top: 15px;
             padding-bottom: 15px; }
-        /* line 20, ../partials/_nav1.scss */
+            /* line 18, ../partials/_nav1.scss */
+            nav.navbar ul li:first-of-type a img {
+              height: 47px;
+              width: 99px; }
+        /* line 24, ../partials/_nav1.scss */
         nav.navbar ul li a {
           color: white;
           display: inline-block;
@@ -1337,26 +1341,26 @@ nav {
           font-size: 14px;
           color: white;
           text-transform: uppercase; }
-          /* line 29, ../partials/_nav1.scss */
+          /* line 33, ../partials/_nav1.scss */
           nav.navbar ul li a.current {
             color: white;
             font-weight: 400; }
-    /* line 37, ../partials/_nav1.scss */
+    /* line 41, ../partials/_nav1.scss */
     nav.navbar.stuck, nav.navbar.fixed {
       background-color: #bdbbb3;
       padding-top: 0px; }
-      /* line 40, ../partials/_nav1.scss */
+      /* line 44, ../partials/_nav1.scss */
       nav.navbar.stuck ul li a, nav.navbar.fixed ul li a {
         color: #6e736c; }
-        /* line 42, ../partials/_nav1.scss */
+        /* line 46, ../partials/_nav1.scss */
         nav.navbar.stuck ul li a.current, nav.navbar.fixed ul li a.current {
           color: #555953;
           font-weight: 600; }
 
-/* line 52, ../partials/_nav1.scss */
+/* line 56, ../partials/_nav1.scss */
 #secondary-nav {
   background-color: #505054; }
-  /* line 54, ../partials/_nav1.scss */
+  /* line 58, ../partials/_nav1.scss */
   #secondary-nav ul {
     width: 100%;
     display: flex;
@@ -1365,27 +1369,27 @@ nav {
     width: 66.10169%;
     float: left;
     margin-right: 1.69492%; }
-    /* line 60, ../partials/_nav1.scss */
+    /* line 64, ../partials/_nav1.scss */
     #secondary-nav ul#upgrades-nav {
       justify-content: center; }
-      /* line 62, ../partials/_nav1.scss */
+      /* line 66, ../partials/_nav1.scss */
       #secondary-nav ul#upgrades-nav li a {
         padding-left: 20px;
         padding-right: 20px; }
-  /* line 68, ../partials/_nav1.scss */
+  /* line 72, ../partials/_nav1.scss */
   #secondary-nav li {
     display: inline-block;
     -webkit-transition: 0.35s;
     -moz-transition: 0.35s;
     transition: 0.35s; }
-    /* line 71, ../partials/_nav1.scss */
+    /* line 75, ../partials/_nav1.scss */
     #secondary-nav li.active {
       border-bottom: 4px solid white; }
-      /* line 73, ../partials/_nav1.scss */
+      /* line 77, ../partials/_nav1.scss */
       #secondary-nav li.active a {
         font-weight: 600;
         color: white; }
-    /* line 78, ../partials/_nav1.scss */
+    /* line 82, ../partials/_nav1.scss */
     #secondary-nav li a {
       text-transform: uppercase;
       color: #cccccc;
@@ -1395,11 +1399,11 @@ nav {
       padding: 12px 0 8px;
       height: 100%;
       width: 100%; }
-  /* line 90, ../partials/_nav1.scss */
+  /* line 94, ../partials/_nav1.scss */
   #secondary-nav.stuck {
     top: 81px; }
 
-/* line 100, ../partials/_nav1.scss */
+/* line 104, ../partials/_nav1.scss */
 .anchor {
   display: block;
   position: relative;

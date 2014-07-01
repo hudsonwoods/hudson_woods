@@ -173,13 +173,9 @@ $(window).scroll(function() {
 // } )( jQuery );
 
 
-
-
-
-    // $('.navbar.sticky').waypoint('sticky', {
-    // offset: -81 // Apply "stuck" when element 30px from top
-    // });
-
+$('.sticky-wrapper').waypoint(function() {
+  $(this).find('.navbar').toggleClass('stuck');
+}, { offset: -81 });
 
 $(document).ready(function() {
     $('#secondary-nav').waypoint('sticky', {
@@ -187,9 +183,7 @@ $(document).ready(function() {
   });
 });
 
-$('.sticky-wrapper').waypoint(function() {
-  $(this).find('.navbar').toggleClass('stuck');
-}, { offset: -81 });
+
 
 /* ========================================================================
  * Bootstrap: scrollspy.js v3.1.1
