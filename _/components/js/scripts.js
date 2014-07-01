@@ -176,7 +176,7 @@ $(window).scroll(function() {
 
 
 
-    $('.navbar').waypoint('sticky', {
+    $('.navbar.sticky').waypoint('sticky', {
     offset: -81 // Apply "stuck" when element 30px from top
     });
 
