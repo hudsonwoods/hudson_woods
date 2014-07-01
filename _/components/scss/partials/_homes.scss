@@ -196,11 +196,6 @@
     img {
         max-width: 100% !important;
     }
-
-    @page {
-        margin: 0.5cm;
-    }
-
     p,
     h2,
     h3 {
@@ -225,6 +220,10 @@
 }
 
 #header-homes  {
+	background-image: url("../img/Smartdes-Section-image-2000x1500.jpg");
+}
+
+#header-availability  {
 	background-image: url("../img/Smartdes-Section-image-2000x1500.jpg");
 }
 
@@ -311,4 +310,39 @@
 		font-size: 18px;
 		margin-bottom: 18px;
 	}
+}
+
+.sp-thumbs a:link, .sp-thumbs a:visited {
+		opacity:.6;
+}
+
+.sp-wrap {
+	margin: 60px auto 30px;
+	background-color: transparent;
+}
+
+.sp-thumbs  {
+		margin-top: 20px;
+		border-top: 2px solid $beige;
+		img {
+			height: 70px;
+			width: 70px;
+		}
+}
+
+.sp-large a  {
+	pointer-events:none;
+	img {
+		cursor: default;
+	}
+}
+
+.sp-current:after {
+	content: '';
+	border: 6px solid transparent;
+	border-top: 6px solid $beige;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin-left: -6px;
 }

@@ -8,6 +8,15 @@ fields:
     destination: assets/img/upgrades
     show_thumbnail: true
 
+  categories:
+    display: Upgrade Categories
+    type: checkboxes
+    options:
+      house: House
+      site: Site
+      land: Land
+      equipment: Equipment
+
   summary:
     type: redactor
     display: Summary
@@ -33,6 +42,3 @@ fields:
       text:
         type: text
         display: Specs
-
-
-

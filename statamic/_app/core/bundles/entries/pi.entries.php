@@ -496,8 +496,7 @@ class Plugin_entries extends Plugin
             'show_past'   => $this->fetchParam('show_past', true, null, true),
             'show_future' => $this->fetchParam('show_future', false, null, true),
             'type'        => 'entries',
-            'conditions'  => trim($this->fetchParam('conditions', null, false, false, false)),
-            'where'       => trim($this->fetchParam('where', null, false, false, false))
+            'conditions'  => trim($this->fetchParam('conditions', null, false, false, false))
         );
 
         // determine other factors

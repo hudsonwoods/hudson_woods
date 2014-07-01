@@ -40,7 +40,7 @@ class Parse
     public static function markdown($string)
     {
         // start measuring
-        $hash = Debug::markStart('markdown');
+        $hash = Debug::markStart('parsing', 'markdown');
         
         // check for parser, create if needed
         if (!isset(self::$parsers['markdown'])) {
@@ -83,7 +83,7 @@ class Parse
     public static function textile($string)
     {
         // start measuring
-        $hash = Debug::markStart('textile');
+        $hash = Debug::markStart('parsing', 'textile');
         
         $parser = new Textile();
         $result = $parser->textileThis($string);
@@ -104,7 +104,7 @@ class Parse
     public static function smartypants($string)
     {
         // start measuring
-        $hash = Debug::markStart('smartypants');
+        $hash = Debug::markStart('parsing', 'smartypants');
 
         if (Config::get('enable_smartypants', true) === 'typographer') {            
             $result = SmartyPantsTypographer::defaultTransform($string);
@@ -132,7 +132,7 @@ class Parse
     public static function template($html, $variables, $callback = array('statamic_view', 'callback'), $context=array())
     {
         // start measuring
-        $hash = Debug::markStart('statamic_template');
+        $hash = Debug::markStart('parsing', 'statamic_tmpl');
         
         if (!isset(self::$parsers['template_parser'])) {
             $parser = new \Lex\Parser();
@@ -145,7 +145,7 @@ class Parse
 
         // end measuring
         Debug::markEnd($hash);
-        Debug::increment('parses', 'statamic_template');
+        Debug::increment('parses', 'statamic_tmpl');
         
         return $result;
     }
@@ -215,7 +215,7 @@ class Parse
     public static function conditions($conditions)
     {
         // start measuring
-        $hash = Debug::markStart('conditions');
+        $hash = Debug::markStart('parsing', 'conditions');
         Debug::increment('parses', 'condition_statements');
         
         $conditions = explode(",", $conditions);
@@ -448,6 +448,34 @@ class Parse
         }
 
         return array_unique($output);
+    }
+
+    /**
+     * Parse from mixed sources
+     *
+     * @param string  $file  a filename or string to retreive data from
+     * @param bool    $type  if the type is known, you can pass it
+     * @return array
+     **/
+    public static function mixed($file, $type = false)
+    {
+        if ( ! $type) {
+            // resolve type
+        }
+
+        switch ($type) {
+            case "md":
+            case "markdown":
+                return Statamic::yamlize_content($file);
+            case "textile":
+                return Statamic::yamlize_content($file);
+            case "yaml":
+                return self::yaml($file);
+            case "json":
+                return json_decode($file);
+            default:
+                return false;
+        }
     }
     
 

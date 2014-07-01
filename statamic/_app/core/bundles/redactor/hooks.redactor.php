@@ -158,11 +158,11 @@ class Hooks_redactor extends Hooks
                           ->save($file, $quality);
 
                 } else {
-                    copy($_FILES['file']['tmp_name'], $file);
+                    move_uploaded_file($_FILES['file']['tmp_name'], $file);
                 }
 
             } else {
-                copy($_FILES['file']['tmp_name'], $file);
+                move_uploaded_file($_FILES['file']['tmp_name'], $file);
             }
             
             $return = array('filelink' => Path::toAsset($file));

@@ -1,7 +1,7 @@
+
+
 .upgrades {
-	h3 {
-		font-size: 32px;
-	}
+
 	padding-top: 40px;
 	padding-bottom: 40px;
 	margin: 0 auto;
@@ -13,27 +13,30 @@
 		display: block;
 	}
 	h3 {
-		margin-top: 30px;
+		font-size: 32px;
+		margin: 30px auto 20px;
 	}
 	p {
-		text-align: left;
 		margin-left: 20px;
 		margin-right: 20px;
 	}
 	@include span (4);
 	&:nth-child(3n) {
-		margin-right: 0;
+		@include span (last 4);
 	}
 }
 
 .upgrade-entry {
-	margin-top: 100px;
+	padding-top: 160px;
 }
 .upgrade-image {
+	.sp-wrap {
+		margin-top: 0;
+	}
 	img {
 		max-width: 100%;
 	}
-	@include span (5);
+	@include span (6);
 }
 .specs {
 	border-top: 2px solid $dark-gray;

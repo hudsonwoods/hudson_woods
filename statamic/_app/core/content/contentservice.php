@@ -43,6 +43,21 @@ class ContentService
 
 
     /**
+     * Reset the cached caches
+     *
+     * @return void
+     */
+    public static function resetCaches()
+    {
+        self::$cache = null;
+        self::$structure = null;
+        self::$parent_cache = array();
+        self::$cache_loaded = false;
+        self::$structure_loaded = false;
+    }
+
+
+    /**
      * Loads the structure cache into the local structure variable if not done yet
      *
      * @return void

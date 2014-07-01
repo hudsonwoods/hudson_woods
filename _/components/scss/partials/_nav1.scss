@@ -2,61 +2,64 @@ nav {
 	width: 100%;
 	z-index: 1001;
 	&.navbar {
-		// height: 60px;
 		position: fixed;
 		@include transition(all .5s);
-		background-color: $beige;
-
-		&.transparent {
-			padding-top: 15px;
-			ul li a {
-				color: white;
-				&.current {
+		background-color: transparent;
+		padding-top: 15px;
+		ul {
+			display: flex;
+			li {
+				display: inline-block;
+				&:first-of-type {
+					flex: 1 1 auto;
+				}
+				a {
 					color: white;
-					font-weight: 400;
+					display: inline-block;
+					padding: 33px 15px;
+					height: 100%;
+					width: 100%;
+					font-size: 15px;
+					color: white;
+					text-transform: uppercase;
+					&.current {
+						color: white;
+						font-weight: 400;
+					}
 				}
 			}
-			background-color: transparent;
 		}
-		ul li a {
-			text-transform: uppercase;
-			font-size: 15px;
-			color: $base-font-color;
-			&.current {
-				color: darken($base-font-color,10%);
-				font-weight: 600;
-			}
-	}
 
-	ul {
-		width: 100%;
-		display: flex;
-	}
-	li {
-		display: inline-block;
-		&:first-of-type {
-			flex: 1 1 auto;
+		&.stuck {
+			background-color: $beige;
+			padding-top: 0px;
+			ul li a {
+				color: $base-font-color;
+				&.current {
+					color: darken($base-font-color,10%);
+					font-weight: 600;
+				}
+			}
 		}
-		a {
-			display: inline-block;
-			padding: 22px 15px;
-			height: 100%;
-			width: 100%;
-			font-size: 18px;
-			color: white;
-		}
-	}
+
 	}
 }
 
 #secondary-nav {
-	height: 60px;
+	// height: 60px;
 	ul {
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		@include pre(2);
 		@include span(8);
+		&#upgrades-nav {
+			justify-content: center;
+			li a {
+				padding-left: 20px;
+				padding-right: 20px; 
+			}
+		}
 	}
 	li {
 		display: inline-block;
@@ -71,23 +74,25 @@ nav {
 		a {
 			text-transform: uppercase;
 			color: $light-gray;
-			font-size: 16px;
-			line-height: 24px;
+			font-size: 14px;
+			line-height: 20px;
 			display: inline-block;
-			padding: 20px 0 12px;
+			padding: 12px 0 8px;
 			height: 100%;
 			width: 100%;
 		}
 	}
 	background-color: $dark-gray;
 	&.stuck {
-		top: 59px;
+		top: 81px;
 	}
 }
+
+
 
 .anchor {
 	display: block;
 	position: relative;
-	top: -120px;
+	top: -125px;
 	visibility: hidden;
 }

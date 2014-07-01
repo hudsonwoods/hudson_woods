@@ -875,18 +875,17 @@ $admin_app->post('/publish', function() use ($admin_app) {
   |--------------------------------------------------------------------------
   |
   | Pages go back to the tree, entries to their respective Entry Listing
+  | Or, if a custom return was specified, we'll go there.
   |
   */
 
   if ($form_data['type'] == 'none') {
     $app->flash('success', Localization::fetch('page_saved'));
-    $url = $app->urlFor('pages')."?path=".$folder;
-    $app->redirect($url);
   } else {
     $app->flash('success', Localization::fetch('entry_saved'));
-    $url = $app->urlFor('entries')."?path=".$folder;
-    $app->redirect($url);
   }
+
+  $app->redirect(Request::post('return'));
 
 });
 
@@ -923,7 +922,7 @@ $admin_app->map('/delete/entry', function() use ($admin_app) {
     $admin_app->flash('success', Localization::fetch('entry_deleted'));
   }
 
-  $url = $admin_app->urlFor('entries')."?path=".dirname($path);
+  $url = $admin_app->request()->getReferrer();
   $admin_app->redirect($url);
 
 })->name('delete_entry')->via('GET', 'POST');;
@@ -1206,6 +1205,15 @@ $admin_app->get('/publish', function() use ($admin_app) {
  }
 
   if ($new) $data['status_message'] .=  ' ' . Localization::fetch('in', null, true);
+
+  // Set the return URL
+  if ($custom_return = Request::get('return')) {
+    $data['return'] = $app->request()->getRootUri() . $custom_return;
+  } else {
+    $data['return'] = ($data['type'] == 'none')
+                      ? $app->urlFor('pages')."?path=".$folder
+                      : $app->urlFor('entries')."?path=".$folder;
+  }
 
   $data['templates'] = Theme::getTemplates();
   $data['layouts'] = Theme::getLayouts();
@@ -1663,8 +1671,6 @@ $admin_app->get('/system/logs', function() use ($admin_app) {
 
 
 
-
-
 // GET: IMAGES
 // DEPRICATED in 1.3
 // --------------------------------------------------------
@@ -1691,27 +1697,16 @@ $admin_app->get('/images',  function() use ($admin_app) {
 })->name('images');
 
 
+/*
+|--------------------------------------------------------------------------
+| Hook: Add Routes
+|--------------------------------------------------------------------------
+|
+| Allows add-ons to add their own hooks to the control panel.
+|
+*/
 
-
-
-// POST: File Upload
-// --------------------------------------------------------
-$admin_app->post('/file/upload',  function() use ($admin_app) {
-  authenticateForRole('admin');
-  doStatamicVersionCheck($admin_app);
-
-  $file = $_FILES['file']['tmp_name'];
-  $filename = $_FILES['file']['name'];
-  $destination = $admin_app->request()->get('destination');
-
-  File::upload($file, $destination, $filename);
-
-  echo $destination . $filename;
-
-})->name('file_upload');
-
-
-
+Hook::run('control_panel', 'add_routes');
 
 
 

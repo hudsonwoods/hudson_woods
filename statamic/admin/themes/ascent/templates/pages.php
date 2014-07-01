@@ -3,7 +3,9 @@
     <li><a href="<?php echo $app->urlFor("pages"); ?>" class="active"><?php echo Localization::fetch('pages') ?></a></li>
     <li class="separator">&nbsp;</li>
     <?php foreach($listings as $listing): ?>
-      <li><a href="entries?path=<?php echo $listing['slug']?>"><?php echo $listing['title'] ?></a></li>
+      <?php if (CP_Helper::is_page_visible($listing)): ?>
+        <li><a href="entries?path=<?php echo $listing['slug']?>"><?php echo $listing['title'] ?></a></li>
+      <?php endif ?>
     <?php endforeach ?>
   </ul>
 </div>
@@ -38,7 +40,7 @@
     <ul id="page-tree">
       <?php foreach ($pages as $page): ?>
 
-      <?php if (array_get($page, '_admin:hide', false) === false): ?>
+      <?php if (CP_Helper::is_page_visible($page)): ?>
 
       <li class="page">
         <?php if (array_get($page, 'has_entries', false)): ?> <div class="has-entries"></div><?php endif ?>
@@ -119,6 +121,7 @@
   <?php function display_folder($app, $folder, $base="") {  ?>
   <ul class="subpages">
   <?php foreach ($folder as $page):?>
+  <?php if (CP_Helper::is_page_visible($page)): ?>
   <li class="page">
     <div class="page-wrapper">
       <div class="page-primary">
@@ -180,6 +183,7 @@
     } ?>
 
   </li>
+  <?php endif ?>
   <?php endforeach ?>
   </ul>
   <?php } #end function ?>

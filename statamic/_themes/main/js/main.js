@@ -2193,6 +2193,180 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 }).call(this);
 
 /*
+ * Smoothproducts
+ * http://kthornbloom.com/smoothproducts.php
+ *
+ * Copyright 2013, Kevin Thornbloom
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+(function($) {
+    $.fn.extend({
+        smoothproducts: function() {
+
+
+            var slideTiming = 300
+
+            // Add some markup & set some CSS
+            $('.sp-wrap').append('<div class="sp-large"></div><div class="sp-thumbs sp-tb-active"></div>');
+
+            $('.sp-wrap').each(function() {
+                $('a', this).appendTo($('.sp-thumbs', this));
+                $('.sp-thumbs a:first', this).addClass('sp-current').clone().removeClass('sp-current').appendTo($('.sp-large', this)).addClass('sp-current-big');
+                $('.sp-wrap').css({
+                    display: 'inline-block'
+                });
+            });
+
+            // Prevent clicking while things are happening
+            $(document.body).on('click', '.sp-thumbs', function(event) {
+                event.preventDefault();
+            });
+
+            // Clicking a thumbnail
+            $(document.body).on('click', '.sp-tb-active a', function(event) {
+                $(this).parent().find('.sp-current').removeClass();
+                $(this).parent().parent().find('.sp-thumbs').removeClass('sp-tb-active');
+                $(this).parent().parent().find('.sp-zoom').remove();
+                $(this).parent().parent().find('.sp-full-screen').fadeOut(function() {
+                    $(this).remove();
+                });
+
+                var currentHeight = $(this).parent().parent().find('.sp-large').height(),
+                    currentWidth = $(this).parent().parent().find('.sp-large').width();
+                $(this).parent().parent().find('.sp-large').css({
+                    overflow: 'hidden',
+                    height: currentHeight + 'px',
+                    width: currentWidth + 'px'
+                });
+
+                $(this).parent().parent().find('.sp-large a').remove();
+                $(this).addClass('sp-current').clone().hide().removeClass('sp-current').appendTo($(this).parent().parent().find('.sp-large')).addClass('sp-current-big').fadeIn(slideTiming, function() {
+
+                    var autoHeight = $(this).parent().parent().find('.sp-large img').height();
+
+                    $(this).parent().parent().find('.sp-large').animate({
+                        height: autoHeight
+                    }, 'fast', function() {
+                        $('.sp-large').css({
+                            height: 'auto',
+                            width: 'auto'
+                        });
+                    });
+
+                    $(this).parent().parent().find('.sp-thumbs').addClass('sp-tb-active');
+                });
+                event.preventDefault();
+            });
+
+            // Zoom In
+            $(document.body).on('click', '.sp-large a', function(event) {
+                var largeUrl = $(this).attr('href');
+                $(this).parent().parent().find('.sp-large').append('<div class="sp-zoom"><img src="' + largeUrl + '"/></div>');
+                $(this).parent().parent().find('.sp-zoom').fadeIn();
+                $(this).parent().parent().find(".sp-zoom").draggable();
+                $(this).parent().parent().prepend('<div class="sp-full-screen"><a href="#">↕</a></div>');
+                event.preventDefault();
+            });
+
+            // Open in Lightbox
+
+            $(document.body).on('click', '.sp-full-screen', function(event) {
+                var currentImg = $(this).parent().find('.sp-large .sp-zoom').html();
+                $('body').append("<div class='sp-lightbox'>"+currentImg+"</div>");
+                $('.sp-lightbox').fadeIn();
+            });
+
+            // Close Lightbox
+
+            $(document.body).on('click', '.sp-lightbox', function(event) {
+                $(this).fadeOut(function(){
+                    $(this).remove();
+                })
+            });
+
+            $(document).keydown(function(e){
+                if (e.keyCode == 27) {
+                    $('.sp-lightbox').fadeOut(function(){
+                        $(this).remove();
+                    })
+                    return false;
+                }
+            });
+
+
+            // Panning zoomed PC
+
+            $('.sp-large').mousemove(function(e) {
+                var viewWidth = $(this).width(),
+                    viewHeight = $(this).height(),
+                    largeWidth = $(this).find('.sp-zoom').width(),
+                    largeHeight = $(this).find('.sp-zoom').height(),
+                    parentOffset = $(this).parent().offset(),
+                    relativeXPosition = (e.pageX - parentOffset.left),
+                    relativeYPosition = (e.pageY - parentOffset.top),
+                    moveX = Math.floor((relativeXPosition * (viewWidth - largeWidth) / viewWidth)),
+                    moveY = Math.floor((relativeYPosition * (viewHeight - largeHeight) / viewHeight));
+
+                $(this).find('.sp-zoom').css({
+                    left: moveX,
+                    top: moveY
+                });
+
+            }).mouseout(function() {
+                // Pause Panning
+            });
+
+            // Panning zoomed Mobile - inspired by http://popdevelop.com/2010/08/touching-the-web/
+
+            $.fn.draggable = function() {
+                var offset = null;
+                var start = function(e) {
+                    var orig = e.originalEvent;
+                    var pos = $(this).position();
+                    offset = {
+                        x: orig.changedTouches[0].pageX - pos.left,
+                        y: orig.changedTouches[0].pageY - pos.top
+                    };
+                };
+                var moveMe = function(e) {
+                    e.preventDefault();
+                    var orig = e.originalEvent,
+                        newY = orig.changedTouches[0].pageY - offset.y,
+                        newX = orig.changedTouches[0].pageX - offset.x,
+                        maxY = (($('.sp-zoom').height()) - ($('.sp-large').height())) * -1,
+                        maxX = (($('.sp-zoom').width()) - ($('.sp-large').width())) * -1;
+                    if (newY > maxY && 0 > newY) {
+                        $(this).css({
+                            top: newY
+                        });
+                    }
+                    if (newX > maxX && 0 > newX) {
+                        $(this).css({
+                            left: newX
+                        });
+                    }
+                };
+                this.bind("touchstart", start);
+                this.bind("touchmove", moveMe);
+            };
+
+            // Zoom Out
+            $(document.body).on('click', '.sp-zoom', function(event) {
+                $(this).parent().parent().find('.sp-full-screen').fadeOut(function() {
+                    $(this).remove();
+                });
+                $(this).fadeOut(function() {
+                    $(this).remove();
+                });
+            });
+
+        }
+    });
+})(jQuery);
+
+/*
  Leaflet, a JavaScript library for mobile-friendly interactive maps. http://leafletjs.com
  (c) 2010-2013, Vladimir Agafonkin
  (c) 2010-2011, CloudMade
@@ -2730,21 +2904,21 @@ $(window).scroll(function() {
 
 
 
-// $(document).ready(function() {
-//     $('.nav-sticky').waypoint('sticky', {
-//     offset: -60 // Apply "stuck" when element 30px from top
-//   });
-// });
+
+    $('.navbar').waypoint('sticky', {
+    offset: -81 // Apply "stuck" when element 30px from top
+    });
+
 
 $(document).ready(function() {
     $('#secondary-nav').waypoint('sticky', {
-    offset: 60 // Apply "stuck" when element 30px from top
+    offset: 81 // Apply "stuck" when element 30px from top
   });
 });
 
-$('.navbar').waypoint(function() {
-  $(this).toggleClass('transparent');
-}, { offset: -60 });
+// $('.navbar').waypoint(function() {
+//   $(this).toggleClass('transparent');
+// }, { offset: -81 });
 
 /* ========================================================================
  * Bootstrap: scrollspy.js v3.1.1
@@ -2901,4 +3075,30 @@ $('.navbar').waypoint(function() {
 }(jQuery);
 
 
-$('body').scrollspy({ target: '#secondary-nav-list', offset: 120 })
+$('body').scrollspy({ target: '#secondary-nav-list', offset: 125 })
+
+// Upgrades content filtering
+
+$('#all').click(function(){
+    $('.all').show(200);
+});
+
+$('#house').click(function(){
+    $('.all').hide(200);
+    $('.house').show(200);
+});
+
+$('#site').click(function(){
+    $('.all').hide(200);
+    $('.site').show(200);
+});
+
+$('#land').click(function(){
+    $('.all').hide(200);
+    $('.land').show(200);
+});
+
+$('#equipment').click(function(){
+    $('.all').hide(200);
+    $('.equipment').show(200);
+});

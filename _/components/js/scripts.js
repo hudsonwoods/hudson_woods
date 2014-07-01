@@ -175,21 +175,21 @@ $(window).scroll(function() {
 
 
 
-// $(document).ready(function() {
-//     $('.nav-sticky').waypoint('sticky', {
-//     offset: -60 // Apply "stuck" when element 30px from top
-//   });
-// });
+
+    $('.navbar').waypoint('sticky', {
+    offset: -81 // Apply "stuck" when element 30px from top
+    });
+
 
 $(document).ready(function() {
     $('#secondary-nav').waypoint('sticky', {
-    offset: 60 // Apply "stuck" when element 30px from top
+    offset: 81 // Apply "stuck" when element 30px from top
   });
 });
 
-$('.navbar').waypoint(function() {
-  $(this).toggleClass('transparent');
-}, { offset: -60 });
+// $('.navbar').waypoint(function() {
+//   $(this).toggleClass('transparent');
+// }, { offset: -81 });
 
 /* ========================================================================
  * Bootstrap: scrollspy.js v3.1.1
@@ -346,4 +346,30 @@ $('.navbar').waypoint(function() {
 }(jQuery);
 
 
-$('body').scrollspy({ target: '#secondary-nav-list', offset: 120 })
+$('body').scrollspy({ target: '#secondary-nav-list', offset: 125 })
+
+// Upgrades content filtering
+
+$('#all').click(function(){
+    $('.all').show(200);
+});
+
+$('#house').click(function(){
+    $('.all').hide(200);
+    $('.house').show(200);
+});
+
+$('#site').click(function(){
+    $('.all').hide(200);
+    $('.site').show(200);
+});
+
+$('#land').click(function(){
+    $('.all').hide(200);
+    $('.land').show(200);
+});
+
+$('#equipment').click(function(){
+    $('.all').hide(200);
+    $('.equipment').show(200);
+});

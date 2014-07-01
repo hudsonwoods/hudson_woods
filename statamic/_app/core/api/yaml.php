@@ -34,7 +34,7 @@ class YAML
     public static function parse($yaml, $mode = null)
     {
         // start measuring
-        $hash = Debug::markStart('yaml');
+        $hash = Debug::markStart('parsing', 'yaml');
         
         $mode = $mode ? $mode : self::getMode();
 

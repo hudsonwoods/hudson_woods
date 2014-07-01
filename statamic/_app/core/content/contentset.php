@@ -78,6 +78,7 @@ class ContentSet
      */
     public function filter($filters)
     {
+        $hash = Debug::markStart('content', 'filtering');
         $filters = Helper::ensureArray($filters);
 
         // nothing to filter, abort
@@ -243,12 +244,6 @@ class ContentSet
 
             // until & show future
             if ($until_date && $data['datestamp'] && $data['datestamp'] > $until_date) {
-                unset($this->content[$key]);
-                continue;
-            }
-            
-            // where
-            if ($where && !(bool) Parse::template("{{ if " . $where . " }}1{{ else }}0{{ endif }}", $data)) {
                 unset($this->content[$key]);
                 continue;
             }
@@ -526,6 +521,8 @@ class ContentSet
                 continue;
             }
         }
+        
+        Debug::markEnd($hash);
     }
     
     private function toNumber($value) {
@@ -546,6 +543,8 @@ class ContentSet
      */
     public function sort($field="order_key", $direction=null)
     {
+        $hash = Debug::markStart('content', 'sorting');
+        
         // no content, abort
         if (!count($this->content)) {
             return;
@@ -620,6 +619,8 @@ class ContentSet
         if (Helper::pick($direction, "asc") == "desc") {
             $this->content = array_reverse($this->content);
         }
+        
+        Debug::markEnd($hash);
     }
 
 
@@ -632,11 +633,13 @@ class ContentSet
      */
     public function limit($limit=null, $offset=0)
     {
+        $hash = Debug::markStart('content', 'limiting');
         if (is_null($limit) && $offset === 0) {
             return;
         }
 
         $this->content = array_slice($this->content, $offset, $limit, true);
+        Debug::markEnd($hash);
     }
 
 
@@ -675,6 +678,7 @@ class ContentSet
      */
     public function prepare($parse_content=true, $override_flag=false)
     {
+        $hash = Debug::markStart('content', 'preparing');
         if ($this->prepared && !$override_flag) {
             return;
         }
@@ -692,26 +696,33 @@ class ContentSet
 
             // parse full content if that's been requested and is needed
             if ($parse_content && isset($item['_file']) && (!$this->content_parsed || $override_flag)) {
-                if (isset(self::$known_content[$item['url']])) {
-                    // we've already parsed this once, let's use what we know
-                    $this->content[$key]['content_raw'] = self::$known_content[$item['url']]['content_raw'];
-                    $this->content[$key]['content']     = self::$known_content[$item['url']]['content'];
-                } else {
-                    // first time parsing, let's figure stuff out
-                    $raw_file = substr(File::get($item['_file']), 3);
-                    $divide = strpos($raw_file, "\n---");
+                // check to see if we know about this content
+                if (!isset(self::$known_content[$item['url']])) {
+                    // we haven't seen this item before in this page-load
+                    // retrieve this content
+                    $content_file  = (isset($item['_file'])) ? $item['_file'] : null;
+                    $item_content  = array('content_raw' => '', 'content' => '');
 
-                    $this->content[$key]['content_raw']  = trim(substr($raw_file, $divide + 4));
-                    $this->content[$key]['content']      = Content::parse($this->content[$key]['content_raw'], $item);
-                    
-                    // but let's also save this for later
-                    self::$known_content[$item['url']] = array(
-                        'content_raw' => $this->content[$key]['content_raw'],
-                        'content' => $this->content[$key]['content']
-                    );
+                    // content file exists
+                    if ($content_file && File::exists($content_file)) {
+                        // make this
+                        $raw_file  = substr(File::get($content_file), 3);
+                        $divide    = strpos($raw_file, "\n---");
+
+                        $item_content['content_raw']  = trim(substr($raw_file, $divide + 4));
+                        $item_content['content']      = Content::parse($item_content['content_raw'], $item);
+                    }
+
+                    // update the cache
+                    self::$known_content[$item['url']] = $item_content;
                 }
+
+                // pull the content from the known-content cache
+                $this->content[$key]['content_raw'] = self::$known_content[$item['url']]['content_raw'];
+                $this->content[$key]['content']     = self::$known_content[$item['url']]['content'];
             }
 
+            // iterate the counter
             $i++;
         }
 
@@ -719,6 +730,8 @@ class ContentSet
         if ($parse_content) {
             $this->content_parsed = true;
         }
+        
+        Debug::markEnd($hash);
     }
 
 
@@ -730,6 +743,8 @@ class ContentSet
      */
     public function supplement($context=array())
     {
+        $hash = Debug::markStart('content', 'supplementing');
+        
         if ($this->supplemented) {
             return;
         }
@@ -864,6 +879,8 @@ class ContentSet
                 $this->content[$content_key] = $data;
             }
         }
+        
+        Debug::markEnd($hash);
     }
 
 

@@ -81,14 +81,12 @@ class Tasks_html_caching extends Tasks
         // create the hash now so we don't have to do it many times below
         $url_hash = Helper::makeHash($url);
         
-        // are we doing this on cache update?
-        if ($cache_length == 'on cache update') {
-            // purge any cache file from before the last cache update
-            $this->cache->purgeFromBefore(Cache::getLastCacheUpdate());
-            
-            // return if the file still exists
-            return $this->cache->exists($url_hash);
-        } elseif ($cache_length == 'on last modified') {
+        // we're no longer allowing `on cache update` here, as its a flawed concept:
+        // it only appeared to work because new pages were being hit, however, once
+        // every page is hit and then HTML-cached, the cache will no longer update
+        // because procedurally, that happens *after* we look for and load a version
+        // that has been cached
+        if ($cache_length == 'on cache update' || $cache_length == 'on last modified') {
             // ignore the cached version if the last modified time of this URL's
             // content file is newer than when the cached version was made
 

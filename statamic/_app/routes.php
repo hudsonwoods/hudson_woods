@@ -6,6 +6,11 @@
 
 $app->map('/TRIGGER/:namespace/:hook(/:segments+)', function ($namespace, $hook, $segments = array()) use ($app) {
 
+    // process uploaded files
+    if ($app->request()->isPost()) {
+        _Upload::standardizeFileUploads();
+    }
+    
     /*
     |--------------------------------------------------------------------------
     | Hook: Routes Before
@@ -79,6 +84,9 @@ if (Config::get('enable_static_pipeline', true)) {
 
 $app->get('/_add-ons/(:segments+)', function($segments = array()) use ($app) {
 
+    // reset any content service caching that's been done
+    ContentService::resetCaches();
+
     // clean segments
     $segments = URL::sanitize($segments);
     $file_requested = implode($segments, '/');
@@ -88,24 +96,29 @@ $app->get('/_add-ons/(:segments+)', function($segments = array()) use ($app) {
 
     $file = realpath($file);
     
+    // prevent bad access of files
     if (strpos($file_requested, '../') !== false || File::getExtension($file) === 'php') {
         $app->pass();
         return;
     }
 
-    if (Folder::exists($bundle_folder)) {
-        if (File::exists($file)) {
-            $mime = File::resolveMime($file);
+    if (Folder::exists($bundle_folder) && File::exists($file)) {
+        // determine mime type
+        $mime = File::resolveMime($file);
 
-            header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+        // set last modified header
+        header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
 
-            if (Config::get('http_cache_expires', false)) {
-                header("Expires: " . gmdate("D, d M Y H:i:s", strtotime('+' . Config::get('http_cache_expires', '30 minutes'))) . " GMT");
-            }
-
-            header("Content-type: {$mime}");
-            readfile($file);
+        // if configured, set expires header
+        if (Config::get('http_cache_expires', false)) {
+            header("Expires: " . gmdate("D, d M Y H:i:s", strtotime('+' . Config::get('http_cache_expires', '30 minutes'))) . " GMT");
         }
+
+        // set mime-type
+        header("Content-type: {$mime}");
+        
+        // read it out
+        readfile($file);
 
         exit();
     }
@@ -118,6 +131,14 @@ $app->get('/_add-ons/(:segments+)', function($segments = array()) use ($app) {
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
 $app->map('/(:segments+)', function ($segments = array()) use ($app) {
+
+    // mark milestone for debug panel
+    Debug::markMilestone('routes started');
+
+    // process uploaded files
+    if ($app->request()->isPost()) {
+        _Upload::standardizeFileUploads();
+    }
     
     global $is_debuggable_route;
     $is_debuggable_route = true;
@@ -158,6 +179,9 @@ $app->map('/(:segments+)', function ($segments = array()) use ($app) {
         $app->config['segment_' . $count] = $seg;  // segments are already sanitized
     }
     $app->config['last_segment'] = end($segments);
+    
+    // mark milestone for debug panel
+    Debug::markMilestone('segments determined');
 
     /*
     |--------------------------------------------------------------------------
@@ -184,8 +208,8 @@ $app->map('/(:segments+)', function ($segments = array()) use ($app) {
     |
     */
 
-    if ($ignore_after = array_get($app->config, '_routes:ignore_after', false)) {
-
+    $ignore_after = array_get($app->config, '_routes:ignore_after', false);
+    if ($ignore_after) {
         if ( ! is_array($ignore_after)) {
             $ignore_after = array($ignore_after);
         }
@@ -231,9 +255,9 @@ $app->map('/(:segments+)', function ($segments = array()) use ($app) {
     if (File::exists("{$content_root}/{$path}.{$content_type}") || Folder::exists("{$content_root}/{$path}")) {
         // endpoint or folder exists!
     } else {
-        $path                        = Path::resolve($path);
+//        $path                        = Path::resolve($path);
         $app->config['current_url']  = $app->config['current_path'];
-        $app->config['current_path'] = $path; # override global current_path
+//        $app->config['current_path'] = $path; # override global current_path
     }
 
     // check for routes
@@ -255,6 +279,9 @@ $app->map('/(:segments+)', function ($segments = array()) use ($app) {
         }
     }
 
+    // mark milestone for debug panel
+    Debug::markMilestone('routes determined');
+
     
     // routes via routes.yaml
     if ($found_route) {
@@ -275,6 +302,24 @@ $app->map('/(:segments+)', function ($segments = array()) use ($app) {
         $template_list = array($template);
         $content_found = true;
 
+    // URL found in the cache
+    } elseif ($data = Content::get($complete_current_url)) {
+        $add_prev_next   = true;
+        $page            = basename($path);
+
+        $data['current_url'] = $current_url;
+        $data['slug']        = basename($current_url);
+
+        // if this is an entry, default to the `post` template
+        if ($data['_is_entry']) {
+            $template_list[] = array_get($data, '_template', 'default');
+            $template_list[] = "post";
+        }
+
+        if ($path !== "/404") {
+            $content_found = true;
+        }
+
     // url is taxonomy-based
     } elseif (Taxonomy::isTaxonomyURL($path)) {
         list($type, $slug) = Taxonomy::getCriteria($path);
@@ -291,30 +336,14 @@ $app->map('/(:segments+)', function ($segments = array()) use ($app) {
         $template_list[] = "taxonomies";
         $template_list[] = $type;
         $content_found = true;
-
-    // URL found in the cache
-    } elseif ($data = Content::get($complete_current_url)) {
-        $add_prev_next   = true;
-        $page            = basename($path);
-
-        $data                = Content::get($complete_current_url);
-        $data['current_url'] = $current_url;
-        $data['slug']        = basename($current_url);
-        
-        // if this is an entry, default to the `post` template
-        if ($data['_is_entry']) {
-            $template_list[] = array_get($data, '_template', 'default');
-            $template_list[] = "post";
-        }
-
-        if ($path !== "/404") {
-            $content_found = true;
-        }
     }
 
     
     // content was found
     if ($content_found) {
+        // mark milestone for debug panel
+        Debug::markMilestone('content found');
+        
         // protect
         if (is_array($data) && $data) {
             try {
@@ -415,6 +444,9 @@ $app->map('/(:segments+)', function ($segments = array()) use ($app) {
         $response_code = 404;
     }
 
+    // mark milestone for debug panel
+    Debug::markMilestone('status determined');
+
     // find next/previous
     if ($add_prev_next && $visible) {
         $folder = substr(preg_replace(Pattern::ORDER_KEY, "", substr($path, 0, (-1*strlen($page))-1)), 1);
@@ -440,6 +472,14 @@ $app->map('/(:segments+)', function ($segments = array()) use ($app) {
         }
     }
 
+    // set template and layout
+    if (isset($data['_template'])) {
+        $template_list[] = $data['_template'];
+    }
+
+    // mark milestone for debug panel
+    Debug::markMilestone('template picked');
+
     // Check for fallback layout
     if ($content_found && empty($data['_layout'])) {
         // check fields.yaml first
@@ -451,14 +491,12 @@ $app->map('/(:segments+)', function ($segments = array()) use ($app) {
         }
     }
 
-    // set template and layout
-    if (isset($data['_template'])) {
-        $template_list[] = $data['_template'];
-    }
-
     if (isset($data['_layout'])) {
         Statamic_View::set_layout("layouts/{$data['_layout']}");
     }
+
+    // mark milestone for debug panel
+    Debug::markMilestone('layout picked');
 
     // set up the view
     Statamic_View::set_templates(array_reverse($template_list));
@@ -501,9 +539,14 @@ $app->map('/(:segments+)', function ($segments = array()) use ($app) {
 
     // and go!
     $app->render(null, $data, $response_code);
+
+    // mark milestone for debug panel
+    Debug::markMilestone('page ready');
+
     $app->halt($response_code, ob_get_clean());
 
 })->via('GET', 'POST', 'HEAD');
+
 
 // a second route that captures all routes, but will always return the 404 page
 $app->map('/(:segments+)', function ($segments = array()) use ($app) {
@@ -588,6 +631,10 @@ $app->map('/(:segments+)', function ($segments = array()) use ($app) {
 
     // and go!
     $app->render(null, $data, $response_code);
+
+    // mark milestone for debug panel
+    Debug::markMilestone('render end');
+
     $app->halt($response_code, ob_get_clean());
 
 })->via('GET', 'POST', 'HEAD');

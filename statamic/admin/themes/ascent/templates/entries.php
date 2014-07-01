@@ -88,7 +88,7 @@
         </div>
       </div>
 
-       <input type="submit" class="btn pull-left" data-bind="visible: selectedAction() != '' && selectedEntries().length > 0" value="<?php echo Localization::fetch('confirm_delete')?>">
+       <input type="submit" class="btn pull-left" data-bind="visible: selectedAction() != '' && selectedEntries().length > 0" value="<?php echo Localization::fetch('confirm_action')?>">
     </div>
   </form>
 
