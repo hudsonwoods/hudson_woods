@@ -1006,34 +1006,31 @@ h1, h2, h3, h4 {
 
 /* line 93, ../partials/_base.scss */
 h1 {
-  font-size: 67px; }
+  font-size: 67px;
+  text-transform: uppercase; }
 
-/* line 97, ../partials/_base.scss */
+/* line 98, ../partials/_base.scss */
 h2 {
   font-size: 42px; }
 
-/* line 100, ../partials/_base.scss */
+/* line 101, ../partials/_base.scss */
 h3 {
   font-size: 26px; }
 
-/* line 104, ../partials/_base.scss */
+/* line 105, ../partials/_base.scss */
 body, p, a, span {
   font-size: 16px;
   font-family: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
-/* line 109, ../partials/_base.scss */
+/* line 110, ../partials/_base.scss */
 p {
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 10px;
   line-height: 24px; }
-  /* line 117, ../partials/_base.scss */
+  /* line 118, ../partials/_base.scss */
   p:last-of-type {
     margin-bottom: 0; }
-
-/* line 124, ../partials/_base.scss */
-.hero.landing h1, .hero.landing h2, .hero.landing h3, .hero.landing h4 {
-  text-transform: uppercase; }
 
 /* line 8, ../partials/_layout.scss */
 .row:before,
