@@ -1113,7 +1113,6 @@ img {
 /* line 73, ../partials/_layout.scss */
 .hero {
   background-position: center;
-  background-attachment: fixed;
   background-size: cover;
   height: 700px;
   width: 100%;
