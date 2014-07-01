@@ -1347,14 +1347,14 @@ nav {
             color: white;
             font-weight: 400; }
     /* line 33, ../partials/_nav1.scss */
-    nav.navbar.stuck {
+    nav.navbar.stuck, nav.navbar.fixed {
       background-color: #bdbbb3;
       padding-top: 0px; }
       /* line 36, ../partials/_nav1.scss */
-      nav.navbar.stuck ul li a {
+      nav.navbar.stuck ul li a, nav.navbar.fixed ul li a {
         color: #6e736c; }
         /* line 38, ../partials/_nav1.scss */
-        nav.navbar.stuck ul li a.current {
+        nav.navbar.stuck ul li a.current, nav.navbar.fixed ul li a.current {
           color: #555953;
           font-weight: 600; }
 

@@ -30,7 +30,7 @@ nav {
 			}
 		}
 
-		&.stuck {
+		&.stuck, &.fixed {
 			background-color: $beige;
 			padding-top: 0px;
 			ul li a {
@@ -57,7 +57,7 @@ nav {
 			justify-content: center;
 			li a {
 				padding-left: 20px;
-				padding-right: 20px; 
+				padding-right: 20px;
 			}
 		}
 	}
