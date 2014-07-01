@@ -1,8 +1,8 @@
 <div class="sticky-wrapper">
-<nav class="navbar sticky">
+<nav class="navbar sticky stuck">
 	<div class="container">
 		<ul>
-		<li><a href="{{ homepage }}">Hudson Woods Logo</a></li>
+		<li><a href="{{ homepage }}"><img src="_themes/main/img/hw_logo.svg" alt="" /></a></li>
     {{ nav from="/" max_depth="1" }}
       <li><a href="{{ url }}"{{ if is_current || is_parent }} class="current"{{ endif }}>{{ title }} </a>
        {{ if is_current || is_parent }}

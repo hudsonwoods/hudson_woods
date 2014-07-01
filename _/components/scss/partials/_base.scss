@@ -119,13 +119,9 @@ p {
 	}
 }
 
-.hero-parallax {
-	position: relative;
-	// overflow: auto;
-	height: 500px;
-	clear: both;
-	background-position: center;
-	background-size: cover;
-	color: #fff;
-	text-align: center;
+.hero.landing {
+
+h1,h2,h3,h4 {
+	text-transform: uppercase;
+}
 }

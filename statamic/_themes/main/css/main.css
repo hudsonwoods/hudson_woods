@@ -1021,15 +1021,9 @@ p {
   p:last-of-type {
     margin-bottom: 0; }
 
-/* line 122, ../partials/_base.scss */
-.hero-parallax {
-  position: relative;
-  height: 500px;
-  clear: both;
-  background-position: center;
-  background-size: cover;
-  color: #fff;
-  text-align: center; }
+/* line 124, ../partials/_base.scss */
+.hero.landing h1, .hero.landing h2, .hero.landing h3, .hero.landing h4 {
+  text-transform: uppercase; }
 
 /* line 8, ../partials/_layout.scss */
 .row:before,
@@ -1351,36 +1345,40 @@ nav {
           -webkit-flex: 1 1 auto;
           -ms-flex: 1 1 auto;
           flex: 1 1 auto; }
-        /* line 16, ../partials/_nav1.scss */
+          /* line 15, ../partials/_nav1.scss */
+          nav.navbar ul li:first-of-type a {
+            padding-top: 15px;
+            padding-bottom: 15px; }
+        /* line 20, ../partials/_nav1.scss */
         nav.navbar ul li a {
           color: white;
           display: inline-block;
           padding: 33px 15px;
           height: 100%;
           width: 100%;
-          font-size: 15px;
+          font-size: 14px;
           color: white;
           text-transform: uppercase; }
-          /* line 25, ../partials/_nav1.scss */
+          /* line 29, ../partials/_nav1.scss */
           nav.navbar ul li a.current {
             color: white;
             font-weight: 400; }
-    /* line 33, ../partials/_nav1.scss */
+    /* line 37, ../partials/_nav1.scss */
     nav.navbar.stuck, nav.navbar.fixed {
       background-color: #bdbbb3;
       padding-top: 0px; }
-      /* line 36, ../partials/_nav1.scss */
+      /* line 40, ../partials/_nav1.scss */
       nav.navbar.stuck ul li a, nav.navbar.fixed ul li a {
         color: #6e736c; }
-        /* line 38, ../partials/_nav1.scss */
+        /* line 42, ../partials/_nav1.scss */
         nav.navbar.stuck ul li a.current, nav.navbar.fixed ul li a.current {
           color: #555953;
           font-weight: 600; }
 
-/* line 48, ../partials/_nav1.scss */
+/* line 52, ../partials/_nav1.scss */
 #secondary-nav {
   background-color: #505054; }
-  /* line 50, ../partials/_nav1.scss */
+  /* line 54, ../partials/_nav1.scss */
   #secondary-nav ul {
     width: 100%;
     display: -webkit-box;
@@ -1395,29 +1393,29 @@ nav {
     width: 66.10169%;
     float: left;
     margin-right: 1.69492%; }
-    /* line 56, ../partials/_nav1.scss */
+    /* line 60, ../partials/_nav1.scss */
     #secondary-nav ul#upgrades-nav {
       -webkit-box-pack: center;
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center; }
-      /* line 58, ../partials/_nav1.scss */
+      /* line 62, ../partials/_nav1.scss */
       #secondary-nav ul#upgrades-nav li a {
         padding-left: 20px;
         padding-right: 20px; }
-  /* line 64, ../partials/_nav1.scss */
+  /* line 68, ../partials/_nav1.scss */
   #secondary-nav li {
     display: inline-block;
     -webkit-transition: 0.35s;
     transition: 0.35s; }
-    /* line 67, ../partials/_nav1.scss */
+    /* line 71, ../partials/_nav1.scss */
     #secondary-nav li.active {
       border-bottom: 4px solid white; }
-      /* line 69, ../partials/_nav1.scss */
+      /* line 73, ../partials/_nav1.scss */
       #secondary-nav li.active a {
         font-weight: 600;
         color: white; }
-    /* line 74, ../partials/_nav1.scss */
+    /* line 78, ../partials/_nav1.scss */
     #secondary-nav li a {
       text-transform: uppercase;
       color: #cccccc;
@@ -1427,11 +1425,11 @@ nav {
       padding: 12px 0 8px;
       height: 100%;
       width: 100%; }
-  /* line 86, ../partials/_nav1.scss */
+  /* line 90, ../partials/_nav1.scss */
   #secondary-nav.stuck {
     top: 81px; }
 
-/* line 96, ../partials/_nav1.scss */
+/* line 100, ../partials/_nav1.scss */
 .anchor {
   display: block;
   position: relative;
@@ -1890,36 +1888,39 @@ nav {
   .upgrades a {
     display: block; }
   /* line 59, ../partials/_upgrades.scss */
+  .upgrades h1, .upgrades h3 {
+    text-transform: uppercase; }
+  /* line 62, ../partials/_upgrades.scss */
   .upgrades h3 {
     font-size: 32px;
     margin: 30px auto 20px; }
-  /* line 63, ../partials/_upgrades.scss */
+  /* line 66, ../partials/_upgrades.scss */
   .upgrades p {
     margin-left: 20px;
     margin-right: 20px; }
-  /* line 68, ../partials/_upgrades.scss */
+  /* line 71, ../partials/_upgrades.scss */
   .upgrades:nth-child(3n) {
     width: 32.20339%;
     float: right;
     margin-right: 0; }
 
-/* line 73, ../partials/_upgrades.scss */
+/* line 76, ../partials/_upgrades.scss */
 .upgrade-entry {
   padding-top: 160px; }
 
-/* line 76, ../partials/_upgrades.scss */
+/* line 79, ../partials/_upgrades.scss */
 .upgrade-image {
   width: 49.15254%;
   float: left;
   margin-right: 1.69492%; }
-  /* line 77, ../partials/_upgrades.scss */
+  /* line 80, ../partials/_upgrades.scss */
   .upgrade-image .sp-wrap {
     margin-top: 0; }
-  /* line 80, ../partials/_upgrades.scss */
+  /* line 83, ../partials/_upgrades.scss */
   .upgrade-image img {
     max-width: 100%; }
 
-/* line 85, ../partials/_upgrades.scss */
+/* line 88, ../partials/_upgrades.scss */
 .specs {
   border-top: 2px solid #505054;
   border-bottom: 2px solid #505054;
@@ -1927,16 +1928,16 @@ nav {
   width: 40.67797%;
   float: right;
   margin-right: 0; }
-  /* line 90, ../partials/_upgrades.scss */
+  /* line 93, ../partials/_upgrades.scss */
   .specs h3 {
     margin: 20px 0 10px; }
-  /* line 93, ../partials/_upgrades.scss */
+  /* line 96, ../partials/_upgrades.scss */
   .specs ul {
     width: 74.57627%;
     float: left;
     margin-right: 1.69492%;
     list-style-type: disc; }
-    /* line 96, ../partials/_upgrades.scss */
+    /* line 99, ../partials/_upgrades.scss */
     .specs ul li {
       font-size: 15px;
       font-weight: 500;
