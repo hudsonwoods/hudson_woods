@@ -14,7 +14,6 @@ nav {
 					flex: 1 1 auto;
 					text-align: left;
 					a {
-
 						margin-top: 15px;
 						padding-top: 0;
 						padding-bottom: 0;
@@ -35,7 +34,6 @@ nav {
 					text-transform: uppercase;
 					&.current {
 						color: white;
-						font-weight: 400;
 					}
 				}
 			}
@@ -48,10 +46,9 @@ nav {
 				background-image: url("../img/hw_logo_dark.svg");
 			}
 			ul li a {
-				color: $base-font-color;
-				&.current {
-					color: darken($base-font-color,10%);
-					font-weight: 600;
+				color: $inactive-gray;
+				&.current, &:hover {
+					color: $dark-gray;
 				}
 			}
 		}
@@ -64,9 +61,8 @@ nav {
 	ul {
 		width: 100%;
 		display: flex;
-		justify-content: space-between;
-		@include pre(2);
-		@include span(8);
+		justify-content: space-around;
+		@include span(full);
 		&#upgrades-nav {
 			justify-content: center;
 			li a {
@@ -74,26 +70,39 @@ nav {
 				padding-right: 20px;
 			}
 		}
+		&#homes {
+			justify-content: flex-start;
+			li:first-of-type {
+				display: none;
+			}
+			li a {
+				margin-right: 30px;
+			}
+		}
 	}
 	li {
 		display: inline-block;
 		@include transition(.35s);
-		&.active {
-			border-bottom: 4px solid white;
-			a {
-				font-weight: 600;
-				color: white;
-			}
-		}
 		a {
 			text-transform: uppercase;
 			color: $light-gray;
 			font-size: 14px;
 			line-height: 20px;
 			display: inline-block;
-			padding: 12px 0 8px;
+			padding: 14px 0 10px;
 			height: 100%;
 			width: 100%;
+			&:hover {
+				color: white;
+			}
+		}
+
+		&.active {
+			border-bottom: 4px solid white;
+			a {
+				color: white;
+				padding: 14px 0 6px;
+			}
 		}
 	}
 	background-color: $dark-gray;

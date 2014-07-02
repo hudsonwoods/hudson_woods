@@ -2,7 +2,6 @@ title: Availability
 
 fields:
 
-
   heroImages:
     display: Hero Images and Headlines
     type: grid

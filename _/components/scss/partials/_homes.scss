@@ -14,8 +14,29 @@
 // 	}
 // }
 
-#intro {
-	background-color: $lighter-beige;
+#location {
+	background-image: url("../img/Location-Map.jpg");
+	margin-bottom: 0;
+	text-align: left;
+	.wrapper {
+		@include span (first 3);
+	}
+	h2,p,a {
+		margin-bottom: 30px;
+	}
+	h2 {
+		margin-top: 50px;
+	}
+	a {
+		@include transition(.15s);
+		background-color: $inactive-gray;
+		color: white;
+		padding: 10px 40px;
+		border-radius: 5px;
+		&:hover {
+			background-color: darken($inactive-gray, 3%);
+		}
+	}
 }
 
 
@@ -24,190 +45,6 @@
 
 
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Image replacement
- */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
-}
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-
-.clearfix {
-    *zoom: 1;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
 
 #map { height: 600px; }
 
@@ -232,17 +69,34 @@
 // }
 
 
-#floor-plans .content {
-	@include span(12);
-	.details {
+#floor-plans  {
+	padding: 60px 0;
+	background-color: $lighter-beige;
+	.wrapper-left {
 		@include span(first 3)
 	}
-	img {
+	.wrapper-center {
 		@include pre(1);
-		@include span(last 8);
+		@include span(5);
+		img {
+			max-width: 100%;
+		}
+	}
+	.wrapper-right {
+		@include span(last 2);
+	}
+	h2,p {
+		margin-bottom: 30px;
 	}
 	h3,h4 {
 		text-align: center;
+	}
+	a {
+		text-decoration: underline;
+		@include transition(.15s);
+		&:hover {
+			color: darken($base-font-color,10%);
+		}
 	}
 	h3 {
 		font-size: 50px;
@@ -256,21 +110,125 @@
 }
 
 #materials {
-	text-align: center;
-	h2:last-of-type {
-		color: $light-font-color;
+	padding: 60px 0;
+	background-color: $lighter-beige;
+	h2,p {
+		margin-bottom: 30px;
+	}
+	.wrapper-left {
+		@include span(3);
+	}
+	.wrapper-right {
+		@include pre(1);
+		@include span(last 8);
+		.circle {
+			@include gallery(2 of 12);
+			position: relative;
+			&.large {
+				@include gallery (3 of 12);
+			}
+		}
+		.dummy {
+			margin-top: 100%;
+		}
+		.circle-wrapper {
+			@include span(full);
+			margin: 30px 0 15px;
+		}
+		.circle-tile {
+		    position: absolute;
+		    top: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    border-radius: 50%;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    text-align: center;
+
+		    span {
+		    	text-align: center;
+		    	padding: 0 5px;
+		    	font-size: 12px;
+			    &.white {
+			    	color: white;
+			    }
+		    }
+		}
+		h4 {
+			clear: left;
+			clear: right;
+		}
+		.black-cedar {
+			background-image: url("../img/black-cedar.jpg");
+			background-position: center center;
+			background-size: cover;
+			height: 100%;
+			width: 100%;
+		}
+		.natural-cedar {
+			background-image: url("../img/natural-cedar.jpg");
+			background-position: center center;
+			background-size: cover;
+			height: 100%;
+			width: 100%;
+		}
+		.opaque-white {
+			background-color: #dedfdf;
+		}
+		.campari-red {
+			background-color: #a90605;
+		}
+		.jade-porcelain {
+			background-color: #466346;
+		}
+		.mid-century-white {
+			background-color: #d7dee2;
+		}
+		.pomegranate {
+			background-color: #862928;
+		}
+		.jade-manganese {
+			background-color: #004667;
+		}
+		.slate-gray {
+			background-color: #828380;
+		}
+		.dark-gray {
+			background-color: #797b79;
+		}
+		.hartford-green {
+			background-color: #34524a;
+		}
+		.antique-black {
+			background-color: #5a5854;
+		}
+		.matte-black {
+			background-color: #232829;
+		}
 	}
 }
 
 #finishes {
-	background-color: $light-beige;
-	.content {
-		@include span(12);
+	padding: 60px 0;
+	background-color: $lighter-beige;
+	.wrapper {
+		@include span(4);
+		&:last-of-type {
+			@include pre(1);
+		}
 	}
-
+	h2 {
+		margin-bottom: 60px;
+	}
+	img, h3,li {
+		margin-bottom: 20px;
+	}
 	li {
 		font-size: 18px;
 		margin-bottom: 18px;
+		line-height: 24px;
 	}
 	.finish-list {
 		@include pre(2);
@@ -283,21 +241,51 @@
 }
 
 #a-la-carte {
+	padding: 60px 0;
+	background-color: $lighter-beige;
+	.wrapper-center {
+		text-align: center;
+		@include pre(2);
+		@include span(8);
+	}
+	p {
+		text-align: left;
+		margin: 30px 0 60px;
+	}
 	ul {
 		margin-top: 60px;
-		@include span(6);
-		&:last-of-type {
-			@include span(last 6);
-		}
+		@include pre(1);
+		@include span(10);
 	}
 	li {
+		@include gallery(3 of 12);
 		font-size: 18px;
+		line-height: 28px;
 		margin-bottom: 18px;
+		text-align: center;
+		font-family: $headline-font;
+		img {
+			display: block;
+			text-align: center;
+			margin: 0 auto 20px;
+		}
+	}
+}
+
+#gallery {
+	h2 {
+		text-align: center;
+	}
+	padding: 60px 0;
+	background-color: $lighter-beige;
+	.sp-wrap {
+		@include pre(1);
+		@include span(10);
 	}
 }
 
 .sp-thumbs a:link, .sp-thumbs a:visited {
-		opacity:.6;
+		opacity: 1;
 }
 
 .sp-wrap {
@@ -306,11 +294,16 @@
 }
 
 .sp-thumbs  {
+		@include span(full);
 		margin-top: 20px;
-		border-top: 2px solid $beige;
+		border-top: none;
+		a {
+			@include gallery(1 of 10);
+		}
 		img {
-			height: 70px;
-			width: 70px;
+			height: auto;
+			width: 100%;
+			margin-bottom: 20px;
 		}
 }
 

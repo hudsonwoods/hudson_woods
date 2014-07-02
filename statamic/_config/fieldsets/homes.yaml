@@ -57,7 +57,7 @@ fields:
         type: text
         display: Premium Equipment
 
-  aLaCarte1:
+  aLaCarte:
     display: A La Carte Column 1
     type: grid
     starting_rows: 1
@@ -66,13 +66,9 @@ fields:
       text:
         type: text
         display: A La Carte Column 1
+      image:
+        type: file
+        display: Images
+        destination: assets/img/homes
+        show_thumbnail: true
 
-  aLaCarte2:
-    display: A La Carte Column 2
-    type: grid
-    starting_rows: 1
-    min_rows: 1
-    fields:
-      text:
-        type: text
-        display: A La Carte Column 2

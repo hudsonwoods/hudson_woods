@@ -15,17 +15,7 @@ margin-bottom: 0;
 button {
   z-index: 1;
 }
-.container.scrollme {
-  @include vertical-align;
-  text-align: center;
-  color: white;
-  &.landing {
-    text-align: left;
-  }
-  h1,h3 {
-    // @include span
-  }
-}
+
 
 
 /* Dots */

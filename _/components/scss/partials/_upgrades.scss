@@ -65,10 +65,7 @@
 		margin-left: 20px;
 		margin-right: 20px;
 	}
-	@include span (4);
-	&:nth-child(3n) {
-		@include span (last 4);
-	}
+	@include gallery (4 of 12);
 }
 
 .upgrade-entry {
