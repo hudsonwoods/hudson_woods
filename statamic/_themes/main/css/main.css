@@ -1409,13 +1409,13 @@ nav {
         #secondary-nav ul#in-the-area li a#eat {
           color: #6fbe44; }
         /* line 114, ../partials/_nav1.scss */
-        #secondary-nav ul#in-the-area li a#drink {
+        #secondary-nav ul#in-the-area li a#sip {
           color: #f48d99; }
         /* line 117, ../partials/_nav1.scss */
         #secondary-nav ul#in-the-area li a#culture {
           color: #ff9b63; }
         /* line 120, ../partials/_nav1.scss */
-        #secondary-nav ul#in-the-area li a#golf {
+        #secondary-nav ul#in-the-area li a#swing {
           color: #c6d1d1; }
         /* line 123, ../partials/_nav1.scss */
         #secondary-nav ul#in-the-area li a#mind-and-body {
@@ -1957,13 +1957,13 @@ nav {
   .area-tiles .tile.area.eat {
     border-top: 8px solid #6fbe44; }
   /* line 10, ../partials/_tiles.scss */
-  .area-tiles .tile.area.drink {
+  .area-tiles .tile.area.sip {
     border-top: 8px solid #f48d99; }
   /* line 13, ../partials/_tiles.scss */
   .area-tiles .tile.area.culture {
     border-top: 8px solid #ff9b63; }
   /* line 16, ../partials/_tiles.scss */
-  .area-tiles .tile.area.golf {
+  .area-tiles .tile.area.swing {
     border-top: 8px solid #c6d1d1; }
   /* line 19, ../partials/_tiles.scss */
   .area-tiles .tile.area.mind-and-body {
