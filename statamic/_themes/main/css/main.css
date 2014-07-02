@@ -1453,8 +1453,7 @@ nav {
 
 /* line 73, ../partials/_homes.scss */
 #floor-plans {
-  padding: 60px 0;
-  border-bottom: 1px solid #d5d3ce; }
+  padding: 60px 0; }
   /* line 77, ../partials/_homes.scss */
   #floor-plans .wrapper-left {
     width: 23.72881%;
@@ -1501,8 +1500,7 @@ nav {
 /* line 114, ../partials/_homes.scss */
 #materials {
   padding: 60px 0;
-  background-color: #ebe9e2;
-  border-bottom: 1px solid #d5d3ce; }
+  background-color: #ebe9e2; }
   /* line 118, ../partials/_homes.scss */
   #materials h2, #materials p {
     margin-bottom: 30px; }
@@ -1671,8 +1669,7 @@ nav {
 
 /* line 216, ../partials/_homes.scss */
 #finishes {
-  padding: 60px 0;
-  border-bottom: 1px solid #d5d3ce; }
+  padding: 60px 0; }
   /* line 220, ../partials/_homes.scss */
   #finishes .wrapper {
     width: 32.20339%;
@@ -1713,8 +1710,7 @@ nav {
 /* line 252, ../partials/_homes.scss */
 #a-la-carte {
   padding: 60px 0;
-  background-color: #ebe9e2;
-  border-bottom: 1px solid #d5d3ce; }
+  background-color: #ebe9e2; }
   /* line 256, ../partials/_homes.scss */
   #a-la-carte .wrapper-center {
     text-align: center;

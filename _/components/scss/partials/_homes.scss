@@ -73,7 +73,7 @@
 #floor-plans  {
 	padding: 60px 0;
 	// background-color: $lighter-beige;
-	border-bottom: 1px solid lighten($beige,10%);
+	// border-bottom: 1px solid lighten($beige,10%);
 	.wrapper-left {
 		@include span(first 3)
 	}
@@ -114,7 +114,7 @@
 #materials {
 	padding: 60px 0;
 	background-color: $lighter-beige;
-	border-bottom: 1px solid lighten($beige,10%);
+	// border-bottom: 1px solid lighten($beige,10%);
 	h2,p {
 		margin-bottom: 30px;
 	}
@@ -216,7 +216,7 @@
 #finishes {
 	padding: 60px 0;
 	// background-color: $lighter-beige;
-	border-bottom: 1px solid lighten($beige,10%);
+	// border-bottom: 1px solid lighten($beige,10%);
 	.wrapper {
 		@include span(4);
 		&:last-of-type {
@@ -252,7 +252,7 @@
 #a-la-carte {
 	padding: 60px 0;
 	background-color: $lighter-beige;
-	border-bottom: 1px solid lighten($beige,10%);
+	// border-bottom: 1px solid lighten($beige,10%);
 	.wrapper-center {
 		text-align: center;
 		@include pre(2);
