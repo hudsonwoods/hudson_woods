@@ -1370,10 +1370,10 @@ nav {
           color: #ffe500; }
         /* line 126, ../partials/_nav1.scss */
         #secondary-nav ul#in-the-area li a#swim {
-          color: #a0b9c1; }
+          color: #93d8ed; }
         /* line 129, ../partials/_nav1.scss */
         #secondary-nav ul#in-the-area li a#ski {
-          color: #f3ad1c; }
+          color: #b0ccd5; }
         /* line 132, ../partials/_nav1.scss */
         #secondary-nav ul#in-the-area li a#trail {
           color: #f3ad1c; }
@@ -1912,13 +1912,13 @@ nav {
     border-top: 8px solid #ffe500; }
   /* line 22, ../partials/_tiles.scss */
   .area-tiles .tile.area.swim {
-    border-top: 8px solid #a0b9c1; }
+    border-top: 8px solid #93d8ed; }
   /* line 25, ../partials/_tiles.scss */
   .area-tiles .tile.area.trail {
     border-top: 8px solid #f3ad1c; }
   /* line 28, ../partials/_tiles.scss */
   .area-tiles .tile.area.ski {
-    border-top: 8px solid #f3ad1c; }
+    border-top: 8px solid #b0ccd5; }
   /* line 31, ../partials/_tiles.scss */
   .area-tiles .tile.area.pick-and-grow {
     border-top: 8px solid #bfe700; }
