@@ -1417,20 +1417,21 @@ nav {
 /* line 17, ../partials/_homes.scss */
 #location {
   background-image: url("../img/Location-Map.jpg");
+  border-bottom: 1px solid #d5d3ce;
   margin-bottom: 0;
   text-align: left; }
-  /* line 21, ../partials/_homes.scss */
+  /* line 22, ../partials/_homes.scss */
   #location .wrapper {
     width: 23.72881%;
     float: left;
     margin-right: 1.69492%; }
-  /* line 24, ../partials/_homes.scss */
+  /* line 25, ../partials/_homes.scss */
   #location h2, #location p, #location a {
     margin-bottom: 30px; }
-  /* line 27, ../partials/_homes.scss */
+  /* line 28, ../partials/_homes.scss */
   #location h2 {
     margin-top: 50px; }
-  /* line 30, ../partials/_homes.scss */
+  /* line 31, ../partials/_homes.scss */
   #location a {
     -webkit-transition: 0.15s;
     transition: 0.15s;
@@ -1438,84 +1439,85 @@ nav {
     color: white;
     padding: 10px 40px;
     border-radius: 5px; }
-    /* line 36, ../partials/_homes.scss */
+    /* line 37, ../partials/_homes.scss */
     #location a:hover {
       background-color: #6f6f6f; }
 
-/* line 49, ../partials/_homes.scss */
+/* line 50, ../partials/_homes.scss */
 #map {
   height: 600px; }
 
-/* line 51, ../partials/_homes.scss */
+/* line 52, ../partials/_homes.scss */
 .homes-content {
   padding: 100px 0; }
 
-/* line 72, ../partials/_homes.scss */
+/* line 73, ../partials/_homes.scss */
 #floor-plans {
   padding: 60px 0;
-  background-color: #ebe9e2; }
-  /* line 75, ../partials/_homes.scss */
+  border-bottom: 1px solid #d5d3ce; }
+  /* line 77, ../partials/_homes.scss */
   #floor-plans .wrapper-left {
     width: 23.72881%;
     float: left;
     margin-right: 1.69492%; }
-  /* line 78, ../partials/_homes.scss */
+  /* line 80, ../partials/_homes.scss */
   #floor-plans .wrapper-center {
     margin-left: 8.47458%;
     width: 40.67797%;
     float: left;
     margin-right: 1.69492%; }
-    /* line 81, ../partials/_homes.scss */
+    /* line 83, ../partials/_homes.scss */
     #floor-plans .wrapper-center img {
       max-width: 100%; }
-  /* line 85, ../partials/_homes.scss */
+  /* line 87, ../partials/_homes.scss */
   #floor-plans .wrapper-right {
     width: 15.25424%;
     float: right;
     margin-right: 0; }
-  /* line 88, ../partials/_homes.scss */
+  /* line 90, ../partials/_homes.scss */
   #floor-plans h2, #floor-plans p {
     margin-bottom: 30px; }
-  /* line 91, ../partials/_homes.scss */
+  /* line 93, ../partials/_homes.scss */
   #floor-plans h3, #floor-plans h4 {
     text-align: center; }
-  /* line 94, ../partials/_homes.scss */
+  /* line 96, ../partials/_homes.scss */
   #floor-plans a {
     text-decoration: underline;
     -webkit-transition: 0.15s;
     transition: 0.15s; }
-    /* line 97, ../partials/_homes.scss */
+    /* line 99, ../partials/_homes.scss */
     #floor-plans a:hover {
       color: #555953; }
-  /* line 101, ../partials/_homes.scss */
+  /* line 103, ../partials/_homes.scss */
   #floor-plans h3 {
     font-size: 50px;
     border-top: 1px solid #6e736c;
     padding-top: 20px; }
-  /* line 106, ../partials/_homes.scss */
+  /* line 108, ../partials/_homes.scss */
   #floor-plans h4 {
     font-size: 20px;
     padding-bottom: 40px; }
 
-/* line 112, ../partials/_homes.scss */
+/* line 114, ../partials/_homes.scss */
 #materials {
   padding: 60px 0;
-  background-color: #ebe9e2; }
-  /* line 115, ../partials/_homes.scss */
+  background-color: #ebe9e2;
+  border-bottom: 1px solid #d5d3ce; }
+  /* line 118, ../partials/_homes.scss */
   #materials h2, #materials p {
     margin-bottom: 30px; }
-  /* line 118, ../partials/_homes.scss */
+  /* line 121, ../partials/_homes.scss */
   #materials .wrapper-left {
     width: 23.72881%;
     float: left;
     margin-right: 1.69492%; }
-  /* line 121, ../partials/_homes.scss */
+  /* line 124, ../partials/_homes.scss */
   #materials .wrapper-right {
     margin-left: 8.47458%;
     width: 66.10169%;
     float: right;
     margin-right: 0; }
-    /* line 124, ../partials/_homes.scss */
+    /* line 127, ../partials/_homes.scss */
     #materials .wrapper-right .circle {
       width: 15.25424%;
       float: left;
@@ -1551,7 +1553,7 @@ nav {
         margin-left: 84.74576%;
         margin-right: -100%;
         clear: none; }
-      /* line 127, ../partials/_homes.scss */
+      /* line 130, ../partials/_homes.scss */
       #materials .wrapper-right .circle.large {
         width: 23.72881%;
         float: left; }
@@ -1576,17 +1578,17 @@ nav {
           margin-left: 76.27119%;
           margin-right: -100%;
           clear: none; }
-    /* line 131, ../partials/_homes.scss */
+    /* line 134, ../partials/_homes.scss */
     #materials .wrapper-right .dummy {
       margin-top: 100%; }
-    /* line 134, ../partials/_homes.scss */
+    /* line 137, ../partials/_homes.scss */
     #materials .wrapper-right .circle-wrapper {
       width: 100%;
       float: left;
       margin-left: 0;
       margin-right: 0;
       margin: 30px 0 15px; }
-    /* line 138, ../partials/_homes.scss */
+    /* line 141, ../partials/_homes.scss */
     #materials .wrapper-right .circle-tile {
       position: absolute;
       top: 0;
@@ -1607,130 +1609,131 @@ nav {
       -ms-flex-pack: center;
       justify-content: center;
       text-align: center; }
-      /* line 150, ../partials/_homes.scss */
+      /* line 153, ../partials/_homes.scss */
       #materials .wrapper-right .circle-tile span {
         text-align: center;
         padding: 0 5px;
         font-size: 12px; }
-        /* line 154, ../partials/_homes.scss */
+        /* line 157, ../partials/_homes.scss */
         #materials .wrapper-right .circle-tile span.white {
           color: white; }
-    /* line 159, ../partials/_homes.scss */
+    /* line 162, ../partials/_homes.scss */
     #materials .wrapper-right h4 {
       clear: left;
       clear: right; }
-    /* line 163, ../partials/_homes.scss */
+    /* line 166, ../partials/_homes.scss */
     #materials .wrapper-right .black-cedar {
       background-image: url("../img/black-cedar.jpg");
       background-position: center center;
       background-size: cover;
       height: 100%;
       width: 100%; }
-    /* line 170, ../partials/_homes.scss */
+    /* line 173, ../partials/_homes.scss */
     #materials .wrapper-right .natural-cedar {
       background-image: url("../img/natural-cedar.jpg");
       background-position: center center;
       background-size: cover;
       height: 100%;
       width: 100%; }
-    /* line 177, ../partials/_homes.scss */
+    /* line 180, ../partials/_homes.scss */
     #materials .wrapper-right .opaque-white {
       background-color: #dedfdf; }
-    /* line 180, ../partials/_homes.scss */
+    /* line 183, ../partials/_homes.scss */
     #materials .wrapper-right .campari-red {
       background-color: #a90605; }
-    /* line 183, ../partials/_homes.scss */
+    /* line 186, ../partials/_homes.scss */
     #materials .wrapper-right .jade-porcelain {
       background-color: #466346; }
-    /* line 186, ../partials/_homes.scss */
+    /* line 189, ../partials/_homes.scss */
     #materials .wrapper-right .mid-century-white {
       background-color: #d7dee2; }
-    /* line 189, ../partials/_homes.scss */
+    /* line 192, ../partials/_homes.scss */
     #materials .wrapper-right .pomegranate {
       background-color: #862928; }
-    /* line 192, ../partials/_homes.scss */
+    /* line 195, ../partials/_homes.scss */
     #materials .wrapper-right .jade-manganese {
       background-color: #004667; }
-    /* line 195, ../partials/_homes.scss */
+    /* line 198, ../partials/_homes.scss */
     #materials .wrapper-right .slate-gray {
       background-color: #828380; }
-    /* line 198, ../partials/_homes.scss */
+    /* line 201, ../partials/_homes.scss */
     #materials .wrapper-right .dark-gray {
       background-color: #797b79; }
-    /* line 201, ../partials/_homes.scss */
+    /* line 204, ../partials/_homes.scss */
     #materials .wrapper-right .hartford-green {
       background-color: #34524a; }
-    /* line 204, ../partials/_homes.scss */
+    /* line 207, ../partials/_homes.scss */
     #materials .wrapper-right .antique-black {
       background-color: #5a5854; }
-    /* line 207, ../partials/_homes.scss */
+    /* line 210, ../partials/_homes.scss */
     #materials .wrapper-right .matte-black {
       background-color: #232829; }
 
-/* line 213, ../partials/_homes.scss */
+/* line 216, ../partials/_homes.scss */
 #finishes {
   padding: 60px 0;
-  background-color: #ebe9e2; }
-  /* line 216, ../partials/_homes.scss */
+  border-bottom: 1px solid #d5d3ce; }
+  /* line 220, ../partials/_homes.scss */
   #finishes .wrapper {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%; }
-    /* line 218, ../partials/_homes.scss */
+    /* line 222, ../partials/_homes.scss */
     #finishes .wrapper:last-of-type {
       margin-left: 8.47458%; }
-  /* line 222, ../partials/_homes.scss */
+  /* line 226, ../partials/_homes.scss */
   #finishes h2 {
     margin-bottom: 60px; }
-  /* line 225, ../partials/_homes.scss */
+  /* line 229, ../partials/_homes.scss */
   #finishes img, #finishes h3, #finishes li {
     margin-bottom: 20px; }
-  /* line 228, ../partials/_homes.scss */
+  /* line 232, ../partials/_homes.scss */
   #finishes h3 {
     font-size: 20px;
     font-weight: 600; }
-  /* line 232, ../partials/_homes.scss */
+  /* line 236, ../partials/_homes.scss */
   #finishes li {
     font-size: 20px;
     margin-bottom: 18px;
     line-height: 24px;
     display: block; }
-  /* line 238, ../partials/_homes.scss */
+  /* line 242, ../partials/_homes.scss */
   #finishes .finish-list {
     margin-left: 16.94915%;
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%; }
-  /* line 242, ../partials/_homes.scss */
+  /* line 246, ../partials/_homes.scss */
   #finishes .premium-equipment {
     margin-left: 8.47458%;
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%; }
 
-/* line 248, ../partials/_homes.scss */
+/* line 252, ../partials/_homes.scss */
 #a-la-carte {
   padding: 60px 0;
-  background-color: #ebe9e2; }
-  /* line 251, ../partials/_homes.scss */
+  background-color: #ebe9e2;
+  border-bottom: 1px solid #d5d3ce; }
+  /* line 256, ../partials/_homes.scss */
   #a-la-carte .wrapper-center {
     text-align: center;
     margin-left: 16.94915%;
     width: 66.10169%;
     float: left;
     margin-right: 1.69492%; }
-  /* line 256, ../partials/_homes.scss */
+  /* line 261, ../partials/_homes.scss */
   #a-la-carte p {
     text-align: left;
     margin: 30px 0 60px; }
-  /* line 260, ../partials/_homes.scss */
+  /* line 265, ../partials/_homes.scss */
   #a-la-carte ul {
     margin-top: 60px;
     margin-left: 8.47458%;
     width: 83.05085%;
     float: left;
     margin-right: 1.69492%; }
-  /* line 265, ../partials/_homes.scss */
+  /* line 270, ../partials/_homes.scss */
   #a-la-carte li {
     width: 23.72881%;
     float: left;
@@ -1756,7 +1759,7 @@ nav {
       margin-left: 76.27119%;
       margin-right: -100%;
       clear: none; }
-    /* line 268, ../partials/_homes.scss */
+    /* line 273, ../partials/_homes.scss */
     #a-la-carte li p {
       margin-left: 16.94915%;
       width: 66.10169%;
@@ -1767,36 +1770,35 @@ nav {
       line-height: 28px;
       margin-bottom: 18px;
       text-align: center; }
-    /* line 277, ../partials/_homes.scss */
+    /* line 282, ../partials/_homes.scss */
     #a-la-carte li img {
       display: block;
       text-align: center;
       margin: 0 auto 20px; }
 
-/* line 285, ../partials/_homes.scss */
+/* line 290, ../partials/_homes.scss */
 #gallery {
-  padding: 60px 0;
-  background-color: #ebe9e2; }
-  /* line 286, ../partials/_homes.scss */
+  padding: 60px 0; }
+  /* line 292, ../partials/_homes.scss */
   #gallery h2 {
     text-align: center; }
-  /* line 291, ../partials/_homes.scss */
+  /* line 297, ../partials/_homes.scss */
   #gallery .sp-wrap {
     margin-left: 8.47458%;
     width: 83.05085%;
     float: left;
     margin-right: 1.69492%; }
 
-/* line 297, ../partials/_homes.scss */
+/* line 303, ../partials/_homes.scss */
 .sp-thumbs a:link, .sp-thumbs a:visited {
   opacity: 1; }
 
-/* line 301, ../partials/_homes.scss */
+/* line 307, ../partials/_homes.scss */
 .sp-wrap {
   margin: 60px auto 30px;
   background-color: transparent; }
 
-/* line 306, ../partials/_homes.scss */
+/* line 312, ../partials/_homes.scss */
 .sp-thumbs {
   width: 100%;
   float: left;
@@ -1804,7 +1806,7 @@ nav {
   margin-right: 0;
   margin-top: 20px;
   border-top: none; }
-  /* line 310, ../partials/_homes.scss */
+  /* line 316, ../partials/_homes.scss */
   .sp-thumbs a {
     width: 8.16327%;
     float: left; }
@@ -1859,20 +1861,20 @@ nav {
       margin-left: 91.83673%;
       margin-right: -100%;
       clear: none; }
-  /* line 313, ../partials/_homes.scss */
+  /* line 319, ../partials/_homes.scss */
   .sp-thumbs img {
     height: auto;
     width: 100%;
     margin-bottom: 20px; }
 
-/* line 320, ../partials/_homes.scss */
+/* line 326, ../partials/_homes.scss */
 .sp-large a {
   pointer-events: none; }
-  /* line 322, ../partials/_homes.scss */
+  /* line 328, ../partials/_homes.scss */
   .sp-large a img {
     cursor: default; }
 
-/* line 327, ../partials/_homes.scss */
+/* line 333, ../partials/_homes.scss */
 .sp-current:after {
   content: '';
   border: 6px solid transparent;

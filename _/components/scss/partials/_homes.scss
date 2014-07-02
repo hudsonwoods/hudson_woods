@@ -16,6 +16,7 @@
 
 #location {
 	background-image: url("../img/Location-Map.jpg");
+	border-bottom: 1px solid lighten($beige,10%);
 	margin-bottom: 0;
 	text-align: left;
 	.wrapper {
@@ -71,7 +72,8 @@
 
 #floor-plans  {
 	padding: 60px 0;
-	background-color: $lighter-beige;
+	// background-color: $lighter-beige;
+	border-bottom: 1px solid lighten($beige,10%);
 	.wrapper-left {
 		@include span(first 3)
 	}
@@ -112,6 +114,7 @@
 #materials {
 	padding: 60px 0;
 	background-color: $lighter-beige;
+	border-bottom: 1px solid lighten($beige,10%);
 	h2,p {
 		margin-bottom: 30px;
 	}
@@ -212,7 +215,8 @@
 
 #finishes {
 	padding: 60px 0;
-	background-color: $lighter-beige;
+	// background-color: $lighter-beige;
+	border-bottom: 1px solid lighten($beige,10%);
 	.wrapper {
 		@include span(4);
 		&:last-of-type {
@@ -248,6 +252,7 @@
 #a-la-carte {
 	padding: 60px 0;
 	background-color: $lighter-beige;
+	border-bottom: 1px solid lighten($beige,10%);
 	.wrapper-center {
 		text-align: center;
 		@include pre(2);
@@ -283,11 +288,12 @@
 }
 
 #gallery {
+	
 	h2 {
 		text-align: center;
 	}
 	padding: 60px 0;
-	background-color: $lighter-beige;
+	// background-color: $lighter-beige;
 	.sp-wrap {
 		@include pre(1);
 		@include span(10);
