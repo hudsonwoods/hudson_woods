@@ -225,10 +225,15 @@
 	img, h3,li {
 		margin-bottom: 20px;
 	}
+	h3 {
+		font-size: 20px;
+		font-weight: 600;
+	}
 	li {
-		font-size: 18px;
+		font-size: 20px;
 		margin-bottom: 18px;
 		line-height: 24px;
+		display: block;
 	}
 	.finish-list {
 		@include pre(2);
@@ -259,11 +264,16 @@
 	}
 	li {
 		@include gallery(3 of 12);
-		font-size: 18px;
-		line-height: 28px;
-		margin-bottom: 18px;
 		text-align: center;
-		font-family: $headline-font;
+		p {
+			@include pre(2);
+			@include span(8);
+			font-family: $headline-font;
+			font-size: 20px;
+			line-height: 28px;
+			margin-bottom: 18px;
+			text-align: center;
+		}
 		img {
 			display: block;
 			text-align: center;

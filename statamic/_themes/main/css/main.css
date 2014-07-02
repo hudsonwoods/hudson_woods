@@ -1662,54 +1662,55 @@ nav {
   #finishes img, #finishes h3, #finishes li {
     margin-bottom: 20px; }
   /* line 228, ../partials/_homes.scss */
+  #finishes h3 {
+    font-size: 20px;
+    font-weight: 600; }
+  /* line 232, ../partials/_homes.scss */
   #finishes li {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 18px;
-    line-height: 24px; }
-  /* line 233, ../partials/_homes.scss */
+    line-height: 24px;
+    display: block; }
+  /* line 238, ../partials/_homes.scss */
   #finishes .finish-list {
     margin-left: 16.94915%;
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%; }
-  /* line 237, ../partials/_homes.scss */
+  /* line 242, ../partials/_homes.scss */
   #finishes .premium-equipment {
     margin-left: 8.47458%;
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%; }
 
-/* line 243, ../partials/_homes.scss */
+/* line 248, ../partials/_homes.scss */
 #a-la-carte {
   padding: 60px 0;
   background-color: #ebe9e2; }
-  /* line 246, ../partials/_homes.scss */
+  /* line 251, ../partials/_homes.scss */
   #a-la-carte .wrapper-center {
     text-align: center;
     margin-left: 16.94915%;
     width: 66.10169%;
     float: left;
     margin-right: 1.69492%; }
-  /* line 251, ../partials/_homes.scss */
+  /* line 256, ../partials/_homes.scss */
   #a-la-carte p {
     text-align: left;
     margin: 30px 0 60px; }
-  /* line 255, ../partials/_homes.scss */
+  /* line 260, ../partials/_homes.scss */
   #a-la-carte ul {
     margin-top: 60px;
     margin-left: 8.47458%;
     width: 83.05085%;
     float: left;
     margin-right: 1.69492%; }
-  /* line 260, ../partials/_homes.scss */
+  /* line 265, ../partials/_homes.scss */
   #a-la-carte li {
     width: 23.72881%;
     float: left;
-    font-size: 18px;
-    line-height: 28px;
-    margin-bottom: 18px;
-    text-align: center;
-    font-family: "adelle", Georgia, Cambria, "Times New Roman", Times, serif; }
+    text-align: center; }
     /* line 63, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
     #a-la-carte li:nth-child(4n + 1) {
       margin-left: 0;
@@ -1731,36 +1732,47 @@ nav {
       margin-left: 76.27119%;
       margin-right: -100%;
       clear: none; }
-    /* line 267, ../partials/_homes.scss */
+    /* line 268, ../partials/_homes.scss */
+    #a-la-carte li p {
+      margin-left: 16.94915%;
+      width: 66.10169%;
+      float: left;
+      margin-right: 1.69492%;
+      font-family: "adelle", Georgia, Cambria, "Times New Roman", Times, serif;
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 18px;
+      text-align: center; }
+    /* line 277, ../partials/_homes.scss */
     #a-la-carte li img {
       display: block;
       text-align: center;
       margin: 0 auto 20px; }
 
-/* line 275, ../partials/_homes.scss */
+/* line 285, ../partials/_homes.scss */
 #gallery {
   padding: 60px 0;
   background-color: #ebe9e2; }
-  /* line 276, ../partials/_homes.scss */
+  /* line 286, ../partials/_homes.scss */
   #gallery h2 {
     text-align: center; }
-  /* line 281, ../partials/_homes.scss */
+  /* line 291, ../partials/_homes.scss */
   #gallery .sp-wrap {
     margin-left: 8.47458%;
     width: 83.05085%;
     float: left;
     margin-right: 1.69492%; }
 
-/* line 287, ../partials/_homes.scss */
+/* line 297, ../partials/_homes.scss */
 .sp-thumbs a:link, .sp-thumbs a:visited {
   opacity: 1; }
 
-/* line 291, ../partials/_homes.scss */
+/* line 301, ../partials/_homes.scss */
 .sp-wrap {
   margin: 60px auto 30px;
   background-color: transparent; }
 
-/* line 296, ../partials/_homes.scss */
+/* line 306, ../partials/_homes.scss */
 .sp-thumbs {
   width: 100%;
   float: left;
@@ -1768,7 +1780,7 @@ nav {
   margin-right: 0;
   margin-top: 20px;
   border-top: none; }
-  /* line 300, ../partials/_homes.scss */
+  /* line 310, ../partials/_homes.scss */
   .sp-thumbs a {
     width: 8.16327%;
     float: left; }
@@ -1823,20 +1835,20 @@ nav {
       margin-left: 91.83673%;
       margin-right: -100%;
       clear: none; }
-  /* line 303, ../partials/_homes.scss */
+  /* line 313, ../partials/_homes.scss */
   .sp-thumbs img {
     height: auto;
     width: 100%;
     margin-bottom: 20px; }
 
-/* line 310, ../partials/_homes.scss */
+/* line 320, ../partials/_homes.scss */
 .sp-large a {
   pointer-events: none; }
-  /* line 312, ../partials/_homes.scss */
+  /* line 322, ../partials/_homes.scss */
   .sp-large a img {
     cursor: default; }
 
-/* line 317, ../partials/_homes.scss */
+/* line 327, ../partials/_homes.scss */
 .sp-current:after {
   content: '';
   border: 6px solid transparent;
