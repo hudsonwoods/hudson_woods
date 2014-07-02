@@ -1,11 +1,25 @@
-<section id="header-availability" class="hero">
 
-  {{ theme:partial src="nav1" }}
-  <div class="container scrollme hero-text">
-    <h1 class="animateme" data-when="exit" data-from="0" data-to="1" data-opacity="0" data-translatey="50" style="opacity: 1; -webkit-transform: translate3d(0px, 50px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);">In The Area</h1>
-    <h3 class="animateme" data-when="exit" data-from="0" data-to="1" data-opacity="0" data-translatey="50" style="opacity: 1; -webkit-transform: translate3d(0px, 50px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);">Explore west of the Hudson and get to know the locals</h3>
-  </div>
+<section id="header-in-the-area" class="hero">
+{{ theme:partial src="nav1" }}
 
+<div class="slick-carousel" >
+{{ heroImages }}
+
+      <div class="hero landing" style="background-image: url( {{ image }} );">
+      <div class="container scrollme">
+        <div class="animateme" data-when="exit" data-from="0" data-to="0.55" data-opacity="0" data-translatey="100" style="opacity: 1; -webkit-transform: translate3d(0px, 100px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);">
+    <h1>{{ headline }}</h1>
+    {{ if subHeadline|not_empty }}
+    <h3>{{ subHeadline }}</h3>
+    {{ endif }}
+        </div>
+
+      </div>
+    </div>
+
+{{ /heroImages }}
+</div>
+{{ theme:partial src="nav_availability" }}
 </section>
 
 <div id="map-nav-availability"></div>

@@ -1128,17 +1128,18 @@ img {
   background-size: cover;
   height: 700px;
   width: 100%;
-  margin-bottom: -40px; }
-  /* line 80, ../partials/_layout.scss */
+  margin-bottom: 40px;
+  text-align: center; }
+  /* line 81, ../partials/_layout.scss */
   .hero.full {
     height: 700px;
     margin-bottom: 0; }
 
-/* line 86, ../partials/_layout.scss */
+/* line 87, ../partials/_layout.scss */
 .container.hero-text {
   height: 100%;
   width: 100%; }
-  /* line 89, ../partials/_layout.scss */
+  /* line 90, ../partials/_layout.scss */
   .container.hero-text h1, .container.hero-text h2, .container.hero-text h3, .container.hero-text h4 {
     position: relative;
     top: 50%;
@@ -1148,71 +1149,18 @@ img {
     text-align: center;
     color: white; }
 
-/*
- * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
- */
-/* line 107, ../partials/_layout.scss */
-img {
-  vertical-align: middle; }
-
-/*
- * Allow only vertical resizing of textareas.
- */
-/* line 116, ../partials/_layout.scss */
-textarea {
-  resize: vertical; }
-
-/* ==========================================================================
-   Chrome Frame prompt
-   ========================================================================== */
-/* line 124, ../partials/_layout.scss */
-.chromeframe {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0; }
-
-/* ==========================================================================
-   Parallax Scroll
-   ========================================================================== */
-/* line 135, ../partials/_layout.scss */
-.no-js {
-  padding-top: 106px; }
-
-/* line 139, ../partials/_layout.scss */
-.loading {
-  background: url("../img/ico_loading.gif") no-repeat center center; }
-
-/* line 146, ../partials/_layout.scss */
-.loaded section,
-.no-js section {
-  opacity: 1;
-  -webkit-transition: opacity 300ms ease-out;
-  transition: opacity 300ms ease-out; }
-
-/* line 153, ../partials/_layout.scss */
-main {
-  overflow-x: hidden; }
-
-/* line 159, ../partials/_layout.scss */
-.hsContainer {
-  width: 100%;
-  height: 600px;
-  overflow: hidden;
-  position: relative; }
-
-/* line 166, ../partials/_layout.scss */
-.hsContainer .parallax-container {
-  color: #fff;
+/* line 98, ../partials/_layout.scss */
+.container.scrollme {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  text-align: center; }
-  /* line 170, ../partials/_layout.scss */
-  .hsContainer .parallax-container h1, .hsContainer .parallax-container h2, .hsContainer .parallax-container h3, .hsContainer .parallax-container h4, .hsContainer .parallax-container h5, .hsContainer .parallax-container h6, .hsContainer .parallax-container a, .hsContainer .parallax-container span, .hsContainer .parallax-container p {
-    color: #fff; }
+  text-align: center;
+  color: white; }
+  /* line 102, ../partials/_layout.scss */
+  .container.scrollme.landing {
+    text-align: left; }
 
 /* line 2, ../partials/_landing.scss */
 #header-landing h3, #header-upgrades h3 {
@@ -1238,45 +1186,48 @@ button {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  text-align: left;
+  text-align: center;
   color: white; }
+  /* line 22, ../partials/_landing.scss */
+  .container.scrollme.landing {
+    text-align: left; }
 
 /* Dots */
-/* line 31, ../partials/_landing.scss */
+/* line 34, ../partials/_landing.scss */
 .slick-slider {
   margin-bottom: 30px; }
 
-/* line 34, ../partials/_landing.scss */
+/* line 37, ../partials/_landing.scss */
 .slick-dots {
   bottom: 45px; }
-  /* line 36, ../partials/_landing.scss */
+  /* line 39, ../partials/_landing.scss */
   .slick-dots li {
     margin: 0px 10px; }
-    /* line 38, ../partials/_landing.scss */
+    /* line 41, ../partials/_landing.scss */
     .slick-dots li button {
       height: 18px;
       width: 20px; }
-      /* line 41, ../partials/_landing.scss */
+      /* line 44, ../partials/_landing.scss */
       .slick-dots li button:before {
         font-size: 16px;
         color: white;
         opacity: 0.75; }
-    /* line 47, ../partials/_landing.scss */
+    /* line 50, ../partials/_landing.scss */
     .slick-dots li.slick-active button {
       border: 1px solid white;
       border-radius: 50%;
       height: 15px;
       width: 15px; }
-      /* line 52, ../partials/_landing.scss */
+      /* line 55, ../partials/_landing.scss */
       .slick-dots li.slick-active button:before {
         color: transparent;
         opacity: .85; }
 
-/* line 60, ../partials/_landing.scss */
+/* line 63, ../partials/_landing.scss */
 #landing-tiles {
   padding: 100px 0;
   text-align: center; }
-  /* line 63, ../partials/_landing.scss */
+  /* line 66, ../partials/_landing.scss */
   #landing-tiles p.landingParagraph {
     margin-left: 16.94915%;
     width: 66.10169%;
@@ -1285,7 +1236,7 @@ button {
     font-size: 18px;
     margin-top: 20px;
     margin-bottom: 100px; }
-  /* line 70, ../partials/_landing.scss */
+  /* line 73, ../partials/_landing.scss */
   #landing-tiles .landing-tile {
     padding-left: 15px;
     padding-left: 0.53571rem;
@@ -1294,23 +1245,23 @@ button {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%; }
-    /* line 73, ../partials/_landing.scss */
+    /* line 76, ../partials/_landing.scss */
     #landing-tiles .landing-tile:nth-child(3n) {
       width: 32.20339%;
       float: right;
       margin-right: 0; }
-    /* line 76, ../partials/_landing.scss */
+    /* line 79, ../partials/_landing.scss */
     #landing-tiles .landing-tile img {
       max-width: 100%;
       height: 200px; }
-    /* line 80, ../partials/_landing.scss */
+    /* line 83, ../partials/_landing.scss */
     #landing-tiles .landing-tile h3 {
       margin-top: 20px; }
-    /* line 83, ../partials/_landing.scss */
+    /* line 86, ../partials/_landing.scss */
     #landing-tiles .landing-tile p {
       height: 100px;
       margin-top: 20px; }
-    /* line 87, ../partials/_landing.scss */
+    /* line 90, ../partials/_landing.scss */
     #landing-tiles .landing-tile a {
       color: #484c47;
       font-weight: 600; }
@@ -1340,45 +1291,50 @@ nav {
           -webkit-box-flex: 1;
           -webkit-flex: 1 1 auto;
           -ms-flex: 1 1 auto;
-          flex: 1 1 auto; }
-          /* line 15, ../partials/_nav1.scss */
+          flex: 1 1 auto;
+          text-align: left; }
+          /* line 16, ../partials/_nav1.scss */
           nav.navbar ul li:first-of-type a {
-            padding-top: 15px;
-            padding-bottom: 15px; }
-            /* line 18, ../partials/_nav1.scss */
-            nav.navbar ul li:first-of-type a img {
-              height: 47px;
-              width: 99px; }
-        /* line 24, ../partials/_nav1.scss */
+            margin-top: 15px;
+            padding-top: 0;
+            padding-bottom: 0;
+            background-image: url("../img/hw_logo.svg");
+            background-repeat: no-repeat;
+            height: 47px;
+            width: 99px; }
+        /* line 27, ../partials/_nav1.scss */
         nav.navbar ul li a {
           color: white;
           display: inline-block;
-          padding: 33px 15px;
+          padding: 30px 15px;
           height: 100%;
           width: 100%;
           font-size: 14px;
           color: white;
           text-transform: uppercase; }
-          /* line 33, ../partials/_nav1.scss */
+          /* line 36, ../partials/_nav1.scss */
           nav.navbar ul li a.current {
             color: white;
             font-weight: 400; }
-    /* line 41, ../partials/_nav1.scss */
+    /* line 44, ../partials/_nav1.scss */
     nav.navbar.stuck, nav.navbar.fixed {
       background-color: #bdbbb3;
       padding-top: 0px; }
-      /* line 44, ../partials/_nav1.scss */
+      /* line 47, ../partials/_nav1.scss */
+      nav.navbar.stuck ul li:first-of-type a, nav.navbar.fixed ul li:first-of-type a {
+        background-image: url("../img/hw_logo_dark.svg"); }
+      /* line 50, ../partials/_nav1.scss */
       nav.navbar.stuck ul li a, nav.navbar.fixed ul li a {
         color: #6e736c; }
-        /* line 46, ../partials/_nav1.scss */
+        /* line 52, ../partials/_nav1.scss */
         nav.navbar.stuck ul li a.current, nav.navbar.fixed ul li a.current {
           color: #555953;
           font-weight: 600; }
 
-/* line 56, ../partials/_nav1.scss */
+/* line 62, ../partials/_nav1.scss */
 #secondary-nav {
   background-color: #505054; }
-  /* line 58, ../partials/_nav1.scss */
+  /* line 64, ../partials/_nav1.scss */
   #secondary-nav ul {
     width: 100%;
     display: -webkit-box;
@@ -1393,29 +1349,29 @@ nav {
     width: 66.10169%;
     float: left;
     margin-right: 1.69492%; }
-    /* line 64, ../partials/_nav1.scss */
+    /* line 70, ../partials/_nav1.scss */
     #secondary-nav ul#upgrades-nav {
       -webkit-box-pack: center;
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center; }
-      /* line 66, ../partials/_nav1.scss */
+      /* line 72, ../partials/_nav1.scss */
       #secondary-nav ul#upgrades-nav li a {
         padding-left: 20px;
         padding-right: 20px; }
-  /* line 72, ../partials/_nav1.scss */
+  /* line 78, ../partials/_nav1.scss */
   #secondary-nav li {
     display: inline-block;
     -webkit-transition: 0.35s;
     transition: 0.35s; }
-    /* line 75, ../partials/_nav1.scss */
+    /* line 81, ../partials/_nav1.scss */
     #secondary-nav li.active {
       border-bottom: 4px solid white; }
-      /* line 77, ../partials/_nav1.scss */
+      /* line 83, ../partials/_nav1.scss */
       #secondary-nav li.active a {
         font-weight: 600;
         color: white; }
-    /* line 82, ../partials/_nav1.scss */
+    /* line 88, ../partials/_nav1.scss */
     #secondary-nav li a {
       text-transform: uppercase;
       color: #cccccc;
@@ -1425,15 +1381,15 @@ nav {
       padding: 12px 0 8px;
       height: 100%;
       width: 100%; }
-  /* line 94, ../partials/_nav1.scss */
+  /* line 100, ../partials/_nav1.scss */
   #secondary-nav.stuck {
-    top: 81px; }
+    top: 74px; }
 
-/* line 104, ../partials/_nav1.scss */
+/* line 110, ../partials/_nav1.scss */
 .anchor {
   display: block;
   position: relative;
-  top: -125px;
+  top: -114px;
   visibility: hidden; }
 
 /* line 17, ../partials/_homes.scss */
@@ -1620,135 +1576,111 @@ nav {
 .homes-content {
   padding: 100px 0; }
 
-/* line 222, ../partials/_homes.scss */
-#header-homes {
-  background-image: url("../img/Smartdes-Section-image-2000x1500.jpg"); }
-
-/* line 226, ../partials/_homes.scss */
-#header-availability {
-  background-image: url("../img/Smartdes-Section-image-2000x1500.jpg"); }
-
-/* line 230, ../partials/_homes.scss */
-#nature-living {
-  background-image: url("../img/New_DesignNature-Living.jpg"); }
-
-/* line 234, ../partials/_homes.scss */
-#kitchen {
-  background-image: url("../img/New_DesignNature-Kitchen.jpg"); }
-
-/* line 238, ../partials/_homes.scss */
-#bathroom {
-  background-image: url("../img/DesignNature-Bathroom.jpg"); }
-
-/* line 246, ../partials/_homes.scss */
-#header-about {
-  background-image: url("../img/Smartdes-Section-image-2000x1500.jpg"); }
-
-/* line 251, ../partials/_homes.scss */
+/* line 235, ../partials/_homes.scss */
 #floor-plans .content {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0; }
-  /* line 253, ../partials/_homes.scss */
+  /* line 237, ../partials/_homes.scss */
   #floor-plans .content .details {
     width: 23.72881%;
     float: left;
     margin-right: 1.69492%; }
-  /* line 256, ../partials/_homes.scss */
+  /* line 240, ../partials/_homes.scss */
   #floor-plans .content img {
     margin-left: 8.47458%;
     width: 66.10169%;
     float: right;
     margin-right: 0; }
-  /* line 260, ../partials/_homes.scss */
+  /* line 244, ../partials/_homes.scss */
   #floor-plans .content h3, #floor-plans .content h4 {
     text-align: center; }
-  /* line 263, ../partials/_homes.scss */
+  /* line 247, ../partials/_homes.scss */
   #floor-plans .content h3 {
     font-size: 50px;
     border-top: 1px solid #6e736c;
     padding-top: 20px; }
-  /* line 268, ../partials/_homes.scss */
+  /* line 252, ../partials/_homes.scss */
   #floor-plans .content h4 {
     font-size: 20px;
     padding-bottom: 40px; }
 
-/* line 274, ../partials/_homes.scss */
+/* line 258, ../partials/_homes.scss */
 #materials {
   text-align: center; }
-  /* line 276, ../partials/_homes.scss */
+  /* line 260, ../partials/_homes.scss */
   #materials h2:last-of-type {
     color: #9a9d98; }
 
-/* line 281, ../partials/_homes.scss */
+/* line 265, ../partials/_homes.scss */
 #finishes {
   background-color: #cccabf; }
-  /* line 283, ../partials/_homes.scss */
+  /* line 267, ../partials/_homes.scss */
   #finishes .content {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0; }
-  /* line 287, ../partials/_homes.scss */
+  /* line 271, ../partials/_homes.scss */
   #finishes li {
     font-size: 18px;
     margin-bottom: 18px; }
-  /* line 291, ../partials/_homes.scss */
+  /* line 275, ../partials/_homes.scss */
   #finishes .finish-list {
     margin-left: 16.94915%;
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%; }
-  /* line 295, ../partials/_homes.scss */
+  /* line 279, ../partials/_homes.scss */
   #finishes .premium-equipment {
     margin-left: 8.47458%;
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%; }
 
-/* line 302, ../partials/_homes.scss */
+/* line 286, ../partials/_homes.scss */
 #a-la-carte ul {
   margin-top: 60px;
   width: 49.15254%;
   float: left;
   margin-right: 1.69492%; }
-  /* line 305, ../partials/_homes.scss */
+  /* line 289, ../partials/_homes.scss */
   #a-la-carte ul:last-of-type {
     width: 49.15254%;
     float: right;
     margin-right: 0; }
-/* line 309, ../partials/_homes.scss */
+/* line 293, ../partials/_homes.scss */
 #a-la-carte li {
   font-size: 18px;
   margin-bottom: 18px; }
 
-/* line 315, ../partials/_homes.scss */
+/* line 299, ../partials/_homes.scss */
 .sp-thumbs a:link, .sp-thumbs a:visited {
   opacity: .6; }
 
-/* line 319, ../partials/_homes.scss */
+/* line 303, ../partials/_homes.scss */
 .sp-wrap {
   margin: 60px auto 30px;
   background-color: transparent; }
 
-/* line 324, ../partials/_homes.scss */
+/* line 308, ../partials/_homes.scss */
 .sp-thumbs {
   margin-top: 20px;
   border-top: 2px solid #bdbbb3; }
-  /* line 327, ../partials/_homes.scss */
+  /* line 311, ../partials/_homes.scss */
   .sp-thumbs img {
     height: 70px;
     width: 70px; }
 
-/* line 333, ../partials/_homes.scss */
+/* line 317, ../partials/_homes.scss */
 .sp-large a {
   pointer-events: none; }
-  /* line 335, ../partials/_homes.scss */
+  /* line 319, ../partials/_homes.scss */
   .sp-large a img {
     cursor: default; }
 
-/* line 340, ../partials/_homes.scss */
+/* line 324, ../partials/_homes.scss */
 .sp-current:after {
   content: '';
   border: 6px solid transparent;
@@ -1851,28 +1783,23 @@ nav {
       .tile.availability .link a {
         font-weight: 600; }
 
-/* line 1, ../partials/_upgrades.scss */
-#header-upgrades {
-  margin-bottom: -40px;
-  height: 100vh;
-  width: 100%; }
-  /* line 5, ../partials/_upgrades.scss */
-  #header-upgrades .animateme {
-    margin-left: 16.94915%;
-    width: 66.10169%;
-    float: left;
-    margin-right: 1.69492%;
-    text-align: center; }
-  /* line 10, ../partials/_upgrades.scss */
-  #header-upgrades .slick-slider {
-    margin-bottom: 0; }
-  /* line 13, ../partials/_upgrades.scss */
-  #header-upgrades .hero-landing {
-    position: absolute;
-    top: 0;
-    left: 0; }
+/* line 3, ../partials/_upgrades.scss */
+#header-upgrades .animateme {
+  margin-left: 16.94915%;
+  width: 66.10169%;
+  float: left;
+  margin-right: 1.69492%;
+  text-align: center; }
+/* line 8, ../partials/_upgrades.scss */
+#header-upgrades .slick-slider {
+  margin-bottom: 0; }
+/* line 11, ../partials/_upgrades.scss */
+#header-upgrades .hero-landing {
+  position: absolute;
+  top: 0;
+  left: 0; }
 
-/* line 47, ../partials/_upgrades.scss */
+/* line 45, ../partials/_upgrades.scss */
 .upgrades {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -1881,46 +1808,46 @@ nav {
   width: 32.20339%;
   float: left;
   margin-right: 1.69492%; }
-  /* line 53, ../partials/_upgrades.scss */
+  /* line 51, ../partials/_upgrades.scss */
   .upgrades img {
     width: 100%; }
-  /* line 56, ../partials/_upgrades.scss */
+  /* line 54, ../partials/_upgrades.scss */
   .upgrades a {
     display: block; }
-  /* line 59, ../partials/_upgrades.scss */
+  /* line 57, ../partials/_upgrades.scss */
   .upgrades h1, .upgrades h3 {
     text-transform: uppercase; }
-  /* line 62, ../partials/_upgrades.scss */
+  /* line 60, ../partials/_upgrades.scss */
   .upgrades h3 {
     font-size: 32px;
     margin: 30px auto 20px; }
-  /* line 66, ../partials/_upgrades.scss */
+  /* line 64, ../partials/_upgrades.scss */
   .upgrades p {
     margin-left: 20px;
     margin-right: 20px; }
-  /* line 71, ../partials/_upgrades.scss */
+  /* line 69, ../partials/_upgrades.scss */
   .upgrades:nth-child(3n) {
     width: 32.20339%;
     float: right;
     margin-right: 0; }
 
-/* line 76, ../partials/_upgrades.scss */
+/* line 74, ../partials/_upgrades.scss */
 .upgrade-entry {
   padding-top: 160px; }
 
-/* line 79, ../partials/_upgrades.scss */
+/* line 77, ../partials/_upgrades.scss */
 .upgrade-image {
   width: 49.15254%;
   float: left;
   margin-right: 1.69492%; }
-  /* line 80, ../partials/_upgrades.scss */
+  /* line 78, ../partials/_upgrades.scss */
   .upgrade-image .sp-wrap {
     margin-top: 0; }
-  /* line 83, ../partials/_upgrades.scss */
+  /* line 81, ../partials/_upgrades.scss */
   .upgrade-image img {
     max-width: 100%; }
 
-/* line 88, ../partials/_upgrades.scss */
+/* line 86, ../partials/_upgrades.scss */
 .specs {
   border-top: 2px solid #505054;
   border-bottom: 2px solid #505054;
@@ -1928,16 +1855,16 @@ nav {
   width: 40.67797%;
   float: right;
   margin-right: 0; }
-  /* line 93, ../partials/_upgrades.scss */
+  /* line 91, ../partials/_upgrades.scss */
   .specs h3 {
     margin: 20px 0 10px; }
-  /* line 96, ../partials/_upgrades.scss */
+  /* line 94, ../partials/_upgrades.scss */
   .specs ul {
     width: 74.57627%;
     float: left;
     margin-right: 1.69492%;
     list-style-type: disc; }
-    /* line 99, ../partials/_upgrades.scss */
+    /* line 97, ../partials/_upgrades.scss */
     .specs ul li {
       font-size: 15px;
       font-weight: 500;

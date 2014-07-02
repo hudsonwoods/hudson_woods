@@ -17,8 +17,11 @@ button {
 }
 .container.scrollme {
   @include vertical-align;
-  text-align: left;
+  text-align: center;
   color: white;
+  &.landing {
+    text-align: left;
+  }
   h1,h3 {
     // @include span
   }

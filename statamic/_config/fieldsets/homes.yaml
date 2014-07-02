@@ -2,11 +2,24 @@ title: homes
 
 fields:
 
-  homes_background_image:
-    type: file
-    display: Homes Intro Parallax Image
-    destination: assets/img/
-
+  heroImages:
+    display: Hero Images and Headlines
+    type: grid
+    starting_rows: 1
+    min_rows: 1
+    fields:
+      image:
+        type: file
+        display: Images
+        destination: assets/img/upgrades
+        show_thumbnail: true
+        width: 25%
+      headline:
+        type: textarea
+        display: Headline
+      subHeadline:
+        type: textarea
+        display: Sub Headline
 
   content:
     display: Blog Entry
