@@ -79,6 +79,20 @@ nav {
 				margin-right: 30px;
 			}
 		}
+		&#about {
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+			li {
+				text-align: center;
+				align-self: center;
+			}
+			li a {
+				padding-left:15px;
+				padding-right: 15px;
+				text-align: center;
+			}
+		}
 	}
 	li {
 		display: inline-block;

@@ -1322,13 +1322,27 @@ nav {
       /* line 78, ../partials/_nav1.scss */
       #secondary-nav ul#homes li a {
         margin-right: 30px; }
-  /* line 83, ../partials/_nav1.scss */
+    /* line 82, ../partials/_nav1.scss */
+    #secondary-nav ul#about {
+      justify-content: center;
+      align-items: center;
+      align-content: center; }
+      /* line 86, ../partials/_nav1.scss */
+      #secondary-nav ul#about li {
+        text-align: center;
+        align-self: center; }
+      /* line 90, ../partials/_nav1.scss */
+      #secondary-nav ul#about li a {
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center; }
+  /* line 97, ../partials/_nav1.scss */
   #secondary-nav li {
     display: inline-block;
     -webkit-transition: 0.35s;
     -moz-transition: 0.35s;
     transition: 0.35s; }
-    /* line 86, ../partials/_nav1.scss */
+    /* line 100, ../partials/_nav1.scss */
     #secondary-nav li a {
       text-transform: uppercase;
       color: #cccccc;
@@ -1338,21 +1352,21 @@ nav {
       padding: 14px 0 10px;
       height: 100%;
       width: 100%; }
-      /* line 95, ../partials/_nav1.scss */
+      /* line 109, ../partials/_nav1.scss */
       #secondary-nav li a:hover {
         color: white; }
-    /* line 100, ../partials/_nav1.scss */
+    /* line 114, ../partials/_nav1.scss */
     #secondary-nav li.active {
       border-bottom: 4px solid white; }
-      /* line 102, ../partials/_nav1.scss */
+      /* line 116, ../partials/_nav1.scss */
       #secondary-nav li.active a {
         color: white;
         padding: 14px 0 6px; }
-  /* line 109, ../partials/_nav1.scss */
+  /* line 123, ../partials/_nav1.scss */
   #secondary-nav.stuck {
     top: 74px; }
 
-/* line 119, ../partials/_nav1.scss */
+/* line 133, ../partials/_nav1.scss */
 .anchor {
   display: block;
   position: relative;
@@ -1828,6 +1842,10 @@ nav {
 #map-nav-availability {
   height: 50px;
   background-color: #4e4f54; }
+
+/* line 1, ../partials/_in-the-area.scss */
+#header-in-the-area {
+  margin-bottom: 0; }
 
 /* line 1, ../partials/_tiles.scss */
 .area-tiles {
