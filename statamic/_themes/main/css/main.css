@@ -1378,12 +1378,63 @@ nav {
         padding-left: 15px;
         padding-right: 15px;
         text-align: center; }
-  /* line 97, ../partials/_nav1.scss */
+    /* line 96, ../partials/_nav1.scss */
+    #secondary-nav ul#in-the-area {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+      align-content: center; }
+      /* line 100, ../partials/_nav1.scss */
+      #secondary-nav ul#in-the-area li {
+        text-align: center;
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        align-self: center; }
+      /* line 104, ../partials/_nav1.scss */
+      #secondary-nav ul#in-the-area li a {
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center; }
+        /* line 108, ../partials/_nav1.scss */
+        #secondary-nav ul#in-the-area li a#sleep {
+          color: #66bbe1; }
+        /* line 111, ../partials/_nav1.scss */
+        #secondary-nav ul#in-the-area li a#eat {
+          color: #6fbe44; }
+        /* line 114, ../partials/_nav1.scss */
+        #secondary-nav ul#in-the-area li a#drink {
+          color: #f48d99; }
+        /* line 117, ../partials/_nav1.scss */
+        #secondary-nav ul#in-the-area li a#culture {
+          color: #ff9b63; }
+        /* line 120, ../partials/_nav1.scss */
+        #secondary-nav ul#in-the-area li a#golf {
+          color: #c6d1d1; }
+        /* line 123, ../partials/_nav1.scss */
+        #secondary-nav ul#in-the-area li a#mind-and-body {
+          color: #ffe500; }
+        /* line 126, ../partials/_nav1.scss */
+        #secondary-nav ul#in-the-area li a#swim {
+          color: #93d8ed; }
+        /* line 129, ../partials/_nav1.scss */
+        #secondary-nav ul#in-the-area li a#trail {
+          color: #f3ad1c; }
+        /* line 132, ../partials/_nav1.scss */
+        #secondary-nav ul#in-the-area li a#pick-and-grow {
+          color: #bfe700; }
+  /* line 138, ../partials/_nav1.scss */
   #secondary-nav li {
     display: inline-block;
     -webkit-transition: 0.35s;
     transition: 0.35s; }
-    /* line 100, ../partials/_nav1.scss */
+    /* line 141, ../partials/_nav1.scss */
     #secondary-nav li a {
       text-transform: uppercase;
       color: #cccccc;
@@ -1393,21 +1444,21 @@ nav {
       padding: 14px 0 10px;
       height: 100%;
       width: 100%; }
-      /* line 109, ../partials/_nav1.scss */
+      /* line 150, ../partials/_nav1.scss */
       #secondary-nav li a:hover {
         color: white; }
-    /* line 114, ../partials/_nav1.scss */
+    /* line 155, ../partials/_nav1.scss */
     #secondary-nav li.active {
       border-bottom: 4px solid white; }
-      /* line 116, ../partials/_nav1.scss */
+      /* line 157, ../partials/_nav1.scss */
       #secondary-nav li.active a {
         color: white;
         padding: 14px 0 6px; }
-  /* line 123, ../partials/_nav1.scss */
+  /* line 164, ../partials/_nav1.scss */
   #secondary-nav.stuck {
     top: 74px; }
 
-/* line 133, ../partials/_nav1.scss */
+/* line 174, ../partials/_nav1.scss */
 .anchor {
   display: block;
   position: relative;
@@ -1898,36 +1949,33 @@ nav {
   background-color: #cccabf; }
   /* line 4, ../partials/_tiles.scss */
   .area-tiles .tile.area.sleep {
-    border-top: 8px solid #f1433f; }
+    border-top: 8px solid #66bbe1; }
   /* line 7, ../partials/_tiles.scss */
   .area-tiles .tile.area.eat {
-    border-top: 8px solid #70b7ba; }
+    border-top: 8px solid #6fbe44; }
   /* line 10, ../partials/_tiles.scss */
-  .area-tiles .tile.area.sip {
-    border-top: 8px solid #b1277d; }
+  .area-tiles .tile.area.drink {
+    border-top: 8px solid #f48d99; }
   /* line 13, ../partials/_tiles.scss */
-  .area-tiles .tile.area.swing {
-    border-top: 8px solid #3cb878; }
-  /* line 16, ../partials/_tiles.scss */
-  .area-tiles .tile.area.swimholes {
-    border-top: 8px solid #00aeef; }
-  /* line 19, ../partials/_tiles.scss */
-  .area-tiles .tile.area.trails {
-    border-top: 8px solid #736357; }
-  /* line 22, ../partials/_tiles.scss */
-  .area-tiles .tile.area.ski {
-    border-top: 8px solid #00aeef; }
-  /* line 25, ../partials/_tiles.scss */
   .area-tiles .tile.area.culture {
-    border-top: 8px solid #c9be69; }
+    border-top: 8px solid #ff9b63; }
+  /* line 16, ../partials/_tiles.scss */
+  .area-tiles .tile.area.golf {
+    border-top: 8px solid #c6d1d1; }
+  /* line 19, ../partials/_tiles.scss */
+  .area-tiles .tile.area.mind-and-body {
+    border-top: 8px solid #ffe500; }
+  /* line 22, ../partials/_tiles.scss */
+  .area-tiles .tile.area.swim {
+    border-top: 8px solid #93d8ed; }
+  /* line 25, ../partials/_tiles.scss */
+  .area-tiles .tile.area.trail {
+    border-top: 8px solid #f3ad1c; }
   /* line 28, ../partials/_tiles.scss */
   .area-tiles .tile.area.pick-and-grow {
-    border-top: 8px solid #3cb878; }
-  /* line 31, ../partials/_tiles.scss */
-  .area-tiles .tile.area.mind-and-body {
-    border-top: 8px solid #8393ca; }
+    border-top: 8px solid #bfe700; }
 
-/* line 39, ../partials/_tiles.scss */
+/* line 36, ../partials/_tiles.scss */
 .tile {
   margin-bottom: 40px;
   padding: 10px 20px 20px;
@@ -1935,45 +1983,45 @@ nav {
   width: 49.15254%;
   float: left;
   margin-right: 1.69492%; }
-  /* line 41, ../partials/_tiles.scss */
+  /* line 38, ../partials/_tiles.scss */
   .tile h1, .tile h2, .tile h3, .tile h4, .tile h5, .tile h6, .tile a, .tile span, .tile p {
     text-align: left;
     color: #4e4f54 !important; }
-  /* line 47, ../partials/_tiles.scss */
+  /* line 44, ../partials/_tiles.scss */
   .tile h2 {
     font-size: 28px;
     padding-top: 20px;
     padding-bottom: 20px;
     font-weight: 700; }
-  /* line 53, ../partials/_tiles.scss */
+  /* line 50, ../partials/_tiles.scss */
   .tile img {
     margin-bottom: 10px; }
-  /* line 57, ../partials/_tiles.scss */
+  /* line 54, ../partials/_tiles.scss */
   .tile:nth-child(2n) {
     width: 49.15254%;
     float: right;
     margin-right: 0; }
-  /* line 60, ../partials/_tiles.scss */
+  /* line 57, ../partials/_tiles.scss */
   .tile.availability {
     border-top: 8px solid #4e4f54; }
-    /* line 62, ../partials/_tiles.scss */
+    /* line 59, ../partials/_tiles.scss */
     .tile.availability .info {
       width: 32.20339%;
       float: left;
       margin-right: 1.69492%;
       padding: 10px 0 40px; }
-      /* line 65, ../partials/_tiles.scss */
+      /* line 62, ../partials/_tiles.scss */
       .tile.availability .info:last-of-type {
         margin-right: 0; }
-    /* line 69, ../partials/_tiles.scss */
+    /* line 66, ../partials/_tiles.scss */
     .tile.availability .link {
       width: 49.15254%;
       float: left;
       margin-right: 1.69492%; }
-      /* line 72, ../partials/_tiles.scss */
+      /* line 69, ../partials/_tiles.scss */
       .tile.availability .link:last-of-type {
         margin-right: 0; }
-      /* line 75, ../partials/_tiles.scss */
+      /* line 72, ../partials/_tiles.scss */
       .tile.availability .link a {
         font-weight: 600; }
 

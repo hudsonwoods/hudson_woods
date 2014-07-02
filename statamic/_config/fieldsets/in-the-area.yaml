@@ -27,14 +27,13 @@ fields:
     options:
       - Sleep
       - Eat
-      - Sip
-      - Swing
-      - Swimholes
-      - Trails
-      - Ski
+      - Drink
       - Culture
-      - Pick &amp; Grow
+      - Golf
       - Mind &amp; Body
+      - Swim
+      - Trail
+      - Pick &amp; Grow
 
   image:
     type: file

@@ -25,18 +25,6 @@ fields:
     display: Blog Entry
     type: redactor
 
-  materials_gallery:
-    display: Materials Gallery
-    type: grid
-    starting_rows: 1
-    min_rows: 1
-    fields:
-      image:
-        type: file
-        display: Images
-        destination: assets/img/homes
-        show_thumbnail: true
-
   handCraftedFinishes:
     display: Hand Crafted Finishes
     type: grid

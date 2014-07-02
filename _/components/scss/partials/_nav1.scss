@@ -93,6 +93,47 @@ nav {
 				text-align: center;
 			}
 		}
+		&#in-the-area {
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+			li {
+				text-align: center;
+				align-self: center;
+			}
+			li a {
+				padding-left:15px;
+				padding-right: 15px;
+				text-align: center;
+				&#sleep {
+					color: $sleep;
+				}
+				&#eat {
+					color: $eat;
+				}
+				&#drink {
+					color: $drink;
+				}
+				&#culture {
+					color: $culture;
+				}
+				&#golf {
+					color: $golf;
+				}
+				&#mind-and-body {
+					color: $mind-and-body;
+				}
+				&#swim {
+					color: $swim;
+				}
+				&#trail {
+					color: $trail;
+				}
+				&#pick-and-grow {
+					color: $pick-and-grow;
+				}
+			}
+		}
 	}
 	li {
 		display: inline-block;

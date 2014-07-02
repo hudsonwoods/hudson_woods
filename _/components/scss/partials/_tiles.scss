@@ -2,34 +2,31 @@
 	background-color: $light-beige;
 	.tile.area {
 		&.sleep {
-			border-top: 8px solid $rose;
+			border-top: 8px solid $sleep;
 		}
 		&.eat {
-			border-top: 8px solid $teal;
+			border-top: 8px solid $eat;
 		}
-		&.sip {
-			border-top: 8px solid $pink;
-		}
-		&.swing {
-			border-top: 8px solid $green;
-		}
-		&.swimholes {
-			border-top: 8px solid $blue;
-		}
-		&.trails {
-			border-top: 8px solid $brown;
-		}
-		&.ski {
-			border-top: 8px solid $blue;
+		&.drink {
+			border-top: 8px solid $drink;
 		}
 		&.culture {
-			border-top: 8px solid $yellow;
+			border-top: 8px solid $culture;
 		}
-		&.pick-and-grow {
-			border-top: 8px solid $green;
+		&.golf {
+			border-top: 8px solid $golf;
 		}
 		&.mind-and-body {
-			border-top: 8px solid $lavendar;
+			border-top: 8px solid $mind-and-body;
+		}
+		&.swim {
+			border-top: 8px solid $swim;
+		}
+		&.trail {
+			border-top: 8px solid $trail;
+		}
+		&.pick-and-grow {
+			border-top: 8px solid $pick-and-grow;
 		}
 	}
 }
