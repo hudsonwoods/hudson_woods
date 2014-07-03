@@ -81,7 +81,8 @@ ul {
 
 a {
 	text-decoration: none;
-	&:hover {
+	&:hover,&:focus {
+		color: $base-font-color;
 		text-decoration: none;
 	}
 }

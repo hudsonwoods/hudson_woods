@@ -7942,37 +7942,38 @@ ul {
 a {
   text-decoration: none; }
   /* line 84, ../partials/_base.scss */
-  a:hover {
+  a:hover, a:focus {
+    color: #6e736c;
     text-decoration: none; }
 
-/* line 89, ../partials/_base.scss */
+/* line 90, ../partials/_base.scss */
 h1, h2, h3, h4 {
   font-family: "adelle", Georgia, Cambria, "Times New Roman", Times, serif; }
 
-/* line 92, ../partials/_base.scss */
+/* line 93, ../partials/_base.scss */
 h1 {
   font-size: 80px; }
 
-/* line 96, ../partials/_base.scss */
+/* line 97, ../partials/_base.scss */
 h2 {
   font-size: 42px; }
 
-/* line 99, ../partials/_base.scss */
+/* line 100, ../partials/_base.scss */
 h3 {
   font-size: 26px; }
 
-/* line 103, ../partials/_base.scss */
+/* line 104, ../partials/_base.scss */
 body, p, a, span {
   font-size: 16px;
   font-family: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
-/* line 108, ../partials/_base.scss */
+/* line 109, ../partials/_base.scss */
 p {
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 10px;
   line-height: 24px; }
-  /* line 116, ../partials/_base.scss */
+  /* line 117, ../partials/_base.scss */
   p:last-of-type {
     margin-bottom: 0; }
 
