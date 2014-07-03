@@ -35,6 +35,7 @@ nav {
 					&.current {
 						color: white;
 					}
+
 				}
 			}
 		}
@@ -54,6 +55,10 @@ nav {
 		}
 
 	}
+}
+
+.nav li a:hover, .nav li a:focus {
+	background-color: transparent;
 }
 
 #secondary-nav {
