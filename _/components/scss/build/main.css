@@ -9250,22 +9250,84 @@ nav {
 /* line 123, ../partials/_about.scss */
 #progress {
   background-color: #ebe9e2;
+  display: block;
   margin-bottom: -60px; }
-  /* line 125, ../partials/_about.scss */
+  /* line 126, ../partials/_about.scss */
   #progress h1 {
     padding: 60px 0;
     margin-top: 0;
+    margin-bottom: 0;
     text-align: center; }
-  /* line 130, ../partials/_about.scss */
-  #progress a {
-    width: 20%; }
-    /* line 132, ../partials/_about.scss */
-    #progress a:hover img {
-      opacity: 1; }
-    /* line 135, ../partials/_about.scss */
-    #progress a img {
-      opacity: .95;
-      width: 20%; }
+  /* line 132, ../partials/_about.scss */
+  #progress #instafeed {
+    min-height: 400px;
+    font-size: 0;
+    spacing: -1; }
+  /* line 137, ../partials/_about.scss */
+  #progress #instafeed p {
+    transition: background-color 1s;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    width: 90%;
+    margin: 0 auto;
+    font-weight: 300; }
+  /* line 147, ../partials/_about.scss */
+  #progress .instagram-wrapper {
+    width: 20%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    spacing: -1; }
+  /* line 155, ../partials/_about.scss */
+  #progress .flipcard {
+    height: 0;
+    padding-bottom: 100%;
+    perspective: 400px;
+    transform-style: preserve-3d;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    background-color: black; }
+    /* line 165, ../partials/_about.scss */
+    #progress .flipcard .front, #progress .flipcard .back {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0; }
+    /* line 171, ../partials/_about.scss */
+    #progress .flipcard .front {
+      width: 100%;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      transition: 0.5s;
+      backface-visibility: hidden; }
+      /* line 175, ../partials/_about.scss */
+      #progress .flipcard .front img {
+        width: 100%; }
+    /* line 179, ../partials/_about.scss */
+    #progress .flipcard .back {
+      width: 100%;
+      height: 100%;
+      display: block;
+      overflow: hidden;
+      backface-visibility: hidden;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      transition: 0.5s;
+      background-color: #c9be69;
+      transform: rotateY(180deg); }
+    /* line 190, ../partials/_about.scss */
+    #progress .flipcard:hover .front {
+      transform: rotateY(-180deg); }
+    /* line 194, ../partials/_about.scss */
+    #progress .flipcard:hover .back {
+      transform: rotateY(0deg); }
 
 /* line 1, ../partials/_footer.scss */
 #footer {
