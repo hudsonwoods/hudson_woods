@@ -137,6 +137,11 @@ nav {
 				}
 			}
 		}
+		&#about {
+			li:first-of-type {
+				display: none;
+			}
+		}
 	}
 	li {
 		display: inline-block;
@@ -165,7 +170,7 @@ nav {
 	}
 	background-color: $dark-gray;
 	&.stuck {
-		top: 74px;
+		top: 82px;
 	}
 	#upgrades-nav a {
 		// pointer-events:none;

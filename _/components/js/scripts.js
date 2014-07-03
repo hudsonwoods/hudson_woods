@@ -175,11 +175,11 @@ $(window).scroll(function() {
 
 $('.sticky-wrapper').waypoint(function() {
   $(this).find('.navbar').toggleClass('stuck');
-}, { offset: -74 });
+}, { offset: -82 });
 
 $(document).ready(function() {
     $('#secondary-nav').waypoint('sticky', {
-    offset: 74 // Apply "stuck" when element 30px from top
+    offset: 82 // Apply "stuck" when element 30px from top
   });
 });
 

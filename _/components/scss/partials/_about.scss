@@ -32,37 +32,7 @@
     }
 }
 
-#makers {
-    .makers-tiles {
-        text-align: center;
-        margin-top: 100px;
-        @include gallery (4 of 12);
-        img {
-            width: 100%;
-            margin-bottom: 10px;
-        }
-        h3,h4 {
-            font-family: $base-font-family;
-            margin: 10px auto;
-            font-size: 18px;
-            font-weight: 600;
-        }
-        h3 {
-            color: $dark-gray;
-            font-size: 18px;
-        }
-        h4 {
-            color: $beige;
-        }
-    }    
-}
-
-#partners {
-    .partner {
-        height: 500px;
-        margin-bottom: 0;
-    }
-    
+#partners {    
     #partner-list {
         background-color: $lighter-beige;
         padding: 100px 0;
@@ -122,4 +92,50 @@
     img {
         border: 10px solid $light-gray;
     }
+}
+
+#makers {
+    background-color: $lighter-beige;
+    .makers-tiles {
+        text-align: center;
+        margin-top: 100px;
+        @include gallery (4 of 12);
+        img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        h3,h4 {
+            font-family: $base-font-family;
+            margin: 10px auto;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        h3 {
+            color: $dark-gray;
+            font-size: 18px;
+        }
+        h4 {
+            color: $beige;
+        }
+    }    
+}
+
+#progress {
+    background-color: $lighter-beige;
+    h1 {
+        padding: 60px 0;
+        margin-top: 0;
+        text-align: center;
+    }
+    a {
+        width: 20%;
+        &:hover img {
+            opacity: 1;
+        }
+        img {
+            opacity: .95;
+            width: 20%;
+        }
+    }
+    margin-bottom: -60px;
 }

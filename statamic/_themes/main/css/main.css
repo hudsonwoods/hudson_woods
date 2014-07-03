@@ -8085,8 +8085,8 @@ img {
   margin-bottom: 44px;
   text-align: center; }
   /* line 81, ../partials/_layout.scss */
-  .hero.full {
-    height: 700px;
+  .hero.about {
+    height: 500px;
     margin-bottom: 0; }
 
 /* line 87, ../partials/_layout.scss */
@@ -8453,12 +8453,15 @@ nav {
         /* line 135, ../partials/_nav1.scss */
         #secondary-nav ul#in-the-area li a#pick-and-grow {
           color: #bfe700; }
-  /* line 141, ../partials/_nav1.scss */
+    /* line 141, ../partials/_nav1.scss */
+    #secondary-nav ul#about li:first-of-type {
+      display: none; }
+  /* line 146, ../partials/_nav1.scss */
   #secondary-nav li {
     display: inline-block;
     -webkit-transition: 0.35s;
     transition: 0.35s; }
-    /* line 144, ../partials/_nav1.scss */
+    /* line 149, ../partials/_nav1.scss */
     #secondary-nav li a {
       text-transform: uppercase;
       color: #cccccc;
@@ -8468,21 +8471,21 @@ nav {
       padding: 14px 0 10px;
       height: 100%;
       width: 100%; }
-      /* line 153, ../partials/_nav1.scss */
+      /* line 158, ../partials/_nav1.scss */
       #secondary-nav li a:hover {
         color: white; }
-    /* line 158, ../partials/_nav1.scss */
+    /* line 163, ../partials/_nav1.scss */
     #secondary-nav li.active {
       border-bottom: 4px solid white; }
-      /* line 160, ../partials/_nav1.scss */
+      /* line 165, ../partials/_nav1.scss */
       #secondary-nav li.active a {
         color: white;
         padding: 14px 0 6px; }
-  /* line 167, ../partials/_nav1.scss */
+  /* line 172, ../partials/_nav1.scss */
   #secondary-nav.stuck {
-    top: 74px; }
+    top: 82px; }
 
-/* line 177, ../partials/_nav1.scss */
+/* line 182, ../partials/_nav1.scss */
 .anchor {
   display: block;
   position: relative;
@@ -9184,60 +9187,16 @@ nav {
     padding: 30px 0; }
 
 /* line 36, ../partials/_about.scss */
-#makers .makers-tiles {
-  text-align: center;
-  margin-top: 100px;
-  width: 32.20339%;
-  float: left; }
-  /* line 63, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
-  #makers .makers-tiles:nth-child(3n + 1) {
-    margin-left: 0;
-    margin-right: -100%;
-    clear: both;
-    margin-left: 0; }
-  /* line 63, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
-  #makers .makers-tiles:nth-child(3n + 2) {
-    margin-left: 33.89831%;
-    margin-right: -100%;
-    clear: none; }
-  /* line 63, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
-  #makers .makers-tiles:nth-child(3n + 3) {
-    margin-left: 67.79661%;
-    margin-right: -100%;
-    clear: none; }
-  /* line 40, ../partials/_about.scss */
-  #makers .makers-tiles img {
-    width: 100%;
-    margin-bottom: 10px; }
-  /* line 44, ../partials/_about.scss */
-  #makers .makers-tiles h3, #makers .makers-tiles h4 {
-    font-family: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    margin: 10px auto;
-    font-size: 18px;
-    font-weight: 600; }
-  /* line 50, ../partials/_about.scss */
-  #makers .makers-tiles h3 {
-    color: #4e4f54;
-    font-size: 18px; }
-  /* line 54, ../partials/_about.scss */
-  #makers .makers-tiles h4 {
-    color: #bdbbb3; }
-
-/* line 61, ../partials/_about.scss */
-#partners .partner {
-  height: 500px;
-  margin-bottom: 0; }
-/* line 66, ../partials/_about.scss */
 #partners #partner-list {
   background-color: #ebe9e2;
   padding: 100px 0; }
-  /* line 69, ../partials/_about.scss */
+  /* line 39, ../partials/_about.scss */
   #partners #partner-list .partner-wrapper {
     margin-left: 8.47458%;
     width: 83.05085%;
     float: left;
     margin-right: 1.69492%; }
-    /* line 72, ../partials/_about.scss */
+    /* line 42, ../partials/_about.scss */
     #partners #partner-list .partner-wrapper .partner-item {
       width: 32.20339%;
       float: left;
@@ -9258,10 +9217,10 @@ nav {
         margin-left: 67.79661%;
         margin-right: -100%;
         clear: none; }
-      /* line 75, ../partials/_about.scss */
+      /* line 45, ../partials/_about.scss */
       #partners #partner-list .partner-wrapper .partner-item a {
         display: block; }
-      /* line 78, ../partials/_about.scss */
+      /* line 48, ../partials/_about.scss */
       #partners #partner-list .partner-wrapper .partner-item .circle-wrapper {
         padding-bottom: 20px;
         margin-left: 16.94915%;
@@ -9269,10 +9228,10 @@ nav {
         float: left;
         margin-right: 1.69492%;
         clear: none; }
-      /* line 84, ../partials/_about.scss */
+      /* line 54, ../partials/_about.scss */
       #partners #partner-list .partner-wrapper .partner-item .circle {
         width: 100%; }
-      /* line 87, ../partials/_about.scss */
+      /* line 57, ../partials/_about.scss */
       #partners #partner-list .partner-wrapper .partner-item .circle-tile {
         display: block;
         border: 10px solid #cccccc;
@@ -9280,7 +9239,7 @@ nav {
         background-size: cover;
         height: 100%;
         width: 100%; }
-      /* line 95, ../partials/_about.scss */
+      /* line 65, ../partials/_about.scss */
       #partners #partner-list .partner-wrapper .partner-item .circle-tile-overlay {
         display: block;
         z-index: 999;
@@ -9288,83 +9247,147 @@ nav {
         -webkit-transition: 0.2s;
         transition: 0.2s;
         background-color: rgba(201, 190, 105, 0); }
-        /* line 101, ../partials/_about.scss */
+        /* line 71, ../partials/_about.scss */
         #partners #partner-list .partner-wrapper .partner-item .circle-tile-overlay:hover {
           background-color: rgba(201, 190, 105, 0.3); }
-      /* line 105, ../partials/_about.scss */
+      /* line 75, ../partials/_about.scss */
       #partners #partner-list .partner-wrapper .partner-item h3, #partners #partner-list .partner-wrapper .partner-item p {
         width: 100%;
         float: left;
         margin-left: 0;
         margin-right: 0; }
-      /* line 108, ../partials/_about.scss */
+      /* line 78, ../partials/_about.scss */
       #partners #partner-list .partner-wrapper .partner-item h3 {
         color: #8c8779;
         margin-bottom: 0; }
-        /* line 111, ../partials/_about.scss */
+        /* line 81, ../partials/_about.scss */
         #partners #partner-list .partner-wrapper .partner-item h3:last-of-type {
           color: #b7b0a4;
           margin-top: 0; }
-      /* line 116, ../partials/_about.scss */
+      /* line 86, ../partials/_about.scss */
       #partners #partner-list .partner-wrapper .partner-item p:first-of-type {
         margin-top: 20px; }
-/* line 122, ../partials/_about.scss */
+/* line 92, ../partials/_about.scss */
 #partners img {
   border: 10px solid #cccccc; }
+
+/* line 97, ../partials/_about.scss */
+#makers {
+  background-color: #ebe9e2; }
+  /* line 99, ../partials/_about.scss */
+  #makers .makers-tiles {
+    text-align: center;
+    margin-top: 100px;
+    width: 32.20339%;
+    float: left; }
+    /* line 63, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
+    #makers .makers-tiles:nth-child(3n + 1) {
+      margin-left: 0;
+      margin-right: -100%;
+      clear: both;
+      margin-left: 0; }
+    /* line 63, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
+    #makers .makers-tiles:nth-child(3n + 2) {
+      margin-left: 33.89831%;
+      margin-right: -100%;
+      clear: none; }
+    /* line 63, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
+    #makers .makers-tiles:nth-child(3n + 3) {
+      margin-left: 67.79661%;
+      margin-right: -100%;
+      clear: none; }
+    /* line 103, ../partials/_about.scss */
+    #makers .makers-tiles img {
+      width: 100%;
+      margin-bottom: 10px; }
+    /* line 107, ../partials/_about.scss */
+    #makers .makers-tiles h3, #makers .makers-tiles h4 {
+      font-family: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      margin: 10px auto;
+      font-size: 18px;
+      font-weight: 600; }
+    /* line 113, ../partials/_about.scss */
+    #makers .makers-tiles h3 {
+      color: #4e4f54;
+      font-size: 18px; }
+    /* line 117, ../partials/_about.scss */
+    #makers .makers-tiles h4 {
+      color: #bdbbb3; }
+
+/* line 123, ../partials/_about.scss */
+#progress {
+  background-color: #ebe9e2;
+  margin-bottom: -60px; }
+  /* line 125, ../partials/_about.scss */
+  #progress h1 {
+    padding: 60px 0;
+    margin-top: 0;
+    text-align: center; }
+  /* line 130, ../partials/_about.scss */
+  #progress a {
+    width: 20%; }
+    /* line 132, ../partials/_about.scss */
+    #progress a:hover img {
+      opacity: 1; }
+    /* line 135, ../partials/_about.scss */
+    #progress a img {
+      opacity: .95;
+      width: 20%; }
 
 /* line 1, ../partials/_footer.scss */
 #footer {
   background-color: #c9be69;
   text-align: center;
-  padding: 20px 0; }
-  /* line 5, ../partials/_footer.scss */
+  padding: 20px 0;
+  margin-top: 60px; }
+  /* line 6, ../partials/_footer.scss */
   #footer a {
     font-size: 14px;
     font-weight: 300;
     color: #fff; }
-    /* line 9, ../partials/_footer.scss */
+    /* line 10, ../partials/_footer.scss */
     #footer a.legal {
       border-bottom: 2px solid #fff;
       padding-bottom: 2px; }
-    /* line 13, ../partials/_footer.scss */
+    /* line 14, ../partials/_footer.scss */
     #footer a:hover, #footer a:active {
       color: #fff;
       cursor: pointer; }
-  /* line 18, ../partials/_footer.scss */
+  /* line 19, ../partials/_footer.scss */
   #footer p {
     color: #fff;
     margin-bottom: 0;
     margin-top: 0; }
-    /* line 22, ../partials/_footer.scss */
+    /* line 23, ../partials/_footer.scss */
     #footer p:first-of-type {
       font-size: 14px;
       font-weight: 300; }
-  /* line 28, ../partials/_footer.scss */
+  /* line 29, ../partials/_footer.scss */
   #footer .modal-body p {
     color: #333333;
     font-weight: 300;
     font-size: 16px;
     margin-bottom: 10px; }
-  /* line 36, ../partials/_footer.scss */
+  /* line 37, ../partials/_footer.scss */
   #footer .legal-text {
     width: 49.15254%;
     float: left;
     margin-right: 1.69492%; }
-    /* line 38, ../partials/_footer.scss */
+    /* line 39, ../partials/_footer.scss */
     #footer .legal-text p, #footer .legal-text a {
       margin-top: 15px;
       margin-bottom: 0;
       font-size: 10px;
       line-height: 0px; }
-    /* line 46, ../partials/_footer.scss */
+    /* line 47, ../partials/_footer.scss */
     #footer .legal-text .modal-body p {
       margin-bottom: 10px; }
-  /* line 51, ../partials/_footer.scss */
+  /* line 52, ../partials/_footer.scss */
   #footer .social {
     width: 49.15254%;
     float: right;
     margin-right: 0; }
-    /* line 53, ../partials/_footer.scss */
+    /* line 54, ../partials/_footer.scss */
     #footer .social a {
       text-align: center;
       height: 30px;
@@ -9378,14 +9401,14 @@ nav {
       border: 1px solid #fff;
       margin: 0 10px;
       vertical-align: middle; }
-      /* line 66, ../partials/_footer.scss */
+      /* line 67, ../partials/_footer.scss */
       #footer .social a .fa-lg {
         line-height: 1.1; }
-      /* line 69, ../partials/_footer.scss */
+      /* line 70, ../partials/_footer.scss */
       #footer .social a:hover, #footer .social a:active {
         color: #c9be69;
         background-color: white; }
-      /* line 73, ../partials/_footer.scss */
+      /* line 74, ../partials/_footer.scss */
       #footer .social a i {
         position: relative;
         top: 50%;
@@ -9400,22 +9423,22 @@ nav {
     #footer {
       padding: 40px 0;
       text-align: left; }
-      /* line 87, ../partials/_footer.scss */
+      /* line 88, ../partials/_footer.scss */
       #footer .social {
         text-align: right; }
-        /* line 89, ../partials/_footer.scss */
+        /* line 90, ../partials/_footer.scss */
         #footer .social a {
           text-align: center;
           height: 50px;
           width: 50px;
           border: 2px solid #fff; }
-          /* line 94, ../partials/_footer.scss */
+          /* line 95, ../partials/_footer.scss */
           #footer .social a i {
             font-size: 20px; }
-      /* line 100, ../partials/_footer.scss */
+      /* line 101, ../partials/_footer.scss */
       #footer .legal-text p {
         margin-top: 0; }
-      /* line 103, ../partials/_footer.scss */
+      /* line 104, ../partials/_footer.scss */
       #footer .legal-text p, #footer .legal-text a {
         font-size: 16px;
         line-height: 18px; } }

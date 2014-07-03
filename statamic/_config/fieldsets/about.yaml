@@ -28,7 +28,7 @@ fields:
 
   partnerHero:
     type: file
-    display: Partner Image Hero
+    display: Partner Hero Image
     destination: assets/img/about
     show_thumbnail: true
 
@@ -55,4 +55,10 @@ fields:
       description:
         type: textarea
         display: Sub Headline
+
+  makerHero:
+    type: file
+    display: Maker Hero Image
+    destination: assets/img/about
+    show_thumbnail: true
 
