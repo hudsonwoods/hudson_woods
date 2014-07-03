@@ -1,25 +1,125 @@
-.makers {
-    text-align: center;
-    margin-top: 100px;
-    @include span (4);
-    &:nth-child(3n) {
-        margin-right: 0;
+
+
+#story {
+    padding: 60px 0;
+    background-color: $lighter-beige;
+    p {
+        font-size: 20px;
+        line-height: 36px;
+        font-weight: 300;
+    }
+    h1 {
+        font-size: 66px;
+    }
+    a {
+        font-size: 40px;
+        font-weight: 500;
+        border-bottom: 1px solid $base-font-color;
+        color: $base-font-color;
+        margin-top: 30px;
+        &:hover {
+            color: $base-font-color;
+        }
+    }
+    .wrapper-small {
+        @include pre(3);
+        @include span(6);
+    }
+    .wrapper-center {
+        @include pre(2);
+        @include span(8);
+        padding: 30px 0;
+    }
+}
+
+#makers {
+    .makers-tiles {
+        text-align: center;
+        margin-top: 100px;
+        @include gallery (4 of 12);
+        img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        h3,h4 {
+            font-family: $base-font-family;
+            margin: 10px auto;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        h3 {
+            color: $dark-gray;
+            font-size: 18px;
+        }
+        h4 {
+            color: $beige;
+        }
+    }    
+}
+
+#partners {
+    .partner {
+        height: 500px;
+        margin-bottom: 0;
+    }
+    
+    #partner-list {
+        background-color: $lighter-beige;
+        padding: 100px 0;
+        .partner-wrapper {
+            @include pre(1);
+            @include span(10);
+            .partner-item {
+                @include gallery(4 of 12);
+                margin-bottom: 60px;
+                a {
+                    display: block;
+                }
+                .circle-wrapper {
+                    padding-bottom: 20px;
+                    @include pre(2);
+                    @include span(8);
+                    clear: none;
+                }
+                .circle {
+                    width: 100%;
+                }
+                .circle-tile {
+                    display: block;
+                    border: 10px solid $light-gray; 
+                    background-position: center center;
+                    background-size: cover;
+                    height: 100%;
+                    width: 100%;
+                }
+                .circle-tile-overlay {
+                    display: block;
+                    z-index: 999;
+                    border: 10px solid $light-gray; 
+                    @include transition(.2s);
+                    background-color: rgba($yellow,0);
+                    &:hover {
+                       background-color: rgba($yellow,.3); 
+                    }
+                }
+                h3,p {
+                    @include span(12);
+                }
+                h3 {
+                    color: #8c8779;
+                    margin-bottom: 0;
+                    &:last-of-type {
+                        color: #b7b0a4;
+                        margin-top: 0;
+                    }
+                }
+                p:first-of-type {
+                    margin-top: 20px;
+                }
+            }
+        }
     }
     img {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    h3,h4 {
-        font-family: $base-font-family;
-        margin: 10px auto;
-        font-size: 18px;
-        font-weight: 600;
-    }
-    h3 {
-        color: $dark-gray;
-        font-size: 18px;
-    }
-    h4 {
-        color: $beige;
+        border: 10px solid $light-gray;
     }
 }

@@ -24,3 +24,35 @@ fields:
   content:
     display: Blog Entry
     type: redactor
+    hide: true
+
+  partnerHero:
+    type: file
+    display: Partner Image Hero
+    destination: assets/img/about
+    show_thumbnail: true
+
+  partnerItems:
+    display: Individual Parnter Info
+    type: grid
+    starting_rows: 1
+    min_rows: 1
+    fields:
+      image:
+        type: file
+        display: Image
+        destination: assets/img/about
+        show_thumbnail: true
+      webAddress:
+        type: textarea
+        display: Full Web Address
+      headline:
+        type: textarea
+        display: Headline
+      subHeadline:
+        type: textarea
+        display: Sub Headline
+      description:
+        type: textarea
+        display: Sub Headline
+

@@ -1,40 +1,92 @@
 <section id="header-about" class="hero">
-{{ theme:partial src="nav1" }}
+    {{ theme:partial src="nav1" }}
 
-<div class="slick-carousel" >
-{{ heroImages }}
+    <div class="slick-carousel" >
+        {{ heroImages }}
 
-      <div class="hero landing" style="background-image: url( {{ image }} );">
-      <div class="container scrollme">
-        <div class="animateme" data-when="exit" data-from="0" data-to="0.55" data-opacity="0" data-translatey="100" style="opacity: 1; -webkit-transform: translate3d(0px, 100px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);">
-    <h1>{{ headline }}</h1>
-    {{ if subHeadline|not_empty }}
-    <h3>{{ subHeadline }}</h3>
-    {{ endif }}
+        <div class="hero landing" style="background-image: url( {{ image }} );">
+          <div class="container scrollme">
+            <div class="animateme" data-when="exit" data-from="0" data-to="0.55" data-opacity="0" data-translatey="100" style="opacity: 1; -webkit-transform: translate3d(0px, 100px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);">
+                <h1>{{ headline }}</h1>
+                {{ if subHeadline|not_empty }}
+                <h3>{{ subHeadline }}</h3>
+                {{ endif }}
+            </div>
+
         </div>
-
-      </div>
     </div>
 
-{{ /heroImages }}
-</div>
-{{ theme:partial src="nav_about" }}
+        {{ /heroImages }}
+    </div>
+
+    {{ theme:partial src="nav_about" }}
 </section>
-<section>
-<div class="container">
 
+<section id="story">
+    <div class="container">
+        <div class="wrapper-small">
+            <p>More than a place, Hudson Woods is an experience that opens doors to discovering the things that matter. Family. Friends. Sport. Craft. Hudson Woods lets you access it all.</p>         
+        </div>
+        <div class="wrapper-center">
+            <h1>“To Create Authentic, Meaningful Experiences At Every Turn”</h1>
+            <a target=_blank href="http://langarchitecture.com">Drew Lang, Lang Architecture</a>            
+        </div>
+        <div class="wrapper-small">
+            <p>At Lang Architecture, that’s our mission. It is the driving force behind every decisi we make at hudson woods. Through design, craft and sustainability, Hudson Woods offers just the right elements at just the right time. The site, the homes, the access, the aesthetic. Everything comes together to create a rich, unique experience and incredible value for buyers today.</p>         
+        </div>
+    </div>
+</section>
 
+<section id="partners">
+
+    <div class="partner hero" style="background-image: url( {{ partnerHero }} );">
+        <div class="container scrollme">
+            <h1>Partners</h1>
+        </div>
+    </div>
+
+    <div id="partner-list">
+    <div class="container">
+    <div class="partner-wrapper">
+    {{ partnerItems }}
+        <div class="partner-item">
+        <a target=_blank href="{{ webAddress }}">
+            <div class="circle-wrapper">
+                <div class="circle">
+                    <div class="dummy"></div>
+                    <div class="circle-tile-overlay"></div>
+                    <div class="circle-tile" style="background-image: url( {{ partnerHero }} );"></div>
+                </div>
+            </div>
+            <h3>{{ headline }}</h3>
+            <h3>{{ subHeadline }}</h3>
+        </a>
+        <p>{{ description }}</p>
+        </div>
+    {{ /partnerItems}}
+    </div>
+    </div>
+    </div>
+
+</section>
+
+<section id="makers">
+
+    <div class="container">
 
         {{ entries:listing folder="about/makers" sort_dir="asc" }}
 
-        <div class="makers">
-        <a target=_blank href="{{ link }}">
-            <img src="{{ image }}" alt="">
-            <h3>{{ title }}</h3>
-            <h4>{{ description }}</h4>
-
+        <div class="makers-tiles">
+            <a target=_blank href="{{ link }}">
+                <img src="{{ image }}" alt="">
+                <h3>{{ title }}</h3>
+                <h4>{{ description }}</h4>
+            </a>
         </div>
         {{ /entries:listing }}
     </div>
 
 </section>
+<section id="progress"></section>
+
+

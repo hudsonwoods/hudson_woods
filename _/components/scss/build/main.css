@@ -8085,6 +8085,72 @@ img {
   .container.scrollme.landing {
     text-align: left; }
 
+/* line 111, ../partials/_layout.scss */
+.circle {
+  width: 15.25424%;
+  float: left;
+  position: relative; }
+  /* line 63, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
+  .circle:nth-child(6n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0; }
+  /* line 63, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
+  .circle:nth-child(6n + 2) {
+    margin-left: 16.94915%;
+    margin-right: -100%;
+    clear: none; }
+  /* line 63, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
+  .circle:nth-child(6n + 3) {
+    margin-left: 33.89831%;
+    margin-right: -100%;
+    clear: none; }
+  /* line 63, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
+  .circle:nth-child(6n + 4) {
+    margin-left: 50.84746%;
+    margin-right: -100%;
+    clear: none; }
+  /* line 63, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
+  .circle:nth-child(6n + 5) {
+    margin-left: 67.79661%;
+    margin-right: -100%;
+    clear: none; }
+  /* line 63, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
+  .circle:nth-child(6n + 6) {
+    margin-left: 84.74576%;
+    margin-right: -100%;
+    clear: none; }
+
+/* line 115, ../partials/_layout.scss */
+.dummy {
+  margin-top: 100%; }
+
+/* line 118, ../partials/_layout.scss */
+.circle-wrapper {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+
+/* line 121, ../partials/_layout.scss */
+.circle-tile, .circle-tile-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  text-align: center; }
+  /* line 129, ../partials/_layout.scss */
+  .circle-tile span, .circle-tile-overlay span {
+    text-align: center;
+    padding: 0 5px;
+    font-size: 12px; }
+    /* line 133, ../partials/_layout.scss */
+    .circle-tile span.white, .circle-tile-overlay span.white {
+      color: white; }
+
 /* line 2, ../partials/_landing.scss */
 #header-landing h3, #header-upgrades h3 {
   font-family: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -8533,139 +8599,133 @@ nav {
       margin: 30px 0 15px; }
     /* line 141, ../partials/_homes.scss */
     #materials .wrapper-right .circle-tile {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center; }
-      /* line 153, ../partials/_homes.scss */
+      /* line 146, ../partials/_homes.scss */
       #materials .wrapper-right .circle-tile span {
         text-align: center;
         padding: 0 5px;
         font-size: 12px; }
-        /* line 157, ../partials/_homes.scss */
+        /* line 150, ../partials/_homes.scss */
         #materials .wrapper-right .circle-tile span.white {
           color: white; }
-    /* line 162, ../partials/_homes.scss */
+    /* line 156, ../partials/_homes.scss */
     #materials .wrapper-right h4 {
       clear: left;
       clear: right; }
-    /* line 166, ../partials/_homes.scss */
+    /* line 160, ../partials/_homes.scss */
     #materials .wrapper-right .black-cedar {
       background-image: url("../img/black-cedar.jpg");
       background-position: center center;
       background-size: cover;
       height: 100%;
       width: 100%; }
-    /* line 173, ../partials/_homes.scss */
+    /* line 167, ../partials/_homes.scss */
     #materials .wrapper-right .natural-cedar {
       background-image: url("../img/natural-cedar.jpg");
       background-position: center center;
       background-size: cover;
       height: 100%;
       width: 100%; }
-    /* line 180, ../partials/_homes.scss */
+    /* line 174, ../partials/_homes.scss */
     #materials .wrapper-right .opaque-white {
       background-color: #dedfdf; }
-    /* line 183, ../partials/_homes.scss */
+    /* line 177, ../partials/_homes.scss */
     #materials .wrapper-right .campari-red {
       background-color: #a90605; }
-    /* line 186, ../partials/_homes.scss */
+    /* line 180, ../partials/_homes.scss */
     #materials .wrapper-right .jade-porcelain {
       background-color: #466346; }
-    /* line 189, ../partials/_homes.scss */
+    /* line 183, ../partials/_homes.scss */
     #materials .wrapper-right .mid-century-white {
       background-color: #d7dee2; }
-    /* line 192, ../partials/_homes.scss */
+    /* line 186, ../partials/_homes.scss */
     #materials .wrapper-right .pomegranate {
       background-color: #862928; }
-    /* line 195, ../partials/_homes.scss */
+    /* line 189, ../partials/_homes.scss */
     #materials .wrapper-right .jade-manganese {
       background-color: #004667; }
-    /* line 198, ../partials/_homes.scss */
+    /* line 192, ../partials/_homes.scss */
     #materials .wrapper-right .slate-gray {
       background-color: #828380; }
-    /* line 201, ../partials/_homes.scss */
+    /* line 195, ../partials/_homes.scss */
     #materials .wrapper-right .dark-gray {
       background-color: #797b79; }
-    /* line 204, ../partials/_homes.scss */
+    /* line 198, ../partials/_homes.scss */
     #materials .wrapper-right .hartford-green {
       background-color: #34524a; }
-    /* line 207, ../partials/_homes.scss */
+    /* line 201, ../partials/_homes.scss */
     #materials .wrapper-right .antique-black {
       background-color: #5a5854; }
-    /* line 210, ../partials/_homes.scss */
+    /* line 204, ../partials/_homes.scss */
     #materials .wrapper-right .matte-black {
       background-color: #232829; }
 
-/* line 216, ../partials/_homes.scss */
+/* line 210, ../partials/_homes.scss */
 #finishes {
   padding: 60px 0; }
-  /* line 220, ../partials/_homes.scss */
+  /* line 214, ../partials/_homes.scss */
   #finishes .wrapper {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%; }
-    /* line 222, ../partials/_homes.scss */
+    /* line 216, ../partials/_homes.scss */
     #finishes .wrapper:last-of-type {
       margin-left: 8.47458%; }
-  /* line 226, ../partials/_homes.scss */
+  /* line 220, ../partials/_homes.scss */
   #finishes h2 {
     margin-bottom: 60px; }
-  /* line 229, ../partials/_homes.scss */
+  /* line 223, ../partials/_homes.scss */
   #finishes img, #finishes h3, #finishes li {
     margin-bottom: 20px; }
-  /* line 232, ../partials/_homes.scss */
+  /* line 226, ../partials/_homes.scss */
   #finishes h3 {
     font-size: 20px;
     font-weight: 600; }
-  /* line 236, ../partials/_homes.scss */
+  /* line 230, ../partials/_homes.scss */
   #finishes li {
     font-size: 20px;
     margin-bottom: 18px;
     line-height: 24px;
     display: block; }
-  /* line 242, ../partials/_homes.scss */
+  /* line 236, ../partials/_homes.scss */
   #finishes .finish-list {
     margin-left: 16.94915%;
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%; }
-  /* line 246, ../partials/_homes.scss */
+  /* line 240, ../partials/_homes.scss */
   #finishes .premium-equipment {
     margin-left: 8.47458%;
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%; }
 
-/* line 252, ../partials/_homes.scss */
+/* line 246, ../partials/_homes.scss */
 #a-la-carte {
   padding: 60px 0;
   background-color: #ebe9e2; }
-  /* line 256, ../partials/_homes.scss */
+  /* line 250, ../partials/_homes.scss */
   #a-la-carte .wrapper-center {
     text-align: center;
     margin-left: 16.94915%;
     width: 66.10169%;
     float: left;
     margin-right: 1.69492%; }
-  /* line 261, ../partials/_homes.scss */
+  /* line 255, ../partials/_homes.scss */
   #a-la-carte p {
     text-align: left;
     margin: 30px 0 60px; }
-  /* line 265, ../partials/_homes.scss */
+  /* line 259, ../partials/_homes.scss */
   #a-la-carte ul {
     margin-top: 60px;
     margin-left: 8.47458%;
     width: 83.05085%;
     float: left;
     margin-right: 1.69492%; }
-  /* line 270, ../partials/_homes.scss */
+  /* line 264, ../partials/_homes.scss */
   #a-la-carte li {
     width: 23.72881%;
     float: left;
@@ -8691,7 +8751,7 @@ nav {
       margin-left: 76.27119%;
       margin-right: -100%;
       clear: none; }
-    /* line 273, ../partials/_homes.scss */
+    /* line 267, ../partials/_homes.scss */
     #a-la-carte li p {
       margin-left: 16.94915%;
       width: 66.10169%;
@@ -8702,35 +8762,35 @@ nav {
       line-height: 28px;
       margin-bottom: 18px;
       text-align: center; }
-    /* line 282, ../partials/_homes.scss */
+    /* line 276, ../partials/_homes.scss */
     #a-la-carte li img {
       display: block;
       text-align: center;
       margin: 0 auto 20px; }
 
-/* line 290, ../partials/_homes.scss */
+/* line 284, ../partials/_homes.scss */
 #gallery {
   padding: 60px 0; }
-  /* line 292, ../partials/_homes.scss */
+  /* line 286, ../partials/_homes.scss */
   #gallery h2 {
     text-align: center; }
-  /* line 297, ../partials/_homes.scss */
+  /* line 291, ../partials/_homes.scss */
   #gallery .sp-wrap {
     margin-left: 8.47458%;
     width: 83.05085%;
     float: left;
     margin-right: 1.69492%; }
 
-/* line 303, ../partials/_homes.scss */
+/* line 297, ../partials/_homes.scss */
 .sp-thumbs a:link, .sp-thumbs a:visited {
   opacity: 1; }
 
-/* line 307, ../partials/_homes.scss */
+/* line 301, ../partials/_homes.scss */
 .sp-wrap {
   margin: 60px auto 30px;
   background-color: transparent; }
 
-/* line 312, ../partials/_homes.scss */
+/* line 306, ../partials/_homes.scss */
 .sp-thumbs {
   width: 100%;
   float: left;
@@ -8738,7 +8798,7 @@ nav {
   margin-right: 0;
   margin-top: 20px;
   border-top: none; }
-  /* line 316, ../partials/_homes.scss */
+  /* line 310, ../partials/_homes.scss */
   .sp-thumbs a {
     width: 8.16327%;
     float: left; }
@@ -8793,20 +8853,20 @@ nav {
       margin-left: 91.83673%;
       margin-right: -100%;
       clear: none; }
-  /* line 319, ../partials/_homes.scss */
+  /* line 313, ../partials/_homes.scss */
   .sp-thumbs img {
     height: auto;
     width: 100%;
     margin-bottom: 20px; }
 
-/* line 326, ../partials/_homes.scss */
+/* line 320, ../partials/_homes.scss */
 .sp-large a {
   pointer-events: none; }
-  /* line 328, ../partials/_homes.scss */
+  /* line 322, ../partials/_homes.scss */
   .sp-large a img {
     cursor: default; }
 
-/* line 333, ../partials/_homes.scss */
+/* line 327, ../partials/_homes.scss */
 .sp-current:after {
   content: '';
   border: 6px solid transparent;
@@ -9014,33 +9074,171 @@ nav {
       margin-left: 18px;
       display: list-item; }
 
-/* line 1, ../partials/_about.scss */
-.makers {
+/* line 3, ../partials/_about.scss */
+#story {
+  padding: 60px 0;
+  background-color: #ebe9e2; }
+  /* line 6, ../partials/_about.scss */
+  #story p {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 300; }
+  /* line 11, ../partials/_about.scss */
+  #story h1 {
+    font-size: 66px; }
+  /* line 14, ../partials/_about.scss */
+  #story a {
+    font-size: 40px;
+    font-weight: 500;
+    border-bottom: 1px solid #6e736c;
+    color: #6e736c;
+    margin-top: 30px; }
+    /* line 20, ../partials/_about.scss */
+    #story a:hover {
+      color: #6e736c; }
+  /* line 24, ../partials/_about.scss */
+  #story .wrapper-small {
+    margin-left: 25.42373%;
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%; }
+  /* line 28, ../partials/_about.scss */
+  #story .wrapper-center {
+    margin-left: 16.94915%;
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+    padding: 30px 0; }
+
+/* line 36, ../partials/_about.scss */
+#makers .makers-tiles {
   text-align: center;
   margin-top: 100px;
   width: 32.20339%;
-  float: left;
-  margin-right: 1.69492%; }
-  /* line 5, ../partials/_about.scss */
-  .makers:nth-child(3n) {
-    margin-right: 0; }
-  /* line 8, ../partials/_about.scss */
-  .makers img {
+  float: left; }
+  /* line 63, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
+  #makers .makers-tiles:nth-child(3n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0; }
+  /* line 63, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
+  #makers .makers-tiles:nth-child(3n + 2) {
+    margin-left: 33.89831%;
+    margin-right: -100%;
+    clear: none; }
+  /* line 63, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
+  #makers .makers-tiles:nth-child(3n + 3) {
+    margin-left: 67.79661%;
+    margin-right: -100%;
+    clear: none; }
+  /* line 40, ../partials/_about.scss */
+  #makers .makers-tiles img {
     width: 100%;
     margin-bottom: 10px; }
-  /* line 12, ../partials/_about.scss */
-  .makers h3, .makers h4 {
+  /* line 44, ../partials/_about.scss */
+  #makers .makers-tiles h3, #makers .makers-tiles h4 {
     font-family: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     margin: 10px auto;
     font-size: 18px;
     font-weight: 600; }
-  /* line 18, ../partials/_about.scss */
-  .makers h3 {
+  /* line 50, ../partials/_about.scss */
+  #makers .makers-tiles h3 {
     color: #4e4f54;
     font-size: 18px; }
-  /* line 22, ../partials/_about.scss */
-  .makers h4 {
+  /* line 54, ../partials/_about.scss */
+  #makers .makers-tiles h4 {
     color: #bdbbb3; }
+
+/* line 61, ../partials/_about.scss */
+#partners .partner {
+  height: 500px;
+  margin-bottom: 0; }
+/* line 66, ../partials/_about.scss */
+#partners #partner-list {
+  background-color: #ebe9e2;
+  padding: 100px 0; }
+  /* line 69, ../partials/_about.scss */
+  #partners #partner-list .partner-wrapper {
+    margin-left: 8.47458%;
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%; }
+    /* line 72, ../partials/_about.scss */
+    #partners #partner-list .partner-wrapper .partner-item {
+      width: 32.20339%;
+      float: left;
+      margin-bottom: 60px; }
+      /* line 63, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
+      #partners #partner-list .partner-wrapper .partner-item:nth-child(3n + 1) {
+        margin-left: 0;
+        margin-right: -100%;
+        clear: both;
+        margin-left: 0; }
+      /* line 63, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
+      #partners #partner-list .partner-wrapper .partner-item:nth-child(3n + 2) {
+        margin-left: 33.89831%;
+        margin-right: -100%;
+        clear: none; }
+      /* line 63, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
+      #partners #partner-list .partner-wrapper .partner-item:nth-child(3n + 3) {
+        margin-left: 67.79661%;
+        margin-right: -100%;
+        clear: none; }
+      /* line 75, ../partials/_about.scss */
+      #partners #partner-list .partner-wrapper .partner-item a {
+        display: block; }
+      /* line 78, ../partials/_about.scss */
+      #partners #partner-list .partner-wrapper .partner-item .circle-wrapper {
+        padding-bottom: 20px;
+        margin-left: 16.94915%;
+        width: 66.10169%;
+        float: left;
+        margin-right: 1.69492%;
+        clear: none; }
+      /* line 84, ../partials/_about.scss */
+      #partners #partner-list .partner-wrapper .partner-item .circle {
+        width: 100%; }
+      /* line 87, ../partials/_about.scss */
+      #partners #partner-list .partner-wrapper .partner-item .circle-tile {
+        display: block;
+        border: 10px solid #cccccc;
+        background-position: center center;
+        background-size: cover;
+        height: 100%;
+        width: 100%; }
+      /* line 95, ../partials/_about.scss */
+      #partners #partner-list .partner-wrapper .partner-item .circle-tile-overlay {
+        display: block;
+        z-index: 999;
+        border: 10px solid #cccccc;
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        transition: 0.2s;
+        background-color: rgba(201, 190, 105, 0); }
+        /* line 101, ../partials/_about.scss */
+        #partners #partner-list .partner-wrapper .partner-item .circle-tile-overlay:hover {
+          background-color: rgba(201, 190, 105, 0.3); }
+      /* line 105, ../partials/_about.scss */
+      #partners #partner-list .partner-wrapper .partner-item h3, #partners #partner-list .partner-wrapper .partner-item p {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0; }
+      /* line 108, ../partials/_about.scss */
+      #partners #partner-list .partner-wrapper .partner-item h3 {
+        color: #8c8779;
+        margin-bottom: 0; }
+        /* line 111, ../partials/_about.scss */
+        #partners #partner-list .partner-wrapper .partner-item h3:last-of-type {
+          color: #b7b0a4;
+          margin-top: 0; }
+      /* line 116, ../partials/_about.scss */
+      #partners #partner-list .partner-wrapper .partner-item p:first-of-type {
+        margin-top: 20px; }
+/* line 122, ../partials/_about.scss */
+#partners img {
+  border: 10px solid #cccccc; }
 
 /* line 1, ../partials/_footer.scss */
 #footer {
