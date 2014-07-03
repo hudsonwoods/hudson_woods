@@ -9188,7 +9188,7 @@ nav {
     width: 66.10169%;
     float: left;
     margin-right: 1.69492%;
-    padding: 30px 0; }
+    padding: 30px 0 60px; }
 
 /* line 36, ../partials/_about.scss */
 #partners #partner-list {
@@ -9226,16 +9226,15 @@ nav {
         display: block; }
       /* line 48, ../partials/_about.scss */
       #partners #partner-list .partner-wrapper .partner-item .circle-wrapper {
-        padding-bottom: 20px;
         margin-left: 16.94915%;
         width: 66.10169%;
         float: left;
         margin-right: 1.69492%;
         clear: none; }
-      /* line 54, ../partials/_about.scss */
+      /* line 53, ../partials/_about.scss */
       #partners #partner-list .partner-wrapper .partner-item .circle {
         width: 100%; }
-      /* line 57, ../partials/_about.scss */
+      /* line 56, ../partials/_about.scss */
       #partners #partner-list .partner-wrapper .partner-item .circle-tile {
         display: block;
         border: 10px solid #cccccc;
@@ -9243,7 +9242,7 @@ nav {
         background-size: cover;
         height: 100%;
         width: 100%; }
-      /* line 65, ../partials/_about.scss */
+      /* line 64, ../partials/_about.scss */
       #partners #partner-list .partner-wrapper .partner-item .circle-tile-overlay {
         display: block;
         z-index: 999;
@@ -9251,19 +9250,20 @@ nav {
         -webkit-transition: 0.2s;
         transition: 0.2s;
         background-color: rgba(201, 190, 105, 0); }
-        /* line 71, ../partials/_about.scss */
+        /* line 70, ../partials/_about.scss */
         #partners #partner-list .partner-wrapper .partner-item .circle-tile-overlay:hover {
           background-color: rgba(201, 190, 105, 0.3); }
-      /* line 75, ../partials/_about.scss */
+      /* line 74, ../partials/_about.scss */
       #partners #partner-list .partner-wrapper .partner-item h3, #partners #partner-list .partner-wrapper .partner-item p {
         width: 100%;
         float: left;
         margin-left: 0;
         margin-right: 0; }
-      /* line 78, ../partials/_about.scss */
+      /* line 77, ../partials/_about.scss */
       #partners #partner-list .partner-wrapper .partner-item h3 {
         color: #8c8779;
-        margin-bottom: 0; }
+        margin-bottom: 5px;
+        text-align: center; }
         /* line 81, ../partials/_about.scss */
         #partners #partner-list .partner-wrapper .partner-item h3:last-of-type {
           color: #b7b0a4;
