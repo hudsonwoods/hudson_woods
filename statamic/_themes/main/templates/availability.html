@@ -1,5 +1,5 @@
 <section id="header-availability" class="hero">
-{{ theme:partial src="nav1" }}
+{{ theme:partial src="nav" }}
 
 <div class="slick-carousel" >
 {{ heroImages }}
@@ -25,34 +25,36 @@
 
 <section class="area-tiles">
 <div class="container">
-    <div class="content">
+    <div class="col-md-10 col-md-offset-1 content">
 
   {{ entries:listing folder="availability/lots" sort_dir="asc" }}
 
 
-        <div class="tile availability lot">
-            <h2>{{ title }}</h2>
-            <img src="{{ image }}" alt="">
-            {{ content }}
-			<div class="info-row">
-				<div class="info">
-					<p>AVAILABILITY</p>
-					{{ availability }}
-				</div>
-				<div class="info">
-					<p>SIZE</p>
-					{{ size }}
-				</div>
-				<div class="info">
-					<p>COST</p>
-					{{ cost }}
-				</div>
+		<div class="col-md-6">
+			<div class="tile availability lot">
+			    <h2>{{ title }}</h2>
+			    <img src="{{ image }}" alt="">
+			    {{ content }}
+						<div class="info-row">
+							<div class="col-md-4 info">
+								<p>AVAILABILITY</p>
+								{{ availability }}
+							</div>
+							<div class="info">
+								<p>SIZE</p>
+								{{ size }}
+							</div>
+							<div class="info">
+								<p>COST</p>
+								{{ cost }}
+							</div>
+						</div>
+						<div class="info-links">
+							<div class="col-md-6 link"><a href="{{ floorplans">Floor Plans</a></div>
+							<div class="lcol-md-6 ink"><a href="">Share</a></div>
+						</div>
 			</div>
-			<div class="info-links">
-				<div class="link"><a href="{{ floorplans">Floor Plans</a></div>
-				<div class="link"><a href="">Share</a></div>
-			</div>
-        </div>
+		</div>
 	{{ /entries:listing }}
     </div>
 </div>

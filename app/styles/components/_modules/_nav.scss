@@ -1,0 +1,194 @@
+nav {
+	width: 100%;
+	z-index: 1001;
+	&.navbar {
+		&.navbar-default {
+			border-color: transparent;
+			color: white;
+			.navbar-nav {
+				li {
+					a {
+						color: white;
+						padding: 30px 15px;
+						height: 100%;
+						width: 100%;
+						font-size: 14px;
+						color: white;
+						text-transform: uppercase;
+						&.current {
+							color: white;
+						}
+					}
+				}
+			}
+			&.stuck, &.fixed {
+				background-color: $beige;
+				padding-top: 0px;
+
+					a.navbar-brand {
+						background-image: url("../img/hw_logo_dark.svg");
+					}
+
+				ul li a {
+					color: $inactive-gray;
+					&.current, &:hover {
+						color: $dark-gray;
+					}
+				}
+			}
+		}
+		position: fixed;
+		@include transition(all .5s);
+		background-color: transparent;
+		padding-top: 15px;
+		.navbar-brand {
+			margin-top: 15px;
+			padding-top: 0;
+			padding-bottom: 0;
+			background-image: url("../img/hw_logo.svg");
+			background-repeat: no-repeat;
+			height: 47px;
+			width: 99px;
+		}
+
+
+
+	}
+}
+
+.nav li a:hover, .nav li a:focus {
+	background-color: transparent;
+}
+
+#secondary-nav {
+
+	ul {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		// @include span(full);
+		&#upgrades-nav {
+			justify-content: center;
+			li a {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
+		&#homes {
+			justify-content: flex-start;
+			li:first-of-type {
+				display: none;
+			}
+			li a {
+				margin-right: 30px;
+			}
+		}
+		&#about {
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+			li {
+				text-align: center;
+				align-self: center;
+			}
+			li a {
+				padding-left:15px;
+				padding-right: 15px;
+				text-align: center;
+			}
+		}
+		&#in-the-area {
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+			li {
+				text-align: center;
+				align-self: center;
+			}
+			li a {
+				padding-left:15px;
+				padding-right: 15px;
+				text-align: center;
+				&#sleep {
+					color: $sleep;
+				}
+				&#eat {
+					color: $eat;
+				}
+				&#sip {
+					color: $sip;
+				}
+				&#culture {
+					color: $culture;
+				}
+				&#swing {
+					color: $swing;
+				}
+				&#mind-and-body {
+					color: $mind-and-body;
+				}
+				&#swim {
+					color: $swim;
+				}
+				&#ski {
+					color: $ski;
+				}
+				&#trails {
+					color: $trails;
+				}
+				&#pick-and-grow {
+					color: $pick-and-grow;
+				}
+			}
+		}
+		&#about {
+			li:first-of-type {
+				display: none;
+			}
+		}
+	}
+	li {
+		display: inline-block;
+		@include transition(.35s);
+		a {
+			text-transform: uppercase;
+			color: $light-gray;
+			font-size: 14px;
+			line-height: 20px;
+			display: inline-block;
+			padding: 14px 0 10px;
+			height: 100%;
+			width: 100%;
+			&:hover {
+				color: white;
+			}
+		}
+
+		&.active {
+			border-bottom: 4px solid white;
+			a {
+				color: white;
+				padding: 14px 0 6px;
+			}
+		}
+	}
+	background-color: $dark-gray;
+	&.stuck {
+		top: 82px;
+	}
+	#upgrades-nav a {
+		// pointer-events:none;
+	}
+}
+
+
+
+.anchor {
+	display: block !important;
+	position: relative !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	height: 0 !important;
+	top: -186px !important;
+	visibility: hidden !important;
+}

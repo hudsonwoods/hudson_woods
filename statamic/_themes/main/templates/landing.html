@@ -1,16 +1,23 @@
 <section id="header-landing">
-{{ theme:partial src="nav1" }}
+{{ theme:partial src="nav" }}
 
 <div class="slick-carousel" >
 {{ heroImages }}
 
-      <div class="hero" style="background-image: url( {{ image }} );">
+      <div class="hero landing" style="background-image: url( {{ image }} );">
       <div class="container scrollme landing">
-        <div class="animateme" data-when="exit" data-from="0" data-to="0.55" data-opacity="0" data-translatey="100" style="opacity: 1; -webkit-transform: translate3d(0px, 100px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);">
-    <h1>{{ headline }}</h1>
-    {{ if subHeadline|not_empty }}
-    <h3>{{ subHeadline }}</h3>
-    {{ endif }}
+        <div class="animateme col-md-6" data-when="exit" data-from="0" data-to="0.55" data-opacity="0" data-translatey="100" style="opacity: 1; -webkit-transform: translate3d(0px, 100px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);">
+          <a href="{{ link }}">
+            <h1>{{ headline }}</h1>
+            {{ if subHeadline|not_empty }}
+            <h3>{{ subHeadline }} <span class="fa-stack">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-chevron-right fa-stack-1x fa-inverse"></i>
+</span></h3>
+
+            {{ endif }}
+
+          </a>
         </div>
 
       </div>
@@ -18,18 +25,19 @@
 
 {{ /heroImages }}
 </div>
+
 </section>
 <section id="landing-tiles">
   <div class="container">
 <h2>{{ landingHeadline }}</h2>
 <p class="landingParagraph">{{ landingParagraph }}</p>
 {{ landingTiles }}
-  <div class="landing-tile">
+  <div class=" col-sm-12 col-lg-4 landing-tile">
     <a href="{{ linkAddress }}"><img src="{{ image }}" alt="{{ tileHeadline }}" /></a>
 
   <h3>{{ tileHeadline }}</h3>
   <p>{{ description }}</p>
-  <a href="{{ linkAddress }}">{{ linkTitle }} &gt;</a>
+  <a href="{{ linkAddress }}">{{ linkTitle }} <i class="fa fa-chevron-right"></i></a>
 
   </div>
 {{ /landingTiles }}

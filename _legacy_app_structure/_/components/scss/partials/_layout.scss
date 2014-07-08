@@ -1,0 +1,120 @@
+
+// Breakpoints -----------------------------
+
+
+
+// Content ---------------------------------
+
+
+img {
+	max-width: 100%;
+}
+.flex {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flex-wrapper {
+	display: flex;
+	justify-content: center;
+	flex-flow: column nowrap;
+	flex: 1 1 auto;
+}
+
+// .container {
+// 	position: relative;
+// 	display: block;
+// 	@include container();
+// 	@include breakpoint($small) {
+// 		max-width: 420px;
+// 	}
+// 	@include breakpoint($medium) {
+// 		max-width: 768px;
+// 	}
+// 	@include breakpoint($large) {
+// 		max-width: 1200px;
+// 	}
+// }
+
+.content {
+	// @include pre(2);
+	// @include span(8);
+	padding: 100px 0;
+	&.main {
+		h2 {
+			text-align: center;
+			&:last-of-type {
+				color: $light-font-color;
+				padding-bottom: 60px;
+			}
+		}
+	}
+}
+
+.hero {
+  background-position: center;
+  // background-attachment: fixed;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+  margin-bottom: 44px;
+  text-align: center;
+  &.about {
+    height: 500px;
+    margin-bottom: 0;
+  }
+}
+
+.container.hero-text {
+  height: 100%;
+  width: 100%;
+  h1,h2,h3,h4 {
+    @include vertical-align;
+    text-align: center;
+    color: white;
+  }
+
+}
+
+.container.scrollme {
+  @include vertical-align;
+  text-align: center;
+  color: white;
+  &.landing {
+    text-align: left;
+  }
+  h1,h3 {
+    // @include span
+  }
+}
+
+
+.circle {
+	// @include gallery(2 of 12);
+	position: relative;
+}
+.dummy {
+	margin-top: 100%;
+}
+// .circle-wrapper {
+// 	@include span(full);
+// }
+.circle-tile,.circle-tile-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    text-align: center;
+    span {
+    	text-align: center;
+    	padding: 0 5px;
+    	font-size: 12px;
+	    &.white {
+	    	color: white;
+	    }
+    }
+}

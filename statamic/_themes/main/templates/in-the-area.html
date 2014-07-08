@@ -1,6 +1,6 @@
 
 <section id="header-in-the-area" class="hero">
-{{ theme:partial src="nav1" }}
+{{ theme:partial src="nav" }}
 
 <div class="slick-carousel" >
 {{ heroImages }}
@@ -27,17 +27,19 @@
 
 <section class="area-tiles">
 <div class="container">
-    <div class="content">
+    <div class="col-md-10 col-md-offset-1 content">
 
 
         {{ entries:listing folder="in-the-area" sort_dir="asc" }}
 
-        <div class="tile area {{ activity|lower|slugify }}">
-            <h4>{{ activity }}</h4>
-            <h2>{{ title }}</h2>
-            <img src="{{ image }}" alt="">
-            {{ content }}
-        </div>
+<div class="col-md-6">
+    <div class="tile area {{ activity|lower|slugify }}">
+        <h4>{{ activity }}</h4>
+        <h2>{{ title }}</h2>
+        <img src="{{ image }}" alt="">
+        {{ content }}
+    </div>
+</div>
         {{ /entries:listing }}
     </div>
 </div>

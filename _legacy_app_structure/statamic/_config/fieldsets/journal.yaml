@@ -1,0 +1,7 @@
+title: Journal
+
+fields:
+
+  content:
+    display: Blog Entry
+    type: redactor

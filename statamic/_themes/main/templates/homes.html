@@ -1,5 +1,5 @@
 <section id="header-homes" class="hero">
-{{ theme:partial src="nav1" }}
+{{ theme:partial src="nav" }}
 
 <div class="slick-carousel" >
 {{ heroImages }}
@@ -23,10 +23,10 @@
 
 
 
-<section id="location" class="hero">
-<a href="" class="anchor" id="intro-anchor"></a>
+<section id="location" class="hero content">
+<a href="" class="anchor" id="location-anchor"></a>
 <div class="container">
-    <div class="wrapper">
+    <div class="col-md-3">
 		<h2>Home Locations</h2>
 		<p>Encompassing 131 acres, Hudson Woods features 26 architect-designed dwellings meticulously crafted from local- ly-sourced, sustainable materials. Click below to view our initial sales offering</p>
     <a href="{{ homepage }}availability">See Availability</a>
@@ -36,18 +36,18 @@
 </section>
 
 
-<section id="floor-plans">
+<section id="floor-plans" class="content">
 <a href="" class="anchor" id="floor-plans-anchor"></a>
 <div class="container">
-	<div class="wrapper-left">
+	<div class="col-md-3">
 	<h2>Standard Floorplan</h2>
 	<p>The standard Floorplan is designed to get the most from the square footage whilst still feeling light and airy.</p>
 	<p>Addional enhacements to the standard floorplan can be found in <a href="{{ homepage }}upgrades">Upgrades</a>.</p>
 	</div>
-	<div class="wrapper-center">
+	<div class="col-md-5 col-md-offset-1">
 		<img src="_themes/main/img/Floorplans.png" alt="">
 	</div>
-	<div class="wrapper-right">
+	<div class="col-md-2">
 		<div class="details">
 			<h3>2,800</h3>
 			<h4>SQFT</h4>
@@ -64,81 +64,81 @@
 </section>
 
 
-<section id="materials">
+<section id="materials"  class="content">
 <a href="" class="anchor" id="materials-anchor"></a>
 <div class="container">
-	<div class="wrapper-left">
+	<div class="col-md-3">
 		<h2>Colors &amp; Materials</h2>
 		<p>The standard Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores accusantium tempore nobis, voluptates corporis tenetur nulla</p>
 	</div>
-	<div class="wrapper-right">
+	<div class="col-md-8 col-md-offset-1">
 
-	<div class="circle-wrapper">
-		<div class="circle large">
-			<div class="dummy"></div>
-			<div class="circle-tile black-cedar"><span class="white">Black Cedar</span></div>
+		<div class="col-sm-12 circle-wrapper">
+			<div class="col-sm-3 large">
+				<div class="circle-margin"></div>
+				<div class="circle-tile black-cedar"><span class="white">Black Cedar</span></div>
+			</div>
+			<div class="col-sm-3 large">
+				<div class="circle-margin"></div>
+				<div class="circle-tile natural-cedar"><span class="white">Natural Cedar</span></div>
+			</div>
 		</div>
-		<div class="circle large">
-			<div class="dummy"></div>
-			<div class="circle-tile natural-cedar"><span class="white">Natural Cedar</span></div>
-		</div>
-	</div>
-	
-	<h4>Siding Materials</h4>
-
-	<div class="circle-wrapper">
-		<div class="circle">
-			<div class="dummy"></div>
-			<div class="circle-tile opaque-white"><span>New Opaque White</span></div>
-		</div>
-		<div class="circle">
-			<div class="dummy"></div>
-			<div class="circle-tile campari-red"><span class="white">Campari Red</span></div>
-		</div>
-		<div class="circle">
-			<div class="dummy"></div>
-			<div class="circle-tile jade-porcelain"><span class="white">Jack Porecelain</span></div>
-		</div>
-		<div class="circle">
-			<div class="dummy"></div>
-			<div class="circle-tile mid-century-white"><span>Mid Century White</span></div>
-		</div>
-		<div class="circle">
-			<div class="dummy"></div>
-			<div class="circle-tile pomegranate"><span class="white">Pomegranate</span></div>
-		</div>
-		<div class="circle">
-			<div class="dummy"></div>
-			<div class="circle-tile jade-manganese"><span class="white">Jade Manganese</span></div>
-		</div>
-	</div>
-	
-	<h4>Kitchen Tile Colors</h4>
-
-	<div class="circle-wrapper">
-		<div class="circle">
-			<div class="dummy"></div>
-			<div class="circle-tile slate-gray"><span class="white">New Opaque White</span></div>
-		</div>
-		<div class="circle">
-			<div class="dummy"></div>
-			<div class="circle-tile dark-gray"><span class="white">Campari Red</span></div>
-		</div>
-		<div class="circle">
-			<div class="dummy"></div>
-			<div class="circle-tile hartford-green"><span class="white">Jack Porecelain</span></div>
-		</div>
-		<div class="circle">
-			<div class="dummy"></div>
-			<div class="circle-tile antique-black"><span class="white">Mid Century White</span></div>
-		</div>
-		<div class="circle">
-			<div class="dummy"></div>
-			<div class="circle-tile matte-black"><span class="white">Pomegranate</span></div>
-		</div>
-	</div>
 		
-	<h4>Roof Colors</h4>
+		<h4>Siding Materials</h4>
+
+		<div class="col-sm-12 circle-wrapper">
+			<div class="col-sm-2 circle">
+				<div class="circle-margin"></div>
+				<div class="circle-tile opaque-white"><span>New Opaque White</span></div>
+			</div>
+			<div class="col-sm-2 circle">
+				<div class="circle-margin"></div>
+				<div class="circle-tile campari-red"><span class="white">Campari Red</span></div>
+			</div>
+			<div class="col-sm-2 circle">
+				<div class="circle-margin"></div>
+				<div class="circle-tile jade-porcelain"><span class="white">Jack Porecelain</span></div>
+			</div>
+			<div class="col-sm-2 circle">
+				<div class="circle-margin"></div>
+				<div class="circle-tile mid-century-white"><span>Mid Century White</span></div>
+			</div>
+			<div class="col-sm-2 circle">
+				<div class="circle-margin"></div>
+				<div class="circle-tile pomegranate"><span class="white">Pomegranate</span></div>
+			</div>
+			<div class="col-sm-2 circle">
+				<div class="circle-margin"></div>
+				<div class="circle-tile jade-manganese"><span class="white">Jade Manganese</span></div>
+			</div>
+		</div>
+		
+		<h4>Kitchen Tile Colors</h4>
+
+		<div class="col-sm-12 circle-wrapper">
+			<div class="col-sm-2 circle">
+				<div class="circle-margin"></div>
+				<div class="circle-tile slate-gray"><span class="white">New Opaque White</span></div>
+			</div>
+			<div class="col-sm-2 circle">
+				<div class="circle-margin"></div>
+				<div class="circle-tile dark-gray"><span class="white">Campari Red</span></div>
+			</div>
+			<div class="col-sm-2 circle">
+				<div class="circle-margin"></div>
+				<div class="circle-tile hartford-green"><span class="white">Jack Porecelain</span></div>
+			</div>
+			<div class="col-sm-2 circle">
+				<div class="circle-margin"></div>
+				<div class="circle-tile antique-black"><span class="white">Mid Century White</span></div>
+			</div>
+			<div class="col-sm-2 circle">
+				<div class="circle-margin"></div>
+				<div class="circle-tile matte-black"><span class="white">Pomegranate</span></div>
+			</div>
+		</div>
+			
+		<h4>Roof Colors</h4>
 		
 		
 	</div>
@@ -147,13 +147,13 @@
 </section>
 
 
-<section id="finishes">
+<section id="finishes"  class="content">
 <a href="" class="anchor" id="finishes-anchor"></a>
 <div class="container">
 
 <h2>Finishes &amp; Equpiment</h2>
 
-	<div class="wrapper">
+	<div class="col-md-4">
 			<img src="_themes/main/img/Hand-Crafted-Icon.png" alt="">
 			<h3>Hand Crafted Finishes</h3>
 			<ul>
@@ -163,7 +163,7 @@
 			</ul>
 	</div>	
 		
-	<div class="wrapper">
+	<div class="col-md-4 col-md-offset-1">
 		<img src="_themes/main/img/Premium-Equip-icon.png" alt="">
 		<h3>Premium Equipment</h3>
 		<ul>
@@ -177,18 +177,18 @@
 </div>
 </section>
 
-<section id="a-la-carte">
+<section id="a-la-carte" class="content">
 <a href="" class="anchor" id="a-la-carte-anchor"></a>
 <div class="container">
-	<div class="wrapper-center">
+	<div class="wrapper-center col-md-8 col-md-offset-2">
 		<h2>A La Carte Services</h2>
 		<p>Each home features modern, eco-friendly design constructed from materials sourced from sur- rounding areas. The homes and site set new standards for design and sustainability excellence.</p>
 		</div>
-		<ul>
+		<ul class="col-md-10 col-md-offset-1">
 		{{ aLaCarte }}
-			<li>
+			<li class="col-md-3">
 				<img src="{{ image }}" alt="">
-				{{ text }}
+				<div class="col-md-8 col-md-offset-2">{{ text }}</div>
 			</li>
 		{{ /aLaCarte }}
 		</ul>
@@ -196,14 +196,17 @@
 </div>
 </section>
 
-<section id="gallery">
+<section id="gallery" class="content">
+<a href="" class="anchor" id="gallery-anchor"></a>
 	<div class="container">
 		<h2>Image Gallery</h2>
-		<div class="sp-wrap">
+		<div class="row">
+		<div class="sp-wrap col-md-10 col-md-offset-1">
 			{{ materials_gallery }}
-		    <a href="{{ image }}"><img src="{{ image }}" alt=""></a>
+		    <a class="" href="{{ image }}"><img src="{{ image }}" alt=""></a>
 			{{ /materials_gallery }}
 		</div>
+
 	</div>
 </section>
 

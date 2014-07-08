@@ -1,0 +1,26 @@
+{{ theme:partial src="nav_unsticky" }}
+
+<div class="container">
+<div class="upgrade-entry">
+<div class="upgrade-image">
+
+	<div class="sp-wrap">
+		{{ imageGallery }}
+			<a href="{{ image }}"><img src="{{ image }}" alt=""></a>
+		{{ /imageGallery }}
+	</div>
+</div>
+
+
+<div class="specs">
+	<h2>{{ title }}</h2>
+	<h3>Specifications</h3>
+	<ul>
+	{{ specs }}
+		<li>{{ text }}</li>
+	{{ /specs }}
+
+	</ul>
+</div>
+</div>
+</div>

@@ -1,0 +1,7 @@
+title: Contact
+
+fields:
+
+  content:
+    display: Blog Entry
+    type: redactor

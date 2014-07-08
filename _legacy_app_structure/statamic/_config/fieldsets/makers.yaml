@@ -1,0 +1,17 @@
+title: makers
+
+fields:
+  image:
+    type: file
+    display: Image
+    destination: assets/img/makers
+    show_thumbnail: true
+  description:
+    type: text
+    display: Description
+  link:
+    type: text
+    display: link
+
+
+

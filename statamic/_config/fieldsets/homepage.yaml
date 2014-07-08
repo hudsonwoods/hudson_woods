@@ -20,6 +20,9 @@ fields:
       subHeadline:
         type: textarea
         display: Sub Headline
+      link:
+        type: textarea
+        display: Linked Page
 
   landingHeadline:
     type: text

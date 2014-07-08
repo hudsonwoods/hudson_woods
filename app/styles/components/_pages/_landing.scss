@@ -1,0 +1,113 @@
+#header-landing, #header-upgrades {
+  a {
+    color: white;
+
+  }
+
+h3 {
+  font-family: $base-font-family;
+  margin-top: 10px;
+  // &:after {
+  //   content:"\f09a";
+  // }
+}
+span {
+  padding-left: 10px;
+  color: rgba($yellow,.6);
+}
+
+  .slick-carousel {
+    position: relative;
+  }
+}
+
+  #header-landing .slick-slider {
+    margin-bottom: 0;
+  }
+
+.hero.landing {
+height: 700px;
+margin-bottom: 0;
+}
+button {
+  z-index: 1;
+}
+
+
+
+/* Dots */
+
+
+.slick-slider {
+    margin-bottom: 30px;
+}
+.slick-dots {
+    bottom: 45px;
+    li {
+        margin: 0px 10px;
+        button {
+            &:before {
+                font-size: 16px;
+                color: white;
+                opacity: 0.75;
+            }
+        }
+        &.slick-active {
+          margin: 0 12px;
+          height: 14px;
+          width: 14px;
+        }
+        &.slick-active button {
+          width: 14px;
+          height: 14px;
+          padding-bottom: 3px;
+          &:before {
+            border: 1px solid white;
+            border-radius: 50%;
+            color: transparent;
+            opacity: .85;
+            padding: 5px;
+            font-size: 12px;
+            height: 14px;
+            width: 14px;
+          }
+        }
+    }
+}
+
+#landing-tiles {
+  padding-bottom: 100px;
+  text-align: center;
+  h2 {
+    margin-top: 60px;
+  }
+  p.landingParagraph {
+    // @include pre(2);
+    // @include span(8);
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+  .landing-tile {
+    // @include gutters(30px inside);
+    // @include span(4);
+    &:nth-child(3n) {
+      // @include span (last 4);
+    }
+    img {
+      max-width: 100%;
+      height: 200px;
+    }
+    h3 {
+      margin-top: 20px;
+    }
+    p {
+      height: 100px;
+      margin-top: 20px;;
+    }
+    a {
+      color: darken($base-font-color, 15%);
+      font-weight: 600;
+    }
+  }
+}
