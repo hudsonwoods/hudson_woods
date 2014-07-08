@@ -11,7 +11,7 @@
 // }).addTo(map);
 
 var greenIcon = L.icon({
-    iconUrl: '../statamic/_themes/main/img/icon.png',
+    iconUrl: 'assets/img/icon.png',
 
 
     iconSize:     [28, 40], // size of the icon
