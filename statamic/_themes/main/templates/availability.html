@@ -21,41 +21,41 @@
 {{ theme:partial src="nav_availability" }}
 </section>
 
+<div id="map"></div>
 
+<!-- <section class="area-tiles">
+	<div class="container">
+	    <div class="col-md-10 col-md-offset-1 content">
 
-<section class="area-tiles">
-<div class="container">
-    <div class="col-md-10 col-md-offset-1 content">
-
-  {{ entries:listing folder="availability/lots" sort_dir="asc" }}
-
-
-		<div class="col-md-6">
-			<div class="tile availability lot">
-			    <h2>{{ title }}</h2>
-			    <img src="{{ image }}" alt="">
-			    {{ content }}
-						<div class="info-row">
-							<div class="col-md-4 info">
-								<p>AVAILABILITY</p>
-								{{ availability }}
-							</div>
-							<div class="info">
-								<p>SIZE</p>
-								{{ size }}
-							</div>
-							<div class="info">
-								<p>COST</p>
-								{{ cost }}
-							</div>
+			{{ entries:listing folder="availability/lots" sort_dir="asc" }}
+			<div class="col-md-6">
+				<div class="tile availability lot">
+				    <h2>{{ title }}</h2>
+				    <img src="{{ image }}" alt="">
+				    {{ content }}
+					<div class="info-row">
+						<div class="col-md-4 info">
+							<p>AVAILABILITY</p>
+							{{ availability }}
 						</div>
-						<div class="info-links">
-							<div class="col-md-6 link"><a href="{{ floorplans">Floor Plans</a></div>
-							<div class="lcol-md-6 ink"><a href="">Share</a></div>
+						<div class="col-md-4 info">
+							<p>SIZE</p>
+							{{ size }}
 						</div>
+						<div class="col-md-4 info">
+							<p>COST</p>
+							{{ cost }}
+						</div>
+					</div>
+
+					<div class="info-links">
+						<div class="link"><a href="{{ floorplans }}" class="magnific-popup"><span class="hide">All information is from sources believed to be reliable and subject to change of price, rental, commission or other conditions, prior sale, lease or financing or withdrawal without notice. No representation is made as to the accuracy of any description. All measurements and square footage are approximate and all information should be confirmed by customer. All rights to content, photographs and graphics are reserved. Customer should consult with its consul regarding closing costs. Nothing heron shall constitute an offer or solicitation with respect to the purchase or sale of any property in any jurisdiction in which such offer or solicitation is not authorized or to any person to whom it would be unlawful to make an offer or solicitation. </span><i class="fa fa-search"></i>Floor Plans</a></div>
+						<div class="link"><a href=""><i class="fa fa-share-square-o"></i>Share</a></div>
+					</div>
+				</div>
 			</div>
+			{{ /entries:listing }}
+
 		</div>
-	{{ /entries:listing }}
-    </div>
-</div>
-</section>
+	</div>
+</section> -->

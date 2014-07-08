@@ -1,3 +1,6 @@
+
+
+
 #header-availability .bcg {
 	background-image: url("../img/Smartdes-Section-image-2000x1500.jpg");
 }
@@ -5,4 +8,15 @@
 #map-nav-availability {
 	height: 50px;
 	background-color: $dark-gray;
+}
+
+.mfp-bg {
+	opacity: .9;
+}
+
+.mfp-title {
+	padding: 10px 0 0;
+	font-weight: 300;
+	font-size: 10px;
+	line-height: 16px;
 }

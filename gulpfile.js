@@ -121,7 +121,7 @@ gulp.task('styles', ['styles:components', 'styles:scss', 'styles:css']);
 
 // Concatenate Javascript
 gulp.task('scripts', function() {
-  gulp.src(['app/scripts/bootstrap.js','app/scripts/leaftlet.js','app/scripts/jquery.scrollme.js','app/scripts/smoothproducts.js','app/scripts/waypoints.js','app/scripts/waypoints.sticky.js','app/scripts/slick.js','app/scripts/instafeed.js','app/scripts/custom.js'])
+  gulp.src(['app/scripts/bootstrap.js','app/scripts/leaflet.js','app/scripts/jquery.scrollme.js','app/scripts/jquery.magnific-popup.js','app/scripts/smoothproducts.js','app/scripts/waypoints.js','app/scripts/waypoints.sticky.js','app/scripts/slick.js','app/scripts/instafeed.js','app/scripts/custom.js'])
     .pipe(concat('scripts.js'))
     .pipe(gulp.dest('statamic/_themes/main/js'))
 });
@@ -181,6 +181,7 @@ gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 gulp.task('serve', function() {
   livereload.listen();
   gulp.watch(['statamic/**/*.html'], reload_page);
+  gulp.watch(['statamic/**/*.js'], reload_page);
   gulp.watch(['app/styles/**/*.scss','bower_components/**/*.scss'], ['styles:components', 'styles:scss', reload_page]);
   gulp.watch(['{.tmp,app}/styles/**/*.css'], ['styles:css', reload_page]);
   gulp.watch(['app/scripts/**/*.js'], ['scripts', reload_page]);

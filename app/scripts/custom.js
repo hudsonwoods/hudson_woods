@@ -412,4 +412,16 @@ var feed = new Instafeed({
     template: '<div class="instagram-wrapper"><div class="flipcard"><a target=_blank href="{{link}}"><div class="front"><img src="{{image}}" /></div><div class="back"><p>{{caption}}</p></div></a></div></div>',
     limit: 15
       });
-feed.run();
+// feed.run();
+
+// Magnific Popup
+$('.magnific-popup').magnificPopup({ 
+  type: 'image',
+  image: {
+    titleSrc: function(item) {
+      return item.el.find('span').text();
+    },
+    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+  }
+  // other options
+});

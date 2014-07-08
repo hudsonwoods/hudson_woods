@@ -1,15 +1,15 @@
 /* Magnific Popup CSS */
 .mfp-bg {
   top: 0;
-  left: 100px;
+  left: 0;
   width: 100%;
   height: 100%;
   z-index: 1042;
   overflow: hidden;
   position: fixed;
   background: #0b0b0b;
-  opacity: 1;
-  filter: alpha(opacity=100); }
+  opacity: 0.8;
+  filter: alpha(opacity=80); }
 
 .mfp-wrap {
   top: 0;
@@ -196,7 +196,7 @@ button::-moz-focus-inner {
     opacity: 0.7; }
 
 .mfp-arrow-left {
-  left: 110px; }
+  left: 0; }
   .mfp-arrow-left:after, .mfp-arrow-left .mfp-a {
     border-right: 17px solid white;
     margin-left: 31px; }
@@ -265,7 +265,7 @@ img.mfp-img {
     height: auto;
     z-index: -1;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-    background: rgba(0,0,0,0); }
+    background: #444444; }
   .mfp-figure small {
     color: #bdbdbd;
     display: block;
@@ -366,40 +366,3 @@ img.mfp-img {
   top: 0;
   right: 0;
   padding-top: 0; }
-
-/* overlay at start */
-.mfp-fade.mfp-bg {
-  opacity: 0;
-
-  // -webkit-transition: all 0.9s ease-out;
-  // -moz-transition: all 0.9s ease-out;
-  // transition: all 0.9s ease-out;
-  @include transition (.92s);
-}
-/* overlay animate in */
-.mfp-fade.mfp-bg.mfp-ready {
-  @include transition (.92s);
-  opacity: 0.3;
-}
-/* overlay animate out */
-.mfp-fade.mfp-bg.mfp-removing {
-  opacity: 0;
-}
-
-/* content at start */
-.mfp-fade.mfp-wrap .mfp-content {
-  opacity: 0;
-
-  // -webkit-transition: all 0.9s ease-out;
-  // -moz-transition: all 0.9s ease-out;
-  // transition: all 0.9s ease-out;
-  @include transition (.92s);
-}
-/* content animate it */
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-  opacity: 1;
-}
-/* content animate out */
-.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-  opacity: 0;
-}
