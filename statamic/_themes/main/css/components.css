@@ -9014,6 +9014,9 @@ nav.navbar .navbar-brand {
 #a-la-carte li {
   text-align: center;
 }
+#a-la-carte li .col-md-3:nth-child(4n+4) {
+  clear: both;
+}
 #a-la-carte li p {
   font-family: "adelle", Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 20px;

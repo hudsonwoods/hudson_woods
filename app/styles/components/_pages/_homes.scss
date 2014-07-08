@@ -253,6 +253,9 @@
 	}
 	li {
 		// @include gallery(3 of 12);
+		.col-md-3:nth-child(4n+4) {
+			clear: both;
+		}
 		text-align: center;
 		p {
 			// @include pre(2);
