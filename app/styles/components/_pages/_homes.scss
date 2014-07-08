@@ -253,7 +253,7 @@
 	}
 	li {
 		// @include gallery(3 of 12);
-		&.col-md-3:nth-child(5n+5) {
+		&.col-md-3:nth-child(4n+5) {
 			clear: both;
 		}
 		text-align: center;
