@@ -5,87 +5,69 @@ var itaSleep = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -104.9998241,
-                    39.7471494
+                    -74.155887,
+                    41.768292
                 ]
             },
             "type": "Feature",
             "properties": {
-                "activity": "Swim",
-                "foo": "this is foo"
+                "classType": "sleep",
+                "activity": "Sleep",
+                "activityTitle": "Blue Willow Bed & Breakfast",
+                "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
+                "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
+                "website": "http://bluewillowgetaways.com/"
             },
             "id": 51
         }
-        // {
-        //     "geometry": {
-        //         "type": "Point",
-        //         "coordinates": [
-        //             -104.9983545,
-        //             39.7502833
-        //         ]
-        //     },
-        //     "type": "Feature",
-        //     "properties": {
-        //         "popupContent": "This is a B-Cycle Station. Come pick up a bike and pay by the hour. What a deal!"
-        //     },
-        //     "id": 52
-        // },
-        // {
-        //     "geometry": {
-        //         "type": "Point",
-        //         "coordinates": [
-        //             -104.9963919,
-        //             39.7444271
-        //         ]
-        //     },
-        //     "type": "Feature",
-        //     "properties": {
-        //         "popupContent": "This is a B-Cycle Station. Come pick up a bike and pay by the hour. What a deal!"
-        //     },
-        //     "id": 54
-        // },
-        // {
-        //     "geometry": {
-        //         "type": "Point",
-        //         "coordinates": [
-        //             -104.9960754,
-        //             39.7498956
-        //         ]
-        //     },
-        //     "type": "Feature",
-        //     "properties": {
-        //         "popupContent": "This is a B-Cycle Station. Come pick up a bike and pay by the hour. What a deal!"
-        //     },
-        //     "id": 55
-        // },
-        // {
-        //     "geometry": {
-        //         "type": "Point",
-        //         "coordinates": [
-        //             -104.9933717,
-        //             39.7477264
-        //         ]
-        //     },
-        //     "type": "Feature",
-        //     "properties": {
-        //         "popupContent": "This is a B-Cycle Station. Come pick up a bike and pay by the hour. What a deal!"
-        //     },
-        //     "id": 57
-        // },
-        // {
-        //     "geometry": {
-        //         "type": "Point",
-        //         "coordinates": [
-        //             -104.9913392,
-        //             39.7432392
-        //         ]
-        //     },
-        //     "type": "Feature",
-        //     "properties": {
-        //         "popupContent": "This is a B-Cycle Station. Come pick up a bike and pay by the hour. What a deal!"
-        //     },
-        //     "id": 58
-        // }
+    ]
+};
+
+var data =[
+  {
+   type: "Feature",
+   properties: {
+      type: "type1"
+   },
+   geometry: {
+      type: "Point",
+      coordinates: [-74.155887,41.768292]
+   }
+  },
+  {
+   type: "Feature",
+   properties: {
+      type: "type2"
+   },
+   geometry: {
+      type: "Point",
+      coordinates: [-74.255629,41.891399]
+   }
+  }
+];
+
+var itaEat = {
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.255629,
+                    41.891399
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "classType": "eat",
+                "activity": "eat",
+                "activityTitle": "Country Inn",
+                "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
+                "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
+                "website": ""
+            },
+            "id": 52
+        }
     ]
 };
 
@@ -326,6 +308,49 @@ var itaSleep = {
 //         ]
 //     }
 // };
+
+var campus = {
+    "type": "Feature",
+    "properties": {
+        "popupContent": "This is the Auraria West Campus",
+        "style": {
+            weight: 2,
+            color: "#999",
+            opacity: 1,
+            fillColor: "#B0DE5C",
+            fillOpacity: 0.8
+        }
+    },
+    "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+            [
+                [
+                    [-74.31966662406921,41.888197384322616],
+                    [-74.32019233703613,41.88767023537264],
+                    [-74.31766368448729,41.886277462956805],
+                    [-74.31761473421307,41.88630891293855],
+                    [-74.31753627958676,41.886385541120255],
+                    [-74.31748464703554,41.88646716134444],
+                    [-74.31709907948965,41.887083178013135],
+                    [-74.3173191874813,41.88718127107246],
+                    [-74.31748498113404,41.88725739905367],
+                    [-74.31763686089357,41.88733078121809],
+                    [-74.31773878517185,41.88739442888814],
+                    [-74.31780827110595,41.88743548791551],
+                    [-74.318191408691,41.88775609674209],
+                    [-74.31825075263004,41.88785094383305],
+                    [-74.31827866442086,41.887922203859524],
+                    [-74.31829852963449,41.88797399531295],
+                    [-74.31830339133734,41.88801567816825],
+                    [-74.31909397244453,41.88786791673858],
+                    [-74.31937292218208,41.88802266687601],
+                    [-74.31966662406921,41.888197384322616]
+                ]
+            ]
+        ]
+    }
+};
 
 // var coorsField = {
 //     "type": "Feature",
