@@ -1172,7 +1172,7 @@ var available = {
             "lotAvailability": "Aavailable",
             "lotSize": "6.0 Acres",
             "cost": "$695,000",
-            "lotURL": "http://bluewillowgetaways.com/",
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-11",
             "style": {
                 weight: 2,
                 color: "#fff",
@@ -1227,7 +1227,7 @@ var available = {
             "lotAvailability": "Aavailable",
             "lotSize": "7.95 Acres",
             "cost": "$715,000",
-            "lotURL": "http://bluewillowgetaways.com/",
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-14",
             "style": {
                 weight: 2,
                 color: "#fff",
@@ -1291,7 +1291,7 @@ var available = {
             "lotAvailability": "Aavailable",
             "lotSize": "4.6 Acres",
             "cost": "$685,000",
-            "lotURL": "http://bluewillowgetaways.com/",
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-15",
             "style": {
                 weight: 2,
                 color: "#fff",
@@ -1341,7 +1341,7 @@ var available = {
             "lotAvailability": "Aavailable",
             "lotSize": "6.6 Acres",
             "cost": "$695,000",
-            "lotURL": "http://bluewillowgetaways.com/",
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-19",
             "style": {
                 weight: 2,
                 color: "#fff",
@@ -1392,7 +1392,7 @@ var available = {
             "lotAvailability": "Aavailable",
             "lotSize": "4.2 Acres",
             "cost": "$685,000",
-            "lotURL": "http://bluewillowgetaways.com/",
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-21",
             "style": {
                 weight: 2,
                 color: "#fff",
@@ -1435,7 +1435,7 @@ var available = {
             "lotAvailability": "Aavailable",
             "lotSize": "3.3 Acres",
             "cost": "$665,000",
-            "lotURL": "http://bluewillowgetaways.com/",
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-22",
             "style": {
                 weight: 2,
                 color: "#fff",
@@ -1471,7 +1471,7 @@ var available = {
             "lotAvailability": "Aavailable",
             "lotSize": "2.7 Acres",
             "cost": "$665,000",
-            "lotURL": "http://bluewillowgetaways.com/",
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-24",
             "style": {
                 weight: 2,
                 color: "#fff",
@@ -1519,64 +1519,3 @@ var available = {
   ]
 };
 
-var availability = {
-    "type": "Feature",
-    "properties": {
-        "MAP_LABEL": "three",
-        "classType": "sleep",
-        "activity": "Sleep",
-        "activityTitle": "Blue Willow Bed & Breakfast",
-        "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-        "lotAvailability": "Unavailable",
-        "lotSize": "5.5 Acres",
-        "cost": "$500,000",
-        "lotURL": "http://bluewillowgetaways.com/",
-        "style": {
-            weight: 2,
-            color: "#fff",
-            opacity: 1,
-            fillColor: "#bdd194",
-            fillOpacity: 0.8
-        }
-    },
-    "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-            [
-                [
-                    [-74.31966662406921,41.888197384322616],
-                    [-74.32019233703613,41.88767023537264],
-                    [-74.31766368448729,41.886277462956805],
-                    [-74.31761473421307,41.88630891293855],
-                    [-74.31753627958676,41.886385541120255],
-                    [-74.31748464703554,41.88646716134444],
-                    [-74.31709907948965,41.887083178013135],
-                    [-74.3173191874813,41.88718127107246],
-                    [-74.31748498113404,41.88725739905367],
-                    [-74.31763686089357,41.88733078121809],
-                    [-74.31773878517185,41.88739442888814],
-                    [-74.31780827110595,41.88743548791551],
-                    [-74.318191408691,41.88775609674209],
-                    [-74.31825075263004,41.88785094383305],
-                    [-74.31827866442086,41.887922203859524],
-                    [-74.31829852963449,41.88797399531295],
-                    [-74.31830339133734,41.88801567816825],
-                    [-74.31909397244453,41.88786791673858],
-                    [-74.31937292218208,41.88802266687601],
-                    [-74.31966662406921,41.888197384322616]
-                ]
-            ]
-        ]
-    },
-};
-
-// var coorsField = {
-//     "type": "Feature",
-//     "properties": {
-//         "popupContent": "Coors Field"
-//     },
-//     "geometry": {
-//         "type": "Point",
-//         "coordinates": [-104.99404191970824, 39.756213909328125]
-//     }
-// };
