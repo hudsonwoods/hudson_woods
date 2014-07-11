@@ -28,6 +28,24 @@ html, body, a, span, p {
   font-family: $base-font-family;
 }
 
+body {
+  height: 100%;
+}
+
+.body-wrapper {
+  min-height: 100%;
+  margin-bottom: -130px;
+}
+
+.body-wrapper:after {
+  content: "";
+  display: block;
+}
+#footer, .body-wrapper:after {
+  /* .push must be the same height as footer */
+  height: 130px; 
+}
+
 h1,h2,h3,h4,h5 {
   font-family: $headline-font;
 }

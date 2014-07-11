@@ -11,10 +11,10 @@ var greenIcon = L.icon({
 L.Icon.Default.imagePath = 'assets/img';
 
 var map = L.map('map', {
-    center: [41.8867809, -74.3148479],
+    center: [41.8872809, -74.3138479],
     zoom: 16,
     scrollWheelZoom: false,
-    zoomControl: false
+    // zoomControl: false
 });
 
 // map.dragging.disable();
@@ -35,7 +35,7 @@ L.tileLayer('http://a.tiles.mapbox.com/v3/sandersonj.i245n6m6/{z}/{x}/{y}.png', 
 var mapLayerGroups = [];
 
 //draw GEOJSON - don't add the GEOJSON layer to the map here
-L.geoJson(available, {onEachFeature: onEachFeature})//.addTo(map);
+L.geoJson([available, unavailable], {onEachFeature: onEachFeature})//.addTo(map);
 
 /*
  *for all features create a layerGroup for each feature type and add the feature to the    layerGroup
@@ -57,13 +57,28 @@ function onEachFeature(feature, layer) {
         };
 
     var popupContent = 
-
-    "<div class='tile area " + feature.properties.classType + "'" + ">" + 
-    "<h4>" + feature.properties.activity + "</h4>" +
-    "<h2>" + feature.properties.activityTitle + "</h2>" +
-    "<img src=" + feature.properties.image +  ">" + 
-    "<p>" + feature.properties.activityDescription + "</p>" +
-    "<a target=_blank href=" + feature.properties.website + ">" + feature.properties.website + "</a>" +
+    
+    "<div class='tile availability" + "'" + ">" + 
+        "<h2>" + feature.properties.activityTitle + "</h2>" +
+        "<img src=" + feature.properties.image +  ">" + 
+        "<div class='col-md-4" + "'" + ">" +
+            "<p>AVAILABILITY</p>" +
+            "<p>"+feature.properties.lotAvailability+"</p>" +
+        "</div>" + 
+        "<div class='col-md-4" + "'" + ">" +
+            "<p>SIZE</p>" +
+            "<p>"+feature.properties.lotSize+"</p>" +
+        "</div>" + 
+        "<div class='col-md-4" + "'" + ">" +
+            "<p>COST</p>" +
+            "<p>"+feature.properties.cost+"</p>" +
+        "</div>" + 
+        
+        "<a target=_blank href=" + feature.properties.lotURL + ">" + 
+        "<i class='fa fa-search" + "'" +">" + "</i>" +
+        "View Lot Details & Floor Plans" + 
+        "</a>" +
+    
     "</div>";
 
     if (feature.properties && feature.properties.popupContent) {
@@ -85,6 +100,17 @@ L.geoJson([available], {
         return L.marker(latlng);
     }
 }).addTo(map);
+
+L.geoJson([unavailable], {
+
+    style: function (feature) {
+        return feature.properties.style;
+    },
+
+
+}).addTo(map);
+
+
 
 
 // var cloudmadeUrl = 'http://a.tiles.mapbox.com/v3/sandersonj.i245n6m6/{z}/{x}/{y}.png',

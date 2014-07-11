@@ -60,3 +60,17 @@ fields:
         destination: assets/img/homes
         show_thumbnail: true
 
+  image_gallery:
+    display: Image Gallery
+    type: grid
+    starting_rows: 1
+    min_rows: 1
+    fields:
+      image:
+        type: file
+        display: Images
+        destination: assets/img/upgrades
+        show_thumbnail: true
+
+
+

@@ -13,36 +13,310 @@ var data = {
     },
     {
       "type": "Feature",
-      "properties": {MAP_LABEL: 'three'},
+      "properties": {MAP_LABEL: 'Lot 02'},
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -74.3198529,
-          41.8881507
+          -74.319554,
+          41.888220
         ]
       }
-    }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'Lot 03'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.318052,
+          41.889674
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'Lot 04'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.315348,
+          41.889454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'Lot 05'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.314648,
+          41.8899199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'Lot 06'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.313224,
+          41.888963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'Lot 07'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.311724,
+          41.888263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'Lot 08'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.310004,
+          41.887261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'Lot 09'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.310004,
+          41.886561
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'Lot 10'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.310934,
+          41.884865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'Lot 11'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.313117,
+          41.883923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'Lot 12'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.314533,
+          41.884242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'Lot 13'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.312645,
+          41.885472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'Lot 14'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.312044,
+          41.886559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'Lot 15'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.312859,
+          41.887485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'Lot 16'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.314232,
+          41.888380
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'Lot 17'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.315885,
+          41.888156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'Lot 18'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.318095,
+          41.888256
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'Lot 19'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.317752,
+          41.887469
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'Lot 20'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.316636,
+          41.888987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'Lot 21'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.317172,
+          41.885952
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'Lot 22'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.316764,
+          41.886748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'Lot 23'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.315498,
+          41.8850
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'Lot 24'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.314727,
+          41.887586
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'Lot 25'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.314427,
+          41.886586
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'Lot 25'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.314727,
+          41.885686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'N/A'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.315627,
+          41.887086
+        ]
+      }
+    },
   ]
 };
 
-var available = {
+var unavailable = {
   "type": "FeatureCollection",
   "features": [
     {
       "type": "Feature",
         "properties": {
-            "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
             "activityTitle": "Lot 1",
             "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
+            "lotAvailability": "Unavailable",
+            "lotSize": "5.5 Acres",
+            "cost": "$500,000",
+            "lotURL": "http://bluewillowgetaways.com/",
             "style": {
                 weight: 2,
-                color: "#999",
+                color: "#fff",
                 opacity: 1,
-                fillColor: "#B0DE5C",
+                fillColor: "#ddd8d6",
                 fillOpacity: 0.8
             }
         },
@@ -80,17 +354,17 @@ var available = {
       "type": "Feature",
         "properties": {
             "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
             "activityTitle": "Lot 2",
             "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
+            "lotAvailability": "Unavailable",
+            "lotSize": "5.5 Acres",
+            "cost": "$500,000",
+            "lotURL": "http://bluewillowgetaways.com/",
             "style": {
                 weight: 2,
-                color: "#999",
+                color: "#fff",
                 opacity: 1,
-                fillColor: "#B0DE5C",
+                fillColor: "#ddd8d6",
                 fillOpacity: 0.8
             }
         },
@@ -122,17 +396,17 @@ var available = {
       "type": "Feature",
         "properties": {
             "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
             "activityTitle": "Lot 3",
             "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
+            "lotAvailability": "Unavailable",
+            "lotSize": "5.5 Acres",
+            "cost": "$500,000",
+            "lotURL": "http://bluewillowgetaways.com/",
             "style": {
                 weight: 2,
-                color: "#999",
+                color: "#fff",
                 opacity: 1,
-                fillColor: "#B0DE5C",
+                fillColor: "#ddd8d6",
                 fillOpacity: 0.8
             }
         },
@@ -158,17 +432,17 @@ var available = {
       "type": "Feature",
         "properties": {
             "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
             "activityTitle": "Lot 4",
             "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
+            "lotAvailability": "Unavailable",
+            "lotSize": "5.5 Acres",
+            "cost": "$500,000",
+            "lotURL": "http://bluewillowgetaways.com/",
             "style": {
                 weight: 2,
-                color: "#999",
+                color: "#fff",
                 opacity: 1,
-                fillColor: "#B0DE5C",
+                fillColor: "#ddd8d6",
                 fillOpacity: 0.8
             }
         },
@@ -198,17 +472,17 @@ var available = {
       "type": "Feature",
         "properties": {
             "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
             "activityTitle": "Lot 5",
             "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
+            "lotAvailability": "Unavailable",
+            "lotSize": "5.5 Acres",
+            "cost": "$500,000",
+            "lotURL": "http://bluewillowgetaways.com/",
             "style": {
                 weight: 2,
-                color: "#999",
+                color: "#fff",
                 opacity: 1,
-                fillColor: "#B0DE5C",
+                fillColor: "#ddd8d6",
                 fillOpacity: 0.8
             }
         },
@@ -235,17 +509,17 @@ var available = {
       "type": "Feature",
         "properties": {
             "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
             "activityTitle": "Lot 6",
             "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
+            "lotAvailability": "Unavailable",
+            "lotSize": "5.5 Acres",
+            "cost": "$500,000",
+            "lotURL": "http://bluewillowgetaways.com/",
             "style": {
                 weight: 2,
-                color: "#999",
+                color: "#fff",
                 opacity: 1,
-                fillColor: "#B0DE5C",
+                fillColor: "#ddd8d6",
                 fillOpacity: 0.8
             }
         },
@@ -273,17 +547,17 @@ var available = {
       "type": "Feature",
         "properties": {
             "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
             "activityTitle": "Lot 7",
             "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
+            "lotAvailability": "Unavailable",
+            "lotSize": "5.5 Acres",
+            "cost": "$500,000",
+            "lotURL": "http://bluewillowgetaways.com/",
             "style": {
                 weight: 2,
-                color: "#999",
+                color: "#fff",
                 opacity: 1,
-                fillColor: "#B0DE5C",
+                fillColor: "#ddd8d6",
                 fillOpacity: 0.8
             }
         },
@@ -317,17 +591,17 @@ var available = {
       "type": "Feature",
         "properties": {
             "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
             "activityTitle": "Lot 8",
             "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
+            "lotAvailability": "Unavailable",
+            "lotSize": "5.5 Acres",
+            "cost": "$500,000",
+            "lotURL": "http://bluewillowgetaways.com/",
             "style": {
                 weight: 2,
-                color: "#999",
+                color: "#fff",
                 opacity: 1,
-                fillColor: "#B0DE5C",
+                fillColor: "#ddd8d6",
                 fillOpacity: 0.8
             }
         },
@@ -355,17 +629,17 @@ var available = {
       "type": "Feature",
         "properties": {
             "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
             "activityTitle": "Lot 9",
             "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
+            "lotAvailability": "Unavailable",
+            "lotSize": "5.5 Acres",
+            "cost": "$500,000",
+            "lotURL": "http://bluewillowgetaways.com/",
             "style": {
                 weight: 2,
-                color: "#999",
+                color: "#fff",
                 opacity: 1,
-                fillColor: "#B0DE5C",
+                fillColor: "#ddd8d6",
                 fillOpacity: 0.8
             }
         },
@@ -391,17 +665,17 @@ var available = {
       "type": "Feature",
         "properties": {
             "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
             "activityTitle": "Lot 10",
             "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
+            "lotAvailability": "Unavailable",
+            "lotSize": "5.5 Acres",
+            "cost": "$500,000",
+            "lotURL": "http://bluewillowgetaways.com/",
             "style": {
                 weight: 2,
-                color: "#999",
+                color: "#fff",
                 opacity: 1,
-                fillColor: "#B0DE5C",
+                fillColor: "#ddd8d6",
                 fillOpacity: 0.8
             }
         },
@@ -463,21 +737,447 @@ var available = {
             ]
         }
     },
+
     {
       "type": "Feature",
         "properties": {
             "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
-            "activityTitle": "Lot 11",
+            "activityTitle": "Lot 12",
             "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
+            "lotAvailability": "Unavailable",
+            "lotSize": "5.5 Acres",
+            "cost": "$500,000",
+            "lotURL": "http://bluewillowgetaways.com/",
             "style": {
                 weight: 2,
-                color: "#999",
+                color: "#fff",
                 opacity: 1,
-                fillColor: "#B0DE5C",
+                fillColor: "#ddd8d6",
+                fillOpacity: 0.8
+            }
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [ -74.31182384490967,41.88542780695214 ],
+                        [ -74.31278474628931,41.885735821039525 ],
+                        [ -74.3129788715371,41.885421067549565 ],
+                        [ -74.31304961442953,41.885313986135465 ],
+                        [ -74.31478500366217,41.88467898206912 ],
+                        [ -74.31336879730225,41.883880225853794 ],
+                        [ -74.31182384490967,41.88542780695214 ],
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+      "type": "Feature",
+        "properties": {
+            "MAP_LABEL": "three",
+            "activityTitle": "Lot 13",
+            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
+            "lotAvailability": "Unavailable",
+            "lotSize": "5.5 Acres",
+            "cost": "$500,000",
+            "lotURL": "http://bluewillowgetaways.com/",
+            "style": {
+                weight: 2,
+                color: "#fff",
+                opacity: 1,
+                fillColor: "#ddd8d6",
+                fillOpacity: 0.8
+            }
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [ -74.312656167863,41.8866206667731 ],
+                        [ -74.3126529827615,41.886511590559884 ],
+                        [ -74.31264929473406,41.886408255063266 ],
+                        [ -74.31265499443771,41.886115469792855 ],
+                        [ -74.31268684575872,41.885912541243194 ],
+                        [ -74.31278474628931,41.885735821039574 ],
+                        [ -74.31083478033548,41.885105813327904 ],
+                        [ -74.31080806137811,41.88513807532938 ],
+                        [ -74.31075803802872,41.885192081608466 ],
+                        [ -74.31075565516954,41.88519667060792 ],
+                        [ -74.31071441627284,41.885344937387224 ],
+                        [ -74.31071067361074,41.885358428508454 ],
+                        [ -74.31069122759538,41.88540984755093 ],
+                        [ -74.31065897402993,41.88549825608442 ],
+                        [ -74.31061666195404,41.885615619002685 ],
+                        [ -74.31060197379838,41.88565277739761 ],
+                        [ -74.3104958190657,41.885770275792034 ],
+                        [ -74.31038886308676,41.88586511662382 ],
+                        [ -74.31265935301786,41.88673773017479 ],
+                        [ -74.312656167863,41.8866206667731 ],
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+      "type": "Feature",
+        "properties": {
+            "MAP_LABEL": "three",
+            "activityTitle": "Lot 16",
+            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
+            "lotAvailability": "Unavailable",
+            "lotSize": "5.5 Acres",
+            "cost": "$500,000",
+            "lotURL": "http://bluewillowgetaways.com/",
+            "style": {
+                weight: 2,
+                color: "#fff",
+                opacity: 1,
+                fillColor: "#ddd8d6",
+                fillOpacity: 0.8
+            }
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [ -74.31408762931824,41.88857826669985 ],
+                        [ -74.31408964249624,41.88855854864012 ],
+                        [ -74.31408385981109,41.88849050318841 ],
+                        [ -74.31407447207954,41.888429102822 ],
+                        [ -74.31405355918298,41.888356673506145 ],
+                        [ -74.31401252746576,41.88829123235364 ],
+                        [ -74.3138355020518,41.8882962243767 ],
+                        [ -74.3137724701553,41.888289485274875 ],
+                        [ -74.31370943825925,41.88828174775437 ],
+                        [ -74.31365914642805,41.88827675580464 ],
+                        [ -74.31353174128992,41.888260282346955 ],
+                        [ -74.31347239745418,41.88824006508624 ],
+                        [ -74.3134244531393,41.888223841494245 ],
+                        [ -74.31332554664232,41.88819139388082 ],
+                        [ -74.31326888493845,41.88817342299211 ],
+                        [ -74.3117755651474,41.88865464257824 ],
+                        [ -74.31332923471933,41.88944085954705 ],
+                        [ -74.3133659476224,41.88941852113801 ],
+                        [  -74.31340266049756,41.88939218925736],
+                        [ -74.3135203425312,41.88931157119254 ],
+                        [ -74.31362628968651,41.889230204254076 ],
+                        [ -74.31370943784714,41.889157822553 ],
+                        [ -74.31377515203405,41.88908394322601 ],
+                        [ -74.31380331521473,41.88904900031131 ],
+                        [ -74.31384488940239,41.888999081679394 ],
+                        [ -74.31390926257279,41.88891621677834 ],
+                        [ -74.31393876693289,41.88887228839179 ],
+                        [ -74.31398034111334,41.888810888415804 ],
+                        [ -74.31400917470455,41.888765462317735 ],
+                        [ -74.3140416964311,41.8887115499432 ],
+                        [ -74.31406885381568,41.888654642478976 ],
+                        [ -74.3140826001611,41.888610963513536 ],
+                        [ -74.31408762931824,41.88857826669985 ],
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+      "type": "Feature",
+        "properties": {
+            "MAP_LABEL": "three",
+            "activityTitle": "Lot 17",
+            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
+            "lotAvailability": "Unavailable",
+            "lotSize": "5.5 Acres",
+            "cost": "$500,000",
+            "lotURL": "http://bluewillowgetaways.com/",
+            "style": {
+                weight: 2,
+                color: "#fff",
+                opacity: 1,
+                fillColor: "#ddd8d6",
+                fillOpacity: 0.8
+            }
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [ -74.31431025266642,41.88932355159768 ],
+                        [ -74.31624144315714,41.88855779994577 ],
+                        [ -74.3156493455171,41.88771366542184 ],
+                        [ -74.31478098034853,41.88802166848914 ],
+                        [ -74.3145313678483,41.88811417597084 ],
+                        [ -74.31438644470097,41.88816966458288 ],
+                        [ -74.31425225021712,41.8882226570108 ],
+                        [ -74.31401252746576,41.888291232353666 ],
+                        [ -74.31405355918298,41.88835667350617 ],
+                        [ -74.31407447207954,41.88842910282202 ],
+                        [ -74.31407740574082,41.88844916389008 ],
+                        [ -74.31408059073271,41.88847331202634 ],
+                        [ -74.31408964249624,41.88855854864015 ],
+                        [ -74.31408628821367,41.888581261834105 ],
+                        [ -74.3140822649064,41.88860672041708 ],
+                        [ -74.31406885381568,41.888654642478976 ],
+                        [ -74.3140416964311,41.8887115499432 ],
+                        [ -74.31396290683858,41.88883385102306 ],
+                        [ -74.31390121606103,41.88892420379143 ],
+                        [ -74.31382007896894,41.88902653689013 ],
+                        [ -74.31431025266642,41.88932355159768 ],
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+      "type": "Feature",
+        "properties": {
+            "MAP_LABEL": "three",
+            "activityTitle": "Lot 18",
+            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
+            "lotAvailability": "Unavailable",
+            "lotSize": "5.5 Acres",
+            "cost": "$500,000",
+            "lotURL": "http://bluewillowgetaways.com/",
+            "style": {
+                weight: 2,
+                color: "#fff",
+                opacity: 1,
+                fillColor: "#ddd8d6",
+                fillOpacity: 0.8
+            }
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [ -74.3183033913374,41.88801567816825 ],
+                        [ -74.31829852963449,41.887973995312926 ],
+                        [ -74.31825377047056,41.887856435261746 ],
+                        [ -74.31808076800365,41.88791384263166 ],
+                        [ -74.31745346643521,41.88813024302858 ],
+                        [ -74.31699179112906,41.888294227501426 ],
+                        [ -74.31624144315714,41.88855779994577 ],
+                        [ -74.31563861668104,41.88879191925411 ],
+                        [ -74.31700855493546,41.88918827280122 ],
+                        [ -74.3171426654443,41.8891178878993 ],
+                        [ -74.31722715497631,41.889071962864435 ],
+                        [ -74.31727141141891,41.88904700349412 ],
+                        [ -74.31763283908367,41.8888503241505 ],
+                        [ -74.31787356734276,41.8886716149832 ],
+                        [ -74.3180888146162,41.88846195554637 ],
+                        [ -74.31823868335289,41.888296723101796 ],
+                        [ -74.31829618297456,41.88819014581157 ],
+                        [ -74.31830842053273,41.8880840674303 ],
+                        [ -74.3183033913374,41.88801567816825 ],
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+      "type": "Feature",
+        "properties": {
+            "MAP_LABEL": "three",
+            "activityTitle": "Lot 20",
+            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
+            "lotAvailability": "Unavailable",
+            "lotSize": "5.5 Acres",
+            "cost": "$500,000",
+            "lotURL": "http://bluewillowgetaways.com/",
+            "style": {
+                weight: 2,
+                color: "#fff",
+                opacity: 1,
+                fillColor: "#ddd8d6",
+                fillOpacity: 0.8
+            }
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [ -74.31566007435316,41.8887899225046 ],
+                        [ -74.31499857747383,41.88904475808788 ],
+                        [ -74.31431025266642,41.889323551597656 ],
+                        [ -74.31573987007141,41.89023804871436 ],
+                        [ -74.31700855493546,41.88918827280122 ],
+                        [ -74.31566007435316,41.8887899225046 ],
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+      "type": "Feature",
+        "properties": {
+            "MAP_LABEL": "three",
+            "activityTitle": "Lot 23",
+            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
+            "lotAvailability": "Unavailable",
+            "lotSize": "5.5 Acres",
+            "cost": "$500,000",
+            "lotURL": "http://bluewillowgetaways.com/",
+            "style": {
+                weight: 2,
+                color: "#fff",
+                opacity: 1,
+                fillColor: "#ddd8d6",
+                fillOpacity: 0.8
+            }
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [ -74.31589543819427,41.885292020691466 ],
+                        [ -74.31478500366217,41.88467898206907 ],
+                        [ -74.31392535997935,41.88498750168908 ],
+                        [ -74.31304961442953,41.885313986135415 ],
+                        [ -74.3129788715371,41.88542106754954 ],
+                        [ -74.31516453623766,41.88593899969806 ],
+                        [ -74.31589543819427,41.885292020691466 ],
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+      "type": "Feature",
+        "properties": {
+            "MAP_LABEL": "three",
+            "activityTitle": "Lot 25",
+            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
+            "lotAvailability": "Unavailable",
+            "lotSize": "5.5 Acres",
+            "cost": "$500,000",
+            "lotURL": "http://bluewillowgetaways.com/",
+            "style": {
+                weight: 2,
+                color: "#fff",
+                opacity: 1,
+                fillColor: "#ddd8d6",
+                fillOpacity: 0.8
+            }
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [ -74.31446850299835,41.88666185120915 ],
+                        [ -74.31264795362944,41.88642622647677 ],
+                        [ -74.31265935301786,41.88673773017474 ],
+                        [ -74.31265935301786,41.88680312579068 ],
+                        [ -74.31268081073517,41.88705085483761 ],
+                        [ -74.31268751621252,41.887259894826606 ],
+                        [ -74.31269422173506,41.88749651487912 ],
+                        [ -74.31271299719816,41.88756839927846 ],
+                        [ -74.3135592341423,41.887672232157 ],
+                        [ -74.31400716304779,41.88730482275211 ],
+                        [ -74.31446850299835,41.88666185120915 ],
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+      "type": "Feature",
+        "properties": {
+            "MAP_LABEL": "three",
+            "activityTitle": "Lot 26",
+            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
+            "lotAvailability": "Unavailable",
+            "lotSize": "5.5 Acres",
+            "cost": "$500,000",
+            "lotURL": "http://bluewillowgetaways.com/",
+            "style": {
+                weight: 2,
+                color: "#fff",
+                opacity: 1,
+                fillColor: "#ddd8d6",
+                fillOpacity: 0.8
+            }
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [ -74.31446850299835,41.88666185120915 ],
+                        [ -74.31486278772348,41.88626648040147 ],
+                        [ -74.31516453623766,41.88593899969809 ],
+                        [ -74.3129788715371,41.88542106754954 ],
+                        [ -74.31278474628931,41.885735821039475 ],
+                        [ -74.31268684575872,41.885912541243165 ],
+                        [ -74.31265600025648,41.88610773234324 ],
+                        [ -74.31264795362944,41.88642622647682 ],
+                        [ -74.31343585252762,41.88652806439155 ],
+                        [ -74.31446850299835,41.88666185120915 ],
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+      "type": "Feature",
+        "properties": {
+            "MAP_LABEL": "three",
+            "activityTitle": "N/A",
+            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
+            "lotAvailability": "Unavailable",
+            "lotSize": "5.5 Acres",
+            "cost": "$500,000",
+            "lotURL": "http://bluewillowgetaways.com/",
+            "style": {
+                weight: 2,
+                color: "#fff",
+                opacity: 1,
+                fillColor: "#ddd8d6",
+                fillOpacity: 0.8
+            }
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [ -74.31576199829578,41.88767572652971 ],
+                        [ -74.31446850299835,41.88666185120915 ],
+                        [ -74.31400716304779,41.88730482275211 ],
+                        [ -74.31478098034859,41.88802166848914 ],
+                        [ -74.31576199829578,41.88767572652971 ],
+                    ]
+                ]
+            ]
+        }
+    },
+  ]
+};
+
+var available = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+        "properties": {
+            "MAP_LABEL": "three",
+            "activityTitle": "Lot 11",
+            "image": "assets/img/availability/LOT11.png",
+            "lotAvailability": "Aavailable",
+            "lotSize": "6.0 Acres",
+            "cost": "$695,000",
+            "lotURL": "http://bluewillowgetaways.com/",
+            "style": {
+                weight: 2,
+                color: "#fff",
+                opacity: 1,
+                fillColor: "#bdd194",
                 fillOpacity: 0.8
             }
         },
@@ -522,100 +1222,17 @@ var available = {
       "type": "Feature",
         "properties": {
             "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
-            "activityTitle": "Lot 12",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#999",
-                opacity: 1,
-                fillColor: "#B0DE5C",
-                fillOpacity: 0.8
-            }
-        },
-        "geometry": {
-            "type": "MultiPolygon",
-            "coordinates": [
-                [
-                    [
-                        [ -74.31182384490967,41.88542780695214 ],
-                        [ -74.31278474628931,41.885735821039525 ],
-                        [ -74.3129788715371,41.885421067549565 ],
-                        [ -74.31304961442953,41.885313986135465 ],
-                        [ -74.31478500366217,41.88467898206912 ],
-                        [ -74.31336879730225,41.883880225853794 ],
-                        [ -74.31182384490967,41.88542780695214 ],
-                    ]
-                ]
-            ]
-        }
-    },
-    {
-      "type": "Feature",
-        "properties": {
-            "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
-            "activityTitle": "Lot 13",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#999",
-                opacity: 1,
-                fillColor: "#B0DE5C",
-                fillOpacity: 0.8
-            }
-        },
-        "geometry": {
-            "type": "MultiPolygon",
-            "coordinates": [
-                [
-                    [
-                        [ -74.312656167863,41.8866206667731 ],
-                        [ -74.3126529827615,41.886511590559884 ],
-                        [ -74.31264929473406,41.886408255063266 ],
-                        [ -74.31265499443771,41.886115469792855 ],
-                        [ -74.31268684575872,41.885912541243194 ],
-                        [ -74.31278474628931,41.885735821039574 ],
-                        [ -74.31083478033548,41.885105813327904 ],
-                        [ -74.31080806137811,41.88513807532938 ],
-                        [ -74.31075803802872,41.885192081608466 ],
-                        [ -74.31075565516954,41.88519667060792 ],
-                        [ -74.31071441627284,41.885344937387224 ],
-                        [ -74.31071067361074,41.885358428508454 ],
-                        [ -74.31069122759538,41.88540984755093 ],
-                        [ -74.31065897402993,41.88549825608442 ],
-                        [ -74.31061666195404,41.885615619002685 ],
-                        [ -74.31060197379838,41.88565277739761 ],
-                        [ -74.3104958190657,41.885770275792034 ],
-                        [ -74.31038886308676,41.88586511662382 ],
-                        [ -74.31265935301786,41.88673773017479 ],
-                        [ -74.312656167863,41.8866206667731 ],
-                    ]
-                ]
-            ]
-        }
-    },
-    {
-      "type": "Feature",
-        "properties": {
-            "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
             "activityTitle": "Lot 14",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
+            "image": "assets/img/availability/LOT14.png",
+            "lotAvailability": "Aavailable",
+            "lotSize": "7.95 Acres",
+            "cost": "$715,000",
+            "lotURL": "http://bluewillowgetaways.com/",
             "style": {
                 weight: 2,
-                color: "#999",
+                color: "#fff",
                 opacity: 1,
-                fillColor: "#B0DE5C",
+                fillColor: "#bdd194",
                 fillOpacity: 0.8
             }
         },
@@ -669,17 +1286,17 @@ var available = {
       "type": "Feature",
         "properties": {
             "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
             "activityTitle": "Lot 15",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
+            "image": "assets/img/availability/LOT15.png",
+            "lotAvailability": "Aavailable",
+            "lotSize": "4.6 Acres",
+            "cost": "$685,000",
+            "lotURL": "http://bluewillowgetaways.com/",
             "style": {
                 weight: 2,
-                color: "#999",
+                color: "#fff",
                 opacity: 1,
-                fillColor: "#B0DE5C",
+                fillColor: "#bdd194",
                 fillOpacity: 0.8
             }
         },
@@ -719,174 +1336,17 @@ var available = {
       "type": "Feature",
         "properties": {
             "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
-            "activityTitle": "Lot 16",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#999",
-                opacity: 1,
-                fillColor: "#B0DE5C",
-                fillOpacity: 0.8
-            }
-        },
-        "geometry": {
-            "type": "MultiPolygon",
-            "coordinates": [
-                [
-                    [
-                        [ -74.31408762931824,41.88857826669985 ],
-                        [ -74.31408964249624,41.88855854864012 ],
-                        [ -74.31408385981109,41.88849050318841 ],
-                        [ -74.31407447207954,41.888429102822 ],
-                        [ -74.31405355918298,41.888356673506145 ],
-                        [ -74.31401252746576,41.88829123235364 ],
-                        [ -74.3138355020518,41.8882962243767 ],
-                        [ -74.3137724701553,41.888289485274875 ],
-                        [ -74.31370943825925,41.88828174775437 ],
-                        [ -74.31365914642805,41.88827675580464 ],
-                        [ -74.31353174128992,41.888260282346955 ],
-                        [ -74.31347239745418,41.88824006508624 ],
-                        [ -74.3134244531393,41.888223841494245 ],
-                        [ -74.31332554664232,41.88819139388082 ],
-                        [ -74.31326888493845,41.88817342299211 ],
-                        [ -74.3117755651474,41.88865464257824 ],
-                        [ -74.31332923471933,41.88944085954705 ],
-                        [ -74.3133659476224,41.88941852113801 ],
-                        [  -74.31340266049756,41.88939218925736],
-                        [ -74.3135203425312,41.88931157119254 ],
-                        [ -74.31362628968651,41.889230204254076 ],
-                        [ -74.31370943784714,41.889157822553 ],
-                        [ -74.31377515203405,41.88908394322601 ],
-                        [ -74.31380331521473,41.88904900031131 ],
-                        [ -74.31384488940239,41.888999081679394 ],
-                        [ -74.31390926257279,41.88891621677834 ],
-                        [ -74.31393876693289,41.88887228839179 ],
-                        [ -74.31398034111334,41.888810888415804 ],
-                        [ -74.31400917470455,41.888765462317735 ],
-                        [ -74.3140416964311,41.8887115499432 ],
-                        [ -74.31406885381568,41.888654642478976 ],
-                        [ -74.3140826001611,41.888610963513536 ],
-                        [ -74.31408762931824,41.88857826669985 ],
-                    ]
-                ]
-            ]
-        }
-    },
-    {
-      "type": "Feature",
-        "properties": {
-            "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
-            "activityTitle": "Lot 17",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#999",
-                opacity: 1,
-                fillColor: "#B0DE5C",
-                fillOpacity: 0.8
-            }
-        },
-        "geometry": {
-            "type": "MultiPolygon",
-            "coordinates": [
-                [
-                    [
-                        [ -74.31431025266642,41.88932355159768 ],
-                        [ -74.31624144315714,41.88855779994577 ],
-                        [ -74.3156493455171,41.88771366542184 ],
-                        [ -74.31478098034853,41.88802166848914 ],
-                        [ -74.3145313678483,41.88811417597084 ],
-                        [ -74.31438644470097,41.88816966458288 ],
-                        [ -74.31425225021712,41.8882226570108 ],
-                        [ -74.31401252746576,41.888291232353666 ],
-                        [ -74.31405355918298,41.88835667350617 ],
-                        [ -74.31407447207954,41.88842910282202 ],
-                        [ -74.31407740574082,41.88844916389008 ],
-                        [ -74.31408059073271,41.88847331202634 ],
-                        [ -74.31408964249624,41.88855854864015 ],
-                        [ -74.31408628821367,41.888581261834105 ],
-                        [ -74.3140822649064,41.88860672041708 ],
-                        [ -74.31406885381568,41.888654642478976 ],
-                        [ -74.3140416964311,41.8887115499432 ],
-                        [ -74.31396290683858,41.88883385102306 ],
-                        [ -74.31390121606103,41.88892420379143 ],
-                        [ -74.31382007896894,41.88902653689013 ],
-                        [ -74.31431025266642,41.88932355159768 ],
-                    ]
-                ]
-            ]
-        }
-    },
-    {
-      "type": "Feature",
-        "properties": {
-            "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
-            "activityTitle": "Lot 18",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#999",
-                opacity: 1,
-                fillColor: "#B0DE5C",
-                fillOpacity: 0.8
-            }
-        },
-        "geometry": {
-            "type": "MultiPolygon",
-            "coordinates": [
-                [
-                    [
-                        [ -74.3183033913374,41.88801567816825 ],
-                        [ -74.31829852963449,41.887973995312926 ],
-                        [ -74.31825377047056,41.887856435261746 ],
-                        [ -74.31808076800365,41.88791384263166 ],
-                        [ -74.31745346643521,41.88813024302858 ],
-                        [ -74.31699179112906,41.888294227501426 ],
-                        [ -74.31624144315714,41.88855779994577 ],
-                        [ -74.31563861668104,41.88879191925411 ],
-                        [ -74.31700855493546,41.88918827280122 ],
-                        [ -74.3171426654443,41.8891178878993 ],
-                        [ -74.31722715497631,41.889071962864435 ],
-                        [ -74.31727141141891,41.88904700349412 ],
-                        [ -74.31763283908367,41.8888503241505 ],
-                        [ -74.31787356734276,41.8886716149832 ],
-                        [ -74.3180888146162,41.88846195554637 ],
-                        [ -74.31823868335289,41.888296723101796 ],
-                        [ -74.31829618297456,41.88819014581157 ],
-                        [ -74.31830842053273,41.8880840674303 ],
-                        [ -74.3183033913374,41.88801567816825 ],
-                    ]
-                ]
-            ]
-        }
-    },
-    {
-      "type": "Feature",
-        "properties": {
-            "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
             "activityTitle": "Lot 19",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
+            "image": "assets/img/availability/LOT19.png",
+            "lotAvailability": "Aavailable",
+            "lotSize": "6.6 Acres",
+            "cost": "$695,000",
+            "lotURL": "http://bluewillowgetaways.com/",
             "style": {
                 weight: 2,
-                color: "#999",
+                color: "#fff",
                 opacity: 1,
-                fillColor: "#B0DE5C",
+                fillColor: "#bdd194",
                 fillOpacity: 0.8
             }
         },
@@ -927,51 +1387,17 @@ var available = {
       "type": "Feature",
         "properties": {
             "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
-            "activityTitle": "Lot 20",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#999",
-                opacity: 1,
-                fillColor: "#B0DE5C",
-                fillOpacity: 0.8
-            }
-        },
-        "geometry": {
-            "type": "MultiPolygon",
-            "coordinates": [
-                [
-                    [
-                        [ -74.31566007435316,41.8887899225046 ],
-                        [ -74.31499857747383,41.88904475808788 ],
-                        [ -74.31431025266642,41.889323551597656 ],
-                        [ -74.31573987007141,41.89023804871436 ],
-                        [ -74.31700855493546,41.88918827280122 ],
-                        [ -74.31566007435316,41.8887899225046 ],
-                    ]
-                ]
-            ]
-        }
-    },
-    {
-      "type": "Feature",
-        "properties": {
-            "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
             "activityTitle": "Lot 21",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
+            "image": "assets/img/availability/LOT21.png",
+            "lotAvailability": "Aavailable",
+            "lotSize": "4.2 Acres",
+            "cost": "$685,000",
+            "lotURL": "http://bluewillowgetaways.com/",
             "style": {
                 weight: 2,
-                color: "#999",
+                color: "#fff",
                 opacity: 1,
-                fillColor: "#B0DE5C",
+                fillColor: "#bdd194",
                 fillOpacity: 0.8
             }
         },
@@ -1004,17 +1430,17 @@ var available = {
       "type": "Feature",
         "properties": {
             "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
             "activityTitle": "Lot 22",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
+            "image": "assets/img/availability/LOT22.png",
+            "lotAvailability": "Aavailable",
+            "lotSize": "3.3 Acres",
+            "cost": "$665,000",
+            "lotURL": "http://bluewillowgetaways.com/",
             "style": {
                 weight: 2,
-                color: "#999",
+                color: "#fff",
                 opacity: 1,
-                fillColor: "#B0DE5C",
+                fillColor: "#bdd194",
                 fillOpacity: 0.8
             }
         },
@@ -1040,52 +1466,17 @@ var available = {
       "type": "Feature",
         "properties": {
             "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
-            "activityTitle": "Lot 23",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#999",
-                opacity: 1,
-                fillColor: "#B0DE5C",
-                fillOpacity: 0.8
-            }
-        },
-        "geometry": {
-            "type": "MultiPolygon",
-            "coordinates": [
-                [
-                    [
-                        [ -74.31589543819427,41.885292020691466 ],
-                        [ -74.31478500366217,41.88467898206907 ],
-                        [ -74.31392535997935,41.88498750168908 ],
-                        [ -74.31304961442953,41.885313986135415 ],
-                        [ -74.3129788715371,41.88542106754954 ],
-                        [ -74.31516453623766,41.88593899969806 ],
-                        [ -74.31589543819427,41.885292020691466 ],
-                    ]
-                ]
-            ]
-        }
-    },
-    {
-      "type": "Feature",
-        "properties": {
-            "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
             "activityTitle": "Lot 24",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
+            "image": "assets/img/availability/LOT24.png",
+            "lotAvailability": "Aavailable",
+            "lotSize": "2.7 Acres",
+            "cost": "$665,000",
+            "lotURL": "http://bluewillowgetaways.com/",
             "style": {
                 weight: 2,
-                color: "#999",
+                color: "#fff",
                 opacity: 1,
-                fillColor: "#B0DE5C",
+                fillColor: "#bdd194",
                 fillOpacity: 0.8
             }
         },
@@ -1125,116 +1516,6 @@ var available = {
             ]
         }
     },
-    {
-      "type": "Feature",
-        "properties": {
-            "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
-            "activityTitle": "Lot 25",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#999",
-                opacity: 1,
-                fillColor: "#B0DE5C",
-                fillOpacity: 0.8
-            }
-        },
-        "geometry": {
-            "type": "MultiPolygon",
-            "coordinates": [
-                [
-                    [
-                        [ -74.31446850299835,41.88666185120915 ],
-                        [ -74.31264795362944,41.88642622647677 ],
-                        [ -74.31265935301786,41.88673773017474 ],
-                        [ -74.31265935301786,41.88680312579068 ],
-                        [ -74.31268081073517,41.88705085483761 ],
-                        [ -74.31268751621252,41.887259894826606 ],
-                        [ -74.31269422173506,41.88749651487912 ],
-                        [ -74.31271299719816,41.88756839927846 ],
-                        [ -74.3135592341423,41.887672232157 ],
-                        [ -74.31400716304779,41.88730482275211 ],
-                        [ -74.31446850299835,41.88666185120915 ],
-                    ]
-                ]
-            ]
-        }
-    },
-    {
-      "type": "Feature",
-        "properties": {
-            "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
-            "activityTitle": "Lot 26",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#999",
-                opacity: 1,
-                fillColor: "#B0DE5C",
-                fillOpacity: 0.8
-            }
-        },
-        "geometry": {
-            "type": "MultiPolygon",
-            "coordinates": [
-                [
-                    [
-                        [ -74.31446850299835,41.88666185120915 ],
-                        [ -74.31486278772348,41.88626648040147 ],
-                        [ -74.31516453623766,41.88593899969809 ],
-                        [ -74.3129788715371,41.88542106754954 ],
-                        [ -74.31278474628931,41.885735821039475 ],
-                        [ -74.31268684575872,41.885912541243165 ],
-                        [ -74.31265600025648,41.88610773234324 ],
-                        [ -74.31264795362944,41.88642622647682 ],
-                        [ -74.31343585252762,41.88652806439155 ],
-                        [ -74.31446850299835,41.88666185120915 ],
-                    ]
-                ]
-            ]
-        }
-    },
-    {
-      "type": "Feature",
-        "properties": {
-            "MAP_LABEL": "three",
-            "classType": "sleep",
-            "activity": "Sleep",
-            "activityTitle": "N/A",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-            "website": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#999",
-                opacity: 1,
-                fillColor: "#B0DE5C",
-                fillOpacity: 0.8
-            }
-        },
-        "geometry": {
-            "type": "MultiPolygon",
-            "coordinates": [
-                [
-                    [
-                        [ -74.31576199829578,41.88767572652971 ],
-                        [ -74.31446850299835,41.88666185120915 ],
-                        [ -74.31400716304779,41.88730482275211 ],
-                        [ -74.31478098034859,41.88802166848914 ],
-                        [ -74.31576199829578,41.88767572652971 ],
-                    ]
-                ]
-            ]
-        }
-    },
   ]
 };
 
@@ -1246,13 +1527,15 @@ var availability = {
         "activity": "Sleep",
         "activityTitle": "Blue Willow Bed & Breakfast",
         "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-        "activityDescription":"A 1750 stone home impeccably remodeled with all of today’s amenities. An elegant and peaceful oasis, nestled in historic Stone Ridge, located in New York’s beautiful Hudson River Valley.",
-        "website": "http://bluewillowgetaways.com/",
+        "lotAvailability": "Unavailable",
+        "lotSize": "5.5 Acres",
+        "cost": "$500,000",
+        "lotURL": "http://bluewillowgetaways.com/",
         "style": {
             weight: 2,
-            color: "#999",
+            color: "#fff",
             opacity: 1,
-            fillColor: "#B0DE5C",
+            fillColor: "#bdd194",
             fillOpacity: 0.8
         }
     },

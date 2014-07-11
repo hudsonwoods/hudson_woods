@@ -8404,6 +8404,25 @@ html, body, a, span, p {
   font-family: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
+body {
+  height: 100%;
+}
+
+.body-wrapper {
+  min-height: 100%;
+  margin-bottom: -130px;
+}
+
+.body-wrapper:after {
+  content: "";
+  display: block;
+}
+
+#footer, .body-wrapper:after {
+  /* .push must be the same height as footer */
+  height: 130px;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: "adelle", Georgia, Cambria, "Times New Roman", Times, serif;
 }
@@ -8702,6 +8721,7 @@ nav {
   z-index: 1001;
 }
 nav.navbar {
+  border-radius: 0;
   position: fixed;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -8902,15 +8922,17 @@ nav.navbar .navbar-brand {
   margin: 0 !important;
   padding: 0 !important;
   height: 0 !important;
-  top: -186px !important;
+  top: -186px;
   visibility: hidden !important;
+}
+.anchor.availability, .anchor.in-the-area {
+  top: -126px;
 }
 
 #footer {
   background-color: #c9be69;
   text-align: center;
   padding: 20px 0;
-  margin-top: 60px;
   /* Landscape phone to portrait tablet */
 }
 #footer a {
@@ -9009,6 +9031,29 @@ nav.navbar .navbar-brand {
 #map {
   height: 800px;
 }
+#map .availability img {
+  display: block;
+  margin-bottom: 30px;
+}
+#map .availability .col-md-4 {
+  padding-left: 0;
+  padding-bottom: 20px;
+}
+#map .availability .col-md-4 p:first-child {
+  margin-bottom: -10px;
+}
+#map .availability .col-md-4 p:last-child {
+  margin-top: 10px;
+}
+#map .availability .fa {
+  margin-right: 10px;
+  font-weight: 600;
+  font-size: 14px;
+}
+#map .availability a {
+  padding-bottom: 10px;
+  font-weight: 600;
+}
 
 .area-tiles {
   background-color: #cccabf;
@@ -9070,10 +9115,18 @@ nav.navbar .navbar-brand {
 .leaflet-label {
   border: none;
   background-color: transparent;
-  color: white;
+  color: #4d4d4d;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+  font-weight: 500;
 }
 .leaflet-label:before {
   border: none;
+}
+
+.leaflet-popup-pane {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .tile {
@@ -9100,6 +9153,12 @@ nav.navbar .navbar-brand {
 }
 .tile.availability .info:last-of-type {
   margin-right: 0;
+}
+.tile.availability h2 {
+  padding-top: 0;
+}
+.tile.availability .leaflet-popup .col-md-4 {
+  padding-left: 0;
 }
 .tile.availability .info-links {
   display: block;
@@ -9288,7 +9347,6 @@ nav.navbar .navbar-brand {
 #progress {
   background-color: #ebe9e2;
   display: block;
-  margin-bottom: -60px;
 }
 #progress h1 {
   padding: 60px 0;
@@ -9392,6 +9450,13 @@ nav.navbar .navbar-brand {
   font-weight: 300;
   font-size: 10px;
   line-height: 16px;
+}
+
+.info-links.availability .col-md-6 {
+  padding-left: 0;
+}
+.info-links.availability .fa {
+  margin-right: 10px;
 }
 
 #location {

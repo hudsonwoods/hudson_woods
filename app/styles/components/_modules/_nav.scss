@@ -2,6 +2,7 @@ nav {
 	width: 100%;
 	z-index: 1001;
 	&.navbar {
+		border-radius: 0;
 		&.navbar-default {
 			border-color: transparent;
 			color: white;
@@ -189,6 +190,9 @@ nav {
 	margin: 0 !important;
 	padding: 0 !important;
 	height: 0 !important;
-	top: -186px !important;
+	top: -186px;
 	visibility: hidden !important;
+	&.availability,&.in-the-area {
+		top: -126px;
+	}
 }
