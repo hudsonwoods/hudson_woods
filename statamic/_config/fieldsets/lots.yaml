@@ -6,7 +6,7 @@ fields:
     display: Title
   image:
     type: file
-    display: Image
+    display: Availability Page Popover Image
     destination: assets/img/in-the-area
     show_thumbnail: true
   availability:
@@ -21,6 +21,11 @@ fields:
   content:
     type: redactor
     display: Description
+  floorplans:
+    type: file
+    display: Floor Plans
+    destination: assets/img/availability
+    show_thumbnail: true
   image_gallery:
     display: Lot Specific Page Image Gallery
     type: grid

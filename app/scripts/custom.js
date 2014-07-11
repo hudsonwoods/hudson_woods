@@ -401,18 +401,10 @@ setInterval(function() {
     .appendTo('#slideshow');
 },  3500);
 
-// Instafeed
-
-var feed = new Instafeed({
-    get: 'user',
-    clientId: 'f61fb2669e734e2da2587b457f0afe57',
-    accessToken: '501656935.f61fb26.c99de54c939c432bb20f5dd282ef4e33',
-    userId: 501656935,
-    resolution: 'standard_resolution',
-    template: '<div class="instagram-wrapper"><div class="flipcard"><a target=_blank href="{{link}}"><div class="front"><img src="{{image}}" /></div><div class="back"><p>{{caption}}</p></div></a></div></div>',
-    limit: 15
-      });
-feed.run();
+// Gallery Code
+$(window).load( function() {
+    $('.sp-wrap').smoothproducts();
+});
 
 // Magnific Popup
 $('.magnific-popup').magnificPopup({ 
@@ -424,4 +416,15 @@ $('.magnific-popup').magnificPopup({
     tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
   }
   // other options
+});
+
+// Slick Carousel Initializer 
+
+$('.slick-carousel').slick({
+  dots: false,
+  arrows: false,
+  infinite: true,
+  speed: 1500,
+  fade: true,
+  autoplay: true
 });
