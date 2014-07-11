@@ -14,7 +14,7 @@ var map = L.map('map', {
     center: [41.8872809, -74.3138479],
     zoom: 16,
     scrollWheelZoom: false,
-    // zoomControl: false
+    zoomControl: false
 });
 
 // map.dragging.disable();
@@ -74,7 +74,7 @@ function onEachFeature(feature, layer) {
             "<p>"+feature.properties.cost+"</p>" +
         "</div>" + 
         
-        "<a target=_blank href=" + feature.properties.lotURL + ">" + 
+        "<a href=" + feature.properties.lotURL + ">" + 
         "<i class='fa fa-search" + "'" +">" + "</i>" +
         "View Lot Details & Floor Plans" + 
         "</a>" +

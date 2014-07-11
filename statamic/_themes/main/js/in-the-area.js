@@ -1,17 +1,78 @@
 
-var greenIcon = L.icon({
-    iconUrl: 'assets/img/icon.png',
+var sleepIcon = L.icon({
+    iconUrl: 'assets/img/itaSleep-icon.png',
+   	iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
 
+var cultureIcon = L.icon({
+    iconUrl: 'assets/img/itaCulture-icon.png',
+   	iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
 
-    iconSize:     [28, 40], // size of the icon
+var eatIcon = L.icon({
+    iconUrl: 'assets/img/itaEat-icon.png',
+   	iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+var mindIcon = L.icon({
+    iconUrl: 'assets/img/itaMind-icon.png',
+   	iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+var pickIcon = L.icon({
+    iconUrl: 'assets/img/itaPick-icon.png',
+   	iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+var sipIcon = L.icon({
+    iconUrl: 'assets/img/itaSip-icon.png',
+   	iconSize:     [28, 40], // size of the icon
     iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
 
+var skiIcon = L.icon({
+    iconUrl: 'assets/img/itaSki-icon.png',
+   	iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+var swimIcon = L.icon({
+    iconUrl: 'assets/img/itaSwim-icon.png',
+   	iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+var swingIcon = L.icon({
+    iconUrl: 'assets/img/itaSwing-icon.png',
+   	iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+var trailsIcon = L.icon({
+    iconUrl: 'assets/img/itaTrails-icon.png',
+   	iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
 var map = L.map('map', {
-    center: [41.888197384322616, -74.31966662406921],
-    zoom: 11,
+    center: [41.888197384322616, -74.20966662406921],
+    zoom: 10,
     scrollWheelZoom: false
 });
 
@@ -28,7 +89,7 @@ L.tileLayer('http://a.tiles.mapbox.com/v3/sandersonj.i245n6m6/{z}/{x}/{y}.png', 
 var mapLayerGroups = [];
 
 //draw GEOJSON - don't add the GEOJSON layer to the map here
-L.geoJson(itaSleep, {onEachFeature: onEachFeature})//.addTo(map);
+L.geoJson(itaSip, {onEachFeature: onEachFeature})//.addTo(map);
 
 /*
  *for all features create a layerGroup for each feature type and add the feature to the    layerGroup
@@ -66,7 +127,20 @@ function onEachFeature(feature, layer) {
 	layer.bindPopup(popupContent,popupOptions);
 }
 
-L.geoJson([itaSleep, itaEat], {
+// L.geoJson([itaSleep, itaEat, itaSip, itaSwing, itaSwim, itaTrails, itaSki, itaCulture, itaPickAndGrow, itaMindAndBody], {
+
+// 	style: function (feature) {
+// 		return feature.properties && feature.properties.style;
+// 	},
+
+// 	onEachFeature: onEachFeature,
+
+// 	pointToLayer: function (feature, latlng) {
+// 		return L.marker(latlng, {icon: greenIcon});
+// 	}
+// }).addTo(map);
+
+L.geoJson([itaSleep], {
 
 	style: function (feature) {
 		return feature.properties && feature.properties.style;
@@ -75,9 +149,115 @@ L.geoJson([itaSleep, itaEat], {
 	onEachFeature: onEachFeature,
 
 	pointToLayer: function (feature, latlng) {
-		return L.marker(latlng, {icon: greenIcon});
+		return L.marker(latlng, {icon: sleepIcon});
 	}
 }).addTo(map);
+
+L.geoJson([itaEat], {
+
+	style: function (feature) {
+		return feature.properties && feature.properties.style;
+	},
+
+	onEachFeature: onEachFeature,
+
+	pointToLayer: function (feature, latlng) {
+		return L.marker(latlng, {icon: eatIcon});
+	}
+}).addTo(map);
+
+L.geoJson([itaSip], {
+
+	style: function (feature) {
+		return feature.properties && feature.properties.style;
+	},
+
+	onEachFeature: onEachFeature,
+
+	pointToLayer: function (feature, latlng) {
+		return L.marker(latlng, {icon: sipIcon});
+	}
+}).addTo(map);
+
+L.geoJson([itaSwing], {
+
+	style: function (feature) {
+		return feature.properties && feature.properties.style;
+	},
+
+	onEachFeature: onEachFeature,
+
+	pointToLayer: function (feature, latlng) {
+		return L.marker(latlng, {icon: swingIcon});
+	}
+}).addTo(map);
+
+L.geoJson([itaTrails], {
+
+	style: function (feature) {
+		return feature.properties && feature.properties.style;
+	},
+
+	onEachFeature: onEachFeature,
+
+	pointToLayer: function (feature, latlng) {
+		return L.marker(latlng, {icon: trailsIcon});
+	}
+}).addTo(map);
+
+L.geoJson([itaSki], {
+
+	style: function (feature) {
+		return feature.properties && feature.properties.style;
+	},
+
+	onEachFeature: onEachFeature,
+
+	pointToLayer: function (feature, latlng) {
+		return L.marker(latlng, {icon: skiIcon});
+	}
+}).addTo(map);
+
+
+L.geoJson([itaCulture], {
+
+	style: function (feature) {
+		return feature.properties && feature.properties.style;
+	},
+
+	onEachFeature: onEachFeature,
+
+	pointToLayer: function (feature, latlng) {
+		return L.marker(latlng, {icon: cultureIcon});
+	}
+}).addTo(map);
+
+L.geoJson([itaPickAndGrow], {
+
+	style: function (feature) {
+		return feature.properties && feature.properties.style;
+	},
+
+	onEachFeature: onEachFeature,
+
+	pointToLayer: function (feature, latlng) {
+		return L.marker(latlng, {icon: pickIcon});
+	}
+}).addTo(map);
+
+L.geoJson([itaMindAndBody], {
+
+	style: function (feature) {
+		return feature.properties && feature.properties.style;
+	},
+
+	onEachFeature: onEachFeature,
+
+	pointToLayer: function (feature, latlng) {
+		return L.marker(latlng, {icon: mindIcon});
+	}
+}).addTo(map);
+
 
 // L.geoJson([itaEat], {
 
