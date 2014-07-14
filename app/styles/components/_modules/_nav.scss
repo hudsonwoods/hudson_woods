@@ -106,39 +106,81 @@ nav {
 				text-align: center;
 				align-self: center;
 			}
-			li a {
-				padding-left:15px;
-				padding-right: 15px;
+			button {
+				background-color: transparent;
+				border: none;
+				text-transform: uppercase;
+				padding: 15px;
 				text-align: center;
+				@include transition(.2s);
+				&:focus {
+					outline: none;
+				}
+				&#all {
+					color: rgba(white,.6);
+					&:hover,&.active {
+						color: white;
+					}
+				}
 				&#sleep {
-					color: $sleep;
+					color: rgba($sleep,.6);
+					&:hover,&.active {
+						color: $sleep;
+					}
 				}
 				&#eat {
-					color: $eat;
+					color: rgba($eat,.6);
+					&:hover,&.active {
+						color: $eat;
+					}
 				}
 				&#sip {
-					color: $sip;
+					color: rgba($sip,.6);
+					&:hover,&.active {
+						color: $sip;
+					}
 				}
 				&#culture {
-					color: $culture;
+					color: rgba($culture,.6);
+					&:hover,&.active {
+						color: $culture;
+					}
 				}
 				&#swing {
-					color: $swing;
+					color: rgba($swing,.6);
+					&:hover,&.active {
+						color: $swing;
+					}
 				}
 				&#mind-and-body {
-					color: $mind-and-body;
+					color: rgba($mind-and-body,.6);
+					&:hover,&.active {
+						color: $mind-and-body;
+					}
 				}
 				&#swim {
-					color: $swim;
+					color: rgba($swim,.6);
+					&:hover,&.active {
+						color: $swim;
+					}
 				}
 				&#ski {
-					color: $ski;
+					color: rgba($ski,.6);
+					&:hover,&.active {
+						color: $ski;
+					}
 				}
 				&#trails {
-					color: $trails;
+					color: rgba($trails,.6);
+					&:hover,&.active {
+						color: $trails;
+					}
 				}
 				&#pick-and-grow {
-					color: $pick-and-grow;
+					color: rgba($pick-and-grow,.6);
+					&:hover,&.active {
+						color: $pick-and-grow;
+					}
 				}
 			}
 		}

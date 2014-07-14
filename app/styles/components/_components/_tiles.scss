@@ -75,6 +75,10 @@
 	border-radius: 0px;
 }
 
+.leaflet-popup,.leaflet-popup-pane {
+	z-index: 9999;
+}
+
 .leaflet-popup-content {
 	margin: 0;
 	line-height: 1.4;

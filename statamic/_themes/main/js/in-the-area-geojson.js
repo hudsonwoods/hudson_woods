@@ -172,7 +172,9 @@ var itaSleep = {
             },
             "id": 9
         },
+
     ]
+ 
 };
 
 
@@ -676,7 +678,7 @@ var itaSip = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -74.43971699999997,41.29121
+                    -74.439717,41.29121
                 ]
             },
             "type": "Feature",

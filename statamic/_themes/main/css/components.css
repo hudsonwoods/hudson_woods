@@ -8849,39 +8849,82 @@ nav.navbar .navbar-brand {
   -ms-flex-item-align: center;
   align-self: center;
 }
-#secondary-nav ul#in-the-area li a {
-  padding-left: 15px;
-  padding-right: 15px;
+#secondary-nav ul#in-the-area button {
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  padding: 15px;
   text-align: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
-#secondary-nav ul#in-the-area li a#sleep {
+#secondary-nav ul#in-the-area button:focus {
+  outline: none;
+}
+#secondary-nav ul#in-the-area button#all {
+  color: rgba(255, 255, 255, 0.6);
+}
+#secondary-nav ul#in-the-area button#all:hover, #secondary-nav ul#in-the-area button#all.active {
+  color: white;
+}
+#secondary-nav ul#in-the-area button#sleep {
+  color: rgba(102, 187, 225, 0.6);
+}
+#secondary-nav ul#in-the-area button#sleep:hover, #secondary-nav ul#in-the-area button#sleep.active {
   color: #66bbe1;
 }
-#secondary-nav ul#in-the-area li a#eat {
+#secondary-nav ul#in-the-area button#eat {
+  color: rgba(111, 190, 68, 0.6);
+}
+#secondary-nav ul#in-the-area button#eat:hover, #secondary-nav ul#in-the-area button#eat.active {
   color: #6fbe44;
 }
-#secondary-nav ul#in-the-area li a#sip {
+#secondary-nav ul#in-the-area button#sip {
+  color: rgba(244, 141, 153, 0.6);
+}
+#secondary-nav ul#in-the-area button#sip:hover, #secondary-nav ul#in-the-area button#sip.active {
   color: #f48d99;
 }
-#secondary-nav ul#in-the-area li a#culture {
+#secondary-nav ul#in-the-area button#culture {
+  color: rgba(255, 155, 99, 0.6);
+}
+#secondary-nav ul#in-the-area button#culture:hover, #secondary-nav ul#in-the-area button#culture.active {
   color: #ff9b63;
 }
-#secondary-nav ul#in-the-area li a#swing {
+#secondary-nav ul#in-the-area button#swing {
+  color: rgba(198, 209, 209, 0.6);
+}
+#secondary-nav ul#in-the-area button#swing:hover, #secondary-nav ul#in-the-area button#swing.active {
   color: #c6d1d1;
 }
-#secondary-nav ul#in-the-area li a#mind-and-body {
+#secondary-nav ul#in-the-area button#mind-and-body {
+  color: rgba(255, 229, 0, 0.6);
+}
+#secondary-nav ul#in-the-area button#mind-and-body:hover, #secondary-nav ul#in-the-area button#mind-and-body.active {
   color: #ffe500;
 }
-#secondary-nav ul#in-the-area li a#swim {
+#secondary-nav ul#in-the-area button#swim {
+  color: rgba(147, 216, 237, 0.6);
+}
+#secondary-nav ul#in-the-area button#swim:hover, #secondary-nav ul#in-the-area button#swim.active {
   color: #93d8ed;
 }
-#secondary-nav ul#in-the-area li a#ski {
+#secondary-nav ul#in-the-area button#ski {
+  color: rgba(176, 204, 213, 0.6);
+}
+#secondary-nav ul#in-the-area button#ski:hover, #secondary-nav ul#in-the-area button#ski.active {
   color: #b0ccd5;
 }
-#secondary-nav ul#in-the-area li a#trails {
+#secondary-nav ul#in-the-area button#trails {
+  color: rgba(243, 173, 28, 0.6);
+}
+#secondary-nav ul#in-the-area button#trails:hover, #secondary-nav ul#in-the-area button#trails.active {
   color: #f3ad1c;
 }
-#secondary-nav ul#in-the-area li a#pick-and-grow {
+#secondary-nav ul#in-the-area button#pick-and-grow {
+  color: rgba(191, 231, 0, 0.6);
+}
+#secondary-nav ul#in-the-area button#pick-and-grow:hover, #secondary-nav ul#in-the-area button#pick-and-grow.active {
   color: #bfe700;
 }
 #secondary-nav ul#about li:first-of-type {
@@ -9097,6 +9140,10 @@ nav.navbar .navbar-brand {
   padding: 0;
   text-align: left;
   border-radius: 0px;
+}
+
+.leaflet-popup, .leaflet-popup-pane {
+  z-index: 9999;
 }
 
 .leaflet-popup-content {
@@ -9715,6 +9762,14 @@ nav.navbar .navbar-brand {
 
 #header-in-the-area {
   margin-bottom: 0;
+}
+
+.ita-pane {
+  display: none;
+}
+
+.ita-pane.active {
+  display: block;
 }
 
 #header-landing a, #header-upgrades a {
