@@ -62,12 +62,39 @@ nav {
 }
 
 #secondary-nav {
-
+	text-align: left;
+	.container {
+		padding-left: 0;
+	}
 	ul {
 		width: 100%;
-		display: flex;
-		justify-content: space-around;
-		// @include span(full);
+		li {
+			display: inline-block;
+			@include transition(.35s);
+			a {
+				text-transform: uppercase;
+				text-align: center;
+				color: $light-gray;
+				font-size: 14px;
+				line-height: 20px;
+				display: inline-block;
+				padding: 14px 0 10px;
+				height: 100%;
+				width: 100%;
+				&:hover {
+					color: white;
+				}
+			}
+
+			&.active {
+				
+				a {
+					border-bottom: 4px solid white;
+					color: white;
+					padding: 14px 0 6px;
+				}
+			}
+		}
 		&#upgrades-nav {
 			justify-content: center;
 			li a {
@@ -76,21 +103,22 @@ nav {
 			}
 		}
 		&#homes {
-			justify-content: flex-start;
+
 			li:first-of-type {
 				display: none;
 			}
-			li a {
+			li {
 				margin-right: 30px;
 			}
 		}
+		&#availability {
+			text-align: center;
+		}
 		&#about {
-			justify-content: center;
-			align-items: center;
-			align-content: center;
+
 			li {
 				text-align: center;
-				align-self: center;
+
 			}
 			li a {
 				padding-left:15px;
@@ -99,27 +127,33 @@ nav {
 			}
 		}
 		&#in-the-area {
-			justify-content: center;
-			align-items: center;
-			align-content: center;
+
 			li {
 				text-align: center;
-				align-self: center;
+
 			}
 			button {
 				background-color: transparent;
 				border: none;
 				text-transform: uppercase;
-				padding: 15px;
+				padding-top: 14px;
+				padding-bottom: 10px;
+				margin-right: 30px;
 				text-align: center;
 				@include transition(.2s);
 				&:focus {
 					outline: none;
 				}
+				&.active {
+					padding-bottom: 6px;
+				}
 				&#all {
 					color: rgba(white,.6);
 					&:hover,&.active {
 						color: white;
+					}
+					&.active {
+						border-bottom: 4px solid white;
 					}
 				}
 				&#sleep {
@@ -127,11 +161,17 @@ nav {
 					&:hover,&.active {
 						color: $sleep;
 					}
+					&.active {
+						border-bottom: 4px solid $sleep;
+					}
 				}
 				&#eat {
 					color: rgba($eat,.6);
 					&:hover,&.active {
 						color: $eat;
+					}
+					&.active {
+						border-bottom: 4px solid $eat;
 					}
 				}
 				&#sip {
@@ -139,11 +179,17 @@ nav {
 					&:hover,&.active {
 						color: $sip;
 					}
+					&.active {
+						border-bottom: 4px solid $sip;
+					}
 				}
 				&#culture {
 					color: rgba($culture,.6);
 					&:hover,&.active {
 						color: $culture;
+					}
+					&.active {
+						border-bottom: 4px solid $culture;
 					}
 				}
 				&#swing {
@@ -151,11 +197,17 @@ nav {
 					&:hover,&.active {
 						color: $swing;
 					}
+					&.active {
+						border-bottom: 4px solid $swing;
+					}
 				}
 				&#mind-and-body {
 					color: rgba($mind-and-body,.6);
 					&:hover,&.active {
 						color: $mind-and-body;
+					}
+					&.active {
+						border-bottom: 4px solid $mind-and-body;
 					}
 				}
 				&#swim {
@@ -163,11 +215,17 @@ nav {
 					&:hover,&.active {
 						color: $swim;
 					}
+					&.active {
+						border-bottom: 4px solid $swim;
+					}
 				}
 				&#ski {
 					color: rgba($ski,.6);
 					&:hover,&.active {
 						color: $ski;
+					}
+					&.active {
+						border-bottom: 4px solid $ski;
 					}
 				}
 				&#trails {
@@ -175,11 +233,17 @@ nav {
 					&:hover,&.active {
 						color: $trails;
 					}
+					&.active {
+						border-bottom: 4px solid $trails;
+					}
 				}
 				&#pick-and-grow {
 					color: rgba($pick-and-grow,.6);
 					&:hover,&.active {
 						color: $pick-and-grow;
+					}
+					&.active {
+						border-bottom: 4px solid $pick-and-grow;
 					}
 				}
 			}
@@ -190,31 +254,7 @@ nav {
 			}
 		}
 	}
-	li {
-		display: inline-block;
-		@include transition(.35s);
-		a {
-			text-transform: uppercase;
-			color: $light-gray;
-			font-size: 14px;
-			line-height: 20px;
-			display: inline-block;
-			padding: 14px 0 10px;
-			height: 100%;
-			width: 100%;
-			&:hover {
-				color: white;
-			}
-		}
 
-		&.active {
-			border-bottom: 4px solid white;
-			a {
-				color: white;
-				padding: 14px 0 6px;
-			}
-		}
-	}
 	background-color: $dark-gray;
 	&.stuck {
 		top: 82px;

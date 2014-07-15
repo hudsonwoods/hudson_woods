@@ -1,26 +1,27 @@
 {{ theme:partial src="nav_unsticky" }}
 
 <div class="container">
-<div class="upgrade-entry">
-<div class="upgrade-image col-md-6">
+	<div class="upgrade-entry">
+		<div class="upgrade-image col-md-6">
 
-	<div class="sp-wrap">
-		{{ imageGallery }}
-			<a href="{{ image }}"><img src="{{ image }}" alt=""></a>
-		{{ /imageGallery }}
+			<div class="sp-wrap">
+				{{ imageGallery }}
+					<a href="{{ image }}"><img src="{{ image }}" alt=""></a>
+				{{ /imageGallery }}
+			</div>
+		</div>
+
+
+		<div class="col-md-5 col-md-offset-1 specs">
+			<h2>{{ title }}</h2>
+			<h3>Specifications</h3>
+			<ul class="col-md-9">
+			{{ specs }}
+				<li>{{ text }}</li>
+			{{ /specs }}
+
+			</ul>
+			<a class="col-md-12" href="#"><i class="fa fa-chevron-left"></i>Back To Upgrades</a>
+		</div>
 	</div>
-</div>
-
-
-<div class="col-md-5 col-md-offset-1 specs">
-	<h2>{{ title }}</h2>
-	<h3>Specifications</h3>
-	<ul class="col-md-9">
-	{{ specs }}
-		<li>{{ text }}</li>
-	{{ /specs }}
-
-	</ul>
-</div>
-</div>
 </div>
