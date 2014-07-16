@@ -435,4 +435,4 @@ $('#upgrades-nav li a').click(function (e) {
   $(this).tab('show')
 })
 
-$('#upgrades-nav li a[href="#all"]').tab('show')
+// $('#upgrades-nav li a[href="#all"]').tab('show')
