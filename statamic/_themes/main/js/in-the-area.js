@@ -1,70 +1,141 @@
 
-var sleepIcon = L.icon({
-    iconUrl: 'assets/img/itaSleep-icon.png',
+var graySleepIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/gray_sleep.png',
    	iconSize:     [28, 40], // size of the icon
     iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
-var cultureIcon = L.icon({
-    iconUrl: 'assets/img/itaCulture-icon.png',
+var grayCultureIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/gray_culture.png',
    	iconSize:     [28, 40], // size of the icon
     iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
-var eatIcon = L.icon({
-    iconUrl: 'assets/img/itaEat-icon.png',
+var grayEatIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/gray_eat.png',
    	iconSize:     [28, 40], // size of the icon
     iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
-var mindIcon = L.icon({
-    iconUrl: 'assets/img/itaMind-icon.png',
+var grayMindIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/gray_mind-body.png',
    	iconSize:     [28, 40], // size of the icon
     iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
-var pickIcon = L.icon({
-    iconUrl: 'assets/img/itaPick-icon.png',
+var grayPickIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/gray_pick-grow.png',
    	iconSize:     [28, 40], // size of the icon
     iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
-var sipIcon = L.icon({
-    iconUrl: 'assets/img/itaSip-icon.png',
+var graySipIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/gray_sip.png',
    	iconSize:     [28, 40], // size of the icon
     iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
 
-var skiIcon = L.icon({
-    iconUrl: 'assets/img/itaSki-icon.png',
+var graySkiIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/gray_ski.png',
    	iconSize:     [28, 40], // size of the icon
     iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
-var swimIcon = L.icon({
-    iconUrl: 'assets/img/itaSwim-icon.png',
+var graySwimIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/gray_swim.png',
    	iconSize:     [28, 40], // size of the icon
     iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
-var swingIcon = L.icon({
-    iconUrl: 'assets/img/itaSwing-icon.png',
+var graySwingIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/gray_swing.png',
    	iconSize:     [28, 40], // size of the icon
     iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
-var trailsIcon = L.icon({
-    iconUrl: 'assets/img/itaTrails-icon.png',
+var grayTrailsIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/gray_trail.png',
+   	iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+var colorSleepIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/color_sleep.png',
+   	iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+var colorCultureIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/color_culture.png',
+   	iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+var colorEatIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/color_eat.png',
+   	iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+var colorMindIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/color_mind-body.png',
+   	iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+var colorPickIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/color_pick-grow.png',
+   	iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+var colorSipIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/color_sip.png',
+   	iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+
+var colorSkiIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/color_ski.png',
+   	iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+var colorSwimIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/color_swim.png',
+   	iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+var colorSwingIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/color_swing.png',
+   	iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+var colorTrailsIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/color_trail.png',
    	iconSize:     [28, 40], // size of the icon
     iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
@@ -163,13 +234,15 @@ var itaSleep = L.geoJson([itaSleep], {
 	onEachFeature: onEachFeature,
 
 	pointToLayer: function (feature, latlng) {
-		return L.marker(latlng, {pane: 'itaSleep ita', icon: sleepIcon});
+		return L.marker(latlng, {
+			pane: 'itaSleep ita', 
+			icon: graySleepIcon
+		});
 	}
+
 });
 var SleepBounds = itaSleep.getBounds();
 itaSleep.addTo(map);
-
-
 
 
 var itaEat = L.geoJson([itaEat], {
@@ -181,8 +254,12 @@ var itaEat = L.geoJson([itaEat], {
 	onEachFeature: onEachFeature,
 
 	pointToLayer: function (feature, latlng) {
-		return L.marker(latlng, {pane: 'itaEat ita', icon: eatIcon});
+		return L.marker(latlng, 
+			{pane: 'itaEat ita', icon: grayEatIcon }
+		);
+
 	}
+
 });
 var EatBounds = itaEat.getBounds();
 itaEat.addTo(map);
@@ -199,7 +276,7 @@ var itaSip = L.geoJson([itaSip], {
 	onEachFeature: onEachFeature,
 
 	pointToLayer: function (feature, latlng) {
-		return L.marker(latlng, {pane: 'itaSip ita', icon: sipIcon});
+		return L.marker(latlng, {pane: 'itaSip ita', icon: graySipIcon});
 	}
 });
 var SipBounds = itaSip.getBounds();
@@ -217,7 +294,7 @@ var itaSwing = L.geoJson([itaSwing], {
 	onEachFeature: onEachFeature,
 
 	pointToLayer: function (feature, latlng) {
-		return L.marker(latlng, {pane: 'itaSwing ita', icon: swingIcon});
+		return L.marker(latlng, {pane: 'itaSwing ita', icon: graySwingIcon});
 	}
 });
 var SwingBounds = itaSwing.getBounds();
@@ -235,7 +312,7 @@ var itaTrails = L.geoJson([itaTrails], {
 	onEachFeature: onEachFeature,
 
 	pointToLayer: function (feature, latlng) {
-		return L.marker(latlng, {pane: 'itaTrails ita', icon: trailsIcon});
+		return L.marker(latlng, {pane: 'itaTrails ita', icon: grayTrailsIcon});
 	}
 });
 var TrailsBounds = itaTrails.getBounds();
@@ -252,7 +329,7 @@ var itaSwim = L.geoJson([itaSwim], {
 	onEachFeature: onEachFeature,
 
 	pointToLayer: function (feature, latlng) {
-		return L.marker(latlng, {pane: 'itaSwim ita', icon: swimIcon});
+		return L.marker(latlng, {pane: 'itaSwim ita', icon: graySwimIcon});
 	}
 });
 var SwimBounds = itaSwim.getBounds();
@@ -270,7 +347,7 @@ var itaSki = L.geoJson([itaSki], {
 	onEachFeature: onEachFeature,
 
 	pointToLayer: function (feature, latlng) {
-		return L.marker(latlng, {pane: 'itaSki ita', icon: skiIcon});
+		return L.marker(latlng, {pane: 'itaSki ita', icon: graySkiIcon});
 	}
 });
 var SkiBounds = itaSki.getBounds();
@@ -288,7 +365,7 @@ var itaCulture = L.geoJson([itaCulture], {
 	onEachFeature: onEachFeature,
 
 	pointToLayer: function (feature, latlng) {
-		return L.marker(latlng, {pane: 'itaCulture ita', icon: cultureIcon});
+		return L.marker(latlng, {pane: 'itaCulture ita', icon: grayCultureIcon});
 	}
 });
 var CultureBounds = itaCulture.getBounds();
@@ -306,7 +383,7 @@ var itaPickAndGrow = L.geoJson([itaPickAndGrow], {
 	onEachFeature: onEachFeature,
 
 	pointToLayer: function (feature, latlng) {
-		return L.marker(latlng, {pane: 'itaPickAndGrow ita', icon: pickIcon});
+		return L.marker(latlng, {pane: 'itaPickAndGrow ita', icon: grayPickIcon});
 	}
 });
 var PickAndGrowBounds = itaPickAndGrow.getBounds();
@@ -324,7 +401,7 @@ var itaMindAndBody = L.geoJson([itaMindAndBody], {
 	onEachFeature: onEachFeature,
 
 	pointToLayer: function (feature, latlng) {
-		return L.marker(latlng, {pane: 'itaMindAndBody ita', icon: mindIcon});
+		return L.marker(latlng, {pane: 'itaMindAndBody ita', icon: grayMindIcon});
 	},
 });
 var MindAndBodyBounds = itaMindAndBody.getBounds();

@@ -25,16 +25,18 @@
 <section id="story">
 <a href="" class="anchor" id="story-anchor"></a>
     <div class="container">
-        <div class="col-md-6 col-md-offset-3">
-            <p>More than a place, Hudson Woods is an experience that opens doors to discovering the things that matter. Family. Friends. Sport. Craft. Hudson Woods lets you access it all.</p>         
-        </div>
-        <div class="col-md-8 col-md-offset-2 wrapper-center">
-            <h1>“To Create Authentic, Meaningful Experiences At Every Turn”</h1>
-            <a target=_blank href="http://langarchitecture.com">Drew Lang, Lang Architecture</a>            
-        </div>
-        <div class="col-md-6 col-md-offset-3">
-            <p>At Lang Architecture, that’s our mission. It is the driving force behind every decisi we make at hudson woods. Through design, craft and sustainability, Hudson Woods offers just the right elements at just the right time. The site, the homes, the access, the aesthetic. Everything comes together to create a rich, unique experience and incredible value for buyers today.</p>         
-        </div>
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <p>More than a place, Hudson Woods is an experience that opens doors to discovering the things that matter. Family. Friends. Sport. Craft. Hudson Woods lets you access it all.</p>         
+    </div>
+    <div class="col-md-8 col-md-offset-2 wrapper-center">
+        <h1>“To Create Authentic, Meaningful Experiences At Every Turn”</h1>
+        <a target=_blank href="http://langarchitecture.com">Drew Lang, Lang Architecture</a>            
+    </div>
+    <div class="col-md-6 col-md-offset-3">
+        <p>At Lang Architecture, that’s our mission. It is the driving force behind every decisi we make at hudson woods. Through design, craft and sustainability, Hudson Woods offers just the right elements at just the right time. The site, the homes, the access, the aesthetic. Everything comes together to create a rich, unique experience and incredible value for buyers today.</p>         
+    </div>
+</div>
     </div>
 </section>
 
@@ -48,6 +50,7 @@
 
     <div id="partner-list">
     <div class="container">
+<div class="row">
     <div class="partner-wrapper col-md-10 col-md-offset-1">
     {{ partnerItems }}
         <div class="partner-item col-md-4">
@@ -66,6 +69,7 @@
         </div>
     {{ /partnerItems}}
     </div>
+</div>
     </div>
     </div>
 
@@ -75,29 +79,32 @@
 <a href="" class="anchor" id="makers-anchor"></a>
     <div class="maker hero about" style="background-image: url( {{ makerHero }} );">
         <div class="container scrollme">
-            <h1>Makers</h1>
+<div class="row">
+    <h1>Makers</h1>
+</div>
         </div>
     </div>
 
     <div class="container">
 
-        {{ entries:listing folder="about/makers" sort_dir="asc" }}
-
-        <div class="makers-wrapper col-md-4">
-            <div class="makers-tiles">
-                <a class="slide" target=_blank href="{{ link }}">
-                    <img class="slide-away" src="{{ image }}" alt="{{ title }}">
-                    <span class="slide-in">
-                        <h3>{{ title }}</h3>
-                    </span>
-                </a>
-                <div class="slide-caption">
+<div class="row">
+{{ entries:listing folder="about/makers" sort_dir="asc" }}
+    
+    <div class="makers-wrapper col-md-4">
+        <div class="makers-tiles">
+            <a class="slide" target=_blank href="{{ link }}">
+                <img class="slide-away" src="{{ image }}" alt="{{ title }}">
+                <span class="slide-in">
                     <h3>{{ title }}</h3>
-                    <h4 class="slide-description">{{ description }}</h4>
-                </div>
+                </span>
+            </a>
+            <div class="slide-caption">
+                <h3>{{ title }}</h3>
+                <h4 class="slide-description">{{ description }}</h4>
             </div>
         </div>
-        {{ /entries:listing }}
+    </div>
+    {{ /entries:listing }}</div>
     </div>
 
 </section>

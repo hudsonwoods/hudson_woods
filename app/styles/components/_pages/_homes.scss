@@ -38,9 +38,9 @@
 
 #floor-plans  {
 	h2,p {
-		margin-bottom: 30px;
+		margin-bottom: 15px;
 	}
-	h3,h4 {
+	h2,h4 {
 		text-align: center;
 	}
 	a {
@@ -50,14 +50,21 @@
 			color: darken($base-font-color,10%);
 		}
 	}
-	h3 {
-		font-size: 50px;
+	h2 {
+		font-size: 36px;
+		&:first-of-type {
+			border-top: none;
+			margin-top: 0;
+			padding-top: 0;
+		}
 		border-top: 1px solid $base-font-color;
 		padding-top: 20px;
 	}
 	h4 {
+		font-family: $base-font-family;
+		font-weight: 100;
 		font-size: 20px;
-		padding-bottom: 40px;
+		padding-bottom: 10px;
 	}
 }
 

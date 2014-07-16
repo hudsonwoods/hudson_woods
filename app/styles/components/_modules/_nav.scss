@@ -24,11 +24,10 @@ nav {
 			}
 			&.stuck, &.fixed {
 				background-color: $beige;
-				padding-top: 0px;
-
-					a.navbar-brand {
-						background-image: url("../img/hw_logo_dark.svg");
-					}
+				padding-top: 0;
+				a.navbar-brand {
+					background-image: url("../img/hw_logo_dark.svg");
+				}
 
 				ul li a {
 					color: $inactive-gray;
@@ -44,7 +43,7 @@ nav {
 		padding-top: 15px;
 		.navbar-brand {
 			margin-top: 15px;
-			padding-top: 0;
+			margin-left: 0 !important;
 			padding-bottom: 0;
 			background-image: url("../img/hw_logo.svg");
 			background-repeat: no-repeat;
@@ -63,13 +62,11 @@ nav {
 
 #secondary-nav {
 	text-align: left;
-	.container {
-		padding-left: 0;
-	}
 	ul {
 		width: 100%;
 		li {
 			display: inline-block;
+			margin-right: 40px;
 			@include transition(.35s);
 			a {
 				text-transform: uppercase;
@@ -95,38 +92,17 @@ nav {
 				}
 			}
 		}
-		&#upgrades-nav {
-			li {
-				margin-right: 30px;
-			}
-		}
-		&#homes {
 
+		&#homes {
 			li:first-of-type {
 				display: none;
-			}
-			li {
-				margin-right: 30px;
 			}
 		}
 		&#availability {
 			text-align: center;
 		}
-		&#about {
-
-			li {
-				text-align: center;
-
-			}
-			li a {
-				padding-left:15px;
-				padding-right: 15px;
-				text-align: center;
-			}
-		}
 		&#in-the-area {
 			li {
-				margin-right: 30px;
 				text-align: center;
 				@include transition(.2s);
 				color: $light-gray;
