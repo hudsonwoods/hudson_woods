@@ -60,7 +60,7 @@ function onEachFeature(feature, layer) {
     
     "<div class='tile availability" + "'" + ">" + 
         "<h2>" + feature.properties.activityTitle + "</h2>" +
-        "<img src=" + feature.properties.image +  ">" + 
+        // "<img src=" + feature.properties.image +  ">" + 
         "<div class='col-md-4" + "'" + ">" +
             "<p>AVAILABILITY</p>" +
             "<p>"+feature.properties.lotAvailability+"</p>" +

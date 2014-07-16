@@ -428,3 +428,11 @@ $('.slick-carousel').slick({
   fade: true,
   autoplay: true
 });
+
+// Activate Upgrades Bootstrap Tabs
+$('#upgrades-nav li a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+$('#upgrades-nav li a[href="#all"]').tab('show')

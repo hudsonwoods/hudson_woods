@@ -21,21 +21,15 @@ fields:
   content:
     type: redactor
     display: Description
+  image:
+    type: file
+    display: Map Image
+    destination: assets/img/availability
+    show_thumbnail: true
   floorplans:
     type: file
     display: Floor Plans
     destination: assets/img/availability
     show_thumbnail: true
-  image_gallery:
-    display: Lot Specific Page Image Gallery
-    type: grid
-    starting_rows: 1
-    min_rows: 1
-    fields:
-      image:
-        type: file
-        display: Images
-        destination: assets/img/lots
-        show_thumbnail: true
 
 

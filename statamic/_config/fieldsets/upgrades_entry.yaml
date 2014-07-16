@@ -32,7 +32,6 @@ fields:
         display: Images
         destination: assets/img/homes
         show_thumbnail: true
-
   specs:
     display: Specs
     type: grid
@@ -42,3 +41,18 @@ fields:
       text:
         type: text
         display: Specs
+
+  cost:
+    type: text
+    display: Cost
+
+  specDownload:
+    display: Spec Download PDF
+    type: file
+    destination: assets/img/upgrades
+
+  content:
+    display: content
+    type: redactor
+    hide: true
+

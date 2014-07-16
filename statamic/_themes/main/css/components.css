@@ -9079,7 +9079,7 @@ nav.navbar .navbar-brand {
 }
 #map .availability .col-md-4 {
   padding-left: 0;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 #map .availability .col-md-4 p:first-child {
   margin-bottom: -10px;
@@ -9185,7 +9185,6 @@ nav.navbar .navbar-brand {
 .tile h2 {
   font-size: 34px;
   padding-top: 20px;
-  padding-bottom: 20px;
   font-weight: 700;
 }
 .tile img {
@@ -9493,9 +9492,6 @@ nav.navbar .navbar-brand {
   line-height: 16px;
 }
 
-.info-links.availability .col-md-6 {
-  padding-left: 0;
-}
 .info-links.availability .fa {
   margin-right: 10px;
 }
@@ -9671,6 +9667,7 @@ nav.navbar .navbar-brand {
 }
 #finishes h3 {
   font-size: 20px;
+  font-weight: 600;
 }
 #finishes li {
   font-size: 20px;
@@ -9712,6 +9709,7 @@ nav.navbar .navbar-brand {
 #gallery h2 {
   text-align: center;
   margin-bottom: 40px;
+  margin-top: 0;
 }
 
 .sp-thumbs a:link, .sp-thumbs a:visited {
@@ -9877,8 +9875,46 @@ button {
   left: 0;
 }
 
+#upgrades {
+  padding-top: 60px;
+  background-color: #f3f3f3;
+}
 #upgrades .col-sm-4:nth-child(3n+4) {
   clear: both;
+}
+#upgrades a:hover .mask-overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#upgrades .mask {
+  width: 100%;
+  height: 200px;
+}
+#upgrades .mask .mask-overlay {
+  height: 200px;
+  display: block;
+  z-index: 999;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#upgrades .mask .masked-image {
+  display: block;
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  height: 200px;
+}
+#upgrades .upgrade-details {
+  background-color: #fff;
+  padding-bottom: 30px;
 }
 
 .upgrades {
@@ -9893,42 +9929,101 @@ button {
 .upgrades a {
   display: block;
 }
-.upgrades h1, .upgrades h3 {
+.upgrades h1 {
   text-transform: uppercase;
 }
 .upgrades h3 {
   font-size: 32px;
-  margin: 30px auto 20px;
+  padding: 30px 0 10px;
+  margin-top: 0;
 }
 .upgrades p {
   margin-left: 20px;
   margin-right: 20px;
 }
-.upgrades:nth-child(3n+3) {
-  margin-right: -100%;
-  clear: none;
+
+.details-entry {
+  padding-top: 20px;
+}
+.details-entry .col-md-5 {
+  padding-left: 0;
+}
+.details-entry .col-md-5 a:first-of-type {
+  padding-bottom: 20px;
+}
+.details-entry a.download-spec {
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+  background-color: #777777;
+  color: white;
+  padding: 10px 40px !important;
+  border-radius: 5px;
+  margin-bottom: 60px;
+  display: inline-block;
+}
+.details-entry a.download-spec:hover {
+  background-color: #6f6f6f;
 }
 
-.upgrade-entry {
-  padding-top: 160px;
-}
-
-.upgrade-image .sp-wrap {
+.details-image .sp-wrap {
   margin-top: 0;
 }
-.upgrade-image img {
+.details-image img {
   max-width: 100%;
+}
+
+.details {
+  padding-top: 160px;
+}
+.details .col-md-5 {
+  padding-left: 0;
+}
+.details .col-md-5 i {
+  margin-right: 10px;
 }
 
 .specs {
   border-top: 2px solid #4e4f54;
   border-bottom: 2px solid #4e4f54;
   padding: 20px 0;
+  margin-bottom: 60px;
+}
+.specs h2 {
+  font-size: 36px;
 }
 .specs h3 {
   margin: 20px 0 10px;
 }
+.specs h4 {
+  margin: 20px 0;
+  font-weight: 700;
+}
+.specs .col-md-9 {
+  display: block;
+}
+.specs p:first-of-type {
+  font-size: 18px;
+  font-weight: 700;
+}
+.specs.availability h2 {
+  font-size: 34px;
+  font-weight: 700;
+}
+.specs.availability ul {
+  list-style-type: none;
+}
+.specs.availability ul p {
+  margin-top: 20px;
+}
+.specs.availability ul li {
+  margin-left: 0;
+  font-weight: 600;
+}
+.specs.availability ul li span {
+  font-weight: 400;
+}
 .specs ul {
+  display: block;
   list-style-type: disc;
 }
 .specs ul li {
@@ -9946,4 +10041,8 @@ button {
 }
 .specs a i {
   margin-right: 13px;
+}
+
+.upgrade-details {
+  margin-bottom: 30px;
 }
