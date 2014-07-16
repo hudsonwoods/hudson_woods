@@ -2,6 +2,24 @@ title: Journal
 
 fields:
 
+  author:
+    display: Author
+    required: false
+    default: Eduan Lavaque
+    type: users
+
+  categories:
+    display: Categories
+    required: false
+    default:
+    type: tags
+
+  featuredImage:
+    type: file
+    display: Featured Image
+    destination: assets/img/journal
+    show_thumbnail: true
+
   content:
     display: Blog Entry
     type: redactor

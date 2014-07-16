@@ -10082,3 +10082,7 @@ button {
 #contact #map-info a:hover {
   color: #555953;
 }
+
+#entries {
+  padding-top: 160px;
+}

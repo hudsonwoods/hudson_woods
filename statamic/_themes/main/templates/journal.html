@@ -1,0 +1,16 @@
+{{ theme:partial src="nav_unsticky" }}
+
+
+<section id="entries">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+	          {{ entries:listing folder="blog/_entries" sort_dir="asc" }}
+				<a href="{{ url }}">{{ content }}</a>
+
+				<p>{{ author }}</p>
+	          {{ /entries:listing }}
+			</div>
+		</div>
+	</div>
+</section>
