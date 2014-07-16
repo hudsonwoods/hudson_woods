@@ -8805,15 +8805,8 @@ nav.navbar .navbar-brand {
   color: white;
   padding: 14px 0 6px;
 }
-#secondary-nav ul#upgrades-nav {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-#secondary-nav ul#upgrades-nav li a {
-  padding-left: 20px;
-  padding-right: 20px;
+#secondary-nav ul#upgrades-nav li {
+  margin-right: 30px;
 }
 #secondary-nav ul#homes li:first-of-type {
   display: none;
@@ -8833,122 +8826,90 @@ nav.navbar .navbar-brand {
   text-align: center;
 }
 #secondary-nav ul#in-the-area li {
-  text-align: center;
-}
-#secondary-nav ul#in-the-area button {
-  background-color: transparent;
-  border: none;
-  text-transform: uppercase;
-  padding-top: 14px;
-  padding-bottom: 10px;
   margin-right: 30px;
   text-align: center;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  color: #cccccc;
 }
-#secondary-nav ul#in-the-area button:focus {
-  outline: none;
+#secondary-nav ul#in-the-area li a {
+  text-transform: uppercase;
+  text-align: center;
+  color: #cccccc;
+  font-size: 14px;
+  line-height: 20px;
+  display: inline-block;
+  padding: 14px 0 10px;
+  height: 100%;
+  width: 100%;
 }
-#secondary-nav ul#in-the-area button.active {
+#secondary-nav ul#in-the-area li a.active, #secondary-nav ul#in-the-area li a:hover {
   padding-bottom: 6px;
 }
-#secondary-nav ul#in-the-area button#all {
-  color: rgba(255, 255, 255, 0.6);
-}
-#secondary-nav ul#in-the-area button#all:hover, #secondary-nav ul#in-the-area button#all.active {
+#secondary-nav ul#in-the-area li a#all:hover, #secondary-nav ul#in-the-area li a#all.active {
   color: white;
 }
-#secondary-nav ul#in-the-area button#all.active {
+#secondary-nav ul#in-the-area li a#all.active {
   border-bottom: 4px solid white;
 }
-#secondary-nav ul#in-the-area button#sleep {
-  color: rgba(102, 187, 225, 0.6);
-}
-#secondary-nav ul#in-the-area button#sleep:hover, #secondary-nav ul#in-the-area button#sleep.active {
+#secondary-nav ul#in-the-area li a#sleep:hover, #secondary-nav ul#in-the-area li a#sleep.active {
   color: #66bbe1;
 }
-#secondary-nav ul#in-the-area button#sleep.active {
+#secondary-nav ul#in-the-area li a#sleep.active {
   border-bottom: 4px solid #66bbe1;
 }
-#secondary-nav ul#in-the-area button#eat {
-  color: rgba(111, 190, 68, 0.6);
-}
-#secondary-nav ul#in-the-area button#eat:hover, #secondary-nav ul#in-the-area button#eat.active {
+#secondary-nav ul#in-the-area li a#eat:hover, #secondary-nav ul#in-the-area li a#eat.active {
   color: #6fbe44;
 }
-#secondary-nav ul#in-the-area button#eat.active {
+#secondary-nav ul#in-the-area li a#eat.active {
   border-bottom: 4px solid #6fbe44;
 }
-#secondary-nav ul#in-the-area button#sip {
-  color: rgba(244, 141, 153, 0.6);
-}
-#secondary-nav ul#in-the-area button#sip:hover, #secondary-nav ul#in-the-area button#sip.active {
+#secondary-nav ul#in-the-area li a#sip:hover, #secondary-nav ul#in-the-area li a#sip.active {
   color: #f48d99;
 }
-#secondary-nav ul#in-the-area button#sip.active {
+#secondary-nav ul#in-the-area li a#sip.active {
   border-bottom: 4px solid #f48d99;
 }
-#secondary-nav ul#in-the-area button#culture {
-  color: rgba(255, 155, 99, 0.6);
-}
-#secondary-nav ul#in-the-area button#culture:hover, #secondary-nav ul#in-the-area button#culture.active {
+#secondary-nav ul#in-the-area li a#culture:hover, #secondary-nav ul#in-the-area li a#culture.active {
   color: #ff9b63;
 }
-#secondary-nav ul#in-the-area button#culture.active {
+#secondary-nav ul#in-the-area li a#culture.active {
   border-bottom: 4px solid #ff9b63;
 }
-#secondary-nav ul#in-the-area button#swing {
-  color: rgba(198, 209, 209, 0.6);
-}
-#secondary-nav ul#in-the-area button#swing:hover, #secondary-nav ul#in-the-area button#swing.active {
+#secondary-nav ul#in-the-area li a#swing:hover, #secondary-nav ul#in-the-area li a#swing.active {
   color: #c6d1d1;
 }
-#secondary-nav ul#in-the-area button#swing.active {
+#secondary-nav ul#in-the-area li a#swing.active {
   border-bottom: 4px solid #c6d1d1;
 }
-#secondary-nav ul#in-the-area button#mind-and-body {
-  color: rgba(255, 229, 0, 0.6);
-}
-#secondary-nav ul#in-the-area button#mind-and-body:hover, #secondary-nav ul#in-the-area button#mind-and-body.active {
+#secondary-nav ul#in-the-area li a#mind-and-body:hover, #secondary-nav ul#in-the-area li a#mind-and-body.active {
   color: #ffe500;
 }
-#secondary-nav ul#in-the-area button#mind-and-body.active {
+#secondary-nav ul#in-the-area li a#mind-and-body.active {
   border-bottom: 4px solid #ffe500;
 }
-#secondary-nav ul#in-the-area button#swim {
-  color: rgba(147, 216, 237, 0.6);
-}
-#secondary-nav ul#in-the-area button#swim:hover, #secondary-nav ul#in-the-area button#swim.active {
+#secondary-nav ul#in-the-area li a#swim:hover, #secondary-nav ul#in-the-area li a#swim.active {
   color: #93d8ed;
 }
-#secondary-nav ul#in-the-area button#swim.active {
+#secondary-nav ul#in-the-area li a#swim.active {
   border-bottom: 4px solid #93d8ed;
 }
-#secondary-nav ul#in-the-area button#ski {
-  color: rgba(176, 204, 213, 0.6);
-}
-#secondary-nav ul#in-the-area button#ski:hover, #secondary-nav ul#in-the-area button#ski.active {
+#secondary-nav ul#in-the-area li a#ski:hover, #secondary-nav ul#in-the-area li a#ski.active {
   color: #b0ccd5;
 }
-#secondary-nav ul#in-the-area button#ski.active {
+#secondary-nav ul#in-the-area li a#ski.active {
   border-bottom: 4px solid #b0ccd5;
 }
-#secondary-nav ul#in-the-area button#trails {
-  color: rgba(243, 173, 28, 0.6);
-}
-#secondary-nav ul#in-the-area button#trails:hover, #secondary-nav ul#in-the-area button#trails.active {
+#secondary-nav ul#in-the-area li a#trails:hover, #secondary-nav ul#in-the-area li a#trails.active {
   color: #f3ad1c;
 }
-#secondary-nav ul#in-the-area button#trails.active {
+#secondary-nav ul#in-the-area li a#trails.active {
   border-bottom: 4px solid #f3ad1c;
 }
-#secondary-nav ul#in-the-area button#pick-and-grow {
-  color: rgba(191, 231, 0, 0.6);
-}
-#secondary-nav ul#in-the-area button#pick-and-grow:hover, #secondary-nav ul#in-the-area button#pick-and-grow.active {
+#secondary-nav ul#in-the-area li a#pick-and-grow:hover, #secondary-nav ul#in-the-area li a#pick-and-grow.active {
   color: #bfe700;
 }
-#secondary-nav ul#in-the-area button#pick-and-grow.active {
+#secondary-nav ul#in-the-area li a#pick-and-grow.active {
   border-bottom: 4px solid #bfe700;
 }
 #secondary-nav ul#about li:first-of-type {

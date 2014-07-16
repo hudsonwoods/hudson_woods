@@ -96,10 +96,8 @@ nav {
 			}
 		}
 		&#upgrades-nav {
-			justify-content: center;
-			li a {
-				padding-left: 20px;
-				padding-right: 20px;
+			li {
+				margin-right: 30px;
 			}
 		}
 		&#homes {
@@ -127,125 +125,115 @@ nav {
 			}
 		}
 		&#in-the-area {
-
 			li {
-				text-align: center;
-
-			}
-			button {
-				background-color: transparent;
-				border: none;
-				text-transform: uppercase;
-				padding-top: 14px;
-				padding-bottom: 10px;
 				margin-right: 30px;
 				text-align: center;
 				@include transition(.2s);
-				&:focus {
-					outline: none;
+				color: $light-gray;
+				a {
+					text-transform: uppercase;
+					text-align: center;
+					color: $light-gray;
+					font-size: 14px;
+					line-height: 20px;
+					display: inline-block;
+					padding: 14px 0 10px;
+					height: 100%;
+					width: 100%;
+					&.active, &:hover {
+						padding-bottom: 6px;
+					}
+					&#all {
+						&:hover,&.active {
+							color: white;
+						}
+						&.active {
+							border-bottom: 4px solid white;
+						}
+
+					}
+					&#sleep {
+						&:hover,&.active {
+							color: $sleep;
+						}
+						&.active {
+							border-bottom: 4px solid $sleep;
+						}
+					}
+					&#eat {
+						&:hover,&.active {
+							color: $eat;
+						}
+						&.active {
+							border-bottom: 4px solid $eat;
+						}
+					}
+					&#sip {
+						&:hover,&.active {
+							color: $sip;
+						}
+						&.active {
+							border-bottom: 4px solid $sip;
+						}
+					}
+					&#culture {
+						&:hover,&.active {
+							color: $culture;
+						}
+						&.active {
+							border-bottom: 4px solid $culture;
+						}
+					}
+					&#swing {
+						&:hover,&.active {
+							color: $swing;
+						}
+						&.active {
+							border-bottom: 4px solid $swing;
+						}
+					}
+					&#mind-and-body {
+						&:hover,&.active {
+							color: $mind-and-body;
+						}
+						&.active {
+							border-bottom: 4px solid $mind-and-body;
+						}
+					}
+					&#swim {
+						&:hover,&.active {
+							color: $swim;
+						}
+						&.active {
+							border-bottom: 4px solid $swim;
+						}
+					}
+					&#ski {
+						&:hover,&.active {
+							color: $ski;
+						}
+						&.active {
+							border-bottom: 4px solid $ski;
+						}
+					}
+					&#trails {
+						&:hover,&.active {
+							color: $trails;
+						}
+						&.active {
+							border-bottom: 4px solid $trails;
+						}
+					}
+					&#pick-and-grow {
+						&:hover,&.active {
+							color: $pick-and-grow;
+						}
+						&.active {
+							border-bottom: 4px solid $pick-and-grow;
+						}
+					}
 				}
-				&.active {
-					padding-bottom: 6px;
-				}
-				&#all {
-					color: rgba(white,.6);
-					&:hover,&.active {
-						color: white;
-					}
-					&.active {
-						border-bottom: 4px solid white;
-					}
-				}
-				&#sleep {
-					color: rgba($sleep,.6);
-					&:hover,&.active {
-						color: $sleep;
-					}
-					&.active {
-						border-bottom: 4px solid $sleep;
-					}
-				}
-				&#eat {
-					color: rgba($eat,.6);
-					&:hover,&.active {
-						color: $eat;
-					}
-					&.active {
-						border-bottom: 4px solid $eat;
-					}
-				}
-				&#sip {
-					color: rgba($sip,.6);
-					&:hover,&.active {
-						color: $sip;
-					}
-					&.active {
-						border-bottom: 4px solid $sip;
-					}
-				}
-				&#culture {
-					color: rgba($culture,.6);
-					&:hover,&.active {
-						color: $culture;
-					}
-					&.active {
-						border-bottom: 4px solid $culture;
-					}
-				}
-				&#swing {
-					color: rgba($swing,.6);
-					&:hover,&.active {
-						color: $swing;
-					}
-					&.active {
-						border-bottom: 4px solid $swing;
-					}
-				}
-				&#mind-and-body {
-					color: rgba($mind-and-body,.6);
-					&:hover,&.active {
-						color: $mind-and-body;
-					}
-					&.active {
-						border-bottom: 4px solid $mind-and-body;
-					}
-				}
-				&#swim {
-					color: rgba($swim,.6);
-					&:hover,&.active {
-						color: $swim;
-					}
-					&.active {
-						border-bottom: 4px solid $swim;
-					}
-				}
-				&#ski {
-					color: rgba($ski,.6);
-					&:hover,&.active {
-						color: $ski;
-					}
-					&.active {
-						border-bottom: 4px solid $ski;
-					}
-				}
-				&#trails {
-					color: rgba($trails,.6);
-					&:hover,&.active {
-						color: $trails;
-					}
-					&.active {
-						border-bottom: 4px solid $trails;
-					}
-				}
-				&#pick-and-grow {
-					color: rgba($pick-and-grow,.6);
-					&:hover,&.active {
-						color: $pick-and-grow;
-					}
-					&.active {
-						border-bottom: 4px solid $pick-and-grow;
-					}
-				}
+				
 			}
 		}
 		&#about {
