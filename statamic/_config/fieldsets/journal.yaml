@@ -20,6 +20,11 @@ fields:
     destination: assets/img/journal
     show_thumbnail: true
 
+  contentSummary:
+    type: redactor
+    display: Text Only Content Summary For Main Jornal Page 
+
   content:
     display: Blog Entry
     type: redactor
+    image_dir: assets/img/journal

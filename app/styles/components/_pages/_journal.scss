@@ -1,3 +1,121 @@
-#entries {
+#entries, #blog-entry {
 	padding-top: 160px;
+	padding-bottom: 100px;
+}
+
+.title-region {
+	padding: 10px 0;
+	margin: 0 0 40px;
+	&:first-of-type {
+		border-top: 1px solid $light-gray;
+	}
+	border-bottom: 1px solid $light-gray;
+	&.listings {
+		padding: 30px 0 50px;
+	}
+}
+
+.categories {
+	a {
+		font-family: $headline-font;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 14px;
+		font-weight: 100;		
+	}
+	&.small a {
+		text-decoration: none;
+		font-size: 12px;
+	}
+
+}
+
+.tags a {
+	text-transform: uppercase;
+	font-weight: 100;
+
+}
+
+
+.blog-content {
+	&.summary {
+		border-bottom: 1px solid darken($lighter-gray, 20%);
+		padding-bottom: 40px;
+	}
+	a {
+		color: darken($base-font-color, 20%);
+		font-size: 14px;
+		font-weight: 300;
+		text-decoration: underline;
+		@include transition(.25s);
+		&:hover {
+			color: darken($base-font-color, 30%);
+		}
+		i {
+			margin-left: 5px;
+			font-size: 9px;
+			font-weight: 100;
+		}
+		&.title {
+			text-decoration: none;
+		}
+	}
+	p {
+		color: darken($base-font-color, 20%);
+		font-size: 14px;
+		font-weight: 300;
+	}
+	img.featured {
+		margin-top: 6px;
+	}
+}
+
+.blog-title-section {
+	h4 {
+		margin-top: 0;
+		font-family: $base-font-family;
+		font-weight: 100;
+	}
+}
+
+.blog-main {
+	margin-top: 10px;
+}
+
+.tweets {
+	padding: 10px;
+	background-color: $lighter-gray;
+	.follow {
+		margin: 20px 0;
+		background-color: lighten($lighter-gray,2%);
+		border: 1px solid darken($lighter-gray,3%);
+		@include transition(.25s);
+		&:hover {
+			background-color: darken($lighter-gray,5%);
+		}
+		a {
+			display: flex;
+			align-items: center;
+		}
+		span {
+			flex: 1 1 auto;
+			text-align: center;
+			width: 100%;
+		}	
+	}
+	.tweet {
+		border-bottom: 1px solid darken($lighter-gray, 20%);
+		&:last-of-type {
+			border-bottom: none;
+		}
+		p {
+			font-weight: 100;
+			margin-top: 10px;
+		}
+	}
+	small a {
+		font-weight: 100;
+		font-size: 13px;
+		text-decoration: underline;
+	}
 }
