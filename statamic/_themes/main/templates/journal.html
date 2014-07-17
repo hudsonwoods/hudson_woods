@@ -25,24 +25,24 @@
 			<div class="col-md-4 col-md-offset-1">
 				<div class="tweets">
 					{{ bluebird screen_name="HudsonWoodsNY" count="5" }}
-					        {{ user }}
-					            <div class="follow">
-					                <a href="https://twitter.com/{{ screen_name }}">
-					                    <img src="{{ profile_image_url }}" alt="{{ screen_name }} on Twitter">
-					                    <span>Follow Hudson Woods on Twitter</span>
-					                </a>
-					            </div>
-					        {{ /user }}
-					        {{ tweets }}
-					            <div class="tweet">
-					                <p>{{ text }}</p>
-					                <p>
-					                    <small>
-					                        <a href="{{ tweet_url }}">{{ created_at format="g:i A, F jS, Y" }}</a>
-					                    </small>
-					                </p>
-					            </div>
-					        {{ /tweets }}
+				        {{ user }}
+				            <div class="follow">
+				                <a href="https://twitter.com/{{ screen_name }}">
+				                    <img src="{{ profile_image_url }}" alt="{{ screen_name }} on Twitter">
+				                    <span>Follow Hudson Woods on Twitter</span>
+				                </a>
+				            </div>
+				        {{ /user }}
+				        {{ tweets }}
+				            <div class="tweet">
+				                <p>{{ text }}</p>
+				                <p>
+				                    <small>
+				                        <a href="{{ tweet_url }}">{{ created_at format="g:i A, F jS, Y" }}</a>
+				                    </small>
+				                </p>
+				            </div>
+				        {{ /tweets }}
 					{{ /bluebird }}
 				</div>
 			</div>
