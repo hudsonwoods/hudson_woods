@@ -442,3 +442,11 @@ $(document).ready(function(){
   // Target your .container, .wrapper, .post, etc.
   $(".video").fitVids();
 });
+
+// upgrades scroll position hack
+
+$('.upgrades-scroll').click(function () {
+    $('html,body').animate({
+        scrollTop: $("#upgrades-anchor").offset().top
+    }, 800);
+});

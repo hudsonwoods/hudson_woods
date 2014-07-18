@@ -1,0 +1,11 @@
+---
+featuredImage: '{{ _site_root }}assets/img/journal/6-20140717203827.jpg'
+title: 'From the Source: Modernlink'
+author: HudsonWoods
+categories:
+  - design
+  - furniture
+  - profile
+contentSummary: '<p>At Hudson Woods, we feel a certain kinship with Scandinavian design standards and values. The ideals always rely on user experience, craftsmanship, longevity and simple living.</p>'
+---
+<p><img src="/assets/img/journal/6-20140717203437.jpg"></p><p>At Hudson Woods, we feel a certain kinship with Scandinavian design standards and values. The ideals always rely on user experience, craftsmanship, longevity and simple living.</p><p>For these reason we turned to Modernlink, a New York based shop of experts in vintage Danish furniture to find a few pieces for the model home that fit just right.</p><p>Their young, talented designers and artisans pick the best of mid-century furniture, and restore it to its original pristine existence. Each piece that comes from Modernlink combines effortless modernity with contemporaneity. The selections at Modernlink always focus on functionalism with attention to detail, comfort, lifestyle and simplicity.</p><p>We selected three items from the Bensen family of products including the Torii stool, Edward sofa and Frame Lo bed frame as well as several vintage Danish pieces.</p><p>The Torii stools, which will stand at the kitchen island, bring a subtle character to the space with the arched backrest and distinct proportions. The name Torii comes from wood entrances to Japanese shrines which translates into English as “Bird Perch”</p><p>The sofa from Bensen helps bring cozy and comfortable experience to the downstairs den. The name references American mid-century designer Edward Wormley whose work has remained highly influential.</p><p><img src="/assets/img/journal/477808_205484856238980_2060987088_o.jpg"></p><p><br><img src="/assets/img/journal/416517_205496079571191_1160736663_o.jpg"></p><p><br><img src="/assets/img/journal/25.jpg"></p><p><img src="/assets/img/journal/36.jpg"></p><p><img src="/assets/img/journal/28.jpg"></p><p><img src="/assets/img/journal/24.jpg"></p><p><img src="/assets/img/journal/23.jpg"></p><p><img src="/assets/img/journal/26.jpg"></p><p><img src="/assets/img/journal/22.jpg"></p><p><img src="/assets/img/journal/21.jpg"></p><p><img src="/assets/img/journal/29.jpg"></p>

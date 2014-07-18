@@ -1,0 +1,13 @@
+---
+featuredImage: '{{ _site_root }}assets/img/journal/miss-moss-Saana-ja-Olli-013-20140717152026.jpg'
+title: Things We Like
+contentSummary: |
+  <p>We love <a href="http://www.missmoss.co.za/" style="background-color: initial;">Miss Moss</a>'s recent find, <a href="http://www.saanajaolli.com/" style="background-color: initial;">Saana ja Olli</a>. Their textiles are striking and the imagery showcasing them below has just what we love: relaxation in nature. These patterns were made by a couple who own their own textile design company based out of Turku, Finland. Their products are sourced locally and <a href="http://www.saanajaolli.com/production/" style="background-color: initial;">manufactured</a>. You can find their lovely products <a href="http://store.saanajaolli.com/" style="background-color: initial;">here</a>.</p>
+author: HudsonWoods
+categories:
+  - design
+  - materials
+  - natural
+  - textiles
+---
+<p><a href="http://www.missmoss.co.za/2014/01/08/saana-ja-olli/" style="background-color: initial;">Read Miss Moss's full Saana ja Olli post here.</a></p><p>We love <a href="http://www.missmoss.co.za/">Miss Moss</a>'s recent find, <a href="http://www.saanajaolli.com/">Saana ja Olli</a>. Their textiles are striking and the imagery showcasing them below has just what we love: relaxation in nature. These patterns were made by a couple who own their own textile design company based out of Turku, Finland. Their products are sourced locally and <a href="http://www.saanajaolli.com/production/">manufactured</a>. You can find their lovely products <a href="http://store.saanajaolli.com/">here</a>.</p><p><img src="/assets/img/journal/miss-moss-Saana-ja-Olli-013.jpg"></p><p><img src="/assets/img/journal/miss-moss-Saana-ja-Olli-006.jpg"></p><p><img src="/assets/img/journal/miss-moss-Saana-ja-Olli-007.jpg"></p><p><img src="/assets/img/journal/miss-moss-Saana-ja-Olli-012.jpg"></p><p><img src="/assets/img/journal/miss-moss-Saana-ja-Olli-008.jpg"></p><p><img src="/assets/img/journal/miss-moss-Saana-ja-Olli-011-20140717151738.jpg" style="background-color: initial;"></p><p><img src="/assets/img/journal/miss-moss-Saana-ja-Olli-010-1.jpg"></p><p><img src="/assets/img/journal/miss-moss-Saana-ja-Olli-009.jpg"></p><p><img src="/assets/img/journal/miss-moss-Saana-ja-Olli-005-2.jpg"></p><p><img src="/assets/img/journal/miss-moss-Saana-ja-Olli-005-1.jpg"></p><p><img src="/assets/img/journal/miss-moss-Saana-ja-Olli-004.jpg"></p><p><img src="/assets/img/journal/miss-moss-Saana-ja-Olli-003.jpg"></p><p><img src="/assets/img/journal/miss-moss-Saana-ja-Olli-002.jpg"></p><p><img src="/assets/img/journal/miss-moss-Saana-ja-Olli-001.jpg"></p>

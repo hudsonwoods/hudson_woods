@@ -11,7 +11,7 @@ fields:
       image:
         type: file
         display: Images
-        destination: assets/img/upgrades
+        destination: assets/img/homes
         show_thumbnail: true
         width: 25%
       headline:
@@ -21,9 +21,11 @@ fields:
         type: textarea
         display: Sub Headline
 
-  content:
-    display: Blog Entry
-    type: redactor
+  locationMap:
+    type: file
+    display: Location Map
+    destination: assets/img/homes
+    show_thumbnail: true
 
   handCraftedFinishes:
     display: Hand Crafted Finishes
@@ -69,8 +71,13 @@ fields:
       image:
         type: file
         display: Images
-        destination: assets/img/upgrades
+        destination: assets/img/homes
         show_thumbnail: true
+
+  content:
+    display: Blog Entry
+    type: redactor
+    hide: true
 
 
 

@@ -1,28 +1,15 @@
 
 #location {
-	background-image: url("../img/Location-Map.jpg");
 	border-bottom: 1px solid lighten($beige,10%);
 	margin-bottom: 0;
 	text-align: left;
-	// .wrapper {
-	// 	@include span (first 3);
-	// }
 	h2,p,a {
 		margin-bottom: 30px;
 	}
 	h2 {
 		margin-top: 50px;
 	}
-	a {
-		@include transition(.15s);
-		background-color: $inactive-gray;
-		color: white;
-		padding: 10px 40px;
-		border-radius: 5px;
-		&:hover {
-			background-color: darken($inactive-gray, 3%);
-		}
-	}
+
 }
 
 
@@ -37,6 +24,9 @@
 
 
 #floor-plans  {
+	.col-md-3 h2 {
+		text-align: left;
+	}
 	h2,p {
 		margin-bottom: 15px;
 	}
@@ -100,7 +90,10 @@
 		margin-top: 100%;
 	}
 	.circle-wrapper {
-		margin: 0 0 35px;
+		margin: 35px 0 15px;
+		&:first-of-type {
+			margin-top: 20px;
+		}
 	}
 	.circle-absolute-wrapper {
 		display: block;
@@ -124,6 +117,9 @@
 	h4 {
 		clear: left;
 		clear: right;
+		font-family: $base-font-family;
+		font-size: 16px;
+		font-weight: 600;
 	}
 	.black-cedar {
 		background-image: url("../img/black-cedar.jpg");

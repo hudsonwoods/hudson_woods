@@ -76,7 +76,7 @@ function onEachFeature(feature, layer) {
         
         "<a href=" + feature.properties.lotURL + ">" + 
         "<i class='fa fa-search" + "'" +">" + "</i>" +
-        "View Lot Details & Floor Plans" + 
+        "View Details & Floor Plans" + 
         "</a>" +
     
     "</div>";

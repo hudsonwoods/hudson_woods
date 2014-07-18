@@ -9014,6 +9014,26 @@ nav.navbar .navbar-brand {
   }
 }
 
+/**
+*
+* Button
+*
+**/
+.button {
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+  background-color: #777777;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 5px;
+}
+.button i {
+  margin-right: 10px;
+}
+.button:hover {
+  background-color: #6f6f6f;
+}
+
 #map {
   height: 800px;
 }
@@ -9129,7 +9149,7 @@ nav.navbar .navbar-brand {
 .tile h2 {
   font-size: 34px;
   padding-top: 20px;
-  font-weight: 700;
+  font-weight: 300;
 }
 .tile img {
   margin-bottom: 10px;
@@ -9442,7 +9462,6 @@ nav.navbar .navbar-brand {
 }
 
 #location {
-  background-image: url("../img/Location-Map.jpg");
   border-bottom: 1px solid #d5d3ce;
   margin-bottom: 0;
   text-align: left;
@@ -9453,22 +9472,14 @@ nav.navbar .navbar-brand {
 #location h2 {
   margin-top: 50px;
 }
-#location a {
-  -webkit-transition: 0.15s;
-  transition: 0.15s;
-  background-color: #777777;
-  color: white;
-  padding: 10px 40px;
-  border-radius: 5px;
-}
-#location a:hover {
-  background-color: #6f6f6f;
-}
 
 .homes-content {
   padding: 100px 0;
 }
 
+#floor-plans .col-md-3 h2 {
+  text-align: left;
+}
 #floor-plans h2, #floor-plans p {
   margin-bottom: 15px;
 }
@@ -9530,7 +9541,10 @@ nav.navbar .navbar-brand {
   margin-top: 100%;
 }
 #materials .circle-wrapper {
-  margin: 0 0 35px;
+  margin: 35px 0 15px;
+}
+#materials .circle-wrapper:first-of-type {
+  margin-top: 20px;
 }
 #materials .circle-absolute-wrapper {
   display: block;
@@ -9562,6 +9576,9 @@ nav.navbar .navbar-brand {
 #materials h4 {
   clear: left;
   clear: right;
+  font-family: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
 }
 #materials .black-cedar {
   background-image: url("../img/black-cedar.jpg");
@@ -9797,7 +9814,7 @@ button {
 #landing-tiles p.landingParagraph {
   font-size: 18px;
   margin-top: 20px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 #landing-tiles .landing-tile img {
   max-width: 100%;
@@ -9807,7 +9824,7 @@ button {
   margin-top: 20px;
 }
 #landing-tiles .landing-tile p {
-  height: 100px;
+  height: 80px;
   margin-top: 20px;
 }
 #landing-tiles .landing-tile a {
@@ -9895,26 +9912,7 @@ button {
 }
 
 .details-entry {
-  padding-top: 20px;
-}
-.details-entry .col-md-5 {
-  padding-left: 0;
-}
-.details-entry .col-md-5 a:first-of-type {
-  padding-bottom: 20px;
-}
-.details-entry a.download-spec {
-  -webkit-transition: 0.15s;
-  transition: 0.15s;
-  background-color: #777777;
-  color: white;
-  padding: 10px 40px !important;
-  border-radius: 5px;
-  margin-bottom: 60px;
-  display: inline-block;
-}
-.details-entry a.download-spec:hover {
-  background-color: #6f6f6f;
+  padding-top: 10px;
 }
 
 .details-image .sp-wrap {
@@ -9932,16 +9930,21 @@ button {
 }
 .details .col-md-5 i {
   margin-right: 10px;
+  font-size: 14px;
 }
 
 .specs {
   border-top: 2px solid #4e4f54;
   border-bottom: 2px solid #4e4f54;
   padding: 20px 0;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+}
+.specs h3, .specs h3, .specs h4, .specs p, .specs span {
+  color: #777777;
 }
 .specs h2 {
   font-size: 36px;
+  margin-top: 10px;
 }
 .specs h3 {
   margin: 20px 0 10px;
@@ -9950,16 +9953,20 @@ button {
   margin: 20px 0;
   font-weight: 700;
 }
+.specs span {
+  font-style: italic;
+}
 .specs .col-md-9 {
   display: block;
 }
 .specs p:first-of-type {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 300;
+  margin-bottom: 20px;
 }
 .specs.availability h2 {
-  font-size: 34px;
-  font-weight: 700;
+  font-size: 36px;
+  font-weight: 300;
 }
 .specs.availability ul {
   list-style-type: none;
@@ -9969,10 +9976,6 @@ button {
 }
 .specs.availability ul li {
   margin-left: 0;
-  font-weight: 600;
-}
-.specs.availability ul li span {
-  font-weight: 400;
 }
 .specs ul {
   display: block;

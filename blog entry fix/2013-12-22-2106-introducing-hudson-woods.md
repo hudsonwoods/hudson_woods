@@ -1,0 +1,9 @@
+---
+featuredImage: '{{ _site_root }}assets/img/journal/blog-post-Introducing-20140716210756.jpg'
+title: Introducing Hudson Woods
+author: drewlang
+categories:
+  - informational
+contentSummary: '<p>Lang Architecture is proud to introduce Hudson Woods, a unique collection of new dwellings in the heart of the Hudson Valley.</p>'
+---
+<p><img src="/assets/img/journal/blog-post-Introducing.jpg"></p><p>Lang Architecture is proud to introduce Hudson Woods, a unique collection of new dwellings in the heart of the Hudson Valley.</p><p>As architects, we often lament the uninspired design and clear cutting of lots that is the norm in residential development. We believe there is a better way, one that celebrates natural beauty and history of a place. With a love of the outdoors and a vision of a sustainable wilderness getaway, we set out on a multi-year search for the perfect place. When we stumbled upon a piece of land tucked into the foothills of the Catskill Mountains, we immediately knew we had found Hudson Woods.</p><p>Set amidst forests and meadows with sweeping mountain views, Hudson Woods is a 131 acre property featuring 26 modern eco-friendly homes by Lang Architecture with meticulously and locally sourced materials that blend seamlessly with the natural surroundings. Just two hours from New York City, Hudson Woods takes you straight to the source – the place for nature and design, for family and friendships, for exploring what matters most to you.</p><p>To create authentic, meaningful experiences at every turn. At Lang Architecture, that’s our mission. It is the driving force behind every decision we make at Hudson Woods. Through design, craft and sustainability, Hudson Woods offers just the right elements at just the right time. The site, the homes, the access, the aesthetic. Everything comes together to create a rich, unique experience and incredible value for buyers today.</p>

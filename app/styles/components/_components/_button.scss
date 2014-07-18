@@ -5,52 +5,15 @@
 **/
 
 .button {
-  display: inline-block;
-  padding: (($lineHeight / 2) - 1) 32px;
-  margin-bottom: $lineHeight / 2;
-  margin-top: $lineHeight / 2;
-  min-height: $lineHeight;
-
-  text-align: center;
-
-  font-family: $fontHighlight;
-  font-weight: 600;
-  text-decoration: none;
-
-  outline: 0;
-
-  @include prefixr(transition, none);
-
-  &:hover {
-    background: #4d4d4d;
-    color: #ffffff;
-    border: 1px solid #4d4d4d;
-    text-decoration: none;
+    @include transition(.15s);
+    background-color: $inactive-gray;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 5px;
+    i {
+      margin-right: 10px;
+    }
+    &:hover {
+      background-color: darken($inactive-gray, 3%);
+    }
   }
-}
-
-// Mixin to create buttons
-@mixin style-button($color, $textColor, $isInverted: false) {
-
-  background: $color;
-  color: $textColor;
-  border: 1px solid darken($color, 10%);
-
-  @if $isInverted { border-color: transparent;}
-}
-
-
-.button--primary {
-  @extend .button;
-  @include style-button(#4285f4, #ffffff);
-}
-
-.button--secondary {
-  @extend .button;
-  @include style-button(#ffffff, $colorBlue);
-}
-
-.button--secondary-variation {
-  @extend .button;
-  @include style-button(#ffffff, $colorBlue, true);
-}
