@@ -41,7 +41,7 @@
 </section>
 
 <section id="partners">
-<a href="" class="anchor" id="partners-anchor"></a>
+<a href="" class="anchor hero-anchor" id="partners-anchor"></a>
     <div class="partner hero about" style="background-image: url( {{ partnerHero }} );">
         <div class="container scrollme">
             <h1>Team</h1>
@@ -76,7 +76,7 @@
 </section>
 
 <section id="makers">
-<a href="" class="anchor" id="makers-anchor"></a>
+<a href="" class="anchor hero-anchor" id="makers-anchor"></a>
     <div class="maker hero about" style="background-image: url( {{ makerHero }} );">
         <div class="container scrollme">
 <div class="row">
@@ -95,13 +95,19 @@
             <a class="slide" target=_blank href="{{ link }}">
                 <img class="slide-away" src="{{ image }}" alt="{{ title }}">
                 <span class="slide-in">
-                    <h3>{{ title }}</h3>
+                    <img src="{{ logo }}" alt="">
                 </span>
             </a>
-            <div class="slide-caption">
-                <h3>{{ title }}</h3>
+<!--             <div class="slide-caption">
+                
                 <h4 class="slide-description">{{ description }}</h4>
+            </div> -->
+
+            <div class="slide-caption">
+                <h3><a href="{{ link }}">{{ makerTitle }}</a></h3>
+                <p class="slide-description">{{ makerTagline }}</p>
             </div>
+
         </div>
     </div>
     {{ /entries:listing }}</div>
@@ -110,7 +116,7 @@
 </section>
 
 <section id="progress">
-<a href="" class="anchor" id="progress-anchor"></a>
+<a href="" class="anchor hero-anchor" id="progress-anchor"></a>
 <h1>Progress</h1>
 <div id="instafeed">
 </div>

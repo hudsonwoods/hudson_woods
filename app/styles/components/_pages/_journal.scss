@@ -40,6 +40,12 @@
 	font-weight: 100;
 }
 
+.featured-post {
+	height: 400px;
+	background-color: $dark-gray;
+	margin-bottom: 30px;
+}
+
 .blog-content {
 	&.summary {
 		border-bottom: 1px solid darken($lighter-gray, 20%);

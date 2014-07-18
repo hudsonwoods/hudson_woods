@@ -236,9 +236,12 @@ nav {
 	margin: 0 !important;
 	padding: 0 !important;
 	height: 0 !important;
-	top: -186px;
+	top: -184px;
+	&.hero-anchor {
+		top: -124px;
+	}
 	visibility: hidden !important;
 	&.availability,&.in-the-area {
-		top: -126px;
+		top: -124px;
 	}
 }

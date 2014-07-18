@@ -1,15 +1,12 @@
 
 
 	{{ entries:listing folder="blog" sort_dir="desc" paginate="true" limit="5" }}
-		{{ if no_results }}
-			<p class="sorry">
-				No journal posts have been posted yet.<br>
-				Check back soon.
-			</p>
-		{{ else }}
+
 			{{ theme:partial src="journal-entry" use_context="true" }}
-		{{ endif }}
+
 	{{ /entries:listing }}
+
+
 		
 	
 
