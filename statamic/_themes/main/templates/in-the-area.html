@@ -37,7 +37,7 @@
 
 <div class="col-md-6">
     <div class="tile area {{ activity|lower|slugify }}">
-        <h4>{{ activity }}</h4>
+        <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
         <h2>{{ title }}</h2>
         <img src="{{ image }}" alt="">
         {{ content }}

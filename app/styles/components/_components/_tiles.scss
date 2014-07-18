@@ -34,6 +34,57 @@
 }
 
 .tile.area {
+	h4 img {
+		min-width: 0;
+		margin-right: 10px;
+	}
+	h4 {
+		text-transform: uppercase;
+		.sleep:before {
+			content: url("../../../assets/img/in-the-area/icons/card-icon-sleep.png");
+			margin-right: 10px;
+		}
+		.eat:before {
+			content: url("../../../assets/img/in-the-area/icons/card-icon-eat.png");
+			margin-right: 10px;
+		}
+		.sip:before {
+			content: url("../../../assets/img/in-the-area/icons/card-icon-sip.png");
+			margin-right: 10px;
+		}
+		.culture:before {
+			content: url("../../../assets/img/in-the-area/icons/card-icon-culture.png");
+			margin-right: 10px;
+		}
+		.swing:before {
+			content: url("../../../assets/img/in-the-area/icons/card-icon-swing.png");
+			margin-right: 10px;
+		}
+		.mind-and-body:before {
+			content: url("../../../assets/img/in-the-area/icons/card-icon-mind-body.png");
+			margin-right: 10px;
+		}
+		.swim:before {
+			content: url("../../../assets/img/in-the-area/icons/card-icon-swim.png");
+			margin-right: 10px;
+		}
+		.swim:before {
+			content: url("../../../assets/img/in-the-area/icons/card-icon-swim.png");
+			margin-right: 10px;
+		}
+		.trails:before {
+			content: url("../../../assets/img/in-the-area/icons/card-icon-trail.png");
+			margin-right: 10px;
+		}
+		.ski:before {
+			content: url("../../../assets/img/in-the-area/icons/card-icon-ski.png");
+			margin-right: 10px;
+		}
+		.pick-and-grow:before {
+			content: url("../../../assets/img/in-the-area/icons/card-icon-pick-grow.png");
+			margin-right: 10px;
+		}
+	}
 	img {
 		min-width: 100%;
 	}

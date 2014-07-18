@@ -184,7 +184,7 @@ function onEachFeature(feature, layer) {
 	var popupContent = 
 
 	"<div class='tile area " + feature.properties.classType + "'" + ">" + 
-	"<h4>" + feature.properties.activity + "</h4>" +
+	"<h4>" + "<img src=" + feature.properties.classIcon +  ">" + feature.properties.activity + "</h4>" +
 	"<h2>" + feature.properties.activityTitle + "</h2>" +
 	"<img src=" + feature.properties.image +  ">" + 
 	"<p>" + feature.properties.activityDescription + "</p>" +

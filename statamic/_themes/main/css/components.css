@@ -9026,6 +9026,7 @@ nav.navbar .navbar-brand {
   color: white;
   padding: 10px 40px;
   border-radius: 5px;
+  display: inline-block;
 }
 .button i {
   margin-right: 10px;
@@ -9065,6 +9066,57 @@ nav.navbar .navbar-brand {
   background-color: #cccabf;
 }
 
+.tile.area h4 img {
+  min-width: 0;
+  margin-right: 10px;
+}
+.tile.area h4 {
+  text-transform: uppercase;
+}
+.tile.area h4 .sleep:before {
+  content: url("../../../assets/img/in-the-area/icons/card-icon-sleep.png");
+  margin-right: 10px;
+}
+.tile.area h4 .eat:before {
+  content: url("../../../assets/img/in-the-area/icons/card-icon-eat.png");
+  margin-right: 10px;
+}
+.tile.area h4 .sip:before {
+  content: url("../../../assets/img/in-the-area/icons/card-icon-sip.png");
+  margin-right: 10px;
+}
+.tile.area h4 .culture:before {
+  content: url("../../../assets/img/in-the-area/icons/card-icon-culture.png");
+  margin-right: 10px;
+}
+.tile.area h4 .swing:before {
+  content: url("../../../assets/img/in-the-area/icons/card-icon-swing.png");
+  margin-right: 10px;
+}
+.tile.area h4 .mind-and-body:before {
+  content: url("../../../assets/img/in-the-area/icons/card-icon-mind-body.png");
+  margin-right: 10px;
+}
+.tile.area h4 .swim:before {
+  content: url("../../../assets/img/in-the-area/icons/card-icon-swim.png");
+  margin-right: 10px;
+}
+.tile.area h4 .swim:before {
+  content: url("../../../assets/img/in-the-area/icons/card-icon-swim.png");
+  margin-right: 10px;
+}
+.tile.area h4 .trails:before {
+  content: url("../../../assets/img/in-the-area/icons/card-icon-trail.png");
+  margin-right: 10px;
+}
+.tile.area h4 .ski:before {
+  content: url("../../../assets/img/in-the-area/icons/card-icon-ski.png");
+  margin-right: 10px;
+}
+.tile.area h4 .pick-and-grow:before {
+  content: url("../../../assets/img/in-the-area/icons/card-icon-pick-grow.png");
+  margin-right: 10px;
+}
 .tile.area img {
   min-width: 100%;
 }
@@ -9905,7 +9957,7 @@ button {
   text-transform: uppercase;
 }
 .upgrades h3 {
-  font-size: 32px;
+  font-size: 26px;
   padding: 30px 0 10px;
   margin-top: 0;
 }
@@ -9953,8 +10005,8 @@ button {
   margin: 20px 0 10px;
 }
 .specs h4 {
-  margin: 20px 0;
-  font-weight: 700;
+  margin: 30px 0;
+  font-weight: 500;
 }
 .specs span {
   font-style: italic;
@@ -9989,9 +10041,14 @@ button {
   font-weight: 500;
   margin-bottom: 10px;
   line-height: 24px;
-  letter-spacing: 1px;
   margin-left: 18px;
   display: list-item;
+}
+.specs.upgrade-details p {
+  height: auto;
+  font-family: "adelle", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: 500;
+  margin-top: 10px;
 }
 .specs a {
   display: block;
@@ -10001,8 +10058,11 @@ button {
   margin-right: 13px;
 }
 
-.upgrade-details {
-  margin-bottom: 30px;
+.upgrade-details h3 {
+  height: 100px;
+}
+.upgrade-details p {
+  height: 80px;
 }
 
 #header-contact {

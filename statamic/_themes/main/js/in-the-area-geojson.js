@@ -11,6 +11,7 @@ var itaSleep = {
             },
             "type": "Feature",
             "properties": {
+                "classIcon": "assets/img/in-the-area/icons/card-icon-sleep.png",
                 "classType": "sleep",
                 "activity": "sleep",
                 "activityTitle": "Mohonk Mountain House",
@@ -31,6 +32,7 @@ var itaSleep = {
             "type": "Feature",
             "properties": {
                 "classType": "sleep",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-sleep.png",
                 "activity": "sleep",
                 "activityTitle": "Inn at Stone Ridge",
                 "image": "assets/img/in-the-area/inthearea_sleep_stone-ridge.jpg",
@@ -50,6 +52,7 @@ var itaSleep = {
             "type": "Feature",
             "properties": {
                 "classType": "sleep",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-sleep.png",
                 "activity": "sleep",
                 "activityTitle": "Blue Willow Bed & Breakfast",
                 "image": "assets/img/in-the-area/inthearea_sleep_willow.jpg",
@@ -69,6 +72,7 @@ var itaSleep = {
             "type": "Feature",
             "properties": {
                 "classType": "sleep",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-sleep.png",
                 "activity": "sleep",
                 "activityTitle": "ElmRock Inn Bed & Breakfast",
                 "image": "assets/img/in-the-area/inthearea_sleep_elmrock.jpg",
@@ -88,6 +92,7 @@ var itaSleep = {
             "type": "Feature",
             "properties": {
                 "classType": "sleep",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-sleep.png",
                 "activity": "sleep",
                 "activityTitle": "The Graham & Co",
                 "image": "assets/img/in-the-area/inthearea_sleep_placeholder.jpg",
@@ -107,6 +112,7 @@ var itaSleep = {
             "type": "Feature",
             "properties": {
                 "classType": "sleep",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-sleep.png",
                 "activity": "sleep",
                 "activityTitle": "The 1850 House Inn & Tavern",
                 "image": "assets/img/in-the-area/inthearea_sleep_placeholder.jpg",
@@ -126,6 +132,7 @@ var itaSleep = {
             "type": "Feature",
             "properties": {
                 "classType": "sleep",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-sleep.png",
                 "activity": "sleep",
                 "activityTitle": "Captain Schoonmaker Bed & Breakfast",
                 "image": "assets/img/in-the-area/inthearea_sleep_placeholder.jpg",
@@ -145,6 +152,7 @@ var itaSleep = {
             "type": "Feature",
             "properties": {
                 "classType": "sleep",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-sleep.png",
                 "activity": "sleep",
                 "activityTitle": "Beekman Arms-Delamater Inn Inc",
                 "image": "assets/img/in-the-area/inthearea_sleep_placeholder.jpg",
@@ -164,6 +172,7 @@ var itaSleep = {
             "type": "Feature",
             "properties": {
                 "classType": "sleep",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-sleep.png",
                 "activity": "sleep",
                 "activityTitle": "Minnewaska Lodge",
                 "image": "assets/img/in-the-area/inthearea_sleep_placeholder.jpg",
@@ -193,6 +202,7 @@ var itaEat = {
             "type": "Feature",
             "properties": {
                 "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
                 "activity": "eat",
                 "activityTitle": "Country Inn",
                 "image": "assets/img/in-the-area/inthearea_eat_country.jpg",
@@ -212,6 +222,7 @@ var itaEat = {
             "type": "Feature",
             "properties": {
                 "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
                 "activity": "eat",
                 "activityTitle": "Depuy Canal House",
                 "image": "assets/img/in-the-area/inthearea_eat_depuy.jpg",
@@ -231,6 +242,7 @@ var itaEat = {
             "type": "Feature",
             "properties": {
                 "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
                 "activity": "eat",
                 "activityTitle": "Asia Restaurant",
                 "image": "assets/img/in-the-area/inthearea_eat_asia.jpg",
@@ -250,6 +262,7 @@ var itaEat = {
             "type": "Feature",
             "properties": {
                 "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
                 "activity": "eat",
                 "activityTitle": "Momiji",
                 "image": "assets/img/in-the-area/inthearea_eat_placeholder.jpg",
@@ -269,6 +282,7 @@ var itaEat = {
             "type": "Feature",
             "properties": {
                 "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
                 "activity": "eat",
                 "activityTitle": "Rock & Rye",
                 "image": "assets/img/in-the-area/inthearea_eat_rockrye.jpg",
@@ -288,6 +302,7 @@ var itaEat = {
             "type": "Feature",
             "properties": {
                 "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
                 "activity": "eat",
                 "activityTitle": "The Huguenot Restaurant",
                 "image": "assets/img/in-the-area/inthearea_eat_placeholder.jpg",
@@ -307,6 +322,7 @@ var itaEat = {
             "type": "Feature",
             "properties": {
                 "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
                 "activity": "eat",
                 "activityTitle": "A Tavola Trattoria",
                 "image": "assets/img/in-the-area/inthearea_eat_placeholder.jpg",
@@ -326,6 +342,7 @@ var itaEat = {
             "type": "Feature",
             "properties": {
                 "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
                 "activity": "eat",
                 "activityTitle": "Mountain Brauhaus Restaurant",
                 "image": "assets/img/in-the-area/inthearea_eat_placeholder.jpg",
@@ -345,6 +362,7 @@ var itaEat = {
             "type": "Feature",
             "properties": {
                 "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
                 "activity": "eat",
                 "activityTitle": "Aroma Thyme Bistro",
                 "image": "assets/img/in-the-area/inthearea_eat_placeholder.jpg",
@@ -364,6 +382,7 @@ var itaEat = {
             "type": "Feature",
             "properties": {
                 "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
                 "activity": "eat",
                 "activityTitle": "Market Street",
                 "image": "assets/img/in-the-area/inthearea_eat_placeholder.jpg",
@@ -383,6 +402,7 @@ var itaEat = {
             "type": "Feature",
             "properties": {
                 "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
                 "activity": "eat",
                 "activityTitle": "Gigi Trattoria",
                 "image": "assets/img/in-the-area/inthearea_eat_placeholder.jpg",
@@ -402,6 +422,7 @@ var itaEat = {
             "type": "Feature",
             "properties": {
                 "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
                 "activity": "eat",
                 "activityTitle": "Oriole9",
                 "image": "assets/img/in-the-area/inthearea_eat_placeholder.jpg",
@@ -421,6 +442,7 @@ var itaEat = {
             "type": "Feature",
             "properties": {
                 "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
                 "activity": "eat",
                 "activityTitle": "Bread Alone",
                 "image": "assets/img/in-the-area/inthearea_eat_placeholder.jpg",
@@ -440,6 +462,7 @@ var itaEat = {
             "type": "Feature",
             "properties": {
                 "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
                 "activity": "eat",
                 "activityTitle": "Red Onion",
                 "image": "assets/img/in-the-area/inthearea_eat_placeholder.jpg",
@@ -459,6 +482,7 @@ var itaEat = {
             "type": "Feature",
             "properties": {
                 "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
                 "activity": "eat",
                 "activityTitle": "Bear Cafe",
                 "image": "assets/img/in-the-area/inthearea_eat_placeholder.jpg",
@@ -478,6 +502,7 @@ var itaEat = {
             "type": "Feature",
             "properties": {
                 "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
                 "activity": "eat",
                 "activityTitle": "Cucina",
                 "image": "assets/img/in-the-area/inthearea_eat_placeholder.jpg",
@@ -497,6 +522,7 @@ var itaEat = {
             "type": "Feature",
             "properties": {
                 "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
                 "activity": "eat",
                 "activityTitle": "Peekamoose Restaurant & Tap Room",
                 "image": "assets/img/in-the-area/inthearea_eat_placeholder.jpg",
@@ -516,6 +542,7 @@ var itaEat = {
             "type": "Feature",
             "properties": {
                 "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
                 "activity": "eat",
                 "activityTitle": "Elephant",
                 "image": "assets/img/in-the-area/inthearea_eat_placeholder.jpg",
@@ -534,6 +561,7 @@ var itaEat = {
             "type": "Feature",
             "properties": {
                 "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
                 "activity": "eat",
                 "activityTitle": "Le Canard Enchaine",
                 "image": "assets/img/in-the-area/inthearea_eat_placeholder.jpg",
@@ -552,6 +580,7 @@ var itaEat = {
             "type": "Feature",
             "properties": {
                 "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
                 "activity": "eat",
                 "activityTitle": "Boitson's",
                 "image": "assets/img/in-the-area/inthearea_eat_placeholder.jpg",
@@ -570,6 +599,7 @@ var itaEat = {
             "type": "Feature",
             "properties": {
                 "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
                 "activity": "eat",
                 "activityTitle": "Duo Bistro",
                 "image": "assets/img/in-the-area/inthearea_eat_placeholder.jpg",
@@ -588,6 +618,7 @@ var itaEat = {
             "type": "Feature",
             "properties": {
                 "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
                 "activity": "eat",
                 "activityTitle": "Mercato - Osteria & Enoteca",
                 "image": "assets/img/in-the-area/inthearea_eat_placeholder.jpg",
@@ -612,6 +643,7 @@ var itaSip = {
             "type": "Feature",
             "properties": {
                 "classType": "sip",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-sip.png",
                 "activity": "sip",
                 "activityTitle": "Tuthilltown Spirits",
                 "image": "assets/img/in-the-area/inthearea_sip_placeholder.jpg",
@@ -630,6 +662,7 @@ var itaSip = {
             "type": "Feature",
             "properties": {
                 "classType": "sip",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-sip.png",
                 "activity": "sip",
                 "activityTitle": "Gilded Otter Brewing",
                 "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
@@ -648,6 +681,7 @@ var itaSip = {
             "type": "Feature",
             "properties": {
                 "classType": "sip",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-sip.png",
                 "activity": "sip",
                 "activityTitle": "Keegan Ales",
                 "image": "assets/img/in-the-area/inthearea_sip_keegan.jpg",
@@ -666,6 +700,7 @@ var itaSip = {
             "type": "Feature",
             "properties": {
                 "classType": "sip",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-sip.png",
                 "activity": "sip",
                 "activityTitle": "Hillrock Estate Distillery",
                 "image": "assets/img/in-the-area/inthearea_sip_hillrock.jpg",
@@ -684,6 +719,7 @@ var itaSip = {
             "type": "Feature",
             "properties": {
                 "classType": "sip",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-sip.png",
                 "activity": "sip",
                 "activityTitle": "Warwick Valley Winery",
                 "image": "assets/img/in-the-area/inthearea_sip_placeholder.jpg",
@@ -702,6 +738,7 @@ var itaSip = {
             "type": "Feature",
             "properties": {
                 "classType": "sip",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-sip.png",
                 "activity": "sip",
                 "activityTitle": "Mill House Brewing Company",
                 "image": "assets/img/in-the-area/inthearea_sip_placeholder.jpg",
@@ -720,6 +757,7 @@ var itaSip = {
             "type": "Feature",
             "properties": {
                 "classType": "sip",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-sip.png",
                 "activity": "sip",
                 "activityTitle": "Hyde Park Brewing Company",
                 "image": "assets/img/in-the-area/inthearea_sip_placeholder.jpg",
@@ -745,6 +783,7 @@ var itaSwing = {
             "type": "Feature",
             "properties": {
                 "classType": "swing",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-swing.png",
                 "activity": "swing",
                 "activityTitle": "Mohonk Mountain House Golf Course",
                 "image": "assets/img/in-the-area/inthearea_swing_mohonk.jpg",
@@ -763,6 +802,7 @@ var itaSwing = {
             "type": "Feature",
             "properties": {
                 "classType": "swing",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-swing.png",
                 "activity": "swing",
                 "activityTitle": "Rondout Golf Course",
                 "image": "assets/img/in-the-area/inthearea_swing_placeholder.jpg",
@@ -781,6 +821,7 @@ var itaSwing = {
             "type": "Feature",
             "properties": {
                 "classType": "swing",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-swing.png",
                 "activity": "swing",
                 "activityTitle": "Apple Green's Golf Course",
                 "image": "assets/img/in-the-area/inthearea_swing_apple.jpg",
@@ -799,6 +840,7 @@ var itaSwing = {
             "type": "Feature",
             "properties": {
                 "classType": "swing",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-swing.png",
                 "activity": "swing",
                 "activityTitle": "Stone Dock Golf Course",
                 "image": "assets/img/in-the-area/inthearea_swing_placeholder.jpg",
@@ -817,6 +859,7 @@ var itaSwing = {
             "type": "Feature",
             "properties": {
                 "classType": "swing",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-swing.png",
                 "activity": "swing",
                 "activityTitle": "New Paltz Golf Course",
                 "image": "assets/img/in-the-area/inthearea_swing_placeholder.jpg",
@@ -844,6 +887,7 @@ var itaSwim = {
             "type": "Feature",
             "properties": {
                 "classType": "swim",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-swim.png",
                 "activity": "swim",
                 "activityTitle": "Lake Minnewaska",
                 "image": "assets/img/in-the-area/inthearea_swim_minnewaska.jpg",
@@ -862,6 +906,7 @@ var itaSwim = {
             "type": "Feature",
             "properties": {
                 "classType": "swim",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-swim.png",
                 "activity": "swim",
                 "activityTitle": "Lake Awosting",
                 "image": "assets/img/in-the-area/inthearea_swim_placeholder.jpg",
@@ -880,6 +925,7 @@ var itaSwim = {
             "type": "Feature",
             "properties": {
                 "classType": "swim",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-swim.png",
                 "activity": "swim",
                 "activityTitle": "Deep Hole (on the Peterskill)",
                 "image": "assets/img/in-the-area/inthearea_swim_deep-hole.jpg",
@@ -898,6 +944,7 @@ var itaSwim = {
             "type": "Feature",
             "properties": {
                 "classType": "swim",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-swim.png",
                 "activity": "swim",
                 "activityTitle": "Vernooy Kill Swimming Hole",
                 "image": "assets/img/in-the-area/inthearea_swim_placeholder.jpg",
@@ -916,6 +963,7 @@ var itaSwim = {
             "type": "Feature",
             "properties": {
                 "classType": "swim",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-swim.png",
                 "activity": "swim",
                 "activityTitle": "Stony Kill Falls",
                 "image": "assets/img/in-the-area/inthearea_swim_placeholder.jpg",
@@ -934,6 +982,7 @@ var itaSwim = {
             "type": "Feature",
             "properties": {
                 "classType": "swim",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-swim.png",
                 "activity": "swim",
                 "activityTitle": "Peekamoose Blue Hole",
                 "image": "assets/img/in-the-area/inthearea_swim_placeholder.jpg",
@@ -960,6 +1009,7 @@ var itaTrails = {
             "type": "Feature",
             "properties": {
                 "classType": "trails",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-trail.png",
                 "activity": "trails",
                 "activityTitle": "Minnewaska State Park",
                 "image": "assets/img/in-the-area/inthearea_trails_placeholder.jpg",
@@ -978,6 +1028,7 @@ var itaTrails = {
             "type": "Feature",
             "properties": {
                 "classType": "trails",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-trail.png",
                 "activity": "trails",
                 "activityTitle": "Mohonk Preserve",
                 "image": "assets/img/in-the-area/inthearea_trails_mohonk.jpg",
@@ -996,6 +1047,7 @@ var itaTrails = {
             "type": "Feature",
             "properties": {
                 "classType": "trails",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-trail.png",
                 "activity": "trails",
                 "activityTitle": "Wallkill Valley Rail Trail",
                 "image": "assets/img/in-the-area/inthearea_trails_placeholder.jpg",
@@ -1014,6 +1066,7 @@ var itaTrails = {
             "type": "Feature",
             "properties": {
                 "classType": "trails",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-trail.png",
                 "activity": "trails",
                 "activityTitle": "Reservoir Rd",
                 "image": "assets/img/in-the-area/inthearea_trails_placeholder.jpg",
@@ -1032,6 +1085,7 @@ var itaTrails = {
             "type": "Feature",
             "properties": {
                 "classType": "trails",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-trail.png",
                 "activity": "trails",
                 "activityTitle": "The Lundy Estate",
                 "image": "assets/img/in-the-area/inthearea_trails_lundy.jpg",
@@ -1050,6 +1104,7 @@ var itaTrails = {
             "type": "Feature",
             "properties": {
                 "classType": "trails",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-trail.png",
                 "activity": "trails",
                 "activityTitle": "Shawangunk Ridge State Forest",
                 "image": "assets/img/in-the-area/inthearea_trails_placeholder.jpg",
@@ -1068,6 +1123,7 @@ var itaTrails = {
             "type": "Feature",
             "properties": {
                 "classType": "trails",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-trail.png",
                 "activity": "trails",
                 "activityTitle": "Mine Hole Trail",
                 "image": "assets/img/in-the-area/inthearea_trails_placeholder.jpg",
@@ -1086,6 +1142,7 @@ var itaTrails = {
             "type": "Feature",
             "properties": {
                 "classType": "trails",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-trail.png",
                 "activity": "trails",
                 "activityTitle": "Walkway Over the Hudson",
                 "image": "assets/img/in-the-area/inthearea_trails_placeholder.jpg",
@@ -1114,6 +1171,7 @@ var itaSki = {
             "type": "Feature",
             "properties": {
                 "classType": "ski",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-ski.png",
                 "activity": "ski",
                 "activityTitle": "Hunter Mountain",
                 "image": "assets/img/in-the-area/inthearea_ski_hunter.jpg",
@@ -1132,6 +1190,7 @@ var itaSki = {
             "type": "Feature",
             "properties": {
                 "classType": "ski",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-ski.png",
                 "activity": "ski",
                 "activityTitle": "Belleayre Ski Center",
                 "image": "assets/img/in-the-area/inthearea_ski_bellayre.jpg",
@@ -1150,6 +1209,7 @@ var itaSki = {
             "type": "Feature",
             "properties": {
                 "classType": "ski",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-ski.png",
                 "activity": "ski",
                 "activityTitle": "Windham Mountain",
                 "image": "assets/img/in-the-area/inthearea_ski_windham.jpg",
@@ -1168,6 +1228,7 @@ var itaSki = {
             "type": "Feature",
             "properties": {
                 "classType": "ski",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-ski.png",
                 "activity": "ski",
                 "activityTitle": "Mountain Trails XC Ski Center",
                 "image": "assets/img/in-the-area/inthearea_ski_placeholder.jpg",
@@ -1194,6 +1255,7 @@ var itaCulture = {
             "type": "Feature",
             "properties": {
                 "classType": "culture",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-culture.png",
                 "activity": "culture",
                 "activityTitle": "Storm King Art Center",
                 "image": "assets/img/in-the-area/inthearea_culture_stormking.jpg",
@@ -1212,6 +1274,7 @@ var itaCulture = {
             "type": "Feature",
             "properties": {
                 "classType": "culture",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-culture.png",
                 "activity": "culture",
                 "activityTitle": "Dia Beacon",
                 "image": "assets/img/in-the-area/inthearea_culture_diabeacon.jpg",
@@ -1230,6 +1293,7 @@ var itaCulture = {
             "type": "Feature",
             "properties": {
                 "classType": "culture",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-culture.png",
                 "activity": "culture",
                 "activityTitle": "Olana State Historic Site",
                 "image": "assets/img/in-the-area/inthearea_culture_olana.jpg",
@@ -1248,6 +1312,7 @@ var itaCulture = {
             "type": "Feature",
             "properties": {
                 "classType": "culture",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-culture.png",
                 "activity": "culture",
                 "activityTitle": "Springwood Estate",
                 "image": "assets/img/in-the-area/inthearea_culture_placeholder.jpg",
@@ -1266,6 +1331,7 @@ var itaCulture = {
             "type": "Feature",
             "properties": {
                 "classType": "culture",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-culture.png",
                 "activity": "culture",
                 "activityTitle": "Bearsville Theater",
                 "image": "assets/img/in-the-area/inthearea_culture_placeholder.jpg",
@@ -1284,6 +1350,7 @@ var itaCulture = {
             "type": "Feature",
             "properties": {
                 "classType": "culture",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-culture.png",
                 "activity": "culture",
                 "activityTitle": "Huguenot St",
                 "image": "assets/img/in-the-area/inthearea_culture_placeholder.jpg",
@@ -1302,6 +1369,7 @@ var itaCulture = {
             "type": "Feature",
             "properties": {
                 "classType": "culture",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-culture.png",
                 "activity": "culture",
                 "activityTitle": "Huguenot St",
                 "image": "assets/img/in-the-area/inthearea_culture_placeholder.jpg",
@@ -1320,6 +1388,7 @@ var itaCulture = {
             "type": "Feature",
             "properties": {
                 "classType": "culture",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-culture.png",
                 "activity": "culture",
                 "activityTitle": "Richard B. Fisher Center for the Performing Arts",
                 "image": "assets/img/in-the-area/inthearea_culture_placeholder.jpg",
@@ -1344,6 +1413,7 @@ var itaPickAndGrow = {
             "type": "Feature",
             "properties": {
                 "classType": "pick-and-grow",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-pick-grow.png",
                 "activity": "pick-and-grow",
                 "activityTitle": "Westwind Orchard LLC.",
                 "image": "assets/img/in-the-area/inthearea_pickandgrow_westwind.jpg",
@@ -1362,6 +1432,7 @@ var itaPickAndGrow = {
             "type": "Feature",
             "properties": {
                 "classType": "pick-and-grow",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-pick-grow.png",
                 "activity": "pick-and-grow",
                 "activityTitle": "Saunderskill Farm Market",
                 "image": "assets/img/in-the-area/inthearea_pickandgrow_saunderskill.jpg",
@@ -1380,6 +1451,7 @@ var itaPickAndGrow = {
             "type": "Feature",
             "properties": {
                 "classType": "pick-and-grow",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-pick-grow.png",
                 "activity": "pick-and-grow",
                 "activityTitle": "Kelder's Farm",
                 "image": "assets/img/in-the-area/inthearea_pickandgrow_kelder.jpg",
@@ -1398,6 +1470,7 @@ var itaPickAndGrow = {
             "type": "Feature",
             "properties": {
                 "classType": "pick-and-grow",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-pick-grow.png",
                 "activity": "pick-and-grow",
                 "activityTitle": "Davenport Farms",
                 "image": "assets/img/in-the-area/inthearea_pickandgrow_placeholder.jpg",
@@ -1416,6 +1489,7 @@ var itaPickAndGrow = {
             "type": "Feature",
             "properties": {
                 "classType": "pick-and-grow",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-pick-grow.png",
                 "activity": "pick-and-grow",
                 "activityTitle": "Stone Ridge Orchard",
                 "image": "assets/img/in-the-area/inthearea_pickandgrow_placeholder.jpg",
@@ -1434,6 +1508,7 @@ var itaPickAndGrow = {
             "type": "Feature",
             "properties": {
                 "classType": "pick-and-grow",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-pick-grow.png",
                 "activity": "pick-and-grow",
                 "activityTitle": "Gill's Farm Market",
                 "image": "assets/img/in-the-area/inthearea_pickandgrow_placeholder.jpg",
@@ -1452,6 +1527,7 @@ var itaPickAndGrow = {
             "type": "Feature",
             "properties": {
                 "classType": "pick-and-grow",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-pick-grow.png",
                 "activity": "pick-and-grow",
                 "activityTitle": "Wallkill View Farm Market",
                 "image": "assets/img/in-the-area/inthearea_pickandgrow_placeholder.jpg",
@@ -1470,6 +1546,7 @@ var itaPickAndGrow = {
             "type": "Feature",
             "properties": {
                 "classType": "pick-and-grow",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-pick-grow.png",
                 "activity": "pick-and-grow",
                 "activityTitle": "Jenkins - Lueken Orchards",
                 "image": "assets/img/in-the-area/inthearea_pickandgrow_placeholder.jpg",
@@ -1488,6 +1565,7 @@ var itaPickAndGrow = {
             "type": "Feature",
             "properties": {
                 "classType": "pick-and-grow",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-pick-grow.png",
                 "activity": "pick-and-grow",
                 "activityTitle": "Hudson Valley Seed Library",
                 "image": "assets/img/in-the-area/inthearea_pickandgrow_placeholder.jpg",
@@ -1506,6 +1584,7 @@ var itaPickAndGrow = {
             "type": "Feature",
             "properties": {
                 "classType": "pick-and-grow",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-pick-grow.png",
                 "activity": "pick-and-grow",
                 "activityTitle": "Catskill Native Nursery",
                 "image": "assets/img/in-the-area/inthearea_pickandgrow_placeholder.jpg",
@@ -1524,6 +1603,7 @@ var itaPickAndGrow = {
             "type": "Feature",
             "properties": {
                 "classType": "pick-and-grow",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-pick-grow.png",
                 "activity": "pick-and-grow",
                 "activityTitle": "Veronica's Gardens",
                 "image": "assets/img/in-the-area/inthearea_pickandgrow_placeholder.jpg",
@@ -1548,6 +1628,7 @@ var itaMindAndBody = {
             "type": "Feature",
             "properties": {
                 "classType": "mind-and-body",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-mind-body.png",
                 "activity": "mind-and-body",
                 "activityTitle": "Pilates At the Bungalow Ltd",
                 "image": "assets/img/in-the-area/inthearea_mindandbody_bungalow.jpg",
@@ -1566,6 +1647,7 @@ var itaMindAndBody = {
             "type": "Feature",
             "properties": {
                 "classType": "mind-and-body",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-mind-body.png",
                 "activity": "mind-and-body",
                 "activityTitle": "Yoga at the Yurt",
                 "image": "assets/img/in-the-area/inthearea_mindandbody_placeholder.jpg",
@@ -1584,6 +1666,7 @@ var itaMindAndBody = {
             "type": "Feature",
             "properties": {
                 "classType": "mind-and-body",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-mind-body.png",
                 "activity": "mind-and-body",
                 "activityTitle": "One Body Spa",
                 "image": "assets/img/in-the-area/inthearea_mindandbody_bodyspa.jpg",
@@ -1602,6 +1685,7 @@ var itaMindAndBody = {
             "type": "Feature",
             "properties": {
                 "classType": "mind-and-body",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-mind-body.png",
                 "activity": "mind-and-body",
                 "activityTitle": "SIMHARA Portal Of the Heart",
                 "image": "assets/img/in-the-area/inthearea_mindandbody_placeholder.jpg",
@@ -1620,6 +1704,7 @@ var itaMindAndBody = {
             "type": "Feature",
             "properties": {
                 "classType": "mind-and-body",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-mind-body.png",
                 "activity": "mind-and-body",
                 "activityTitle": "Omega Institute For Holistic Studies",
                 "image": "assets/img/in-the-area/inthearea_mindandbody_placeholder.jpg",
@@ -1638,6 +1723,7 @@ var itaMindAndBody = {
             "type": "Feature",
             "properties": {
                 "classType": "mind-and-body",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-mind-body.png",
                 "activity": "mind-and-body",
                 "activityTitle": "Zen Mountain Monastery",
                 "image": "assets/img/in-the-area/inthearea_mindandbody_placeholder.jpg",

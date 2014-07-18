@@ -102,7 +102,7 @@
 		text-transform: uppercase;
 	}
 	h3 {
-		font-size: 32px;
+		font-size: 26px;
 		padding: 30px 0 10px;
 		margin-top: 0;
 	}
@@ -157,8 +157,8 @@
 		margin: 20px 0 10px;
 	}
 	h4 {
-		margin: 20px 0;
-		font-weight: 700;
+		margin: 30px 0;
+		font-weight: 500;
 	}
 	span {
 		font-style: italic;
@@ -196,10 +196,17 @@
 			font-weight: 500;
 			margin-bottom: 10px;
 			line-height: 24px;
-			letter-spacing: 1px;
 			margin-left: 18px;
 			display: list-item;
 
+		}
+	}
+	&.upgrade-details {
+		p {
+			height: auto;
+			font-family: $headline-font;
+			font-weight: 500;
+			margin-top: 10px;
 		}
 	}
 	a {
@@ -212,5 +219,10 @@
 }
 
 .upgrade-details {
-	margin-bottom: 30px;
+	h3 {
+		height: 100px;
+	}
+	p {
+		height: 80px;
+	}
 }
