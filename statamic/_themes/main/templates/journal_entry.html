@@ -24,12 +24,18 @@
 			<div class="col-md-7">
 				<div class="title-region"><a href="{{ url }}"><h2>{{ title }}</h2></a>
 					{{ if date }}
-					              	<p><time pubdate datetime="{{ datestamp format="Y-m-d" }}">Posted on {{ date }}</time> by {{ author }}</p>
-					            	{{ endif }}
-					             </div>
+					 <p class="publish-date"><time pubdate datetime="{{ datestamp format="Y-m-d" }}">Posted on {{ date }}</time> by {{ author }}</p>
+	            	{{ endif }}
+	             </div>
 				
 				<div class="blog-content">
+					{{ if videoEmbed|not_empty }}
+					<div class="video">
+						{{ videoEmbed }}
+					</div>
+					{{ endif }}
 					{{ content }}
+					
 				</div>
 			</div>
 
@@ -56,8 +62,30 @@
 				        {{ /tweets }}
 					{{ /bluebird }}
 				</div>
+<!-- 				<h4>Blog Authors</h4>
+				{{ member:profile }}
+				<p>{{ first_name }}</p>
+				<img src="{{ userProfile }}" alt="">
+				{{ /member:profile }} -->
 			</div>
 
 		</div>
 	</div>
 </section>
+
+
+<div class="test">{{ dots api_key="c5484c2fe4df884b0136332bc8f379ba" user_id="44779791@N02" count="6" limit="50" }}   
+	  {{ photos }}
+	    <a href="{{ url }}">
+	      <img src="{{ small }}" alt="{{ title }}">
+	    </a>
+	  {{ /photos }}
+	
+	  {{ user }}
+	   <a href="{{ profile_url }}">{{ real_name }}</a>
+	   <p>
+	     {{ location }}
+	     {{ description }}
+	   </p>
+	  {{ /user }}   
+	{{ /dots }}</div>

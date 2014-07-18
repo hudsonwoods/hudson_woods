@@ -41,6 +41,11 @@ fields:
   show_password:
     type: show_password
     save_value: false
+  userProfile:
+    type: file
+    display: User Profile Image
+    destination: {{ _site_root }}assets/img/users
+    show_thumbnail: true
   roles:
     type: checkboxes
     display: Roles

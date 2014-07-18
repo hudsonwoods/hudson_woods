@@ -436,8 +436,9 @@ $('#upgrades-nav li a').click(function (e) {
   $(this).tab('show')
 })
 
-// $('#in-the-area a').click(function(e) {
-//   e.preventDefault()
-// });
 
-// $('#upgrades-nav li a[href="#all"]').tab('show')
+// Initialize fitvids (100% width video embeds) on Journal
+$(document).ready(function(){
+  // Target your .container, .wrapper, .post, etc.
+  $(".video").fitVids();
+});

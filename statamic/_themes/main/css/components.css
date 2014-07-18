@@ -9828,7 +9828,7 @@ button {
 }
 
 #upgrades {
-  padding-top: 60px;
+  padding-top: 20px;
   background-color: #f3f3f3;
 }
 #upgrades .col-sm-4:nth-child(3n+4) {
@@ -10117,6 +10117,10 @@ button {
   font-weight: 100;
 }
 
+.publish-date {
+  font-weight: 100;
+}
+
 .blog-content.summary {
   border-bottom: 1px solid silver;
   padding-bottom: 40px;
@@ -10147,6 +10151,9 @@ button {
 }
 .blog-content img.featured {
   margin-top: 6px;
+}
+.blog-content .video {
+  margin-bottom: 40px;
 }
 
 .blog-title-section h4 {

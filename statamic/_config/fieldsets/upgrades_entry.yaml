@@ -21,6 +21,12 @@ fields:
     type: redactor
     display: Summary
 
+  imageSingle:
+    type: file
+    display: Single Image
+    destination: assets/img/homes
+    show_thumbnail: true
+
   imageGallery:
     display: Image Gallery
     type: grid

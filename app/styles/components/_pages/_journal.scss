@@ -36,6 +36,9 @@
 
 }
 
+.publish-date {
+	font-weight: 100;
+}
 
 .blog-content {
 	&.summary {
@@ -67,6 +70,9 @@
 	}
 	img.featured {
 		margin-top: 6px;
+	}
+	.video {
+		margin-bottom: 40px;
 	}
 }
 
