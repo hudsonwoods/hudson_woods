@@ -10224,6 +10224,10 @@ button {
   color: #3c3e3b;
   font-size: 14px;
   font-weight: 300;
+  margin-bottom: 24px;
+}
+.blog-content p:last-of-type {
+  margin-bottom: 0;
 }
 .blog-content img.featured {
   margin-top: 6px;

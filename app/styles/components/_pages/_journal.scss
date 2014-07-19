@@ -73,6 +73,10 @@
 		color: darken($base-font-color, 20%);
 		font-size: 14px;
 		font-weight: 300;
+		margin-bottom: 24px;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
 	}
 	img.featured {
 		margin-top: 6px;
