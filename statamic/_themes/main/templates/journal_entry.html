@@ -21,7 +21,7 @@
 
 		<div class="row blog-main">
 
-			<div class="col-md-8 col-md-offset-2">
+			<div class="col-md-8">
 				<div class="title-region"><a href="{{ url }}"><h2>{{ title }}</h2></a>
 					{{ if date }}
 					 <p class="publish-date"><time pubdate datetime="{{ datestamp format="Y-m-d" }}">Posted on {{ date }}</time> by {{ author }}</p>
@@ -39,7 +39,7 @@
 				</div>
 			</div>
 
-<!-- 			<div class="col-md-4 col-md-offset-1">
+			<div class="col-md-4">
 				<div class="tweets">
 					{{ bluebird screen_name="HudsonWoodsNY" count="5" }}
 				        {{ user }}
@@ -61,7 +61,7 @@
 				            </div>
 				        {{ /tweets }}
 					{{ /bluebird }}
-				</div> -->
+				</div>
 <!-- 				<h4>Blog Authors</h4>
 				{{ member:profile }}
 				<p>{{ first_name }}</p>
