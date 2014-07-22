@@ -158,11 +158,12 @@
 		margin: 20px 0 10px;
 	}
 	h4 {
-		margin: 30px 0;
+		margin: 30px 0 10px;
 		font-weight: 500;
 	}
 	span {
 		font-style: italic;
+		font-size: 18px;
 	}
 	.col-md-9 {
 		display: block;
@@ -170,11 +171,11 @@
 	p:first-of-type {
 		font-size: 18px;
 		font-weight: 300;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 	}
 	&.availability {
 		h2 {
-			font-size: 18px;
+			font-size: 36px;
 			font-weight: 300;
 
 
@@ -193,7 +194,7 @@
 		display: block;
 		list-style-type: disc;
 		li {
-			font-size: 16px;
+			font-size: 18px;
 			font-weight: 500;
 			margin-bottom: 10px;
 			line-height: 24px;

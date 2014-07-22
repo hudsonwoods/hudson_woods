@@ -27,6 +27,12 @@ fields:
     destination: assets/img/homes
     show_thumbnail: true
 
+  floorPlans:
+    type: file
+    display: Floor Plans
+    destination: assets/img/homes
+    show_thumbnail: true
+
   handCraftedFinishes:
     display: Hand Crafted Finishes
     type: grid

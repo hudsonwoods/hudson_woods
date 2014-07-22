@@ -10014,11 +10014,12 @@ button {
   margin: 20px 0 10px;
 }
 .specs h4 {
-  margin: 30px 0;
+  margin: 30px 0 10px;
   font-weight: 500;
 }
 .specs span {
   font-style: italic;
+  font-size: 18px;
 }
 .specs .col-md-9 {
   display: block;
@@ -10026,10 +10027,10 @@ button {
 .specs p:first-of-type {
   font-size: 18px;
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .specs.availability h2 {
-  font-size: 18px;
+  font-size: 36px;
   font-weight: 300;
 }
 .specs.availability ul {
@@ -10046,7 +10047,7 @@ button {
   list-style-type: disc;
 }
 .specs ul li {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   margin-bottom: 10px;
   line-height: 24px;
