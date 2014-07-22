@@ -9412,6 +9412,9 @@ nav.navbar .navbar-brand {
   padding-top: .5em;
   height: 60px;
 }
+#makers .makers-tiles:hover .slide-caption {
+  background-color: #fff;
+}
 
 #progress {
   background-color: #ebe9e2;
