@@ -8427,6 +8427,10 @@ h1, h2, h3, h4, h5 {
   font-family: "adelle", Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
+.beige {
+  background-color: #ebe9e2;
+}
+
 .stuck {
   position: fixed;
 }
@@ -9901,6 +9905,7 @@ button {
 }
 
 #upgrades {
+  min-height: 800px;
   padding-top: 20px;
   background-color: #f3f3f3;
 }
@@ -10024,7 +10029,7 @@ button {
   margin-bottom: 20px;
 }
 .specs.availability h2 {
-  font-size: 36px;
+  font-size: 18px;
   font-weight: 300;
 }
 .specs.availability ul {
@@ -10041,7 +10046,7 @@ button {
   list-style-type: disc;
 }
 .specs ul li {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   margin-bottom: 10px;
   line-height: 24px;
@@ -10066,7 +10071,7 @@ button {
   height: 100px;
 }
 .upgrade-details p {
-  height: 80px;
+  height: 60px;
 }
 
 #header-contact {

@@ -1,4 +1,4 @@
-var data = {
+var labels = {
   "type": "FeatureCollection",
   "features": [
     {
@@ -311,14 +311,7 @@ var unavailable = {
             "lotAvailability": "Unavailable",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#ddd8d6",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://bluewillowgetaways.com/"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -359,14 +352,7 @@ var unavailable = {
             "lotAvailability": "Unavailable",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#ddd8d6",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://bluewillowgetaways.com/"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -401,14 +387,7 @@ var unavailable = {
             "lotAvailability": "Unavailable",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#ddd8d6",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://bluewillowgetaways.com/"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -437,14 +416,7 @@ var unavailable = {
             "lotAvailability": "Unavailable",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#ddd8d6",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://bluewillowgetaways.com/"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -477,14 +449,7 @@ var unavailable = {
             "lotAvailability": "Unavailable",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#ddd8d6",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://bluewillowgetaways.com/"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -514,14 +479,7 @@ var unavailable = {
             "lotAvailability": "Unavailable",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#ddd8d6",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://bluewillowgetaways.com/"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -552,14 +510,7 @@ var unavailable = {
             "lotAvailability": "Unavailable",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#ddd8d6",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://bluewillowgetaways.com/"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -596,14 +547,7 @@ var unavailable = {
             "lotAvailability": "Unavailable",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#ddd8d6",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://bluewillowgetaways.com/"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -634,14 +578,7 @@ var unavailable = {
             "lotAvailability": "Unavailable",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#ddd8d6",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://bluewillowgetaways.com/"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -670,14 +607,7 @@ var unavailable = {
             "lotAvailability": "Unavailable",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#ddd8d6",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://bluewillowgetaways.com/"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -747,14 +677,7 @@ var unavailable = {
             "lotAvailability": "Unavailable",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#ddd8d6",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://bluewillowgetaways.com/"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -782,14 +705,7 @@ var unavailable = {
             "lotAvailability": "Unavailable",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#ddd8d6",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://bluewillowgetaways.com/"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -830,14 +746,7 @@ var unavailable = {
             "lotAvailability": "Unavailable",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#ddd8d6",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://bluewillowgetaways.com/"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -891,14 +800,7 @@ var unavailable = {
             "lotAvailability": "Unavailable",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#ddd8d6",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://bluewillowgetaways.com/"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -940,14 +842,7 @@ var unavailable = {
             "lotAvailability": "Unavailable",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#ddd8d6",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://bluewillowgetaways.com/"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -987,14 +882,7 @@ var unavailable = {
             "lotAvailability": "Unavailable",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#ddd8d6",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://bluewillowgetaways.com/"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -1021,14 +909,7 @@ var unavailable = {
             "lotAvailability": "Unavailable",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#ddd8d6",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://bluewillowgetaways.com/"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -1056,14 +937,7 @@ var unavailable = {
             "lotAvailability": "Unavailable",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#ddd8d6",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://bluewillowgetaways.com/"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -1095,14 +969,7 @@ var unavailable = {
             "lotAvailability": "Unavailable",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#ddd8d6",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://bluewillowgetaways.com/"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -1133,14 +1000,7 @@ var unavailable = {
             "lotAvailability": "Unavailable",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#ddd8d6",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://bluewillowgetaways.com/"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -1172,14 +1032,7 @@ var available = {
             "lotAvailability": "Aavailable",
             "lotSize": "6.0 Acres",
             "cost": "$695,000",
-            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-11",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#bdd194",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-11"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -1227,14 +1080,7 @@ var available = {
             "lotAvailability": "Aavailable",
             "lotSize": "7.95 Acres",
             "cost": "$715,000",
-            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-14",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#bdd194",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-14"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -1291,14 +1137,7 @@ var available = {
             "lotAvailability": "Aavailable",
             "lotSize": "4.6 Acres",
             "cost": "$685,000",
-            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-15",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#bdd194",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-15"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -1341,14 +1180,7 @@ var available = {
             "lotAvailability": "Aavailable",
             "lotSize": "6.6 Acres",
             "cost": "$695,000",
-            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-19",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#bdd194",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-19"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -1392,14 +1224,7 @@ var available = {
             "lotAvailability": "Aavailable",
             "lotSize": "4.2 Acres",
             "cost": "$685,000",
-            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-21",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#bdd194",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-21"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -1435,14 +1260,7 @@ var available = {
             "lotAvailability": "Aavailable",
             "lotSize": "3.3 Acres",
             "cost": "$665,000",
-            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-22",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#bdd194",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-22"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -1471,14 +1289,7 @@ var available = {
             "lotAvailability": "Aavailable",
             "lotSize": "2.7 Acres",
             "cost": "$665,000",
-            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-24",
-            "style": {
-                weight: 2,
-                color: "#fff",
-                opacity: 1,
-                fillColor: "#bdd194",
-                fillOpacity: 0.8
-            }
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-24"
         },
         "geometry": {
             "type": "MultiPolygon",

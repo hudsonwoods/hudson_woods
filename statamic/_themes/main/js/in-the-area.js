@@ -1,146 +1,4 @@
 
-var graySleepIcon = L.icon({
-    iconUrl: 'assets/img/in-the-area/icons/gray_sleep.png',
-   	iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
-    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
-});
-
-var grayCultureIcon = L.icon({
-    iconUrl: 'assets/img/in-the-area/icons/gray_culture.png',
-   	iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
-    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
-});
-
-var grayEatIcon = L.icon({
-    iconUrl: 'assets/img/in-the-area/icons/gray_eat.png',
-   	iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
-    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
-});
-
-var grayMindIcon = L.icon({
-    iconUrl: 'assets/img/in-the-area/icons/gray_mind-body.png',
-   	iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
-    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
-});
-
-var grayPickIcon = L.icon({
-    iconUrl: 'assets/img/in-the-area/icons/gray_pick-grow.png',
-   	iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
-    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
-});
-
-var graySipIcon = L.icon({
-    iconUrl: 'assets/img/in-the-area/icons/gray_sip.png',
-   	iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
-    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
-});
-
-
-var graySkiIcon = L.icon({
-    iconUrl: 'assets/img/in-the-area/icons/gray_ski.png',
-   	iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
-    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
-});
-
-var graySwimIcon = L.icon({
-    iconUrl: 'assets/img/in-the-area/icons/gray_swim.png',
-   	iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
-    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
-});
-
-var graySwingIcon = L.icon({
-    iconUrl: 'assets/img/in-the-area/icons/gray_swing.png',
-   	iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
-    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
-});
-
-var grayTrailsIcon = L.icon({
-    iconUrl: 'assets/img/in-the-area/icons/gray_trail.png',
-   	iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
-    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
-});
-
-var colorSleepIcon = L.icon({
-    iconUrl: 'assets/img/in-the-area/icons/color_sleep.png',
-   	iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
-    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
-});
-
-var colorCultureIcon = L.icon({
-    iconUrl: 'assets/img/in-the-area/icons/color_culture.png',
-   	iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
-    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
-});
-
-var colorEatIcon = L.icon({
-    iconUrl: 'assets/img/in-the-area/icons/color_eat.png',
-   	iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
-    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
-});
-
-var colorMindIcon = L.icon({
-    iconUrl: 'assets/img/in-the-area/icons/color_mind-body.png',
-   	iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
-    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
-});
-
-var colorPickIcon = L.icon({
-    iconUrl: 'assets/img/in-the-area/icons/color_pick-grow.png',
-   	iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
-    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
-});
-
-var colorSipIcon = L.icon({
-    iconUrl: 'assets/img/in-the-area/icons/color_sip.png',
-   	iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
-    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
-});
-
-
-var colorSkiIcon = L.icon({
-    iconUrl: 'assets/img/in-the-area/icons/color_ski.png',
-   	iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
-    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
-});
-
-var colorSwimIcon = L.icon({
-    iconUrl: 'assets/img/in-the-area/icons/color_swim.png',
-   	iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
-    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
-});
-
-var colorSwingIcon = L.icon({
-    iconUrl: 'assets/img/in-the-area/icons/color_swing.png',
-   	iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
-    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
-});
-
-var colorTrailsIcon = L.icon({
-    iconUrl: 'assets/img/in-the-area/icons/color_trail.png',
-   	iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
-    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
-});
-
 var map = L.map('map', {
     center: [41.77197384322616, -74.20966662406921],
     zoom: 10,
@@ -150,56 +8,22 @@ var map = L.map('map', {
 
 L.tileLayer('http://a.tiles.mapbox.com/v3/sandersonj.i245n6m6/{z}/{x}/{y}.png', {
 	maxZoom: 18,
-	// attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-	// 	'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-	// 	'Imagery © <a href="http://mapbox.com">Mapbox</a>',
 	id: 'examples.map-20v6611k'
 }).addTo(map);
 
 //array to store layers for each feature type
 var mapLayerGroups = [];
 
-//draw GEOJSON - don't add the GEOJSON layer to the map here
-// L.geoJson(itaSip, {onEachFeature: onEachFeature})//.addTo(map);
+// Set Global Popup Options
+var popupOptions = {
+  maxWidth: 400,
+  keepInView: true,
+  closeButton: false,
+  keepInView: true,
+  autoPanPadding: [30, 30]
+};
 
-/*
- *for all features create a layerGroup for each feature type and add the feature to the    layerGroup
-*/
-
-
-
-function onEachFeature(feature, layer) {
-
-	    //does layerGroup already exist? if not create it and add to map
-	    var lg = mapLayerGroups[feature.properties.type];
-
-		var popupOptions = {
-			maxWidth: 400,
-			keepInView: true,
-			closeButton: false,
-			keepInView: true,
-			autoPanPadding: [30, 30]
-		};
-
-	var popupContent = 
-
-	"<div class='tile area " + feature.properties.classType + "'" + ">" + 
-	"<h4>" + "<img src=" + feature.properties.classIcon +  ">" + feature.properties.activity + "</h4>" +
-	"<h2>" + feature.properties.activityTitle + "</h2>" +
-	"<img src=" + feature.properties.image +  ">" + 
-	"<p>" + feature.properties.activityDescription + "</p>" +
-	"<a target=_blank href=" + feature.properties.website + ">" + feature.properties.website + "</a>" +
-	"</div>";
-
-	if (feature.properties && feature.properties.popupContent) {
-		popupContent += feature.properties.foo;
-	}
-
-	layer.bindPopup(popupContent,popupOptions);
-}
-
-
-
+// Create Activity Specific Panes For Filtering
 var pane1 = map.createPane('itaSleep ita');
 var pane2 = map.createPane('itaEat ita');
 var pane3 = map.createPane('itaSip ita');
@@ -208,57 +32,213 @@ var pane5 = map.createPane('itaSwim ita');
 var pane6 = map.createPane('itaTrails ita');
 var pane7 = map.createPane('itaSki ita');
 var pane8 = map.createPane('itaCulture ita');
-var pane9 = map.createPane('itaPickAndGrow ita');
-var pane10 = map.createPane('itaMindAndBody ita');
+var pane9 = map.createPane('itaPick ita');
+var pane10 = map.createPane('itaMind ita');
 
 
-// L.geoJson([itaSleep, itaEat, itaSip, itaSwing, itaSwim, itaTrails, itaSki, itaCulture, itaPickAndGrow, itaMindAndBody], {
+var graySleepIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/gray_sleep.png',
+    iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
 
-// 	style: function (feature) {
-// 		return feature.properties && feature.properties.style;
-// 	},
+var colorSleepIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/color_sleep.png',
+    iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
 
-// 	onEachFeature: onEachFeature,
 
-// 	pointToLayer: function (feature, latlng) {
-// 		return L.marker(latlng, {icon: greenIcon});
-// 	}
-// }).addTo(map);
+function highlightFeatureSleep(e) {
+    var layer = e.target;
+    layer.setIcon(colorSleepIcon);
+}
+
+function resetHighlightSleep(e) {
+  var layer = e.target;
+    layer.setIcon(graySleepIcon);
+}
+
+function onEachFeatureSleep(feature, layer) {
+
+  var popupContent = 
+
+  "<div class='tile area " + feature.properties.classType + "'" + ">" + 
+  "<h4>" + "<img src=" + feature.properties.classIcon +  ">" + feature.properties.activity + "</h4>" +
+  "<h2>" + feature.properties.activityTitle + "</h2>" +
+  "<img src=" + feature.properties.image +  ">" + 
+  "<p>" + feature.properties.activityDescription + "</p>" +
+  "<a target=_blank href=" + feature.properties.website + ">" + feature.properties.website + "</a>" +
+  "</div>";
+
+  layer.bindPopup(popupContent,popupOptions);
+  layer.setIcon(graySleepIcon);
+  layer.on({
+    mouseover: highlightFeatureSleep,
+    mouseout: resetHighlightSleep,   
+    // click: highlightFeatureSleep
+  });
+  map.on({click: resetHighlightSleep});
+
+
+}
 
 var itaSleep = L.geoJson([itaSleep], {
 
-	style: function (feature) {
-		return feature.properties && feature.properties.style;
-	},
+  style: function (feature) {
+    return feature.properties;
+  },
 
-	onEachFeature: onEachFeature,
+  
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {pane: 'itaSleep ita'});
 
-	pointToLayer: function (feature, latlng) {
-		return L.marker(latlng, {
-			pane: 'itaSleep ita', 
-			icon: graySleepIcon
-		});
-	}
+  },
+  onEachFeature: onEachFeatureSleep
 
 });
-var SleepBounds = itaSleep.getBounds();
+var sleepBounds = itaSleep.getBounds();
 itaSleep.addTo(map);
 
 
+
+
+
+
+
+var grayCultureIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/gray_culture.png',
+    iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+var colorCultureIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/color_culture.png',
+    iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+function highlightFeatureCulture(e) {
+    var layer = e.target;
+    layer.setIcon(colorCultureIcon);
+}
+
+function resetHighlightCulture(e) {
+  var layer = e.target;
+    layer.setIcon(grayCultureIcon);
+}
+
+function onEachFeatureCulture(feature, layer) {
+
+  var popupContent = 
+
+  "<div class='tile area " + feature.properties.classType + "'" + ">" + 
+  "<h4>" + "<img src=" + feature.properties.classIcon +  ">" + feature.properties.activity + "</h4>" +
+  "<h2>" + feature.properties.activityTitle + "</h2>" +
+  "<img src=" + feature.properties.image +  ">" + 
+  "<p>" + feature.properties.activityDescription + "</p>" +
+  "<a target=_blank href=" + feature.properties.website + ">" + feature.properties.website + "</a>" +
+  "</div>";
+
+  layer.bindPopup(popupContent,popupOptions);
+  layer.setIcon(grayCultureIcon);
+  layer.on({
+    mouseover: highlightFeatureCulture,
+    mouseout: resetHighlightCulture,   
+    // click: highlightFeatureCulture
+  });
+  map.on({click: resetHighlightCulture});
+
+
+}
+
+var itaCulture = L.geoJson([itaCulture], {
+
+  style: function (feature) {
+    return feature.properties;
+  },
+
+  
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {pane: 'itaCulture ita'});
+
+  },
+  onEachFeature: onEachFeatureCulture
+
+});
+var CultureBounds = itaCulture.getBounds();
+itaCulture.addTo(map);
+
+
+
+
+
+
+
+var grayEatIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/gray_eat.png',
+    iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+var colorEatIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/color_eat.png',
+    iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+function highlightFeatureEat(e) {
+    var layer = e.target;
+    layer.setIcon(colorEatIcon);
+}
+
+function resetHighlightEat(e) {
+  var layer = e.target;
+    layer.setIcon(grayEatIcon);
+}
+
+function onEachFeatureEat(feature, layer) {
+
+  var popupContent = 
+
+  "<div class='tile area " + feature.properties.classType + "'" + ">" + 
+  "<h4>" + "<img src=" + feature.properties.classIcon +  ">" + feature.properties.activity + "</h4>" +
+  "<h2>" + feature.properties.activityTitle + "</h2>" +
+  "<img src=" + feature.properties.image +  ">" + 
+  "<p>" + feature.properties.activityDescription + "</p>" +
+  "<a target=_blank href=" + feature.properties.website + ">" + feature.properties.website + "</a>" +
+  "</div>";
+
+  layer.bindPopup(popupContent,popupOptions);
+  layer.setIcon(grayEatIcon);
+  layer.on({
+    mouseover: highlightFeatureEat,
+    mouseout: resetHighlightEat,   
+    // click: highlightFeatureEat
+  });
+  map.on({click: resetHighlightEat});
+
+
+}
+
 var itaEat = L.geoJson([itaEat], {
 
-	style: function (feature) {
-		return feature.properties && feature.properties.style;
-	},
+  style: function (feature) {
+    return feature.properties;
+  },
 
-	onEachFeature: onEachFeature,
+  
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {pane: 'itaEat ita'});
 
-	pointToLayer: function (feature, latlng) {
-		return L.marker(latlng, 
-			{pane: 'itaEat ita', icon: grayEatIcon }
-		);
-
-	}
+  },
+  onEachFeature: onEachFeatureEat
 
 });
 var EatBounds = itaEat.getBounds();
@@ -267,17 +247,212 @@ itaEat.addTo(map);
 
 
 
+
+
+
+
+
+var grayMindIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/gray_mind-body.png',
+    iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+var colorMindIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/color_mind-body.png',
+    iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+function highlightFeatureMind(e) {
+    var layer = e.target;
+    layer.setIcon(colorMindIcon);
+}
+
+function resetHighlightMind(e) {
+  var layer = e.target;
+    layer.setIcon(grayMindIcon);
+}
+
+function onEachFeatureMind(feature, layer) {
+
+  var popupContent = 
+
+  "<div class='tile area " + feature.properties.classType + "'" + ">" + 
+  "<h4>" + "<img src=" + feature.properties.classIcon +  ">" + feature.properties.activity + "</h4>" +
+  "<h2>" + feature.properties.activityTitle + "</h2>" +
+  "<img src=" + feature.properties.image +  ">" + 
+  "<p>" + feature.properties.activityDescription + "</p>" +
+  "<a target=_blank href=" + feature.properties.website + ">" + feature.properties.website + "</a>" +
+  "</div>";
+
+  layer.bindPopup(popupContent,popupOptions);
+  layer.setIcon(grayMindIcon);
+  layer.on({
+    mouseover: highlightFeatureMind,
+    mouseout: resetHighlightMind,   
+    // click: highlightFeatureMind
+  });
+  map.on({click: resetHighlightMind});
+
+
+}
+
+var itaMind = L.geoJson([itaMind], {
+
+  style: function (feature) {
+    return feature.properties;
+  },
+
+  
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {pane: 'itaMind ita'});
+
+  },
+  onEachFeature: onEachFeatureMind
+
+});
+var MindBounds = itaMind.getBounds();
+itaMind.addTo(map);
+
+
+
+
+
+
+var grayPickIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/gray_pick-grow.png',
+    iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+var colorPickIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/color_pick-grow.png',
+    iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+function highlightFeaturePick(e) {
+    var layer = e.target;
+    layer.setIcon(colorPickIcon);
+}
+
+function resetHighlightPick(e) {
+  var layer = e.target;
+    layer.setIcon(grayPickIcon);
+}
+
+function onEachFeaturePick(feature, layer) {
+
+  var popupContent = 
+
+  "<div class='tile area " + feature.properties.classType + "'" + ">" + 
+  "<h4>" + "<img src=" + feature.properties.classIcon +  ">" + feature.properties.activity + "</h4>" +
+  "<h2>" + feature.properties.activityTitle + "</h2>" +
+  "<img src=" + feature.properties.image +  ">" + 
+  "<p>" + feature.properties.activityDescription + "</p>" +
+  "<a target=_blank href=" + feature.properties.website + ">" + feature.properties.website + "</a>" +
+  "</div>";
+
+  layer.bindPopup(popupContent,popupOptions);
+  layer.setIcon(grayPickIcon);
+  layer.on({
+    mouseover: highlightFeaturePick,
+    mouseout: resetHighlightPick,   
+    // click: highlightFeaturePick
+  });
+  map.on({click: resetHighlightPick});
+
+
+}
+
+var itaPick = L.geoJson([itaPick], {
+
+  style: function (feature) {
+    return feature.properties;
+  },
+
+  
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {pane: 'itaPick ita'});
+
+  },
+  onEachFeature: onEachFeaturePick
+
+});
+var PickBounds = itaPick.getBounds();
+itaPick.addTo(map);
+
+
+
+
+
+
+var graySipIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/gray_sip.png',
+    iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+var colorSipIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/color_sip.png',
+    iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+function highlightFeatureSip(e) {
+    var layer = e.target;
+    layer.setIcon(colorSipIcon);
+}
+
+function resetHighlightSip(e) {
+  var layer = e.target;
+    layer.setIcon(graySipIcon);
+}
+
+function onEachFeatureSip(feature, layer) {
+
+  var popupContent = 
+
+  "<div class='tile area " + feature.properties.classType + "'" + ">" + 
+  "<h4>" + "<img src=" + feature.properties.classIcon +  ">" + feature.properties.activity + "</h4>" +
+  "<h2>" + feature.properties.activityTitle + "</h2>" +
+  "<img src=" + feature.properties.image +  ">" + 
+  "<p>" + feature.properties.activityDescription + "</p>" +
+  "<a target=_blank href=" + feature.properties.website + ">" + feature.properties.website + "</a>" +
+  "</div>";
+
+  layer.bindPopup(popupContent,popupOptions);
+  layer.setIcon(graySipIcon);
+  layer.on({
+    mouseover: highlightFeatureSip,
+    mouseout: resetHighlightSip,   
+    // click: highlightFeatureSip
+  });
+  map.on({click: resetHighlightSip});
+
+
+}
+
 var itaSip = L.geoJson([itaSip], {
 
-	style: function (feature) {
-		return feature.properties && feature.properties.style;
-	},
+  style: function (feature) {
+    return feature.properties;
+  },
 
-	onEachFeature: onEachFeature,
+  
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {pane: 'itaSip ita'});
 
-	pointToLayer: function (feature, latlng) {
-		return L.marker(latlng, {pane: 'itaSip ita', icon: graySipIcon});
-	}
+  },
+  onEachFeature: onEachFeatureSip
+
 });
 var SipBounds = itaSip.getBounds();
 itaSip.addTo(map);
@@ -285,70 +460,71 @@ itaSip.addTo(map);
 
 
 
-var itaSwing = L.geoJson([itaSwing], {
 
-	style: function (feature) {
-		return feature.properties && feature.properties.style;
-	},
-
-	onEachFeature: onEachFeature,
-
-	pointToLayer: function (feature, latlng) {
-		return L.marker(latlng, {pane: 'itaSwing ita', icon: graySwingIcon});
-	}
+var graySkiIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/gray_ski.png',
+    iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
-var SwingBounds = itaSwing.getBounds();
-itaSwing.addTo(map);
 
-
-
-
-var itaTrails = L.geoJson([itaTrails], {
-
-	style: function (feature) {
-		return feature.properties && feature.properties.style;
-	},
-
-	onEachFeature: onEachFeature,
-
-	pointToLayer: function (feature, latlng) {
-		return L.marker(latlng, {pane: 'itaTrails ita', icon: grayTrailsIcon});
-	}
+var colorSkiIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/color_ski.png',
+    iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
-var TrailsBounds = itaTrails.getBounds();
-itaTrails.addTo(map);
 
 
 
-var itaSwim = L.geoJson([itaSwim], {
 
-	style: function (feature) {
-		return feature.properties && feature.properties.style;
-	},
+function highlightFeatureSki(e) {
+    var layer = e.target;
+    layer.setIcon(colorSkiIcon);
+}
 
-	onEachFeature: onEachFeature,
+function resetHighlightSki(e) {
+  var layer = e.target;
+    layer.setIcon(graySkiIcon);
+}
 
-	pointToLayer: function (feature, latlng) {
-		return L.marker(latlng, {pane: 'itaSwim ita', icon: graySwimIcon});
-	}
-});
-var SwimBounds = itaSwim.getBounds();
-itaSwim.addTo(map);
+function onEachFeatureSki(feature, layer) {
+
+  var popupContent = 
+
+  "<div class='tile area " + feature.properties.classType + "'" + ">" + 
+  "<h4>" + "<img src=" + feature.properties.classIcon +  ">" + feature.properties.activity + "</h4>" +
+  "<h2>" + feature.properties.activityTitle + "</h2>" +
+  "<img src=" + feature.properties.image +  ">" + 
+  "<p>" + feature.properties.activityDescription + "</p>" +
+  "<a target=_blank href=" + feature.properties.website + ">" + feature.properties.website + "</a>" +
+  "</div>";
+
+  layer.bindPopup(popupContent,popupOptions);
+  layer.setIcon(graySkiIcon);
+  layer.on({
+    mouseover: highlightFeatureSki,
+    mouseout: resetHighlightSki,   
+    // click: highlightFeatureSki
+  });
+  map.on({click: resetHighlightSki});
 
 
-
+}
 
 var itaSki = L.geoJson([itaSki], {
 
-	style: function (feature) {
-		return feature.properties && feature.properties.style;
-	},
+  style: function (feature) {
+    return feature.properties;
+  },
 
-	onEachFeature: onEachFeature,
+  
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {pane: 'itaSki ita'});
 
-	pointToLayer: function (feature, latlng) {
-		return L.marker(latlng, {pane: 'itaSki ita', icon: graySkiIcon});
-	}
+  },
+  onEachFeature: onEachFeatureSki
+
 });
 var SkiBounds = itaSki.getBounds();
 itaSki.addTo(map);
@@ -356,56 +532,213 @@ itaSki.addTo(map);
 
 
 
-var itaCulture = L.geoJson([itaCulture], {
 
-	style: function (feature) {
-		return feature.properties && feature.properties.style;
-	},
-
-	onEachFeature: onEachFeature,
-
-	pointToLayer: function (feature, latlng) {
-		return L.marker(latlng, {pane: 'itaCulture ita', icon: grayCultureIcon});
-	}
+var graySwimIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/gray_swim.png',
+    iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
-var CultureBounds = itaCulture.getBounds();
-itaCulture.addTo(map);
 
-
-
-
-var itaPickAndGrow = L.geoJson([itaPickAndGrow], {
-
-	style: function (feature) {
-		return feature.properties && feature.properties.style;
-	},
-
-	onEachFeature: onEachFeature,
-
-	pointToLayer: function (feature, latlng) {
-		return L.marker(latlng, {pane: 'itaPickAndGrow ita', icon: grayPickIcon});
-	}
+var colorSwimIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/color_swim.png',
+    iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
-var PickAndGrowBounds = itaPickAndGrow.getBounds();
-itaPickAndGrow.addTo(map);
+
+function highlightFeatureSwim(e) {
+    var layer = e.target;
+    layer.setIcon(colorSwimIcon);
+}
+
+function resetHighlightSwim(e) {
+  var layer = e.target;
+    layer.setIcon(graySwimIcon);
+}
+
+function onEachFeatureSwim(feature, layer) {
+
+  var popupContent = 
+
+  "<div class='tile area " + feature.properties.classType + "'" + ">" + 
+  "<h4>" + "<img src=" + feature.properties.classIcon +  ">" + feature.properties.activity + "</h4>" +
+  "<h2>" + feature.properties.activityTitle + "</h2>" +
+  "<img src=" + feature.properties.image +  ">" + 
+  "<p>" + feature.properties.activityDescription + "</p>" +
+  "<a target=_blank href=" + feature.properties.website + ">" + feature.properties.website + "</a>" +
+  "</div>";
+
+  layer.bindPopup(popupContent,popupOptions);
+  layer.setIcon(graySwimIcon);
+  layer.on({
+    mouseover: highlightFeatureSwim,
+    mouseout: resetHighlightSwim,   
+    // click: highlightFeatureSwim
+  });
+  map.on({click: resetHighlightSwim});
 
 
+}
 
+var itaSwim = L.geoJson([itaSwim], {
 
-var itaMindAndBody = L.geoJson([itaMindAndBody], {
+  style: function (feature) {
+    return feature.properties;
+  },
 
-	style: function (feature) {
-		return feature.properties && feature.properties.style;
-	},
+  
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {pane: 'itaSwim ita'});
 
-	onEachFeature: onEachFeature,
+  },
+  onEachFeature: onEachFeatureSwim
 
-	pointToLayer: function (feature, latlng) {
-		return L.marker(latlng, {pane: 'itaMindAndBody ita', icon: grayMindIcon});
-	},
 });
-var MindAndBodyBounds = itaMindAndBody.getBounds();
-itaMindAndBody.addTo(map);
+var SwimBounds = itaSwim.getBounds();
+itaSwim.addTo(map);
+
+
+
+
+
+var graySwingIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/gray_swing.png',
+    iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+var colorSwingIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/color_swing.png',
+    iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+function highlightFeatureSwing(e) {
+    var layer = e.target;
+    layer.setIcon(colorSwingIcon);
+}
+
+function resetHighlightSwing(e) {
+  var layer = e.target;
+    layer.setIcon(graySwingIcon);
+}
+
+function onEachFeatureSwing(feature, layer) {
+
+  var popupContent = 
+
+  "<div class='tile area " + feature.properties.classType + "'" + ">" + 
+  "<h4>" + "<img src=" + feature.properties.classIcon +  ">" + feature.properties.activity + "</h4>" +
+  "<h2>" + feature.properties.activityTitle + "</h2>" +
+  "<img src=" + feature.properties.image +  ">" + 
+  "<p>" + feature.properties.activityDescription + "</p>" +
+  "<a target=_blank href=" + feature.properties.website + ">" + feature.properties.website + "</a>" +
+  "</div>";
+
+  layer.bindPopup(popupContent,popupOptions);
+  layer.setIcon(graySwingIcon);
+  layer.on({
+    mouseover: highlightFeatureSwing,
+    mouseout: resetHighlightSwing,   
+    // click: highlightFeatureSwing
+  });
+  map.on({click: resetHighlightSwing});
+
+
+}
+
+var itaSwing = L.geoJson([itaSwing], {
+
+  style: function (feature) {
+    return feature.properties;
+  },
+
+  
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {pane: 'itaSwing ita'});
+
+  },
+  onEachFeature: onEachFeatureSwing
+
+});
+var SwingBounds = itaSwing.getBounds();
+itaSwing.addTo(map);
+
+
+
+
+
+
+var grayTrailsIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/gray_trail.png',
+    iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+var colorTrailsIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/color_trail.png',
+    iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+function highlightFeatureTrails(e) {
+    var layer = e.target;
+    layer.setIcon(colorTrailsIcon);
+}
+
+function resetHighlightTrail(e) {
+  var layer = e.target;
+    layer.setIcon(grayTrailsIcon);
+}
+
+function onEachFeatureTrail(feature, layer) {
+
+  var popupContent = 
+
+  "<div class='tile area " + feature.properties.classType + "'" + ">" + 
+  "<h4>" + "<img src=" + feature.properties.classIcon +  ">" + feature.properties.activity + "</h4>" +
+  "<h2>" + feature.properties.activityTitle + "</h2>" +
+  "<img src=" + feature.properties.image +  ">" + 
+  "<p>" + feature.properties.activityDescription + "</p>" +
+  "<a target=_blank href=" + feature.properties.website + ">" + feature.properties.website + "</a>" +
+  "</div>";
+
+  layer.bindPopup(popupContent,popupOptions);
+  layer.setIcon(grayTrailsIcon);
+  layer.on({
+    mouseover: highlightFeatureTrails,
+    mouseout: resetHighlightTrail,   
+    // click: highlightFeatureTrails
+  });
+  map.on({click: resetHighlightTrail});
+
+
+}
+
+var itaTrails = L.geoJson([itaTrails], {
+
+  style: function (feature) {
+    return feature.properties;
+  },
+
+  
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {pane: 'itaTrails ita'});
+
+  },
+  onEachFeature: onEachFeatureTrail
+
+});
+var TrailsBounds = itaTrails.getBounds();
+itaTrails.addTo(map);
+
+
+
 
 
 
@@ -478,8 +811,8 @@ $( "#swim" ).click(function() {
 });
 
 $( "#pick-and-grow" ).click(function() {
-  $('.leaflet-itaPickAndGrow').addClass('active');
-  map.fitBounds(itaPickAndGrow,{
+  $('.leaflet-itaPick').addClass('active');
+  map.fitBounds(itaPick,{
   	padding: [50,50]
   });
 });
@@ -492,8 +825,8 @@ $( "#trails" ).click(function() {
 });
 
 $( "#mind-and-body" ).click(function() {
-  $('.leaflet-itaMindAndBody').addClass('active');
-  map.fitBounds(itaMindAndBody,{
+  $('.leaflet-itaMind').addClass('active');
+  map.fitBounds(itaMind,{
   	padding: [50,50]
   });
 });
@@ -529,7 +862,7 @@ $( "#mind-and-body" ).click(function() {
 // var itaMindAndBody = L.geoJson([itaMindAndBody], {
 
 // 	style: function (feature) {
-// 		return feature.properties && feature.properties.style;
+// 		return feature.properties;
 // 	},
 
 // 	onEachFeature: onEachFeature,
@@ -543,7 +876,7 @@ $( "#mind-and-body" ).click(function() {
 // L.geoJson([itaEat], {
 
 // 	style: function (feature) {
-// 		return feature.properties && feature.properties.style;
+// 		return feature.properties;
 // 	},
 
 // 	onEachFeature: onEachFeature,
@@ -556,7 +889,7 @@ $( "#mind-and-body" ).click(function() {
 // L.geoJson([campus], {
 
 // 	style: function (feature) {
-// 		return feature.properties && feature.properties.style;
+// 		return feature.properties;
 // 	},
 
 // 	onEachFeature: onEachFeature,

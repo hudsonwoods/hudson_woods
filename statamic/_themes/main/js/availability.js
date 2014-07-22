@@ -1,15 +1,4 @@
 
-var greenIcon = L.icon({
-    iconUrl: 'assets/img/icon.png',
-    imagePath: 'assets/img/icon.png',
-
-    iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
-    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
-});
-
-L.Icon.Default.imagePath = 'assets/img';
-
 var map = L.map('map', {
     center: [41.8872809, -74.3138479],
     zoom: 16,
@@ -17,17 +6,7 @@ var map = L.map('map', {
     zoomControl: false
 });
 
-// map.dragging.disable();
-// map.touchZoom.disable();
-// map.doubleClickZoom.disable();
-// map.scrollWheelZoom.disable();
-
-
 L.tileLayer('http://a.tiles.mapbox.com/v3/sandersonj.i245n6m6/{z}/{x}/{y}.png', {
-    maxZoom: 18,
-    // attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-    //  '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-    //  'Imagery © <a href="http://mapbox.com">Mapbox</a>',
     id: 'sandersonj.i245n6m6'
 }).addTo(map);
 
@@ -37,11 +16,39 @@ var mapLayerGroups = [];
 //draw GEOJSON - don't add the GEOJSON layer to the map here
 L.geoJson([available, unavailable], {onEachFeature: onEachFeature})//.addTo(map);
 
-/*
- *for all features create a layerGroup for each feature type and add the feature to the    layerGroup
-*/
+function style(feature) {
+    return {
+        weight: 2,
+        color: "#fff",
+        opacity: 1,
+        fillColor: "#bdd194",
+        fillOpacity: 0.8
+    };
+}
 
+function highlightFeature(e) {
+    var layer = e.target;
 
+    layer.setStyle({
+        weight: 2,
+        color: "#fff",
+        opacity: 1,
+        fillColor: "#79a33a",
+        fillOpacity: 0.8
+    });
+
+    if (!L.Browser.ie && !L.Browser.opera) {
+        layer.bringToFront();
+    }
+}
+
+L.Icon.Default.imagePath = 'assets/img';
+
+var geojson;
+
+function resetHighlight(e) {
+    geojson.resetStyle(e.target);
+}
 
 function onEachFeature(feature, layer) {
 
@@ -81,74 +88,43 @@ function onEachFeature(feature, layer) {
     
     "</div>";
 
-    if (feature.properties && feature.properties.popupContent) {
-        popupContent += feature.properties.foo;
-    }
 
     layer.bindPopup(popupContent,popupOptions);
+    layer.on({
+        mouseover: highlightFeature,
+        mouseout: resetHighlight,   
+    });
 }
 
-L.geoJson([available], {
-
-    style: function (feature) {
-        return feature.properties && feature.properties.style;
-    },
-
+geojson = L.geoJson(available, {
+    style: style,
     onEachFeature: onEachFeature,
-
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng);
     }
 }).addTo(map);
 
+
 L.geoJson([unavailable], {
-
     style: function (feature) {
-        return feature.properties.style;
-    },
-
-
+        return {
+            weight: 2,
+            color: "#fff",
+            opacity: 1,
+            fillColor: "#ddd8d6",
+            fillOpacity: 0.8
+        } 
+    }
 }).addTo(map);
 
-
-
-
-// var cloudmadeUrl = 'http://a.tiles.mapbox.com/v3/sandersonj.i245n6m6/{z}/{x}/{y}.png',
-//     cloudmade = new L.TileLayer(cloudmadeUrl, {maxZoom: 18}),
-//     map = new L.Map('map', {layers: [cloudmade], center: new L.LatLng(41.888197384322616, -74.31966662406921), zoom: 15 });
-
-
-
-var callLocatorLayer = L.geoJson(data,
-{
-
+var callLocatorLayer = L.geoJson(labels, {
     pointToLayer: function (feature, latlng)
     {
-         return L.marker(latlng).bindLabel( feature.properties.MAP_LABEL, { noHide: true });
+        return L.marker(latlng).bindLabel( feature.properties.MAP_LABEL, { noHide: true });
     }
-
 }).addTo(map);
 
-// var callLocatorLayer = L.geoJson(data,
-// {
-//     style: function (feature)
-//     {
 
-//         return {color: '#03f'};
-//     }
-//     ,
-//     pointToLayer: function (feature, latlng)
-//     {
-//          return L.marker(latlng).bindLabel( feature.properties.MAP_LABEL, { noHide: true });
-//     },
-//     onEachFeature: function (feature, layer) {
-//         var myLayer = layer;
-
-//         myLayer.bindPopup('<b>STATUS:</b>');
-
-//         return myLayer;
-//     }
-// }).addTo(map);
 
 
 

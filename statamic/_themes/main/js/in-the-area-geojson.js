@@ -1400,7 +1400,7 @@ var itaCulture = {
     ]
 };
 
-var itaPickAndGrow = {
+var itaPick = {
     "type": "FeatureCollection",
     "features": [
         {
@@ -1615,7 +1615,7 @@ var itaPickAndGrow = {
     ]
 };
 
-var itaMindAndBody = {
+var itaMind = {
     "type": "FeatureCollection",
     "features": [
         {
