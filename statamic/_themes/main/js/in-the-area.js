@@ -19,7 +19,6 @@ var popupOptions = {
   maxWidth: 400,
   keepInView: true,
   closeButton: false,
-  keepInView: true,
   autoPanPadding: [30, 30]
 };
 
@@ -29,12 +28,15 @@ var pane2 = map.createPane('itaEat ita');
 var pane3 = map.createPane('itaSip ita');
 var pane4 = map.createPane('itaSwing ita');
 var pane5 = map.createPane('itaSwim ita');
-var pane6 = map.createPane('itaTrails ita');
+var pane6 = map.createPane('itaTrail ita');
 var pane7 = map.createPane('itaSki ita');
 var pane8 = map.createPane('itaCulture ita');
 var pane9 = map.createPane('itaPick ita');
 var pane10 = map.createPane('itaMind ita');
 
+
+
+// Activate Each Set of Activities
 
 var graySleepIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/gray_sleep.png',
@@ -73,16 +75,18 @@ function onEachFeatureSleep(feature, layer) {
   "<a target=_blank href=" + feature.properties.website + ">" + feature.properties.website + "</a>" +
   "</div>";
 
+  if (feature.properties && feature.properties.popupContent) {
+    popupContent += feature.properties.foo;
+  }
+
   layer.bindPopup(popupContent,popupOptions);
-  layer.setIcon(graySleepIcon);
+  // layer.setIcon(graySleepIcon);
   layer.on({
     mouseover: highlightFeatureSleep,
     mouseout: resetHighlightSleep,   
     // click: highlightFeatureSleep
   });
-  map.on({click: resetHighlightSleep});
-
-
+  // map.on({click: resetHighlightSleep});
 }
 
 var itaSleep = L.geoJson([itaSleep], {
@@ -93,7 +97,7 @@ var itaSleep = L.geoJson([itaSleep], {
 
   
   pointToLayer: function (feature, latlng) {
-    return L.marker(latlng, {pane: 'itaSleep ita'});
+    return L.marker(latlng, {pane: 'itaSleep ita', icon: graySleepIcon});
 
   },
   onEachFeature: onEachFeatureSleep
@@ -145,15 +149,13 @@ function onEachFeatureCulture(feature, layer) {
   "</div>";
 
   layer.bindPopup(popupContent,popupOptions);
-  layer.setIcon(grayCultureIcon);
+  // layer.setIcon(grayCultureIcon);
   layer.on({
     mouseover: highlightFeatureCulture,
     mouseout: resetHighlightCulture,   
     // click: highlightFeatureCulture
   });
-  map.on({click: resetHighlightCulture});
-
-
+  // map.on({click: resetHighlightCulture});
 }
 
 var itaCulture = L.geoJson([itaCulture], {
@@ -164,7 +166,7 @@ var itaCulture = L.geoJson([itaCulture], {
 
   
   pointToLayer: function (feature, latlng) {
-    return L.marker(latlng, {pane: 'itaCulture ita'});
+    return L.marker(latlng, {pane: 'itaCulture ita', icon: grayCultureIcon});
 
   },
   onEachFeature: onEachFeatureCulture
@@ -216,15 +218,13 @@ function onEachFeatureEat(feature, layer) {
   "</div>";
 
   layer.bindPopup(popupContent,popupOptions);
-  layer.setIcon(grayEatIcon);
+  // layer.setIcon(grayEatIcon);
   layer.on({
     mouseover: highlightFeatureEat,
     mouseout: resetHighlightEat,   
     // click: highlightFeatureEat
   });
-  map.on({click: resetHighlightEat});
-
-
+  // map.on({click: resetHighlightEat});
 }
 
 var itaEat = L.geoJson([itaEat], {
@@ -235,7 +235,7 @@ var itaEat = L.geoJson([itaEat], {
 
   
   pointToLayer: function (feature, latlng) {
-    return L.marker(latlng, {pane: 'itaEat ita'});
+    return L.marker(latlng, {pane: 'itaEat ita', icon: grayEatIcon});
 
   },
   onEachFeature: onEachFeatureEat
@@ -289,15 +289,13 @@ function onEachFeatureMind(feature, layer) {
   "</div>";
 
   layer.bindPopup(popupContent,popupOptions);
-  layer.setIcon(grayMindIcon);
+  // layer.setIcon(grayMindIcon);
   layer.on({
     mouseover: highlightFeatureMind,
     mouseout: resetHighlightMind,   
     // click: highlightFeatureMind
   });
-  map.on({click: resetHighlightMind});
-
-
+  // map.on({click: resetHighlightMind});
 }
 
 var itaMind = L.geoJson([itaMind], {
@@ -308,7 +306,7 @@ var itaMind = L.geoJson([itaMind], {
 
   
   pointToLayer: function (feature, latlng) {
-    return L.marker(latlng, {pane: 'itaMind ita'});
+    return L.marker(latlng, {pane: 'itaMind ita', icon: grayMindIcon});
 
   },
   onEachFeature: onEachFeatureMind
@@ -359,15 +357,13 @@ function onEachFeaturePick(feature, layer) {
   "</div>";
 
   layer.bindPopup(popupContent,popupOptions);
-  layer.setIcon(grayPickIcon);
+  // layer.setIcon(grayPickIcon);
   layer.on({
     mouseover: highlightFeaturePick,
     mouseout: resetHighlightPick,   
     // click: highlightFeaturePick
   });
-  map.on({click: resetHighlightPick});
-
-
+  // map.on({click: resetHighlightPick});
 }
 
 var itaPick = L.geoJson([itaPick], {
@@ -378,7 +374,7 @@ var itaPick = L.geoJson([itaPick], {
 
   
   pointToLayer: function (feature, latlng) {
-    return L.marker(latlng, {pane: 'itaPick ita'});
+    return L.marker(latlng, {pane: 'itaPick ita', icon: grayPickIcon});
 
   },
   onEachFeature: onEachFeaturePick
@@ -429,15 +425,13 @@ function onEachFeatureSip(feature, layer) {
   "</div>";
 
   layer.bindPopup(popupContent,popupOptions);
-  layer.setIcon(graySipIcon);
+  // layer.setIcon(graySipIcon);
   layer.on({
     mouseover: highlightFeatureSip,
     mouseout: resetHighlightSip,   
     // click: highlightFeatureSip
   });
-  map.on({click: resetHighlightSip});
-
-
+  // map.on({click: resetHighlightSip});
 }
 
 var itaSip = L.geoJson([itaSip], {
@@ -448,7 +442,7 @@ var itaSip = L.geoJson([itaSip], {
 
   
   pointToLayer: function (feature, latlng) {
-    return L.marker(latlng, {pane: 'itaSip ita'});
+    return L.marker(latlng, {pane: 'itaSip ita', icon: graySipIcon});
 
   },
   onEachFeature: onEachFeatureSip
@@ -501,15 +495,13 @@ function onEachFeatureSki(feature, layer) {
   "</div>";
 
   layer.bindPopup(popupContent,popupOptions);
-  layer.setIcon(graySkiIcon);
+  // layer.setIcon(graySkiIcon);
   layer.on({
     mouseover: highlightFeatureSki,
     mouseout: resetHighlightSki,   
     // click: highlightFeatureSki
   });
-  map.on({click: resetHighlightSki});
-
-
+  // map.on({click: resetHighlightSki});
 }
 
 var itaSki = L.geoJson([itaSki], {
@@ -520,7 +512,7 @@ var itaSki = L.geoJson([itaSki], {
 
   
   pointToLayer: function (feature, latlng) {
-    return L.marker(latlng, {pane: 'itaSki ita'});
+    return L.marker(latlng, {pane: 'itaSki ita', icon: graySkiIcon});
 
   },
   onEachFeature: onEachFeatureSki
@@ -570,15 +562,13 @@ function onEachFeatureSwim(feature, layer) {
   "</div>";
 
   layer.bindPopup(popupContent,popupOptions);
-  layer.setIcon(graySwimIcon);
+  // layer.setIcon(graySwimIcon);
   layer.on({
     mouseover: highlightFeatureSwim,
     mouseout: resetHighlightSwim,   
     // click: highlightFeatureSwim
   });
-  map.on({click: resetHighlightSwim});
-
-
+  // map.on({click: resetHighlightSwim});
 }
 
 var itaSwim = L.geoJson([itaSwim], {
@@ -589,7 +579,7 @@ var itaSwim = L.geoJson([itaSwim], {
 
   
   pointToLayer: function (feature, latlng) {
-    return L.marker(latlng, {pane: 'itaSwim ita'});
+    return L.marker(latlng, {pane: 'itaSwim ita', icon: graySwimIcon});
 
   },
   onEachFeature: onEachFeatureSwim
@@ -639,15 +629,13 @@ function onEachFeatureSwing(feature, layer) {
   "</div>";
 
   layer.bindPopup(popupContent,popupOptions);
-  layer.setIcon(graySwingIcon);
+  // layer.setIcon(graySwingIcon);
   layer.on({
     mouseover: highlightFeatureSwing,
     mouseout: resetHighlightSwing,   
     // click: highlightFeatureSwing
   });
-  map.on({click: resetHighlightSwing});
-
-
+  // map.on({click: resetHighlightSwing});
 }
 
 var itaSwing = L.geoJson([itaSwing], {
@@ -658,7 +646,7 @@ var itaSwing = L.geoJson([itaSwing], {
 
   
   pointToLayer: function (feature, latlng) {
-    return L.marker(latlng, {pane: 'itaSwing ita'});
+    return L.marker(latlng, {pane: 'itaSwing ita', icon: graySwingIcon});
 
   },
   onEachFeature: onEachFeatureSwing
@@ -672,28 +660,28 @@ itaSwing.addTo(map);
 
 
 
-var grayTrailsIcon = L.icon({
+var grayTrailIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/gray_trail.png',
     iconSize:     [28, 40], // size of the icon
     iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
-var colorTrailsIcon = L.icon({
+var colorTrailIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/color_trail.png',
     iconSize:     [28, 40], // size of the icon
     iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
-function highlightFeatureTrails(e) {
+function highlightFeatureTrail(e) {
     var layer = e.target;
-    layer.setIcon(colorTrailsIcon);
+    layer.setIcon(colorTrailIcon);
 }
 
 function resetHighlightTrail(e) {
   var layer = e.target;
-    layer.setIcon(grayTrailsIcon);
+    layer.setIcon(grayTrailIcon);
 }
 
 function onEachFeatureTrail(feature, layer) {
@@ -709,18 +697,16 @@ function onEachFeatureTrail(feature, layer) {
   "</div>";
 
   layer.bindPopup(popupContent,popupOptions);
-  layer.setIcon(grayTrailsIcon);
+  // layer.setIcon(grayTrailsIcon);
   layer.on({
-    mouseover: highlightFeatureTrails,
+    mouseover: highlightFeatureTrail,
     mouseout: resetHighlightTrail,   
     // click: highlightFeatureTrails
   });
-  map.on({click: resetHighlightTrail});
-
-
+  // map.on({click: resetHighlightTrail});
 }
 
-var itaTrails = L.geoJson([itaTrails], {
+var itaTrail = L.geoJson([itaTrail], {
 
   style: function (feature) {
     return feature.properties;
@@ -728,14 +714,14 @@ var itaTrails = L.geoJson([itaTrails], {
 
   
   pointToLayer: function (feature, latlng) {
-    return L.marker(latlng, {pane: 'itaTrails ita'});
+    return L.marker(latlng, {pane: 'itaTrail ita', icon: grayTrailIcon});
 
   },
   onEachFeature: onEachFeatureTrail
 
 });
-var TrailsBounds = itaTrails.getBounds();
-itaTrails.addTo(map);
+var TrailBounds = itaTrail.getBounds();
+itaTrail.addTo(map);
 
 
 
@@ -818,8 +804,8 @@ $( "#pick-and-grow" ).click(function() {
 });
 
 $( "#trails" ).click(function() {
-  $('.leaflet-itaTrails').addClass('active');
-  map.fitBounds(itaTrails,{
+  $('.leaflet-itaTrail').addClass('active');
+  map.fitBounds(itaTrail,{
   	padding: [50,50]
   });
 });
@@ -830,117 +816,6 @@ $( "#mind-and-body" ).click(function() {
   	padding: [50,50]
   });
 });
-
-
-// function hide() {
-//     map.getPane('itaMindAndBody').style.display = 'none';
-// }
-// function show() {
-//     map.getPane('itaMindAndBody').style.display = '';
-// }
-
-// L.DomUtil.get('hidem').onclick = hide;
-// L.DomUtil.get('showem').onclick = show;
-
-// function itaMindAndBodyPopulate() {
-// 	itaMindAndBody.addLayer(new L.Marker(), {pane: 'markers1'});
-// 	return false;
-// }
-
-// itaMindAndBodyPopulate();
-
-// var basemap = map.createPane('basemap'),
-//   country = L.geoJson(itaEat, {
-//       style: {
-//           pane: basemap,
-//       },
-//       icon: mindIcon
-//   }).addTo(map);
-
-
-
-// var itaMindAndBody = L.geoJson([itaMindAndBody], {
-
-// 	style: function (feature) {
-// 		return feature.properties;
-// 	},
-
-// 	onEachFeature: onEachFeature,
-
-// 	pointToLayer: function (feature, latlng) {
-// 		return L.marker(latlng, {icon: mindIcon});
-// 	}
-// }).addTo(map);
-
-
-// L.geoJson([itaEat], {
-
-// 	style: function (feature) {
-// 		return feature.properties;
-// 	},
-
-// 	onEachFeature: onEachFeature,
-
-// 	pointToLayer: function (feature, latlng) {
-// 		return L.marker(latlng, {icon: greenIcon});
-// 	}
-// }).addTo(map);
-
-// L.geoJson([campus], {
-
-// 	style: function (feature) {
-// 		return feature.properties;
-// 	},
-
-// 	onEachFeature: onEachFeature,
-
-// 	pointToLayer: function (feature, latlng) {
-// 		return L.marker(latlng);
-// 	}
-// }).addTo(map);
-
-
-// //array to store layers for each feature type
-// var mapLayerGroups = [];
-
-// //draw GEOJSON - don't add the GEOJSON layer to the map here
-// L.geoJson(itaSleep, {onEachFeature: onEachFeature})//.addTo(map);
-
-// /*
-//  *for all features create a layerGroup for each feature type and add the feature to the    layerGroup
-// */
-// function onEachFeature(feature, featureLayer) {
-
-//     //does layerGroup already exist? if not create it and add to map
-//     var lg = mapLayerGroups[feature.properties.type];
-
-//     if (lg === undefined) {
-//         lg = new L.layerGroup();
-//         //add the layer to the map
-//         lg.addTo(map);
-//         //store layer
-//         mapLayerGroups[feature.properties.type] = lg;
-//     }
-
-//     //add the feature to the layer
-//     lg.addLayer(featureLayer);    
-
-// }
-
-// //Show layerGroup with feature of "type1"
-// showLayer("Feature");
-
-// /*
-// * show/hide layerGroup   
-// */
-// function showLayer(id) {
-//     var lg = mapLayerGroups[id];
-//     map.addLayer(lg);   
-// }
-// function hideLayer(id) {
-//     var lg = mapLayerGroups[id];
-//     map.removeLayer(lg);   
-// }
 
 
 

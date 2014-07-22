@@ -996,7 +996,7 @@ var itaSwim = {
 
 
 
-var itaTrails = {
+var itaTrail = {
     "type": "FeatureCollection",
     "features": [
         {
