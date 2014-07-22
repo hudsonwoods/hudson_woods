@@ -450,3 +450,8 @@ $('.upgrades-scroll').click(function () {
         scrollTop: $("#upgrades-anchor").offset().top
     }, 800);
 });
+
+$('#upgrades').css({'min-height':(($(window).height())-256)+'px'});
+
+
+
