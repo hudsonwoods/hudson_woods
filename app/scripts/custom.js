@@ -449,6 +449,13 @@ $('#upgrades-nav li a').click(function (e) {
   $(this).tab('show')
 })
 
+// Activate Availability Lot Tabs
+$('#lot-availability-tab li a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+$('#lot-availability-content-mobile .tab-pane:first').addClass('in active');
 
 // Initialize fitvids (100% width video embeds) on Journal
 $(document).ready(function(){
@@ -481,4 +488,7 @@ feed.run();
 });
 
 
-
+$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})

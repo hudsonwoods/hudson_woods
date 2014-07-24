@@ -20,4 +20,10 @@
       background-color: darken($inactive-gray, 3%);
       color: white;
     }
+    &.button-overlay {
+      &:focus {
+        color: white;
+        outline: none;
+      }
+    }
   }

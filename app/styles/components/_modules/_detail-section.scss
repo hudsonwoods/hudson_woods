@@ -1,10 +1,41 @@
 
 .details {
-	padding-top: 100px;
+	padding-top: 80px;
 	padding-bottom: 50px;
+	.title-spec {
+		display: none;
+	}
+	.title-image {
+		display: block;
+		text-align: center;
+	}
+	.back-link {
+		display: none;
+	}
+	.overlay-container {
+		display: none;
+	}
+	.floorplans {
+		display: block;
+	}
 	@include breakpoint(medium) {
 		padding-bottom: 100px;
 		padding-top: 160px;
+		.title-spec {
+			display: block;
+		}
+		.title-image {
+			display: none;
+		}
+		.back-link {
+			display: block;
+		}
+		.floorplans {
+			display: none;
+		}
+		.overlay-container {
+			display: block;
+		}
 	}
 	.col-md-5 {
 		// padding-left: 0;
@@ -17,8 +48,11 @@
 }
 
 .specs {
-	border-top: 2px solid $dark-gray;
-	border-bottom: 2px solid $dark-gray;
+	border-top: none;
+	@include breakpoint(medium) {
+		border-top: 2px solid $dark-gray;
+		border-bottom: 2px solid $dark-gray;
+	}
 	padding: 20px 0;
 	h3,h3,h4,p,span {
 		color: $inactive-gray;
@@ -64,3 +98,39 @@
 		}
 	}
 }
+
+.overlay {
+	.modal {
+		background-color: rgba(black,.6);
+	}
+	.modal-header {
+		border-bottom: none;
+		span, .close {
+			font-size: 24px;
+			color: white;
+			opacity: 1;
+		}
+	}
+	.modal-content {
+		background-color: transparent;
+		border: none;
+		box-shadow: none;
+	}
+	.modal-footer {
+		border-top: none;
+		padding-top: 0;
+		p {
+			color: white;
+			text-align: left;
+			font-size: 14px;
+			line-height: 130%;
+			font-weight: 300;
+		}
+	}
+}
+
+
+
+
+
+
