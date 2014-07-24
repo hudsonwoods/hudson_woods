@@ -100,13 +100,24 @@ nav {
 	background-color: transparent;
 }
 
-#secondary-nav {
+.sticky-wrapper {
 	display: none;
-	height: 0;
-	@include breakpoint(medium) {
+	@include breakpoint(small) {
 		display: block;
-		height: 44px;
 	}
+}
+
+#secondary-nav {
+	background-color: $dark-gray;
+	&.stuck {
+		top: 50px;
+	}
+	@include breakpoint(medium) {
+		&.stuck {
+			top: 80px;
+		}
+	}
+
 	text-align: left;
 	ul {
 		width: 100%;
@@ -266,10 +277,7 @@ nav {
 		}
 	}
 
-	background-color: $dark-gray;
-	&.stuck {
-		top: 80px;
-	}
+
 	#upgrades-nav a {
 		// pointer-events:none;
 	}
@@ -286,6 +294,9 @@ nav {
 	top: -184px;
 	&.hero-anchor {
 		top: -124px;
+	}
+	&.large {
+		top: -224px;
 	}
 	visibility: hidden !important;
 	&.availability,&.in-the-area {

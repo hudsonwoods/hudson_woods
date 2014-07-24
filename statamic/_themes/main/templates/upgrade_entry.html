@@ -11,22 +11,8 @@
 	
 		<div class="details-entry">
 			<div class="row">
-				
-				<div class="col-md-6">
-				{{ if imageSingle|not_empty }}
-				<img src="{{ imageSingle }}" alt="">
-				{{ endif }}
-					
-				{{ if imageGallery|not_empty }}
-				<div class="sp-wrap">
-					{{ imageGallery }}
-						<a href="{{ image }}"><img src="{{ image }}" alt=""></a>
-					{{ /imageGallery }}
-				</div>
-				{{ endif }}
-				</div>
-	
-				<div class="col-md-5 col-md-offset-1">
+
+				<div class="col-md-5 col-md-offset-1 col-md-push-6">
 					
 					<div class="specs">
 						<h2>{{ title }}</h2>
@@ -49,6 +35,21 @@
 					<a class="button" target=_blank href="{{ specDownload }}" class="download-spec"><i class="fa fa-arrow-down"></i>Download Specs</a>
 					
 				</div>
+
+				<div class="col-md-6 col-md-pull-6">
+				{{ if imageSingle|not_empty }}
+				<img src="{{ imageSingle }}" alt="">
+				{{ endif }}
+					
+				{{ if imageGallery|not_empty }}
+				<div class="sp-wrap">
+					{{ imageGallery }}
+						<a href="{{ image }}"><img src="{{ image }}" alt=""></a>
+					{{ /imageGallery }}
+				</div>
+				{{ endif }}
+				</div>
+	
 			</div>
 		</div>
 	</div>

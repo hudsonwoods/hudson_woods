@@ -7689,19 +7689,19 @@ $(window).scroll(function() {
 // } )( jQuery );
 
 
-$('.sticky-wrapper').waypoint(function() {
+$('.sticky-wrapper-primary').waypoint(function() {
   $(this).find('.navbar').toggleClass('stuck');
 }, { offset: -82 });
 
-$('.sticky-wrapper-secondary').waypoint(function() {
-  $(this).find('#secondary-nav').toggleClass('stuck');
-}, { offset: 82 });
+// $('.sticky-wrapper-secondary').waypoint(function() {
+//   $(this).find('#secondary-nav').toggleClass('stuck');
+// }, { offset: 82 });
 
-// $(document).ready(function() {
-//     $('#secondary-nav').waypoint('sticky', {
-//     offset: 82 // Apply "stuck" when element 30px from top
-//   });
-// });
+$(document).ready(function() {
+    $('#secondary-nav').waypoint('sticky', {
+    offset: 82 // Apply "stuck" when element 30px from top
+  });
+});
 
 
 
@@ -7860,7 +7860,7 @@ $('.sticky-wrapper-secondary').waypoint(function() {
 }(jQuery);
 
 
-$('body').scrollspy({ target: '#secondary-nav-list'});
+$('body').scrollspy({ target: '#secondary-nav-list', offset:0});
 
 // Upgrades content filtering
 

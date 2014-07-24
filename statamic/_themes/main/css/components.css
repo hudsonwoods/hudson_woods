@@ -8230,10 +8230,15 @@ img {
 }
 
 .details {
-  padding-top: 160px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  /* Portrait tablet to landscape and desktop */
 }
-.details .col-md-5 {
-  padding-left: 0;
+@media (min-width: 992px) {
+  .details {
+    padding-bottom: 100px;
+    padding-top: 160px;
+  }
 }
 .details .col-md-5 i {
   margin-right: 10px;
@@ -8440,17 +8445,27 @@ nav.navbar .navbar-brand {
   background-color: transparent;
 }
 
-#secondary-nav {
+.sticky-wrapper {
   display: none;
-  height: 0;
+  /* Landscape phone to portrait tablet */
+}
+@media (min-width: 767px) {
+  .sticky-wrapper {
+    display: block;
+  }
+}
+
+#secondary-nav {
+  background-color: #4e4f54;
   /* Portrait tablet to landscape and desktop */
   text-align: left;
-  background-color: #4e4f54;
+}
+#secondary-nav.stuck {
+  top: 50px;
 }
 @media (min-width: 992px) {
-  #secondary-nav {
-    display: block;
-    height: 44px;
+  #secondary-nav.stuck {
+    top: 80px;
   }
 }
 #secondary-nav ul {
@@ -8577,9 +8592,6 @@ nav.navbar .navbar-brand {
 #secondary-nav ul#about li:first-of-type {
   display: none;
 }
-#secondary-nav.stuck {
-  top: 80px;
-}
 
 .anchor {
   display: block !important;
@@ -8593,6 +8605,9 @@ nav.navbar .navbar-brand {
 .anchor.hero-anchor {
   top: -124px;
 }
+.anchor.large {
+  top: -224px;
+}
 .anchor.availability, .anchor.in-the-area {
   top: -124px;
 }
@@ -8600,7 +8615,7 @@ nav.navbar .navbar-brand {
 #footer {
   background-color: #c9be69;
   text-align: center;
-  padding: 20px 0;
+  padding: 15px 0;
   /* Landscape phone to portrait tablet */
 }
 #footer a {
@@ -9389,16 +9404,16 @@ p {
 }
 
 #materials .col-sm-12 {
-  margin-top: -20px;
+  margin-bottom: -20px;
 }
 #materials .large-wrapper {
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 #materials .small-wrapper {
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 #materials h4 {
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 #materials .circle-tile {
   margin-left: 15px;
@@ -9439,13 +9454,23 @@ p {
   color: white;
 }
 #materials .large {
-  width: 158px;
+  width: 128px;
+  /* Landscape phone to portrait tablet */
   /* Portrait tablet to landscape and desktop */
   /* Large desktop */
 }
 #materials .large .circle-tile {
-  width: 158px;
-  height: 158px;
+  width: 128px;
+  height: 128px;
+}
+@media (min-width: 767px) {
+  #materials .large {
+    width: 158px;
+  }
+  #materials .large .circle-tile {
+    width: 158px;
+    height: 158px;
+  }
 }
 @media (min-width: 992px) {
   #materials .large {
@@ -9576,7 +9601,13 @@ p {
 .sp-thumbs a {
   padding-left: 5px;
   padding-right: 5px;
-  max-width: 10%;
+  max-width: 20%;
+  /* Landscape phone to portrait tablet */
+}
+@media (min-width: 767px) {
+  .sp-thumbs a {
+    max-width: 10%;
+  }
 }
 .sp-thumbs a:first-child {
   padding-left: 0;
@@ -9584,7 +9615,6 @@ p {
 .sp-thumbs img {
   height: auto;
   width: 100%;
-  margin-bottom: 20px;
 }
 
 .sp-large a {

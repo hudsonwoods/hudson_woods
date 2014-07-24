@@ -64,16 +64,16 @@
 
 #materials {
 	.col-sm-12 {
-		margin-top: -20px;
+		margin-bottom: -20px;
 	}
 	.large-wrapper {
-		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 	.small-wrapper {
-		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 	h4 {
-		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 	.circle-tile {
 		margin-left: 15px;
@@ -109,10 +109,17 @@
 	}
 
 	.large {
-		width: 158px;
+		width: 128px;
 		.circle-tile {
+			width: 128px;
+			height: 128px;
+		}
+		@include breakpoint(small) {
 			width: 158px;
-			height: 158px;
+			.circle-tile {
+				width: 158px;
+				height: 158px;
+			}
 		}
 		@include breakpoint(medium) {
 			width: 128px;
@@ -158,15 +165,11 @@
 		background-image: url("../img/black-cedar.jpg");
 		background-position: center center;
 		background-size: cover;
-		// height: 100%;
-		// width: 100%;
 	}
 	.natural-cedar {
 		background-image: url("../img/natural-cedar.jpg");
 		background-position: center center;
 		background-size: cover;
-		// height: 100%;
-		// width: 100%;
 	}
 	.opaque-white {
 		background-color: #dedfdf;
@@ -252,7 +255,10 @@
 		a {
 			padding-left: 5px;
 			padding-right: 5px;
-			max-width: 10%;
+			max-width: 20%;
+			@include breakpoint(small) {
+				max-width: 10%;
+			}
 			&:first-child {
 				padding-left: 0;
 			}
@@ -260,7 +266,6 @@
 		img {
 			height: auto;
 			width: 100%;
-			margin-bottom: 20px;
 		}
 }
 
