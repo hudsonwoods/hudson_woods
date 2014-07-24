@@ -38,6 +38,7 @@ fields:
         display: Images
         destination: assets/img/homes
         show_thumbnail: true
+
   specs:
     display: Specs
     type: grid

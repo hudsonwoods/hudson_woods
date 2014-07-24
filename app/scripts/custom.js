@@ -178,11 +178,15 @@ $('.sticky-wrapper').waypoint(function() {
   $(this).find('.navbar').toggleClass('stuck');
 }, { offset: -82 });
 
-$(document).ready(function() {
-    $('#secondary-nav').waypoint('sticky', {
-    offset: 82 // Apply "stuck" when element 30px from top
-  });
-});
+$('.sticky-wrapper-secondary').waypoint(function() {
+  $(this).find('#secondary-nav').toggleClass('stuck');
+}, { offset: 82 });
+
+// $(document).ready(function() {
+//     $('#secondary-nav').waypoint('sticky', {
+//     offset: 82 // Apply "stuck" when element 30px from top
+//   });
+// });
 
 
 
@@ -341,7 +345,7 @@ $(document).ready(function() {
 }(jQuery);
 
 
-$('body').scrollspy({ target: '#secondary-nav-list', offset: 125 })
+$('body').scrollspy({ target: '#secondary-nav-list'});
 
 // Upgrades content filtering
 
@@ -421,13 +425,22 @@ $('.magnific-popup').magnificPopup({
 
 // Slick Carousel Initializer 
 
-$('.slick-carousel').slick({
+$('.slick-carousel-upgrades').slick({
   dots: false,
   arrows: false,
   infinite: true,
   speed: 1500,
   fade: true,
   autoplay: true
+});
+
+$('.slick-carousel-landing').slick({
+  dots: true,
+  arrows: false,
+  infinite: true,
+  speed: 1500,
+  fade: true,
+  autoplay: false
 });
 
 // Activate Upgrades Bootstrap Tabs

@@ -47,13 +47,16 @@
 // @import "_modules/_did-you-know";
 // @import "_modules/_toc";
 // @import "_modules/_next-lessons";
+@import "_modules/_detail-section";
+@import "_modules/_hero-section";
 @import "_modules/_nav";
 @import "_modules/_footer";
 
 // Components
 // @import "_components/_grid";
-// @import "_components/_typography";
+@import "_components/_typography";
 @import "_components/_button";
+@import "_components/_section";
 // @import "_components/_list";
 // @import "_components/_link";
 // @import "_components/_table";
@@ -63,6 +66,8 @@
 // @import "_components/_articles-list";
 // @import "_components/_guides-list";
 // @import "_components/_icon-circle";
+@import "_components/_map";
+@import "_components/_cards";
 @import "_components/_tiles";
 
 // Themed styles

@@ -21,11 +21,24 @@ fields:
   content:
     type: redactor
     display: Description
-  image:
+
+  imageSingle:
     type: file
-    display: Map Image
-    destination: assets/img/availability
+    display: Single Image
+    destination: assets/img/homes
     show_thumbnail: true
+
+  imageGallery:
+    display: Image Gallery
+    type: grid
+    starting_rows: 1
+    min_rows: 1
+    fields:
+      image:
+        type: file
+        display: Images
+        destination: assets/img/homes
+        show_thumbnail: true
   floorplans:
     type: file
     display: Floor Plans

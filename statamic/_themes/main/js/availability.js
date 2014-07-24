@@ -65,7 +65,7 @@ function onEachFeature(feature, layer) {
 
     var popupContent = 
     
-    "<div class='tile availability" + "'" + ">" + 
+    "<div class='card availability" + "'" + ">" + 
         "<h2>" + feature.properties.activityTitle + "</h2>" +
         // "<img src=" + feature.properties.image +  ">" + 
         "<div class='col-md-4" + "'" + ">" +

@@ -2,7 +2,6 @@
 	background-color: $yellow;
 	text-align: center;
 	padding: 20px 0;
-	// margin-top: 60px;
 	a {
 		font-size: 14px;
 		font-weight: 300;
@@ -35,7 +34,6 @@
 		}
 	}
 	.legal-text {
-		// @include span(6);
 		p,a {
 			margin-top: 15px;
 			margin-bottom: 0;
@@ -50,9 +48,8 @@
 		}
 	}
 	.social {
-		// @include span(last 6);
+		
 		a {
-			// padding-right: .2rem;
 			text-align: center;
 			height: 30px;
 			width: 30px;
@@ -65,6 +62,9 @@
 		    margin: 0 10px;
 		    vertical-align: middle;
 		    .fa-lg {
+		    	line-height: 2;
+		    }
+		    @include breakpoint(small) {
 		    	line-height: 1.1;
 		    }
 			&:hover, &:active {

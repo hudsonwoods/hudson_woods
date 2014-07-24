@@ -1077,7 +1077,7 @@ var available = {
             "MAP_LABEL": "three",
             "activityTitle": "Lot 14",
             "image": "assets/img/availability/LOT14.png",
-            "lotAvailability": "Aavailable",
+            "lotAvailability": "In Contract",
             "lotSize": "7.95 Acres",
             "cost": "$715,000",
             "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-14"

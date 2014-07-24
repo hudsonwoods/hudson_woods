@@ -1,0 +1,177 @@
+
+.card {
+	h2 {
+		margin: 20px 0 10px;
+	}
+	padding: 10px 20px 20px;
+	background-color: #fff;
+	h2 {
+		font-size: 34px;
+		padding-top: 20px;
+		font-weight: 300;
+	}
+	img {
+		margin-bottom: 10px;
+	}
+	&.availability {
+		border-top: 8px solid $dark-gray;
+		.info {
+			padding: 40px 0;
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+		h2 {
+			padding-top: 0;
+		}
+		.leaflet-popup .col-md-4 {
+			padding-left: 0;
+		}
+		.info-links {
+			display: block;
+		}
+		.link {
+			width: 49%;
+			display: inline-block;
+			padding-bottom: 10px;
+			&:last-of-type {
+				margin-right: 0;
+			}
+			i {
+				margin-right: 10px;
+			}
+			a {
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+.card.area {
+	h4 img {
+		min-width: 0;
+		margin-right: 10px;
+	}
+	h4 {
+		text-transform: uppercase;
+		.sleep:before {
+			content: url("../../../assets/img/in-the-area/icons/card-icon-sleep.png");
+			margin-right: 10px;
+		}
+		.eat:before {
+			content: url("../../../assets/img/in-the-area/icons/card-icon-eat.png");
+			margin-right: 10px;
+		}
+		.sip:before {
+			content: url("../../../assets/img/in-the-area/icons/card-icon-sip.png");
+			margin-right: 10px;
+		}
+		.culture:before {
+			content: url("../../../assets/img/in-the-area/icons/card-icon-culture.png");
+			margin-right: 10px;
+		}
+		.swing:before {
+			content: url("../../../assets/img/in-the-area/icons/card-icon-swing.png");
+			margin-right: 10px;
+		}
+		.mind-and-body:before {
+			content: url("../../../assets/img/in-the-area/icons/card-icon-mind-body.png");
+			margin-right: 10px;
+		}
+		.swim:before {
+			content: url("../../../assets/img/in-the-area/icons/card-icon-swim.png");
+			margin-right: 10px;
+		}
+		.swim:before {
+			content: url("../../../assets/img/in-the-area/icons/card-icon-swim.png");
+			margin-right: 10px;
+		}
+		.trails:before {
+			content: url("../../../assets/img/in-the-area/icons/card-icon-trail.png");
+			margin-right: 10px;
+		}
+		.ski:before {
+			content: url("../../../assets/img/in-the-area/icons/card-icon-ski.png");
+			margin-right: 10px;
+		}
+		.pick-and-grow:before {
+			content: url("../../../assets/img/in-the-area/icons/card-icon-pick-grow.png");
+			margin-right: 10px;
+		}
+	}
+	img {
+		min-width: 100%;
+	}
+	&.sleep {
+		border-top: 8px solid $sleep;
+	}
+	&.eat {
+		border-top: 8px solid $eat;
+	}
+	&.sip {
+		border-top: 8px solid $sip;
+	}
+	&.culture {
+		border-top: 8px solid $culture;
+	}
+	&.swing {
+		border-top: 8px solid $swing;
+	}
+	&.mind-and-body {
+		border-top: 8px solid $mind-and-body;
+	}
+	&.swim {
+		border-top: 8px solid $swim;
+	}
+	&.trails {
+		border-top: 8px solid $trails;
+	}
+	&.ski {
+		border-top: 8px solid $ski;
+	}
+	&.pick-and-grow {
+		border-top: 8px solid $pick-and-grow;
+	}
+}
+
+.leaflet-popup-content-wrapper {
+	padding: 0;
+	text-align: left;
+	border-radius: 0px;
+}
+
+.leaflet-popup,.leaflet-popup-pane {
+	z-index: 9999;
+}
+
+.leaflet-popup-content {
+	margin: 0;
+	line-height: 1.4;
+	width: 390px !important;
+}
+
+.leaflet-container a {
+	color: $base-font-color;
+	&:hover {
+		color: darken($base-font-color,10%);
+	}
+}
+
+.leaflet-container .leaflet-control-attribution, .leaflet-container .leaflet-control-scale {}
+
+.leaflet-label {
+	border: none;
+	background-color:transparent;
+	color: lighten(black,30%);
+	text-shadow: 1px 1px 0px rgba(255,255,255,.8);
+	font-weight: 500;
+	&:before {
+		border: none;
+	}
+}
+
+.leaflet-popup-pane {
+	position: absolute;
+	top: 0;
+	left: 0;
+}

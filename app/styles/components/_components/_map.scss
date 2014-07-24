@@ -1,0 +1,29 @@
+#map { 
+	height: 800px; 
+	.availability {
+		img {
+			display: block;
+			margin-bottom: 30px;
+		}
+		.col-md-4 {
+			padding-left: 0;
+			padding-bottom: 10px;
+		 	p:first-child {
+		 		margin-bottom: -10px;
+		 	}
+		 	p:last-child {
+		 		margin-top: 10px;
+		 	}
+		}
+		.fa {
+			margin-right: 10px;
+			font-weight: 600;
+			font-size: 14px;
+		}
+		a {
+			padding-bottom: 10px;
+			font-weight: 600;
+			
+		}
+	}
+}

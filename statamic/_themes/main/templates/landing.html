@@ -1,55 +1,60 @@
-<section id="header-landing">
+
+<section id="header-landing" class="hero-header">
   {{ theme:partial src="nav" }}
 
-  <div class="slick-carousel" >
+  <div class="slick-carousel-landing" >
     {{ heroImages }}
 
     <div class="hero landing" style="background-image: url( {{ image }} );">
       <div class="container scrollme landing">
-<div class="row">
-  <div class="animateme col-md-6" data-when="exit" data-from="0" data-to="0.55" data-opacity="0" data-translatey="100" style="opacity: 1; -webkit-transform: translate3d(0px, 100px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);">
-    <a href="{{ link }}">
-      <h1>{{ headline }}</h1>
-      {{ if subHeadline|not_empty }}
-      <h3>{{ subHeadline }}
-        <span class="fa-stack">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-chevron-right fa-stack-1x fa-inverse"></i>
-        </span>
-      </h3>
-      {{ endif }}
-    </a>
-  </div>
-</div>
+        <div class="row">
+          <div class="animateme col-md-7 col-lg-6" data-when="exit" data-from="0" data-to="0.55" data-opacity="0" data-translatey="100" style="opacity: 1; -webkit-transform: translate3d(0px, 100px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);">
+            <a href="{{ link }}">
+              <h1>{{ headline }}</h1>
+              {{ if subHeadline|not_empty }}
+              <h3>{{ subHeadline }}
+                <span class="fa-stack">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-chevron-right fa-stack-1x fa-inverse"></i>
+                </span>
+              </h3>
+              {{ endif }}
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
     {{ /heroImages }}
   </div>
-
 </section>
-<section id="landing-tiles">
-  <div class="container">
-<div class="row">
-<div class="col-md-10 col-md-offset-1">
-<h2>{{ landingHeadline }}</h2>
-</div>
-<div class="row">
-  <div class="col-md-8 col-md-offset-2">
-    <p class="landingParagraph">{{ landingParagraph }}</p>
-  </div>
-</div>
-  
 
-  {{ landingTiles }}
-  <div class=" col-sm-12 col-lg-4 landing-tile">
-    <a href="{{ linkAddress }}"><img src="{{ image }}" alt="{{ tileHeadline }}" /></a>
-  
-    <h3>{{ tileHeadline }}</h3>
-    <p>{{ description }}</p>
-    <a href="{{ linkAddress }}">{{ linkTitle }} <i class="fa fa-chevron-right"></i></a>
-  
-  </div>
-  {{ /landingTiles }}</div>
+<section id="landing-tiles" class="content content-tiles centered">
+  <div class="container">
+    <div class="row">
+        <h2>{{ landingHeadline }}</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p class="landingParagraph">{{ landingParagraph }}</p>
+      </div>
+    </div>
+
+    <div class="row tile-wrapper-small">
+
+        {{ landingTiles }}
+        <div class="col-xs-12 col-sm-6 col-lg-4 tile">
+          <a href="{{ linkAddress }}"><img src="{{ image }}" alt="{{ tileHeadline }}" /></a>
+
+          <h3>{{ tileHeadline }}</h3>
+          <p>{{ description }}</p>
+          <a href="{{ linkAddress }}">{{ linkTitle }} <i class="fa fa-chevron-right"></i></a>
+
+        </div>
+        {{ /landingTiles }}
+
+    </div>
+
   </div>
 </section>

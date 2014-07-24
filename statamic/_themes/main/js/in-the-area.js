@@ -67,7 +67,7 @@ function onEachFeatureSleep(feature, layer) {
 
   var popupContent = 
 
-  "<div class='tile area " + feature.properties.classType + "'" + ">" + 
+  "<div class='card area " + feature.properties.classType + "'" + ">" + 
   "<h4>" + "<img src=" + feature.properties.classIcon +  ">" + feature.properties.activity + "</h4>" +
   "<h2>" + feature.properties.activityTitle + "</h2>" +
   "<img src=" + feature.properties.image +  ">" + 
@@ -140,7 +140,7 @@ function onEachFeatureCulture(feature, layer) {
 
   var popupContent = 
 
-  "<div class='tile area " + feature.properties.classType + "'" + ">" + 
+  "<div class='card area " + feature.properties.classType + "'" + ">" + 
   "<h4>" + "<img src=" + feature.properties.classIcon +  ">" + feature.properties.activity + "</h4>" +
   "<h2>" + feature.properties.activityTitle + "</h2>" +
   "<img src=" + feature.properties.image +  ">" + 
@@ -209,7 +209,7 @@ function onEachFeatureEat(feature, layer) {
 
   var popupContent = 
 
-  "<div class='tile area " + feature.properties.classType + "'" + ">" + 
+  "<div class='card area " + feature.properties.classType + "'" + ">" + 
   "<h4>" + "<img src=" + feature.properties.classIcon +  ">" + feature.properties.activity + "</h4>" +
   "<h2>" + feature.properties.activityTitle + "</h2>" +
   "<img src=" + feature.properties.image +  ">" + 
@@ -280,7 +280,7 @@ function onEachFeatureMind(feature, layer) {
 
   var popupContent = 
 
-  "<div class='tile area " + feature.properties.classType + "'" + ">" + 
+  "<div class='card area " + feature.properties.classType + "'" + ">" + 
   "<h4>" + "<img src=" + feature.properties.classIcon +  ">" + feature.properties.activity + "</h4>" +
   "<h2>" + feature.properties.activityTitle + "</h2>" +
   "<img src=" + feature.properties.image +  ">" + 
@@ -348,7 +348,7 @@ function onEachFeaturePick(feature, layer) {
 
   var popupContent = 
 
-  "<div class='tile area " + feature.properties.classType + "'" + ">" + 
+  "<div class='card area " + feature.properties.classType + "'" + ">" + 
   "<h4>" + "<img src=" + feature.properties.classIcon +  ">" + feature.properties.activity + "</h4>" +
   "<h2>" + feature.properties.activityTitle + "</h2>" +
   "<img src=" + feature.properties.image +  ">" + 
@@ -416,7 +416,7 @@ function onEachFeatureSip(feature, layer) {
 
   var popupContent = 
 
-  "<div class='tile area " + feature.properties.classType + "'" + ">" + 
+  "<div class='card area " + feature.properties.classType + "'" + ">" + 
   "<h4>" + "<img src=" + feature.properties.classIcon +  ">" + feature.properties.activity + "</h4>" +
   "<h2>" + feature.properties.activityTitle + "</h2>" +
   "<img src=" + feature.properties.image +  ">" + 
@@ -486,7 +486,7 @@ function onEachFeatureSki(feature, layer) {
 
   var popupContent = 
 
-  "<div class='tile area " + feature.properties.classType + "'" + ">" + 
+  "<div class='card area " + feature.properties.classType + "'" + ">" + 
   "<h4>" + "<img src=" + feature.properties.classIcon +  ">" + feature.properties.activity + "</h4>" +
   "<h2>" + feature.properties.activityTitle + "</h2>" +
   "<img src=" + feature.properties.image +  ">" + 
@@ -553,7 +553,7 @@ function onEachFeatureSwim(feature, layer) {
 
   var popupContent = 
 
-  "<div class='tile area " + feature.properties.classType + "'" + ">" + 
+  "<div class='card area " + feature.properties.classType + "'" + ">" + 
   "<h4>" + "<img src=" + feature.properties.classIcon +  ">" + feature.properties.activity + "</h4>" +
   "<h2>" + feature.properties.activityTitle + "</h2>" +
   "<img src=" + feature.properties.image +  ">" + 
@@ -620,7 +620,7 @@ function onEachFeatureSwing(feature, layer) {
 
   var popupContent = 
 
-  "<div class='tile area " + feature.properties.classType + "'" + ">" + 
+  "<div class='card area " + feature.properties.classType + "'" + ">" + 
   "<h4>" + "<img src=" + feature.properties.classIcon +  ">" + feature.properties.activity + "</h4>" +
   "<h2>" + feature.properties.activityTitle + "</h2>" +
   "<img src=" + feature.properties.image +  ">" + 
@@ -688,7 +688,7 @@ function onEachFeatureTrail(feature, layer) {
 
   var popupContent = 
 
-  "<div class='tile area " + feature.properties.classType + "'" + ">" + 
+  "<div class='card area " + feature.properties.classType + "'" + ">" + 
   "<h4>" + "<img src=" + feature.properties.classIcon +  ">" + feature.properties.activity + "</h4>" +
   "<h2>" + feature.properties.activityTitle + "</h2>" +
   "<img src=" + feature.properties.image +  ">" + 

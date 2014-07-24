@@ -1,0 +1,75 @@
+.hero-header, .hero-intro {
+  h1,h2,h3,h4,a,span,p {
+    color: white;
+  }
+  text-align: center;
+  &.landing {
+    h1 {
+      font-size: 36px;
+    }
+    text-align: left;
+  }
+}
+
+
+
+.hero {
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  .scrollme {
+    h1 {
+      margin-top: 180px;
+    }
+    &.landing {
+      h1 {
+        margin-top: 150px;
+      }
+      h1,h3 {
+        text-align: left;
+      }
+    }
+  }
+  &.hero-intro {
+    height: 300px;
+  }
+  .slick-slide {
+    margin-bottom: 0;
+  }
+  @include breakpoint(small) {
+    height: 700px;
+    .scrollme {
+      h1 {
+        margin-top: 320px;
+      }  
+      &.landing h1 {
+        margin-top: 250px;
+      } 
+    }
+    &.hero-intro {
+      height: 500px;
+      .scrollme h1{
+          margin-top: 195px;
+        }
+    }
+  }
+}
+
+// .container.scrollme {
+//   h1 {
+//     margin-top: 320px;
+//   }
+//   &.landing {
+//     h1 {
+//       margin-top: 150px;
+//     }
+//     h1,h3 {
+//       text-align: left;
+//     }
+//   }
+//   @include breakpoint(small) {
+//     h1 {
+//       margin-top: 320px;
+//     }    
+//   }
+// }

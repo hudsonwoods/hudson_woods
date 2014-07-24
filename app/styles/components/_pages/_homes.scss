@@ -1,38 +1,28 @@
 
 #location {
+	background-color: $beige;
 	border-bottom: 1px solid lighten($beige,10%);
-	margin-bottom: 0;
-	text-align: left;
-	h2,p,a {
-		margin-bottom: 30px;
-	}
 	h2 {
-		margin-top: 50px;
+		margin-top: 20px;
 	}
-
+	@include breakpoint(small) {
+		h2 {
+			margin-top: 50px;
+		}
+		.location-map {
+			display: none;
+		}
+	}
 }
 
-
-.homes-content {
-	padding: 100px 0;
+.location-map {
+	height: 300px;
+	width: 100%;
+	background-size: cover;
+	background-position: center center;
 }
-
-.homes-intro {
-
-}
-
-
 
 #floor-plans  {
-	.col-md-3 h2 {
-		text-align: left;
-	}
-	h2,p {
-		margin-bottom: 15px;
-	}
-	h2,h4 {
-		text-align: center;
-	}
 	a {
 		text-decoration: underline;
 		@include transition(.15s);
@@ -40,72 +30,76 @@
 			color: darken($base-font-color,10%);
 		}
 	}
-	h2 {
-		font-size: 36px;
-		&:first-of-type {
-			border-top: none;
-			margin-top: 0;
-			padding-top: 0;
-		}
-		border-top: 1px solid $base-font-color;
-		padding-top: 20px;
+	.floor-plan-specs, img {
+		margin-top: 30px;
 	}
-	h4 {
-		font-family: $base-font-family;
-		font-weight: 100;
-		font-size: 20px;
-		padding-bottom: 10px;
+	@include breakpoint(medium) {
+		.floor-plan-specs, img {
+			margin-top: 0;
+		}
+	}
+	.floor-plan-specs {
+		h2,h4 {
+			text-align: center;
+			margin-bottom: 30px;
+		}
+		h2 {
+			border-top: 1px solid $base-font-color;
+			padding-top: 30px;
+			margin-bottom: 10px;
+			font-size: 36px;
+			&:first-of-type {
+				border-top: none;
+				padding-top: 0;
+			}
+		}
+		h4 {
+			font-family: $base-font-family;
+			font-weight: 100;
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
 	}
 }
 
 #materials {
-	background-color: $lighter-beige;
-	h2,p {
-		margin-bottom: 30px;
-	}
-	.circle {
-		position: relative;
-
-	}
-	.large {
-		.circle-tile {
-			width: 165px;
-		}
-	}
 	.col-sm-12 {
-		padding-left: 0;
+		margin-top: -20px;
 	}
-	.col-sm-3.large {
-		padding-left: 5px;
-		padding-right: 5px;
+	.large-wrapper {
+		margin-top: 20px;
 	}
-	.col-sm-2.circle {
-		padding-left: 5px;
-		padding-right: 5px;
+	.small-wrapper {
+		margin-top: 20px;
+	}
+	h4 {
+		margin-top: 10px;
 	}
 	.circle-tile {
-		width: 107px;
+		margin-left: 15px;
 	}
+
 	.circle-margin {
 		margin-top: 100%;
+		position: relative;
 	}
-	.circle-wrapper {
-		margin: 35px 0 15px;
-		&:first-of-type {
-			margin-top: 20px;
-		}
-	}
-	.circle-absolute-wrapper {
-		display: block;
+
+
+	.circle-tile, .circle-tile-overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		border-radius: 50%;
+		text-align: center;
 	}
 	.circle-tile {
 	    display: flex;
 	    align-items: center;
 	    justify-content: center;
-	    text-align: center;
 		max-width: 100%;
 	    span {
-	    	text-align: center;
 	    	padding: 0 5px;
 	    	font-size: 12px;
 		    &.white {
@@ -114,9 +108,48 @@
 	    }
 	}
 
+	.large {
+		width: 158px;
+		.circle-tile {
+			width: 158px;
+			height: 158px;
+		}
+		@include breakpoint(medium) {
+			width: 128px;
+			.circle-tile {
+				width: 128px;
+				height: 128px;
+			}
+		}
+		@include breakpoint(large) {
+			width: 158px;
+			.circle-tile {
+				width: 158px;
+				height: 158px;
+			}
+		}
+
+	}
+
+	.small {
+		width: 99px;
+		.circle-tile {
+			width: 99px;
+			height: 99px;
+		}
+		@include breakpoint(medium) {
+				width: 99px;
+				.circle-tile {
+					width: 99px;
+					height: 99px;
+				}
+			}
+		@include breakpoint(large) {
+
+		}	
+	}
+
 	h4 {
-		clear: left;
-		clear: right;
 		font-family: $base-font-family;
 		font-size: 16px;
 		font-weight: 600;
@@ -125,15 +158,15 @@
 		background-image: url("../img/black-cedar.jpg");
 		background-position: center center;
 		background-size: cover;
-		height: 100%;
-		width: 100%;
+		// height: 100%;
+		// width: 100%;
 	}
 	.natural-cedar {
 		background-image: url("../img/natural-cedar.jpg");
 		background-position: center center;
 		background-size: cover;
-		height: 100%;
-		width: 100%;
+		// height: 100%;
+		// width: 100%;
 	}
 	.opaque-white {
 		background-color: #dedfdf;
@@ -172,106 +205,48 @@
 }
 
 #finishes {
-	// background-color: $lighter-beige;
-	// border-bottom: 1px solid lighten($beige,10%);
-	// .wrapper {
-	// 	@include span(4);
-	// 	&:last-of-type {
-	// 		@include pre(1);
-	// 	}
-	// }
 	h2 {
 		margin-bottom: 60px;
 	}
 	img, h3,li {
+		font-size: 20px;
 		margin-bottom: 20px;
 	}
 	h3 {
-		font-size: 20px;
 		font-weight: 600;
 	}
-	li {
-		font-size: 20px;
-		margin-bottom: 18px;
-		line-height: 24px;
-		display: block;
-	}
-	// .finish-list {
-	// 	@include pre(2);
-	// 	@include span(4);
-	// }
-	// .premium-equipment {
-	// 	@include pre(1);
-	// 	@include span(4)
-	// }
 }
 
 #a-la-carte {
-	background-color: $lighter-beige;
-	// border-bottom: 1px solid lighten($beige,10%);
-	.wrapper-center {
-		text-align: center;
-		// @include pre(2);
-		// @include span(8);
+	h2 ~ p {
+		text-align: left;
 	}
 	p {
-		text-align: left;
-		margin: 30px 0 60px;
-	}
-	ul {
-		// margin-top: 60px;
-		// @include pre(1);
-		// @include span(10);
+		font-size: 20px;
+		font-weight: 300;
 	}
 	li {
-		// @include gallery(3 of 12);
+		margin-top: 50px;
 		&.col-md-3:nth-child(4n+5) {
 			clear: both;
 		}
-		text-align: center;
-		p {
-			// @include pre(2);
-			// @include span(8);
-			font-family: $headline-font;
+		h4 {
 			font-size: 20px;
-			line-height: 28px;
-			margin-bottom: 50px;
 			margin-top: 10px;
-			text-align: center;
-		}
-		img {
-			display: block;
-			text-align: center;
-			margin: 0 auto 0;
 		}
 	}
 }
 
-#gallery {
-	
-	h2 {
-		text-align: center;
-		margin-bottom: 40px;
-		margin-top: 0;
-	}
-	// background-color: $lighter-beige;
-	.sp-wrap {
-		// @include pre(1);
-		// @include span(10);
-	}
-}
 
 .sp-thumbs a:link, .sp-thumbs a:visited {
 		opacity: 1;
 }
 
 .sp-wrap {
-	// margin: 60px auto 30px;
 	background-color: transparent;
 }
 
 .sp-thumbs  {
-		// @include span(full);
 		margin-top: 20px;
 		border-top: none;
 		a {
@@ -281,8 +256,6 @@
 			&:first-child {
 				padding-left: 0;
 			}
-			
-
 		}
 		img {
 			height: auto;

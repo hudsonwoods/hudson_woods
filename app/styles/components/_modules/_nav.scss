@@ -3,56 +3,96 @@ nav {
 	z-index: 1001;
 	&.navbar {
 		border-radius: 0;
+		border: none;
+		position: fixed;
+		margin-bottom: 0;
+		@include transition(all .5s);
+		background-color: $beige;
+		@include breakpoint(medium) {
+			background-color: transparent;
+			padding-top: 15px;
+			.collapse.navbar-collapse {
+				background-color: transparent;
+			}
+		}
+
+		.navbar-toggle, .navbar-toggle:hover, .navbar-toggle:focus {
+			border-color: transparent;
+			background-color: transparent;
+			.icon-bar {
+				background-color: $gray;
+			}
+		}
+		.navbar-collapse {
+			background-color: $gray;
+			border-color: $gray;
+		} 
 		&.navbar-default {
 			border-color: transparent;
-			color: white;
 			.navbar-nav {
 				li {
 					a {
-						color: white;
-						padding: 30px 15px;
-						height: 100%;
-						width: 100%;
-						font-size: 14px;
-						color: white;
 						text-transform: uppercase;
-						&.current {
+						text-align: center;
+						color: #fff;
+						font-weight: 500;
+					}
+				}
+			}
+			@include breakpoint(medium) {
+				color: white;
+				.navbar-nav {
+					li {
+						a {
 							color: white;
+							padding: 30px 15px;
+							height: 100%;
+							width: 100%;
+							font-size: 14px;
+							color: white;
+							text-transform: uppercase;
+							&.current {
+								color: white;
+							}
 						}
 					}
-				}
+				}				
 			}
-			&.stuck, &.fixed {
-				background-color: $beige;
-				padding-top: 0;
-				a.navbar-brand {
-					background-image: url("../img/hw_logo_dark.svg");
-				}
-
-				ul li a {
-					color: $inactive-gray;
-					&.current, &:hover {
-						color: $dark-gray;
+			@include breakpoint (small) {
+				&.stuck, &.fixed {
+					background-color: $beige;
+					padding-top: 0;
+					a.navbar-brand {
+						background-image: url("../img/hw_logo_dark.svg");
 					}
-				}
+
+					ul li a {
+						color: $inactive-gray;
+						&.current, &:hover {
+							color: $dark-gray;
+						}
+					}
+				}				
+			}
+
+		}
+		.navbar-brand {
+			background-image: url("../img/hw_logo_dark_small.svg");
+			background-repeat: no-repeat;
+			height: 35px;
+			width: 74px;
+			margin-left: 15px;
+			margin-top: 8px;
+			@include breakpoint(medium) {
+				background-image: url("../img/hw_logo.svg");
+				margin-top: 0;
+				margin-top: 15px;
+				margin-left: 0 !important;
+				padding-bottom: 0;	
+				height: 47px;
+				width: 99px;		
 			}
 		}
-		position: fixed;
-		@include transition(all .5s);
-		background-color: transparent;
-		padding-top: 15px;
-		.navbar-brand {
-			margin-top: 15px;
-			margin-left: 0 !important;
-			padding-bottom: 0;
-			background-image: url("../img/hw_logo.svg");
-			background-repeat: no-repeat;
-			height: 47px;
-			width: 99px;
-		}
-
-
-
 	}
 }
 
@@ -61,6 +101,12 @@ nav {
 }
 
 #secondary-nav {
+	display: none;
+	height: 0;
+	@include breakpoint(medium) {
+		display: block;
+		height: 44px;
+	}
 	text-align: left;
 	ul {
 		width: 100%;
@@ -78,6 +124,7 @@ nav {
 				padding: 14px 0 10px;
 				height: 100%;
 				width: 100%;
+				font-weight: 500;
 				&:hover {
 					color: white;
 				}
@@ -221,7 +268,7 @@ nav {
 
 	background-color: $dark-gray;
 	&.stuck {
-		top: 82px;
+		top: 80px;
 	}
 	#upgrades-nav a {
 		// pointer-events:none;
