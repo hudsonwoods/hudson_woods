@@ -22,32 +22,35 @@
 </section>
 
 <div id="map" class="availability">
+<div class="legend">
+	<h3>Map Legend</h3>
+	<div class="legend-marker available"><span></span>Available</div>
+	<div class="legend-marker unavailable"><span></span>Unavailable</div>
+</div>
 	<a href="" class="anchor availability" id="availability-anchor"></a>
 </div>
 
-<!-- <section class="area-tiles">
+<section id="lot-availability-mobile" class="content">
 	<div class="container">
-	    <div class="col-md-10 col-md-offset-1 content">
+	    <div class="col-xs-12 col-md-10 col-md-offset-1">
 
 			{{ entries:listing folder="availability/lots" sort_dir="asc" }}
-			<div class="col-md-6">
+			<div class="col-md-12">
 				<div class="tile availability lot">
 				    <h2>{{ title }}</h2>
 				    <img src="{{ image }}" alt="">
 				    {{ content }}
-					<div class="info-row">
-						<div class="col-md-4 info">
-							<p>AVAILABILITY</p>
-							{{ availability }}
-						</div>
-						<div class="col-md-4 info">
-							<p>SIZE</p>
-							{{ size }}
-						</div>
-						<div class="col-md-4 info">
-							<p>COST</p>
-							{{ cost }}
-						</div>
+					<div class="specs">
+						<h2>{{ title }}</h2>
+						{{ content }}
+
+					<div class="row">
+						<ul>
+							<li>Availability: <span>{{ availability }}</span></li>
+							<li>Size: <span>{{ size }}</span></li>
+							<li>Cost: <span>{{ cost }}</span></li>
+						</ul>	
+					</div>
 					</div>
 
 					<div class="info-links">
@@ -60,4 +63,4 @@
 
 		</div>
 	</div>
-</section> -->
+</section>
