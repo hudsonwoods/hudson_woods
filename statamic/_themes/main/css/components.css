@@ -8736,16 +8736,6 @@ h1, h2, h3, h4 {
   line-height: 1.1;
 }
 
-h1, h2 {
-  text-align: center;
-  /* Landscape phone to portrait tablet */
-}
-@media (min-width: 767px) {
-  h1, h2 {
-    text-align: left;
-  }
-}
-
 .left {
   text-align: center;
   /* Landscape phone to portrait tablet */
