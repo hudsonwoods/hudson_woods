@@ -9976,7 +9976,14 @@ p {
 }
 
 .upgrades h3 {
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* Landscape phone to portrait tablet */
+}
+@media (min-width: 767px) {
+  .upgrades h3 {
+    height: 96px;
+  }
 }
 .upgrades p {
   margin-left: 20px;

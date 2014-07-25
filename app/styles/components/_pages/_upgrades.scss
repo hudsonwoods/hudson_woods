@@ -28,7 +28,11 @@
 
 .upgrades {
 	h3 {
-		margin-bottom: 20px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		@include breakpoint(small) {
+			height: 96px;
+		}
 	}
 	p {
 		margin-left: 20px;
