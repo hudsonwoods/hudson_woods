@@ -94,6 +94,9 @@ img {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  &.map-mobile-content {
+    padding-top: 30px;
+  }
   @include breakpoint(small) {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -101,7 +104,13 @@ img {
       padding: 100px 0;
     }
   }
+}
 
+.map-mobile-container {
+  display: block;
+  @include breakpoint(medium) {
+    display: none;
+  }
 }
 
 

@@ -56,13 +56,11 @@ var colorSleepIcon = L.icon({
 function highlightFeatureSleep(e) {
     var layer = e.target;
     layer.setIcon(colorSleepIcon);
-    layer.openPopup();
 }
 
 function resetHighlightSleep(e) {
   var layer = e.target;
     layer.setIcon(graySleepIcon);
-    layer.closePopup();
 }
 
 function onEachFeatureSleep(feature, layer) {
@@ -132,13 +130,11 @@ var colorCultureIcon = L.icon({
 function highlightFeatureCulture(e) {
     var layer = e.target;
     layer.setIcon(colorCultureIcon);
-    layer.openPopup();
 }
 
 function resetHighlightCulture(e) {
   var layer = e.target;
     layer.setIcon(grayCultureIcon);
-    layer.closePopup();
 }
 
 function onEachFeatureCulture(feature, layer) {
@@ -203,13 +199,11 @@ var colorEatIcon = L.icon({
 function highlightFeatureEat(e) {
     var layer = e.target;
     layer.setIcon(colorEatIcon);
-    layer.openPopup();
 }
 
 function resetHighlightEat(e) {
   var layer = e.target;
     layer.setIcon(grayEatIcon);
-    layer.closePopup();
 }
 
 function onEachFeatureEat(feature, layer) {
@@ -276,13 +270,11 @@ var colorMindIcon = L.icon({
 function highlightFeatureMind(e) {
     var layer = e.target;
     layer.setIcon(colorMindIcon);
-    layer.openPopup();
 }
 
 function resetHighlightMind(e) {
   var layer = e.target;
     layer.setIcon(grayMindIcon);
-    layer.closePopup();
 }
 
 function onEachFeatureMind(feature, layer) {
@@ -346,13 +338,11 @@ var colorPickIcon = L.icon({
 function highlightFeaturePick(e) {
     var layer = e.target;
     layer.setIcon(colorPickIcon);
-    layer.openPopup();
 }
 
 function resetHighlightPick(e) {
   var layer = e.target;
     layer.setIcon(grayPickIcon);
-    layer.closePopup();
 }
 
 function onEachFeaturePick(feature, layer) {
@@ -416,13 +406,11 @@ var colorSipIcon = L.icon({
 function highlightFeatureSip(e) {
     var layer = e.target;
     layer.setIcon(colorSipIcon);
-    layer.openPopup();
 }
 
 function resetHighlightSip(e) {
   var layer = e.target;
     layer.setIcon(graySipIcon);
-    layer.closePopup();
 }
 
 function onEachFeatureSip(feature, layer) {
@@ -488,13 +476,11 @@ var colorSkiIcon = L.icon({
 function highlightFeatureSki(e) {
     var layer = e.target;
     layer.setIcon(colorSkiIcon);
-    layer.openPopup();
 }
 
 function resetHighlightSki(e) {
   var layer = e.target;
     layer.setIcon(graySkiIcon);
-    layer.closePopup();
 }
 
 function onEachFeatureSki(feature, layer) {
@@ -557,13 +543,11 @@ var colorSwimIcon = L.icon({
 function highlightFeatureSwim(e) {
     var layer = e.target;
     layer.setIcon(colorSwimIcon);
-    layer.openPopup();
 }
 
 function resetHighlightSwim(e) {
   var layer = e.target;
     layer.setIcon(graySwimIcon);
-    layer.closePopup();
 }
 
 function onEachFeatureSwim(feature, layer) {
@@ -626,13 +610,11 @@ var colorSwingIcon = L.icon({
 function highlightFeatureSwing(e) {
     var layer = e.target;
     layer.setIcon(colorSwingIcon);
-    layer.openPopup();
 }
 
 function resetHighlightSwing(e) {
   var layer = e.target;
     layer.setIcon(graySwingIcon);
-    layer.closePopup();
 }
 
 function onEachFeatureSwing(feature, layer) {
@@ -696,13 +678,11 @@ var colorTrailIcon = L.icon({
 function highlightFeatureTrail(e) {
     var layer = e.target;
     layer.setIcon(colorTrailIcon);
-    layer.openPopup();
 }
 
 function resetHighlightTrail(e) {
   var layer = e.target;
     layer.setIcon(grayTrailIcon);
-    layer.closePopup();
 }
 
 function onEachFeatureTrail(feature, layer) {

@@ -1,0 +1,5 @@
+---
+title: Westwind Orchard
+activity: 'Pick & Grow'
+---
+<p>As if fashion photographer Fabio Chizzola and&nbsp;and fashion stylist Laura Ferrar's lives weren't busy enough, they decided to restore the original orchards on their 31 acre property in Accord and turn it back into a working orchard and&nbsp;farm, but one with a philosophy. The farm is&nbsp;certified organic, but Fabio is pushing the envelope farther towards creating a "Holistic Community Orchard,&nbsp;moving away from traditional organic farming techniques and introducing materials like neem oil, Effective Microbes, seaweed, kelp and compost teas to help us grow healthier soil, trees, fruits and vegetables." Visit to pick from multiple varieties of&nbsp;apples&nbsp;but also catch what might be considered the closest thing to a "scene" in Accord.</p>

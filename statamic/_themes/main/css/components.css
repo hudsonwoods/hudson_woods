@@ -8101,6 +8101,9 @@ img {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+.content.map-mobile-content {
+  padding-top: 30px;
+}
 @media (min-width: 767px) {
   .content {
     padding-top: 60px;
@@ -8108,6 +8111,16 @@ img {
   }
   .content.large {
     padding: 100px 0;
+  }
+}
+
+.map-mobile-container {
+  display: block;
+  /* Portrait tablet to landscape and desktop */
+}
+@media (min-width: 992px) {
+  .map-mobile-container {
+    display: none;
   }
 }
 
@@ -8888,31 +8901,41 @@ p {
   outline: none;
 }
 
-.lot-availability-tab {
-  text-align: center;
+.dropdown li a:hover {
+  background-color: #e6e6e6;
 }
-.lot-availability-tab .nav-tabs {
+
+.dropdown li a:focus {
+  background-color: #b3b3b3;
+}
+
+.nav-tabs {
   border-bottom: none;
 }
-.lot-availability-tab .nav-tabs li {
+.nav-tabs li {
   float: none;
 }
-.lot-availability-tab .nav-tabs > li > a:hover {
+
+.nav-tabs > li > a:hover {
   border-color: #4e4f54;
 }
-.lot-availability-tab .nav .open > a, .lot-availability-tab .nav .open > a:hover, .lot-availability-tab .nav .open > a:focus {
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
   background-color: #4e4f54;
   outline: none;
 }
-.lot-availability-tab .nav-tabs > li.active > a, .lot-availability-tab .nav-tabs > li.active > a:focus {
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus {
   background-color: #4e4f54;
   color: white;
   border: 1px solid #4e4f54;
 }
-.lot-availability-tab .dropdown-menu > .active > a, .lot-availability-tab .dropdown-menu > .active > a:hover, .lot-availability-tab .dropdown-menu > .active > a:focus {
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
   background-color: #7f8189;
 }
-.lot-availability-tab i {
+
+i {
   margin-left: 10px;
 }
 
@@ -8926,6 +8949,9 @@ p {
 .nav-tabs > li.dropdown.active > a:hover,
 .nav-tabs > li.dropdown.active > a:focus {
   cursor: pointer;
+  background-color: #4e4f54;
+  color: white;
+  border: 1px solid #4e4f54;
 }
 
 .nav-tabs > li.dropdown li {
@@ -8942,6 +8968,28 @@ p {
 
 .dropdown-menu {
   width: 100%;
+}
+
+.upgrade-dropdown {
+  display: block;
+  background-color: #f3f3f3;
+  /* Portrait tablet to landscape and desktop */
+}
+@media (min-width: 992px) {
+  .upgrade-dropdown {
+    display: none;
+  }
+}
+
+.in-thea-area-dropdown {
+  display: block;
+  background-color: #ebe9e2;
+  /* Portrait tablet to landscape and desktop */
+}
+@media (min-width: 992px) {
+  .in-thea-area-dropdown {
+    display: none;
+  }
 }
 
 #map {
@@ -9102,6 +9150,10 @@ p {
 }
 .card.area.pick-and-grow {
   border-top: 8px solid #bfe700;
+}
+
+.card.area.mobile {
+  background-color: #f5f4f1;
 }
 
 .leaflet-popup-content-wrapper {

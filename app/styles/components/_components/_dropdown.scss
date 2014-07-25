@@ -1,6 +1,11 @@
 
-.lot-availability-tab {
-	text-align: center;
+
+	.dropdown li a:hover {
+		background-color: darken(white,10%);
+	}
+	.dropdown li a:focus {
+		background-color: darken(white,30%);
+	}
 	.nav-tabs {
 		border-bottom: none;
 		li {
@@ -25,7 +30,7 @@
 	i {
 		margin-left: 10px;
 	}
-}
+
 
 .hudson-dropdown {
 	margin-top: 30px;
@@ -37,6 +42,9 @@
 .nav-tabs > li.dropdown.active > a:hover, 
 .nav-tabs > li.dropdown.active > a:focus {
 	cursor: pointer;
+	background-color: $dark-gray;
+	color: white;
+	border: 1px solid $dark-gray;
 }
 
 .nav-tabs > li.dropdown li {
@@ -53,4 +61,20 @@
 
 .dropdown-menu {
 	width: 100%;
+}
+
+.upgrade-dropdown {
+	display: block;
+	background-color: $lighter-gray;
+	@include breakpoint(medium) {
+		display: none;
+	}
+}
+
+.in-thea-area-dropdown {
+	display: block;
+	background-color: $lighter-beige;
+	@include breakpoint(medium) {
+		display: none;
+	}
 }

@@ -134,6 +134,10 @@
 	}
 }
 
+.card.area.mobile {
+	background-color: lighten($lighter-beige,5%);
+}
+
 .leaflet-popup-content-wrapper {
 	padding: 0;
 	text-align: left;

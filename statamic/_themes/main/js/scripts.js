@@ -7514,7 +7514,6 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 
 }).call(this);
 
-
 // Smooth Scroll
 
 $(function() {
@@ -7965,12 +7964,14 @@ $('#upgrades-nav li a').click(function (e) {
 })
 
 // Activate Availability Lot Tabs
-$('#lot-availability-tab li a').click(function (e) {
+$('.map-mobile-container li a').click(function (e) {
   e.preventDefault()
   $(this).tab('show')
 })
 
-$('#lot-availability-content-mobile .tab-pane:first').addClass('in active');
+
+
+$('.map-mobile-content .tab-pane:first').addClass('in active');
 
 // Initialize fitvids (100% width video embeds) on Journal
 $(document).ready(function(){
@@ -7988,8 +7989,10 @@ $('.upgrades-scroll').click(function () {
 
 $('#upgrades').css({'min-height':(($(window).height())-256)+'px'});
 
-$(document).ready(function(){
-// Instafeed
+
+
+if(window.location.href == "http://localhost/hudson_woods/statamic/about"){
+  // Instafeed
 var feed = new Instafeed({
     get: 'user',
     clientId: 'f61fb2669e734e2da2587b457f0afe57',
@@ -8000,7 +8003,50 @@ var feed = new Instafeed({
     limit: 15
       });
 feed.run();
-});
+}
+
+if(window.location.href == "http://staging.hudsonwoods.com/about"){
+  // Instafeed
+var feed = new Instafeed({
+    get: 'user',
+    clientId: 'f61fb2669e734e2da2587b457f0afe57',
+    accessToken: '501656935.f61fb26.c99de54c939c432bb20f5dd282ef4e33',
+    userId: 501656935,
+    resolution: 'standard_resolution',
+    template: '<div class="instagram-wrapper"><div class="flipcard"><a target=_blank href="{{link}}"><div class="front"><img src="{{image}}" /></div><div class="back"><p>{{caption}}</p></div></a></div></div>',
+    limit: 15
+      });
+feed.run();
+}
+
+if(window.location.href == "http://hudsonwoods.com/about"){
+  // Instafeed
+var feed = new Instafeed({
+    get: 'user',
+    clientId: 'f61fb2669e734e2da2587b457f0afe57',
+    accessToken: '501656935.f61fb26.c99de54c939c432bb20f5dd282ef4e33',
+    userId: 501656935,
+    resolution: 'standard_resolution',
+    template: '<div class="instagram-wrapper"><div class="flipcard"><a target=_blank href="{{link}}"><div class="front"><img src="{{image}}" /></div><div class="back"><p>{{caption}}</p></div></a></div></div>',
+    limit: 15
+      });
+feed.run();
+}
+
+if(window.location.href == "http://www.hudsonwoods.com/about"){
+  // Instafeed
+var feed = new Instafeed({
+    get: 'user',
+    clientId: 'f61fb2669e734e2da2587b457f0afe57',
+    accessToken: '501656935.f61fb26.c99de54c939c432bb20f5dd282ef4e33',
+    userId: 501656935,
+    resolution: 'standard_resolution',
+    template: '<div class="instagram-wrapper"><div class="flipcard"><a target=_blank href="{{link}}"><div class="front"><img src="{{image}}" /></div><div class="back"><p>{{caption}}</p></div></a></div></div>',
+    limit: 15
+      });
+feed.run();
+}
+
 
 
 $('#myTab a').click(function (e) {

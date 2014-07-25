@@ -1,0 +1,19 @@
+title: Swim
+
+fields:
+
+  activity:
+    display: Activity Type
+    type: text
+    default: Swim
+    hide: true
+
+  image:
+    type: file
+    display: Image
+    destination: assets/img/in-the-area
+    show_thumbnail: true
+
+  content:
+    type: redactor
+    display: Content

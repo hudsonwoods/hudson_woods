@@ -1,0 +1,19 @@
+title: Culture
+
+fields:
+
+  activity:
+    display: Activity Type
+    type: text
+    default: culture
+    hide: true
+
+  image:
+    type: file
+    display: Image
+    destination: assets/img/in-the-area
+    show_thumbnail: true
+
+  content:
+    type: redactor
+    display: Content

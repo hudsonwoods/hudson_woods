@@ -19,7 +19,9 @@
 
 {{ /heroImages }}
 </div>
+
 {{ theme:partial src="nav_in-the-area" }}
+
 </section>
 
 
@@ -28,24 +30,228 @@
    <a href="" class="anchor in-the-area" id="in-the-area-anchor"></a>
 </div>
 
-<!-- <section class="area-tiles">
-<div class="container">
-    <div class="col-md-10 col-md-offset-1 content">
+<div class="map-mobile-container">
 
-
-        {{ entries:listing folder="in-the-area" sort_dir="asc" }}
-
-<div class="col-md-6">
-    <div class="tile area {{ activity|lower|slugify }}">
-        <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
-        <h2>{{ title }}</h2>
-        <img src="{{ image }}" alt="">
-        {{ content }}
+    <div class="in-the-area-dropdown">
+      <div class="container">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+        <ul class="nav nav-tabs hudson-dropdown" role="tablist">
+        <li class="dropdown">
+        <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">View Activities<i class="fa fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+      
+              <li class="active">
+                <a href="#all-mobile" tabindex="-1" role="tab" data-toggle="tab">All</a>
+              </li>
+              <li>
+                <a href="#sleep-mobile" tabindex="-1" role="tab" data-toggle="tab">sleep</a>
+              </li>
+              <li>
+                <a href="#eat-mobile" tabindex="-1" role="tab" data-toggle="tab">eat</a>
+              </li>
+              <li>
+                <a href="#sip-mobile" tabindex="-1" role="tab" data-toggle="tab">sip</a>
+              </li>
+              <li>
+                <a href="#culture-mobile" tabindex="-1" role="tab" data-toggle="tab">culture</a>
+              </li>
+              <li>
+                <a href="#swing-mobile" tabindex="-1" role="tab" data-toggle="tab">swing</a>
+              </li>
+              <li>
+                <a href="#ski-mobile" tabindex="-1" role="tab" data-toggle="tab">ski</a>
+              </li>
+              <li>
+                <a href="#swim-mobile" tabindex="-1" role="tab" data-toggle="tab">swim</a>
+              </li>
+              <li>
+                <a href="#pick-and-grow-mobile" tabindex="-1" role="tab" data-toggle="tab">Pick &amp; Grow</a>
+              </li>
+              <li>
+                <a href="#trails-mobile" tabindex="-1" role="tab" data-toggle="tab">trails</a>
+              </li>
+              <li>
+                <a href="#mind-and-body-mobile" tabindex="-1" role="tab" data-toggle="tab">Mind &amp; Body</a>
+              </li>
+                
+          </ul>
+        </li>
+        </ul>
+      </div>
+      </div>
     </div>
-</div>
-        {{ /entries:listing }}
-    </div>
-</div>
-</section>
+    
+    <section class="content map-mobile-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-10 col-md-offset-1">  
+                    <div class="tab-content">
 
-</script> -->
+
+                        <div id="all-mobile" class="tab-pane fade in active">
+                        {{ entries:listing folder="
+                        in-the-area/sleep|in-the-area/eat|in-the-area/sip|in-the-area/culture|in-the-area/swing|in-the-area/ski|in-the-area/swim|in-the-area/spick-and-grow|in-the-area/trails|in-the-area/mind-and-body|
+                        " sort_dir="asc" }}
+                        <div class="col-md-6">
+                            <div class="card area mobile {{ activity|lower|slugify }}">
+                                <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
+                                <h2>{{ title }}</h2>
+                                <img src="{{ image }}" alt="">
+                                {{ content }}
+                            </div>
+                        </div>
+                        {{ /entries:listing }}
+                        </div>
+
+                        <div id="sleep-mobile" class="tab-pane fade">
+                        {{ entries:listing folder="in-the-area/sleep" sort_dir="asc" }}
+                        <div class="col-md-6">
+                            <div class="card area mobile {{ activity|lower|slugify }}">
+                                <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
+                                <h2>{{ title }}</h2>
+                                <img src="{{ image }}" alt="">
+                                {{ content }}
+                            </div>
+                        </div>
+                        {{ /entries:listing }}
+                        </div>
+
+                        <div id="eat-mobile" class="tab-pane fade">
+                        {{ entries:listing folder="in-the-area/eat" sort_dir="asc" }}
+                        <div class="col-md-6">
+                            <div class="card area mobile {{ activity|lower|slugify }}">
+                                <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
+                                <h2>{{ title }}</h2>
+                                <img src="{{ image }}" alt="">
+                                {{ content }}
+                            </div>
+                        </div>
+                        {{ /entries:listing }}
+                        </div>
+
+                        <div id="sip-mobile" class="tab-pane fade">
+                        {{ entries:listing folder="in-the-area/sip" sort_dir="asc" }}
+                        <div class="col-md-6">
+                            <div class="card area mobile {{ activity|lower|slugify }}">
+                                <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
+                                <h2>{{ title }}</h2>
+                                <img src="{{ image }}" alt="">
+                                {{ content }}
+                            </div>
+                        </div>
+                        {{ /entries:listing }}
+                        </div>
+
+                        <div id="culture-mobile" class="tab-pane fade">
+                        {{ entries:listing folder="in-the-area/culture" sort_dir="asc" }}
+                        <div class="col-md-6">
+                            <div class="card area mobile {{ activity|lower|slugify }}">
+                                <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
+                                <h2>{{ title }}</h2>
+                                <img src="{{ image }}" alt="">
+                                {{ content }}
+                            </div>
+                        </div>
+                        {{ /entries:listing }}
+                        </div>
+
+                        <div id="swing-mobile" class="tab-pane fade">
+                        {{ entries:listing folder="in-the-area/swing" sort_dir="asc" }}
+                        <div class="col-md-6">
+                            <div class="card area mobile {{ activity|lower|slugify }}">
+                                <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
+                                <h2>{{ title }}</h2>
+                                <img src="{{ image }}" alt="">
+                                {{ content }}
+                            </div>
+                        </div>
+                        {{ /entries:listing }}
+                        </div>
+
+                        <div id="swing-mobile" class="tab-pane fade">
+                        {{ entries:listing folder="in-the-area/swing" sort_dir="asc" }}
+                        <div class="col-md-6">
+                            <div class="card area mobile {{ activity|lower|slugify }}">
+                                <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
+                                <h2>{{ title }}</h2>
+                                <img src="{{ image }}" alt="">
+                                {{ content }}
+                            </div>
+                        </div>
+                        {{ /entries:listing }}
+                        </div>
+
+                        <div id="ski-mobile" class="tab-pane fade">
+                        {{ entries:listing folder="in-the-area/ski" sort_dir="asc" }}
+                        <div class="col-md-6">
+                            <div class="card area mobile {{ activity|lower|slugify }}">
+                                <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
+                                <h2>{{ title }}</h2>
+                                <img src="{{ image }}" alt="">
+                                {{ content }}
+                            </div>
+                        </div>
+                        {{ /entries:listing }}
+                        </div>
+
+                        <div id="swim-mobile" class="tab-pane fade">
+                        {{ entries:listing folder="in-the-area/swim" sort_dir="asc" }}
+                        <div class="col-md-6">
+                            <div class="card area mobile {{ activity|lower|slugify }}">
+                                <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
+                                <h2>{{ title }}</h2>
+                                <img src="{{ image }}" alt="">
+                                {{ content }}
+                            </div>
+                        </div>
+                        {{ /entries:listing }}
+                        </div>
+
+                        <div id="pick-and-grow-mobile" class="tab-pane fade">
+                        {{ entries:listing folder="in-the-area/pick-and-grow" sort_dir="asc" }}
+                        <div class="col-md-6">
+                            <div class="card area mobile {{ activity|lower|slugify }}">
+                                <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
+                                <h2>{{ title }}</h2>
+                                <img src="{{ image }}" alt="">
+                                {{ content }}
+                            </div>
+                        </div>
+                        {{ /entries:listing }}
+                        </div>
+
+                        <div id="trails-mobile" class="tab-pane fade">
+                        {{ entries:listing folder="in-the-area/trails" sort_dir="asc" }}
+                        <div class="col-md-6">
+                            <div class="card area mobile {{ activity|lower|slugify }}">
+                                <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
+                                <h2>{{ title }}</h2>
+                                <img src="{{ image }}" alt="">
+                                {{ content }}
+                            </div>
+                        </div>
+                        {{ /entries:listing }}
+                        </div>
+
+                        <div id="mind-and-body-mobile" class="tab-pane fade">
+                        {{ entries:listing folder="in-the-area/mind-and-body" sort_dir="asc" }}
+                        <div class="col-md-6">
+                            <div class="card area mobile {{ activity|lower|slugify }}">
+                                <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
+                                <h2>{{ title }}</h2>
+                                <img src="{{ image }}" alt="">
+                                {{ content }}
+                            </div>
+                        </div>
+                        {{ /entries:listing }}
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
