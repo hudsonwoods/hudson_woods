@@ -137,6 +137,7 @@
 .card.area.mobile {
 	background-color: lighten($lighter-beige,5%);
 	margin-bottom: 30px;
+	overflow: hidden;
 }
 
 .leaflet-popup-content-wrapper {

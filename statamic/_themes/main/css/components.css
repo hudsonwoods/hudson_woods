@@ -8901,6 +8901,10 @@ p {
   outline: none;
 }
 
+.tab-pane {
+  overflow: hidden;
+}
+
 .dropdown li a:hover {
   background-color: #e6e6e6;
 }
@@ -9155,6 +9159,7 @@ i {
 .card.area.mobile {
   background-color: #f5f4f1;
   margin-bottom: 30px;
+  overflow: hidden;
 }
 
 .leaflet-popup-content-wrapper {
