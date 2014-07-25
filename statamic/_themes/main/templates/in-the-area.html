@@ -85,7 +85,7 @@
     <section class="content map-mobile-content">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-md-10 col-md-offset-1">  
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2">  
                     <div class="tab-content">
 
 
@@ -93,11 +93,11 @@
                         {{ entries:listing folder="
                         in-the-area/sleep|in-the-area/eat|in-the-area/sip|in-the-area/culture|in-the-area/swing|in-the-area/ski|in-the-area/swim|in-the-area/spick-and-grow|in-the-area/trails|in-the-area/mind-and-body|
                         " sort_dir="asc" }}
-                        <div class="col-md-6">
+                        <div class="col-xs-12">
                             <div class="card area mobile {{ activity|lower|slugify }}">
                                 <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
                                 <h2>{{ title }}</h2>
-                                <img src="{{ image }}" alt="">
+                                <img src="{{ transform src="{ image }" width="665" }}" alt="{{ title }}">
                                 {{ content }}
                             </div>
                         </div>
@@ -106,11 +106,11 @@
 
                         <div id="sleep-mobile" class="tab-pane fade">
                         {{ entries:listing folder="in-the-area/sleep" sort_dir="asc" }}
-                        <div class="col-md-6">
+                        <div class="col-xs-12">
                             <div class="card area mobile {{ activity|lower|slugify }}">
                                 <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
                                 <h2>{{ title }}</h2>
-                                <img src="{{ image }}" alt="">
+                                <img src="{{ transform src="{ image }" width="665" }}" alt="{{ title }}">
                                 {{ content }}
                             </div>
                         </div>
@@ -119,11 +119,11 @@
 
                         <div id="eat-mobile" class="tab-pane fade">
                         {{ entries:listing folder="in-the-area/eat" sort_dir="asc" }}
-                        <div class="col-md-6">
+                        <div class="col-xs-12">
                             <div class="card area mobile {{ activity|lower|slugify }}">
                                 <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
                                 <h2>{{ title }}</h2>
-                                <img src="{{ image }}" alt="">
+                                <img src="{{ transform src="{ image }" width="665" }}" alt="{{ title }}">
                                 {{ content }}
                             </div>
                         </div>
@@ -132,11 +132,11 @@
 
                         <div id="sip-mobile" class="tab-pane fade">
                         {{ entries:listing folder="in-the-area/sip" sort_dir="asc" }}
-                        <div class="col-md-6">
+                        <div class="col-xs-12">
                             <div class="card area mobile {{ activity|lower|slugify }}">
                                 <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
                                 <h2>{{ title }}</h2>
-                                <img src="{{ image }}" alt="">
+                                <img src="{{ transform src="{ image }" width="665" }}" alt="{{ title }}">
                                 {{ content }}
                             </div>
                         </div>
@@ -145,11 +145,11 @@
 
                         <div id="culture-mobile" class="tab-pane fade">
                         {{ entries:listing folder="in-the-area/culture" sort_dir="asc" }}
-                        <div class="col-md-6">
+                        <div class="col-xs-12">
                             <div class="card area mobile {{ activity|lower|slugify }}">
                                 <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
                                 <h2>{{ title }}</h2>
-                                <img src="{{ image }}" alt="">
+                                <img src="{{ transform src="{ image }" width="665" }}" alt="{{ title }}">
                                 {{ content }}
                             </div>
                         </div>
@@ -158,11 +158,11 @@
 
                         <div id="swing-mobile" class="tab-pane fade">
                         {{ entries:listing folder="in-the-area/swing" sort_dir="asc" }}
-                        <div class="col-md-6">
+                        <div class="col-xs-12">
                             <div class="card area mobile {{ activity|lower|slugify }}">
                                 <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
                                 <h2>{{ title }}</h2>
-                                <img src="{{ image }}" alt="">
+                                <img src="{{ transform src="{ image }" width="665" }}" alt="{{ title }}">
                                 {{ content }}
                             </div>
                         </div>
@@ -171,11 +171,11 @@
 
                         <div id="swing-mobile" class="tab-pane fade">
                         {{ entries:listing folder="in-the-area/swing" sort_dir="asc" }}
-                        <div class="col-md-6">
+                        <div class="col-xs-12">
                             <div class="card area mobile {{ activity|lower|slugify }}">
                                 <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
                                 <h2>{{ title }}</h2>
-                                <img src="{{ image }}" alt="">
+                                <img src="{{ transform src="{ image }" width="665" }}" alt="{{ title }}">
                                 {{ content }}
                             </div>
                         </div>
@@ -184,11 +184,11 @@
 
                         <div id="ski-mobile" class="tab-pane fade">
                         {{ entries:listing folder="in-the-area/ski" sort_dir="asc" }}
-                        <div class="col-md-6">
+                        <div class="col-xs-12">
                             <div class="card area mobile {{ activity|lower|slugify }}">
                                 <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
                                 <h2>{{ title }}</h2>
-                                <img src="{{ image }}" alt="">
+                                <img src="{{ transform src="{ image }" width="665" }}" alt="{{ title }}">
                                 {{ content }}
                             </div>
                         </div>
@@ -197,11 +197,11 @@
 
                         <div id="swim-mobile" class="tab-pane fade">
                         {{ entries:listing folder="in-the-area/swim" sort_dir="asc" }}
-                        <div class="col-md-6">
+                        <div class="col-xs-12">
                             <div class="card area mobile {{ activity|lower|slugify }}">
                                 <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
                                 <h2>{{ title }}</h2>
-                                <img src="{{ image }}" alt="">
+                                <img src="{{ transform src="{ image }" width="665" }}" alt="{{ title }}">
                                 {{ content }}
                             </div>
                         </div>
@@ -210,11 +210,11 @@
 
                         <div id="pick-and-grow-mobile" class="tab-pane fade">
                         {{ entries:listing folder="in-the-area/pick-and-grow" sort_dir="asc" }}
-                        <div class="col-md-6">
+                        <div class="col-xs-12">
                             <div class="card area mobile {{ activity|lower|slugify }}">
                                 <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
                                 <h2>{{ title }}</h2>
-                                <img src="{{ image }}" alt="">
+                                <img src="{{ transform src="{ image }" width="665" }}" alt="{{ title }}">
                                 {{ content }}
                             </div>
                         </div>
@@ -223,11 +223,11 @@
 
                         <div id="trails-mobile" class="tab-pane fade">
                         {{ entries:listing folder="in-the-area/trails" sort_dir="asc" }}
-                        <div class="col-md-6">
+                        <div class="col-xs-12">
                             <div class="card area mobile {{ activity|lower|slugify }}">
                                 <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
                                 <h2>{{ title }}</h2>
-                                <img src="{{ image }}" alt="">
+                                <img src="{{ transform src="{ image }" width="665" }}" alt="{{ title }}">
                                 {{ content }}
                             </div>
                         </div>
@@ -236,11 +236,11 @@
 
                         <div id="mind-and-body-mobile" class="tab-pane fade">
                         {{ entries:listing folder="in-the-area/mind-and-body" sort_dir="asc" }}
-                        <div class="col-md-6">
+                        <div class="col-xs-12">
                             <div class="card area mobile {{ activity|lower|slugify }}">
                                 <h4><span class="{{ activity|lower|slugify }}"></span>{{ activity }}</h4>
                                 <h2>{{ title }}</h2>
-                                <img src="{{ image }}" alt="">
+                                <img src="{{ transform src="{ image }" width="665" }}" alt="{{ title }}">
                                 {{ content }}
                             </div>
                         </div>
