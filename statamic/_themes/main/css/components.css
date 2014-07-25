@@ -9154,6 +9154,7 @@ i {
 
 .card.area.mobile {
   background-color: #f5f4f1;
+  margin-bottom: 30px;
 }
 
 .leaflet-popup-content-wrapper {
