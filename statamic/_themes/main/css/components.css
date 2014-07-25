@@ -8939,14 +8939,13 @@ p {
   background-color: #7f8189;
 }
 
-i {
-  margin-left: 10px;
-}
-
 .hudson-dropdown {
   margin-top: 30px;
   text-align: center;
   width: 100%;
+}
+.hudson-dropdown i {
+  margin-left: 10px;
 }
 
 .nav-tabs > li.dropdown.active > a,

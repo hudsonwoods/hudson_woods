@@ -30,15 +30,16 @@
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
 	background-color: lighten($dark-gray,20%);
 }
-i {
-	margin-left: 10px;
-}
+
 
 
 .hudson-dropdown {
 	margin-top: 30px;
 	text-align: center;
 	width: 100%;
+	i {
+	margin-left: 10px;
+}
 }
 
 .nav-tabs > li.dropdown.active > a, 
