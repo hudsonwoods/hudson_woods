@@ -7969,7 +7969,12 @@ $('.map-mobile-container li a').click(function (e) {
   $(this).tab('show')
 })
 
+// Update dropdown values on click
 
+$(document).on('click','.dropdown ul a',function(){
+    var text = $(this).text();
+    $(this).closest('.dropdown').children('a.dropdown-toggle').text(text).append("<i class='fa fa-chevron-down'></i>");
+});
 
 $('.map-mobile-content .tab-pane:first').addClass('in active');
 

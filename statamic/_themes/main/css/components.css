@@ -8967,6 +8967,7 @@ p {
 }
 .dropdown a {
   color: white;
+  text-transform: uppercase;
 }
 
 .dropdown-menu {
