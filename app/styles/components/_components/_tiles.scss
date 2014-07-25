@@ -43,13 +43,13 @@
 	@include breakpoint(small) {
 		margin-bottom: 60px;
 		h3 {
-			height: 100px;
+			// height: 100px;
 			font-size: 26px;
 			padding: 30px 0 10px;
 		}
-		p {
-			height: 80px;
-		}
+		// p {
+		// 	height: 80px;
+		// }
 	}
 }
 
