@@ -13,6 +13,18 @@ class Plugin_bluebird extends Plugin {
 
 	public function index() {
 
+		if (function_exists('curl_init')) {
+			    	
+			    	echo "YES";
+			    	
+		    	} else {
+			    	
+			    	echo "NO";
+			    	
+		    	}
+
+		break;
+
 		$bbConfig = array();
 		$bbConfig['access_token'] = $this->fetch('access_token', null, null, false, false);
 		$bbConfig['access_token_secret'] = $this->fetch('access_token_secret', null, null, false, false);
