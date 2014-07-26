@@ -10079,12 +10079,25 @@ p {
 }
 
 .title-region {
-  padding: 10px 0;
+  padding: 30px 0 50px;
   margin: 0 0 40px;
   border-bottom: 1px solid #cccccc;
 }
+.title-region.secondary {
+  border-bottom: none;
+  padding-bottom: 0;
+}
 .title-region:first-of-type {
   border-top: 1px solid #cccccc;
+}
+.title-region.main {
+  padding: 20px 0;
+}
+.title-region.main h2 {
+  margin-bottom: 10px;
+}
+.title-region.main p {
+  margin-bottom: 0;
 }
 .title-region.listings {
   padding: 30px 0 50px;

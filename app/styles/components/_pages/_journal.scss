@@ -9,10 +9,23 @@
 }
 
 .title-region {
-	padding: 10px 0;
+	padding: 30px 0 50px;
 	margin: 0 0 40px;
+	&.secondary {
+		border-bottom: none;
+		padding-bottom: 0;
+	}
 	&:first-of-type {
 		border-top: 1px solid $light-gray;
+	}
+	&.main {
+		padding: 20px 0;
+		h2 {
+			margin-bottom: 10px;
+		}
+		p {
+			margin-bottom: 0;
+		}
 	}
 	border-bottom: 1px solid $light-gray;
 	&.listings {
