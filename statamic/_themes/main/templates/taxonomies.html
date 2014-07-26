@@ -1,9 +1,103 @@
 {{ if taxonomy_slug }}
-<div class="block">
-  <h1>Blog Category: <em>{{ taxonomy_slug }}</em></h1>
-</div>
 
-{{ entries:listing folder="blog" limit="10" taxonomy="true" }}
+{{ theme:partial src="nav_unsticky" }}
+<section class="blog-entry">
+	<div class="container">
+
+		<div class="row blog-title-section">
+			<div class="col-md-8">
+
+					<h4>LATEST ENTRIES</h4>
+
+			</div>
+
+			<div class="col-md-4">
+				<h4>BLOG AUTHORS</h4>
+			</div>
+		</div>
+
+		<div class="row blog-main">
+
+			<div class="col-md-8">
+			{{ entries:listing folder="blog" limit="10" taxonomy="true" }}
+				{{ if no_results }}
+					{{ redirect url="/404" }}
+				{{ else }}
+
+				<div class="blog-content title-region listings">
+					<div class="row">
+						<div class="col-md-5">
+							<a href="{{ url }}">
+								<img class="featured" src="{{ transform
+								  src="{ featuredImage }"
+								  width="300"
+								  height="300"
+								  action="smart"
+								}}" />
+							</a>
+						</div>
+						<div class="col-md-7">
+							<div class="categories small">
+								{{ if categories_list }}
+						          <span>{{ categories_url_list }}</span>
+						        {{ endif }}
+						    </div>
+					        <a class="title" href="{{ url }}"><h3>{{ title }}</h3></a>
+							{{ if date }}
+							 <p class="publish-date"><time pubdate datetime="{{ datestamp format="Y-m-d" }}">Posted on {{ date }}</time> by {{ member:profile }}
+								{{ first_name }} {{ last_name }}
+								<!-- <img src="{{ userProfile }}" alt="">
+ -->								{{ /member:profile }}</p>
+					            	{{ endif }}
+					            	<a href=""></a>
+							{{ contentSummary }}
+							<span style="margin-right: 5px;">...</span><a href="{{ url }}">Continue Reading <i class="fa fa-chevron-right"></i></a>
+						</div>
+					</div>
+				</div>
+
+				{{ endif }}
+			{{ /entries:listing }}
+			</div>
+		
+
+			<div class="col-md-4">
+<!-- 				<div class="tweets">
+					{{ bluebird screen_name="HudsonWoodsNY" count="5" }}
+				        {{ user }}
+				            <div class="follow">
+				                <a href="https://twitter.com/{{ screen_name }}">
+				                    <img src="{{ profile_image_url }}" alt="{{ screen_name }} on Twitter">
+				                    <span>Follow Hudson Woods on Twitter</span>
+				                </a>
+				            </div>
+				        {{ /user }}
+				        {{ tweets }}
+				            <div class="tweet">
+				                <p>{{ text }}</p>
+				                <p>
+				                    <small>
+				                        <a href="{{ tweet_url }}">{{ created_at format="g:i A, F jS, Y" }}</a>
+				                    </small>
+				                </p>
+				            </div>
+				        {{ /tweets }}
+					{{ /bluebird }}
+				</div> -->
+				<div class="blog-content title-region">
+				    {{ taxonomy:listing folder="blog" type="author" }}
+				        <li><a href="{{ url }}">{{ name }}</a></li>     
+				    {{ /taxonomy:listing }}
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+
+<!-- {{ entries:listing folder="blog" limit="10" taxonomy="true" }}
 	{{ if no_results }}
 		{{ redirect url="/404" }}
 	{{ else }}
@@ -40,5 +134,18 @@
       {{ content }}
     </div>
 </div>
+
+
+
+	{{ entries:listing folder="blog" sort_dir="desc" paginate="true" taxonomy="true" limit="10" }}
+		{{ if no_results }}
+			<p class="sorry">
+				No journal posts have been posted yet.<br>
+				Check back soon.
+			</p>
+		{{ else }}
+			{{ theme:partial src="journal-entry"}}
+		{{ endif }}
+	{{ /entries:listing }}
 
 {{ endif }}

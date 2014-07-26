@@ -1,18 +1,30 @@
 {{ theme:partial src="nav_unsticky" }}
 
 
-<section id="blog-entry">
+
+			{{ entries:listing folder="blog" sort_dir="desc" limit="1" }}
+				{{ if no_results }}
+					<p class="sorry">
+						No journal posts have been posted yet.<br>
+						Check back soon.
+					</p>
+				{{ else }}
+					{{ theme:partial src="journal-featured" use_context="true" }}
+				{{ endif }}
+			{{ /entries:listing }}
+
+
+
+<section>
 	<div class="container">
-
-		<div class="row blog-title-section">
-			<div class="col-md-8">
-
-					<h4>LATEST ENTRIES</h4>
-
+		<div class="col-md-8">
+			<div class="blog-title-section">
+				<h4>LATEST ENTRIES</h4>
 			</div>
-
-			<div class="col-md-4">
-				<h4>OTHER NEWS</h4>
+		</div>
+		<div class="col-md-4">
+			<div class="blog-title-section">
+				<h4>BLOG AUTHORS</h4>
 			</div>
 		</div>
 
@@ -23,7 +35,12 @@
 			</div>
 
 			<div class="col-md-4">
-				<div class="tweets">
+				<div class="blog-content title-region">
+				    {{ taxonomy:listing folder="blog" type="author" }}
+				        <li><a href="{{ url }}">{{ name }}</a></li>     
+				    {{ /taxonomy:listing }}
+				</div>
+<!-- 				<div class="tweets">
 					{{ bluebird screen_name="HudsonWoodsNY" count="5" }}
 				        {{ user }}
 				            <div class="follow">
@@ -43,8 +60,9 @@
 				                </p>
 				            </div>
 				        {{ /tweets }}
-					{{ /bluebird }}
+					{{ /bluebird }} -->
 				</div>
+
 			</div>
 
 		</div>

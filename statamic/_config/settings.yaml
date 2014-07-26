@@ -48,6 +48,7 @@ _timezone: America/New_York
 _taxonomy:
   - categories
   - tags
+  - author
 
 # Turns your slugs into pretty urls (spaces become "-" instead of %20)
 _taxonomy_slugify: false

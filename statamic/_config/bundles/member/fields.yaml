@@ -28,7 +28,7 @@ fields:
     display: Password
     validate:
       length: 5
-    error_messages: "Password needs to be at least 5 characters long."
+    error_messages: "Password needs to be at least 5 characters long."  
     instructions: "Must be at least 5 characters long."
   password_confirmation:
     type: password
@@ -44,7 +44,7 @@ fields:
   userProfile:
     type: file
     display: User Profile Image
-    destination: {{ _site_root }}assets/img/users
+    destination: assets/img/users
     show_thumbnail: true
   roles:
     type: checkboxes

@@ -1,6 +1,6 @@
 
 
-	{{ entries:listing folder="blog" sort_dir="desc" paginate="true" limit="10" }}
+	{{ entries:listing folder="blog" sort_dir="desc" offset="1" }}
 		{{ if no_results }}
 			<p class="sorry">
 				No journal posts have been posted yet.<br>
@@ -13,7 +13,7 @@
 		
 	
 
-	{{ entries:pagination folder="blog" limit="5" }}
+<!-- 	{{ entries:pagination folder="blog" limit="5" }}
 		{{ if next_page || previous_page }}
 			<div class="pagination clearfix">
 				{{ if next_page }}
@@ -24,4 +24,4 @@
 				{{ endif }}
 			</div>
 		{{ endif }}
-	{{ /entries:pagination }}
+	{{ /entries:pagination }} -->
