@@ -277,7 +277,7 @@ var labels = {
     },
     {
       "type": "Feature",
-      "properties": {MAP_LABEL: 'Lot 25'},
+      "properties": {MAP_LABEL: 'Lot 26'},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -300,18 +300,131 @@ var labels = {
   ]
 };
 
-var unavailable = {
+var sold = {
   "type": "FeatureCollection",
   "features": [
     {
       "type": "Feature",
         "properties": {
-            "activityTitle": "Lot 1",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "lotAvailability": "Unavailable",
-            "lotSize": "5.5 Acres",
-            "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/"
+            "activityTitle": "Lot 14",
+            "image": "assets/img/availability/LOT14.png",
+            "lotAvailability": "In Contract",
+            "lotSize": "7.95 Acres",
+            "cost": "$760,000",
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-14"
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [ -74.31265935301786,41.886737730174914 ],
+                        [ -74.31038886308676,41.88586511662397 ],
+                        [ -74.31013638525019,41.88607512825683 ],
+                        [ -74.31010248728944,41.88617344233208 ],
+                        [ -74.31007931807596,41.88628473578571 ],
+                        [ -74.31006553636479,41.8863965282204 ],
+                        [ -74.31004419922834,41.88645717723262 ],
+                        [ -74.30995836862348,41.88663289702792 ],
+                        [ -74.30992933568501,41.88671272219467 ],
+                        [ -74.30984236207365,41.88680576600683, ],
+                        [ -74.30981999751862,41.886843052636294 ],
+                        [ -74.30979798753032,41.886873258691935 ],
+                        [ -74.30979368804606,41.88729171592407 ],
+                        [ -74.30979475378996,41.887316803526645 ],
+                        [ -74.30982777826637,41.88752983587711 ],
+                        [ -74.3098406862934,41.88760658723806 ],
+                        [ -74.30987991362127,41.88783746571718 ],
+                        [ -74.30995333914854,41.887976491416744 ],
+                        [ -74.3100824206283,41.888087062756654 ],
+                        [ -74.31034661832962,41.888168930354965 ],
+                        [ -74.31046664714819,41.888161442486776 ],
+                        [ -74.31075699627405,41.887975243486345 ],
+                        [ -74.31106411437588,41.88777556638325 ],
+                        [ -74.31129780240121,41.88762306213433 ],
+                        [ -74.31140659860012,41.8875408193599 ],
+                        [ -74.31176810913905,41.887265573850115 ],
+                        [ -74.31202195346663,41.88707353765329 ],
+                        [ -74.31224342316568,41.886957051970384 ],
+                        [ -74.31247428059584,41.886939907243274 ],
+                        [ -74.3125192076028,41.88695825296582 ],
+                        [ -74.31257016958233,41.88697809626465 ],
+                        [ -74.31258961558319,41.8869827762752 ],
+                        [ -74.31268081073517,41.88705085483763 ],
+                        [ -74.31266739964121,41.886886305271005 ],
+                        [ -74.31266069411578,41.88680902250588 ],
+                        [ -74.31265935301786,41.886737730174914 ],
+                    ]
+                ]
+            ]
+        }
+    },
+  ]
+};
+
+var inContract = {
+  "type": "FeatureCollection",
+  "features": [
+  {
+      "type": "Feature",
+        "properties": {
+            "activityTitle": "Lot 24",
+            "image": "assets/img/availability/LOT24.png",
+            "lotAvailability": "In Contract",
+            "lotSize": "2.7 Acres",
+            "cost": "$665,000",
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-24"
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [ -74.31478098034859,41.88802166848916 ],
+                        [ -74.31400716304779,41.88730482275211 ],
+                        [ -74.3135592341423,41.887672232157 ],
+                        [ -74.31271299719816,41.88756839927843 ],
+                        [ -74.31275457143789,41.88771915657551 ],
+                        [ -74.31281290937983,41.88782298914541 ],
+                        [ -74.31285716593266,41.887897868407244 ],
+                        [ -74.31300938105403,41.88805511428716 ],
+                        [ -74.3131025878813,41.88809929296143 ],
+                        [ -74.31318707764149,41.88813897882927 ],
+                        [ -74.31324206287621,41.88816368880268 ],
+                        [ -74.31326888493845,41.88817342299216 ],
+                        [ -74.3133956193924,41.88821535523282 ],
+                        [ -74.31353174128992,41.888260282347005 ],
+                        [ -74.3136008082671,41.88826951747542 ],
+                        [ -74.31365914642805,41.88827675580467 ],
+                        [ -74.31375235317671,41.888288237236445 ],
+                        [ -74.31383147835726,41.88829822103138 ],
+                        [ -74.31401252746576,41.888291232353694 ],
+                        [ -74.31405946622681,41.88828000083133 ],
+                        [ -74.31413054483698,41.888258785452884 ],
+                        [ -74.31418687133106,41.88824231261767 ],
+                        [ -74.31425225021712,41.88822265701083 ],
+                        [ -74.31435517998199,41.88818353288097 ],
+                        [ -74.31449398415208,41.88812924572767 ],
+                        [ -74.31478098034859,41.88802166848916 ],
+                    ]
+                ]
+            ]
+        }
+    },
+  ]
+};
+
+var notReleased = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+        "properties": {
+            "activityTitle": "Lot 01",
+            "lotAvailability": "Not Released",
+            "lotSize": "5.6 Acres",
+            "cost": "—",
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-01"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -346,13 +459,11 @@ var unavailable = {
     {
       "type": "Feature",
         "properties": {
-            "MAP_LABEL": "three",
-            "activityTitle": "Lot 2",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "lotAvailability": "Unavailable",
-            "lotSize": "5.5 Acres",
-            "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/"
+            "activityTitle": "Lot 02",
+            "lotAvailability": "Not Released",
+            "lotSize": "4.7 Acres",
+            "cost": "-",
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-02"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -381,13 +492,11 @@ var unavailable = {
     {
       "type": "Feature",
         "properties": {
-            "MAP_LABEL": "three",
-            "activityTitle": "Lot 3",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "lotAvailability": "Unavailable",
-            "lotSize": "5.5 Acres",
-            "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/"
+            "activityTitle": "Lot 03",
+            "lotAvailability": "Not Released",
+            "lotSize": "5.8 Acres",
+            "cost": "-",
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-03"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -410,13 +519,11 @@ var unavailable = {
     {
       "type": "Feature",
         "properties": {
-            "MAP_LABEL": "three",
-            "activityTitle": "Lot 4",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "lotAvailability": "Unavailable",
-            "lotSize": "5.5 Acres",
-            "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/"
+            "activityTitle": "Lot 04",
+            "lotAvailability": "Not Released",
+            "lotSize": "6.6 Acres",
+            "cost": "-",
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-04"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -443,13 +550,11 @@ var unavailable = {
     {
       "type": "Feature",
         "properties": {
-            "MAP_LABEL": "three",
-            "activityTitle": "Lot 5",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "lotAvailability": "Unavailable",
-            "lotSize": "5.5 Acres",
-            "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/"
+            "activityTitle": "Lot 05",
+            "lotAvailability": "Not Released",
+            "lotSize": "7.1 Acres",
+            "cost": "-",
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-05"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -473,13 +578,11 @@ var unavailable = {
     {
       "type": "Feature",
         "properties": {
-            "MAP_LABEL": "three",
-            "activityTitle": "Lot 6",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "lotAvailability": "Unavailable",
-            "lotSize": "5.5 Acres",
-            "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/"
+            "activityTitle": "Lot 06",
+            "lotAvailability": "Not Released",
+            "lotSize": "4.1 Acres",
+            "cost": "-",
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-06"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -504,13 +607,11 @@ var unavailable = {
     {
       "type": "Feature",
         "properties": {
-            "MAP_LABEL": "three",
-            "activityTitle": "Lot 7",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "lotAvailability": "Unavailable",
-            "lotSize": "5.5 Acres",
-            "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/"
+            "activityTitle": "Lot 07",
+            "lotAvailability": "Not Released",
+            "lotSize": "4.2 Acres",
+            "cost": "-",
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-07"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -541,13 +642,11 @@ var unavailable = {
     {
       "type": "Feature",
         "properties": {
-            "MAP_LABEL": "three",
-            "activityTitle": "Lot 8",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "lotAvailability": "Unavailable",
-            "lotSize": "5.5 Acres",
-            "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/"
+            "activityTitle": "Lot 08",
+            "lotAvailability": "Not Released",
+            "lotSize": "4.0 Acres",
+            "cost": "-",
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-08"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -572,13 +671,11 @@ var unavailable = {
     {
       "type": "Feature",
         "properties": {
-            "MAP_LABEL": "three",
             "activityTitle": "Lot 9",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "lotAvailability": "Unavailable",
+            "lotAvailability": "Not Released",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/"
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-24"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -601,13 +698,11 @@ var unavailable = {
     {
       "type": "Feature",
         "properties": {
-            "MAP_LABEL": "three",
             "activityTitle": "Lot 10",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "lotAvailability": "Unavailable",
+            "lotAvailability": "Not Released",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/"
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-24"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -671,13 +766,11 @@ var unavailable = {
     {
       "type": "Feature",
         "properties": {
-            "MAP_LABEL": "three",
             "activityTitle": "Lot 12",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "lotAvailability": "Unavailable",
+            "lotAvailability": "Not Released",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/"
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-24"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -699,13 +792,11 @@ var unavailable = {
     {
       "type": "Feature",
         "properties": {
-            "MAP_LABEL": "three",
             "activityTitle": "Lot 13",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "lotAvailability": "Unavailable",
+            "lotAvailability": "Not Released",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/"
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-24"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -740,13 +831,11 @@ var unavailable = {
     {
       "type": "Feature",
         "properties": {
-            "MAP_LABEL": "three",
             "activityTitle": "Lot 16",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "lotAvailability": "Unavailable",
+            "lotAvailability": "Not Released",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/"
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-24"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -794,13 +883,11 @@ var unavailable = {
     {
       "type": "Feature",
         "properties": {
-            "MAP_LABEL": "three",
             "activityTitle": "Lot 17",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "lotAvailability": "Unavailable",
+            "lotAvailability": "Not Released",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/"
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-24"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -836,13 +923,11 @@ var unavailable = {
     {
       "type": "Feature",
         "properties": {
-            "MAP_LABEL": "three",
             "activityTitle": "Lot 18",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "lotAvailability": "Unavailable",
+            "lotAvailability": "Not Released",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/"
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-24"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -876,13 +961,11 @@ var unavailable = {
     {
       "type": "Feature",
         "properties": {
-            "MAP_LABEL": "three",
             "activityTitle": "Lot 20",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "lotAvailability": "Unavailable",
+            "lotAvailability": "Not Released",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/"
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-24"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -903,13 +986,11 @@ var unavailable = {
     {
       "type": "Feature",
         "properties": {
-            "MAP_LABEL": "three",
             "activityTitle": "Lot 23",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "lotAvailability": "Unavailable",
+            "lotAvailability": "Not Released",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/"
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-24"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -931,13 +1012,11 @@ var unavailable = {
     {
       "type": "Feature",
         "properties": {
-            "MAP_LABEL": "three",
             "activityTitle": "Lot 25",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "lotAvailability": "Unavailable",
+            "lotAvailability": "Not Released",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/"
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-24"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -963,13 +1042,11 @@ var unavailable = {
     {
       "type": "Feature",
         "properties": {
-            "MAP_LABEL": "three",
             "activityTitle": "Lot 26",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "lotAvailability": "Unavailable",
+            "lotAvailability": "Not Released",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/"
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-24"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -994,13 +1071,11 @@ var unavailable = {
     {
       "type": "Feature",
         "properties": {
-            "MAP_LABEL": "three",
             "activityTitle": "N/A",
-            "image": "assets/img/in-the-area/inthearea_sip_otter.jpg",
-            "lotAvailability": "Unavailable",
+            "lotAvailability": "Not Released",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://bluewillowgetaways.com/"
+            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-24"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -1026,7 +1101,6 @@ var available = {
     {
       "type": "Feature",
         "properties": {
-            "MAP_LABEL": "three",
             "activityTitle": "Lot 11",
             "image": "assets/img/availability/LOT11.png",
             "lotAvailability": "Aavailable",
@@ -1074,64 +1148,6 @@ var available = {
     {
       "type": "Feature",
         "properties": {
-            "MAP_LABEL": "three",
-            "activityTitle": "Lot 14",
-            "image": "assets/img/availability/LOT14.png",
-            "lotAvailability": "In Contract",
-            "lotSize": "7.95 Acres",
-            "cost": "$715,000",
-            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-14"
-        },
-        "geometry": {
-            "type": "MultiPolygon",
-            "coordinates": [
-                [
-                    [
-                        [ -74.31265935301786,41.886737730174914 ],
-                        [ -74.31038886308676,41.88586511662397 ],
-                        [ -74.31013638525019,41.88607512825683 ],
-                        [ -74.31010248728944,41.88617344233208 ],
-                        [ -74.31007931807596,41.88628473578571 ],
-                        [ -74.31006553636479,41.8863965282204 ],
-                        [ -74.31004419922834,41.88645717723262 ],
-                        [ -74.30995836862348,41.88663289702792 ],
-                        [ -74.30992933568501,41.88671272219467 ],
-                        [ -74.30984236207365,41.88680576600683, ],
-                        [ -74.30981999751862,41.886843052636294 ],
-                        [ -74.30979798753032,41.886873258691935 ],
-                        [ -74.30979368804606,41.88729171592407 ],
-                        [ -74.30979475378996,41.887316803526645 ],
-                        [ -74.30982777826637,41.88752983587711 ],
-                        [ -74.3098406862934,41.88760658723806 ],
-                        [ -74.30987991362127,41.88783746571718 ],
-                        [ -74.30995333914854,41.887976491416744 ],
-                        [ -74.3100824206283,41.888087062756654 ],
-                        [ -74.31034661832962,41.888168930354965 ],
-                        [ -74.31046664714819,41.888161442486776 ],
-                        [ -74.31075699627405,41.887975243486345 ],
-                        [ -74.31106411437588,41.88777556638325 ],
-                        [ -74.31129780240121,41.88762306213433 ],
-                        [ -74.31140659860012,41.8875408193599 ],
-                        [ -74.31176810913905,41.887265573850115 ],
-                        [ -74.31202195346663,41.88707353765329 ],
-                        [ -74.31224342316568,41.886957051970384 ],
-                        [ -74.31247428059584,41.886939907243274 ],
-                        [ -74.3125192076028,41.88695825296582 ],
-                        [ -74.31257016958233,41.88697809626465 ],
-                        [ -74.31258961558319,41.8869827762752 ],
-                        [ -74.31268081073517,41.88705085483763 ],
-                        [ -74.31266739964121,41.886886305271005 ],
-                        [ -74.31266069411578,41.88680902250588 ],
-                        [ -74.31265935301786,41.886737730174914 ],
-                    ]
-                ]
-            ]
-        }
-    },
-    {
-      "type": "Feature",
-        "properties": {
-            "MAP_LABEL": "three",
             "activityTitle": "Lot 15",
             "image": "assets/img/availability/LOT15.png",
             "lotAvailability": "Aavailable",
@@ -1174,7 +1190,6 @@ var available = {
     {
       "type": "Feature",
         "properties": {
-            "MAP_LABEL": "three",
             "activityTitle": "Lot 19",
             "image": "assets/img/availability/LOT19.png",
             "lotAvailability": "Aavailable",
@@ -1218,7 +1233,6 @@ var available = {
     {
       "type": "Feature",
         "properties": {
-            "MAP_LABEL": "three",
             "activityTitle": "Lot 21",
             "image": "assets/img/availability/LOT21.png",
             "lotAvailability": "Aavailable",
@@ -1254,7 +1268,6 @@ var available = {
     {
       "type": "Feature",
         "properties": {
-            "MAP_LABEL": "three",
             "activityTitle": "Lot 22",
             "image": "assets/img/availability/LOT22.png",
             "lotAvailability": "Aavailable",
@@ -1280,53 +1293,7 @@ var available = {
             ]
         }
     },
-    {
-      "type": "Feature",
-        "properties": {
-            "MAP_LABEL": "three",
-            "activityTitle": "Lot 24",
-            "image": "assets/img/availability/LOT24.png",
-            "lotAvailability": "Aavailable",
-            "lotSize": "2.7 Acres",
-            "cost": "$665,000",
-            "lotURL": "http://staging.hudsonwoods.com/availability/lots/lot-24"
-        },
-        "geometry": {
-            "type": "MultiPolygon",
-            "coordinates": [
-                [
-                    [
-                        [ -74.31478098034859,41.88802166848916 ],
-                        [ -74.31400716304779,41.88730482275211 ],
-                        [ -74.3135592341423,41.887672232157 ],
-                        [ -74.31271299719816,41.88756839927843 ],
-                        [ -74.31275457143789,41.88771915657551 ],
-                        [ -74.31281290937983,41.88782298914541 ],
-                        [ -74.31285716593266,41.887897868407244 ],
-                        [ -74.31300938105403,41.88805511428716 ],
-                        [ -74.3131025878813,41.88809929296143 ],
-                        [ -74.31318707764149,41.88813897882927 ],
-                        [ -74.31324206287621,41.88816368880268 ],
-                        [ -74.31326888493845,41.88817342299216 ],
-                        [ -74.3133956193924,41.88821535523282 ],
-                        [ -74.31353174128992,41.888260282347005 ],
-                        [ -74.3136008082671,41.88826951747542 ],
-                        [ -74.31365914642805,41.88827675580467 ],
-                        [ -74.31375235317671,41.888288237236445 ],
-                        [ -74.31383147835726,41.88829822103138 ],
-                        [ -74.31401252746576,41.888291232353694 ],
-                        [ -74.31405946622681,41.88828000083133 ],
-                        [ -74.31413054483698,41.888258785452884 ],
-                        [ -74.31418687133106,41.88824231261767 ],
-                        [ -74.31425225021712,41.88822265701083 ],
-                        [ -74.31435517998199,41.88818353288097 ],
-                        [ -74.31449398415208,41.88812924572767 ],
-                        [ -74.31478098034859,41.88802166848916 ],
-                    ]
-                ]
-            ]
-        }
-    },
+    
   ]
 };
 

@@ -4,11 +4,6 @@ fields:
   title:
     type: text
     display: Title
-  image:
-    type: file
-    display: Availability Page Popover Image
-    destination: assets/img/in-the-area
-    show_thumbnail: true
   availability:
     type: text
     display: Availability
@@ -25,7 +20,7 @@ fields:
   imageSingle:
     type: file
     display: Single Image
-    destination: assets/img/homes
+    destination: assets/img/availability
     show_thumbnail: true
 
   imageGallery:
@@ -37,7 +32,7 @@ fields:
       image:
         type: file
         display: Images
-        destination: assets/img/homes
+        destination: assets/img/availability
         show_thumbnail: true
   floorplans:
     type: file
