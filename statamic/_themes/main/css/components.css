@@ -9522,8 +9522,6 @@ p {
   position: absolute;
   top: 50px;
   left: 50px;
-  height: 140px;
-  width: 200px;
   background-color: rgba(255, 255, 255, 0.88);
   z-index: 100;
   padding: 15px;
@@ -9556,11 +9554,20 @@ p {
   -ms-flex-align: center;
   align-items: center;
 }
-.legend .legend-marker.available span {
-  background-color: #c6d6a4;
+.legend .legend-marker.forSale span {
+  background-color: #e4b07d;
 }
-.legend .legend-marker.unavailable span {
-  background-color: #dfdbd9;
+.legend .legend-marker.sold span {
+  background-color: #c1d39b;
+}
+.legend .legend-marker.inContract span {
+  background-color: #a2c8de;
+}
+.legend .legend-marker.notReleased span {
+  background-color: #dfdcd9;
+}
+.legend .legend-marker:last-of-type {
+  margin-bottom: 0;
 }
 .legend span {
   height: 20px;

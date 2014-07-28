@@ -2,8 +2,8 @@
 	position: absolute;
 	top: 50px;
 	left: 50px;
-	height: 140px;
-	width: 200px;
+	// height: 140px;
+	// width: 200px;
 	background-color: rgba(white,.88);
 	z-index: 100;
 	padding: 15px;
@@ -26,15 +26,28 @@
 		vertical-align: center;
 		// justify-content: center;
 		align-items: center;
-		&.available {
+		&.forSale {
 			span {
-				background-color: #c6d6a4;
+				background-color: #e4b07d;
 			}
 		}
-		&.unavailable {
+		&.sold {
 			span {
-				background-color: #dfdbd9;
+				background-color: #c1d39b;
 			}
+		}
+		&.inContract {
+			span {
+				background-color: #a2c8de;
+			}
+		}
+		&.notReleased {
+			span {
+				background-color: #dfdcd9;
+			}
+		}
+		&:last-of-type {
+			margin-bottom: 0;
 		}
 	}
 	span {

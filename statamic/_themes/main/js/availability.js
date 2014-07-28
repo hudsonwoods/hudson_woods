@@ -47,7 +47,7 @@ function resetHighlight(e) {
 //     color: "#fff",
 //     opacity: 1,
 //     fillColor: "#79a33a",
-//     fillOpacity: 0.8
+//     fillOpacity: 0.9
 // });
 
 // Sold
@@ -58,7 +58,7 @@ function soldMap(feature) {
         color: "#fff",
         opacity: 1,
         fillColor: "#bdd194",
-        fillOpacity: 0.8
+        fillOpacity: 0.9
     };
 }
 
@@ -70,7 +70,7 @@ function soldMapResetHighlight(e) {
         color: "#fff",
         opacity: 1,
         fillColor: "#bdd194",
-        fillOpacity: 0.8
+        fillOpacity: 0.9
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -86,7 +86,7 @@ function soldMapHighlight(e) {
         color: "#fff",
         opacity: 1,
         fillColor: "#79a33a",
-        fillOpacity: 0.8
+        fillOpacity: 0.9
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -158,7 +158,7 @@ function availableMap(feature) {
         color: "#fff",
         opacity: 1,
         fillColor: "#e4aa72",
-        fillOpacity: 0.8
+        fillOpacity: 0.9
     };
 }
 
@@ -170,7 +170,7 @@ function availableMapResetHighlight(e) {
         color: "#fff",
         opacity: 1,
         fillColor: "#e4aa72",
-        fillOpacity: 0.8
+        fillOpacity: 0.9
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -186,7 +186,7 @@ function availableMapHighlight(e) {
         color: "#fff",
         opacity: 1,
         fillColor: "#e38949",
-        fillOpacity: 0.8
+        fillOpacity: 0.9
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -258,7 +258,7 @@ function inContractMap(feature) {
         color: "#fff",
         opacity: 1,
         fillColor: "#9ac5de",
-        fillOpacity: 0.8
+        fillOpacity: 0.9
     };
 }
 
@@ -270,7 +270,7 @@ function inContractMapResetHighlight(e) {
         color: "#fff",
         opacity: 1,
         fillColor: "#9ac5de",
-        fillOpacity: 0.8
+        fillOpacity: 0.9
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -286,7 +286,7 @@ function inContractMapHighlight(e) {
         color: "#fff",
         opacity: 1,
         fillColor: "#5290cc",
-        fillOpacity: 0.8
+        fillOpacity: 0.9
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -358,7 +358,7 @@ function notReleasedMap(feature) {
         color: "#fff",
         opacity: 1,
         fillColor: "#dedbd9",
-        fillOpacity: 0.8
+        fillOpacity: 0.9
     };
 }
 
@@ -370,7 +370,7 @@ function notReleasedMapResetHighlight(e) {
         color: "#fff",
         opacity: 1,
         fillColor: "#dedbd9",
-        fillOpacity: 0.8
+        fillOpacity: 0.9
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -386,7 +386,7 @@ function notReleasedMapHighlight(e) {
         color: "#fff",
         opacity: 1,
         fillColor: "#a3a2a1",
-        fillOpacity: 0.8
+        fillOpacity: 0.9
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
