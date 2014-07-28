@@ -8058,6 +8058,10 @@ body {
   background-color: #ebe9e2;
 }
 
+.lighter-gray {
+  background-color: #f3f3f3;
+}
+
 .stuck {
   position: fixed;
 }
@@ -9261,7 +9265,6 @@ p {
   margin-bottom: 0;
 }
 #landing-tiles a {
-  color: #484c47;
   font-weight: 600;
 }
 #landing-tiles .landing-tile h3 {

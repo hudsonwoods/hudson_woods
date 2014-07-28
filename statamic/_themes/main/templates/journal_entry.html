@@ -21,9 +21,8 @@
 				<a href="{{ url }}"><h2>{{ title }}</h2></a>
 					{{ if date }}
 					<p class="publish-details"><time pubdate datetime="{{ datestamp format="Y-m-d" }}">Posted on {{ date }}</time> 
-						by {{ member:profile member="{ author }" }}
-							        {{ first_name }} {{ last_name }} <!-- <img src="../assets/img/users/{{ userProfile }}" alt=""> -->
-							    {{ /member:profile }}
+						by <a href="{{ homepage }}blog/author/{{ author }}">{{ author }}</a>
+
 					</p>
 	            	{{ endif }}
 	            </div>

@@ -19,10 +19,8 @@
 		    </div>
 	        <a class="title" href="{{ url }}"><h3>{{ title }}</h3></a>
 			{{ if date }}
-			 <p class="publish-date"><time pubdate datetime="{{ datestamp format="Y-m-d" }}">Posted on {{ date }}</time> by {{ member:profile }}
-				{{ first_name }} {{ last_name }}
-				<!-- <img src="{{ userProfile }}" alt=""> -->
-				{{ /member:profile }}</p>
+			 <p class="publish-date"><time pubdate datetime="{{ datestamp format="Y-m-d" }}">Posted on {{ date }}</time> by 	
+			 <a href="{{ homepage }}blog/author/{{ author }}">{{ author }}</a>
 	            	{{ endif }}
 	            	<a href=""></a>
 			{{ contentSummary }}
