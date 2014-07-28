@@ -7954,7 +7954,7 @@ $('.slick-carousel-landing').slick({
   infinite: true,
   speed: 1500,
   fade: true,
-  autoplay: false
+  autoplay: true
 });
 
 // Activate Upgrades Bootstrap Tabs
