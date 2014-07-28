@@ -48,11 +48,15 @@
 }
 
 .card.area {
+	h2 {
+		margin-top: 0;
+	}
 	h4 img {
 		min-width: 0;
 		margin-right: 10px;
 	}
 	h4 {
+		padding-top: 20px;
 		text-transform: uppercase;
 		.sleep:before {
 			content: url("../../../assets/img/in-the-area/icons/card-icon-sleep.png");
