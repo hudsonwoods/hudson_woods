@@ -65,7 +65,8 @@
 }
 
 .featured-entry {
-	height: 400px;
+	height: 430px;
+	margin-top: -30px;
 	background-color: $dark-gray;
 	margin-bottom: 30px;
 	a,p {
@@ -91,7 +92,7 @@
 }
 
 .featured-image {
-	height: 400px;
+	height: 430px;
 
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -144,6 +145,10 @@
 	.video {
 		margin-bottom: 40px;
 	}
+}
+
+.taxonomy {
+	text-transform: uppercase;
 }
 
 .blog-title-section {

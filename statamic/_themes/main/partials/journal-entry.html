@@ -20,7 +20,7 @@
 	        <a class="title" href="{{ url }}"><h3>{{ title }}</h3></a>
 			{{ if date }}
 			 <p class="publish-date"><time pubdate datetime="{{ datestamp format="Y-m-d" }}">Posted on {{ date }}</time> by 	
-			 <a href="{{ homepage }}blog/author/{{ author }}">{{ author }}</a>
+			 <a class="taxonomy" href="{{ homepage }}blog/author/{{ author }}">{{ author }}</a>
 	        {{ endif }}
 	            	
 			{{ contentSummary }}

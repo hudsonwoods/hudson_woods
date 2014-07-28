@@ -10134,7 +10134,8 @@ p {
 }
 
 .featured-entry {
-  height: 400px;
+  height: 430px;
+  margin-top: -30px;
   background-color: #4e4f54;
   margin-bottom: 30px;
 }
@@ -10159,7 +10160,7 @@ p {
 }
 
 .featured-image {
-  height: 400px;
+  height: 430px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -10210,6 +10211,10 @@ p {
 }
 .blog-content .video {
   margin-bottom: 40px;
+}
+
+.taxonomy {
+  text-transform: uppercase;
 }
 
 .blog-title-section h4 {
