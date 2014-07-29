@@ -61,9 +61,9 @@
 			}
 		}
 		&.sold {
-			border-top: 8px solid #bab8ab;
+			border-top: 8px solid #9ebd60;
 			.status {
-				background-color: #bab8ab;
+				background-color: #9ebd60;
 			}
 		}
 		&.contract-out {
@@ -73,9 +73,9 @@
 			}
 		}
 		&.for-sale {
-			border-top: 8px solid #fa5f43;
+			border-top: 8px solid #f2644b;
 			.status {
-				background-color: #fa5f43;
+				background-color: #f2644b;
 			}
 		}
 	}
@@ -209,7 +209,7 @@
 .leaflet-label {
 	border: none;
 	background-color:transparent;
-	color: lighten(black,45%);
+	color: lighten(black,35%);
 	// text-shadow: 1px 1px 0px rgba(255,255,255,.8);
 	text-transform: uppercase;
 	font-weight: 500;

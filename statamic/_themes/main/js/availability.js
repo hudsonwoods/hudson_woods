@@ -185,7 +185,7 @@ function availableMapHighlight(e) {
         weight: 2,
         color: "#fff",
         opacity: 1,
-        fillColor: "#fa5f43",
+        fillColor: "#f2644b",
         fillOpacity: 1
     });
 

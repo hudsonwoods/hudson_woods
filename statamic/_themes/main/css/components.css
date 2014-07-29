@@ -9096,10 +9096,10 @@ p {
   background-color: #adaca0;
 }
 .card.availability.sold {
-  border-top: 8px solid #bab8ab;
+  border-top: 8px solid #9ebd60;
 }
 .card.availability.sold .status {
-  background-color: #bab8ab;
+  background-color: #9ebd60;
 }
 .card.availability.contract-out {
   border-top: 8px solid #48d4cd;
@@ -9108,10 +9108,10 @@ p {
   background-color: #48d4cd;
 }
 .card.availability.for-sale {
-  border-top: 8px solid #fa5f43;
+  border-top: 8px solid #f2644b;
 }
 .card.availability.for-sale .status {
-  background-color: #fa5f43;
+  background-color: #f2644b;
 }
 
 .card.area h2 {
@@ -9238,7 +9238,7 @@ p {
 .leaflet-label {
   border: none;
   background-color: transparent;
-  color: #737373;
+  color: #595959;
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -9575,6 +9575,7 @@ p {
   margin-right: 20px;
   display: inline-block;
   line-height: 20px;
+  text-transform: uppercase;
 }
 .legend .legend-marker.for-sale span {
   background-color: #f4816c;
@@ -9592,10 +9593,10 @@ p {
   margin-bottom: 0;
 }
 .legend span {
-  height: 20px;
-  width: 20px;
-  margin-right: 10px;
-  margin-bottom: -4px;
+  height: 18px;
+  width: 18px;
+  margin-right: 5px;
+  margin-bottom: -3px;
   display: inline-block;
 }
 
