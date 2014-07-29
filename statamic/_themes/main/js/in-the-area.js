@@ -107,7 +107,7 @@ itahw.addTo(map);
 
 
 
-var graysleepIcon = L.icon({
+var graySleepIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/gray_sleep.png',
     iconSize:     [28, 40], // size of the icon
     iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
@@ -167,7 +167,7 @@ var itaSleep = L.geoJson([itaSleep], {
   },
 
   pointToLayer: function (feature, latlng) {
-    return L.marker(latlng, {pane: 'itaSleep ita', icon: graysleepIcon});
+    return L.marker(latlng, {pane: 'itaSleep ita', icon: graySleepIcon});
   },
   onEachFeature: onEachFeatureSleep,
 
