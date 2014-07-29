@@ -33,12 +33,81 @@ var pane7 = map.createPane('itaSki ita');
 var pane8 = map.createPane('itaCulture ita');
 var pane9 = map.createPane('itaPick ita');
 var pane10 = map.createPane('itaMind ita');
+var pane11 = map.createPane('itaHW ita');
 
 
 
 // Activate Each Set of Activities
 
-var graySleepIcon = L.icon({
+var hwIcon = L.icon({
+    iconUrl: 'assets/img/in-the-area/icons/hw_logo.png',
+    iconSize:     [28, 40], // size of the icon
+    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
+});
+
+
+
+
+function highlightFeaturehw(e) {
+    var layer = e.target;
+    layer.setIcon(hwIcon);
+}
+
+function resetHighlighthw(e) {
+  var layer = e.target;
+    layer.setIcon(hwIcon);
+}
+
+function onEachFeaturehw(feature, layer) {
+
+  var popupContent = 
+
+  "<div class='card area " + feature.properties.classType + "'" + ">" + 
+  "<h2>" + feature.properties.activityTitle + "</h2>" +
+  "<img src=" + feature.properties.image +  ">" + 
+  "<p>" + feature.properties.activityDescription + "</p>" +
+  "<a target=_blank href=" + feature.properties.website + ">" + feature.properties.website + "</a>" +
+  "</div>";
+
+  if (feature.properties && feature.properties.popupContent) {
+    popupContent += feature.properties;
+  }
+
+  layer.bindPopup(popupContent,popupOptions);
+
+
+  // layer.setIcon(grayhwIcon);
+  layer.on({
+    mouseover: highlightFeaturehw,
+    mouseout: resetHighlighthw,   
+    // click: highlightFeaturehw
+  });
+  // map.on({click: resetHighlighthw});
+}
+
+var itahw = L.geoJson([itaHW], {
+
+  style: function (feature) {
+    return feature.properties;
+  },
+
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {pane: 'itaHW ita', icon: hwIcon});
+  },
+  onEachFeature: onEachFeaturehw,
+
+
+});
+var hwBounds = itahw.getBounds();
+itahw.addTo(map);
+
+
+
+
+
+
+var graysleepIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/gray_sleep.png',
     iconSize:     [28, 40], // size of the icon
     iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
@@ -76,7 +145,7 @@ function onEachFeatureSleep(feature, layer) {
   "</div>";
 
   if (feature.properties && feature.properties.popupContent) {
-    popupContent += feature.properties.foo;
+    popupContent += feature.properties;
   }
 
   layer.bindPopup(popupContent,popupOptions);
@@ -98,7 +167,7 @@ var itaSleep = L.geoJson([itaSleep], {
   },
 
   pointToLayer: function (feature, latlng) {
-    return L.marker(latlng, {pane: 'itaSleep ita', icon: graySleepIcon});
+    return L.marker(latlng, {pane: 'itaSleep ita', icon: graysleepIcon});
   },
   onEachFeature: onEachFeatureSleep,
 

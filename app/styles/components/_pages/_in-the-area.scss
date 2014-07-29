@@ -4,4 +4,7 @@
 
 .ita-pane.active {
 	display: block;
+	img {
+		z-index: 30 !important;
+	}
 }

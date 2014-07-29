@@ -1,3 +1,28 @@
+var itaHW = {
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.31709907948965,41.887083178013086
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "classIcon": "assets/img/in-the-area/icons/card-icon-sleep.png",
+                "classType": "hudson-woods",
+                "activity": "sleep",
+                "activityTitle": "Hudson Woods",
+                "image": "assets/img/in-the-area/hw_image.jpg",
+                "activityDescription":"Set amidst forests and meadows with sweeping mountain views, Hudson Woods homes offer modern design that blends seamlessly with the natural surroundings.",
+                "website": "http://www.hudsonwoods.com/availability"
+            },
+            "id": 1
+        },
+    ]
+};
+
 var itaSleep = {
     "type": "FeatureCollection",
     "features": [

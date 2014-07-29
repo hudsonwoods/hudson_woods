@@ -136,6 +136,9 @@
 	&.pick-and-grow {
 		border-top: 8px solid $pick-and-grow;
 	}
+	&.hudson-woods {
+		border-top: 8px solid $yellow;
+	}
 }
 
 .card.area.mobile {

@@ -9168,6 +9168,9 @@ p {
 .card.area.pick-and-grow {
   border-top: 8px solid #bfe700;
 }
+.card.area.hudson-woods {
+  border-top: 8px solid #c9be69;
+}
 
 .card.area.mobile {
   background-color: #f5f4f1;
@@ -9625,14 +9628,6 @@ p {
 #floor-plans {
   /* Portrait tablet to landscape and desktop */
 }
-#floor-plans a {
-  text-decoration: underline;
-  -webkit-transition: 0.15s;
-  transition: 0.15s;
-}
-#floor-plans a:hover {
-  color: #555953;
-}
 #floor-plans .floor-plan-specs, #floor-plans img {
   margin-top: 30px;
 }
@@ -9899,6 +9894,9 @@ p {
 
 .ita-pane.active {
   display: block;
+}
+.ita-pane.active img {
+  z-index: 30 !important;
 }
 
 #header-landing {

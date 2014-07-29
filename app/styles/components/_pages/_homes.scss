@@ -23,13 +23,6 @@
 }
 
 #floor-plans  {
-	a {
-		text-decoration: underline;
-		@include transition(.15s);
-		&:hover {
-			color: darken($base-font-color,10%);
-		}
-	}
 	.floor-plan-specs, img {
 		margin-top: 30px;
 	}
