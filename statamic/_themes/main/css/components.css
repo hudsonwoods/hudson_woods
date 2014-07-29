@@ -9096,10 +9096,10 @@ p {
   background-color: #adaca0;
 }
 .card.availability.sold {
-  border-top: 8px solid #9ebd60;
+  border-top: 8px solid #bab8ab;
 }
 .card.availability.sold .status {
-  background-color: #9ebd60;
+  background-color: #bab8ab;
 }
 .card.availability.contract-out {
   border-top: 8px solid #48d4cd;

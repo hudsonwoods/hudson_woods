@@ -385,7 +385,7 @@ function notReleasedMapHighlight(e) {
         weight: 2,
         color: "#fff",
         opacity: 1,
-        fillColor: "#adaca0",
+        fillColor: "#bab8ab",
         fillOpacity: 1
     });
 
