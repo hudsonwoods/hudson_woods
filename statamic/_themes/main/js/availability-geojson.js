@@ -372,7 +372,7 @@ var contractOut = {
             "lotAvailability": "Contract Out",
             "lotSize": "2.7 Acres",
             "cost": "$665,000",
-            "lotURL": "http://staging.hudsonwoods.com/availability/in-contract/lot-24"
+            "lotURL": "http://staging.hudsonwoods.com/availability/contract-out/lot-24"
         },
         "geometry": {
             "type": "MultiPolygon",
