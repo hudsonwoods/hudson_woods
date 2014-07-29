@@ -42,7 +42,7 @@ var pane11 = map.createPane('itaHW ita');
 var hwIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/hw_logo.png',
     iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    iconAnchor:   [30, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
@@ -110,14 +110,14 @@ itahw.addTo(map);
 var graySleepIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/gray_sleep.png',
     iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
 var colorSleepIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/color_sleep.png',
     iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
@@ -185,14 +185,14 @@ itaSleep.addTo(map);
 var grayCultureIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/gray_culture.png',
     iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
 var colorCultureIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/color_culture.png',
     iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
@@ -254,14 +254,14 @@ itaCulture.addTo(map);
 var grayEatIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/gray_eat.png',
     iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
 var colorEatIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/color_eat.png',
     iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
@@ -325,14 +325,14 @@ itaEat.addTo(map);
 var grayMindIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/gray_mind-body.png',
     iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
 var colorMindIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/color_mind-body.png',
     iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
@@ -393,14 +393,14 @@ itaMind.addTo(map);
 var grayPickIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/gray_pick-grow.png',
     iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
 var colorPickIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/color_pick-grow.png',
     iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
@@ -461,14 +461,14 @@ itaPick.addTo(map);
 var graySipIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/gray_sip.png',
     iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
 var colorSipIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/color_sip.png',
     iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
@@ -528,14 +528,14 @@ itaSip.addTo(map);
 var graySkiIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/gray_ski.png',
     iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
 var colorSkiIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/color_ski.png',
     iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
@@ -598,14 +598,14 @@ itaSki.addTo(map);
 var graySwimIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/gray_swim.png',
     iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
 var colorSwimIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/color_swim.png',
     iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
@@ -665,14 +665,14 @@ itaSwim.addTo(map);
 var graySwingIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/gray_swing.png',
     iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
 var colorSwingIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/color_swing.png',
     iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
@@ -733,14 +733,14 @@ itaSwing.addTo(map);
 var grayTrailIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/gray_trail.png',
     iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 
 var colorTrailIcon = L.icon({
     iconUrl: 'assets/img/in-the-area/icons/color_trail.png',
     iconSize:     [28, 40], // size of the icon
-    iconAnchor:   [14, 0], // point of the icon which will correspond to marker's location
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, 10] // point from which the popup should open relative to the iconAnchor
 });
 

@@ -27,7 +27,7 @@ var popupOptions = {
 
 // Draw Map Labels
 
-L.Icon.Default.imagePath = 'assets/img';
+L.Icon.Default.imagePath = 'assets/img/availability/icons';
 
 var callLocatorLayer = L.geoJson(labels, {
     pointToLayer: function (feature, latlng)
