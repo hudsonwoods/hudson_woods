@@ -362,14 +362,14 @@ var sold = {
   ]
 };
 
-var inContract = {
+var contractOut = {
   "type": "FeatureCollection",
   "features": [
   {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 24",
-            "lotAvailability": "In Contract",
+            "lotAvailability": "Contract Out",
             "lotSize": "2.7 Acres",
             "cost": "$665,000",
             "lotURL": "http://staging.hudsonwoods.com/availability/in-contract/lot-24"
@@ -412,6 +412,7 @@ var inContract = {
     },
   ]
 };
+
 
 var notReleased = {
   "type": "FeatureCollection",
@@ -1067,30 +1068,7 @@ var notReleased = {
             ]
         }
     },
-    {
-      "type": "Feature",
-        "properties": {
-            "activityTitle": "N/A",
-            "lotAvailability": "Not Released",
-            "lotSize": "5.5 Acres",
-            "cost": "$500,000",
-            "lotURL": "http://staging.hudsonwoods.com/availability/not-released/lot-24"
-        },
-        "geometry": {
-            "type": "MultiPolygon",
-            "coordinates": [
-                [
-                    [
-                        [ -74.31576199829578,41.88767572652971 ],
-                        [ -74.31446850299835,41.88666185120915 ],
-                        [ -74.31400716304779,41.88730482275211 ],
-                        [ -74.31478098034859,41.88802166848914 ],
-                        [ -74.31576199829578,41.88767572652971 ],
-                    ]
-                ]
-            ]
-        }
-    },
+
   ]
 };
 
@@ -1288,6 +1266,36 @@ var available = {
         }
     },
     
+  ]
+};
+
+var notAvailable = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+        "properties": {
+            "activityTitle": "N/A",
+            "lotAvailability": "Not Released",
+            "lotSize": "5.5 Acres",
+            "cost": "$500,000",
+            "lotURL": "http://staging.hudsonwoods.com/availability/not-released/lot-24"
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [ -74.31576199829578,41.88767572652971 ],
+                        [ -74.31446850299835,41.88666185120915 ],
+                        [ -74.31400716304779,41.88730482275211 ],
+                        [ -74.31478098034859,41.88802166848914 ],
+                        [ -74.31576199829578,41.88767572652971 ],
+                    ]
+                ]
+            ]
+        }
+    },   
   ]
 };
 

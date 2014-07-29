@@ -93,7 +93,7 @@ var itahw = L.geoJson([itaHW], {
   },
 
   pointToLayer: function (feature, latlng) {
-    return L.marker(latlng, {pane: 'itaHW ita', icon: hwIcon});
+    return L.marker(latlng, {icon: hwIcon});
   },
   onEachFeature: onEachFeaturehw,
 

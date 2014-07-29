@@ -47,7 +47,7 @@ function resetHighlight(e) {
 //     color: "#fff",
 //     opacity: 1,
 //     fillColor: "#79a33a",
-//     fillOpacity: 0.9
+//     fillOpacity: 1
 // });
 
 // Sold
@@ -58,7 +58,7 @@ function soldMap(feature) {
         color: "#fff",
         opacity: 1,
         fillColor: "#bdd194",
-        fillOpacity: 0.9
+        fillOpacity: 1
     };
 }
 
@@ -70,7 +70,7 @@ function soldMapResetHighlight(e) {
         color: "#fff",
         opacity: 1,
         fillColor: "#bdd194",
-        fillOpacity: 0.9
+        fillOpacity: 1
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -85,8 +85,8 @@ function soldMapHighlight(e) {
         weight: 2,
         color: "#fff",
         opacity: 1,
-        fillColor: "#79a33a",
-        fillOpacity: 0.9
+        fillColor: "#9ebd60",
+        fillOpacity: 1
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -109,16 +109,16 @@ function onEachFeaturesold(feature, layer) {
 
     var popupContent = 
     
-    "<div class='card availability" + "'" + ">" + 
+    "<div class='card availability sold" + "'" + ">" + 
         "<h2>" + feature.properties.activityTitle + "</h2>" +
         // "<img src=" + feature.properties.image +  ">" + 
         "<div class='col-md-4" + "'" + ">" +
             "<p>AVAILABILITY</p>" +
-            "<p>"+feature.properties.lotAvailability+"</p>" +
+            "<p class='status" + "'" + ">"+feature.properties.lotAvailability+"</p>" +
         "</div>" + 
         "<div class='col-md-4" + "'" + ">" +
             "<p>SIZE</p>" +
-            "<p>"+feature.properties.lotSize+"</p>" +
+            "<p>" + feature.properties.lotSize+"</p>" +
         "</div>" + 
         "<div class='col-md-4" + "'" + ">" +
             "<p>COST</p>" +
@@ -157,8 +157,8 @@ function availableMap(feature) {
         weight: 2,
         color: "#fff",
         opacity: 1,
-        fillColor: "#e4aa72",
-        fillOpacity: 0.9
+        fillColor: "#f4816c",
+        fillOpacity: 1
     };
 }
 
@@ -169,8 +169,8 @@ function availableMapResetHighlight(e) {
         weight: 2,
         color: "#fff",
         opacity: 1,
-        fillColor: "#e4aa72",
-        fillOpacity: 0.9
+        fillColor: "#f4816c",
+        fillOpacity: 1
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -185,8 +185,8 @@ function availableMapHighlight(e) {
         weight: 2,
         color: "#fff",
         opacity: 1,
-        fillColor: "#e38949",
-        fillOpacity: 0.9
+        fillColor: "#fa5f43",
+        fillOpacity: 1
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -209,12 +209,12 @@ function onEachFeatureAvailable(feature, layer) {
 
     var popupContent = 
     
-    "<div class='card availability" + "'" + ">" + 
+    "<div class='card availability for-sale" + "'" + ">" + 
         "<h2>" + feature.properties.activityTitle + "</h2>" +
         // "<img src=" + feature.properties.image +  ">" + 
         "<div class='col-md-4" + "'" + ">" +
             "<p>AVAILABILITY</p>" +
-            "<p>"+feature.properties.lotAvailability+"</p>" +
+            "<p class='status" + "'" + ">"+feature.properties.lotAvailability+"</p>" +
         "</div>" + 
         "<div class='col-md-4" + "'" + ">" +
             "<p>SIZE</p>" +
@@ -250,27 +250,27 @@ geojson = L.geoJson(available, {
 
 
 
-// In Contract
+// Contract Out
 
-function inContractMap(feature) {
+function contractOutMap(feature) {
     return {
         weight: 2,
         color: "#fff",
         opacity: 1,
-        fillColor: "#9ac5de",
-        fillOpacity: 0.9
+        fillColor: "#9dd3d0",
+        fillOpacity: 1
     };
 }
 
-function inContractMapResetHighlight(e) {
+function contractOutMapResetHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
         weight: 2,
         color: "#fff",
         opacity: 1,
-        fillColor: "#9ac5de",
-        fillOpacity: 0.9
+        fillColor: "#9dd3d0",
+        fillOpacity: 1
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -278,15 +278,15 @@ function inContractMapResetHighlight(e) {
     }
 }
 
-function inContractMapHighlight(e) {
+function contractOutMapHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
         weight: 2,
         color: "#fff",
         opacity: 1,
-        fillColor: "#5290cc",
-        fillOpacity: 0.9
+        fillColor: "#48d4cd",
+        fillOpacity: 1
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -294,7 +294,7 @@ function inContractMapHighlight(e) {
     }
 }
 
-function onEachFeatureinContract(feature, layer) {
+function onEachFeaturecontractOut(feature, layer) {
 
         //does layerGroup already exist? if not create it and add to map
         var lg = mapLayerGroups[feature.properties.type];
@@ -309,14 +309,14 @@ function onEachFeatureinContract(feature, layer) {
 
     var popupContent = 
     
-    "<div class='card availability" + "'" + ">" + 
+    "<div class='card availability contract-out" + "'" + ">" + 
         "<h2>" + feature.properties.activityTitle + "</h2>" +
         // "<img src=" + feature.properties.image +  ">" + 
-        "<div class='col-md-4" + "'" + ">" +
+        "<div class='col-md-5" + "'" + ">" +
             "<p>AVAILABILITY</p>" +
-            "<p>"+feature.properties.lotAvailability+"</p>" +
+            "<p class='status" + "'" + ">"+feature.properties.lotAvailability+"</p>" +
         "</div>" + 
-        "<div class='col-md-4" + "'" + ">" +
+        "<div class='col-md-3" + "'" + ">" +
             "<p>SIZE</p>" +
             "<p>"+feature.properties.lotSize+"</p>" +
         "</div>" + 
@@ -335,14 +335,14 @@ function onEachFeatureinContract(feature, layer) {
 
     layer.bindPopup(popupContent,popupOptions);
     layer.on({
-        mouseover: inContractMapHighlight,
-        mouseout: inContractMapResetHighlight,   
+        mouseover: contractOutMapHighlight,
+        mouseout: contractOutMapResetHighlight,   
     });
 }
 
-geojson = L.geoJson(inContract, {
-    style: inContractMap,
-    onEachFeature: onEachFeatureinContract,
+geojson = L.geoJson(contractOut, {
+    style: contractOutMap,
+    onEachFeature: onEachFeaturecontractOut,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng);
     }
@@ -357,8 +357,8 @@ function notReleasedMap(feature) {
         weight: 2,
         color: "#fff",
         opacity: 1,
-        fillColor: "#dedbd9",
-        fillOpacity: 0.9
+        fillColor: "#d0cebf",
+        fillOpacity: 1
     };
 }
 
@@ -369,8 +369,8 @@ function notReleasedMapResetHighlight(e) {
         weight: 2,
         color: "#fff",
         opacity: 1,
-        fillColor: "#dedbd9",
-        fillOpacity: 0.9
+        fillColor: "#d0cebf",
+        fillOpacity: 1
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -385,8 +385,8 @@ function notReleasedMapHighlight(e) {
         weight: 2,
         color: "#fff",
         opacity: 1,
-        fillColor: "#a3a2a1",
-        fillOpacity: 0.9
+        fillColor: "#adaca0",
+        fillOpacity: 1
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -409,18 +409,18 @@ function onEachFeaturenotReleased(feature, layer) {
 
     var popupContent = 
     
-    "<div class='card availability" + "'" + ">" + 
+    "<div class='card availability not-released" + "'" + ">" + 
         "<h2>" + feature.properties.activityTitle + "</h2>" +
         // "<img src=" + feature.properties.image +  ">" + 
-        "<div class='col-md-4" + "'" + ">" +
+        "<div class='col-md-5" + "'" + ">" +
             "<p>AVAILABILITY</p>" +
-            "<p>"+feature.properties.lotAvailability+"</p>" +
+            "<p class='status" + "'" + ">"+feature.properties.lotAvailability+"</p>" +
         "</div>" + 
         "<div class='col-md-4" + "'" + ">" +
             "<p>SIZE</p>" +
             "<p>"+feature.properties.lotSize+"</p>" +
         "</div>" + 
-        "<div class='col-md-4" + "'" + ">" +
+        "<div class='col-md-3" + "'" + ">" +
             "<p>COST</p>" +
             "<p>"+feature.properties.cost+"</p>" +
         "</div>" + 
@@ -448,5 +448,32 @@ geojson = L.geoJson(notReleased, {
     }
 }).addTo(map);
 
+
+
+
+// Not Available
+
+function notAvailableMap(feature) {
+    return {
+        weight: 2,
+        color: "#fff",
+        opacity: 1,
+        fillColor: "#d0cebf",
+        fillOpacity: 1
+    };
+}
+
+function onEachFeaturenotAvailable(feature, layer) {
+    //does layerGroup already exist? if not create it and add to map
+    var lg = mapLayerGroups[feature.properties.type];
+}
+
+geojson = L.geoJson(notAvailable, {
+    style: notAvailableMap,
+    onEachFeature: onEachFeaturenotAvailable,
+    pointToLayer: function (feature, latlng) {
+        return L.marker(latlng);
+    }
+}).addTo(map);
 
 

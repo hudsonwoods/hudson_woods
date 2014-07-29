@@ -5,11 +5,11 @@
 ###########################################################################################
 
 # Theme name
-theme_name: Denali
+theme_name: main
 
 # Comments + Disqus
-disqus_account: changeme
-show_comments: no
+disqus_account: hudsonwoodsny
+show_comments: yes
 
 # Homepage configuration
 home_blog_items: 2
