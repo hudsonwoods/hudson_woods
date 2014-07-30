@@ -6823,6 +6823,23 @@ nav.navbar .navbar-brand {
   display: none;
 }
 
+.secondary-nav-lots {
+  height: 44px;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 80px;
+  background-color: #4e4f54;
+}
+.secondary-nav-lots a {
+  color: white;
+  text-transform: uppercase;
+  line-height: 44px;
+}
+.secondary-nav-lots a i {
+  margin-right: 10px;
+}
+
 .anchor {
   display: block !important;
   position: relative !important;

@@ -44,7 +44,7 @@
                 <a href="#for-sale" tabindex="-1" role="tab" data-toggle="tab">Lots - For Sale</a>
               </li>
               <li>
-                <a href="#in-contract" tabindex="-1" role="tab" data-toggle="tab">Lots - Contract Out</a>
+                <a href="#contract-out" tabindex="-1" role="tab" data-toggle="tab">Lots - Contract Out</a>
               </li>
               <li>
                 <a href="#not-released" tabindex="-1" role="tab" data-toggle="tab">Lots - Not Released</a>
@@ -87,14 +87,14 @@
 	
 		    					<div class="col-md-5 col-md-offset-1">
 		    						<div class="specs">
-		    							<h2 class="title-spec">{{ title }}</h2>
-		    							{{ content }}
 		    							<ul>
-	
 		    								<li>Availability: <span>{{ availability }}</span></li>
 		    								<li>Size: <span>{{ size }}</span></li>
+		    								<li>Home: <span>{{ home }}</span></li>
+		    								<li>Bedrooms: <span>{{ bedrooms }}</span></li>
+		    								<li>Baths: <span>{{ baths }}</span></li>
+		    								<li>Other: <span>{{ other }}</span></li>
 		    								<li>Cost: <span>{{ cost }}</span></li>
-	
 		    							</ul>	
 		    						</div>
 	
@@ -128,8 +128,8 @@
 		    			{{ /entries:listing }}
 						</div>
 
-						<div id="in-contract"class="tab-pane fade">
-		    			{{ entries:listing folder="availability/in-contract" sort_dir="asc" }}
+						<div id="contract-out"class="tab-pane fade">
+		    			{{ entries:listing folder="availability/contract-out" sort_dir="asc" }}
 		    			
 		    			<div class="details details-entry">
 		    				<div class="row">
@@ -151,14 +151,14 @@
 	
 		    					<div class="col-md-5 col-md-offset-1">
 		    						<div class="specs">
-		    							<h2 class="title-spec">{{ title }}</h2>
-		    							{{ content }}
 		    							<ul>
-	
 		    								<li>Availability: <span>{{ availability }}</span></li>
 		    								<li>Size: <span>{{ size }}</span></li>
+		    								<li>Home: <span>{{ home }}</span></li>
+		    								<li>Bedrooms: <span>{{ bedrooms }}</span></li>
+		    								<li>Baths: <span>{{ baths }}</span></li>
+		    								<li>Other: <span>{{ other }}</span></li>
 		    								<li>Cost: <span>{{ cost }}</span></li>
-	
 		    							</ul>	
 		    						</div>
 	
@@ -215,14 +215,14 @@
 	
 		    					<div class="col-md-5 col-md-offset-1">
 		    						<div class="specs">
-		    							<h2 class="title-spec">{{ title }}</h2>
-		    							{{ content }}
 		    							<ul>
-	
 		    								<li>Availability: <span>{{ availability }}</span></li>
 		    								<li>Size: <span>{{ size }}</span></li>
+		    								<li>Home: <span>{{ home }}</span></li>
+		    								<li>Bedrooms: <span>{{ bedrooms }}</span></li>
+		    								<li>Baths: <span>{{ baths }}</span></li>
+		    								<li>Other: <span>{{ other }}</span></li>
 		    								<li>Cost: <span>{{ cost }}</span></li>
-	
 		    							</ul>	
 		    						</div>
 	
@@ -279,14 +279,14 @@
 	
 		    					<div class="col-md-5 col-md-offset-1">
 		    						<div class="specs">
-		    							<h2 class="title-spec">{{ title }}</h2>
-		    							{{ content }}
 		    							<ul>
-	
 		    								<li>Availability: <span>{{ availability }}</span></li>
 		    								<li>Size: <span>{{ size }}</span></li>
+		    								<li>Home: <span>{{ home }}</span></li>
+		    								<li>Bedrooms: <span>{{ bedrooms }}</span></li>
+		    								<li>Baths: <span>{{ baths }}</span></li>
+		    								<li>Other: <span>{{ other }}</span></li>
 		    								<li>Cost: <span>{{ cost }}</span></li>
-	
 		    							</ul>	
 		    						</div>
 	

@@ -283,7 +283,22 @@ nav {
 	}
 }
 
-
+.secondary-nav-lots {
+	height: 44px;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	top: 80px;
+	background-color: $dark-gray;
+	a {
+		color: white;
+		text-transform: uppercase;
+		line-height: 44px;
+		i {
+			margin-right: 10px;
+		}
+	}
+}
 
 .anchor {
 	display: block !important;
