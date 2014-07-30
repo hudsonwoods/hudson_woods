@@ -9175,6 +9175,7 @@ p {
 }
 .card.area img {
   min-width: 100%;
+  max-width: 100% !important;
 }
 .card.area.sleep {
   border-top: 8px solid #66bbe1;

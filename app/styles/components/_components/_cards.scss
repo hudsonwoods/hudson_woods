@@ -139,6 +139,7 @@
 	}
 	img {
 		min-width: 100%;
+		max-width: 100% !important;
 	}
 	&.sleep {
 		border-top: 8px solid $sleep;
