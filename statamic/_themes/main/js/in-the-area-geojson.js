@@ -160,7 +160,7 @@ var itaSleep = {
                 "classIcon": "assets/img/in-the-area/icons/card-icon-sleep.png",
                 "activity": "sleep",
                 "activityTitle": "Captain Schoonmaker Bed & Breakfast",
-                "image": "assets/img/in-the-area/Captain-Schoonmakers-r-w665-q75-m1406674464.jpg",
+                "image": "assets/img/in-the-area/Captain-Schoonmakers-r.jpg",
                 "activityDescription":"Captain Frederick Schoonmaker was a local Civil War hero whose dedication (and donations) to the war effort meant that of his large estate, only the stone house remained in his name when the war ended. For the past 30 years, it has been a well know bed & breakfast with, how shall we say, quaint charm.",
                 "website": "http://www.captainschoonmakers.com"
             },
@@ -180,7 +180,7 @@ var itaSleep = {
                 "classIcon": "assets/img/in-the-area/icons/card-icon-sleep.png",
                 "activity": "sleep",
                 "activityTitle": "Beekman Arms-Delamater Inn Inc",
-                "image": "assets/img/Beekman_Arms___Delamater_Inn1_Z-r-w665-q75-m1406674460.jpg",
+                "image": "assets/img/in-the-area/Beekman_Arms.jpg",
                 "activityDescription":"America’s oldest continuously operating inn has all the historic trappings one would expect: wide-plank floors, beamed ceilings, and a stone hearth. It is a very august presence in the town where Chelsea Clinton got married, and contains the sturdy Bogardus Tavern, a stage coach stop and hangout for revolutionaries, built to withstand an Indian attack. And of course, George Washington slept here. It’s “sister” inn, the Delameter Inn a clock away is considered an American Gothic masterpiece.",
                 "website": "http://www.beekmandelamaterinn.com/beekmanarms.htm"
             },
