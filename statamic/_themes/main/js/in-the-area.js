@@ -19,8 +19,7 @@ var popupOptions = {
   maxWidth: 400,
   keepInView: true,
   closeButton: false,
-  autoPanPadding: [30, 30],
-  autoPan: false
+  autoPanPadding: [30, 30]
 };
 
 // Create Activity Specific Panes For Filtering
