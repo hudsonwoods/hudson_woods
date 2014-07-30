@@ -7241,19 +7241,19 @@ p {
   font-size: 14px;
 }
 .card.availability.not-released {
-  border-top: 8px solid #4e4f54;
+  border-top: 8px solid #d7d2cb;
 }
 .card.availability.not-released .status {
   background-color: #d7d2cb;
 }
 .card.availability.sold {
-  border-top: 8px solid #4e4f54;
+  border-top: 8px solid #b2d366;
 }
 .card.availability.sold .status {
   background-color: #b2d366;
 }
 .card.availability.contract-out {
-  border-top: 8px solid #4e4f54;
+  border-top: 8px solid #f2f2e6;
 }
 .card.availability.contract-out .status {
   background-color: #f2f2e6;
@@ -7262,7 +7262,7 @@ p {
   font-weight: 300;
 }
 .card.availability.for-sale {
-  border-top: 8px solid #4e4f54;
+  border-top: 8px solid #988a81;
 }
 .card.availability.for-sale .status {
   background-color: #988a81;

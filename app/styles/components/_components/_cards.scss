@@ -59,19 +59,19 @@
 			font-size: 14px;
 		}
 		&.not-released {
-			border-top: 8px solid $dark-gray;
+			border-top: 8px solid #d7d2cb;
 			.status {
 				background-color: #d7d2cb;
 			}
 		}
 		&.sold {
-			border-top: 8px solid $dark-gray;
+			border-top: 8px solid #b2d366;
 			.status {
 				background-color: #b2d366;
 			}
 		}
 		&.contract-out {
-			border-top: 8px solid $dark-gray;
+			border-top: 8px solid #f2f2e6;
 			.status {
 				background-color: #f2f2e6;
 				border: 1px solid lighten($gray,50%);
@@ -80,7 +80,7 @@
 			}
 		}
 		&.for-sale {
-			border-top: 8px solid $dark-gray;
+			border-top: 8px solid #988a81;
 			.status {
 				background-color: #988a81;
 			}
