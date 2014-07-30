@@ -217,6 +217,10 @@
 .leaflet-container a.leaflet-popup-close-button {
 	top: 16px;
 	right: 7px;
+	color: $base-font-color;
+	&:hover {
+		color: $base-font-color;
+	}
 }
 
 .leaflet-container .leaflet-control-attribution, .leaflet-container .leaflet-control-scale {}

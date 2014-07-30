@@ -7397,6 +7397,10 @@ p {
 .leaflet-container a.leaflet-popup-close-button {
   top: 16px;
   right: 7px;
+  color: #6e736c;
+}
+.leaflet-container a.leaflet-popup-close-button:hover {
+  color: #6e736c;
 }
 
 .leaflet-label {
