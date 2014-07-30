@@ -1360,7 +1360,7 @@ var itaCulture = {
                 "classIcon": "assets/img/in-the-area/icons/card-icon-culture.png",
                 "activity": "culture",
                 "activityTitle": "Storm King Art Center",
-                "image": "assets/img/in-the-area/Landscape_south_2010_10_22.2.jpg",
+                "image": "assets/img/in-the-area/Landscape_south_2010_10_22.2-r-w665-q75-m1406674481.jpg",
                 "activityDescription":"Known as the world’s finest sculpture park, the Storm King Arts Center is something that one must visit to understand how remarkable it is. Over 100 intelligently sited works of the most acclaimed artists of our times dot the 500 brilliantly landscaped acres. Calder, Serra, Bourgeois, Dubuffet, Moore, Judd, Smith… the name dropping alone will make you feel more cultured. An absolute must for the life list…",
                 "website": "www.stormkingartcenter.org"
             },
