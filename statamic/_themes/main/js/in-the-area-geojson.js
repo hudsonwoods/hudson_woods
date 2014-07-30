@@ -226,26 +226,26 @@ var itaSleep = {
             },
             "id": 10
         },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                   -74.146385,
-                    41.845768
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "classType": "sleep",
-                "classIcon": "assets/img/in-the-area/icons/card-icon-sleep.png",
-                "activity": "sleep",
-                "activityTitle": "Hasbrouck House",
-                "image": "assets/img/in-the-area/Inn-at-Stone-Ridge/hasbrouck-r-w665-q75-m1406141414.jpg",
-                "activityDescription":"This 18th century mansion, built by the prominent Dutch Hasbrouck family has been continuously occupied for various purposes including as a dormitory, and currently as a bed & breakfast style inn. Each room reflects different periods of the Hasbrouck family and is fully updated with modern amenities. It is on 45 acres of groomed lawns and beautiful gardens. You can reach the adjoining Stone Ridge Orchard via a trail through the woods.",
-                "website": "http://www.innatstoneridge.com"
-            },
-            "id": 11
-        },
+        // {
+        //     "geometry": {
+        //         "type": "Point",
+        //         "coordinates": [
+        //            -74.146385,
+        //             41.845768
+        //         ]
+        //     },
+        //     "type": "Feature",
+        //     "properties": {
+        //         "classType": "sleep",
+        //         "classIcon": "assets/img/in-the-area/icons/card-icon-sleep.png",
+        //         "activity": "sleep",
+        //         "activityTitle": "Hasbrouck House",
+        //         "image": "assets/img/in-the-area/Inn-at-Stone-Ridge/hasbrouck-r-w665-q75-m1406141414.jpg",
+        //         "activityDescription":"This 18th century mansion, built by the prominent Dutch Hasbrouck family has been continuously occupied for various purposes including as a dormitory, and currently as a bed & breakfast style inn. Each room reflects different periods of the Hasbrouck family and is fully updated with modern amenities. It is on 45 acres of groomed lawns and beautiful gardens. You can reach the adjoining Stone Ridge Orchard via a trail through the woods.",
+        //         "website": "http://www.innatstoneridge.com"
+        //     },
+        //     "id": 11
+        // },
         {
             "geometry": {
                 "type": "Point",
