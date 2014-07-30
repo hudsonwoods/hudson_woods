@@ -183,7 +183,7 @@ gulp.task('serve', function() {
   livereload.listen();
   gulp.watch(['statamic/**/*.html'], reload_page);
   gulp.watch(['statamic/**/*.js'], reload_page);
-  gulp.watch(['app/styles/**/*.scss','bower_components/**/*.scss'], ['styles:components', 'styles:scss', 'minify', reload_page]);
+  gulp.watch(['app/styles/**/*.scss','bower_components/**/*.scss'], ['styles:components', 'styles:scss', reload_page]);
   gulp.watch(['{.tmp,app}/styles/**/*.css'], ['styles:css', reload_page]);
   gulp.watch(['app/scripts/**/*.js'], ['scripts', reload_page]);
   gulp.watch(['app/images/**/*','statamic/_themes/main/img/**/*'], reload_page);

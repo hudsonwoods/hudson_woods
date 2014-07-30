@@ -6473,9 +6473,6 @@ img {
 .specs ul {
   list-style-type: disc;
 }
-.specs ul.no-bullet {
-  list-style-type: none;
-}
 .specs ul li {
   font-size: 18px;
   font-weight: 500;
@@ -6483,6 +6480,12 @@ img {
   line-height: 24px;
   margin-left: 18px;
   display: list-item;
+}
+.specs ul.no-bullet {
+  list-style-type: none;
+}
+.specs ul.no-bullet li {
+  margin-left: 0;
 }
 .specs .costs h4 {
   margin: 10px 0;
@@ -7151,6 +7154,7 @@ p {
 #map .availability img {
   display: block;
   margin-bottom: 30px;
+  max-width: 100% !important;
 }
 #map .availability .col-md-4, #map .availability .col-md-3, #map .availability .col-md-5 {
   padding-left: 0;
@@ -7206,6 +7210,9 @@ p {
 .card.availability h2 {
   padding-top: 0;
 }
+.card.availability .leaflet-popup {
+  z-index: 101;
+}
 .card.availability .leaflet-popup .col-md-4 {
   padding-left: 0;
 }
@@ -7234,28 +7241,31 @@ p {
   font-size: 14px;
 }
 .card.availability.not-released {
-  border-top: 8px solid #adaca0;
+  border-top: 8px solid #d7d2cb;
 }
 .card.availability.not-released .status {
-  background-color: #adaca0;
+  background-color: #d7d2cb;
 }
 .card.availability.sold {
-  border-top: 8px solid #9ebd60;
+  border-top: 8px solid #b2d366;
 }
 .card.availability.sold .status {
-  background-color: #9ebd60;
+  background-color: #b2d366;
 }
 .card.availability.contract-out {
-  border-top: 8px solid #48d4cd;
+  border-top: 8px solid #fffef3;
 }
 .card.availability.contract-out .status {
-  background-color: #48d4cd;
+  background-color: #fffef3;
+  border: 1px solid #d5d5d5;
+  color: #6e736c;
+  font-weight: 300;
 }
 .card.availability.for-sale {
-  border-top: 8px solid #f2644b;
+  border-top: 8px solid #988a81;
 }
 .card.availability.for-sale .status {
-  background-color: #f2644b;
+  background-color: #988a81;
 }
 
 .card.area {
@@ -7705,12 +7715,11 @@ p {
 
 .legend {
   position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #fff;
+  top: 50px;
+  left: 50px;
+  background-color: rgba(255, 255, 255, 0.9);
   z-index: 100;
-  padding: 10px 40px 6px;
-  padding-left: 60px;
+  padding: 15px;
 }
 .legend:hover {
   cursor: default;
@@ -7721,21 +7730,25 @@ p {
 .legend .legend-marker {
   font-size: 13px;
   margin-right: 20px;
-  display: inline-block;
   line-height: 20px;
+  margin-bottom: 5px;
   text-transform: uppercase;
 }
 .legend .legend-marker.for-sale span {
-  background-color: #f4816c;
+  border: 1px solid #bbbbbb;
+  background-color: #988a81;
 }
 .legend .legend-marker.sold span {
-  background-color: #bdd194;
+  border: 1px solid #bbbbbb;
+  background-color: #b2d366;
 }
 .legend .legend-marker.contract-out span {
-  background-color: #9dd3d0;
+  border: 1px solid #bbbbbb;
+  background-color: #fffef3;
 }
 .legend .legend-marker.not-released span {
-  background-color: #d0cebf;
+  border: 1px solid #bbbbbb;
+  background-color: #d7d2cb;
 }
 .legend .legend-marker:last-of-type {
   margin-bottom: 0;

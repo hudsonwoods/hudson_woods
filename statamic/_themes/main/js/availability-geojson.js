@@ -307,7 +307,7 @@ var sold = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 14",
-            "image": "assets/img/availability/LOT14.png",
+            "image": "assets/img/availability/LOT-14.png",
             "lotAvailability": "Sold",
             "lotSize": "7.95 Acres",
             "cost": "$760,000",
@@ -369,6 +369,7 @@ var contractOut = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 24",
+            "image": "assets/img/availability/LOT-24.png",
             "lotAvailability": "Contract Out",
             "lotSize": "2.7 Acres",
             "cost": "$665,000",
@@ -421,6 +422,7 @@ var notReleased = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 01",
+            "image": "assets/img/availability/LOT-1.png",
             "lotAvailability": "Not Released",
             "lotSize": "5.6 Acres",
             "cost": "—",
@@ -460,6 +462,7 @@ var notReleased = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 02",
+            "image": "assets/img/availability/LOT-2.png",
             "lotAvailability": "Not Released",
             "lotSize": "4.7 Acres",
             "cost": "-",
@@ -493,6 +496,7 @@ var notReleased = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 03",
+            "image": "assets/img/availability/LOT-3.png",
             "lotAvailability": "Not Released",
             "lotSize": "5.8 Acres",
             "cost": "-",
@@ -520,6 +524,7 @@ var notReleased = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 04",
+            "image": "assets/img/availability/LOT-4.png",
             "lotAvailability": "Not Released",
             "lotSize": "6.6 Acres",
             "cost": "-",
@@ -551,6 +556,7 @@ var notReleased = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 05",
+            "image": "assets/img/availability/LOT-5.png",
             "lotAvailability": "Not Released",
             "lotSize": "7.1 Acres",
             "cost": "-",
@@ -579,6 +585,7 @@ var notReleased = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 06",
+            "image": "assets/img/availability/LOT-6.png",
             "lotAvailability": "Not Released",
             "lotSize": "4.1 Acres",
             "cost": "-",
@@ -608,6 +615,7 @@ var notReleased = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 07",
+            "image": "assets/img/availability/LOT-7.png",
             "lotAvailability": "Not Released",
             "lotSize": "4.2 Acres",
             "cost": "-",
@@ -643,6 +651,7 @@ var notReleased = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 08",
+            "image": "assets/img/availability/LOT-8.png",
             "lotAvailability": "Not Released",
             "lotSize": "4.0 Acres",
             "cost": "-",
@@ -672,6 +681,7 @@ var notReleased = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 09",
+            "image": "assets/img/availability/LOT-9.png",
             "lotAvailability": "Not Released",
             "lotSize": "3.8 Acres",
             "cost": "-",
@@ -699,6 +709,7 @@ var notReleased = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 10",
+            "image": "assets/img/availability/LOT-10.png",
             "lotAvailability": "Not Released",
             "lotSize": "12.0 Acres",
             "cost": "-",
@@ -767,6 +778,7 @@ var notReleased = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 12",
+            "image": "assets/img/availability/LOT-12.png",
             "lotAvailability": "Not Released",
             "lotSize": "5.2 Acres",
             "cost": "-",
@@ -793,6 +805,7 @@ var notReleased = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 13",
+            "image": "assets/img/availability/LOT-13.png",
             "lotAvailability": "Not Released",
             "lotSize": "4.3 Acres",
             "cost": "-",
@@ -832,6 +845,7 @@ var notReleased = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 16",
+            "image": "assets/img/availability/LOT-16.png",
             "lotAvailability": "Not Released",
             "lotSize": "3.8 Acres",
             "cost": "-",
@@ -884,6 +898,7 @@ var notReleased = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 17",
+            "image": "assets/img/availability/LOT-17.png",
             "lotAvailability": "Not Released",
             "lotSize": "4.7 Acres",
             "cost": "-",
@@ -924,6 +939,7 @@ var notReleased = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 18",
+            "image": "assets/img/availability/LOT-18.png",
             "lotAvailability": "Not Released",
             "lotSize": "3.7 Acres",
             "cost": "-",
@@ -962,6 +978,7 @@ var notReleased = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 20",
+            "image": "assets/img/availability/LOT-20.png",
             "lotAvailability": "Not Released",
             "lotSize": "4.2 Acres",
             "cost": "-",
@@ -987,6 +1004,7 @@ var notReleased = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 23",
+            "image": "assets/img/availability/LOT-23.png",
             "lotAvailability": "Not Released",
             "lotSize": "4.1 Acres",
             "cost": "-",
@@ -1013,6 +1031,7 @@ var notReleased = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 25",
+            "image": "assets/img/availability/LOT-25.png",
             "lotAvailability": "Not Released",
             "lotSize": "3.7 Acres",
             "cost": "-",
@@ -1043,6 +1062,7 @@ var notReleased = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 26",
+            "image": "assets/img/availability/LOT-26.png",
             "lotAvailability": "Not Released",
             "lotSize": "4.2 Acres",
             "cost": "-",
@@ -1079,6 +1099,7 @@ var available = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 11",
+            "image": "assets/img/availability/LOT-11.png",
             "lotAvailability": "For Sale",
             "lotSize": "6.0 Acres",
             "cost": "$695,000",
@@ -1125,6 +1146,7 @@ var available = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 15",
+            "image": "assets/img/availability/LOT-15.png",
             "lotAvailability": "For Sale",
             "lotSize": "4.6 Acres",
             "cost": "$685,000",
@@ -1166,6 +1188,7 @@ var available = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 19",
+            "image": "assets/img/availability/LOT-19.png",
             "lotAvailability": "For Sale",
             "lotSize": "4.2 Acres",
             "cost": "$685,000",
@@ -1208,6 +1231,7 @@ var available = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 21",
+            "image": "assets/img/availability/LOT-21.png",
             "lotAvailability": "For Sale",
             "lotSize": "6.6 Acres",
             "cost": "$695,000",
@@ -1242,6 +1266,7 @@ var available = {
       "type": "Feature",
         "properties": {
             "activityTitle": "Lot 22",
+            "image": "assets/img/availability/LOT-22.png",
             "lotAvailability": "For Sale",
             "lotSize": "3.3 Acres",
             "cost": "$665,000",
@@ -1276,6 +1301,7 @@ var notAvailable = {
       "type": "Feature",
         "properties": {
             "activityTitle": "N/A",
+            "image": "assets/img/availability/LOT-.png",
             "lotAvailability": "Not Released",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",

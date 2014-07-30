@@ -27,6 +27,9 @@
 		h2 {
 			padding-top: 0;
 		}
+		.leaflet-popup {
+			z-index: 101;
+		}
 		.leaflet-popup .col-md-4 {
 			padding-left: 0;
 		}
@@ -47,6 +50,7 @@
 				font-weight: 600;
 			}
 		}
+
 		.status {
 			display: inline-block;
 			color: white;
@@ -55,27 +59,30 @@
 			font-size: 14px;
 		}
 		&.not-released {
-			border-top: 8px solid #adaca0;
+			border-top: 8px solid #d7d2cb;
 			.status {
-				background-color: #adaca0;
+				background-color: #d7d2cb;
 			}
 		}
 		&.sold {
-			border-top: 8px solid #9ebd60;
+			border-top: 8px solid #b2d366;
 			.status {
-				background-color: #9ebd60;
+				background-color: #b2d366;
 			}
 		}
 		&.contract-out {
-			border-top: 8px solid #48d4cd;
+			border-top: 8px solid #fffef3;
 			.status {
-				background-color: #48d4cd;
+				background-color: #fffef3;
+				border: 1px solid lighten($gray,50%);
+				color: $base-font-color;
+				font-weight: 300;
 			}
 		}
 		&.for-sale {
-			border-top: 8px solid #f2644b;
+			border-top: 8px solid #988a81;
 			.status {
-				background-color: #f2644b;
+				background-color: #988a81;
 			}
 		}
 	}

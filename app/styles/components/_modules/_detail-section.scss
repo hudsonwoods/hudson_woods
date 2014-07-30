@@ -81,9 +81,6 @@
 		margin: 15px 0 30px;
 	}
 	ul {
-		&.no-bullet {
-			list-style-type: none;
-		}
 		list-style-type: disc;
 		li {
 			font-size: 18px;
@@ -93,6 +90,12 @@
 			margin-left: 18px;
 			display: list-item;
 
+		}
+		&.no-bullet {
+			list-style-type: none;
+			li {
+				margin-left: 0;
+			}
 		}
 	}
 	.costs {

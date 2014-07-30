@@ -58,8 +58,8 @@ function soldMap(feature) {
         weight: 1,
         color: "#fff",
         opacity: 1,
-        fillColor: "#bdd194",
-        fillOpacity: 1
+        fillColor: "#a4c94d",
+        fillOpacity: .85
     };
 }
 
@@ -70,8 +70,8 @@ function soldMapResetHighlight(e) {
         weight: 1,
         color: "#fff",
         opacity: 1,
-        fillColor: "#bdd194",
-        fillOpacity: 1
+        fillColor: "#aad14f",
+        fillOpacity: .85
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -83,11 +83,11 @@ function soldMapHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 1,
-        color: "#fff",
+        weight: 3,
+        color: "#676566",
         opacity: 1,
-        fillColor: "#9ebd60",
-        fillOpacity: 1
+        fillColor: "#b2d366",
+        fillOpacity: .85
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -112,7 +112,7 @@ function onEachFeaturesold(feature, layer) {
     
     "<div class='card availability sold" + "'" + ">" + 
         "<h2>" + feature.properties.activityTitle + "</h2>" +
-        // "<img src=" + feature.properties.image +  ">" + 
+        "<img src=" + feature.properties.image +  ">" + 
         "<div class='col-md-4" + "'" + ">" +
             "<p>AVAILABILITY</p>" +
             "<p class='status" + "'" + ">"+feature.properties.lotAvailability+"</p>" +
@@ -125,10 +125,10 @@ function onEachFeaturesold(feature, layer) {
             "<p>COST</p>" +
             "<p>"+feature.properties.cost+"</p>" +
         "</div>" + 
-        
+        "<div class='row" + "'" + ">" + "</div>" +
         "<a href=" + feature.properties.lotURL + ">" + 
         "<i class='fa fa-search" + "'" +">" + "</i>" +
-        "View Details & Floor Plans" + 
+        "View Floor Plans" + 
         "</a>" +
     
     "</div>";
@@ -158,8 +158,8 @@ function availableMap(feature) {
         weight: 1,
         color: "#fff",
         opacity: 1,
-        fillColor: "#f4816c",
-        fillOpacity: 1
+        fillColor: "#918279",
+        fillOpacity: .85
     };
 }
 
@@ -170,8 +170,8 @@ function availableMapResetHighlight(e) {
         weight: 1,
         color: "#fff",
         opacity: 1,
-        fillColor: "#f4816c",
-        fillOpacity: 1
+        fillColor: "#918279",
+        fillOpacity: .85
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -183,11 +183,11 @@ function availableMapHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 1,
-        color: "#fff",
+        weight: 3,
+        color: "#676566",
         opacity: 1,
-        fillColor: "#f2644b",
-        fillOpacity: 1
+        fillColor: "#918279",
+        fillOpacity: .85
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -212,7 +212,7 @@ function onEachFeatureAvailable(feature, layer) {
     
     "<div class='card availability for-sale" + "'" + ">" + 
         "<h2>" + feature.properties.activityTitle + "</h2>" +
-        // "<img src=" + feature.properties.image +  ">" + 
+        "<img src=" + feature.properties.image +  ">" + 
         "<div class='col-md-4" + "'" + ">" +
             "<p>AVAILABILITY</p>" +
             "<p class='status" + "'" + ">"+feature.properties.lotAvailability+"</p>" +
@@ -225,10 +225,10 @@ function onEachFeatureAvailable(feature, layer) {
             "<p>COST</p>" +
             "<p>"+feature.properties.cost+"</p>" +
         "</div>" + 
-        
+        "<div class='row" + "'" + ">" + "</div>" +
         "<a href=" + feature.properties.lotURL + ">" + 
         "<i class='fa fa-search" + "'" +">" + "</i>" +
-        "View Details & Floor Plans" + 
+        "View Floor Plans" + 
         "</a>" +
     
     "</div>";
@@ -258,8 +258,8 @@ function contractOutMap(feature) {
         weight: 1,
         color: "#fff",
         opacity: 1,
-        fillColor: "#9dd3d0",
-        fillOpacity: 1
+        fillColor: "#fffef2",
+        fillOpacity: .85
     };
 }
 
@@ -270,8 +270,8 @@ function contractOutMapResetHighlight(e) {
         weight: 1,
         color: "#fff",
         opacity: 1,
-        fillColor: "#9dd3d0",
-        fillOpacity: 1
+        fillColor: "#fffef2",
+        fillOpacity: .85
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -283,11 +283,11 @@ function contractOutMapHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 1,
-        color: "#fff",
+        weight: 3,
+        color: "#676566",
         opacity: 1,
-        fillColor: "#48d4cd",
-        fillOpacity: 1
+        fillColor: "#fffef2",
+        fillOpacity: .85
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -312,7 +312,7 @@ function onEachFeaturecontractOut(feature, layer) {
     
     "<div class='card availability contract-out" + "'" + ">" + 
         "<h2>" + feature.properties.activityTitle + "</h2>" +
-        // "<img src=" + feature.properties.image +  ">" + 
+        "<img src=" + feature.properties.image +  ">" + 
         "<div class='col-md-5" + "'" + ">" +
             "<p>AVAILABILITY</p>" +
             "<p class='status" + "'" + ">"+feature.properties.lotAvailability+"</p>" +
@@ -325,10 +325,10 @@ function onEachFeaturecontractOut(feature, layer) {
             "<p>COST</p>" +
             "<p>"+feature.properties.cost+"</p>" +
         "</div>" + 
-        
+        "<div class='row" + "'" + ">" + "</div>" +
         "<a href=" + feature.properties.lotURL + ">" + 
         "<i class='fa fa-search" + "'" +">" + "</i>" +
-        "View Details & Floor Plans" + 
+        "View Floor Plans" + 
         "</a>" +
     
     "</div>";
@@ -358,8 +358,8 @@ function notReleasedMap(feature) {
         weight: 1,
         color: "#fff",
         opacity: 1,
-        fillColor: "#d0cebf",
-        fillOpacity: 1
+        fillColor: "#cfc9c2",
+        fillOpacity: .85
     };
 }
 
@@ -370,8 +370,8 @@ function notReleasedMapResetHighlight(e) {
         weight: 1,
         color: "#fff",
         opacity: 1,
-        fillColor: "#d0cebf",
-        fillOpacity: 1
+        fillColor: "#cfc9c2",
+        fillOpacity: .85
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -383,11 +383,11 @@ function notReleasedMapHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 1,
-        color: "#fff",
+        weight: 3,
+        color: "#676566",
         opacity: 1,
-        fillColor: "#bab8ab",
-        fillOpacity: 1
+        fillColor: "#cfc9c2",
+        fillOpacity: .85
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -412,7 +412,7 @@ function onEachFeaturenotReleased(feature, layer) {
     
     "<div class='card availability not-released" + "'" + ">" + 
         "<h2>" + feature.properties.activityTitle + "</h2>" +
-        // "<img src=" + feature.properties.image +  ">" + 
+        "<img src=" + feature.properties.image +  ">" + 
         "<div class='col-md-5" + "'" + ">" +
             "<p>AVAILABILITY</p>" +
             "<p class='status" + "'" + ">"+feature.properties.lotAvailability+"</p>" +
@@ -425,10 +425,10 @@ function onEachFeaturenotReleased(feature, layer) {
             "<p>COST</p>" +
             "<p>"+feature.properties.cost+"</p>" +
         "</div>" + 
-        
+        "<div class='row" + "'" + ">" + "</div>" +
         "<a href=" + feature.properties.lotURL + ">" + 
         "<i class='fa fa-search" + "'" +">" + "</i>" +
-        "View Details & Floor Plans" + 
+        "View Floor Plans" + 
         "</a>" +
     
     "</div>";
@@ -459,8 +459,8 @@ function notAvailableMap(feature) {
         weight: 1,
         color: "#fff",
         opacity: 1,
-        fillColor: "#d0cebf",
-        fillOpacity: 1
+        fillColor: "#cfc9c2",
+        fillOpacity: .85
     };
 }
 
