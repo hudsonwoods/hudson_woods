@@ -3,7 +3,8 @@ var map = L.map('map', {
     center: [41.8872809, -74.3138479],
     zoom: 16,
     scrollWheelZoom: false,
-    zoomControl: false
+    zoomControl: false,
+    doubleClickZoom: false
 });
 
 L.tileLayer('http://a.tiles.mapbox.com/v3/sandersonj.i245n6m6/{z}/{x}/{y}.png', {
