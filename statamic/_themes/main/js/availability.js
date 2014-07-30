@@ -21,10 +21,9 @@ L.Icon.Default.imagePath = 'assets/img/availability/icons';
 // Set Global Popup Options
 var popupOptions = {
     maxWidth: 400,
-    keepInView: true,
+    keepInView: false,
     closeButton: false,
-    keepInView: true,
-    autoPanPadding: [50, 50]
+    autoPanPadding: [30, 30]
 };
 
 // Draw Map Labels
@@ -99,14 +98,6 @@ function onEachFeaturesold(feature, layer) {
 
         //does layerGroup already exist? if not create it and add to map
         var lg = mapLayerGroups[feature.properties.type];
-
-        var popupOptions = {
-            maxWidth: 400,
-            keepInView: true,
-            closeButton: false,
-            keepInView: true,
-            autoPanPadding: [30, 30]
-        };
 
     var popupContent = 
     
@@ -200,14 +191,6 @@ function onEachFeatureAvailable(feature, layer) {
         //does layerGroup already exist? if not create it and add to map
         var lg = mapLayerGroups[feature.properties.type];
 
-        var popupOptions = {
-            maxWidth: 400,
-            keepInView: true,
-            closeButton: false,
-            keepInView: true,
-            autoPanPadding: [30, 30]
-        };
-
     var popupContent = 
     
     "<div class='card availability for-sale" + "'" + ">" + 
@@ -300,14 +283,6 @@ function onEachFeaturecontractOut(feature, layer) {
         //does layerGroup already exist? if not create it and add to map
         var lg = mapLayerGroups[feature.properties.type];
 
-        var popupOptions = {
-            maxWidth: 400,
-            keepInView: true,
-            closeButton: false,
-            keepInView: true,
-            autoPanPadding: [30, 30]
-        };
-
     var popupContent = 
     
     "<div class='card availability contract-out" + "'" + ">" + 
@@ -399,14 +374,6 @@ function onEachFeaturenotReleased(feature, layer) {
 
         //does layerGroup already exist? if not create it and add to map
         var lg = mapLayerGroups[feature.properties.type];
-
-        var popupOptions = {
-            maxWidth: 400,
-            keepInView: true,
-            closeButton: false,
-            keepInView: true,
-            autoPanPadding: [30, 30]
-        };
 
     var popupContent = 
     

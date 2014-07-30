@@ -7196,6 +7196,7 @@ p {
   margin-bottom: 5px;
 }
 .card.availability {
+  height: 606px;
   border-top: 8px solid #4e4f54;
 }
 .card.availability p {
@@ -7391,6 +7392,11 @@ p {
 }
 .leaflet-container a:hover {
   color: #555953;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+  top: 16px;
+  right: 7px;
 }
 
 .leaflet-label {
