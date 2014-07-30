@@ -258,7 +258,7 @@ function contractOutMap(feature) {
         weight: 1,
         color: "#fff",
         opacity: 1,
-        fillColor: "#fffef2",
+        fillColor: "#e5e5da",
         fillOpacity: .85
     };
 }
@@ -270,7 +270,7 @@ function contractOutMapResetHighlight(e) {
         weight: 1,
         color: "#fff",
         opacity: 1,
-        fillColor: "#fffef2",
+        fillColor: "#e5e5da",
         fillOpacity: .85
     });
 
@@ -286,7 +286,7 @@ function contractOutMapHighlight(e) {
         weight: 3,
         color: "#676566",
         opacity: 1,
-        fillColor: "#fffef2",
+        fillColor: "#e5e5da",
         fillOpacity: .85
     });
 
