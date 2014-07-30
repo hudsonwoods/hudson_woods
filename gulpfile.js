@@ -121,7 +121,7 @@ gulp.task('styles', ['styles:components', 'styles:scss', 'styles:css']);
 
 // Concatenate Javascript
 gulp.task('scripts', function() {
-  gulp.src(['app/scripts/bootstrap.js','app/scripts/jquery.scrollme.js','app/scripts/fitvids.jquery.js','app/scripts/wufoo.js','app/scripts/jquery.magnific-popup.js','app/scripts/smoothproducts.js','app/scripts/waypoints.js','app/scripts/waypoints.sticky.js','app/scripts/slick.js','app/scripts/instafeed.js','app/scripts/custom.js'])
+  gulp.src(['app/scripts/bootstrap.js','app/scripts/jquery.scrollme.js','app/scripts/fitvids.jquery.js','app/scripts/wufoo.js','app/scripts/smoothproducts.js','app/scripts/waypoints.js','app/scripts/waypoints.sticky.js','app/scripts/slick.js','app/scripts/instafeed.js','app/scripts/custom.js'])
     .pipe(concat('scripts.js'))
     .pipe(gulp.dest('statamic/_themes/main/js'))
 });
@@ -129,8 +129,9 @@ gulp.task('scripts', function() {
 // Minify Javascript
 gulp.task('compress', function() {
   gulp.src('statamic/_themes/main/js/*.js')
+    .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
-    .pipe(gulp.dest('statamic/_themes/main/js'))
+    .pipe(gulp.dest('statamic/_themes/main/js/min'))
 });
 
 // Concatenate and Minify Styles
@@ -182,7 +183,7 @@ gulp.task('serve', function() {
   livereload.listen();
   gulp.watch(['statamic/**/*.html'], reload_page);
   gulp.watch(['statamic/**/*.js'], reload_page);
-  gulp.watch(['app/styles/**/*.scss','bower_components/**/*.scss'], ['styles:components', 'styles:scss', reload_page]);
+  gulp.watch(['app/styles/**/*.scss','bower_components/**/*.scss'], ['styles:components', 'styles:scss', 'minify', reload_page]);
   gulp.watch(['{.tmp,app}/styles/**/*.css'], ['styles:css', reload_page]);
   gulp.watch(['app/scripts/**/*.js'], ['scripts', reload_page]);
   gulp.watch(['app/images/**/*','statamic/_themes/main/img/**/*'], reload_page);

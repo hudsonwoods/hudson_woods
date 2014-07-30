@@ -477,4 +477,3 @@ geojson = L.geoJson(notAvailable, {
     }
 }).addTo(map);
 
-

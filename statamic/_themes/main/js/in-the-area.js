@@ -7,8 +7,8 @@ var map = L.map('map', {
 
 
 L.tileLayer('http://a.tiles.mapbox.com/v3/sandersonj.i245n6m6/{z}/{x}/{y}.png', {
-	maxZoom: 18,
-	id: 'examples.map-20v6611k'
+  maxZoom: 18,
+  id: 'examples.map-20v6611k'
 }).addTo(map);
 
 //array to store layers for each feature type
@@ -804,10 +804,10 @@ $('.ita-pane').addClass('active');
 $('#all').addClass('active');
 
 $('.markers').click(function(){
-	$('.ita-pane').removeClass('active');
-	$('.markers').removeClass('active');
-	$(this).addClass('active');
-	map.closePopup()
+  $('.ita-pane').removeClass('active');
+  $('.markers').removeClass('active');
+  $(this).addClass('active');
+  map.closePopup()
 
 });
 
@@ -821,72 +821,71 @@ $( "#all" ).click(function() {
 $( "#sleep" ).click(function() {
   $('.leaflet-itaSleep').addClass('active');
   map.fitBounds(itaSleep,{
-  	padding: [50,50]
+    padding: [50,50]
   });
 });
 
 $( "#eat" ).click(function() {
   $('.leaflet-itaEat').addClass('active');
   map.fitBounds(itaEat,{
-  	padding: [50,50]
+    padding: [50,50]
   });
 });
 
 $( "#sip" ).click(function() {
   $('.leaflet-itaSip').addClass('active');
   map.fitBounds(itaSip,{
-  	padding: [50,50]
+    padding: [50,50]
   });
 });
 
 $( "#culture" ).click(function() {
   $('.leaflet-itaCulture').addClass('active');
   map.fitBounds(itaCulture,{
-  	padding: [50,50]
+    padding: [50,50]
   });
 });
 
 $( "#swing" ).click(function() {
   $('.leaflet-itaSwing').addClass('active');
   map.fitBounds(itaSwing,{
-  	padding: [50,50]
+    padding: [50,50]
   });
 });
 
 $( "#ski" ).click(function() {
   $('.leaflet-itaSki').addClass('active');
   map.fitBounds(itaSki,{
-  	padding: [50,50]
+    padding: [50,50]
   });
 });
 
 $( "#swim" ).click(function() {
   $('.leaflet-itaSwim').addClass('active');
   map.fitBounds(itaSwim,{
-  	padding: [50,50]
+    padding: [50,50]
   });
 });
 
 $( "#pick-and-grow" ).click(function() {
   $('.leaflet-itaPick').addClass('active');
   map.fitBounds(itaPick,{
-  	padding: [50,50]
+    padding: [50,50]
   });
 });
 
 $( "#trails" ).click(function() {
   $('.leaflet-itaTrail').addClass('active');
   map.fitBounds(itaTrail,{
-  	padding: [50,50]
+    padding: [50,50]
   });
 });
 
 $( "#mind-and-body" ).click(function() {
   $('.leaflet-itaMind').addClass('active');
   map.fitBounds(itaMind,{
-  	padding: [50,50]
+    padding: [50,50]
   });
 });
-
 
 
