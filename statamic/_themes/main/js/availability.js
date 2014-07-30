@@ -22,7 +22,7 @@ L.Icon.Default.imagePath = 'assets/img/availability/icons';
 var popupOptions = {
     maxWidth: 400,
     keepInView: false,
-    closeButton: false,
+    closeButton: true,
     autoPanPadding: [30, 30]
 };
 
