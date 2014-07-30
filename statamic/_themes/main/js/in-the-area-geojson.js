@@ -1652,7 +1652,7 @@ var itaPick = {
                 "activity": "pick-and-grow",
                 "activityTitle": "Hudson Valley Seed Library",
                 "image": "assets/img/in-the-area/HV-Seed-Library-r-w665-q75-m1406227919.jpg",
-                "activityDescription":"What was once a side project for a librarian in nearby Gardiner is now a three acre facility that produces 100’s of pounds of seeds each year. Seeds are grown on site or sourced from local farms and all certified Organic. Need more charm? The Folksy artwork on the packs is created by artists from all over the Northeast in an annual competition."
+                "activityDescription":"What was once a side project for a librarian in nearby Gardiner is now a three acre facility that produces 100’s of pounds of seeds each year. Seeds are grown on site or sourced from local farms and all certified Organic. Need more charm? The Folksy artwork on the packs is created by artists from all over the Northeast in an annual competition.",
                 "website": "http://www.seedlibrary.org"
             },
             "id": 808
