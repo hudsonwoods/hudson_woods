@@ -6412,6 +6412,9 @@ img {
     padding-bottom: 100px;
     padding-top: 160px;
   }
+  .details.lots {
+    padding-top: 200px;
+  }
   .details .title-spec {
     display: block;
   }
@@ -6829,6 +6832,7 @@ nav.navbar .navbar-brand {
   position: fixed;
   z-index: 100;
   top: 80px;
+  margin-bottom: 40px;
   background-color: #4e4f54;
 }
 .secondary-nav-lots a {

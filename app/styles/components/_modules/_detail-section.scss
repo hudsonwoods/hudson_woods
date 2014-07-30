@@ -21,6 +21,9 @@
 	@include breakpoint(medium) {
 		padding-bottom: 100px;
 		padding-top: 160px;
+		&.lots {
+			padding-top: 200px;
+		}
 		.title-spec {
 			display: block;
 		}
