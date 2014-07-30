@@ -13,6 +13,8 @@ L.tileLayer('http://a.tiles.mapbox.com/v3/sandersonj.i245n6m6/{z}/{x}/{y}.png', 
 // array to store layers for each feature type
 var mapLayerGroups = [];
 
+L.Icon.Default.imagePath = 'assets/img/availability/icons';
+
 //draw GEOJSON - don't add the GEOJSON layer to the map here
 // L.geoJson([available, unavailable], {onEachFeature: onEachFeature})//.addTo(map);
 
@@ -53,7 +55,7 @@ function resetHighlight(e) {
 
 function soldMap(feature) {
     return {
-        weight: 2,
+        weight: 1,
         color: "#fff",
         opacity: 1,
         fillColor: "#bdd194",
@@ -65,7 +67,7 @@ function soldMapResetHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 2,
+        weight: 1,
         color: "#fff",
         opacity: 1,
         fillColor: "#bdd194",
@@ -81,7 +83,7 @@ function soldMapHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 2,
+        weight: 1,
         color: "#fff",
         opacity: 1,
         fillColor: "#9ebd60",
@@ -153,7 +155,7 @@ geojson = L.geoJson(sold, {
 
 function availableMap(feature) {
     return {
-        weight: 2,
+        weight: 1,
         color: "#fff",
         opacity: 1,
         fillColor: "#f4816c",
@@ -165,7 +167,7 @@ function availableMapResetHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 2,
+        weight: 1,
         color: "#fff",
         opacity: 1,
         fillColor: "#f4816c",
@@ -181,7 +183,7 @@ function availableMapHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 2,
+        weight: 1,
         color: "#fff",
         opacity: 1,
         fillColor: "#f2644b",
@@ -253,7 +255,7 @@ geojson = L.geoJson(available, {
 
 function contractOutMap(feature) {
     return {
-        weight: 2,
+        weight: 1,
         color: "#fff",
         opacity: 1,
         fillColor: "#9dd3d0",
@@ -265,7 +267,7 @@ function contractOutMapResetHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 2,
+        weight: 1,
         color: "#fff",
         opacity: 1,
         fillColor: "#9dd3d0",
@@ -281,7 +283,7 @@ function contractOutMapHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 2,
+        weight: 1,
         color: "#fff",
         opacity: 1,
         fillColor: "#48d4cd",
@@ -353,7 +355,7 @@ geojson = L.geoJson(contractOut, {
 
 function notReleasedMap(feature) {
     return {
-        weight: 2,
+        weight: 1,
         color: "#fff",
         opacity: 1,
         fillColor: "#d0cebf",
@@ -365,7 +367,7 @@ function notReleasedMapResetHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 2,
+        weight: 1,
         color: "#fff",
         opacity: 1,
         fillColor: "#d0cebf",
@@ -381,7 +383,7 @@ function notReleasedMapHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 2,
+        weight: 1,
         color: "#fff",
         opacity: 1,
         fillColor: "#bab8ab",
@@ -454,7 +456,7 @@ geojson = L.geoJson(notReleased, {
 
 function notAvailableMap(feature) {
     return {
-        weight: 2,
+        weight: 1,
         color: "#fff",
         opacity: 1,
         fillColor: "#d0cebf",
