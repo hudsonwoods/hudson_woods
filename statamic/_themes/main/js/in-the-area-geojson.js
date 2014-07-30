@@ -1575,7 +1575,7 @@ var itaPick = {
                 "classIcon": "assets/img/in-the-area/icons/card-icon-pick-grow.png",
                 "activity": "pick-and-grow",
                 "activityTitle": "Stone Ridge Orchard",
-                "image": "assets/img/in-the-area/Stone Ridge Orchard-r-w665-q75-m1406674486.jpg",
+                "image": "assets/img/in-the-area/Stone-Ridge-Orchard-r-w665-q75-m1406229029.jpg",
                 "activityDescription":"his historic orchard has been producing apples for over two hundred years, but that doesn’t mean they haven’t been keeping up with the times. In two major re-plantings, dozens of new gourmet varieties were added on semi-dwarfing or fully dwarfing rootstocks that produce bigger, sweeter and redder fruit. Most recently they have started diversifying into other fruits including sweet cherries, peaches, nectarines, plums and Asian pears. Most of this can be picked on site, or along with produce from dozens of local farm scan be handily purchased at their gourmet market.",
                 "website": "http://www.stoneridgeorchard.us"
             },
