@@ -1518,7 +1518,7 @@ var itaPick = {
                 "classIcon": "assets/img/in-the-area/icons/card-icon-pick-grow.png",
                 "activity": "pick-and-grow",
                 "activityTitle": "Saunderskill Farm Market",
-                "image": "assets/img/in-the-area/inthearea_pickandgrow_saunderskill.jpg",
+                "image": "assets/img/in-the-area/inthearea_pickandgrow_sauderskill.jpg",
                 "activityDescription":"After 12 generations in the same family, Saunderskill Farm isn’t just an historical curiosity, but is a thriving, growing business with almost 500 acres in production, a sprawling nursery served by 15 greenhouses, a newly expanded 3100 square foot market selling their produce and stocked with scores of other locally sourced goods (bacon! honey! flatbread pizza! granola!), and a brilliant kitchen and bakery serving dozens of fresh items. Those in the area liken the market to a kind of a calendar; one can see the seasons revolve as each newly picked crop finds its way to the shelves.",
                 "website": "http://www.saunderskill.com"
             },
