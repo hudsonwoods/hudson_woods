@@ -218,10 +218,11 @@
 .leaflet-label {
 	border: none;
 	background-color:transparent;
-	color: lighten(black,35%);
+	color: lighten(black,30%);
 	// text-shadow: 1px 1px 0px rgba(255,255,255,.8);
 	text-transform: uppercase;
-	font-weight: 500;
+	font-weight: 600;
+	font-size: 11px;
 	&:before {
 		border: none;
 	}

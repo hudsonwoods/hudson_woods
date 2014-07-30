@@ -7396,9 +7396,10 @@ p {
 .leaflet-label {
   border: none;
   background-color: transparent;
-  color: #595959;
+  color: #4d4d4d;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 11px;
 }
 .leaflet-label:before {
   border: none;
