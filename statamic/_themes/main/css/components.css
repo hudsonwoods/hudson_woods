@@ -9118,6 +9118,9 @@ p {
   background-color: #f2644b;
 }
 
+.card.area {
+  overflow: hidden;
+}
 .card.area h2 {
   margin-top: 0;
 }
