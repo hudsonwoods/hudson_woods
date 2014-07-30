@@ -1087,7 +1087,7 @@ var itaSwim = {
                 "classIcon": "assets/img/in-the-area/icons/card-icon-swim.png",
                 "activity": "swim",
                 "activityTitle": "Split Rock Swimming Hole",
-                "image": "assets/img/in-the-area/inthearea_swim_placeholder.jpg",
+                "image": "assets/img/in-the-area/split-rock-r-w665-q75-m1406225961.jpg",
                 "activityDescription":"In the Mohonk Preserve, a portion of the Coxing Kill (stream for Dutch people) Split Rock Hole is a collection of unique wading opportunities, the namesake being a brisk stream between two sizable cliffs where jumping off is a popular option. Take 44/55 to Clove Rd. Keep to the right on this dirt road, over bridges, until you get to the to the Coxing Kill Trailhead and parking area. Requires Mohonk Preserve Day Pass $10. ",
                 "website": "http://www.mohonkpreserve.org/coxing-trailhead"
             },
