@@ -24,7 +24,7 @@ var popupOptions = {
     keepInView: true,
     closeButton: false,
     keepInView: true,
-    autoPanPadding: [30, 30]
+    autoPanPadding: [50, 50]
 };
 
 // Draw Map Labels
