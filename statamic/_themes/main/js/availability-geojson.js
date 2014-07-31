@@ -311,7 +311,7 @@ var sold = {
             "lotAvailability": "Sold",
             "lotSize": "7.95 Acres",
             "cost": "$760,000",
-            "lotURL": "http://staging.hudsonwoods.com/availability/sold/lot-14"
+            "lotURL": "http://hudsonwoods.com/availability/sold/lot-14"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -373,7 +373,7 @@ var contractOut = {
             "lotAvailability": "Contract Out",
             "lotSize": "2.7 Acres",
             "cost": "$665,000",
-            "lotURL": "http://staging.hudsonwoods.com/availability/contract-out/lot-24"
+            "lotURL": "http://hudsonwoods.com/availability/contract-out/lot-24"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -419,7 +419,7 @@ var contractOut = {
             "lotAvailability": "Contract Out",
             "lotSize": "4.2 Acres",
             "cost": "$685,000",
-            "lotURL": "http://staging.hudsonwoods.com/availability/contract-out/lot-19"
+            "lotURL": "http://hudsonwoods.com/availability/contract-out/lot-19"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -469,7 +469,7 @@ var notReleased = {
             "lotAvailability": "Not Released",
             "lotSize": "5.6 Acres",
             "cost": "—",
-            "lotURL": "http://staging.hudsonwoods.com/availability/not-released/lot-01"
+            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-01"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -509,7 +509,7 @@ var notReleased = {
             "lotAvailability": "Not Released",
             "lotSize": "4.7 Acres",
             "cost": "-",
-            "lotURL": "http://staging.hudsonwoods.com/availability/not-released/lot-02"
+            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-02"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -543,7 +543,7 @@ var notReleased = {
             "lotAvailability": "Not Released",
             "lotSize": "5.8 Acres",
             "cost": "-",
-            "lotURL": "http://staging.hudsonwoods.com/availability/not-released/lot-03"
+            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-03"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -571,7 +571,7 @@ var notReleased = {
             "lotAvailability": "Not Released",
             "lotSize": "6.6 Acres",
             "cost": "-",
-            "lotURL": "http://staging.hudsonwoods.com/availability/not-released/lot-04"
+            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-04"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -603,7 +603,7 @@ var notReleased = {
             "lotAvailability": "Not Released",
             "lotSize": "7.1 Acres",
             "cost": "-",
-            "lotURL": "http://staging.hudsonwoods.com/availability/not-released/lot-05"
+            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-05"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -632,7 +632,7 @@ var notReleased = {
             "lotAvailability": "Not Released",
             "lotSize": "4.1 Acres",
             "cost": "-",
-            "lotURL": "http://staging.hudsonwoods.com/availability/not-released/lot-06"
+            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-06"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -662,7 +662,7 @@ var notReleased = {
             "lotAvailability": "Not Released",
             "lotSize": "4.2 Acres",
             "cost": "-",
-            "lotURL": "http://staging.hudsonwoods.com/availability/not-released/lot-07"
+            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-07"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -698,7 +698,7 @@ var notReleased = {
             "lotAvailability": "Not Released",
             "lotSize": "4.0 Acres",
             "cost": "-",
-            "lotURL": "http://staging.hudsonwoods.com/availability/not-released/lot-08"
+            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-08"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -728,7 +728,7 @@ var notReleased = {
             "lotAvailability": "Not Released",
             "lotSize": "3.8 Acres",
             "cost": "-",
-            "lotURL": "http://staging.hudsonwoods.com/availability/not-released/lot-09"
+            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-09"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -756,7 +756,7 @@ var notReleased = {
             "lotAvailability": "Not Released",
             "lotSize": "12.0 Acres",
             "cost": "-",
-            "lotURL": "http://staging.hudsonwoods.com/availability/not-released/lot-10"
+            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-10"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -825,7 +825,7 @@ var notReleased = {
             "lotAvailability": "Not Released",
             "lotSize": "5.2 Acres",
             "cost": "-",
-            "lotURL": "http://staging.hudsonwoods.com/availability/not-released/lot-12"
+            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-12"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -852,7 +852,7 @@ var notReleased = {
             "lotAvailability": "Not Released",
             "lotSize": "4.3 Acres",
             "cost": "-",
-            "lotURL": "http://staging.hudsonwoods.com/availability/not-released/lot-13"
+            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-13"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -892,7 +892,7 @@ var notReleased = {
             "lotAvailability": "Not Released",
             "lotSize": "3.8 Acres",
             "cost": "-",
-            "lotURL": "http://staging.hudsonwoods.com/availability/not-released/lot-16"
+            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-16"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -945,7 +945,7 @@ var notReleased = {
             "lotAvailability": "Not Released",
             "lotSize": "4.7 Acres",
             "cost": "-",
-            "lotURL": "http://staging.hudsonwoods.com/availability/not-released/lot-17"
+            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-17"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -986,7 +986,7 @@ var notReleased = {
             "lotAvailability": "Not Released",
             "lotSize": "3.7 Acres",
             "cost": "-",
-            "lotURL": "http://staging.hudsonwoods.com/availability/not-released/lot-18"
+            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-18"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -1025,7 +1025,7 @@ var notReleased = {
             "lotAvailability": "Not Released",
             "lotSize": "4.2 Acres",
             "cost": "-",
-            "lotURL": "http://staging.hudsonwoods.com/availability/not-released/lot-20"
+            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-20"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -1051,7 +1051,7 @@ var notReleased = {
             "lotAvailability": "Not Released",
             "lotSize": "4.1 Acres",
             "cost": "-",
-            "lotURL": "http://staging.hudsonwoods.com/availability/not-released/lot-23"
+            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-23"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -1078,7 +1078,7 @@ var notReleased = {
             "lotAvailability": "Not Released",
             "lotSize": "3.7 Acres",
             "cost": "-",
-            "lotURL": "http://staging.hudsonwoods.com/availability/not-released/lot-25"
+            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-25"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -1109,7 +1109,7 @@ var notReleased = {
             "lotAvailability": "Not Released",
             "lotSize": "4.2 Acres",
             "cost": "-",
-            "lotURL": "http://staging.hudsonwoods.com/availability/not-released/lot-26"
+            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-26"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -1146,7 +1146,7 @@ var available = {
             "lotAvailability": "For Sale",
             "lotSize": "6.0 Acres",
             "cost": "$695,000",
-            "lotURL": "http://staging.hudsonwoods.com/availability/for-sale/lot-11"
+            "lotURL": "http://hudsonwoods.com/availability/for-sale/lot-11"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -1193,7 +1193,7 @@ var available = {
             "lotAvailability": "For Sale",
             "lotSize": "4.6 Acres",
             "cost": "$685,000",
-            "lotURL": "http://staging.hudsonwoods.com/availability/for-sale/lot-15"
+            "lotURL": "http://hudsonwoods.com/availability/for-sale/lot-15"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -1236,7 +1236,7 @@ var available = {
             "lotAvailability": "For Sale",
             "lotSize": "6.6 Acres",
             "cost": "$695,000",
-            "lotURL": "http://staging.hudsonwoods.com/availability/for-sale/lot-21"
+            "lotURL": "http://hudsonwoods.com/availability/for-sale/lot-21"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -1271,7 +1271,7 @@ var available = {
             "lotAvailability": "For Sale",
             "lotSize": "3.3 Acres",
             "cost": "$665,000",
-            "lotURL": "http://staging.hudsonwoods.com/availability/for-sale/lot-22"
+            "lotURL": "http://hudsonwoods.com/availability/for-sale/lot-22"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -1306,7 +1306,7 @@ var notAvailable = {
             "lotAvailability": "Not Released",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://staging.hudsonwoods.com/availability/not-released/lot-24"
+            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-24"
         },
         "geometry": {
             "type": "MultiPolygon",
