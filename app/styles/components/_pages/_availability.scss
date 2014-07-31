@@ -2,7 +2,7 @@
 	position: absolute;
 	top: 50px;
 	left: 50px;
-	background-color: rgba(white,.9);
+	background-color: rgba(white,.85);
 	z-index: 100;
 	padding: 15px;
 	&:hover {
@@ -26,13 +26,13 @@
 		&.sold {
 			span {
 				border: 1px solid lighten($gray,40%);
-				background-color: #b2d366;
+				background-color: #8fb043;
 			}
 		}
 		&.contract-out {
 			span {
 				border: 1px solid lighten($gray,40%);
-				background-color: #e5e5da;
+				background-color: #c9d4b0;
 			}
 		}
 		&.not-released {

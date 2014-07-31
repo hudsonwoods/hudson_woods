@@ -43,6 +43,11 @@ function resetHighlight(e) {
     geojson.resetStyle(e.target);
 }
 
+function resetMap(e) {
+    map.setView(new L.LatLng(41.8872809, -74.3138479), 16);
+
+}
+
 // var availableMap = layer.setStyle({
 //     weight: 2,
 //     color: "#fff",
@@ -58,7 +63,7 @@ function soldMap(feature) {
         weight: 1,
         color: "#fff",
         opacity: 1,
-        fillColor: "#a4c94d",
+        fillColor: "#8fb043",
         fillOpacity: .85
     };
 }
@@ -70,7 +75,7 @@ function soldMapResetHighlight(e) {
         weight: 1,
         color: "#fff",
         opacity: 1,
-        fillColor: "#aad14f",
+        fillColor: "#8fb043",
         fillOpacity: .85
     });
 
@@ -86,7 +91,7 @@ function soldMapHighlight(e) {
         weight: 3,
         color: "#676566",
         opacity: 1,
-        fillColor: "#b2d366",
+        fillColor: "#8fb043",
         fillOpacity: .85
     });
 
@@ -129,7 +134,8 @@ function onEachFeaturesold(feature, layer) {
     layer.bindPopup(popupContent,popupOptions);
     layer.on({
         mouseover: soldMapHighlight,
-        mouseout: soldMapResetHighlight,   
+        mouseout: soldMapResetHighlight,  
+        popupclose: resetMap 
     });
 }
 
@@ -221,7 +227,8 @@ function onEachFeatureAvailable(feature, layer) {
     layer.bindPopup(popupContent,popupOptions);
     layer.on({
         mouseover: availableMapHighlight,
-        mouseout: availableMapResetHighlight,   
+        mouseout: availableMapResetHighlight,
+        popupclose: resetMap    
     });
 }
 
@@ -242,7 +249,7 @@ function contractOutMap(feature) {
         weight: 1,
         color: "#fff",
         opacity: 1,
-        fillColor: "#e5e5da",
+        fillColor: "#c9d4b0",
         fillOpacity: .85
     };
 }
@@ -254,7 +261,7 @@ function contractOutMapResetHighlight(e) {
         weight: 1,
         color: "#fff",
         opacity: 1,
-        fillColor: "#e5e5da",
+        fillColor: "#c9d4b0",
         fillOpacity: .85
     });
 
@@ -270,7 +277,7 @@ function contractOutMapHighlight(e) {
         weight: 3,
         color: "#676566",
         opacity: 1,
-        fillColor: "#e5e5da",
+        fillColor: "#c9d4b0",
         fillOpacity: .85
     });
 
@@ -313,7 +320,8 @@ function onEachFeaturecontractOut(feature, layer) {
     layer.bindPopup(popupContent,popupOptions);
     layer.on({
         mouseover: contractOutMapHighlight,
-        mouseout: contractOutMapResetHighlight,   
+        mouseout: contractOutMapResetHighlight,
+        popupclose: resetMap    
     });
 }
 
@@ -405,7 +413,8 @@ function onEachFeaturenotReleased(feature, layer) {
     layer.bindPopup(popupContent,popupOptions);
     layer.on({
         mouseover: notReleasedMapHighlight,
-        mouseout: notReleasedMapResetHighlight,   
+        mouseout: notReleasedMapResetHighlight,
+        popupclose: resetMap    
     });
 }
 

@@ -6,6 +6,7 @@ fields:
     display: Author
     required: false
     type: users
+    default: HudsonWoods
 
   categories:
     display: Categories
