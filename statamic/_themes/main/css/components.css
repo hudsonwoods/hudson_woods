@@ -8507,3 +8507,17 @@ p {
   font-size: 13px;
   text-decoration: underline;
 }
+
+.redirect {
+  padding: 40px;
+  background-color: #c9be69;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+.redirect p {
+  color: white;
+}
+.redirect .button {
+  margin-bottom: 0;
+}
