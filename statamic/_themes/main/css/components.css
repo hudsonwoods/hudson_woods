@@ -7279,9 +7279,6 @@ p {
 }
 .card.availability.contract-out .status {
   background-color: #c9d4b0;
-  border: 1px solid #d5d5d5;
-  color: #6e736c;
-  font-weight: 300;
 }
 .card.availability.for-sale {
   border-top: 8px solid #988a81;
