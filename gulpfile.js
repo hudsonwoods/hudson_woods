@@ -65,7 +65,7 @@ gulp.task('copy', function() {
 
 gulp.task('scripts_non_cat', function() {
   return gulp.src(['app/scripts/non_cat/*.js'])
-    .pipe(gulp.dest('statamic/_themes/main/js/non_cat'))
+    .pipe(gulp.dest('statamic/_themes/main/js/build'))
     .pipe($.size({title: 'copy'}));
 });
 
@@ -134,7 +134,7 @@ gulp.task('scripts', function() {
 
 // Minify Javascript
 gulp.task('compress', function() {
-  gulp.src(['statamic/_themes/main/js/build/*.js','statamic/_themes/main/js/non_cat/*.js'])
+  gulp.src(['statamic/_themes/main/js/build/*.js'])
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
     .pipe(gulp.dest('statamic/_themes/main/js/'))
