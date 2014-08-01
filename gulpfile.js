@@ -63,6 +63,12 @@ gulp.task('copy', function() {
     .pipe($.size({title: 'copy'}));
 });
 
+gulp.task('scripts_non_cat', function() {
+  return gulp.src(['app/scripts/non_cat/*.js'])
+    .pipe(gulp.dest('statamic/_themes/main/js/non_cat'))
+    .pipe($.size({title: 'copy'}));
+});
+
 // Automatically Prefix CSS
 gulp.task('styles:css', function () {
   return gulp.src('app/styles/**/*.css')
@@ -123,15 +129,15 @@ gulp.task('styles', ['styles:components', 'styles:scss', 'styles:css']);
 gulp.task('scripts', function() {
   gulp.src(['app/scripts/bootstrap.js','app/scripts/jquery.scrollme.js','app/scripts/fitvids.jquery.js','app/scripts/wufoo.js','app/scripts/smoothproducts.js','app/scripts/waypoints.js','app/scripts/waypoints.sticky.js','app/scripts/slick.js','app/scripts/instafeed.js','app/scripts/custom.js'])
     .pipe(concat('scripts.js'))
-    .pipe(gulp.dest('statamic/_themes/main/js'))
+    .pipe(gulp.dest('statamic/_themes/main/js/build'))
 });
 
 // Minify Javascript
 gulp.task('compress', function() {
-  gulp.src('statamic/_themes/main/js/*.js')
+  gulp.src(['statamic/_themes/main/js/build/*.js','statamic/_themes/main/js/non_cat/*.js'])
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
-    .pipe(gulp.dest('statamic/_themes/main/js/min'))
+    .pipe(gulp.dest('statamic/_themes/main/js/'))
 });
 
 // Concatenate and Minify Styles
@@ -176,7 +182,7 @@ gulp.task('html', function () {
 });
 
 // Clean Output Directory
-gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
+gulp.task('clean', del.bind(null, ['.tmp', 'statamic/_themes/main/css/','statamic/_themes/main/js/']));
 
 // Watch Files For Changes & Reload
 gulp.task('serve', function() {
@@ -200,9 +206,9 @@ gulp.task('serve:dist', ['default'], function () {
   });
 });
 
-// Build Production Files, the Default Task
-gulp.task('default', ['clean'], function (cb) {
-  runSequence('styles', ['jshint', 'html', 'images', 'copy'], cb);
+// Build Production Files
+gulp.task('build',['clean'], function (cb) {
+    runSequence(['styles','scripts','scripts_non_cat'],['compress','minify'], cb);
 });
 
 // Run PageSpeed Insights

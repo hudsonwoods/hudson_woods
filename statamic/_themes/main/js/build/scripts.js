@@ -5876,18 +5876,6 @@ $(window).load( function() {
     $('.sp-wrap').smoothproducts();
 });
 
-// Magnific Popup
-$('.magnific-popup').magnificPopup({ 
-  type: 'image',
-  image: {
-    titleSrc: function(item) {
-      return item.el.find('span').text();
-    },
-    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-  }
-  // other options
-});
-
 // Slick Carousel Initializer 
 
 $('.slick-carousel-upgrades').slick({
