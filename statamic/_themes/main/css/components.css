@@ -6493,6 +6493,9 @@ img {
 .specs .costs h4 {
   margin: 10px 0;
 }
+.specs .costs h4.last {
+  font-family: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
 
 .overlay .modal {
   background-color: rgba(0, 0, 0, 0.6);

@@ -18,7 +18,7 @@ var mapLayerGroups = [];
 var popupOptions = {
   maxWidth: 400,
   keepInView: true,
-  closeButton: false,
+  closeButton: true,
   autoPanPadding: [30, 30]
 };
 
