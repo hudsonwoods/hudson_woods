@@ -311,7 +311,9 @@ $('.upgrades-scroll').click(function () {
     }, 800);
 });
 
-$('#upgrades').css({'min-height':(($(window).height())-256)+'px'});
+$('#upgrades').css({'min-height':(($(window).height())-254)+'px'});
+
+$('#map').css({'height':(($(window).height())-254)+'px'});
 
 
 
