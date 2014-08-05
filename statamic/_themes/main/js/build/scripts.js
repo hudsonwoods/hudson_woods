@@ -5482,6 +5482,14 @@ $(function() {
   });
 });
 
+$(function(){
+  $('a.scroll').click(function() {
+    $('[data-spy="scroll"]').each(function () {
+      var $spy = $(this).scrollspy('refresh')
+    });
+  });
+});
+
 
 
 
@@ -5641,22 +5649,22 @@ $(window).scroll(function() {
 
 $('.sticky-wrapper-primary').waypoint(function() {
   $(this).find('.navbar').toggleClass('stuck');
-}, { offset: -82 });
+}, { offset: -80 });
 
 // $('.sticky-wrapper-secondary').waypoint(function() {
 //   $(this).find('#secondary-nav').toggleClass('stuck');
-// }, { offset: 82 });
+// }, { offset: 80 });
 
 $(document).ready(function() {
     $('#secondary-nav').waypoint('sticky', {
-    offset: 82 // Apply "stuck" when element 30px from top
+    offset: 80 // Apply "stuck" when element 30px from top
   });
 });
 
 
 
 
-$('body').scrollspy({ target: '#secondary-nav-list', offset:0});
+$('body').scrollspy({ target: '#secondary-nav-list', offset:1});
 
 // Upgrades content filtering
 
@@ -5737,7 +5745,8 @@ $('.slick-carousel-landing').slick({
   dots: true,
   arrows: false,
   infinite: true,
-  speed: 1500,
+  speed: 2000,
+  autoplaySpeed: 2500,
   fade: true,
   autoplay: true
 });
