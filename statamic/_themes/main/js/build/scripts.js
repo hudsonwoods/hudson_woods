@@ -5736,7 +5736,8 @@ $('.slick-carousel-upgrades').slick({
   dots: false,
   arrows: false,
   infinite: true,
-  speed: 1500,
+  speed: 2000,
+  autoplaySpeed: 1000,
   fade: true,
   autoplay: true
 });
@@ -5746,7 +5747,7 @@ $('.slick-carousel-landing').slick({
   arrows: false,
   infinite: true,
   speed: 2000,
-  autoplaySpeed: 2500,
+  autoplaySpeed: 1000,
   fade: true,
   autoplay: true
 });

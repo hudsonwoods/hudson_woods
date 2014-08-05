@@ -271,7 +271,7 @@ $('.slick-carousel-upgrades').slick({
   arrows: false,
   infinite: true,
   speed: 2000,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 1000,
   fade: true,
   autoplay: true
 });
@@ -281,7 +281,7 @@ $('.slick-carousel-landing').slick({
   arrows: false,
   infinite: true,
   speed: 2000,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 1000,
   fade: true,
   autoplay: true
 });
