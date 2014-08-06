@@ -1,6 +1,6 @@
 {{ theme:partial src="nav_unsticky" }}
 <div class="secondary-nav-lots">
-	<div class="container"><a href="{{ homepage }}availability#availability-anchor"><i class="fa fa-chevron-left"></i>Back to Upgrades</a></div>
+	<div class="container"><a href="{{ homepage }}upgrades#upgrades-anchor"><i class="fa fa-chevron-left"></i>Back to Upgrades</a></div>
 </div>
 
 <div class="details lots">
@@ -39,7 +39,7 @@
 				{{ endif }}
 					
 				{{ if imageGallery|not_empty }}
-				<div class="sp-wrap">
+				<div class="fotorama"  data-nav="thumbs">
 					{{ imageGallery }}
 						<a href="{{ image }}"><img src="{{ image }}" alt=""></a>
 					{{ /imageGallery }}

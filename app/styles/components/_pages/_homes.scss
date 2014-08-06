@@ -234,47 +234,6 @@
 }
 
 
-.sp-thumbs a:link, .sp-thumbs a:visited {
-		opacity: 1;
-}
-
-.sp-wrap {
-	background-color: transparent;
-}
-
-.sp-thumbs  {
-		margin-top: 20px;
-		border-top: none;
-		a {
-			padding-left: 5px;
-			padding-right: 5px;
-			max-width: 20%;
-			@include breakpoint(small) {
-				max-width: 10%;
-			}
-			&:first-child {
-				padding-left: 0;
-			}
-		}
-		img {
-			height: auto;
-			width: 100%;
-		}
-}
-
-.sp-large a  {
-	pointer-events:none;
-	img {
-		cursor: default;
-	}
-}
-
-.sp-current:after {
-	content: '';
-	border: 6px solid transparent;
-	border-top: 6px solid $beige;
-	position: absolute;
-	left: 50%;
-	top: 0;
-	margin-left: -6px;
+.fotorama__thumb-border {
+	border-color: $yellow;
 }

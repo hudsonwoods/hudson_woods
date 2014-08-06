@@ -33,6 +33,11 @@ fields:
     destination: assets/img/homes
     show_thumbnail: true
 
+  materialsDownload:
+    display: Materials Options Download
+    type: file
+    destination: assets/img/homes
+
   handCraftedFinishes:
     display: Hand Crafted Finishes
     type: grid

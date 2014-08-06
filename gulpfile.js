@@ -127,7 +127,7 @@ gulp.task('styles', ['styles:components', 'styles:scss', 'styles:css']);
 
 // Concatenate Javascript
 gulp.task('scripts', function() {
-  gulp.src(['app/scripts/bootstrap.js','app/scripts/jquery.scrollme.js','app/scripts/fitvids.jquery.js','app/scripts/wufoo.js','app/scripts/smoothproducts.js','app/scripts/waypoints.js','app/scripts/waypoints.sticky.js','app/scripts/slick.js','app/scripts/instafeed.js','app/scripts/custom.js'])
+  gulp.src(['app/scripts/bootstrap.js','app/scripts/jquery.scrollme.js','app/scripts/fitvids.jquery.js','app/scripts/wufoo.js','app/scripts/fotorama.js','app/scripts/waypoints.js','app/scripts/waypoints.sticky.js','app/scripts/slick.js','app/scripts/instafeed.js','app/scripts/custom.js'])
     .pipe(concat('scripts.js'))
     .pipe(gulp.dest('statamic/_themes/main/js/build'))
 });

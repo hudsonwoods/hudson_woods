@@ -74,7 +74,8 @@
 <div class="row">
 	<div class="col-md-3">
 		<h2>Colors &amp; Materials</h2>
-		<p>A variety of color and material choices are available for each home interior and exterior.</p>
+		<p>The standard home offers a variety of material and color choices for the siding, kitchen tiles and roof</p>
+		<a target="_blank" class="button" href="{{ materialsDownload }}">Download Options</a>
 	</div>
 	<div class="col-sm-12 col-md-8 col-md-offset-1">
 	
@@ -230,12 +231,14 @@
 	<div class="container">
 		<h2>Image Gallery</h2>
 		<div class="row">
-		<div class="sp-wrap col-md-10 col-md-offset-1">
+		<div class="col-md-10 col-md-offset-1">
+		<div class="fotorama"  data-nav="thumbs">
 			{{ image_gallery }}
-		    <a class="" href="{{ image }}"><img src="{{ image }}" alt=""></a>
+		    <a href="{{ image }}"><img src="{{ image }}" alt=""></a>
 			{{ /image_gallery }}
 		</div>
-
+		</div>
+		</div>
 	</div>
 </section>
 
