@@ -10,7 +10,7 @@
 
 .title-region {
 	padding: 30px 0 50px;
-	margin: 0 0 40px;
+	margin: 0;
 	&.secondary {
 		border-bottom: none;
 		padding-bottom: 0;
@@ -35,7 +35,7 @@
 
 .categories {
 	a {
-		font-family: $headline-font;
+		// font-family: $headline-font;
 		text-transform: uppercase;
 		text-decoration: none;
 		font-size: 14px;
@@ -84,6 +84,7 @@
 	}
 	h3 {
 		margin-bottom: 6px;
+		color: $dark-gray;
 	}
 	span, .continue {
 		// color: lighten($yellow,20%);
@@ -116,6 +117,7 @@
 	}
 	h3 {
 		margin-bottom: 6px;
+		color: $dark-gray;
 	}
 	a {
 		color: darken($base-font-color, 20%);
@@ -157,6 +159,11 @@
 }
 
 .blog-title-section {
+	&.authors {
+		border-bottom: 1px solid $light-gray;
+		margin: 20px 0;
+		padding-bottom: 10px;
+	}
 	h4 {
 		margin-top: 0;
 		font-family: $base-font-family;

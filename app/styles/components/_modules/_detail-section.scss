@@ -53,10 +53,10 @@
 .specs {
 	border-top: none;
 	@include breakpoint(medium) {
-		border-top: 2px solid $dark-gray;
-		border-bottom: 2px solid $dark-gray;
+		border-top: 2px solid $base-font-color;
+		border-bottom: 2px solid $base-font-color;
 	}
-	padding: 20px 0;
+	padding: 10px 0;
 	h3,h3,h4,p,span {
 		color: $inactive-gray;
 	}

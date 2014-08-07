@@ -53,22 +53,24 @@
         <div class="container">
             <div class="row tile-wrapper-large">
                 <div class="col-md-8 col-md-offset-2">
-                {{ partnerItems }}
-                    <div class="col-xs-12 col-sm-6 partner-tile">
-                    <a target=_blank href="{{ webAddress }}">
-                        
-                            <div class="circle">
+                    <div class="row">
+                        {{ partnerItems }}
+                            <div class="col-xs-12 col-sm-6 partner-tile">
+                            <a target=_blank href="{{ webAddress }}">
                                 
-                                <div class="circle-tile-overlay"></div>
-                                <div class="circle-tile" style="background-image: url( {{ image }} );"></div>
+                                    <div class="circle">
+                                        
+                                        <div class="circle-tile-overlay"></div>
+                                        <div class="circle-tile" style="background-image: url( {{ image }} );"></div>
+                                    </div>
+                               
+                                <h3>{{ headline }}</h3>
+                                <h3>{{ subHeadline }}</h3>
+                            </a>
+                            <p>{{ description }}</p>
                             </div>
-                       
-                        <h3>{{ headline }}</h3>
-                        <h3>{{ subHeadline }}</h3>
-                    </a>
-                    <p>{{ description }}</p>
+                        {{ /partnerItems}}
                     </div>
-                {{ /partnerItems}}
                 </div>
             </div>
         </div>
