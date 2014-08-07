@@ -59,6 +59,12 @@ function resetHighlighthw(e) {
     layer.setIcon(hwIcon);
 }
 
+function resetMapSleep(e) {
+  map.fitBounds(itaSleep,{
+    padding: [50,50]
+  });
+}
+
 function onEachFeaturehw(feature, layer) {
 
   var popupContent = 
@@ -81,7 +87,7 @@ function onEachFeaturehw(feature, layer) {
   layer.on({
     mouseover: highlightFeaturehw,
     mouseout: resetHighlighthw,   
-    // click: highlightFeaturehw
+    popupclose: resetMapSleep 
   });
   // map.on({click: resetHighlighthw});
 }
@@ -101,6 +107,8 @@ var itahw = L.geoJson([itaHW], {
 });
 var hwBounds = itahw.getBounds();
 itahw.addTo(map);
+
+
 
 
 
@@ -132,6 +140,15 @@ function resetHighlightSleep(e) {
     layer.setIcon(graySleepIcon);
 }
 
+function resetMapSleep(e) {
+  map.fitBounds(itaSleep,{
+    padding: [50,50]
+  });
+}
+
+
+
+
 function onEachFeatureSleep(feature, layer) {
 
   var popupContent = 
@@ -155,7 +172,7 @@ function onEachFeatureSleep(feature, layer) {
   layer.on({
     mouseover: highlightFeatureSleep,
     mouseout: resetHighlightSleep,   
-    // click: highlightFeatureSleep
+    popupclose: resetMapSleep 
   });
   // map.on({click: resetHighlightSleep});
 }
@@ -173,7 +190,7 @@ var itaSleep = L.geoJson([itaSleep], {
 
 
 });
-var sleepBounds = itaSleep.getBounds();
+// var sleepBounds = itaSleep.getBounds();
 itaSleep.addTo(map);
 
 
@@ -206,6 +223,13 @@ function resetHighlightCulture(e) {
     layer.setIcon(grayCultureIcon);
 }
 
+function resetMapCulture(e) {
+  map.fitBounds(itaCulture,{
+    padding: [50,50]
+  });
+}
+
+
 function onEachFeatureCulture(feature, layer) {
 
   var popupContent = 
@@ -223,7 +247,7 @@ function onEachFeatureCulture(feature, layer) {
   layer.on({
     mouseover: highlightFeatureCulture,
     mouseout: resetHighlightCulture,   
-    // click: highlightFeatureCulture
+    popupclose: resetMapCulture 
   });
   // map.on({click: resetHighlightCulture});
 }
@@ -275,6 +299,12 @@ function resetHighlightEat(e) {
     layer.setIcon(grayEatIcon);
 }
 
+function resetMapEat(e) {
+  map.fitBounds(itaEat,{
+    padding: [50,50]
+  });
+}
+
 function onEachFeatureEat(feature, layer) {
 
   var popupContent = 
@@ -292,7 +322,7 @@ function onEachFeatureEat(feature, layer) {
   layer.on({
     mouseover: highlightFeatureEat,
     mouseout: resetHighlightEat,   
-    // click: highlightFeatureEat
+    popupclose: resetMapEat 
   });
   // map.on({click: resetHighlightEat});
 }
@@ -346,6 +376,12 @@ function resetHighlightMind(e) {
     layer.setIcon(grayMindIcon);
 }
 
+function resetMapMind(e) {
+  map.fitBounds(itaMind,{
+    padding: [50,50]
+  });
+}
+
 function onEachFeatureMind(feature, layer) {
 
   var popupContent = 
@@ -363,7 +399,7 @@ function onEachFeatureMind(feature, layer) {
   layer.on({
     mouseover: highlightFeatureMind,
     mouseout: resetHighlightMind,   
-    // click: highlightFeatureMind
+    popupclose: resetMapMind 
   });
   // map.on({click: resetHighlightMind});
 }
@@ -414,6 +450,12 @@ function resetHighlightPick(e) {
     layer.setIcon(grayPickIcon);
 }
 
+function resetMapPick(e) {
+  map.fitBounds(itaPick,{
+    padding: [50,50]
+  });
+}
+
 function onEachFeaturePick(feature, layer) {
 
   var popupContent = 
@@ -431,7 +473,7 @@ function onEachFeaturePick(feature, layer) {
   layer.on({
     mouseover: highlightFeaturePick,
     mouseout: resetHighlightPick,   
-    // click: highlightFeaturePick
+    popupclose: resetMapPick 
   });
   // map.on({click: resetHighlightPick});
 }
@@ -482,6 +524,12 @@ function resetHighlightSip(e) {
     layer.setIcon(graySipIcon);
 }
 
+function resetMapSip(e) {
+  map.fitBounds(itaSip,{
+    padding: [50,50]
+  });
+}
+
 function onEachFeatureSip(feature, layer) {
 
   var popupContent = 
@@ -499,7 +547,7 @@ function onEachFeatureSip(feature, layer) {
   layer.on({
     mouseover: highlightFeatureSip,
     mouseout: resetHighlightSip,   
-    // click: highlightFeatureSip
+    popupclose: resetMapSip 
   });
   // map.on({click: resetHighlightSip});
 }
@@ -552,6 +600,12 @@ function resetHighlightSki(e) {
     layer.setIcon(graySkiIcon);
 }
 
+function resetMapSki(e) {
+  map.fitBounds(itaSki,{
+    padding: [50,50]
+  });
+}
+
 function onEachFeatureSki(feature, layer) {
 
   var popupContent = 
@@ -569,7 +623,7 @@ function onEachFeatureSki(feature, layer) {
   layer.on({
     mouseover: highlightFeatureSki,
     mouseout: resetHighlightSki,   
-    // click: highlightFeatureSki
+    popupclose: resetMapSki 
   });
   // map.on({click: resetHighlightSki});
 }
@@ -619,6 +673,12 @@ function resetHighlightSwim(e) {
     layer.setIcon(graySwimIcon);
 }
 
+function resetMapSwim(e) {
+  map.fitBounds(itaSwim,{
+    padding: [50,50]
+  });
+}
+
 function onEachFeatureSwim(feature, layer) {
 
   var popupContent = 
@@ -636,7 +696,7 @@ function onEachFeatureSwim(feature, layer) {
   layer.on({
     mouseover: highlightFeatureSwim,
     mouseout: resetHighlightSwim,   
-    // click: highlightFeatureSwim
+    popupclose: resetMapSwim 
   });
   // map.on({click: resetHighlightSwim});
 }
@@ -686,6 +746,12 @@ function resetHighlightSwing(e) {
     layer.setIcon(graySwingIcon);
 }
 
+function resetMapSwing(e) {
+  map.fitBounds(itaSwing,{
+    padding: [50,50]
+  });
+}
+
 function onEachFeatureSwing(feature, layer) {
 
   var popupContent = 
@@ -703,7 +769,7 @@ function onEachFeatureSwing(feature, layer) {
   layer.on({
     mouseover: highlightFeatureSwing,
     mouseout: resetHighlightSwing,   
-    // click: highlightFeatureSwing
+    popupclose: resetMapSwing 
   });
   // map.on({click: resetHighlightSwing});
 }
@@ -754,6 +820,12 @@ function resetHighlightTrail(e) {
     layer.setIcon(grayTrailIcon);
 }
 
+function resetMapTrail(e) {
+  map.fitBounds(itaTrail,{
+    padding: [50,50]
+  });
+}
+
 function onEachFeatureTrail(feature, layer) {
 
   var popupContent = 
@@ -771,7 +843,7 @@ function onEachFeatureTrail(feature, layer) {
   layer.on({
     mouseover: highlightFeatureTrail,
     mouseout: resetHighlightTrail,   
-    // click: highlightFeatureTrails
+    popupclose: resetMapTrail 
   });
   // map.on({click: resetHighlightTrail});
 }

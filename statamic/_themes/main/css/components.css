@@ -6715,7 +6715,7 @@ img {
 .specs .costs h4 {
   margin: 10px 0;
 }
-.specs .costs h4.last {
+.specs .costs .last {
   font-family: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
@@ -6925,6 +6925,10 @@ nav.navbar .navbar-brand {
   #secondary-nav.stuck {
     top: 80px;
   }
+  #secondary-nav.map-nav {
+    top: 80px;
+    height: 44px !important;
+  }
 }
 #secondary-nav ul {
   width: 100%;
@@ -7063,7 +7067,8 @@ nav.navbar .navbar-brand {
 .secondary-nav-lots a {
   color: white;
   text-transform: uppercase;
-  line-height: 44px;
+  line-height: 46px;
+  font-size: 13px;
 }
 .secondary-nav-lots a i {
   margin-right: 10px;
@@ -7086,6 +7091,10 @@ nav.navbar .navbar-brand {
 }
 .anchor.availability, .anchor.in-the-area {
   top: -124px;
+}
+
+#header-in-the-area .sticky-wrapper, #header-availability .sticky-wrapper {
+  height: 44px;
 }
 
 #footer {
@@ -7878,6 +7887,10 @@ p {
   margin-top: 20px;
 }
 
+.fotorama__thumb-border {
+  border-color: #dfcc35;
+}
+
 #story {
   background-color: #ebe9e2;
 }
@@ -8272,10 +8285,6 @@ p {
 #a-la-carte li h4 {
   font-size: 20px;
   margin-top: 10px;
-}
-
-.fotorama__thumb-border {
-  border-color: #c9be69;
 }
 
 .ita-pane {

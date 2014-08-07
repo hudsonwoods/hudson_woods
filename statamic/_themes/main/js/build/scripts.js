@@ -5556,11 +5556,6 @@ setInterval(function() {
     .appendTo('#slideshow');
 },  3500);
 
-// Gallery Code
-$(window).load( function() {
-    $('.sp-wrap').smoothproducts();
-});
-
 // Slick Carousel Initializer 
 
 $('.slick-carousel-upgrades').slick({
