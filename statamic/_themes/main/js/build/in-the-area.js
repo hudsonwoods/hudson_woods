@@ -47,8 +47,6 @@ var hwIcon = L.icon({
 });
 
 
-
-
 function highlightFeaturehw(e) {
     var layer = e.target;
     layer.setIcon(hwIcon);

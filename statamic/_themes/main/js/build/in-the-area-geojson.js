@@ -10,6 +10,7 @@ var itaHW = {
             },
             "type": "Feature",
             "properties": {
+                "iconURL": "assets/img/in-the-area/icons/hw_logo.png",
                 "classIcon": "assets/img/in-the-area/icons/card-icon-sleep.png",
                 "classType": "hudson-woods",
                 "activity": "sleep",
