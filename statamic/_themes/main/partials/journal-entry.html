@@ -18,7 +18,7 @@
 		        {{ endif }}
 		    </div>
 	        <a class="title" href="{{ url }}"><h3>{{ title }}</h3></a>
-	        <a href="{{ url }}#disqus_thread" data-disqus-identifier="{{ title|lower|slugify }}" class="comments"></a>
+	        <a href="{{ url }}#disqus_thread" data-disqus-identifier="{{ title|lower|slugify }}" class="comments">0 Comments</a>
 			{{ if date }}
 			 <p class="publish-date"><time pubdate datetime="{{ datestamp format="Y-m-d" }}">Posted on {{ date }}</time> by 	
 			 <a class="taxonomy" href="{{ homepage }}blog/author/{{ author }}">{{ author }}</a>
