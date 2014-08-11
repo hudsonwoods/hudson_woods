@@ -7530,6 +7530,7 @@ p {
 .card.area h4 img {
   min-width: 0;
   margin-right: 10px;
+  height: 20px;
 }
 .card.area h4 {
   padding-top: 20px;
@@ -7582,6 +7583,7 @@ p {
 .card.area img {
   min-width: 100%;
   max-width: 100% !important;
+  height: 200px;
 }
 .card.area.sleep {
   border-top: 8px solid #66bbe1;
