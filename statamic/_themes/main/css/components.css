@@ -8636,6 +8636,29 @@ p {
   text-transform: uppercase;
 }
 
+.author-wrapper .row {
+  margin-bottom: 20px;
+}
+.author-wrapper a {
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+}
+.author-wrapper a img {
+  height: 60px;
+  width: 60px;
+  max-width: 60px;
+}
+.author-wrapper a span {
+  font-size: 12px;
+  display: block;
+  line-height: 14px;
+}
+.author-wrapper a span a {
+  font-size: 12px;
+  text-decoration: underline;
+}
+
 .blog-title-section.authors {
   border-bottom: 1px solid #cccccc;
   margin: 20px 0;
