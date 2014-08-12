@@ -3,21 +3,13 @@ var map = L.map('map', {
     center: [41.8872809, -74.3138479],
     zoom: 16,
     scrollWheelZoom: false,
-    zoomControl: false,
+    // zoomControl: false,
     // doubleClickZoom: false
 });
 
 L.tileLayer('http://a.tiles.mapbox.com/v3/sandersonj.i245n6m6/{z}/{x}/{y}.png', {
     id: 'sandersonj.i245n6m6'
 }).addTo(map);
-
-// L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
-//             maxZoom: 18,
-//             attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-//                 '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-//                 'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-//             id: 'examples.map-i86knfo3'
-//         }).addTo(map);
 
 // array to store layers for each feature type
 var mapLayerGroups = [];
@@ -56,15 +48,7 @@ function resetMap(e) {
 
 }
 
-// var availableMap = layer.setStyle({
-//     weight: 2,
-//     color: "#fff",
-//     opacity: 1,
-//     fillColor: "#79a33a",
-//     fillOpacity: 1
-// });
-
-// Sold
+// Sold Map Tiles
 
 function soldMap(feature) {
     return {
