@@ -4,7 +4,7 @@ var map = L.map('map', {
     zoom: 16,
     scrollWheelZoom: false,
     zoomControl: false,
-    doubleClickZoom: false
+    // doubleClickZoom: false
 });
 
 L.tileLayer('http://a.tiles.mapbox.com/v3/sandersonj.i245n6m6/{z}/{x}/{y}.png', {
@@ -48,15 +48,7 @@ function resetMap(e) {
 
 }
 
-// var availableMap = layer.setStyle({
-//     weight: 2,
-//     color: "#fff",
-//     opacity: 1,
-//     fillColor: "#79a33a",
-//     fillOpacity: 1
-// });
-
-// Sold
+// Sold Map Tiles
 
 function soldMap(feature) {
     return {
@@ -112,7 +104,7 @@ function onEachFeaturesold(feature, layer) {
         "<img src=" + feature.properties.image +  ">" + 
         "<div class='col-md-4" + "'" + ">" +
             "<p>AVAILABILITY</p>" +
-            "<p class='status" + "'" + ">"+feature.properties.lotAvailability+"</p>" +
+            "<p class='status" + "'" + ">"+"Sold"+"</p>" +
         "</div>" + 
         "<div class='col-md-4" + "'" + ">" +
             "<p>SIZE</p>" +
@@ -205,7 +197,7 @@ function onEachFeatureAvailable(feature, layer) {
         "<img src=" + feature.properties.image +  ">" + 
         "<div class='col-md-4" + "'" + ">" +
             "<p>AVAILABILITY</p>" +
-            "<p class='status" + "'" + ">"+feature.properties.lotAvailability+"</p>" +
+            "<p class='status" + "'" + ">"+"For Sale"+"</p>" +
         "</div>" + 
         "<div class='col-md-4" + "'" + ">" +
             "<p>SIZE</p>" +
@@ -298,7 +290,7 @@ function onEachFeaturecontractOut(feature, layer) {
         "<img src=" + feature.properties.image +  ">" + 
         "<div class='col-md-5" + "'" + ">" +
             "<p>AVAILABILITY</p>" +
-            "<p class='status" + "'" + ">"+feature.properties.lotAvailability+"</p>" +
+            "<p class='status" + "'" + ">"+"Contract Out"+"</p>" +
         "</div>" + 
         "<div class='col-md-3" + "'" + ">" +
             "<p>SIZE</p>" +
@@ -391,7 +383,7 @@ function onEachFeaturenotReleased(feature, layer) {
         "<img src=" + feature.properties.image +  ">" + 
         "<div class='col-md-5" + "'" + ">" +
             "<p>AVAILABILITY</p>" +
-            "<p class='status" + "'" + ">"+feature.properties.lotAvailability+"</p>" +
+            "<p class='status" + "'" + ">"+"Not Released"+"</p>" +
         "</div>" + 
         "<div class='col-md-4" + "'" + ">" +
             "<p>SIZE</p>" +

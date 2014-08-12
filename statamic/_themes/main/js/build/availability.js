@@ -4,12 +4,20 @@ var map = L.map('map', {
     zoom: 16,
     scrollWheelZoom: false,
     zoomControl: false,
-    doubleClickZoom: false
+    // doubleClickZoom: false
 });
 
 L.tileLayer('http://a.tiles.mapbox.com/v3/sandersonj.i245n6m6/{z}/{x}/{y}.png', {
     id: 'sandersonj.i245n6m6'
 }).addTo(map);
+
+// L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
+//             maxZoom: 18,
+//             attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+//                 '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+//                 'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+//             id: 'examples.map-i86knfo3'
+//         }).addTo(map);
 
 // array to store layers for each feature type
 var mapLayerGroups = [];
@@ -112,7 +120,7 @@ function onEachFeaturesold(feature, layer) {
         "<img src=" + feature.properties.image +  ">" + 
         "<div class='col-md-4" + "'" + ">" +
             "<p>AVAILABILITY</p>" +
-            "<p class='status" + "'" + ">"+feature.properties.lotAvailability+"</p>" +
+            "<p class='status" + "'" + ">"+"Sold"+"</p>" +
         "</div>" + 
         "<div class='col-md-4" + "'" + ">" +
             "<p>SIZE</p>" +
@@ -205,7 +213,7 @@ function onEachFeatureAvailable(feature, layer) {
         "<img src=" + feature.properties.image +  ">" + 
         "<div class='col-md-4" + "'" + ">" +
             "<p>AVAILABILITY</p>" +
-            "<p class='status" + "'" + ">"+feature.properties.lotAvailability+"</p>" +
+            "<p class='status" + "'" + ">"+"For Sale"+"</p>" +
         "</div>" + 
         "<div class='col-md-4" + "'" + ">" +
             "<p>SIZE</p>" +
@@ -298,7 +306,7 @@ function onEachFeaturecontractOut(feature, layer) {
         "<img src=" + feature.properties.image +  ">" + 
         "<div class='col-md-5" + "'" + ">" +
             "<p>AVAILABILITY</p>" +
-            "<p class='status" + "'" + ">"+feature.properties.lotAvailability+"</p>" +
+            "<p class='status" + "'" + ">"+"Contract Out"+"</p>" +
         "</div>" + 
         "<div class='col-md-3" + "'" + ">" +
             "<p>SIZE</p>" +
@@ -391,7 +399,7 @@ function onEachFeaturenotReleased(feature, layer) {
         "<img src=" + feature.properties.image +  ">" + 
         "<div class='col-md-5" + "'" + ">" +
             "<p>AVAILABILITY</p>" +
-            "<p class='status" + "'" + ">"+feature.properties.lotAvailability+"</p>" +
+            "<p class='status" + "'" + ">"+"Not Released"+"</p>" +
         "</div>" + 
         "<div class='col-md-4" + "'" + ">" +
             "<p>SIZE</p>" +
