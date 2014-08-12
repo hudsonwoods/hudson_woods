@@ -54,9 +54,9 @@ function soldMap(feature) {
     return {
         weight: 1,
         color: "#fff",
-        opacity: .5,
+        opacity: .25,
         fillColor: "#918279",
-        fillOpacity: .85
+        fillOpacity: .55
     };
 }
 
@@ -68,7 +68,7 @@ function soldMapResetHighlight(e) {
         color: "#fff",
         opacity: 1,
         fillColor: "#918279",
-        fillOpacity: .85
+        fillOpacity: .55
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -147,7 +147,7 @@ function availableMap(feature) {
     return {
         weight: 1,
         color: "#fff",
-        opacity: .5,
+        opacity: .25,
         fillColor: "#8fb043",
         fillOpacity: .55
     };
@@ -240,7 +240,7 @@ function contractOutMap(feature) {
     return {
         weight: 1,
         color: "#fff",
-        opacity: .5,
+        opacity: .25,
         fillColor: "#c9d4b0",
         fillOpacity: .55
     };
@@ -333,7 +333,7 @@ function contractSignedMap(feature) {
     return {
         weight: 1,
         color: "#fff",
-        opacity: .5,
+        opacity: .25,
         fillColor: "#c7c4c1",
         fillOpacity: .55
     };
@@ -426,7 +426,7 @@ function notReleasedMap(feature) {
     return {
         weight: 1,
         color: "#fff",
-        opacity: .5,
+        opacity: .25,
         fillColor: "#cfc9c2",
         fillOpacity: .55
     };
