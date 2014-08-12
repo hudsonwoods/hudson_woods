@@ -427,7 +427,7 @@ function notReleasedMap(feature) {
         weight: 1,
         color: "#fff",
         opacity: .25,
-        fillColor: "#cfc9c2",
+        fillColor: "#bab8b5",
         fillOpacity: .55
     };
 }
@@ -439,7 +439,7 @@ function notReleasedMapResetHighlight(e) {
         weight: 1,
         color: "#fff",
         opacity: .25,
-        fillColor: "#cfc9c2",
+        fillColor: "#bab8b5",
         fillOpacity: .55
     });
 
@@ -455,7 +455,7 @@ function notReleasedMapHighlight(e) {
         weight: 3,
         color: "#676566",
         opacity: 1,
-        fillColor: "#cfc9c2",
+        fillColor: "#bab8b5",
         fillOpacity: .85
     });
 
