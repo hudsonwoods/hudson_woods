@@ -66,7 +66,7 @@ function soldMapResetHighlight(e) {
     layer.setStyle({
         weight: 1,
         color: "#fff",
-        opacity: 1,
+        opacity: .25,
         fillColor: "#918279",
         fillOpacity: .55
     });
@@ -159,7 +159,7 @@ function availableMapResetHighlight(e) {
     layer.setStyle({
         weight: 1,
         color: "#fff",
-        opacity: 1,
+        opacity: .25,
         fillColor: "#8fb043",
         fillOpacity: .55
     });
@@ -252,7 +252,7 @@ function contractOutMapResetHighlight(e) {
     layer.setStyle({
         weight: 1,
         color: "#fff",
-        opacity: 1,
+        opacity: .25,
         fillColor: "#c9d4b0",
         fillOpacity: .55
     });
@@ -345,7 +345,7 @@ function contractSignedMapResetHighlight(e) {
     layer.setStyle({
         weight: 1,
         color: "#fff",
-        opacity: 1,
+        opacity: .25,
         fillColor: "#adaba8",
         fillOpacity: .55
     });
@@ -438,7 +438,7 @@ function notReleasedMapResetHighlight(e) {
     layer.setStyle({
         weight: 1,
         color: "#fff",
-        opacity: 1,
+        opacity: .25,
         fillColor: "#cfc9c2",
         fillOpacity: .55
     });
@@ -520,7 +520,7 @@ function notAvailableMap(feature) {
     return {
         weight: 1,
         color: "#fff",
-        opacity: 1,
+        opacity: .25,
         fillColor: "#cfc9c2",
         fillOpacity: .55
     };
