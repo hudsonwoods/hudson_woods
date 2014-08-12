@@ -149,7 +149,7 @@ function availableMap(feature) {
         color: "#fff",
         opacity: .5,
         fillColor: "#8fb043",
-        fillOpacity: .85
+        fillOpacity: .55
     };
 }
 
@@ -161,7 +161,7 @@ function availableMapResetHighlight(e) {
         color: "#fff",
         opacity: 1,
         fillColor: "#8fb043",
-        fillOpacity: .85
+        fillOpacity: .55
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -242,7 +242,7 @@ function contractOutMap(feature) {
         color: "#fff",
         opacity: .5,
         fillColor: "#c9d4b0",
-        fillOpacity: .85
+        fillOpacity: .55
     };
 }
 
@@ -254,7 +254,7 @@ function contractOutMapResetHighlight(e) {
         color: "#fff",
         opacity: 1,
         fillColor: "#c9d4b0",
-        fillOpacity: .85
+        fillOpacity: .55
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -335,7 +335,7 @@ function contractSignedMap(feature) {
         color: "#fff",
         opacity: .5,
         fillColor: "#c7c4c1",
-        fillOpacity: .85
+        fillOpacity: .55
     };
 }
 
@@ -347,7 +347,7 @@ function contractSignedMapResetHighlight(e) {
         color: "#fff",
         opacity: 1,
         fillColor: "#c7c4c1",
-        fillOpacity: .85
+        fillOpacity: .55
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -428,7 +428,7 @@ function notReleasedMap(feature) {
         color: "#fff",
         opacity: .5,
         fillColor: "#cfc9c2",
-        fillOpacity: .85
+        fillOpacity: .55
     };
 }
 
@@ -440,7 +440,7 @@ function notReleasedMapResetHighlight(e) {
         color: "#fff",
         opacity: 1,
         fillColor: "#cfc9c2",
-        fillOpacity: .85
+        fillOpacity: .55
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -522,7 +522,7 @@ function notAvailableMap(feature) {
         color: "#fff",
         opacity: 1,
         fillColor: "#cfc9c2",
-        fillOpacity: .85
+        fillOpacity: .55
     };
 }
 
