@@ -54,9 +54,9 @@ function soldMap(feature) {
     return {
         weight: 1,
         color: "#676566",
-        opacity: .11,
+        opacity: .15,
         fillColor: "#6b5243",
-        fillOpacity: .2
+        fillOpacity: .33
     };
 }
 
@@ -66,9 +66,9 @@ function soldMapResetHighlight(e) {
     layer.setStyle({
         weight: 1,
         color: "#676566",
-        opacity: .11,
+        opacity: .15,
         fillColor: "#6b5243",
-        fillOpacity: .2
+        fillOpacity: .33
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -147,9 +147,9 @@ function availableMap(feature) {
     return {
         weight: 1,
         color: "#676566",
-        opacity: .11,
+        opacity: .15,
         fillColor: "#76962a",
-        fillOpacity: .25
+        fillOpacity: .335
     };
 }
 
@@ -159,9 +159,9 @@ function availableMapResetHighlight(e) {
     layer.setStyle({
         weight: 1,
         color: "#676566",
-        opacity: .11,
+        opacity: .15,
         fillColor: "#76962a",
-        fillOpacity: .25
+        fillOpacity: .335
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -240,9 +240,9 @@ function contractOutMap(feature) {
     return {
         weight: 1,
         color: "#676566",
-        opacity: .11,
+        opacity: .15,
         fillColor: "#94a175",
-        fillOpacity: .2
+        fillOpacity: .33
     };
 }
 
@@ -252,9 +252,9 @@ function contractOutMapResetHighlight(e) {
     layer.setStyle({
         weight: 1,
         color: "#676566",
-        opacity: .11,
+        opacity: .15,
         fillColor: "#94a175",
-        fillOpacity: .2
+        fillOpacity: .33
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -333,9 +333,9 @@ function contractSignedMap(feature) {
     return {
         weight: 1,
         color: "#676566",
-        opacity: .11,
+        opacity: .15,
         fillColor: "#7a7977",
-        fillOpacity: .2
+        fillOpacity: .33
     };
 }
 
@@ -345,9 +345,9 @@ function contractSignedMapResetHighlight(e) {
     layer.setStyle({
         weight: 1,
         color: "#676566",
-        opacity: .11,
+        opacity: .15,
         fillColor: "#7a7977",
-        fillOpacity: .2
+        fillOpacity: .33
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -426,9 +426,9 @@ function notReleasedMap(feature) {
     return {
         weight: 1,
         color: "#676566",
-        opacity: .11,
+        opacity: .15,
         fillColor: "#c2b6a9",
-        fillOpacity: .2
+        fillOpacity: .33
     };
 }
 
@@ -438,9 +438,9 @@ function notReleasedMapResetHighlight(e) {
     layer.setStyle({
         weight: 1,
         color: "#676566",
-        opacity: .11,
+        opacity: .15,
         fillColor: "#c2b6a9",
-        fillOpacity: .2
+        fillOpacity: .33
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -520,9 +520,9 @@ function notAvailableMap(feature) {
     return {
         weight: 1,
         color: "#676566",
-        opacity: .11,
+        opacity: .15,
         fillColor: "#dbd5ce",
-        fillOpacity: .2
+        fillOpacity: .33
     };
 }
 
