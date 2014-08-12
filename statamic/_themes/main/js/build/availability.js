@@ -55,7 +55,7 @@ function soldMap(feature) {
         weight: 1,
         color: "#676566",
         opacity: .15,
-        fillColor: "#6b5243",
+        fillColor: "#80726a",
         fillOpacity: .33
     };
 }
@@ -67,7 +67,7 @@ function soldMapResetHighlight(e) {
         weight: 1,
         color: "#676566",
         opacity: .15,
-        fillColor: "#6b5243",
+        fillColor: "#80726a",
         fillOpacity: .33
     });
 
@@ -83,7 +83,7 @@ function soldMapHighlight(e) {
         weight: 3,
         color: "#676566",
         opacity: 1,
-        fillColor: "#918279",
+        fillColor: "#80726a",
         fillOpacity: .65
     });
 
@@ -241,7 +241,7 @@ function contractOutMap(feature) {
         weight: 1,
         color: "#676566",
         opacity: .15,
-        fillColor: "#94a175",
+        fillColor: "#9fab84",
         fillOpacity: .33
     };
 }
@@ -253,7 +253,7 @@ function contractOutMapResetHighlight(e) {
         weight: 1,
         color: "#676566",
         opacity: .15,
-        fillColor: "#94a175",
+        fillColor: "#9fab84",
         fillOpacity: .33
     });
 
@@ -269,7 +269,7 @@ function contractOutMapHighlight(e) {
         weight: 3,
         color: "#676566",
         opacity: 1,
-        fillColor: "#c9d4b0",
+        fillColor: "#9fab84",
         fillOpacity: .65
     });
 
@@ -427,7 +427,7 @@ function notReleasedMap(feature) {
         weight: 1,
         color: "#676566",
         opacity: .15,
-        fillColor: "#c2b6a9",
+        fillColor: "#ccc4bc",
         fillOpacity: .33
     };
 }
@@ -439,7 +439,7 @@ function notReleasedMapResetHighlight(e) {
         weight: 1,
         color: "#676566",
         opacity: .15,
-        fillColor: "#c2b6a9",
+        fillColor: "#ccc4bc",
         fillOpacity: .33
     });
 
@@ -455,7 +455,7 @@ function notReleasedMapHighlight(e) {
         weight: 3,
         color: "#676566",
         opacity: 1,
-        fillColor: "#c2b6a9",
+        fillColor: "#ccc4bc",
         fillOpacity: .65
     });
 
