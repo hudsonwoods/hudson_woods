@@ -334,7 +334,7 @@ function contractSignedMap(feature) {
         weight: 1,
         color: "#fff",
         opacity: .25,
-        fillColor: "#94928f",
+        fillColor: "#adaba8",
         fillOpacity: .55
     };
 }
@@ -346,7 +346,7 @@ function contractSignedMapResetHighlight(e) {
         weight: 1,
         color: "#fff",
         opacity: 1,
-        fillColor: "#94928f",
+        fillColor: "#adaba8",
         fillOpacity: .55
     });
 
@@ -362,7 +362,7 @@ function contractSignedMapHighlight(e) {
         weight: 3,
         color: "#676566",
         opacity: 1,
-        fillColor: "#94928f",
+        fillColor: "#adaba8",
         fillOpacity: .85
     });
 
