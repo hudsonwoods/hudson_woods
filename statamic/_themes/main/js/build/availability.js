@@ -80,7 +80,7 @@ function soldMapHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 3,
+        weight: 2,
         color: "#676566",
         opacity: 1,
         fillColor: "#80726a",
@@ -149,7 +149,7 @@ function availableMap(feature) {
         color: "#676566",
         opacity: .2,
         fillColor: "#76962a",
-        fillOpacity: .335
+        fillOpacity: .37
     };
 }
 
@@ -161,7 +161,7 @@ function availableMapResetHighlight(e) {
         color: "#676566",
         opacity: .2,
         fillColor: "#76962a",
-        fillOpacity: .335
+        fillOpacity: .37
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -173,7 +173,7 @@ function availableMapHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 3,
+        weight: 2,
         color: "#676566",
         opacity: 1,
         fillColor: "#8fb043",
@@ -266,7 +266,7 @@ function contractOutMapHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 3,
+        weight: 2,
         color: "#676566",
         opacity: 1,
         fillColor: "#9fab84",
@@ -359,7 +359,7 @@ function contractSignedMapHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 3,
+        weight: 2,
         color: "#676566",
         opacity: 1,
         fillColor: "#adaba8",
@@ -452,7 +452,7 @@ function notReleasedMapHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 3,
+        weight: 2,
         color: "#676566",
         opacity: 1,
         fillColor: "#ccc4bc",

@@ -72,8 +72,19 @@ var labels = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -74.311724,
-          41.888263
+          -74.311524,
+          41.888183
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {MAP_LABEL: 'Model House'},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.311844,
+          41.888033
         ]
       }
     },

@@ -60,33 +60,33 @@
 			font-size: 14px;
 		}
 		&.not-released {
-			border-top: 8px solid #d7d2cb;
+			border-top: 8px solid #dad4cf;
 			.status {
-				background-color: #d7d2cb;
+				background-color: #dad4cf;
 			}
 		}
 		&.sold {
-			border-top: 8px solid #988a81;
+			border-top: 8px solid #a59b95;
 			.status {
-				background-color: #988a81;
+				background-color: #a59b95;
 			}
 		}
 		&.contract-out {
-			border-top: 8px solid #c9d4b0;
+			border-top: 8px solid #bac3a7;
 			.status {
-				background-color: #c9d4b0;
+				background-color: #bac3a7;
 			}
 		}
 		&.contract-signed {
-			border-top: 8px solid #c7c4c1;
+			border-top: 8px solid #a0a09e;
 			.status {
-				background-color: #c7c4c1;
+				background-color: #a0a09e;
 			}
 		}
 		&.for-sale {
-			border-top: 8px solid #8fb043;
+			border-top: 8px solid #9db468;
 			.status {
-				background-color: #8fb043;
+				background-color: #9db468;
 			}
 		}
 	}

@@ -20,31 +20,31 @@
 		&.for-sale {
 			span {
 				border: 1px solid lighten($gray,40%);
-				background-color: #988a81;
+				background-color: rgba(#76962a,.7);
 			}
 		}
 		&.sold {
 			span {
 				border: 1px solid lighten($gray,40%);
-				background-color: #8fb043;
+				background-color: rgba(#80726a,.7);
 			}
 		}
 		&.contract-out {
 			span {
 				border: 1px solid lighten($gray,40%);
-				background-color: #c9d4b0;
+				background-color: rgba(#9fab84,.7);
 			}
 		}
 		&.contract-signed {
 			span {
 				border: 1px solid lighten($gray,40%);
-				background-color: #c7c4c1;
+				background-color: rgba(#7a7977,.7);
 			}
 		}
 		&.not-released {
 			span {
 				border: 1px solid lighten($gray,40%);
-				background-color: #d7d2cb;
+				background-color: rgba(#ccc4bc,.7);
 			}
 		}
 		&:last-of-type {
