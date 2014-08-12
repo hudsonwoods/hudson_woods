@@ -409,7 +409,13 @@ var contractOut = {
                 ]
             ]
         }
-    },
+    }
+  ]
+};
+
+var contractSigned = {
+  "type": "FeatureCollection",
+  "features": [
     {
       "type": "Feature",
         "properties": {

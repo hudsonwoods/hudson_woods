@@ -7411,14 +7411,14 @@ p {
   margin-bottom: 30px;
   max-width: 100% !important;
 }
-#map .availability .col-md-4, #map .availability .col-md-3, #map .availability .col-md-5 {
+#map .availability .col-md-4, #map .availability .col-md-3, #map .availability .col-md-5, #map .availability .col-md-6 {
   padding-left: 0;
   padding-bottom: 10px;
 }
-#map .availability .col-md-4 p:first-child, #map .availability .col-md-3 p:first-child, #map .availability .col-md-5 p:first-child {
+#map .availability .col-md-4 p:first-child, #map .availability .col-md-3 p:first-child, #map .availability .col-md-5 p:first-child, #map .availability .col-md-6 p:first-child {
   margin-bottom: -10px;
 }
-#map .availability .col-md-4 p:last-child, #map .availability .col-md-3 p:last-child, #map .availability .col-md-5 p:last-child {
+#map .availability .col-md-4 p:last-child, #map .availability .col-md-3 p:last-child, #map .availability .col-md-5 p:last-child, #map .availability .col-md-6 p:last-child {
   margin-top: 15px;
 }
 #map .availability .fa {
@@ -7503,10 +7503,10 @@ p {
   background-color: #d7d2cb;
 }
 .card.availability.sold {
-  border-top: 8px solid #8fb043;
+  border-top: 8px solid #988a81;
 }
 .card.availability.sold .status {
-  background-color: #8fb043;
+  background-color: #988a81;
 }
 .card.availability.contract-out {
   border-top: 8px solid #c9d4b0;
@@ -7514,11 +7514,17 @@ p {
 .card.availability.contract-out .status {
   background-color: #c9d4b0;
 }
+.card.availability.contract-signed {
+  border-top: 8px solid #c9d4b0;
+}
+.card.availability.contract-signed .status {
+  background-color: #c9d4b0;
+}
 .card.availability.for-sale {
-  border-top: 8px solid #988a81;
+  border-top: 8px solid #8fb043;
 }
 .card.availability.for-sale .status {
-  background-color: #988a81;
+  background-color: #8fb043;
 }
 
 .card.area {
@@ -8012,6 +8018,10 @@ p {
   background-color: #8fb043;
 }
 .legend .legend-marker.contract-out span {
+  border: 1px solid #bbbbbb;
+  background-color: #c9d4b0;
+}
+.legend .legend-marker.contract-signed span {
   border: 1px solid #bbbbbb;
   background-color: #c9d4b0;
 }

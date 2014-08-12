@@ -54,8 +54,8 @@ function soldMap(feature) {
     return {
         weight: 1,
         color: "#fff",
-        opacity: 1,
-        fillColor: "#8fb043",
+        opacity: .5,
+        fillColor: "#918279",
         fillOpacity: .85
     };
 }
@@ -67,7 +67,7 @@ function soldMapResetHighlight(e) {
         weight: 1,
         color: "#fff",
         opacity: 1,
-        fillColor: "#8fb043",
+        fillColor: "#918279",
         fillOpacity: .85
     });
 
@@ -83,7 +83,7 @@ function soldMapHighlight(e) {
         weight: 3,
         color: "#676566",
         opacity: 1,
-        fillColor: "#8fb043",
+        fillColor: "#918279",
         fillOpacity: .85
     });
 
@@ -147,8 +147,8 @@ function availableMap(feature) {
     return {
         weight: 1,
         color: "#fff",
-        opacity: 1,
-        fillColor: "#918279",
+        opacity: .5,
+        fillColor: "#8fb043",
         fillOpacity: .85
     };
 }
@@ -160,7 +160,7 @@ function availableMapResetHighlight(e) {
         weight: 1,
         color: "#fff",
         opacity: 1,
-        fillColor: "#918279",
+        fillColor: "#8fb043",
         fillOpacity: .85
     });
 
@@ -176,7 +176,7 @@ function availableMapHighlight(e) {
         weight: 3,
         color: "#676566",
         opacity: 1,
-        fillColor: "#918279",
+        fillColor: "#8fb043",
         fillOpacity: .85
     });
 
@@ -240,7 +240,7 @@ function contractOutMap(feature) {
     return {
         weight: 1,
         color: "#fff",
-        opacity: 1,
+        opacity: .5,
         fillColor: "#c9d4b0",
         fillOpacity: .85
     };
@@ -327,13 +327,106 @@ geojson = L.geoJson(contractOut, {
 
 
 
+// Contract Signed
+
+function contractSignedMap(feature) {
+    return {
+        weight: 1,
+        color: "#fff",
+        opacity: .5,
+        fillColor: "#c7c4c1",
+        fillOpacity: .85
+    };
+}
+
+function contractSignedMapResetHighlight(e) {
+    var layer = e.target;
+
+    layer.setStyle({
+        weight: 1,
+        color: "#fff",
+        opacity: 1,
+        fillColor: "#c7c4c1",
+        fillOpacity: .85
+    });
+
+    if (!L.Browser.ie && !L.Browser.opera) {
+        layer.bringToFront();
+    }
+}
+
+function contractSignedMapHighlight(e) {
+    var layer = e.target;
+
+    layer.setStyle({
+        weight: 3,
+        color: "#676566",
+        opacity: 1,
+        fillColor: "#c7c4c1",
+        fillOpacity: .85
+    });
+
+    if (!L.Browser.ie && !L.Browser.opera) {
+        layer.bringToFront();
+    }
+}
+
+function onEachFeaturecontractSigned(feature, layer) {
+
+        //does layerGroup already exist? if not create it and add to map
+        var lg = mapLayerGroups[feature.properties.type];
+
+    var popupContent = 
+    
+    "<div class='card availability not-released" + "'" + ">" + 
+        "<h2>" + feature.properties.activityTitle + "</h2>" +
+        "<img src=" + feature.properties.image +  ">" + 
+        "<div class='col-md-6" + "'" + ">" +
+            "<p>AVAILABILITY</p>" +
+            "<p class='status" + "'" + ">"+"Contract Signed"+"</p>" +
+        "</div>" + 
+        "<div class='col-md-3" + "'" + ">" +
+            "<p>SIZE</p>" +
+            "<p>"+feature.properties.lotSize+"</p>" +
+        "</div>" + 
+        "<div class='col-md-3" + "'" + ">" +
+            "<p>COST</p>" +
+            "<p>"+feature.properties.cost+"</p>" +
+        "</div>" + 
+        "<div class='row" + "'" + ">" + "</div>" +
+        "<a href=" + feature.properties.lotURL + ">" + 
+        "<i class='fa fa-search" + "'" +">" + "</i>" +
+        "View Floor Plans" + 
+        "</a>" +
+    
+    "</div>";
+
+
+    layer.bindPopup(popupContent,popupOptions);
+    layer.on({
+        mouseover: contractSignedMapHighlight,
+        mouseout: contractSignedMapResetHighlight,
+        popupclose: resetMap    
+    });
+}
+
+geojson = L.geoJson(contractSigned, {
+    style: contractSignedMap,
+    onEachFeature: onEachFeaturecontractSigned,
+    pointToLayer: function (feature, latlng) {
+        return L.marker(latlng);
+    }
+}).addTo(map);
+
+
+
 // Not Released
 
 function notReleasedMap(feature) {
     return {
         weight: 1,
         color: "#fff",
-        opacity: 1,
+        opacity: .5,
         fillColor: "#cfc9c2",
         fillOpacity: .85
     };
