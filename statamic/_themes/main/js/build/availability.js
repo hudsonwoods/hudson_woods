@@ -54,7 +54,7 @@ function soldMap(feature) {
     return {
         weight: 1,
         color: "#676566",
-        opacity: .15,
+        opacity: .2,
         fillColor: "#80726a",
         fillOpacity: .33
     };
@@ -66,7 +66,7 @@ function soldMapResetHighlight(e) {
     layer.setStyle({
         weight: 1,
         color: "#676566",
-        opacity: .15,
+        opacity: .2,
         fillColor: "#80726a",
         fillOpacity: .33
     });
@@ -147,7 +147,7 @@ function availableMap(feature) {
     return {
         weight: 1,
         color: "#676566",
-        opacity: .15,
+        opacity: .2,
         fillColor: "#76962a",
         fillOpacity: .335
     };
@@ -159,7 +159,7 @@ function availableMapResetHighlight(e) {
     layer.setStyle({
         weight: 1,
         color: "#676566",
-        opacity: .15,
+        opacity: .2,
         fillColor: "#76962a",
         fillOpacity: .335
     });
@@ -240,7 +240,7 @@ function contractOutMap(feature) {
     return {
         weight: 1,
         color: "#676566",
-        opacity: .15,
+        opacity: .2,
         fillColor: "#9fab84",
         fillOpacity: .33
     };
@@ -252,7 +252,7 @@ function contractOutMapResetHighlight(e) {
     layer.setStyle({
         weight: 1,
         color: "#676566",
-        opacity: .15,
+        opacity: .2,
         fillColor: "#9fab84",
         fillOpacity: .33
     });
@@ -333,7 +333,7 @@ function contractSignedMap(feature) {
     return {
         weight: 1,
         color: "#676566",
-        opacity: .15,
+        opacity: .2,
         fillColor: "#7a7977",
         fillOpacity: .33
     };
@@ -345,7 +345,7 @@ function contractSignedMapResetHighlight(e) {
     layer.setStyle({
         weight: 1,
         color: "#676566",
-        opacity: .15,
+        opacity: .2,
         fillColor: "#7a7977",
         fillOpacity: .33
     });
@@ -426,7 +426,7 @@ function notReleasedMap(feature) {
     return {
         weight: 1,
         color: "#676566",
-        opacity: .15,
+        opacity: .2,
         fillColor: "#ccc4bc",
         fillOpacity: .33
     };
@@ -438,7 +438,7 @@ function notReleasedMapResetHighlight(e) {
     layer.setStyle({
         weight: 1,
         color: "#676566",
-        opacity: .15,
+        opacity: .2,
         fillColor: "#ccc4bc",
         fillOpacity: .33
     });
@@ -520,7 +520,7 @@ function notAvailableMap(feature) {
     return {
         weight: 1,
         color: "#676566",
-        opacity: .15,
+        opacity: .2,
         fillColor: "#dbd5ce",
         fillOpacity: .33
     };
