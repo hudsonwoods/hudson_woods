@@ -56,7 +56,7 @@ function soldMap(feature) {
         color: "#fff",
         opacity: .25,
         fillColor: "#918279",
-        fillOpacity: .55
+        fillOpacity: .35
     };
 }
 
@@ -68,7 +68,7 @@ function soldMapResetHighlight(e) {
         color: "#fff",
         opacity: .25,
         fillColor: "#918279",
-        fillOpacity: .55
+        fillOpacity: .35
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -149,7 +149,7 @@ function availableMap(feature) {
         color: "#fff",
         opacity: .25,
         fillColor: "#8fb043",
-        fillOpacity: .55
+        fillOpacity: .35
     };
 }
 
@@ -161,7 +161,7 @@ function availableMapResetHighlight(e) {
         color: "#fff",
         opacity: .25,
         fillColor: "#8fb043",
-        fillOpacity: .55
+        fillOpacity: .35
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -242,7 +242,7 @@ function contractOutMap(feature) {
         color: "#fff",
         opacity: .25,
         fillColor: "#c9d4b0",
-        fillOpacity: .55
+        fillOpacity: .35
     };
 }
 
@@ -254,7 +254,7 @@ function contractOutMapResetHighlight(e) {
         color: "#fff",
         opacity: .25,
         fillColor: "#c9d4b0",
-        fillOpacity: .55
+        fillOpacity: .35
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -335,7 +335,7 @@ function contractSignedMap(feature) {
         color: "#fff",
         opacity: .25,
         fillColor: "#adaba8",
-        fillOpacity: .55
+        fillOpacity: .35
     };
 }
 
@@ -347,7 +347,7 @@ function contractSignedMapResetHighlight(e) {
         color: "#fff",
         opacity: .25,
         fillColor: "#adaba8",
-        fillOpacity: .55
+        fillOpacity: .35
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -428,7 +428,7 @@ function notReleasedMap(feature) {
         color: "#fff",
         opacity: .25,
         fillColor: "#dbd5ce",
-        fillOpacity: .55
+        fillOpacity: .35
     };
 }
 
@@ -440,7 +440,7 @@ function notReleasedMapResetHighlight(e) {
         color: "#fff",
         opacity: .25,
         fillColor: "#dbd5ce",
-        fillOpacity: .55
+        fillOpacity: .35
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -522,7 +522,7 @@ function notAvailableMap(feature) {
         color: "#fff",
         opacity: .25,
         fillColor: "#dbd5ce",
-        fillOpacity: .55
+        fillOpacity: .35
     };
 }
 
