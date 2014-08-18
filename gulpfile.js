@@ -69,6 +69,12 @@ gulp.task('scripts_non_cat', function() {
     .pipe($.size({title: 'copy'}));
 });
 
+gulp.task('scripts_availability-geojson', function() {
+  return gulp.src(['app/scripts/non_cat/availability-geojson.js'])
+    .pipe(gulp.dest('statamic/_themes/main/js'))
+    .pipe($.size({title: 'copy'}));
+});
+
 // Automatically Prefix CSS
 gulp.task('styles:css', function () {
   return gulp.src('app/styles/**/*.css')
@@ -208,7 +214,7 @@ gulp.task('serve:dist', ['default'], function () {
 
 // Build Production Files
 gulp.task('build',['clean'], function (cb) {
-    runSequence(['styles','scripts','scripts_non_cat'],['compress','minify'], cb);
+    runSequence(['styles','scripts','scripts_non_cat','scripts_availability-geojson'],['compress','minify'], cb);
 });
 
 // Run PageSpeed Insights

@@ -321,7 +321,7 @@ var sold = {
             "image": "assets/img/availability/LOT-14.png",
             "lotSize": "7.95 Acres",
             "cost": "$760,000",
-            "lotURL": "http://hudsonwoods.com/availability/sold/lot-14"
+            "lotURL": "lot-14"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -382,7 +382,7 @@ var contractOut = {
             "image": "assets/img/availability/LOT-11.png",
             "lotSize": "6.0 Acres",
             "cost": "$695,000",
-            "lotURL": "http://hudsonwoods.com/availability/for-sale/lot-11"
+            "lotURL": "lot-11"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -434,7 +434,7 @@ var contractSigned = {
             "image": "assets/img/availability/LOT-24.png",
             "lotSize": "2.7 Acres",
             "cost": "$665,000",
-            "lotURL": "http://hudsonwoods.com/availability/contract-out/lot-24"
+            "lotURL": "lot-24"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -479,7 +479,7 @@ var contractSigned = {
             "image": "assets/img/availability/LOT-19.png",
             "lotSize": "4.2 Acres",
             "cost": "$685,000",
-            "lotURL": "http://hudsonwoods.com/availability/contract-out/lot-19"
+            "lotURL": "lot-19"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -528,7 +528,7 @@ var notReleased = {
             "image": "assets/img/availability/LOT-1.png",
             "lotSize": "5.6 Acres",
             "cost": "—",
-            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-01"
+            "lotURL": "lot-01"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -567,7 +567,7 @@ var notReleased = {
             "image": "assets/img/availability/LOT-2.png",
             "lotSize": "4.7 Acres",
             "cost": "-",
-            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-02"
+            "lotURL": "lot-02"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -600,7 +600,7 @@ var notReleased = {
             "image": "assets/img/availability/LOT-3.png",
             "lotSize": "5.8 Acres",
             "cost": "-",
-            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-03"
+            "lotURL": "lot-03"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -627,7 +627,7 @@ var notReleased = {
             "image": "assets/img/availability/LOT-4.png",
             "lotSize": "6.6 Acres",
             "cost": "-",
-            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-04"
+            "lotURL": "lot-04"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -658,7 +658,7 @@ var notReleased = {
             "image": "assets/img/availability/LOT-5.png",
             "lotSize": "7.1 Acres",
             "cost": "-",
-            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-05"
+            "lotURL": "lot-05"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -686,7 +686,7 @@ var notReleased = {
             "image": "assets/img/availability/LOT-6.png",
             "lotSize": "4.1 Acres",
             "cost": "-",
-            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-06"
+            "lotURL": "lot-06"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -715,7 +715,7 @@ var notReleased = {
             "image": "assets/img/availability/LOT-7.png",
             "lotSize": "4.2 Acres",
             "cost": "-",
-            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-07"
+            "lotURL": "lot-07"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -750,7 +750,7 @@ var notReleased = {
             "image": "assets/img/availability/LOT-8.png",
             "lotSize": "4.0 Acres",
             "cost": "-",
-            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-08"
+            "lotURL": "lot-08"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -779,7 +779,7 @@ var notReleased = {
             "image": "assets/img/availability/LOT-9.png",
             "lotSize": "3.8 Acres",
             "cost": "-",
-            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-09"
+            "lotURL": "lot-09"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -799,6 +799,198 @@ var notReleased = {
             ]
         }
     },
+    
+
+    {
+      "type": "Feature",
+        "properties": {
+            "activityTitle": "Lot 12",
+            "image": "assets/img/availability/LOT-12.png",
+            "lotSize": "5.2 Acres",
+            "cost": "-",
+            "lotURL": "lot-12"
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [ -74.31182384490967,41.88542780695214 ],
+                        [ -74.31278474628931,41.885735821039525 ],
+                        [ -74.3129788715371,41.885421067549565 ],
+                        [ -74.31304961442953,41.885313986135465 ],
+                        [ -74.31478500366217,41.88467898206912 ],
+                        [ -74.31336879730225,41.883880225853794 ],
+                        [ -74.31182384490967,41.88542780695214 ],
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+      "type": "Feature",
+        "properties": {
+            "activityTitle": "Lot 13",
+            "image": "assets/img/availability/LOT-13.png",
+            "lotSize": "4.3 Acres",
+            "cost": "-",
+            "lotURL": "lot-13"
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [ -74.312656167863,41.8866206667731 ],
+                        [ -74.3126529827615,41.886511590559884 ],
+                        [ -74.31264929473406,41.886408255063266 ],
+                        [ -74.31265499443771,41.886115469792855 ],
+                        [ -74.31268684575872,41.885912541243194 ],
+                        [ -74.31278474628931,41.885735821039574 ],
+                        [ -74.31083478033548,41.885105813327904 ],
+                        [ -74.31080806137811,41.88513807532938 ],
+                        [ -74.31075803802872,41.885192081608466 ],
+                        [ -74.31075565516954,41.88519667060792 ],
+                        [ -74.31071441627284,41.885344937387224 ],
+                        [ -74.31071067361074,41.885358428508454 ],
+                        [ -74.31069122759538,41.88540984755093 ],
+                        [ -74.31065897402993,41.88549825608442 ],
+                        [ -74.31061666195404,41.885615619002685 ],
+                        [ -74.31060197379838,41.88565277739761 ],
+                        [ -74.3104958190657,41.885770275792034 ],
+                        [ -74.31038886308676,41.88586511662382 ],
+                        [ -74.31265935301786,41.88673773017479 ],
+                        [ -74.312656167863,41.8866206667731 ],
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+      "type": "Feature",
+        "properties": {
+            "activityTitle": "Lot 18",
+            "image": "assets/img/availability/LOT-18.png",
+            "lotSize": "3.7 Acres",
+            "cost": "-",
+            "lotURL": "lot-18"
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [ -74.3183033913374,41.88801567816825 ],
+                        [ -74.31829852963449,41.887973995312926 ],
+                        [ -74.31825377047056,41.887856435261746 ],
+                        [ -74.31808076800365,41.88791384263166 ],
+                        [ -74.31745346643521,41.88813024302858 ],
+                        [ -74.31699179112906,41.888294227501426 ],
+                        [ -74.31624144315714,41.88855779994577 ],
+                        [ -74.31563861668104,41.88879191925411 ],
+                        [ -74.31700855493546,41.88918827280122 ],
+                        [ -74.3171426654443,41.8891178878993 ],
+                        [ -74.31722715497631,41.889071962864435 ],
+                        [ -74.31727141141891,41.88904700349412 ],
+                        [ -74.31763283908367,41.8888503241505 ],
+                        [ -74.31787356734276,41.8886716149832 ],
+                        [ -74.3180888146162,41.88846195554637 ],
+                        [ -74.31823868335289,41.888296723101796 ],
+                        [ -74.31829618297456,41.88819014581157 ],
+                        [ -74.31830842053273,41.8880840674303 ],
+                        [ -74.3183033913374,41.88801567816825 ],
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+      "type": "Feature",
+        "properties": {
+            "activityTitle": "Lot 20",
+            "image": "assets/img/availability/LOT-20.png",
+            "lotSize": "4.2 Acres",
+            "cost": "-",
+            "lotURL": "lot-20"
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [ -74.31566007435316,41.8887899225046 ],
+                        [ -74.31499857747383,41.88904475808788 ],
+                        [ -74.31431025266642,41.889323551597656 ],
+                        [ -74.31573987007141,41.89023804871436 ],
+                        [ -74.31700855493546,41.88918827280122 ],
+                        [ -74.31566007435316,41.8887899225046 ],
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+      "type": "Feature",
+        "properties": {
+            "activityTitle": "Lot 23",
+            "image": "assets/img/availability/LOT-23.png",
+            "lotSize": "4.1 Acres",
+            "cost": "-",
+            "lotURL": "lot-23"
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [ -74.31589543819427,41.885292020691466 ],
+                        [ -74.31478500366217,41.88467898206907 ],
+                        [ -74.31392535997935,41.88498750168908 ],
+                        [ -74.31304961442953,41.885313986135415 ],
+                        [ -74.3129788715371,41.88542106754954 ],
+                        [ -74.31516453623766,41.88593899969806 ],
+                        [ -74.31589543819427,41.885292020691466 ],
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+      "type": "Feature",
+        "properties": {
+            "activityTitle": "Lot 26",
+            "image": "assets/img/availability/LOT-26.png",
+            "lotSize": "4.2 Acres",
+            "cost": "-",
+            "lotURL": "lot-26"
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [ -74.31446850299835,41.88666185120915 ],
+                        [ -74.31486278772348,41.88626648040147 ],
+                        [ -74.31516453623766,41.88593899969809 ],
+                        [ -74.3129788715371,41.88542106754954 ],
+                        [ -74.31278474628931,41.885735821039475 ],
+                        [ -74.31268684575872,41.885912541243165 ],
+                        [ -74.31265600025648,41.88610773234324 ],
+                        [ -74.31264795362944,41.88642622647682 ],
+                        [ -74.31343585252762,41.88652806439155 ],
+                        [ -74.31446850299835,41.88666185120915 ],
+                    ]
+                ]
+            ]
+        }
+    },
+
+  ]
+};
+
+var available = {
+  "type": "FeatureCollection",
+  "features": [
     {
       "type": "Feature",
         "properties": {
@@ -806,7 +998,7 @@ var notReleased = {
             "image": "assets/img/availability/LOT-10.png",
             "lotSize": "12.0 Acres",
             "cost": "-",
-            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-10"
+            "lotURL": "lot-10"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -866,67 +1058,42 @@ var notReleased = {
             ]
         }
     },
-
     {
       "type": "Feature",
         "properties": {
-            "activityTitle": "Lot 12",
-            "image": "assets/img/availability/LOT-12.png",
-            "lotSize": "5.2 Acres",
-            "cost": "-",
-            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-12"
+            "activityTitle": "Lot 15",
+            "image": "assets/img/availability/LOT-15.png",
+            "lotSize": "4.6 Acres",
+            "cost": "$685,000",
+            "lotURL": "lot-15"
         },
         "geometry": {
             "type": "MultiPolygon",
             "coordinates": [
                 [
                     [
-                        [ -74.31182384490967,41.88542780695214 ],
-                        [ -74.31278474628931,41.885735821039525 ],
-                        [ -74.3129788715371,41.885421067549565 ],
-                        [ -74.31304961442953,41.885313986135465 ],
-                        [ -74.31478500366217,41.88467898206912 ],
-                        [ -74.31336879730225,41.883880225853794 ],
-                        [ -74.31182384490967,41.88542780695214 ],
-                    ]
-                ]
-            ]
-        }
-    },
-    {
-      "type": "Feature",
-        "properties": {
-            "activityTitle": "Lot 13",
-            "image": "assets/img/availability/LOT-13.png",
-            "lotSize": "4.3 Acres",
-            "cost": "-",
-            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-13"
-        },
-        "geometry": {
-            "type": "MultiPolygon",
-            "coordinates": [
-                [
-                    [
-                        [ -74.312656167863,41.8866206667731 ],
-                        [ -74.3126529827615,41.886511590559884 ],
-                        [ -74.31264929473406,41.886408255063266 ],
-                        [ -74.31265499443771,41.886115469792855 ],
-                        [ -74.31268684575872,41.885912541243194 ],
-                        [ -74.31278474628931,41.885735821039574 ],
-                        [ -74.31083478033548,41.885105813327904 ],
-                        [ -74.31080806137811,41.88513807532938 ],
-                        [ -74.31075803802872,41.885192081608466 ],
-                        [ -74.31075565516954,41.88519667060792 ],
-                        [ -74.31071441627284,41.885344937387224 ],
-                        [ -74.31071067361074,41.885358428508454 ],
-                        [ -74.31069122759538,41.88540984755093 ],
-                        [ -74.31065897402993,41.88549825608442 ],
-                        [ -74.31061666195404,41.885615619002685 ],
-                        [ -74.31060197379838,41.88565277739761 ],
-                        [ -74.3104958190657,41.885770275792034 ],
-                        [ -74.31038886308676,41.88586511662382 ],
-                        [ -74.31265935301786,41.88673773017479 ],
-                        [ -74.312656167863,41.8866206667731 ],
+                        [ -74.31308045983315,41.888237319671866 ],
+                        [ -74.31327290834219,41.88817398465428 ],
+                        [ -74.31323334567725,41.88815857202867 ],
+                        [ -74.31310996396155,41.88810178884398 ],
+                        [ -74.31300938105403,41.888055114287134 ],
+                        [ -74.31293059131434,41.88797149945134 ],
+                        [ -74.31285984798825,41.887901362637386 ],
+                        [ -74.31275457143789,41.88771915657553 ],
+                        [ -74.31269422173506,41.887496514879146 ],
+                        [ -74.31269153952604,41.887401667283974 ],
+                        [ -74.31268885731703,41.88723693165248 ],
+                        [ -74.31268282241012,41.887108949263364 ],
+                        [ -74.31268081073517,41.88705085483766 ],
+                        [ -74.31258961558319,41.886982776275225 ],
+                        [ -74.31256078185078,41.88697160664419 ],
+                        [ -74.31247428059584,41.88693990724322 ],
+                        [ -74.31224342316568,41.886957051970356 ],
+                        [ -74.31202195346663,41.88707353765327 ],
+                        [ -74.31127734999257,41.88763329555925 ],
+                        [ -74.31074962019926,41.887977739455124 ],
+                        [ -74.3117755651474,41.88865464257824 ],
+                        [ -74.31308045983315,41.888237319671866 ],
                     ]
                 ]
             ]
@@ -939,7 +1106,7 @@ var notReleased = {
             "image": "assets/img/availability/LOT-16.png",
             "lotSize": "3.8 Acres",
             "cost": "-",
-            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-16"
+            "lotURL": "lot-16"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -991,7 +1158,7 @@ var notReleased = {
             "image": "assets/img/availability/LOT-17.png",
             "lotSize": "4.7 Acres",
             "cost": "-",
-            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-17"
+            "lotURL": "lot-17"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -1027,207 +1194,11 @@ var notReleased = {
     {
       "type": "Feature",
         "properties": {
-            "activityTitle": "Lot 18",
-            "image": "assets/img/availability/LOT-18.png",
-            "lotSize": "3.7 Acres",
-            "cost": "-",
-            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-18"
-        },
-        "geometry": {
-            "type": "MultiPolygon",
-            "coordinates": [
-                [
-                    [
-                        [ -74.3183033913374,41.88801567816825 ],
-                        [ -74.31829852963449,41.887973995312926 ],
-                        [ -74.31825377047056,41.887856435261746 ],
-                        [ -74.31808076800365,41.88791384263166 ],
-                        [ -74.31745346643521,41.88813024302858 ],
-                        [ -74.31699179112906,41.888294227501426 ],
-                        [ -74.31624144315714,41.88855779994577 ],
-                        [ -74.31563861668104,41.88879191925411 ],
-                        [ -74.31700855493546,41.88918827280122 ],
-                        [ -74.3171426654443,41.8891178878993 ],
-                        [ -74.31722715497631,41.889071962864435 ],
-                        [ -74.31727141141891,41.88904700349412 ],
-                        [ -74.31763283908367,41.8888503241505 ],
-                        [ -74.31787356734276,41.8886716149832 ],
-                        [ -74.3180888146162,41.88846195554637 ],
-                        [ -74.31823868335289,41.888296723101796 ],
-                        [ -74.31829618297456,41.88819014581157 ],
-                        [ -74.31830842053273,41.8880840674303 ],
-                        [ -74.3183033913374,41.88801567816825 ],
-                    ]
-                ]
-            ]
-        }
-    },
-    {
-      "type": "Feature",
-        "properties": {
-            "activityTitle": "Lot 20",
-            "image": "assets/img/availability/LOT-20.png",
-            "lotSize": "4.2 Acres",
-            "cost": "-",
-            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-20"
-        },
-        "geometry": {
-            "type": "MultiPolygon",
-            "coordinates": [
-                [
-                    [
-                        [ -74.31566007435316,41.8887899225046 ],
-                        [ -74.31499857747383,41.88904475808788 ],
-                        [ -74.31431025266642,41.889323551597656 ],
-                        [ -74.31573987007141,41.89023804871436 ],
-                        [ -74.31700855493546,41.88918827280122 ],
-                        [ -74.31566007435316,41.8887899225046 ],
-                    ]
-                ]
-            ]
-        }
-    },
-    {
-      "type": "Feature",
-        "properties": {
-            "activityTitle": "Lot 23",
-            "image": "assets/img/availability/LOT-23.png",
-            "lotSize": "4.1 Acres",
-            "cost": "-",
-            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-23"
-        },
-        "geometry": {
-            "type": "MultiPolygon",
-            "coordinates": [
-                [
-                    [
-                        [ -74.31589543819427,41.885292020691466 ],
-                        [ -74.31478500366217,41.88467898206907 ],
-                        [ -74.31392535997935,41.88498750168908 ],
-                        [ -74.31304961442953,41.885313986135415 ],
-                        [ -74.3129788715371,41.88542106754954 ],
-                        [ -74.31516453623766,41.88593899969806 ],
-                        [ -74.31589543819427,41.885292020691466 ],
-                    ]
-                ]
-            ]
-        }
-    },
-    {
-      "type": "Feature",
-        "properties": {
-            "activityTitle": "Lot 25",
-            "image": "assets/img/availability/LOT-25.png",
-            "lotSize": "3.7 Acres",
-            "cost": "-",
-            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-25"
-        },
-        "geometry": {
-            "type": "MultiPolygon",
-            "coordinates": [
-                [
-                    [
-                        [ -74.31446850299835,41.88666185120915 ],
-                        [ -74.31264795362944,41.88642622647677 ],
-                        [ -74.31265935301786,41.88673773017474 ],
-                        [ -74.31265935301786,41.88680312579068 ],
-                        [ -74.31268081073517,41.88705085483761 ],
-                        [ -74.31268751621252,41.887259894826606 ],
-                        [ -74.31269422173506,41.88749651487912 ],
-                        [ -74.31271299719816,41.88756839927846 ],
-                        [ -74.3135592341423,41.887672232157 ],
-                        [ -74.31400716304779,41.88730482275211 ],
-                        [ -74.31446850299835,41.88666185120915 ],
-                    ]
-                ]
-            ]
-        }
-    },
-    {
-      "type": "Feature",
-        "properties": {
-            "activityTitle": "Lot 26",
-            "image": "assets/img/availability/LOT-26.png",
-            "lotSize": "4.2 Acres",
-            "cost": "-",
-            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-26"
-        },
-        "geometry": {
-            "type": "MultiPolygon",
-            "coordinates": [
-                [
-                    [
-                        [ -74.31446850299835,41.88666185120915 ],
-                        [ -74.31486278772348,41.88626648040147 ],
-                        [ -74.31516453623766,41.88593899969809 ],
-                        [ -74.3129788715371,41.88542106754954 ],
-                        [ -74.31278474628931,41.885735821039475 ],
-                        [ -74.31268684575872,41.885912541243165 ],
-                        [ -74.31265600025648,41.88610773234324 ],
-                        [ -74.31264795362944,41.88642622647682 ],
-                        [ -74.31343585252762,41.88652806439155 ],
-                        [ -74.31446850299835,41.88666185120915 ],
-                    ]
-                ]
-            ]
-        }
-    },
-
-  ]
-};
-
-var available = {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-        "properties": {
-            "activityTitle": "Lot 15",
-            "image": "assets/img/availability/LOT-15.png",
-            "lotSize": "4.6 Acres",
-            "cost": "$685,000",
-            "lotURL": "http://hudsonwoods.com/availability/for-sale/lot-15"
-        },
-        "geometry": {
-            "type": "MultiPolygon",
-            "coordinates": [
-                [
-                    [
-                        [ -74.31308045983315,41.888237319671866 ],
-                        [ -74.31327290834219,41.88817398465428 ],
-                        [ -74.31323334567725,41.88815857202867 ],
-                        [ -74.31310996396155,41.88810178884398 ],
-                        [ -74.31300938105403,41.888055114287134 ],
-                        [ -74.31293059131434,41.88797149945134 ],
-                        [ -74.31285984798825,41.887901362637386 ],
-                        [ -74.31275457143789,41.88771915657553 ],
-                        [ -74.31269422173506,41.887496514879146 ],
-                        [ -74.31269153952604,41.887401667283974 ],
-                        [ -74.31268885731703,41.88723693165248 ],
-                        [ -74.31268282241012,41.887108949263364 ],
-                        [ -74.31268081073517,41.88705085483766 ],
-                        [ -74.31258961558319,41.886982776275225 ],
-                        [ -74.31256078185078,41.88697160664419 ],
-                        [ -74.31247428059584,41.88693990724322 ],
-                        [ -74.31224342316568,41.886957051970356 ],
-                        [ -74.31202195346663,41.88707353765327 ],
-                        [ -74.31127734999257,41.88763329555925 ],
-                        [ -74.31074962019926,41.887977739455124 ],
-                        [ -74.3117755651474,41.88865464257824 ],
-                        [ -74.31308045983315,41.888237319671866 ],
-                    ]
-                ]
-            ]
-        }
-    },
-    {
-      "type": "Feature",
-        "properties": {
             "activityTitle": "Lot 21",
             "image": "assets/img/availability/LOT-21.png",
             "lotSize": "6.6 Acres",
             "cost": "$695,000",
-            "lotURL": "http://hudsonwoods.com/availability/for-sale/lot-21"
+            "lotURL": "lot-21"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -1261,7 +1232,7 @@ var available = {
             "image": "assets/img/availability/LOT-22.png",
             "lotSize": "3.3 Acres",
             "cost": "$665,000",
-            "lotURL": "http://hudsonwoods.com/availability/for-sale/lot-22"
+            "lotURL": "lot-22"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -1281,6 +1252,36 @@ var available = {
             ]
         }
     },
+    {
+      "type": "Feature",
+        "properties": {
+            "activityTitle": "Lot 25",
+            "image": "assets/img/availability/LOT-25.png",
+            "lotSize": "3.7 Acres",
+            "cost": "-",
+            "lotURL": "lot-25"
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [ -74.31446850299835,41.88666185120915 ],
+                        [ -74.31264795362944,41.88642622647677 ],
+                        [ -74.31265935301786,41.88673773017474 ],
+                        [ -74.31265935301786,41.88680312579068 ],
+                        [ -74.31268081073517,41.88705085483761 ],
+                        [ -74.31268751621252,41.887259894826606 ],
+                        [ -74.31269422173506,41.88749651487912 ],
+                        [ -74.31271299719816,41.88756839927846 ],
+                        [ -74.3135592341423,41.887672232157 ],
+                        [ -74.31400716304779,41.88730482275211 ],
+                        [ -74.31446850299835,41.88666185120915 ],
+                    ]
+                ]
+            ]
+        }
+    },
   ]
 };
 
@@ -1294,7 +1295,7 @@ var notAvailable = {
             "image": "assets/img/availability/LOT-.png",
             "lotSize": "5.5 Acres",
             "cost": "$500,000",
-            "lotURL": "http://hudsonwoods.com/availability/not-released/lot-24"
+            "lotURL": "lot-24"
         },
         "geometry": {
             "type": "MultiPolygon",

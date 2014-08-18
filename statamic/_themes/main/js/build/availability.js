@@ -115,7 +115,7 @@ function onEachFeaturesold(feature, layer) {
             "<p>"+feature.properties.cost+"</p>" +
         "</div>" + 
         "<div class='row" + "'" + ">" + "</div>" +
-        "<a href=" + feature.properties.lotURL + ">" + 
+        "<a href=" + "http://hudsonwoods.com/availability/sold/" + feature.properties.lotURL + ">" + 
         "<i class='fa fa-search" + "'" +">" + "</i>" +
         "View Floor Plans" + 
         "</a>" +
@@ -208,7 +208,7 @@ function onEachFeatureAvailable(feature, layer) {
             "<p>"+feature.properties.cost+"</p>" +
         "</div>" + 
         "<div class='row" + "'" + ">" + "</div>" +
-        "<a href=" + feature.properties.lotURL + ">" + 
+        "<a href=" + "http://hudsonwoods.com/availability/for-sale/" + feature.properties.lotURL + ">" + 
         "<i class='fa fa-search" + "'" +">" + "</i>" +
         "View Floor Plans" + 
         "</a>" +
@@ -301,7 +301,7 @@ function onEachFeaturecontractOut(feature, layer) {
             "<p>"+feature.properties.cost+"</p>" +
         "</div>" + 
         "<div class='row" + "'" + ">" + "</div>" +
-        "<a href=" + feature.properties.lotURL + ">" + 
+        "<a href=" + "http://hudsonwoods.com/availability/contract-out/" + feature.properties.lotURL + ">" + 
         "<i class='fa fa-search" + "'" +">" + "</i>" +
         "View Floor Plans" + 
         "</a>" +
@@ -394,7 +394,7 @@ function onEachFeaturecontractSigned(feature, layer) {
             "<p>"+feature.properties.cost+"</p>" +
         "</div>" + 
         "<div class='row" + "'" + ">" + "</div>" +
-        "<a href=" + feature.properties.lotURL + ">" + 
+        "<a href=" + "http://hudsonwoods.com/availability/contract-signed/" + feature.properties.lotURL + ">" + 
         "<i class='fa fa-search" + "'" +">" + "</i>" +
         "View Floor Plans" + 
         "</a>" +
@@ -487,7 +487,7 @@ function onEachFeaturenotReleased(feature, layer) {
             "<p>"+feature.properties.cost+"</p>" +
         "</div>" + 
         "<div class='row" + "'" + ">" + "</div>" +
-        "<a href=" + feature.properties.lotURL + ">" + 
+        "<a href=" + "http://hudsonwoods.com/availability/not-released/" + feature.properties.lotURL + ">" + 
         "<i class='fa fa-search" + "'" +">" + "</i>" +
         "View Floor Plans" + 
         "</a>" +
