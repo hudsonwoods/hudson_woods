@@ -69,7 +69,7 @@ function soldMap(feature) {
         weight: 1,
         color: "#676566",
         opacity: .2,
-        fillColor: "#00673a",
+        fillColor: "#006700",
         fillOpacity: .33
     };
 }
@@ -81,7 +81,7 @@ function soldMapResetHighlight(e) {
         weight: 1,
         color: "#676566",
         opacity: .2,
-        fillColor: "#00673a",
+        fillColor: "#006700",
         fillOpacity: .33
     });
 
@@ -97,7 +97,7 @@ function soldMapHighlight(e) {
         weight: 2,
         color: "#676566",
         opacity: 1,
-        fillColor: "#00673a",
+        fillColor: "#006700",
         fillOpacity: .65
     });
 
@@ -348,7 +348,7 @@ function contractSignedMap(feature) {
         weight: 1,
         color: "#676566",
         opacity: .2,
-        fillColor: "#25b60c",
+        fillColor: "#25b600",
         fillOpacity: .33
     };
 }
@@ -360,7 +360,7 @@ function contractSignedMapResetHighlight(e) {
         weight: 1,
         color: "#676566",
         opacity: .2,
-        fillColor: "#25b60c",
+        fillColor: "#25b600",
         fillOpacity: .33
     });
 
@@ -376,7 +376,7 @@ function contractSignedMapHighlight(e) {
         weight: 2,
         color: "#676566",
         opacity: 1,
-        fillColor: "#25b60c",
+        fillColor: "#25b600",
         fillOpacity: .65
     });
 
