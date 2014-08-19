@@ -392,7 +392,7 @@ function onEachFeaturecontractSigned(feature, layer) {
 
     var popupContent = 
     
-    "<div class='card availability not-released" + "'" + ">" + 
+    "<div class='card availability contract-signed" + "'" + ">" + 
         "<h2>" + feature.properties.activityTitle + "</h2>" +
         "<img src=" + feature.properties.image +  ">" + 
         "<div class='col-md-6" + "'" + ">" +
