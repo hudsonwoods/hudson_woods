@@ -94,7 +94,7 @@ function soldMapHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 2,
+        weight: 1,
         color: "#676566",
         opacity: 1,
         fillColor: "#006700",
@@ -187,7 +187,7 @@ function availableMapHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 2,
+        weight: 1,
         color: "#676566",
         opacity: 1,
         fillColor: "#95856b",
@@ -280,7 +280,7 @@ function contractOutMapHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 2,
+        weight: 1,
         color: "#676566",
         opacity: 1,
         fillColor: "#bccc66",
@@ -373,7 +373,7 @@ function contractSignedMapHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 2,
+        weight: 1,
         color: "#676566",
         opacity: 1,
         fillColor: "#25b600",
@@ -466,7 +466,7 @@ function notReleasedMapHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 2,
+        weight: 1,
         color: "#676566",
         opacity: 1,
         fillColor: "#d7d2cb",
