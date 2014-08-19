@@ -7497,34 +7497,34 @@ p {
   font-size: 14px;
 }
 .card.availability.not-released {
-  border-top: 8px solid #dad4cf;
+  border-top: 8px solid #e4e2dd;
 }
 .card.availability.not-released .status {
-  background-color: #dad4cf;
+  background-color: #e4e2dd;
 }
 .card.availability.sold {
-  border-top: 8px solid #a59b95;
+  border-top: 8px solid #84a65c;
 }
 .card.availability.sold .status {
-  background-color: #a59b95;
+  background-color: #84a65c;
 }
 .card.availability.contract-out {
-  border-top: 8px solid #bac3a7;
+  border-top: 8px solid #d7dcb2;
 }
 .card.availability.contract-out .status {
-  background-color: #bac3a7;
+  background-color: #d7dcb2;
 }
 .card.availability.contract-signed {
-  border-top: 8px solid #a0a09e;
+  border-top: 8px solid #94ca66;
 }
 .card.availability.contract-signed .status {
-  background-color: #a0a09e;
+  background-color: #94ca66;
 }
 .card.availability.for-sale {
-  border-top: 8px solid #9db468;
+  border-top: 8px solid #b7b0a0;
 }
 .card.availability.for-sale .status {
-  background-color: #9db468;
+  background-color: #b7b0a0;
 }
 
 .card.area {
@@ -8011,23 +8011,23 @@ p {
 }
 .legend .legend-marker.for-sale span {
   border: 1px solid #bbbbbb;
-  background-color: rgba(118, 150, 42, 0.7);
+  background-color: #b7b0a0;
 }
 .legend .legend-marker.sold span {
   border: 1px solid #bbbbbb;
-  background-color: rgba(128, 114, 106, 0.7);
+  background-color: #84a65c;
 }
 .legend .legend-marker.contract-out span {
   border: 1px solid #bbbbbb;
-  background-color: rgba(159, 171, 132, 0.7);
+  background-color: #d7dcb2;
 }
 .legend .legend-marker.contract-signed span {
   border: 1px solid #bbbbbb;
-  background-color: rgba(122, 121, 119, 0.7);
+  background-color: #94ca66;
 }
 .legend .legend-marker.not-released span {
   border: 1px solid #bbbbbb;
-  background-color: rgba(204, 196, 188, 0.7);
+  background-color: #e4e2dd;
 }
 .legend .legend-marker:last-of-type {
   margin-bottom: 0;

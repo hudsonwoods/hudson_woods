@@ -79,17 +79,6 @@ var labels = {
     },
     {
       "type": "Feature",
-      "properties": {MAP_LABEL: 'Model House'},
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.311844,
-          41.888033
-        ]
-      }
-    },
-    {
-      "type": "Feature",
       "properties": {MAP_LABEL: 'Lot 08'},
       "geometry": {
         "type": "Point",
@@ -375,6 +364,7 @@ var sold = {
 var contractOut = {
   "type": "FeatureCollection",
   "features": [
+  
     {
       "type": "Feature",
         "properties": {
