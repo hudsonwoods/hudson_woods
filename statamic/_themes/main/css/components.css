@@ -8029,6 +8029,9 @@ p {
   border: 1px solid #bbbbbb;
   background-color: #e4e2dd;
 }
+.legend .legend-marker.model-house span {
+  content: url("../../../assets/img/availability/icons/Model-House-icon-key.png");
+}
 .legend .legend-marker:last-of-type {
   margin-bottom: 0;
 }

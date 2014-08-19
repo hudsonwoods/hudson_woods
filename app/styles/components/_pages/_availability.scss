@@ -47,6 +47,12 @@
 				background-color: #e4e2dd;
 			}
 		}
+		&.model-house {
+			span {
+				content:url("../../../assets/img/availability/icons/Model-House-icon-key.png");
+			}
+			
+		}
 		&:last-of-type {
 			margin-bottom: 0;
 		}

@@ -48,6 +48,20 @@ function resetMap(e) {
 
 }
 
+// Draw Model Home Icon
+var modelHomeIcon = L.icon({
+    iconUrl: 'assets/img/availability/icons/Model-House-icon-map.png',
+    // shadowUrl: 'leaf-shadow.png',
+
+    iconSize:     [11, 11], // size of the icon
+    // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [0,0], // point of the icon which will correspond to marker's location
+    // shadowAnchor: [4, 62],  // the same for the shadow
+    // popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+L.marker([41.8888444,-74.310715], {icon: modelHomeIcon}).addTo(map);
+
 // Sold Map Tiles
 
 function soldMap(feature) {
@@ -55,7 +69,7 @@ function soldMap(feature) {
         weight: 1,
         color: "#676566",
         opacity: .2,
-        fillColor: "#227b00",
+        fillColor: "#00673a",
         fillOpacity: .33
     };
 }
@@ -67,7 +81,7 @@ function soldMapResetHighlight(e) {
         weight: 1,
         color: "#676566",
         opacity: .2,
-        fillColor: "#227b00",
+        fillColor: "#00673a",
         fillOpacity: .33
     });
 
@@ -83,7 +97,7 @@ function soldMapHighlight(e) {
         weight: 2,
         color: "#676566",
         opacity: 1,
-        fillColor: "#227b00",
+        fillColor: "#00673a",
         fillOpacity: .65
     });
 
@@ -334,7 +348,7 @@ function contractSignedMap(feature) {
         weight: 1,
         color: "#676566",
         opacity: .2,
-        fillColor: "#39a248",
+        fillColor: "#25b60c",
         fillOpacity: .33
     };
 }
@@ -346,7 +360,7 @@ function contractSignedMapResetHighlight(e) {
         weight: 1,
         color: "#676566",
         opacity: .2,
-        fillColor: "#39a248",
+        fillColor: "#25b60c",
         fillOpacity: .33
     });
 
@@ -362,7 +376,7 @@ function contractSignedMapHighlight(e) {
         weight: 2,
         color: "#676566",
         opacity: 1,
-        fillColor: "#39a248",
+        fillColor: "#25b60c",
         fillOpacity: .65
     });
 
