@@ -7497,34 +7497,34 @@ p {
   font-size: 14px;
 }
 .card.availability.not-released {
-  border-top: 8px solid #e4e2dd;
+  border-top: 8px solid #e7e4de;
 }
 .card.availability.not-released .status {
-  background-color: #e4e2dd;
+  background-color: #e7e4de;
 }
 .card.availability.sold {
-  border-top: 8px solid #84a65c;
+  border-top: 8px solid #a0c19c;
 }
 .card.availability.sold .status {
-  background-color: #84a65c;
+  background-color: #a0c19c;
 }
 .card.availability.contract-out {
-  border-top: 8px solid #d7dcb2;
+  border-top: 8px solid #dee2bd;
 }
 .card.availability.contract-out .status {
-  background-color: #d7dcb2;
+  background-color: #dee2bd;
 }
 .card.availability.contract-signed {
-  border-top: 8px solid #94ca66;
+  border-top: 8px solid #acdb9c;
 }
 .card.availability.contract-signed .status {
-  background-color: #94ca66;
+  background-color: #acdb9c;
 }
 .card.availability.for-sale {
-  border-top: 8px solid #b7b0a0;
+  border-top: 8px solid #cdc7b9;
 }
 .card.availability.for-sale .status {
-  background-color: #b7b0a0;
+  background-color: #cdc7b9;
 }
 
 .card.area {
@@ -8011,23 +8011,23 @@ p {
 }
 .legend .legend-marker.for-sale span {
   border: 1px solid #bbbbbb;
-  background-color: #b7b0a0;
+  background-color: #cdc7b9;
 }
 .legend .legend-marker.sold span {
   border: 1px solid #bbbbbb;
-  background-color: #84a65c;
+  background-color: #a0c19c;
 }
 .legend .legend-marker.contract-out span {
   border: 1px solid #bbbbbb;
-  background-color: #d7dcb2;
+  background-color: #dee2bd;
 }
 .legend .legend-marker.contract-signed span {
   border: 1px solid #bbbbbb;
-  background-color: #94ca66;
+  background-color: #acdb9c;
 }
 .legend .legend-marker.not-released span {
   border: 1px solid #bbbbbb;
-  background-color: #e4e2dd;
+  background-color: #e7e4de;
 }
 .legend .legend-marker.model-house span {
   content: url("../../../assets/img/availability/icons/Model-House-icon-key.png");
