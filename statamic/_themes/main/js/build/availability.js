@@ -157,7 +157,7 @@ geojson = L.geoJson(sold, {
 
 // For Sale
 
-function availableMap(feature) {
+function forSaleMap(feature) {
     return {
         weight: 1,
         color: "#676566",
@@ -167,7 +167,7 @@ function availableMap(feature) {
     };
 }
 
-function availableMapResetHighlight(e) {
+function forSaleMapResetHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
@@ -183,7 +183,7 @@ function availableMapResetHighlight(e) {
     }
 }
 
-function availableMapHighlight(e) {
+function forSaleMapHighlight(e) {
     var layer = e.target;
 
     layer.setStyle({
@@ -199,7 +199,7 @@ function availableMapHighlight(e) {
     }
 }
 
-function onEachFeatureAvailable(feature, layer) {
+function onEachFeatureforSale(feature, layer) {
 
         //does layerGroup already exist? if not create it and add to map
         var lg = mapLayerGroups[feature.properties.type];
@@ -232,15 +232,15 @@ function onEachFeatureAvailable(feature, layer) {
 
     layer.bindPopup(popupContent,popupOptions);
     layer.on({
-        mouseover: availableMapHighlight,
-        mouseout: availableMapResetHighlight,
+        mouseover: forSaleMapHighlight,
+        mouseout: forSaleMapResetHighlight,
         popupclose: resetMap    
     });
 }
 
-geojson = L.geoJson(available, {
-    style: availableMap,
-    onEachFeature: onEachFeatureAvailable,
+geojson = L.geoJson(forSale, {
+    style: forSaleMap,
+    onEachFeature: onEachFeatureforSale,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng);
     }

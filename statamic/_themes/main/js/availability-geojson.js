@@ -978,7 +978,7 @@ var notReleased = {
   ]
 };
 
-var available = {
+var forSale = {
   "type": "FeatureCollection",
   "features": [
     {

@@ -555,83 +555,83 @@ var itaEat = {
             },
             "id": 116
         },
-        // {
-        //     "geometry": {
-        //         "type": "Point",
-        //         "coordinates": [
-        //             -74.01950399999998,
-        //            41.93427
-        //         ]
-        //     },
-        //     "type": "Feature",
-        //     "properties": {
-        //         "classType": "eat",
-        //         "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
-        //         "activity": "eat",
-        //         "activityTitle": "Elephant",
-        //         "image": "assets/img/in-the-area/inthearea_eat_placeholder.jpg",
-        //         "activityDescription":"Lorem Ipsum",
-        //         "website": ""
-        //     },
-        //     "id": 118
-        // },
-        // {
-        //     "geometry": {
-        //         "type": "Point",
-        //         "coordinates": [
-        //             -74.01840600000003 ,41.933698
-        //         ]
-        //     },
-        //     "type": "Feature",
-        //     "properties": {
-        //         "classType": "eat",
-        //         "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
-        //         "activity": "eat",
-        //         "activityTitle": "Le Canard Enchaine",
-        //         "image": "assets/img/in-the-area/inthearea_eat_placeholder.jpg",
-        //         "activityDescription":"Lorem Ipsum",
-        //         "website": ""
-        //     },
-        //     "id": 119
-        // },
-        // {
-        //     "geometry": {
-        //         "type": "Point",
-        //         "coordinates": [
-        //             -74.020801,41.935213
-        //         ]
-        //     },
-        //     "type": "Feature",
-        //     "properties": {
-        //         "classType": "eat",
-        //         "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
-        //         "activity": "eat",
-        //         "activityTitle": "Boitson's",
-        //         "image": "assets/img/in-the-area/inthearea_eat_placeholder.jpg",
-        //         "activityDescription":"Lorem Ipsum",
-        //         "website": ""
-        //     },
-        //     "id": 120
-        // },
-        // {
-        //     "geometry": {
-        //         "type": "Point",
-        //         "coordinates": [
-        //             -74.02000399999997,41.933753
-        //         ]
-        //     },
-        //     "type": "Feature",
-        //     "properties": {
-        //         "classType": "eat",
-        //         "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
-        //         "activity": "eat",
-        //         "activityTitle": "Duo Bistro",
-        //         "image": "assets/img/in-the-area/inthearea_eat_placeholder.jpg",
-        //         "activityDescription":"Lorem Ipsum",
-        //         "website": ""
-        //     },
-        //     "id": 121
-        // },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.01950399999998,
+                   41.93427
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
+                "activity": "eat",
+                "activityTitle": "Elephant",
+                "image": "assets/img/in-the-area/InTheArea_EAT_Elephant.jpg",
+                "activityDescription":"A wine and tapas bar that’s quite small, very reasonable and has devoted local following for it’s “punk rock” tapas and extensive, Spanish dominated wine list. Unusual combinations of ingredients update the Basque and Spanish classics. ",
+                "website": "http://www.elephantwinebar.com"
+            },
+            "id": 118
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.01840600000003 ,41.933698
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
+                "activity": "eat",
+                "activityTitle": "Le Canard Enchaine",
+                "image": "assets/img/in-the-area/InTheArea_EAT_Canard.jpg",
+                "activityDescription":"Classic, French cuisine that’s “so behind the curve, it’s probably ahead of it” says the Wall Street Journal. Come early for the almost ridiculously reasonable prix-fixe menu, or settle in later for a lavish meal, but always with proper French service.",
+                "website": "http://le-canardenchaine.com"
+            },
+            "id": 119
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.020801,41.935213
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
+                "activity": "eat",
+                "activityTitle": "Boitson's",
+                "image": "assets/img/in-the-area/InTheArea_EAT_Boitsons.jpg",
+                "activityDescription":"A clubby bistro whose center of attraction is it’s boisterous bar with the word, “Lubrication’”  written in large stained glass type above it. Boitson’s succinct but well considered menu combines French bistro, pub fare and Southern standards into what Hudson Valley Magazine calls, “American bistro comfort food.” Off menu there’s always a considerable list of more dressed up dishes.",
+                "website": "http://www.boitsons.com"
+            },
+            "id": 120
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.02000399999997,41.933753
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "classType": "eat",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-eat.png",
+                "activity": "eat",
+                "activityTitle": "Duo Bistro",
+                "image": "assets/img/in-the-area/InTheArea_EAT_Duo.jpg",
+                "activityDescription":"“New American cuisine,” “eclectic American, timely and healthy,” “focus on responsibility and sustainability,”  “eclectic comfort food menu,” “in-house and organic with a twist.” This very popular bistro garners great quotes… and it serves breakfast all day! ",
+                "website": "http://duobistro.com"
+            },
+            "id": 121
+        },
         {
             "geometry": {
                 "type": "Point",
@@ -968,6 +968,44 @@ var itaSwing = {
         //     },
         //     "id": 305
         // },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.957876,42.122227
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "classType": "swing",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-swing.png",
+                "activity": "swing",
+                "activityTitle": "Lazy Swan Golf & Country Club",
+                "image": "assets/img/in-the-area/InTheArea_SWING_LazySwan.jpg",
+                "activityDescription":"Certainly one of the best courses in Ulster County, the Lazy Swan is “championship caliber,” designed by Barry Jordan, and is anchored by a fairly swanky golf club, a bistro/martini lounge, and set of golf bungalows. It’s fairly new (2005) and it’s mountain style holes are in near perfect shape.",
+                "website": "http://www.thelazyswan.com"
+            },
+            "id": 306
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.721771,41.788544
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "classType": "swing",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-swing.png",
+                "activity": "swing",
+                "activityTitle": "Grossinger Country Club",
+                "image": "assets/img/in-the-area/InTheArea_SWING_Grossinger.jpg",
+                "activityDescription":"Part of The Concord complex, this Joe Finger designed course is well noted for how it takes advantage of pre-existing terrain. Each nine at starts atop a hill and works down into a valley and then back to the top of the hill. Many bending holes and high reward 5’s make it a fun course where you can up your game.",
+                "website": "http://www.grossingergolf.net"
+            },
+            "id": 307
+        },
     ]
 };
 
@@ -1213,25 +1251,63 @@ var itaTrail = {
             },
             "id": 504
         },
-        // {
-        //     "geometry": {
-        //         "type": "Point",
-        //         "coordinates": [
-        //           -74.408593,41.655896
-        //         ]
-        //     },
-        //     "type": "Feature",
-        //     "properties": {
-        //         "classType": "trails",
-        //         "classIcon": "assets/img/in-the-area/icons/card-icon-trail.png",
-        //         "activity": "trails",
-        //         "activityTitle": "Shawangunk Ridge State Forest",
-        //         "image": "assets/img/in-the-area/inthearea_trails_placeholder.jpg",
-        //         "activityDescription":"Lorem Ipsum",
-        //         "website": ""
-        //     },
-        //     "id": 505
-        // },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  -74.1819084,41.9665477
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "classType": "trails",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-trail.png",
+                "activity": "trails",
+                "activityTitle": "Ashokan Reservoir",
+                "image": "assets/img/in-the-area/InTheArea_TRAILS_Ashokan.jpg",
+                "activityDescription":"Bike, walk or run around New York City’s most attractive drinking water. The historic and beautiful Ashokan Reservoir was completed in 1915 and still supplies 40% of NYC’s daily usage. The views across the basin to the Catskills is awesome, and the bridges and old stonework have the effect of bringing you back in time. Very easy wide, paved trails are great for any athletic level.",
+                "website": "http://www.nyc.gov/html/dep/html/watershed_protection/ashokan.shtml"
+            },
+            "id": 505
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  -74.408593,41.655896
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "classType": "trails",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-trail.png",
+                "activity": "trails",
+                "activityTitle": "Walkway over the Hudson",
+                "image": "assets/img/in-the-area/InTheArea_TRAILS_Walkway.jpg",
+                "activityDescription":"A formerly abandoned railroad bridge is now a glorious if somewhat vertiginous pedestrian park. The Walkway over the Hudson connects Highland to Poughkeepsie, and at1.28 miles, is the longest, elevated pedestrian bridge in the world. Among the more popular events scheduled there are the frequent “Moonwalks” and a very dramatic 4th of July.",
+                "website": "http://walkway.org"
+            },
+            "id": 506
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  -74.0880458,41.8434271
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "classType": "trails",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-trail.png",
+                "activity": "trails",
+                "activityTitle": "Rosendale Trestle",
+                "image": "assets/img/in-the-area/InTheArea_TRAILS_trestle.jpg",
+                "activityDescription":"The most impressive stage along the 24 mile long Walkill Valley Rail Trail, this refurbished train truss bridge that crosses over the Rondout Creek dates back to 1872. Peer over Rosendale, and while you’re there, marvel that rail trail now extends continuously from Gardiner to Kingston thanks in large part to the efforts of the Open Space Institute.",
+                "website": "http://www.wvrta.org"
+            },
+            "id": 507
+        },
         {
             "geometry": {
                 "type": "Point",
@@ -1249,27 +1325,8 @@ var itaTrail = {
                 "activityDescription":"The recently opened 3.5 mile trail now connects the Shawangunks to the Catskills. Access from inside the Minnewaska State Park. ",
                 "website": "http://www.nynjtc.org/mine-hole-trail"
             },
-            "id": 506
+            "id": 508
         },
-        // {
-        //     "geometry": {
-        //         "type": "Point",
-        //         "coordinates": [
-        //           -73.94478800000002,41.710567
-        //         ]
-        //     },
-        //     "type": "Feature",
-        //     "properties": {
-        //         "classType": "trails",
-        //         "classIcon": "assets/img/in-the-area/icons/card-icon-trail.png",
-        //         "activity": "trails",
-        //         "activityTitle": "Walkway Over the Hudson",
-        //         "image": "assets/img/in-the-area/inthearea_trails_placeholder.jpg",
-        //         "activityDescription":"Lorem Ipsum",
-        //         "website": ""
-        //     },
-        //     "id": 507
-        // },
     ]
 };
 
@@ -1355,6 +1412,25 @@ var itaSki = {
                 "website": "http://www.mtntrails.com/home.html"
             },
             "id": 603
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.609299,41.626282
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "classType": "ski",
+                "classIcon": "assets/img/in-the-area/icons/card-icon-ski.png",
+                "activity": "ski",
+                "activityTitle": "Holiday Mountain Ski & Fun Park",
+                "image": "assets/img/in-the-area/InTheArea_SKI_Holiday.jpg",
+                "activityDescription":"4 lifts service 7 slopes and trails of varying skill levels but mostly for kids and beginners. Other fun stuff includes a tubing hill and night skiing on all trails. Come Summer, the area turns into a kid-cetric resort with bumper boats, go-karts, mini-golf, batting cages, bungee trampolines, and on and on…",
+                "website": "http://www.holidaymtn.com"
+            },
+            "id": 604
         },
     ]
 };
