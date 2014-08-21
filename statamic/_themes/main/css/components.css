@@ -7503,22 +7503,22 @@ p {
   background-color: #e7e4de;
 }
 .card.availability.sold {
-  border-top: 8px solid #94bc8e;
+  border-top: 8px solid #a1b49c;
 }
 .card.availability.sold .status {
-  background-color: #94bc8e;
+  background-color: #a1b49c;
 }
 .card.availability.contract-out {
-  border-top: 8px solid #dee2bd;
+  border-top: 8px solid #d1dfb9;
 }
 .card.availability.contract-out .status {
-  background-color: #dee2bd;
+  background-color: #d1dfb9;
 }
 .card.availability.contract-signed {
-  border-top: 8px solid #acdb9c;
+  border-top: 8px solid #accf9c;
 }
 .card.availability.contract-signed .status {
-  background-color: #acdb9c;
+  background-color: #accf9c;
 }
 .card.availability.for-sale {
   border-top: 8px solid #cdc7b9;
@@ -8015,15 +8015,15 @@ p {
 }
 .legend .legend-marker.sold span {
   border: 1px solid #bbbbbb;
-  background-color: #94bc8e;
+  background-color: #a1b49c;
 }
 .legend .legend-marker.contract-out span {
   border: 1px solid #bbbbbb;
-  background-color: #dee2bd;
+  background-color: #d1dfb9;
 }
 .legend .legend-marker.contract-signed span {
   border: 1px solid #bbbbbb;
-  background-color: #acdb9c;
+  background-color: #accf9c;
 }
 .legend .legend-marker.not-released span {
   border: 1px solid #bbbbbb;

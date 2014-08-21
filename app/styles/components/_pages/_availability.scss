@@ -26,19 +26,19 @@
 		&.sold {
 			span {
 				border: 1px solid lighten($gray,40%);
-				background-color: #94bc8e;
+				background-color: #a1b49c;
 			}
 		}
 		&.contract-out {
 			span {
 				border: 1px solid lighten($gray,40%);
-				background-color: #dee2bd;
+				background-color: #d1dfb9;
 			}
 		}
 		&.contract-signed {
 			span {
 				border: 1px solid lighten($gray,40%);
-				background-color: #acdb9c;
+				background-color: #accf9c;
 			}
 		}
 		&.not-released {

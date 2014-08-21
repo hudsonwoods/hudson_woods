@@ -66,21 +66,21 @@
 			}
 		}
 		&.sold {
-			border-top: 8px solid #94bc8e;
+			border-top: 8px solid #a1b49c;
 			.status {
-				background-color: #94bc8e;
+				background-color: #a1b49c;
 			}
 		}
 		&.contract-out {
-			border-top: 8px solid #dee2bd;
+			border-top: 8px solid #d1dfb9;
 			.status {
-				background-color: #dee2bd;
+				background-color: #d1dfb9;
 			}
 		}
 		&.contract-signed {
-			border-top: 8px solid #acdb9c;
+			border-top: 8px solid #accf9c;
 			.status {
-				background-color: #acdb9c;
+				background-color: #accf9c;
 			}
 		}
 		&.for-sale {
