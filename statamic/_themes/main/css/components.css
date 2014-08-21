@@ -8015,11 +8015,11 @@ p {
 }
 .legend .legend-marker.sold span {
   border: 1px solid #bbbbbb;
-  background-color: #a1b49c;
+  background-color: #8e9e8a;
 }
 .legend .legend-marker.contract-out span {
   border: 1px solid #bbbbbb;
-  background-color: #d1dfb9;
+  background-color: #d5deaf;
 }
 .legend .legend-marker.contract-signed span {
   border: 1px solid #bbbbbb;

@@ -26,13 +26,13 @@
 		&.sold {
 			span {
 				border: 1px solid lighten($gray,40%);
-				background-color: #a1b49c;
+				background-color: #8e9e8a;
 			}
 		}
 		&.contract-out {
 			span {
 				border: 1px solid lighten($gray,40%);
-				background-color: #d1dfb9;
+				background-color: #d5deaf;
 			}
 		}
 		&.contract-signed {
