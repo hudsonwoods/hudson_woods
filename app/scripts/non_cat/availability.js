@@ -69,7 +69,7 @@ function soldMap(feature) {
         weight: 1,
         color: "#676566",
         opacity: .2,
-        fillColor: "#006700",
+        fillColor: "#003f00",
         fillOpacity: .33
     };
 }
@@ -81,7 +81,7 @@ function soldMapResetHighlight(e) {
         weight: 1,
         color: "#676566",
         opacity: .2,
-        fillColor: "#006700",
+        fillColor: "#003f00",
         fillOpacity: .33
     });
 
@@ -97,8 +97,8 @@ function soldMapHighlight(e) {
         weight: 1,
         color: "#676566",
         opacity: 1,
-        fillColor: "#006700",
-        fillOpacity: .65
+        fillColor: "#003f00",
+        fillOpacity: .45
     });
 
     if (!L.Browser.ie && !L.Browser.opera) {
@@ -255,7 +255,7 @@ function contractOutMap(feature) {
         weight: 1,
         color: "#676566",
         opacity: .2,
-        fillColor: "#bccc66",
+        fillColor: "#b8c05b",
         fillOpacity: .33
     };
 }
@@ -267,7 +267,7 @@ function contractOutMapResetHighlight(e) {
         weight: 1,
         color: "#676566",
         opacity: .2,
-        fillColor: "#bccc66",
+        fillColor: "#b8c05b",
         fillOpacity: .33
     });
 
@@ -283,7 +283,7 @@ function contractOutMapHighlight(e) {
         weight: 1,
         color: "#676566",
         opacity: 1,
-        fillColor: "#bccc66",
+        fillColor: "#b8c05b",
         fillOpacity: .65
     });
 
@@ -348,7 +348,7 @@ function contractSignedMap(feature) {
         weight: 1,
         color: "#676566",
         opacity: .2,
-        fillColor: "#25b600",
+        fillColor: "#239000",
         fillOpacity: .33
     };
 }
@@ -360,7 +360,7 @@ function contractSignedMapResetHighlight(e) {
         weight: 1,
         color: "#676566",
         opacity: .2,
-        fillColor: "#25b600",
+        fillColor: "#239000",
         fillOpacity: .33
     });
 
@@ -376,7 +376,7 @@ function contractSignedMapHighlight(e) {
         weight: 1,
         color: "#676566",
         opacity: 1,
-        fillColor: "#25b600",
+        fillColor: "#239000",
         fillOpacity: .65
     });
 
