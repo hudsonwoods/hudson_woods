@@ -412,7 +412,7 @@ var contractOut = {
             "activityTitle": "Lot 15",
             "image": "assets/img/availability/LOT-15.png",
             "lotSize": "4.6 Acres",
-            "cost": "$685,000",
+            "cost": "$735,000",
             "lotURL": "lot-15"
         },
         "geometry": {
