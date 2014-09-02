@@ -364,7 +364,7 @@ var sold = {
             "activityTitle": "Lot 19",
             "image": "assets/img/availability/LOT-19.png",
             "lotSize": "4.2 Acres",
-            "cost": "$685,000",
+            "cost": "$897,500",
             "lotURL": "lot-19"
         },
         "geometry": {
