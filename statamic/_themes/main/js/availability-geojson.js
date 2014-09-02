@@ -1056,7 +1056,7 @@ var forSale = {
             "activityTitle": "Lot 13",
             "image": "assets/img/availability/LOT-13.png",
             "lotSize": "4.3 Acres",
-            "cost": "-",
+            "cost": "735,000",
             "lotURL": "lot-13"
         },
         "geometry": {
