@@ -406,3 +406,17 @@ ga('create', 'UA-46418002-1', 'auto');
 ga('send', 'pageview');
 
 
+$('#contact-submit').on('click', function() {
+  ga('send', 'event', { eventCategory: 'Click', eventAction: 'Email', eventLabel: 'SubmitForm'});
+});
+
+$('#sales-contact').on('click', function() {
+  ga('send', 'event', { eventCategory: 'Click', eventAction: 'Email', eventLabel: 'SalesContact'});
+});
+
+$('#media-contact').on('click', function() {
+  ga('send', 'event', { eventCategory: 'Click', eventAction: 'Email', eventLabel: 'PressContact'});
+});
+
+
+

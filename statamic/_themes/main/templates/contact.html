@@ -49,7 +49,7 @@
             </div>
           </div>
 
-          <button type="submit" class="btn btn-green">Submit</button>
+          <button type="submit" id="contact-submit" class="btn btn-green">Submit</button>
           <li class="hide">
             <label for="comment">Do Not Fill This Out</label>
             <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
@@ -75,7 +75,7 @@
           <li>{{ phoneNumber }}</li>
           {{ endif }}
           {{ if emailAddress|not_empty }}
-          <li><a href="mailto:{{ emailAddress }}">{{ emailAddress }}</a></li>
+          <li><a id="sales-contact" href="mailto:{{ emailAddress }}">{{ emailAddress }}</a></li>
           {{ endif }}
         </ul>
         {{ /salesContacts }}
@@ -97,7 +97,7 @@
             <li>{{ phoneNumber }}</li>
             {{ endif }}
             {{ if emailAddress|not_empty }}
-            <li><a href="mailto:{{ emailAddress }}">{{ emailAddress }}</a></li>
+            <li><a id="media-contact" href="mailto:{{ emailAddress }}">{{ emailAddress }}</a></li>
             {{ endif }}
           </ul>
         {{ /mediaContacts }}
