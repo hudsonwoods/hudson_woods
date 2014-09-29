@@ -61,11 +61,11 @@ gulp.task('copy', function() {
     .pipe($.size({title: 'copy'}));
 });
 
-// gulp.task('scripts_non_cat', function() {
-//   return gulp.src(['app/scripts/non_cat/*.js'])
-//     .pipe(gulp.dest('statamic/_themes/main/js/build'))
-//     .pipe($.size({title: 'copy'}));
-// });
+gulp.task('scripts_non_cat', function() {
+  return gulp.src(['app/scripts/non_cat/*.js'])
+    .pipe(gulp.dest('statamic/_themes/main/js/build'))
+    .pipe($.size({title: 'copy'}));
+});
 
 gulp.task('scripts_availability-geojson', function() {
   return gulp.src(['app/scripts/non_cat/availability-geojson.js'])
