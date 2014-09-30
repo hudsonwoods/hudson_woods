@@ -53,6 +53,8 @@ npm-debug.log
 /statamic/assets/*
 /statamic/_config/users/
 
+/statamic/_themes/main/js/availability-geojson.js
+
 # Legacy Site #
 _legacy/**/*
 
